@@ -1,0 +1,2368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008230.1"?>
+<!--  %The files to be sent for review are --><!--  %form.tex allsmall.ps  asl.ps --><!--  %Use the documentstyle line below to get the final output format. --><!--  %make sure that the “begin–figure˝  to “end–figure˝ in the middle of the --><!--  %file are uncommented, and comment out the “begin–figure˝ and “end–figure˝ --><!--  %at the very end of the file. --><!--  %to print this out you must first latex the file then dvips the dvi file --><!--  %then print the resulting postscript file. --><?latexml class="revtex" options="twocolumn,prl,aps,epsfig,amsfonts" oldstyle="true"?>
+<!--  %use the documentstyle below to get the format to send to the referees --><!--  %you must also comment out the sections --><!--  %“begin–figure˝  to --><!--  %“end–figure˝   which are in the middle of the text --><!--  %and make sure that the  begin figure and end figure  at the very end of the --><!--  %page are uncommented. --><!--  %you can also comment out the “wideabs command just after the “begin–document˝ --><!--  %“documentstyle[preprint,prl,aps]–revtex˝ --><?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML" class="ltx_authors_1line">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title> The Dynamics of the Formation of Degenerate Heavy Neutrino Stars</title>
+  <creator role="author">
+    <personname>Neven Bilić<cite class="ltx_citemacro_cite"><bibref bibrefs="bilicadd" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>, Robert J. Lindebaum<cite class="ltx_citemacro_cite"><bibref bibrefs="rjladd" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>, Gary B. Tupper and Raoul D. Viollier</personname>
+    <contact role="affiliation">Institute of Theoretical Physics and Astrophysics,
+Department of Physics, University of Cape Town,
+Private Bag, Rondebosch 7701, South Africa; Email: viollier@physci.uct.ac.za
+</contact>
+  </creator>
+  <abstract name="Abstract">
+    <p>Through reformulating the cold, self-gravitating fermion gas as a Bose
+condensate by identifying their mutual Thomas-Fermi limits, the
+dissipationless formation of a heavy neutrino star in gravitational collapse
+is numerically demonstrated. Such stars offer an alternative to supermassive
+black holes for the compact dark objects at the centers of galaxies.</p>
+  </abstract>
+  <classification scheme="pacs">PACS Nos.: 02.60.Cb, 95.30.Lz, 95.35.+d, 98.35.Jk</classification>
+<!--  %**** form.tex Line 25 **** -->  <para xml:id="p1">
+    <p>Supermassive neutrino stars, in which gravity
+is balanced by the degeneracy pressure of cold fermions, have been
+a subject of speculation for more than three decades <cite class="ltx_citemacro_cite"><bibref bibrefs="1" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>.
+Originally, these
+objects were proposed as models for dark matter in galactic halos and clusters
+of galaxies, with neutrino masses in the <Math mode="inline" tex="\sim" text="similar-to" xml:id="p1.m1">
+        <XMath>
+          <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+        </XMath>
+      </Math> eV range. More recently,
+however,
+degenerate superstars composed of weakly interacting fermions in the <Math mode="inline" tex="\sim" text="similar-to" xml:id="p1.m2">
+        <XMath>
+          <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+        </XMath>
+      </Math>
+<!--  %**** form.tex Line 50 **** -->10 keV range have been suggested as an alternative to the supermassive black
+holes that are purported to exist at the centers of galaxies <cite class="ltx_citemacro_cite"><bibref bibrefs="2,3,4,5,6" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>.
+In fact it has been shown <cite class="ltx_citemacro_cite"><bibref bibrefs="4" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>
+that such degenerate fermion stars
+could explain the whole range of supermassive compact dark objects which
+have been observed so far, with masses
+ranging from 10<Math mode="inline" tex="{}^{6}" text="^6" xml:id="p1.m3">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+            <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> to 3 <Math mode="inline" tex="\times" text="*" xml:id="p1.m4">
+        <XMath>
+          <XMTok meaning="times" role="MULOP">×</XMTok>
+        </XMath>
+      </Math> 10<Math mode="inline" tex="{}^{9}" text="^9" xml:id="p1.m5">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+            <XMTok fontsize="70%" meaning="9" role="NUMBER">9</XMTok>
+          </XMApp>
+        </XMath>
+      </Math><Math mode="inline" tex="M_{\odot}" text="M _ direct-product" xml:id="p1.m6">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+            <XMTok font="italic" role="UNKNOWN">M</XMTok>
+            <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>, merely assuming
+that a weakly interacting quasi-stable fermion of mass <Math mode="inline" tex="m_{f}\simeq" text="m _ f similar-to-or-equals absent" xml:id="p1.m7">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">f</XMTok>
+            </XMApp>
+            <XMTok meaning="absent"/>
+          </XMApp>
+        </XMath>
+      </Math> 15
+keV exists in nature.</p>
+  </para>
+  <para xml:id="p2">
+    <p>As an example, the most massive and violent compact dark object ever
+observed is located at the center of M87 with a mass <Math mode="inline" tex="M\simeq" text="M similar-to-or-equals absent" xml:id="p2.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+            <XMTok font="italic" role="UNKNOWN">M</XMTok>
+            <XMTok meaning="absent"/>
+          </XMApp>
+        </XMath>
+      </Math> 3.2
+<Math mode="inline" tex="\times" text="*" xml:id="p2.m2">
+        <XMath>
+          <XMTok meaning="times" role="MULOP">×</XMTok>
+        </XMath>
+      </Math> 10<Math mode="inline" tex="{}^{9}M_{\odot}" text="^ 9 M _ direct-product" xml:id="p2.m3">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="pre2"/>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">M</XMTok>
+              <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+            </XMApp>
+            <XMTok fontsize="70%" meaning="9" role="NUMBER">9</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> <cite class="ltx_citemacro_cite"><bibref bibrefs="7" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>. Interpreting this as a
+relativistic fermion star at the Oppenheimer-Volkoff <cite class="ltx_citemacro_cite"><bibref bibrefs="8" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite> limit
+yields the fermion mass <Math mode="inline" tex="m_{f}\simeq" text="m _ f similar-to-or-equals absent" xml:id="p2.m4">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">f</XMTok>
+            </XMApp>
+            <XMTok meaning="absent"/>
+          </XMApp>
+        </XMath>
+      </Math> 15 keV and a radius <Math mode="inline" tex="R=" text="R = absent" xml:id="p2.m5">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok meaning="absent"/>
+          </XMApp>
+        </XMath>
+      </Math> 4.45
+<Math mode="inline" tex="R_{\rm S}\sim" text="R _ S similar-to absent" xml:id="p2.m6">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">S</XMTok>
+            </XMApp>
+            <XMTok meaning="absent"/>
+          </XMApp>
+        </XMath>
+      </Math> 1.5 light-days <cite class="ltx_citemacro_cite"><bibref bibrefs="3,4" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>, where <Math mode="inline" tex="R_{\rm S}" text="R _ S" xml:id="p2.m7">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok fontsize="70%" role="UNKNOWN">S</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> is
+Schwarzschild radius. In this case there is little difference between
+the fermion star and black hole scenarios because the last stable
+orbit around a Schwarzschild black hole is at 3<Math mode="inline" tex="R_{\rm S}" text="R _ S" xml:id="p2.m8">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok fontsize="70%" role="UNKNOWN">S</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> anyway.</p>
+  </para>
+  <para xml:id="p3">
+    <p>Extrapolating this down to the compact dark object at the center of
+our galaxy <cite class="ltx_citemacro_cite"><bibref bibrefs="9" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>, with mass <Math mode="inline" tex="M\simeq" text="M similar-to-or-equals absent" xml:id="p3.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+            <XMTok font="italic" role="UNKNOWN">M</XMTok>
+            <XMTok meaning="absent"/>
+          </XMApp>
+        </XMath>
+      </Math> 2.6 <Math mode="inline" tex="\times" text="*" xml:id="p3.m2">
+        <XMath>
+          <XMTok meaning="times" role="MULOP">×</XMTok>
+        </XMath>
+      </Math> 10<Math mode="inline" tex="{}^{6}M_{\odot}" text="^ 6 M _ direct-product" xml:id="p3.m3">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="pre2"/>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">M</XMTok>
+              <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+            </XMApp>
+            <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>, which is at the lower limit of the mass range, and <Math mode="inline" tex="R\;\lesssim" text="R less-than-or-similar-to absent" xml:id="p3.m4">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="less-than-or-similar-to" name="lesssim" role="RELOP">≲</XMTok>
+            <XMTok font="italic" role="UNKNOWN" rpadding="2.8pt">R</XMTok>
+            <XMTok meaning="absent"/>
+          </XMApp>
+        </XMath>
+      </Math> 20 light-days, the same fermion mass gives <Math mode="inline" tex="R\;\sim" text="R similar-to absent" xml:id="p3.m5">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            <XMTok font="italic" role="UNKNOWN" rpadding="2.8pt">R</XMTok>
+            <XMTok meaning="absent"/>
+          </XMApp>
+        </XMath>
+      </Math>
+10<Math mode="inline" tex="{}^{4}\;R_{\rm S}" text="^ 4 R _ S" xml:id="p3.m6">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="pre2"/>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">S</XMTok>
+            </XMApp>
+            <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>. Consequent upon the shallow potential inside
+<!--  %**** form.tex Line 75 **** -->this fermion star, the spectrum of radiation emitted by accreting
+baryonic matter is cut off for frequencies larger than 10<Math mode="inline" tex="{}^{13}" text="^13" xml:id="p3.m7">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+            <XMTok fontsize="70%" meaning="13" role="NUMBER">13</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> Hz
+<cite class="ltx_citemacro_cite"><bibref bibrefs="3,5" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>, as is observed in the spectrum of the strong radio source
+Sgr A<Math mode="inline" tex="{}^{*}" text="^*" xml:id="p3.m8">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+            <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> at the galactic center <cite class="ltx_citemacro_cite"><bibref bibrefs="10" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>. This fermion star is
+also consistent <cite class="ltx_citemacro_cite"><bibref bibrefs="6" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite> with the observed motion of stars within a
+projected distance of 10 to 30 light-days of Sgr A<Math mode="inline" tex="{}^{*}" text="^*" xml:id="p3.m9">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+            <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> <cite class="ltx_citemacro_cite"><bibref bibrefs="9" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>.</p>
+  </para>
+  <para xml:id="p4">
+    <p>Of course, it is well-known that 15 keV lies squarely in the
+cosmologically forbidden mass range for stable active neutrinos <Math mode="inline" tex="\nu" text="nu" xml:id="p4.m1">
+        <XMath>
+          <XMTok font="italic" name="nu" role="UNKNOWN">ν</XMTok>
+        </XMath>
+      </Math>
+<cite class="ltx_citemacro_cite"><bibref bibrefs="11" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>. Sterile neutrinos are another matter: as shown by Shi and
+Fuller <cite class="ltx_citemacro_cite"><bibref bibrefs="12" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>, in the presence of an initial lepton asymmetry of
+<Math mode="inline" tex="\sim" text="similar-to" xml:id="p4.m2">
+        <XMath>
+          <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+        </XMath>
+      </Math> 10<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="p4.m3">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+            <XMApp>
+              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>, a sterile neutrino <Math mode="inline" tex="\nu_{s}" text="nu _ s" xml:id="p4.m4">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+            <XMTok font="italic" name="nu" role="UNKNOWN">ν</XMTok>
+            <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> of mass <Math mode="inline" tex="m_{s}\sim" text="m _ s similar-to absent" xml:id="p4.m5">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+            </XMApp>
+            <XMTok meaning="absent"/>
+          </XMApp>
+        </XMath>
+      </Math>
+10 keV is resonantly produced with near closure density, <Math mode="inline" tex="\Omega" text="Omega" xml:id="p4.m6">
+        <XMath>
+          <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+        </XMath>
+      </Math> =
+1. Moreover, the resulting energy spectrum is not thermal but rather
+cut off so as to approximate a cold degenerate Fermi gas. This model
+is constrained by astrophysical bounds on <Math mode="inline" tex="\nu_{s}\rightarrow\nu\gamma" text="nu _ s rightarrow nu * gamma" xml:id="p4.m7">
+        <XMath>
+          <XMApp>
+            <XMTok name="rightarrow" role="ARROW">→</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="nu" role="UNKNOWN">ν</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+            </XMApp>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" name="nu" role="UNKNOWN">ν</XMTok>
+              <XMTok font="italic" name="gamma" role="UNKNOWN">γ</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math> <cite class="ltx_citemacro_cite"><bibref bibrefs="13" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>, however the allowed parameter space includes <Math mode="inline" tex="m_{s}\simeq" text="m _ s similar-to-or-equals absent" xml:id="p4.m8">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+            </XMApp>
+            <XMTok meaning="absent"/>
+          </XMApp>
+        </XMath>
+      </Math> 15 keV contributing <Math mode="inline" tex="\Omega_{s}\simeq" text="Omega _ s similar-to-or-equals absent" xml:id="p4.m9">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+            </XMApp>
+            <XMTok meaning="absent"/>
+          </XMApp>
+        </XMath>
+      </Math> 0.3 as favoured by the
+BOOMERANG data <cite class="ltx_citemacro_cite"><bibref bibrefs="14" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>.</p>
+  </para>
+  <para xml:id="p5">
+    <p>The statics of degenerate fermion stars is well understood, being the
+Oppenheimer-Volkoff equation in the relativistic case <cite class="ltx_citemacro_cite"><bibref bibrefs="8" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite> or
+the Lané-Emden equation with polytropic index <Math mode="inline" tex="n" text="n" xml:id="p5.m1">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">n</XMTok>
+        </XMath>
+      </Math> = 3/2 in the
+nonrelativistic limit <cite class="ltx_citemacro_cite"><bibref bibrefs="15" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>. Alternatively, because <Math mode="inline" tex="R\gg" text="R &gt;&gt; absent" xml:id="p5.m2">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="much-greater-than" name="gg" role="RELOP">≫</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok meaning="absent"/>
+          </XMApp>
+        </XMath>
+      </Math>
+1/<Math mode="inline" tex="m_{f}" text="m _ f" xml:id="p5.m3">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+            <XMTok font="italic" role="UNKNOWN">m</XMTok>
+            <XMTok font="italic" fontsize="70%" role="UNKNOWN">f</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>, one may understand these as the Thomas-Fermi theory applied
+<!--  %**** form.tex Line 100 **** -->to self- gravitating systems. The extension of the Thomas-Fermi theory
+to finite temperature <cite class="ltx_citemacro_cite"><bibref bibrefs="23,16" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite> has been used to show that at a
+certain critical temperature weakly interacting massive fermionic
+matter undergoes a first-order gravitational phase transition from a
+diffuse to a clustered state, i.e. a nearly degenerate fermion
+star. Such studies do not, however, bear on the crucial dynamical
+question of whether the fermion star can form through gravitational
+collapse of density fluctuations in an orthodox cosmological
+setting. Indeed, since collisional damping is negligible, one would
+expect that only a virialized cloud results <cite class="ltx_citemacro_cite"><bibref bibrefs="11" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>.</p>
+  </para>
+  <para xml:id="p6">
+    <p><Math mode="inline" tex="N" text="N" xml:id="p6.m1">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">N</XMTok>
+        </XMath>
+      </Math>-body simulations of the collisionless Boltzmann or Vlasov equation
+evidence a rather different picture: the collapse is followed by a
+series of bounces with matter expelled at each bounce, leaving behind
+a condensed object <cite class="ltx_citemacro_cite"><bibref bibrefs="17" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>. By Liouville’s theorem the Vlasov
+equation describes an incompressible fluid in phase-space so that it
+respects a form of the exclusion principle. Hence, these <Math mode="inline" tex="N" text="N" xml:id="p6.m2">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">N</XMTok>
+        </XMath>
+      </Math>-body
+simulations are effectively fermion simulations. What transpires is
+that gravity, being attractive, self- organises the phase-space fluid
+into a high-density/momentum core at the expense of other
+low-density/momentum regions as seen in the evolution of the
+spherical Vlasov equation <cite class="ltx_citemacro_cite"><bibref bibrefs="18" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>.</p>
+  </para>
+  <para xml:id="p7">
+    <p>Much the same behaviour is observed in the formation of mini-boson
+stars through so-called gravitational cooling <cite class="ltx_citemacro_cite"><bibref bibrefs="19" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>. Such a
+<!--  %**** form.tex Line 125 **** -->mini-boson star is stable by balancing uncertainty and gravitational
+pressure. A similar mechanism works in the presence of a quartic
+self-interaction <cite class="ltx_citemacro_cite"><bibref bibrefs="20" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite> which dominates over uncertainty pressure
+resulting in an equilibrium radius <Math mode="inline" tex="R\gg" text="R &gt;&gt; absent" xml:id="p7.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="much-greater-than" name="gg" role="RELOP">≫</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok meaning="absent"/>
+          </XMApp>
+        </XMath>
+      </Math> 1/<Math mode="inline" tex="m_{b}" text="m _ b" xml:id="p7.m2">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+            <XMTok font="italic" role="UNKNOWN">m</XMTok>
+            <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> where <Math mode="inline" tex="m_{b}" text="m _ b" xml:id="p7.m3">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+            <XMTok font="italic" role="UNKNOWN">m</XMTok>
+            <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> is
+the boson mass <cite class="ltx_citemacro_cite"><bibref bibrefs="21" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>. Hence we have a universal description of
+the physics underlying the formation process: once the collapse
+proceeds far enough (uncertainty, interaction or degeneracy) pressure
+results in a bounce, the outgoing shock wave carrying away the
+binding energy. The virial argument above is circumvented because
+the ejected matter invalidates its assumption that there is no flow
+through the boundary.</p>
+  </para>
+<!--  %........... -->  <para xml:id="p8">
+    <p>In this letter we verify the above picture for the formation of the
+fermion star from a cold nonequilibrium configuration. The dynamical
+Thomas-Fermi theory was given long ago by Bloch for the electron gas
+<cite class="ltx_citemacro_cite"><bibref bibrefs="22" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>, and amounts to Euler’s equations for irrotational flow
+together with an equation of state <Math mode="inline" tex="P=P(\rho)" text="P = P * rho" xml:id="p8.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMDual>
+                <XMRef idref="p8.m1.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMTok font="italic" name="rho" role="UNKNOWN" xml:id="p8.m1.1">ρ</XMTok>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>. The problem is
+that, transcribed to the self-gravitating fermion gas, there is the
+Jeans instability, signalled by an imaginary plasma frequency, and
+thus short-wavelength shocks must be regulated. The usual remedy is
+to introduce some small numerical viscosity; however it seems
+imprudent to draw conclusions based on introducing dissipation into
+what is fundamentally a dissipationless process. Here we take
+another, literally conservative approach.
+<!--  %**** form.tex Line 150 **** --></p>
+  </para>
+  <para xml:id="p9">
+    <p>In the Newtonian limit a self-interacting boson star is governed by
+the Gross-Pitaevskii-like equations
+<!--  %............. 
+     %EQ 1--></p>
+    <equationgroup xml:id="S0.E1">
+      <equation frefnum="(1a)" refnum="1a" xml:id="S0.E1.1">
+        <Math mode="display" tex="i\frac{\partial\psi}{\partial t}\;=\;\left[-\frac{\Delta}{2m_{b}}+V\left(|\psi%&#10;|^{2}\right)+m_{b}\varphi\right]\;\psi" text="i * (partial-differential@(psi) / partial-differential@(t)) = delimited-[]@((- Delta / (2 * m _ b)) + V * (absolute-value@(psi)) ^ 2 + m _ b * varphi) * psi" xml:id="S0.E1.1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP" rpadding="2.8pt">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">i</XMTok>
+                <XMApp rpadding="2.8pt">
+                  <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                  <XMApp>
+                    <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                    <XMTok font="italic" name="psi" role="UNKNOWN">ψ</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMDual>
+                  <XMApp>
+                    <XMTok meaning="delimited-[]"/>
+                    <XMRef idref="S0.E1.1.m1.2"/>
+                  </XMApp>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="true">[</XMTok>
+                    <XMApp xml:id="S0.E1.1.m1.2">
+                      <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                      <XMApp>
+                        <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                        <XMApp>
+                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                          <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok meaning="2" role="NUMBER">2</XMTok>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post5"/>
+                              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                        <XMDual>
+                          <XMRef idref="S0.E1.1.m1.2.1"/>
+                          <XMWrap>
+                            <XMTok role="OPEN" stretchy="true">(</XMTok>
+                            <XMApp xml:id="S0.E1.1.m1.2.1">
+                              <XMTok role="SUPERSCRIPTOP" scriptpos="post5"/>
+                              <XMDual>
+                                <XMApp>
+                                  <XMTok meaning="absolute-value"/>
+                                  <XMRef idref="S0.E1.1.m1.1"/>
+                                </XMApp>
+                                <XMWrap>
+                                  <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                                  <XMTok font="italic" name="psi" role="UNKNOWN" xml:id="S0.E1.1.m1.1">ψ</XMTok>
+                                  <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                                </XMWrap>
+                              </XMDual>
+                              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                            </XMApp>
+                            <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                          <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+                        </XMApp>
+                        <XMTok font="italic" name="varphi" role="UNKNOWN">φ</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok role="CLOSE" rpadding="2.8pt" stretchy="true">]</XMTok>
+                  </XMWrap>
+                </XMDual>
+                <XMTok font="italic" name="psi" role="UNKNOWN">ψ</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+      </equation>
+      <equation frefnum="(1b)" refnum="1b" xml:id="S0.E1.2">
+        <Math mode="display" tex="\Delta\varphi\;=\;4\pi G\;|\psi|^{2}\;," text="Delta * varphi = 4 * pi * G * (absolute-value@(psi)) ^ 2" xml:id="S0.E1.2.m1">
+          <XMath>
+            <XMDual>
+              <XMRef idref="S0.E1.2.m1.2"/>
+              <XMWrap>
+                <XMApp xml:id="S0.E1.2.m1.2">
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                    <XMTok font="italic" name="varphi" role="UNKNOWN" rpadding="2.8pt">φ</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="4" role="NUMBER"> 4</XMTok>
+                    <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                    <XMTok font="italic" role="UNKNOWN" rpadding="2.8pt">G</XMTok>
+                    <XMApp rpadding="2.8pt">
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                      <XMDual>
+                        <XMApp>
+                          <XMTok meaning="absolute-value"/>
+                          <XMRef idref="S0.E1.2.m1.1"/>
+                        </XMApp>
+                        <XMWrap>
+                          <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                          <XMTok font="italic" name="psi" role="UNKNOWN" xml:id="S0.E1.2.m1.1">ψ</XMTok>
+                          <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="PUNCT">,</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>
+      </equation>
+    </equationgroup>
+    <p>where for convenience we have absorbed the boson mass <Math mode="inline" tex="m_{b}" text="m _ b" xml:id="p9.m1">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+            <XMTok font="italic" role="UNKNOWN">m</XMTok>
+            <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> in the
+field. Using the ansatz <Math mode="inline" tex="\psi=\sqrt{\rho}" text="psi = square-root@(rho)" xml:id="p9.m2">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" name="psi" role="UNKNOWN">ψ</XMTok>
+            <XMApp>
+              <XMTok meaning="square-root"/>
+              <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math> exp ( - <Math mode="inline" tex="im_{b}\theta" text="i * m _ b * theta" xml:id="p9.m3">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">i</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+            </XMApp>
+            <XMTok font="italic" name="theta" role="UNKNOWN">θ</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>), we arrive at
+<!--  %EQ 2 --></p>
+    <equationgroup xml:id="S0.E2">
+      <equation frefnum="(2a)" refnum="2a" xml:id="S0.E2.1">
+        <Math mode="display" tex="\frac{\partial\rho}{\partial t}\;=\;\vec{\nabla}\cdot(\rho\vec{\nabla}\theta)" text="partial-differential@(rho) / partial-differential@(t) = vec@(nabla) cdot (rho * vec@(nabla) * theta)" xml:id="S0.E2.1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP" rpadding="2.8pt">=</XMTok>
+              <XMApp rpadding="2.8pt">
+                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                <XMApp>
+                  <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                  <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok name="cdot" role="MULOP">⋅</XMTok>
+                <XMApp>
+                  <XMTok name="vec" role="OVERACCENT" stretchy="false">→</XMTok>
+                  <XMTok name="nabla" role="OPERATOR">∇</XMTok>
+                </XMApp>
+                <XMDual>
+                  <XMRef idref="S0.E2.1.m1.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMApp xml:id="S0.E2.1.m1.1">
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                      <XMApp>
+                        <XMTok name="vec" role="OVERACCENT" stretchy="false">→</XMTok>
+                        <XMTok name="nabla" role="OPERATOR">∇</XMTok>
+                      </XMApp>
+                      <XMTok font="italic" name="theta" role="UNKNOWN">θ</XMTok>
+                    </XMApp>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+      </equation>
+      <equation frefnum="(2b)" labels="LABEL:eq2b" refnum="2b" xml:id="S0.E2.2">
+        <Math mode="display" tex="\frac{\partial\theta}{\partial t}\;=\;\frac{(\vec{\nabla}\theta)^{2}}{2}+\frac%&#10;{1}{m_{b}}\;V(\rho)+\varphi-\frac{1}{2m_{b}^{2}\sqrt{\rho}}\;\Delta\sqrt{\rho}%&#10;\;\;." text="partial-differential@(theta) / partial-differential@(t) = ((vec@(nabla) * theta) ^ 2 / 2 + (1 / m _ b) * V * rho + varphi) - (1 / (2 * (m _ b) ^ 2 * square-root@(rho))) * Delta * square-root@(rho)" xml:id="S0.E2.2.m1">
+          <XMath>
+            <XMDual>
+              <XMRef idref="S0.E2.2.m1.3"/>
+              <XMWrap>
+                <XMApp xml:id="S0.E2.2.m1.3">
+                  <XMTok meaning="equals" role="RELOP" rpadding="2.8pt">=</XMTok>
+                  <XMApp rpadding="2.8pt">
+                    <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                    <XMApp>
+                      <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                      <XMTok font="italic" name="theta" role="UNKNOWN">θ</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                    <XMApp>
+                      <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                      <XMApp>
+                        <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                          <XMDual>
+                            <XMRef idref="S0.E2.2.m1.1"/>
+                            <XMWrap>
+                              <XMTok role="OPEN" stretchy="false">(</XMTok>
+                              <XMApp xml:id="S0.E2.2.m1.1">
+                                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                <XMApp>
+                                  <XMTok name="vec" role="OVERACCENT" stretchy="false">→</XMTok>
+                                  <XMTok name="nabla" role="OPERATOR">∇</XMTok>
+                                </XMApp>
+<!--  %**** form.tex Line 175 **** -->                                <XMTok font="italic" name="theta" role="UNKNOWN">θ</XMTok>
+                              </XMApp>
+                              <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                            </XMWrap>
+                          </XMDual>
+                          <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                        </XMApp>
+                        <XMTok meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMApp rpadding="2.8pt">
+                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                          <XMTok meaning="1" role="NUMBER">1</XMTok>
+                          <XMApp>
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                            <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                        <XMDual>
+                          <XMRef idref="S0.E2.2.m1.2"/>
+                          <XMWrap>
+                            <XMTok role="OPEN" stretchy="false">(</XMTok>
+                            <XMTok font="italic" name="rho" role="UNKNOWN" xml:id="S0.E2.2.m1.2">ρ</XMTok>
+                            <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                      </XMApp>
+                      <XMTok font="italic" name="varphi" role="UNKNOWN">φ</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMApp rpadding="2.8pt">
+                        <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                        <XMTok meaning="1" role="NUMBER">1</XMTok>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok meaning="2" role="NUMBER">2</XMTok>
+                          <XMApp>
+                            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+                            </XMApp>
+                            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="square-root"/>
+                            <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                      <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                      <XMApp rpadding="5.6pt">
+                        <XMTok meaning="square-root"/>
+                        <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="PERIOD">.</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>
+      </equation>
+    </equationgroup>
+  </para>
+  <para xml:id="p10">
+    <p>The Thomas-Fermi limit is governed by <Math mode="inline" tex="m_{b}\gg|\vec{\nabla}\rho|\;/\rho" text="m _ b &gt;&gt; absolute-value@(vec@(nabla) * rho) / rho" xml:id="p10.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="much-greater-than" name="gg" role="RELOP">≫</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+            </XMApp>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="absolute-value"/>
+                  <XMRef idref="p10.m1.1"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                  <XMApp xml:id="p10.m1.1">
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp>
+                      <XMTok name="vec" role="OVERACCENT" stretchy="false">→</XMTok>
+                      <XMTok name="nabla" role="OPERATOR">∇</XMTok>
+                    </XMApp>
+                    <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                  </XMApp>
+                  <XMTok role="VERTBAR" rpadding="2.8pt" stretchy="false">|</XMTok>
+                </XMWrap>
+              </XMDual>
+              <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>. Thus neglecting the last term in (<ref labelref="LABEL:eq2b"/>), Bloch’s equations
+are recovered, with <Math mode="inline" tex="\theta" text="theta" xml:id="p10.m2">
+        <XMath>
+          <XMTok font="italic" name="theta" role="UNKNOWN">θ</XMTok>
+        </XMath>
+      </Math> being the velocity potential and
+<Math mode="inline" tex="V(\rho)" text="V * rho" xml:id="p10.m3">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">V</XMTok>
+            <XMDual>
+              <XMRef idref="p10.m3.1"/>
+              <XMWrap>
+                <XMTok role="OPEN" stretchy="false">(</XMTok>
+                <XMTok font="italic" name="rho" role="UNKNOWN" xml:id="p10.m3.1">ρ</XMTok>
+                <XMTok role="CLOSE" stretchy="false">)</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMApp>
+        </XMath>
+      </Math> given by
+<!--  %EQ 3 --></p>
+    <equation frefnum="(3)" labels="LABEL:eq3" refnum="3" xml:id="S0.E3">
+      <Math mode="display" tex="V(\rho)\;=\;m_{b}\;\int\;\frac{dP}{\rho}\;." text="V * rho = m _ b * integral@((d * P) / rho)" xml:id="S0.E3.m1">
+        <XMath>
+          <XMDual>
+            <XMRef idref="S0.E3.m1.2"/>
+            <XMWrap>
+              <XMApp xml:id="S0.E3.m1.2">
+                <XMTok meaning="equals" role="RELOP" rpadding="2.8pt">=</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                  <XMDual>
+                    <XMRef idref="S0.E3.m1.1"/>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="false">(</XMTok>
+                      <XMTok font="italic" name="rho" role="UNKNOWN" xml:id="S0.E3.m1.1">ρ</XMTok>
+                      <XMTok role="CLOSE" rpadding="2.8pt" stretchy="false">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMApp rpadding="2.8pt">
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP" rpadding="2.8pt">∫</XMTok>
+                    <XMApp rpadding="2.8pt">
+                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">d</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                      </XMApp>
+                      <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+              <XMTok role="PERIOD">.</XMTok>
+            </XMWrap>
+          </XMDual>
+        </XMath>
+      </Math>
+    </equation>
+    <p>For a general polytropic equation of state
+<!--  %EQ 4 --></p>
+    <equation frefnum="(4)" refnum="4" xml:id="S0.E4">
+      <Math mode="display" tex="P(\rho)\;=\;K\;\rho^{1+1/n}" text="P * rho = K * rho ^ (1 + 1 / n)" xml:id="S0.E4.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP" rpadding="2.8pt">=</XMTok>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMDual>
+                <XMRef idref="S0.E4.m1.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMTok font="italic" name="rho" role="UNKNOWN" xml:id="S0.E4.m1.1">ρ</XMTok>
+                  <XMTok role="CLOSE" rpadding="2.8pt" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN" rpadding="2.8pt">K</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                    <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>
+    </equation>
+    <p>eq.(<ref labelref="LABEL:eq3"/>) yields
+<!--  %EQ 5 --></p>
+    <equation frefnum="(5)" labels="LABEL:eq5" refnum="5" xml:id="S0.E5">
+      <Math mode="display" tex="V(\rho)\;=\;(n+1)\;Km_{b}\;\rho^{1/n}\;." text="V * rho = (n + 1) * K * m _ b * rho ^ (1 / n)" xml:id="S0.E5.m1">
+        <XMath>
+          <XMDual>
+            <XMRef idref="S0.E5.m1.2"/>
+            <XMWrap>
+              <XMApp xml:id="S0.E5.m1.2">
+                <XMTok meaning="equals" role="RELOP" rpadding="2.8pt">=</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                  <XMDual>
+                    <XMRef idref="S0.E5.m1.1"/>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="false">(</XMTok>
+                      <XMTok font="italic" name="rho" role="UNKNOWN" xml:id="S0.E5.m1.1">ρ</XMTok>
+                      <XMTok role="CLOSE" rpadding="2.8pt" stretchy="false">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMDual>
+                    <XMRef idref="S0.E5.m1.2.1"/>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="false">(</XMTok>
+                      <XMApp xml:id="S0.E5.m1.2.1">
+                        <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                        <XMTok meaning="1" role="NUMBER">1</XMTok>
+                      </XMApp>
+                      <XMTok role="CLOSE" rpadding="2.8pt" stretchy="false">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                  <XMTok font="italic" role="UNKNOWN">K</XMTok>
+                  <XMApp rpadding="2.8pt">
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+                  </XMApp>
+                  <XMApp rpadding="2.8pt">
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+              <XMTok role="PERIOD">.</XMTok>
+<!--  %**** form.tex Line 200 **** -->            </XMWrap>
+          </XMDual>
+        </XMath>
+      </Math>
+    </equation>
+    <p>Using the potential (<ref labelref="LABEL:eq5"/>) and introducing
+<!--  %EQ 6 --></p>
+    <equationgroup xml:id="S0.E6">
+      <equation frefnum="(6a)" refnum="6a" xml:id="S0.E6.1">
+        <Math mode="display" tex="R_{*}\equiv\frac{\Lambda}{m_{b}}\equiv\frac{\left[(n+1)K\right]^{n/2}}{\sqrt{4%&#10;\pi G}}" text="R _ * equivalent-to Lambda / m _ b equivalent-to (delimited-[]@((n + 1) * K)) ^ (n / 2) / square-root@(4 * pi * G)" xml:id="S0.E6.1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+              </XMApp>
+              <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
+              <XMApp>
+                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                  <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
+              <XMApp>
+                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                  <XMDual>
+                    <XMApp>
+                      <XMTok meaning="delimited-[]"/>
+                      <XMRef idref="S0.E6.1.m1.1"/>
+                    </XMApp>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="true">[</XMTok>
+                      <XMApp xml:id="S0.E6.1.m1.1">
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMDual>
+                          <XMRef idref="S0.E6.1.m1.1.1"/>
+                          <XMWrap>
+                            <XMTok role="OPEN" stretchy="false">(</XMTok>
+                            <XMApp xml:id="S0.E6.1.m1.1.1">
+                              <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                              <XMTok meaning="1" role="NUMBER">1</XMTok>
+                            </XMApp>
+                            <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                        <XMTok font="italic" role="UNKNOWN">K</XMTok>
+                      </XMApp>
+                      <XMTok role="CLOSE" stretchy="true">]</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="square-root"/>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="4" role="NUMBER">4</XMTok>
+                    <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">G</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+      </equation>
+      <equation frefnum="(6b)" refnum="6b" xml:id="S0.E6.2">
+        <Math mode="display" tex="M_{*}\;=\;\frac{R_{*}}{G}" text="M _ * = R _ * / G" xml:id="S0.E6.2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP" rpadding="2.8pt">=</XMTok>
+              <XMApp rpadding="2.8pt">
+                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+                </XMApp>
+                <XMTok font="italic" role="UNKNOWN">G</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+      </equation>
+    </equationgroup>
+    <p>as the length and mass scales, respectively, the substitution
+<!--  %EQ 7 --></p>
+    <equation frefnum="(7)" refnum="7" xml:id="S0.E7">
+      <Math mode="display" tex="\psi\;=\;\frac{\Psi}{\left[(n+1)K\right]^{n/2}}" text="psi = Psi / (delimited-[]@((n + 1) * K)) ^ (n / 2)" xml:id="S0.E7.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP" rpadding="2.8pt">=</XMTok>
+            <XMTok font="italic" name="psi" role="UNKNOWN" rpadding="2.8pt">ψ</XMTok>
+            <XMApp>
+              <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+              <XMTok name="Psi" role="UNKNOWN">Ψ</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                <XMDual>
+                  <XMApp>
+                    <XMTok meaning="delimited-[]"/>
+                    <XMRef idref="S0.E7.m1.1"/>
+                  </XMApp>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="true">[</XMTok>
+                    <XMApp xml:id="S0.E7.m1.1">
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMDual>
+                        <XMRef idref="S0.E7.m1.1.1"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="false">(</XMTok>
+                          <XMApp xml:id="S0.E7.m1.1.1">
+                            <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                            <XMTok meaning="1" role="NUMBER">1</XMTok>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMTok font="italic" role="UNKNOWN">K</XMTok>
+                    </XMApp>
+                    <XMTok role="CLOSE" stretchy="true">]</XMTok>
+                  </XMWrap>
+                </XMDual>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>
+    </equation>
+    <p>yields the dimensionless equations
+<!--  %EQ 8 --></p>
+    <equationgroup xml:id="S0.E8">
+      <equation frefnum="(8a)" labels="LABEL:eq8a" refnum="8a" xml:id="S0.E8.1">
+        <Math mode="display" tex="\frac{i}{\Lambda}\;\frac{\partial\Psi}{\partial t}\;=\;\left[-\frac{\Delta}{2%&#10;\Lambda^{2}}+\varphi+|\Psi|^{2/n}\right]\;\Psi" text="(i / Lambda) * (partial-differential@(Psi) / partial-differential@(t)) = delimited-[]@((- Delta / (2 * Lambda ^ 2)) + varphi + (absolute-value@(Psi)) ^ (2 / n)) * Psi" xml:id="S0.E8.1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP" rpadding="2.8pt">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp rpadding="2.8pt">
+                  <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                  <XMTok font="italic" role="UNKNOWN">i</XMTok>
+                  <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+                </XMApp>
+                <XMApp rpadding="2.8pt">
+                  <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                  <XMApp>
+                    <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                    <XMTok name="Psi" role="UNKNOWN">Ψ</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMDual>
+                  <XMApp>
+                    <XMTok meaning="delimited-[]"/>
+                    <XMRef idref="S0.E8.1.m1.2"/>
+                  </XMApp>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="true">[</XMTok>
+                    <XMApp xml:id="S0.E8.1.m1.2">
+                      <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                      <XMApp>
+                        <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                        <XMApp>
+                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                          <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok meaning="2" role="NUMBER">2</XMTok>
+                            <XMApp>
+                              <XMTok role="SUPERSCRIPTOP" scriptpos="post5"/>
+                              <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+                              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                      <XMTok font="italic" name="varphi" role="UNKNOWN">φ</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                        <XMDual>
+                          <XMApp>
+                            <XMTok meaning="absolute-value"/>
+                            <XMRef idref="S0.E8.1.m1.1"/>
+                          </XMApp>
+                          <XMWrap>
+                            <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                            <XMTok name="Psi" role="UNKNOWN" xml:id="S0.E8.1.m1.1">Ψ</XMTok>
+                            <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                        <XMApp>
+                          <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                          <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok role="CLOSE" rpadding="2.8pt" stretchy="true">]</XMTok>
+                  </XMWrap>
+                </XMDual>
+                <XMTok name="Psi" role="UNKNOWN">Ψ</XMTok>
+<!--  %**** form.tex Line 225 **** -->              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+      </equation>
+      <equation frefnum="(8b)" refnum="8b" xml:id="S0.E8.2">
+        <Math mode="display" tex="\Delta\varphi\;=\;|\Psi|^{2}\;." text="Delta * varphi = (absolute-value@(Psi)) ^ 2" xml:id="S0.E8.2.m1">
+          <XMath>
+            <XMDual>
+              <XMRef idref="S0.E8.2.m1.2"/>
+              <XMWrap>
+                <XMApp xml:id="S0.E8.2.m1.2">
+                  <XMTok meaning="equals" role="RELOP" rpadding="2.8pt">=</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                    <XMTok font="italic" name="varphi" role="UNKNOWN" rpadding="2.8pt">φ</XMTok>
+                  </XMApp>
+                  <XMApp rpadding="2.8pt">
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="absolute-value"/>
+                        <XMRef idref="S0.E8.2.m1.1"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                        <XMTok name="Psi" role="UNKNOWN" xml:id="S0.E8.2.m1.1">Ψ</XMTok>
+                        <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="PERIOD">.</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>
+      </equation>
+    </equationgroup>
+    <p>The validity of the Newtonian approximation in the static case requires
+<!--  %EQ 9 --></p>
+    <equation frefnum="(9)" refnum="9" xml:id="S0.E9">
+      <Math mode="display" tex="M/M_{*}\;=\;(4\pi)^{-1}\int\;d^{3}r\;|\Psi|^{2}\ll 1\;,\hskip 14.226378ptn&lt;3\;." text="formulae@(M / M _ * = (4 * pi) ^ (- 1) * integral@(d ^ 3 * r * (absolute-value@(Psi)) ^ 2) lessless 1, n less 3)" xml:id="S0.E9.m1">
+        <XMath>
+          <XMDual>
+            <XMRef idref="S0.E9.m1.2"/>
+            <XMWrap>
+              <XMDual xml:id="S0.E9.m1.2">
+                <XMApp>
+                  <XMTok meaning="formulae"/>
+                  <XMRef idref="S0.E9.m1.2.1"/>
+                  <XMRef idref="S0.E9.m1.2.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMApp xml:id="S0.E9.m1.2.1">
+                    <XMTok meaning="multirelation"/>
+                    <XMApp>
+                      <XMTok meaning="divide" role="MULOP">/</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                      <XMApp rpadding="2.8pt">
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                        <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                        <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok meaning="equals" role="RELOP" rpadding="2.8pt">=</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                        <XMDual>
+                          <XMRef idref="S0.E9.m1.2.1.1"/>
+                          <XMWrap>
+                            <XMTok role="OPEN" stretchy="false">(</XMTok>
+                            <XMApp xml:id="S0.E9.m1.2.1.1">
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok meaning="4" role="NUMBER">4</XMTok>
+                              <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                            </XMApp>
+                            <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                        <XMApp>
+                          <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                          <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                        </XMApp>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP" rpadding="2.8pt">∫</XMTok>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMApp>
+                            <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                            <XMTok font="italic" role="UNKNOWN">d</XMTok>
+                            <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                          </XMApp>
+                          <XMTok font="italic" role="UNKNOWN" rpadding="2.8pt">r</XMTok>
+                          <XMApp>
+                            <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                            <XMDual>
+                              <XMApp>
+                                <XMTok meaning="absolute-value"/>
+                                <XMRef idref="S0.E9.m1.1"/>
+                              </XMApp>
+                              <XMWrap>
+                                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                                <XMTok name="Psi" role="UNKNOWN" xml:id="S0.E9.m1.1">Ψ</XMTok>
+                                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                              </XMWrap>
+                            </XMDual>
+                            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok meaning="much-less-than" name="ll" role="RELOP">≪</XMTok>
+                    <XMTok meaning="1" role="NUMBER" rpadding="2.8pt">1</XMTok>
+                  </XMApp>
+                  <XMTok role="PUNCT" rpadding="14.2pt">,</XMTok>
+                  <XMApp xml:id="S0.E9.m1.2.2">
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                    <XMTok meaning="3" role="NUMBER" rpadding="2.8pt">3</XMTok>
+                  </XMApp>
+                </XMWrap>
+              </XMDual>
+              <XMTok role="PERIOD">.</XMTok>
+            </XMWrap>
+          </XMDual>
+        </XMath>
+      </Math>
+    </equation>
+    <p>For weakly interacting degenerate fermions, the
+polytropic index is <Math mode="inline" tex="n" text="n" xml:id="p10.m4">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">n</XMTok>
+        </XMath>
+      </Math> = 3/2, and
+<!--  %%EQ 10 --></p>
+    <equationgroup xml:id="S0.E10">
+      <equation frefnum="(10a)" refnum="10a" xml:id="S0.E10.1">
+        <Math mode="display" tex="R_{*}\;=\;\left(\frac{9\pi^{2}}{32g_{f}^{2}}\right)^{1/4}\;\frac{m_{\rm Pl}}{m%&#10;_{f}^{2}}\;=\;0.2325\;\left(\frac{\mbox{keV}}{m_{f}}\right)^{2}\;\sqrt{\frac{2%&#10;}{g_{f}}}\;{\rm lyr}\;," text="R _ * = ((9 * pi ^ 2) / (32 * (g _ f) ^ 2)) ^ (1 / 4) * (m _ Pl / (m _ f) ^ 2) = 0.2325 * ([keV] / m _ f) ^ 2 * square-root@(2 / g _ f) * lyr" xml:id="S0.E10.1.m1">
+          <XMath>
+            <XMDual>
+              <XMRef idref="S0.E10.1.m1.3"/>
+              <XMWrap>
+                <XMApp xml:id="S0.E10.1.m1.3">
+                  <XMTok meaning="multirelation"/>
+                  <XMApp rpadding="2.8pt">
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                    <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                    <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+                  </XMApp>
+                  <XMTok meaning="equals" role="RELOP" rpadding="2.8pt">=</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp rpadding="2.8pt">
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                      <XMDual>
+                        <XMRef idref="S0.E10.1.m1.1"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="true">(</XMTok>
+                          <XMApp xml:id="S0.E10.1.m1.1">
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok meaning="9" role="NUMBER">9</XMTok>
+                              <XMApp>
+                                <XMTok role="SUPERSCRIPTOP" scriptpos="post5"/>
+                                <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                              </XMApp>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok meaning="32" role="NUMBER">32</XMTok>
+                              <XMApp>
+                                <XMTok role="SUPERSCRIPTOP" scriptpos="post5"/>
+                                <XMApp>
+                                  <XMTok role="SUBSCRIPTOP" scriptpos="post5"/>
+                                  <XMTok font="italic" role="UNKNOWN">g</XMTok>
+                                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">f</XMTok>
+                                </XMApp>
+                                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                              </XMApp>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMApp>
+                        <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                        <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                        <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMApp rpadding="2.8pt">
+                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                        <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                        <XMTok fontsize="70%" role="UNKNOWN">Pl</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                          <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">f</XMTok>
+                        </XMApp>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="0.2325" role="NUMBER" rpadding="2.8pt"> 0.2325</XMTok>
+                    <XMApp rpadding="2.8pt">
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                      <XMDual>
+                        <XMRef idref="S0.E10.1.m1.2"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="true">(</XMTok>
+                          <XMApp xml:id="S0.E10.1.m1.2">
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMText>keV</XMText>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post5"/>
+                              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">f</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMApp rpadding="2.8pt">
+                      <XMTok meaning="square-root"/>
+                      <XMApp>
+                        <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                        <XMTok meaning="2" role="NUMBER">2</XMTok>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post5"/>
+                          <XMTok font="italic" role="UNKNOWN">g</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">f</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok role="UNKNOWN" rpadding="2.8pt">lyr</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="PUNCT">,</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>
+      </equation>
+      <equation frefnum="(10b)" refnum="10b" xml:id="S0.E10.2">
+        <Math mode="display" tex="M_{*}\;=\;\mbox{1.185}\left(\frac{{\rm keV}}{m_{f}}\right)^{2}\;\sqrt{\frac{2}%&#10;{g_{f}}}\times 10^{11}\;M_{\odot}\;," text="M _ * = [1.185] * (keV / m _ f) ^ 2 * square-root@(2 / g _ f) * 10 ^ 11 * M _ direct-product" xml:id="S0.E10.2.m1">
+          <XMath>
+            <XMDual>
+              <XMRef idref="S0.E10.2.m1.2"/>
+              <XMWrap>
+                <XMApp xml:id="S0.E10.2.m1.2">
+                  <XMTok meaning="equals" role="RELOP" rpadding="2.8pt">=</XMTok>
+                  <XMApp rpadding="2.8pt">
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                    <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                    <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">×</XMTok>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMText>1.185</XMText>
+                        <XMApp rpadding="2.8pt">
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                          <XMDual>
+                            <XMRef idref="S0.E10.2.m1.1"/>
+                            <XMWrap>
+                              <XMTok role="OPEN" stretchy="true">(</XMTok>
+                              <XMApp xml:id="S0.E10.2.m1.1">
+                                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                                <XMTok role="UNKNOWN">keV</XMTok>
+                                <XMApp>
+                                  <XMTok role="SUBSCRIPTOP" scriptpos="post5"/>
+                                  <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">f</XMTok>
+                                </XMApp>
+                              </XMApp>
+                              <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                            </XMWrap>
+                          </XMDual>
+                          <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="square-root"/>
+                          <XMApp>
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMTok meaning="2" role="NUMBER">2</XMTok>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post5"/>
+                              <XMTok font="italic" role="UNKNOWN">g</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">f</XMTok>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                      <XMApp rpadding="2.8pt">
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                        <XMTok meaning="10" role="NUMBER">10</XMTok>
+                        <XMTok fontsize="70%" meaning="11" role="NUMBER">11</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMApp rpadding="2.8pt">
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                      <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                      <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="PUNCT">,</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>
+      </equation>
+<!--  %**** form.tex Line 250 **** -->    </equationgroup>
+    <p>where <Math mode="inline" tex="g_{f}" text="g _ f" xml:id="p10.m5">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+            <XMTok font="italic" role="UNKNOWN">g</XMTok>
+            <XMTok font="italic" fontsize="70%" role="UNKNOWN">f</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> is the spin degeneracy and <Math mode="inline" tex="m_{\rm Pl}" text="m _ Pl" xml:id="p10.m6">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+            <XMTok font="italic" role="UNKNOWN">m</XMTok>
+            <XMTok fontsize="70%" role="UNKNOWN">Pl</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> is the Planck
+mass. By construction a large but finite <Math mode="inline" tex="\Lambda" text="Lambda" xml:id="p10.m7">
+        <XMath>
+          <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+        </XMath>
+      </Math> allows us to
+simulate the fermionic problem as a bosonic one through their mutual
+Thomas-Fermi limits, while providing an explicitly energy conserving
+way of controlling the shocks. The basic regulating mechanism is the
+“kinetic” part of (<ref labelref="LABEL:eq8a"/>) which penalises gradients of order
+<Math mode="inline" tex="\Lambda" text="Lambda" xml:id="p10.m8">
+        <XMath>
+          <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+        </XMath>
+      </Math>. Of course, <Math mode="inline" tex="\Lambda" text="Lambda" xml:id="p10.m9">
+        <XMath>
+          <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+        </XMath>
+      </Math> must be sufficiently large that this
+term does not change the static scaling relationship</p>
+    <equation frefnum="(11)" refnum="11" xml:id="S0.E11">
+      <Math mode="display" tex="M\;R^{\left(\frac{3-n}{n-1}\right)}\;=\;{\rm const}" text="M * R ^ ((3 - n) / (n - 1)) = const" xml:id="S0.E11.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP" rpadding="2.8pt">=</XMTok>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN" rpadding="2.8pt">M</XMTok>
+              <XMApp rpadding="2.8pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMDual>
+                  <XMRef idref="S0.E11.m1.1"/>
+                  <XMWrap>
+                    <XMTok fontsize="70%" role="OPEN" stretchy="true">(</XMTok>
+                    <XMApp xml:id="S0.E11.m1.1">
+                      <XMTok mathstyle="script" meaning="divide" role="FRACOP"/>
+                      <XMApp>
+                        <XMTok fontsize="50%" meaning="minus" role="ADDOP">-</XMTok>
+                        <XMTok fontsize="50%" meaning="3" role="NUMBER">3</XMTok>
+                        <XMTok font="italic" fontsize="50%" role="UNKNOWN">n</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok fontsize="50%" meaning="minus" role="ADDOP">-</XMTok>
+                        <XMTok font="italic" fontsize="50%" role="UNKNOWN">n</XMTok>
+                        <XMTok fontsize="50%" meaning="1" role="NUMBER">1</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok fontsize="70%" role="CLOSE" stretchy="true">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+            </XMApp>
+            <XMTok role="UNKNOWN">const</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>
+    </equation>
+    <p>arising from the polytropic equation of state. Our criterion is that
+the ratio of “kinetic” and “pressure” contributions to the static
+energy functional should be small, in particular for a Gaussian <Math mode="inline" tex="\Psi=\alpha\;{\rm exp}\;\left[-(r/\beta)^{2}\right]" text="Psi = alpha * exp * delimited-[]@(- (r / beta) ^ 2)" xml:id="p10.m10">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok name="Psi" role="UNKNOWN">Ψ</XMTok>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" name="alpha" role="UNKNOWN" rpadding="2.8pt">α</XMTok>
+              <XMTok role="UNKNOWN" rpadding="2.8pt">exp</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="delimited-[]"/>
+                  <XMRef idref="p10.m10.1"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="true">[</XMTok>
+                  <XMApp xml:id="p10.m10.1">
+                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                      <XMDual>
+                        <XMRef idref="p10.m10.1.1"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="false">(</XMTok>
+                          <XMApp xml:id="p10.m10.1.1">
+                            <XMTok meaning="divide" role="MULOP">/</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                            <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="true">]</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>
+<!--  %EQ 12 --></p>
+    <equation frefnum="(12)" refnum="12" xml:id="S0.E12">
+      <Math mode="display" tex="\frac{T[\Psi]}{P[\Psi]}\;=\;\left(1+\frac{1}{n}\right)^{3/2}\;\frac{3}{2\;%&#10;\Lambda^{2}\;\beta^{2}\;\alpha^{2/n}}\;." text="(T * delimited-[]@(Psi)) / (P * delimited-[]@(Psi)) = (1 + 1 / n) ^ (3 / 2) * (3 / (2 * Lambda ^ 2 * beta ^ 2 * alpha ^ (2 / n)))" xml:id="S0.E12.m1">
+        <XMath>
+          <XMDual>
+            <XMRef idref="S0.E12.m1.3"/>
+            <XMWrap>
+              <XMApp xml:id="S0.E12.m1.3">
+                <XMTok meaning="equals" role="RELOP" rpadding="2.8pt">=</XMTok>
+                <XMApp rpadding="2.8pt">
+                  <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="delimited-[]"/>
+                        <XMRef idref="S0.E12.m1.1"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">[</XMTok>
+                        <XMTok name="Psi" role="UNKNOWN" xml:id="S0.E12.m1.1">Ψ</XMTok>
+                        <XMTok role="CLOSE" stretchy="false">]</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="delimited-[]"/>
+                        <XMRef idref="S0.E12.m1.2"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">[</XMTok>
+                        <XMTok name="Psi" role="UNKNOWN" xml:id="S0.E12.m1.2">Ψ</XMTok>
+                        <XMTok role="CLOSE" stretchy="false">]</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMApp rpadding="2.8pt">
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMDual>
+                      <XMRef idref="S0.E12.m1.3.1"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="true">(</XMTok>
+                        <XMApp xml:id="S0.E12.m1.3.1">
+                          <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                          <XMTok meaning="1" role="NUMBER">1</XMTok>
+                          <XMApp>
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMTok meaning="1" role="NUMBER">1</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                      <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp rpadding="2.8pt">
+                    <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                    <XMTok meaning="3" role="NUMBER">3</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok meaning="2" role="NUMBER" rpadding="2.8pt">2</XMTok>
+                      <XMApp rpadding="2.8pt">
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                        <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                      <XMApp rpadding="2.8pt">
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                        <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                        <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+                        <XMApp>
+                          <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                          <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+              <XMTok role="PERIOD">.</XMTok>
+            </XMWrap>
+          </XMDual>
+        </XMath>
+      </Math>
+    </equation>
+    <p>For <Math mode="inline" tex="n" text="n" xml:id="p10.m11">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">n</XMTok>
+        </XMath>
+      </Math> = 3/2 this is independent of the size <Math mode="inline" tex="\beta" text="beta" xml:id="p10.m12">
+        <XMath>
+          <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
+        </XMath>
+      </Math> for a given
+mass, yielding the weak condition <Math mode="inline" tex="\Lambda\gg" text="Lambda &gt;&gt; absent" xml:id="p10.m13">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="much-greater-than" name="gg" role="RELOP">≫</XMTok>
+            <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+            <XMTok meaning="absent"/>
+          </XMApp>
+        </XMath>
+      </Math> 0.97
+(<Math mode="inline" tex="M_{*}/M" text="M _ * / M" xml:id="p10.m14">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="divide" role="MULOP">/</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">M</XMTok>
+              <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+            </XMApp>
+            <XMTok font="italic" role="UNKNOWN">M</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>)<Math mode="inline" tex="{}^{1/3}" text="^1 / 3" xml:id="p10.m15">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+            <XMApp>
+              <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+              <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>.</p>
+  </para>
+<!--  %**** form.tex Line 275 **** -->  <figure frefnum="Figure 1" labels="LABEL:fig1" refnum="1" xml:id="S0.F1">
+    <graphics candidates="figure1.ps" graphic="figure1.ps" options="file=figure1.ps, width=162.180709pt, angle=270" xml:id="S0.F1.g1"/>
+    <toccaption><tag close=" ">1</tag>Contour plot for the evolution of <Math mode="inline" tex="|r\Psi|^{2}" text="(absolute-value@(r * Psi)) ^ 2" xml:id="S0.F1.m1">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="absolute-value"/>
+                <XMRef idref="S0.F1.m1.1"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                <XMApp xml:id="S0.F1.m1.1">
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                  <XMTok name="Psi" role="UNKNOWN">Ψ</XMTok>
+                </XMApp>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+              </XMWrap>
+            </XMDual>
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> from the
+initial configuration in text.</toccaption>
+    <caption><tag close=": ">Figure 1</tag>Contour plot for the evolution of <Math mode="inline" tex="|r\Psi|^{2}" text="(absolute-value@(r * Psi)) ^ 2" xml:id="S0.F1.m2">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="absolute-value"/>
+                <XMRef idref="S0.F1.m2.1"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                <XMApp xml:id="S0.F1.m2.1">
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                  <XMTok name="Psi" role="UNKNOWN">Ψ</XMTok>
+                </XMApp>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+              </XMWrap>
+            </XMDual>
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> from the
+initial configuration in text.</caption>
+  </figure>
+  <figure frefnum="Figure 2" labels="LABEL:fig2" refnum="2" xml:id="S0.F2">
+    <graphics candidates="figure2.ps" graphic="figure2.ps" options="file=figure2.ps, height=156.490157pt" xml:id="S0.F2.g1"/>
+    <toccaption><tag close=" ">2</tag> <Math mode="inline" tex="|r\Psi|^{2}" text="(absolute-value@(r * Psi)) ^ 2" xml:id="S0.F2.m1">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="absolute-value"/>
+                <XMRef idref="S0.F2.m1.1"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                <XMApp xml:id="S0.F2.m1.1">
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                  <XMTok name="Psi" role="UNKNOWN">Ψ</XMTok>
+                </XMApp>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+              </XMWrap>
+            </XMDual>
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> versus <Math mode="inline" tex="r" text="r" xml:id="S0.F2.m2">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">r</XMTok>
+        </XMath>
+      </Math> on the final time slice in
+Figure 1.</toccaption>
+    <caption><tag close=": ">Figure 2</tag> <Math mode="inline" tex="|r\Psi|^{2}" text="(absolute-value@(r * Psi)) ^ 2" xml:id="S0.F2.m3">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="absolute-value"/>
+                <XMRef idref="S0.F2.m3.1"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                <XMApp xml:id="S0.F2.m3.1">
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                  <XMTok name="Psi" role="UNKNOWN">Ψ</XMTok>
+                </XMApp>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+              </XMWrap>
+            </XMDual>
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> versus <Math mode="inline" tex="r" text="r" xml:id="S0.F2.m4">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">r</XMTok>
+        </XMath>
+      </Math> on the final time slice in
+Figure 1.</caption>
+  </figure>
+  <para xml:id="p11">
+    <p>In Fig. <ref labelref="LABEL:fig1"/> we display the evolution of <Math mode="inline" tex="|r\Psi|^{2}" text="(absolute-value@(r * Psi)) ^ 2" xml:id="p11.m1">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="absolute-value"/>
+                <XMRef idref="p11.m1.1"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                <XMApp xml:id="p11.m1.1">
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                  <XMTok name="Psi" role="UNKNOWN">Ψ</XMTok>
+                </XMApp>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+              </XMWrap>
+            </XMDual>
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> for spherical
+collapse of a mass <Math mode="inline" tex="M" text="M" xml:id="p11.m2">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">M</XMTok>
+        </XMath>
+      </Math> = 0.008 <Math mode="inline" tex="M_{*}" text="M _ *" xml:id="p11.m3">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+            <XMTok font="italic" role="UNKNOWN">M</XMTok>
+            <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>, initially in the form of a
+Gaussian with <Math mode="inline" tex="\beta" text="beta" xml:id="p11.m4">
+        <XMath>
+          <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
+        </XMath>
+      </Math> = 100 = <Math mode="inline" tex="\Lambda" text="Lambda" xml:id="p11.m5">
+        <XMath>
+          <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+        </XMath>
+      </Math>. The expected features of
+bounce and ejection leaving a condensed core are evident. Here we have
+implemented a velocity dependent imaginary part to the potential in
+the outer layers of the cavity to remove the ejected fermion matter
+before it can be artificially reflected by the boundary. The core
+size <Math mode="inline" tex="r/R_{*}=26" text="r / R _ * = 26" xml:id="p11.m6">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMTok font="italic" role="UNKNOWN">r</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+              </XMApp>
+            </XMApp>
+            <XMTok meaning="26" role="NUMBER">26</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> and mass <Math mode="inline" tex="m/M_{*}=0.0057" text="m / M _ * = 0.0057" xml:id="p11.m7">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+              </XMApp>
+            </XMApp>
+            <XMTok meaning="0.0057" role="NUMBER">0.0057</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> is commensurate with a
+fermion star, however it is far from smooth as evidenced
+by the plot of <Math mode="inline" tex="|r\Psi|^{2}" text="(absolute-value@(r * Psi)) ^ 2" xml:id="p11.m8">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="absolute-value"/>
+                <XMRef idref="p11.m8.1"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                <XMApp xml:id="p11.m8.1">
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                  <XMTok name="Psi" role="UNKNOWN">Ψ</XMTok>
+                </XMApp>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+              </XMWrap>
+            </XMDual>
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> on the final time slice in Fig. <ref labelref="LABEL:fig2"/>.
+This feature may, however, be attributed to the relatively short
+duration of the simulation.
+<!--  %**** form.tex Line 300 **** --></p>
+  </para>
+  <para xml:id="p12">
+    <p>In summary, using a bosonic representation of the dynamical Thomas-Fermi
+theory for a self-gravitating gas, we have shown that nonrelativistic,
+degenerate and weakly interacting fermionic matter will form supermassive
+fermion stars through gravitational collapse accompanied by ejection.
+For a fermion mass of <Math mode="inline" tex="m_{f}\simeq" text="m _ f similar-to-or-equals absent" xml:id="p12.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">f</XMTok>
+            </XMApp>
+            <XMTok meaning="absent"/>
+          </XMApp>
+        </XMath>
+      </Math> 15 keV such a superstar is consistent
+with observations of the compact dark object at the center of our galaxy. A
+similar demonstration for formation near the Oppenheimer-Volkoff limit, and
+the question of cosmology with degenerate dark matter requires a general
+relativistic extension which is under development and will be reported
+elsewhere.</p>
+  </para>
+<!--  %˙˙˙˙˙˙˙˙˙˙˙˙˙˙˙˙˙˙˙˙˙˙˙˙ -->  <para xml:id="p13">
+    <p>The authors wish to thank Duncan Elliott <!--  %“footnote–Deceased 20 July 2000˝ -->for many useful discussions regarding the simulations.
+This research is in part supported by the Foundation of Fundamental Research
+(FFR) grant number PHY99-01241 and the Research Committee of the University of
+Cape Town.
+The work of N.B. is supported in part by the Ministry of Science and
+Technology of the Republic of Croatia under Contract No. 00980102.</p>
+  </para>
+  <bibliography xml:id="bib">
+    <title>References</title>
+    <biblist>
+      <bibitem key="bilicadd" xml:id="bib.bib1">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">*</bibtag>
+        <bibtag role="refnum">(*)</bibtag>
+        <bibblock> Permanent address: Rudjer Bo<Math mode="inline" tex="\check{\rm s}" text="check@(s)" xml:id="bib.bib1.m1">
+            <XMath>
+              <XMApp>
+                <XMTok name="check" role="OVERACCENT" stretchy="false">ˇ</XMTok>
+                <XMTok role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>ković Institute,
+P.O. Box 180, 10002 Zagreb, Croatia;
+Email: bilic@thphys.irb.hr
+</bibblock>
+      </bibitem>
+      <bibitem key="rjladd" xml:id="bib.bib2">
+<!--  %**** String Line 25 **** -->        <bibtag role="number"><XMTok name="dagger" role="MULOP">†</XMTok></bibtag>
+        <bibtag role="refnum">(<XMTok name="dagger" role="MULOP">†</XMTok>)</bibtag>
+        <bibblock>Permanent address: School of Chemical and Physical Sciences, University of Natal, P.O. Box 375,
+<!--  %**** form.tex Line 325 **** -->Pietermaritzburg 3200, South Africa;
+Email: lindebaumr@nu.ac.za
+</bibblock>
+      </bibitem>
+      <bibitem key="1" xml:id="bib.bib3">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">3</bibtag>
+        <bibtag role="refnum">(3)</bibtag>
+        <bibblock> M.A. Markov, <text font="italic">Phys. Lett.</text> <text font="bold">10</text>, 122 (1964);
+R. Cowsik and J. McClelland, <text font="italic">Astrophys. J.</text> <text font="bold">180</text>, 7 (1973);
+R. Ruffini, <text font="italic">Lett. Nuovo Cim.</text> <text font="bold">29</text>, 161 (1980).
+</bibblock>
+      </bibitem>
+      <bibitem key="2" xml:id="bib.bib4">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">4</bibtag>
+        <bibtag role="refnum">(4)</bibtag>
+        <bibblock> R.D. Viollier, D. Trautmann and G.B. Tupper,
+<text font="italic">Phys. Lett.</text> <text font="bold">B306</text>, 79 (1993).
+</bibblock>
+      </bibitem>
+      <bibitem key="3" xml:id="bib.bib5">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">5</bibtag>
+        <bibtag role="refnum">(5)</bibtag>
+        <bibblock> N. Bilić, D. Tsiklauri and R.D. Viollier,
+<text font="italic">Prog. Part. Nucl. Phys.</text> <text font="bold">40</text>, 17 (1998);
+N. Bilić and R.D. Viollier,
+<text font="italic">Nucl. Phys. (Proc. Suppl.)</text> <text font="bold">B66</text>, 256 (1998).
+</bibblock>
+      </bibitem>
+      <bibitem key="4" xml:id="bib.bib6">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">6</bibtag>
+        <bibtag role="refnum">(6)</bibtag>
+        <bibblock> N. Bilić, F. Munyaneza and R.D. Viollier,
+<text font="italic">Phys. Rev.</text> <text font="bold">D59</text>, 024003 (1999).
+</bibblock>
+      </bibitem>
+      <bibitem key="5" xml:id="bib.bib7">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">7</bibtag>
+        <bibtag role="refnum">(7)</bibtag>
+        <bibblock> D. Tsiklauri and R.D. Viollier, <text font="italic">Astropart. Phys.</text> <text font="bold">12</text>,
+199 (1999).
+</bibblock>
+      </bibitem>
+      <bibitem key="6" xml:id="bib.bib8">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">8</bibtag>
+        <bibtag role="refnum">(8)</bibtag>
+        <bibblock> F. Munyaneza, D. Tsiklauri and R.D. Viollier,
+<text font="italic">Astrophys. J.</text> <text font="bold">509</text>, L105 (1998); <text font="italic">ibid.</text> <text font="bold">526</text>, 744 (1999).
+</bibblock>
+      </bibitem>
+      <bibitem key="7" xml:id="bib.bib9">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">9</bibtag>
+        <bibtag role="refnum">(9)</bibtag>
+        <bibblock> F. Macchetto <text font="italic">et al.</text>,
+<text font="italic">Astrophys. J.</text> <text font="bold">489</text>, 579 (1997).
+</bibblock>
+      </bibitem>
+      <bibitem key="8" xml:id="bib.bib10">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">10</bibtag>
+        <bibtag role="refnum">(10)</bibtag>
+        <bibblock> J.R. Oppenheimer and G.M. Volkoff,
+<text font="italic">Phys. Rev.</text> <text font="bold">55</text>, 374 (1939).
+</bibblock>
+      </bibitem>
+      <bibitem key="9" xml:id="bib.bib11">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">11</bibtag>
+        <bibtag role="refnum">(11)</bibtag>
+        <bibblock> A. Eckart and R. Genzel,
+<text font="italic">Mon. N.R. Astron. Soc.</text> <text font="bold">284</text>, 576 (1997);
+A.M. Ghez, B.L. Klein, M. Morris and E.E. Becklin,
+<text font="italic">Astrophys. J.</text> <text font="bold">509</text>, 678 (1998).
+<!--  %**** form.tex Line 350 **** --></bibblock>
+      </bibitem>
+      <bibitem key="10" xml:id="bib.bib12">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">12</bibtag>
+        <bibtag role="refnum">(12)</bibtag>
+        <bibblock> R. Mahadevan, <text font="italic">Nature</text> <text font="bold">394</text>, 651 (1998).
+</bibblock>
+      </bibitem>
+      <bibitem key="11" xml:id="bib.bib13">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">13</bibtag>
+        <bibtag role="refnum">(13)</bibtag>
+        <bibblock> E.W. Kolb and M.S. Turner, “The Early Universe”
+(Addison-Wesley, San Francisco, 1989).
+</bibblock>
+      </bibitem>
+      <bibitem key="12" xml:id="bib.bib14">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">14</bibtag>
+        <bibtag role="refnum">(14)</bibtag>
+        <bibblock> X. Shi and G.M. Fuller,
+<text font="italic">Phys. Rev. Lett.</text> <text font="bold">82</text>, 2832 (1999).
+</bibblock>
+      </bibitem>
+      <bibitem key="13" xml:id="bib.bib15">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">15</bibtag>
+        <bibtag role="refnum">(15)</bibtag>
+        <bibblock> M. Drees and D. Wright, hep-ph/0006274.
+</bibblock>
+      </bibitem>
+      <bibitem key="14" xml:id="bib.bib16">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">16</bibtag>
+        <bibtag role="refnum">(16)</bibtag>
+        <bibblock> P. de Bernardis <text font="italic">et al.</text>,
+<text font="italic">Nature</text> <text font="bold">404</text>, 955 (2000).
+</bibblock>
+      </bibitem>
+      <bibitem key="15" xml:id="bib.bib17">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">17</bibtag>
+        <bibtag role="refnum">(17)</bibtag>
+        <bibblock> S. Chandrasekhar, “Stellar Structure”
+(University of Chicago Press, Chicago, 1939).
+</bibblock>
+      </bibitem>
+      <bibitem key="23" xml:id="bib.bib18">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">18</bibtag>
+        <bibtag role="refnum">(18)</bibtag>
+        <bibblock> W. Thirring, <text font="italic">Z. Physik</text> <text font="bold">235</text>, 339 (1970);
+P. Hertel, H. Narnhofer and W. Thirring, <text font="italic">Comm. Math. Phys.</text>
+<text font="bold">28</text>, 159 (1972);
+J. Messer, <text font="italic">J. Math. Phys.</text> <text font="bold">22</text>, 2910 (1981).
+</bibblock>
+      </bibitem>
+      <bibitem key="16" xml:id="bib.bib19">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">19</bibtag>
+        <bibtag role="refnum">(19)</bibtag>
+        <bibblock> N. Bilić and R.D. Viollier,
+<text font="italic">Phys. Lett.</text> <text font="bold">B408</text>, 75 (1997); <text font="italic">Gen. Rel. Grav.</text> <text font="bold">31</text>,
+1105 (1999); <text font="italic">Eur. Phys. J.</text> <text font="bold">C11</text>, 173 (1999).
+</bibblock>
+      </bibitem>
+      <bibitem key="17" xml:id="bib.bib20">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">20</bibtag>
+        <bibtag role="refnum">(20)</bibtag>
+        <bibblock> J. Binney and S. Tremaine, “Galactic Dynamics”
+(Princeton University Press, Princeton, New Jersey, 1987),
+and references cited therein.
+</bibblock>
+      </bibitem>
+      <bibitem key="18" xml:id="bib.bib21">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">21</bibtag>
+        <bibtag role="refnum">(21)</bibtag>
+        <bibblock> R.N. Henrikson and L.M. Widrow,
+<text font="italic">Phys. Rev. Lett.</text> <text font="bold">78</text>, 3426 (1997).
+</bibblock>
+      </bibitem>
+      <bibitem key="19" xml:id="bib.bib22">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">22</bibtag>
+        <bibtag role="refnum">(22)</bibtag>
+        <bibblock> E. Seidel and W.-M. Suen, <text font="italic">Phys. Rev. Lett.</text> <text font="bold">72</text>, 2516
+(1994).
+</bibblock>
+      </bibitem>
+      <bibitem key="20" xml:id="bib.bib23">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">23</bibtag>
+        <bibtag role="refnum">(23)</bibtag>
+        <bibblock> J. Balakrishna, E. Seidel and W.-M. Suen,
+<!--  %**** form.tex Line 375 **** --><text font="italic">Phys. Rev.</text> <text font="bold">D58</text>, 104004 (1998).
+</bibblock>
+      </bibitem>
+      <bibitem key="21" xml:id="bib.bib24">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">24</bibtag>
+        <bibtag role="refnum">(24)</bibtag>
+        <bibblock> M. Colpi, S.L. Shapiro and I. Wasserman,
+<text font="italic">Phys. Rev. Lett.</text> <text font="bold">57</text>, 2485 (1986).
+</bibblock>
+      </bibitem>
+      <bibitem key="22" xml:id="bib.bib25">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">25</bibtag>
+        <bibtag role="refnum">(25)</bibtag>
+        <bibblock> F. Bloch, <text font="italic">Z. Physik</text> <text font="bold">81</text>, 363 (1933).
+</bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+<!--  %“newpage 
+     %“begin–figure˝
+     %“caption–Contour plot for the evolution of $—r “Psi —^–2˝$
+     %from the initial configuration in text.˝
+     %“label–fig1˝
+     %“end–figure˝
+     %“begin–figure˝
+     %“caption– $— r “Psi —^–2˝$ versus $r$ on the final time slice
+     %in Figure 1.˝
+     %“label–fig2˝
+     %“end–figure˝--></document>

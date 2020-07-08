@@ -1,0 +1,2155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008020.1"?>
+<!--  %&amp;latex209 --><!--  %mnsample.tex --><!--  %v1.2 released 5th September 1994 (M. Reed) --><!--  %v1.1 released 18th July 1994 --><!--  %v1.0 released 28th January 1994 --><?latexml class="mn" options="psfig" oldstyle="true"?>
+<!--  %%%%% AUTHORS - PLACE YOUR OWN MACROS HERE %%%%% --><!--  %**** drob28.tex Line 25 **** --><!--  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --><!--  %End of OFSS --><!--  %End of NFSS release 1 --><!--  %End of NFSS release 2 --><!--  %**** drob28.tex Line 175 **** --><?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML" class="ltx_authors_1line" labels="LABEL:firstpage" xml:id="id1">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>Further daemon detection experiments</title>
+  <creator role="author">
+    <personname>E. M. Drobyshevski<break/>A.F.Ioffe Physical-Technical Institute, Russian
+Academy of Sciences, 194021 St Petersburg, Russia</personname>
+  </creator>
+  <date role="creation">Accepted —.
+Received —;
+in original form —</date>
+  <abstract name="Abstract">
+    <p>The experiments on detection of daemons captured into geocentric
+orbits, which are based on the postulated fast decay of
+daemon-containing nuclei, have been continued. By properly
+varying the experimental parameters, it has become possible to
+reveal and formulate some relations governing the interaction of
+daemons with matter. Among them are, for instance, the emission
+of energetic Auger-type electrons in the capture of an atomic
+nucleus, the possibility of charge exchange involving the capture
+<!--  %**** drob28.tex Line 200 **** -->of a heavier nucleus etc. The decay time of a daemon-containing
+proton has been measured to be
+<Math mode="inline" tex="\Delta\tau_{\rm ex}\approx 2\,{\rm\mu s}" text="Delta * tau _ ex approximately-equals 2 * mu * s" xml:id="m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">ex</XMTok>
+              </XMApp>
+            </XMApp>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok meaning="2" role="NUMBER" rpadding="1.7pt">2</XMTok>
+              <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+              <XMTok role="UNKNOWN">s</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>. The daemon flux at
+the Earth’s surface is
+<Math mode="inline" tex="f_{\oplus}\sim 10^{-7}\,{\rm cm^{-2}s^{-1}}" text="f _ direct-sum similar-to 10 ^ (- 7) * cm ^ (- 2) * s ^ (- 1)" xml:id="m2">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+              <XMTok font="italic" role="UNKNOWN">f</XMTok>
+              <XMTok fontsize="70%" meaning="direct-sum" name="oplus" role="ADDOP">⊕</XMTok>
+            </XMApp>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp rpadding="1.7pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok role="UNKNOWN">cm</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok role="UNKNOWN">s</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>. One should point
+out, on the one hand, the reproducibility of the main results,
+and on the other, the desirability of building up larger
+statistics and employing more sophisticated experimental methods
+to reveal finer details in the daemon interaction with matter.</p>
+  </abstract>
+  <classification scheme="keywords">
+black hole physics – dark matter – elementary
+particles – nuclear reactions, nucleosynthesis – proton decay.
+</classification>
+  <note role="pagerange"><ref labelref="LABEL:firstpage"/>–<ref labelref="LABEL:lastpage"/></note>
+  <note role="pubyear">2000</note>
+  <section refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>Introduction. General ideology and the results of the
+previous experiment</title>
+    <para xml:id="S1.p1">
+      <p>We reported earlier (Drobyshevski 2000c) on experimentally
+detecting indications of the existence of a flux of
+strongly-penetrating, nuclear-active particles moving with a
+velocity <Math mode="inline" tex="\la\!10" text="absent less-than-or-similar-to 10" xml:id="S1.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than-or-similar-to" name="la" role="RELOP" rpadding="-1.7pt">≲</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> km/s. The experiment supported our
+expectations aimed at a search for hypothetical DArk Electric
+Matter Objects, daemons, i.e. elementary Planckian black holes,
+<!--  %**** drob28.tex Line 225 **** -->which carry several (up to <Math mode="inline" tex="Z_{\rm d}\approx 10" text="Z _ d approximately-equals 10" xml:id="S1.p1.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">Z</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">d</XMTok>
+              </XMApp>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>) electronic
+charges and are part of the DM of the Galactic disk and,
+possibly, of the Universe as a whole.</p>
+    </para>
+    <para xml:id="S1.p2">
+      <p>Because of their large mass (<Math mode="inline" tex="\approx\!2\cdot 10^{-5}" text="absent approximately-equals 2 cdot 10 ^ (- 5)" xml:id="S1.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP" rpadding="-1.7pt">≈</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok name="cdot" role="MULOP">⋅</XMTok>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> g), daemons
+possess a giant penetrating ability. Nevertheless, as a result of
+the decelerating action of the matter they build up inside
+celestial bodies of the type of the Sun and the planets, as
+well as in helio- and planetocentric orbits. Due to their large
+charge, negative daemons are capable of catalyzing the fusion of
+light nuclei. The daemon-assisted proton fusion supplies
+apparently most of the Solar energetics and accounts for the
+electron-capture neutrino deficiency in the Solar flux
+(Drobyshevski 1996b). Bearing in mind the relativistic nature of
+the daemon, one could expect that the assumption of possible
+poisoning of its catalytic properties in the capture of heavy
+nuclei, similar to that expressed with respect to other particles
+(quarks etc.) (see, e.g., Salpeter 1970), would not prove to be
+correct. It could be anticipated that such nuclei (or their
+components) would either escape under the relativistic horizon of
+the daemon (Drobyshevski 1996a) or be ejected as a result of the
+decay of the component nucleons into which the daemon penetrated
+(Drobyshevski 2000a,b).</p>
+    </para>
+    <para xml:id="S1.p3">
+      <p>As follows from a comparison of the number of daemons captured by
+<!--  %**** drob28.tex Line 250 **** -->the Sun from the Galactic disc with their number required for the
+catalysis necessary to support the Solar luminosity, the time
+needed for a daemon to recover its catalytic properties inside
+the Sun is about <Math mode="inline" tex="10^{-7}-10^{-6}" text="10 ^ (- 7) - 10 ^ (- 6)" xml:id="S1.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> s (Drobyshevski 2000a,b). It
+remains unclear what is the real mechanism by which the daemon
+frees itself of a heavy nucleus. One could expect that the
+situation would become clearer as the experiments are continued
+in the direction chosen by us.</p>
+    </para>
+    <para xml:id="S1.p4">
+      <p>We assembled (Drobyshevski 2000c) an extremely simple setup for
+daemon detection based on the above two mechanisms of interaction
+of negative daemons with light (<Math mode="inline" tex="Z_{\rm n}\leq Z_{\rm d}\approx 10" text="Z _ n less= Z _ d approximately-equals 10" xml:id="S1.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">Z</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">n</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">Z</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">d</XMTok>
+              </XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>) and heavy nuclei. It consists essentially of two transparent
+polystyrene plates, 4 mm thick and <Math mode="inline" tex="0.5\times 0.5\,{\rm m^{2}}" text="0.5 * 0.5 * m ^ 2" xml:id="S1.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="0.5" role="NUMBER">0.5</XMTok>
+                <XMTok meaning="0.5" role="NUMBER" rpadding="1.7pt">0.5</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                <XMTok role="UNKNOWN">m</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> in
+area, coated on the bottom by a relatively thin (<Math mode="inline" tex="3.0-3.5\,{\rm mg/cm^{2}}" text="3.0 - (3.5 * mg) / cm ^ 2" xml:id="S1.p4.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok meaning="3.0" role="NUMBER">3.0</XMTok>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="3.5" role="NUMBER" rpadding="1.7pt">3.5</XMTok>
+                  <XMTok role="UNKNOWN">mg</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                  <XMTok role="UNKNOWN">cm</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) layer of the ZnS(Ag) phosphor (its Ag content is
+<Math mode="inline" tex="\sim\!0.5\cdot 10^{-4}" text="absent similar-to 0.5 cdot 10 ^ (- 4)" xml:id="S1.p4.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP" rpadding="-1.7pt">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok name="cdot" role="MULOP">⋅</XMTok>
+                <XMTok meaning="0.5" role="NUMBER">0.5</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> g atom/mole ZnS). For an average
+phosphor grain size <Math mode="inline" tex="\sim\!12\,{\rm\mu m}" text="absent similar-to 12 * mu * m" xml:id="S1.p4.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP" rpadding="-1.7pt">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="12" role="NUMBER" rpadding="1.7pt">12</XMTok>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok role="UNKNOWN">m</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, this density
+provides a close-to-monolayer coverage with certain gaps between
+the ZnS(Ag) grains. The plates are light-isolated from one
+another by black paper and are mounted with a 7-cm spacing at the
+center of a cubic box of tinned sheet with an edge of 52 cm. Each
+plate is viewed by a PM tube from above and from below. Four
+identical modules, <Math mode="inline" tex="1\,{\rm m^{2}}" text="1 * m ^ 2" xml:id="S1.p4.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok meaning="1" role="NUMBER" rpadding="1.7pt">1</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                <XMTok role="UNKNOWN">m</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> in total area and arranged side
+by side in the same horizontal plane, were built altogether. We
+<!--  %**** drob28.tex Line 275 **** -->readily see that the system is asymmetric with respect to the
+vertical direction, thus permitting one to judge of the daemon
+flux direction and to draw conclusions on some properties of the
+radiations measured.</p>
+    </para>
+    <para xml:id="S1.p5">
+      <p>In the absence of a flux of particles causing scintillations,
+there should be no correlation between the signals of the PM
+tubes viewing the top and the bottom plates. In these conditions,
+the distribution <Math mode="inline" tex="N_{2}(\Delta t)" text="N _ 2 * Delta * t" xml:id="S1.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+              <XMDual>
+                <XMRef idref="S1.p5.m1.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S1.p5.m1.1">
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> of the fairly rare (noise etc.)
+signals of the second (bottom) PM tube in the time shift <Math mode="inline" tex="\Delta t" text="Delta * t" xml:id="S1.p5.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+              <XMTok font="italic" role="UNKNOWN">t</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> between their beginning and the beginning of the signal from
+the first (top) PM tube can be approximated with a constant. An
+exception to this are the cosmic rays producing a strong maximum
+at <Math mode="inline" tex="\Delta t=0" text="Delta * t = 0" xml:id="S1.p5.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, with the signals appearing frequently
+simultaneously in several modules. What we found, however, was a
+statistically significant maximum at <Math mode="inline" tex="\Delta t\approx 20-40\,{\rm\mu s}" text="Delta * t approximately-equals 20 - 40 * mu * s" xml:id="S1.p5.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok meaning="20" role="NUMBER">20</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="40" role="NUMBER" rpadding="1.7pt">40</XMTok>
+                  <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                  <XMTok role="UNKNOWN">s</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>,
+which, while being totally unexpected from the
+standpoint of standard cosmic-ray physics, is exactly what had
+motivated the present experiment. It is due to signals from the
+bottom PM tubes, which arrive after the signals from the top
+(leading) PM tubes triggering the measurement system. One can
+infer also an existence of a leading maximum, i.e. a maximum
+with <Math mode="inline" tex="\Delta t&lt;0" text="Delta * t less 0" xml:id="S1.p5.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. It is much less significant and is shifted
+by <Math mode="inline" tex="\Delta t\approx-(40-60)\,{\rm\mu s}" text="Delta * t approximately-equals - (40 - 60) * mu * s" xml:id="S1.p5.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMDual>
+                    <XMRef idref="S1.p5.m6.1"/>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="false">(</XMTok>
+                      <XMApp xml:id="S1.p5.m6.1">
+                        <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                        <XMTok meaning="40" role="NUMBER">40</XMTok>
+                        <XMTok meaning="60" role="NUMBER">60</XMTok>
+                      </XMApp>
+                      <XMTok role="CLOSE" rpadding="1.7pt" stretchy="false">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                  <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                  <XMTok role="UNKNOWN">s</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. It is such maxima that
+were anticipated by us based on the daemon hypothesis.
+<!--  %**** drob28.tex Line 300 **** --></p>
+    </para>
+    <para xml:id="S1.p6">
+      <p>These observations, besides indicating the existence of a new
+type of penetrating cosmic radiation, suggested that the velocity
+of the discovered particles is barely <Math mode="inline" tex="\sim\!5-10" text="absent similar-to 5 - 10" xml:id="S1.p6.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP" rpadding="-1.7pt">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok meaning="5" role="NUMBER">5</XMTok>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> km/s, which
+should be characteristic of objects captured into geocentric
+orbits with a perigee inside the Earth. Their flux through the
+Earth’s surface reaches <Math mode="inline" tex="\sim\!10^{-8}-10^{-7}\,{\rm cm^{-2}s^{-1}}" text="absent similar-to 10 ^ (- 8) - 10 ^ (- 7) * cm ^ (- 2) * s ^ (- 1)" xml:id="S1.p6.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP" rpadding="-1.7pt">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="8" role="NUMBER">8</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMApp rpadding="1.7pt">
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                    <XMTok role="UNKNOWN">cm</XMTok>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                    <XMTok role="UNKNOWN">s</XMTok>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.</p>
+    </para>
+    <para xml:id="S1.p7">
+      <p>We are presenting below a description of further experiments,
+which support our preliminary conclusions of the existence of
+daemons and shed light on some features of their interaction with
+matter.</p>
+    </para>
+    <para xml:id="S1.p8">
+      <p>However prior to going over to these results, we shall formulate
+the main postulates which permit a noncontradictory
+interpretation of our experimental data within the daemon
+concept. These postulates have formed to a considerable extent in
+the course of an analysis of the results themselves made on the
+basis of fairly general physical ideas.</p>
+    </para>
+  </section>
+  <section refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>Main assumptions concerning the interaction of negative
+daemons with matter</title>
+    <para class="ltx_noindent" xml:id="S2.p1">
+      <p>(a) A slowly-moving (<Math mode="inline" tex="V\la 100" text="V less-than-or-similar-to 100" xml:id="S2.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than-or-similar-to" name="la" role="RELOP">≲</XMTok>
+              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+              <XMTok meaning="100" role="NUMBER">100</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> km/s) daemon
+<!--  %**** drob28.tex Line 325 **** -->impact neither ionizes nor excites the electronic shells of
+atoms. Therefore it cannot produce scintillations.</p>
+    </para>
+    <para class="ltx_noindent" xml:id="S2.p2">
+      <p>(b) In passing through matter, a daemon can capture an
+atomic nucleus. The ensuing drop of the nucleus to deeper levels
+in the electric field of the daemon will cause an Auger-type
+emission of electrons which initially surrounded the atomic
+nucleus.</p>
+    </para>
+    <para class="ltx_noindent" xml:id="S2.p3">
+      <p>(c) As the daemon continues to propagate through
+matter, it can capture a heavier nucleus while loosing the old
+one (or its remnant, see below), again with emission of Auger
+electrons. The capture of a heavier nucleus is similar to the
+effect of charge exchange of ions moving through a gas, which is
+well known from the physics of gas discharge. Therefore as a
+daemon enters ZnS(Ag) from air or polystyrene, one should expect
+the light nuclei to become replaced by the S, Zn, and Ag nuclei
+and excitation of a scintillation. In this case the process of
+‘charge exchange’ is more efficient for a larger mass
+difference between the exchanging nuclei.</p>
+    </para>
+    <para class="ltx_noindent" xml:id="S2.p4">
+      <p>(d) If the nucleus captured earlier by the daemon has a
+small mass and <Math mode="inline" tex="Z_{\rm n}\leq Z_{\rm d}" text="Z _ n less= Z _ d" xml:id="S2.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">Z</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">n</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">Z</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">d</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, interaction of this
+complex with another light nucleus and the capture of the latter
+may culminate in nuclear fusion. Because of the internal
+<!--  %**** drob28.tex Line 350 **** -->conversion, the fusion energy has a high probability of becoming
+converted to the kinetic energy of the compound-nucleus thus
+formed, which escapes from the daemon. The daemon remains free
+afterwards for some time.</p>
+    </para>
+    <para class="ltx_noindent" xml:id="S2.p5">
+      <p>(e) If the daemon captures a light nucleus in a
+sufficiently rarefied (noncondensed) medium, for instance, in
+air, the light nucleus will not be able to shed the excess energy
+and, thus, may turn out to occupy such a high level as not even
+to be in contact with the daemon. (Recall that the lowest
+nucleus-daemon level for <Math mode="inline" tex="Z_{\rm d}=10" text="Z _ d = 10" xml:id="S2.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">Z</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">d</XMTok>
+              </XMApp>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> lies within the
+nucleus with <Math mode="inline" tex="A\geq 2" text="A &gt;= 2" xml:id="S2.p5.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+              <XMTok font="italic" role="UNKNOWN">A</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, and inside the nucleon for <Math mode="inline" tex="Z_{\rm n}\geq 24/Z_{\rm d}" text="Z _ n &gt;= 24 / Z _ d" xml:id="S2.p5.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">Z</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">n</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMTok meaning="24" role="NUMBER">24</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">Z</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">d</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.)</p>
+    </para>
+    <para class="ltx_noindent" xml:id="S2.p6">
+      <p>(f) It appears that the scintillations observed by us
+are primarily caused by the Auger electrons emitted in the
+capture of new atomic nuclei. We cannot at present maintain with
+certainty that what we detect are the nuclei released by the
+daemon and representing products of the fusion of light nuclei or
+particles produced in the decay of daemon-containing nucleons (or
+nuclei), although such events must certainly take place.
+Therefore we believe that as a daemon passes through a
+scintillator layer, the scintillation is primarily excited in the
+capture of a nucleus from the latter by the daemon, and by the
+resultant emission of Auger electrons. Scintillations are also
+<!--  %**** drob28.tex Line 375 **** -->produced in Auger electron emission and in the capture of a
+nucleus from outside the scintillator, if part of these
+electrons reaches the scintillator.</p>
+    </para>
+    <para class="ltx_noindent" xml:id="S2.p7">
+      <p>(g) The daemon-containing heavy nucleus decays
+apparently not in an explosive manner as we believed before
+(Drobyshevski 2000a,b), but rather step by step, nucleon by
+nucleon. Because a negative daemon should preferably reside in
+the protons of a nucleus, the decay most probably occurs in the
+proton-by-proton manner. The proton-by-proton disintegration
+should be accompanied by emission of excess neutrons from the
+nucleus. This gradual ‘digestion’ of the nucleus ends probably
+either in the decay (absorption?) of the last proton of the
+remaining tritium (or even of <Math mode="inline" tex="{}^{4}{\rm H}" text="^ 4 H" xml:id="S2.p7.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="pre2"/>
+              <XMTok role="UNKNOWN">H</XMTok>
+              <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>) or in a capture of an
+encountered nucleus which is heavier than the disintegrating
+residual nucleus. Clearly enough, the nuclear decay time and the
+recovery by the daemon of its postulated catalytic properties
+are, on the whole, proportional to the initial nuclear mass;
+however in the presence of background matter from which another
+nucleus can be captured (for digestion or fusion with the
+remainder of the old one) this time depends to some extent on the
+nuclear properties of the surrounding matter.</p>
+    </para>
+    <para xml:id="S2.p8">
+      <p>While the first postulates are based on the relations known from
+atomic and nuclear physics, the latter (g) postulate follows
+<!--  %**** drob28.tex Line 400 **** -->already from our experiments.</p>
+    </para>
+  </section>
+  <section refnum="3" xml:id="S3">
+    <title><tag close=" ">3</tag>Increasing the experiment duration</title>
+    <para xml:id="S3.p1">
+      <p>The discovery of a nuclear-active radiation propagating with a
+velocity on the km-scale, i.e., of a population captured into
+particularly geocentric orbits, was somewhat unexpected for us.
+Therefore the next natural step was to increase the observation
+time of the signals from the bottom scintillator surface from
+<Math mode="inline" tex="-100\leq\Delta t\leq+100\,{\rm\mu s}" text="- 100 less= Delta * t less= + 100 * mu * s" xml:id="S3.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok meaning="100" role="NUMBER">100</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMApp>
+                <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="100" role="NUMBER" rpadding="1.7pt">100</XMTok>
+                  <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                  <XMTok role="UNKNOWN">s</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> (Drobyshevski 2000c) to
+<Math mode="inline" tex="-250\leq\Delta t\leq+250\,{\rm\mu s}" text="- 250 less= Delta * t less= + 250 * mu * s" xml:id="S3.p1.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok meaning="250" role="NUMBER">250</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMApp>
+                <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="250" role="NUMBER" rpadding="1.7pt">250</XMTok>
+                  <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                  <XMTok role="UNKNOWN">s</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> with respect to the
+signal from the top scintillator. We hoped that beyond the <Math mode="inline" tex="\pm 100\,{\rm\mu s}" text="plus-or-minus 100 * mu * s" xml:id="S3.p1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="100" role="NUMBER" rpadding="1.7pt">100</XMTok>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> interval we would enter the zone of purely random
+signals with a <Math mode="inline" tex="N_{2}(\Delta t)={\rm const}" text="N _ 2 * Delta * t = const" xml:id="S3.p1.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+                <XMDual>
+                  <XMRef idref="S3.p1.m4.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMApp xml:id="S3.p1.m4.1">
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                    </XMApp>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+              <XMTok role="UNKNOWN">const</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> distribution.
+However this conjecture did not gain a support.</p>
+    </para>
+    <para xml:id="S3.p2">
+      <p>We start our consideration with <Math mode="inline" tex="\Delta t&lt;0" text="Delta * t less 0" xml:id="S3.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, i.e., with
+signals belonging to an upward flux of non-monoenergetic (see
+Fig. 1) particles. Here, except a taking shape maximum at
+<Math mode="inline" tex="-40\leq\Delta\leq-20\,{\rm\mu s}" text="- 40 less= Delta less= - 20 * mu * s" xml:id="S3.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok meaning="40" role="NUMBER">40</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="20" role="NUMBER" rpadding="1.7pt">20</XMTok>
+                  <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                  <XMTok role="UNKNOWN">s</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, which corresponds to the 7
+cm interscintillator distance at the particle normal velocity of
+<Math mode="inline" tex="\sim\!2-3" text="absent similar-to 2 - 3" xml:id="S3.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP" rpadding="-1.7pt">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                <XMTok meaning="3" role="NUMBER">3</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> km/s, one clearly sees another three maxima, with the
+first one, fairly diffuse, extending from -220 to -160 <Math mode="inline" tex="{\rm\mu s}" text="mu * s" xml:id="S3.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+              <XMTok role="UNKNOWN">s</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>,
+the second from -120 to -100 <Math mode="inline" tex="{\rm\mu s}" text="mu * s" xml:id="S3.p2.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+              <XMTok role="UNKNOWN">s</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, and the third, from -80 to
+-60 <Math mode="inline" tex="{\rm\mu s}" text="mu * s" xml:id="S3.p2.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+              <XMTok role="UNKNOWN">s</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. Bearing in mind our assumptions (see Sec.2), the
+<!--  %**** drob28.tex Line 425 **** -->first maximum can be due to the bottom scintillator excited by
+the Auger electrons, which are emitted in the capture by daemons
+of air nuclei after getting freed of the Fe and Sn heavy nuclei
+captured in the traversal of the lower part of the tinned-sheet
+casing at various angles. The Auger electrons can be emitted also
+in the capture of Sn from the thin tin coating of the iron sheet.
+After the participation in all these processes, part of the
+daemons reach the top luminophor, and it is here that they
+generate the trigger pulse correlating with the signals of the
+first diffuse maximum.</p>
+    </para>
+    <figure frefnum="Figure 1" refnum="1" xml:id="S3.F1">
+      <graphics candidates="fig1.eps" graphic="fig1.eps" options="file=fig1.eps, width=227.622047pt" xml:id="S3.F1.g1"/>
+<!--  %“vskip5cm -->      <toccaption><tag close=" ">1</tag>Distribution of the lower scintillator plate signals vs
+their time shift relative the top scintillator signals. Time of
+exposition is <Math mode="inline" tex="\approx" text="approximately-equals" xml:id="S3.F1.m1">
+          <XMath>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+          </XMath>
+        </Math>1000 hours.</toccaption>
+      <caption><tag close=": ">Figure 1</tag>Distribution of the lower scintillator plate signals vs
+their time shift relative the top scintillator signals. Time of
+exposition is <Math mode="inline" tex="\approx" text="approximately-equals" xml:id="S3.F1.m2">
+          <XMath>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+          </XMath>
+        </Math>1000 hours.</caption>
+    </figure>
+    <para xml:id="S3.p3">
+      <p>The sharper second and third maxima are possibly produced as the
+daemon captures Ag (<Math mode="inline" tex="Z_{\rm n}=47" text="Z _ n = 47" xml:id="S3.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">Z</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">n</XMTok>
+              </XMApp>
+              <XMTok meaning="47" role="NUMBER">47</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>) and Zn (<Math mode="inline" tex="Z_{\rm n}=30" text="Z _ n = 30" xml:id="S3.p3.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">Z</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">n</XMTok>
+              </XMApp>
+              <XMTok meaning="30" role="NUMBER">30</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>)
+nuclei, respectively, in traversing the bottom luminophor. Note
+that the captured S nucleus has a high probability to be shortly
+lost when it encounters a Zn nucleus, and the probability of
+capturing Ag is not small despite the low concentration of Ag,
+<!--  %**** drob28.tex Line 450 **** -->because for a velocity of <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.p3.m3">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math>2 km/s the daemon free path
+until meeting an Ag atom is comparable with the ZnS(Ag) grain
+size. On traversing at any angle the bottom polystyrene plate
+into the space before the top luminophor, daemons finish
+digesting the Ag and Zn nuclei, so that when they capture air
+atoms, they emit here Auger electrons, which trigger the top
+luminophor. If our scenarium is true, the time shift between
+these maxima relative to <Math mode="inline" tex="\Delta t=0" text="Delta * t = 0" xml:id="S3.p3.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> provides an idea about
+the time per decay of a daemon-containing proton. It turns out to
+be <Math mode="inline" tex="\Delta\tau_{\rm ex}\approx\tau_{\rm ex}/n_{\rm p}=\tau_{\rm ex}/Z_{\rm n}%&#10;\approx 2\,{\rm\mu s}" text="Delta * tau _ ex approximately-equals tau _ ex / n _ p = tau _ ex / Z _ n approximately-equals 2 * mu * s" xml:id="S3.p3.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">ex</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">ex</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">p</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">ex</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">Z</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">n</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="2" role="NUMBER" rpadding="1.7pt">2</XMTok>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, which shows that our
+estimates of <Math mode="inline" tex="\tau_{\rm ex}" text="tau _ ex" xml:id="S3.p3.m6">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">ex</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> based on Solar energetics
+(Drobyshevski 2000a,b) were clearly underestimates.</p>
+    </para>
+    <para xml:id="S3.p4">
+      <p>The position of the first maximum (<Math mode="inline" tex="\Delta t\approx 180-200\,{\rm\mu s}" text="Delta * t approximately-equals 180 - 200 * mu * s" xml:id="S3.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok meaning="180" role="NUMBER">180</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="200" role="NUMBER" rpadding="1.7pt">200</XMTok>
+                  <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                  <XMTok role="UNKNOWN">s</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) yields <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.p4.m2">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math>1.5 km/s for the velocity with which a
+daemon passes normally the distance of 29 cm from the lower box
+cover to the upper luminophor layer. Taking into account the
+random angular distribution of the trajectories, the average
+velocity increases to <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.p4.m3">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math>3 km/s.</p>
+    </para>
+    <para xml:id="S3.p5">
+      <p>For <Math mode="inline" tex="\Delta t&gt;0" text="Delta * t &gt; 0" xml:id="S3.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, the daemons move downward.</p>
+    </para>
+    <para xml:id="S3.p6">
+      <p>The first distinct maximum at <Math mode="inline" tex="\sim\!20&lt;\Delta t&lt;40{\rm\mu s}" text="absent similar-to 20 less Delta * t less 40 * mu * s" xml:id="S3.p6.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="similar-to" name="sim" role="RELOP" rpadding="-1.7pt">∼</XMTok>
+              <XMTok meaning="20" role="NUMBER">20</XMTok>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="40" role="NUMBER">40</XMTok>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+corresponds apparently to the time needed for a daemon to cross
+<!--  %**** drob28.tex Line 475 **** -->the 7-cm gap separating the scintillator layers. For an arbitrary
+trajectory inclination, this time, as we saw before (Drobyshevski
+2000c), corresponds to a velocity <Math mode="inline" tex="\sim\!3-5" text="absent similar-to 3 - 5" xml:id="S3.p6.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP" rpadding="-1.7pt">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok meaning="3" role="NUMBER">3</XMTok>
+                <XMTok meaning="5" role="NUMBER">5</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> km/s, i.e., to
+objects in geocentric orbits with a perigee inside the Earth. The
+interpretation of this maximum, as well as the <Math mode="inline" tex="-40&lt;\Delta t&lt;-20\,{\rm\mu s}" text="- 40 less Delta * t less - 20 * mu * s" xml:id="S3.p6.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok meaning="40" role="NUMBER">40</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="20" role="NUMBER" rpadding="1.7pt">20</XMTok>
+                  <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                  <XMTok role="UNKNOWN">s</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> maximum, should be approached with a certain caution,
+because the fairly slow digestion of nuclei by a daemon could
+give rise to a certain bias toward inclined trajectories. A
+daemon poisoned by a poorly digested heavy nucleus is less likely
+to capture a Zn or Ag nucleus from the next scintillator layer
+and to initiate a scintillation in it if it propagates by the
+fastest (direct) path. Another selection arises because of the
+higher probability of capture of Ag, despite its low content, by
+a slower-moving daemon (the capture cross section is
+proportional to <Math mode="inline" tex="V^{-2}" text="V ^ (- 2)" xml:id="S3.p6.m4">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>).</p>
+    </para>
+    <para xml:id="S3.p7">
+      <p>Because of the ZnS(Ag) coating being not continuous, daemons with
+nuclei captured both in the upper scintillator have a fairly high
+probability of turning up also in the space under the bottom
+scintillator. Therefore in order to reliably separate and
+subsequently identify the maxima according to their origin (the
+end of digestion of a Zn or Ag nucleus captured in the top or
+bottom scintillator etc.) for <Math mode="inline" tex="\Delta t\geq 40-60\,{\rm\mu s}" text="Delta * t &gt;= 40 - 60 * mu * s" xml:id="S3.p7.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok meaning="40" role="NUMBER">40</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="60" role="NUMBER" rpadding="1.7pt">60</XMTok>
+                  <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                  <XMTok role="UNKNOWN">s</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, the statistics of
+the events should be much larger than they are presently.
+Nevertheless, there are grounds to believe that the maximum which
+<!--  %**** drob28.tex Line 500 **** -->is just barely discernible near +100 ms is due to the decay of
+the Ag captured in the top ZnS(Ag) scintillator, and that the
+maximum at <Math mode="inline" tex="\sim\!180&lt;\Delta t&lt;200\,{\rm\mu s}" text="absent similar-to 180 less Delta * t less 200 * mu * s" xml:id="S3.p7.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="similar-to" name="sim" role="RELOP" rpadding="-1.7pt">∼</XMTok>
+              <XMTok meaning="180" role="NUMBER">180</XMTok>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="200" role="NUMBER" rpadding="1.7pt">200</XMTok>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> for the daemons
+propagating downward, has the same origin as the one at <Math mode="inline" tex="-160&gt;\Delta t&gt;-180\,{\rm\mu s}" text="- 160 &gt; Delta * t &gt; - 180 * mu * s" xml:id="S3.p7.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok meaning="160" role="NUMBER">160</XMTok>
+              </XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="180" role="NUMBER" rpadding="1.7pt">180</XMTok>
+                  <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                  <XMTok role="UNKNOWN">s</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, i.e., interaction of the upward-moving
+daemons with the tin coating of the lower part of the box (in
+this case, however, the Auger electrons are certainly emitted
+from the thin tin layer in the capture of Sn nuclei). There is no
+Zn maximum in the <Math mode="inline" tex="+(40-80)\,{\rm\mu s}" text="+ (40 - 80) * mu * s" xml:id="S3.p7.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="plus" role="ADDOP">+</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMDual>
+                  <XMRef idref="S3.p7.m4.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMApp xml:id="S3.p7.m4.1">
+                      <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok meaning="40" role="NUMBER">40</XMTok>
+                      <XMTok meaning="80" role="NUMBER">80</XMTok>
+                    </XMApp>
+                    <XMTok role="CLOSE" rpadding="1.7pt" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> interval, because most of the
+captured Zn nuclei disintegrate before entering the second
+scintillator layer. Recall that we selected in the oscillograms
+only the events that contained one signal.</p>
+    </para>
+  </section>
+  <section refnum="4" xml:id="S4">
+    <title><tag close=" ">4</tag>Experiment with Additional Tinned-Iron Sheets</title>
+    <para xml:id="S4.p1">
+      <p>To verify once more that what we detect in these experiments are
+not artifacts but real reproducible events, we placed into the
+gap between the top and bottom phosphor layers a 0.25-mm thick
+sheet of tinned iron in all the four modules. The thickness of
+the tin layer on each side of the sheet was <Math mode="inline" tex="\sim\!2\,{\rm\mu m}" text="absent similar-to 2 * mu * m" xml:id="S4.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP" rpadding="-1.7pt">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="2" role="NUMBER" rpadding="1.7pt">2</XMTok>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok role="UNKNOWN">m</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.
+This sheet was placed directly on the black paper providing
+optical isolation of the scintillator layers from one another, so
+that it was 5 mm above the bottom scintillator.</p>
+    </para>
+    <para xml:id="S4.p2">
+      <p>The experiment was run for 550 h. It was performed after the
+<!--  %**** drob28.tex Line 525 **** -->experiment with the <Math mode="inline" tex="\pm 100\,{\rm\mu s}" text="plus-or-minus 100 * mu * s" xml:id="S4.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="100" role="NUMBER" rpadding="1.7pt">100</XMTok>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> time interval (Drobyshevski
+2000c) and before the one with the <Math mode="inline" tex="\pm 250\,{\rm\mu s}" text="plus-or-minus 250 * mu * s" xml:id="S4.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="250" role="NUMBER" rpadding="1.7pt">250</XMTok>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> interval, which
+is described in Section 3 and demonstrates also the
+reproducibility of the main results within the <Math mode="inline" tex="\pm 100\,{\rm\mu s}" text="plus-or-minus 100 * mu * s" xml:id="S4.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="100" role="NUMBER" rpadding="1.7pt">100</XMTok>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+interval.</p>
+    </para>
+    <para xml:id="S4.p3">
+      <p>We expected that the tinned sheet, because of the presence in it
+of Fe and Sn nuclei, would strongly affect the <Math mode="inline" tex="N_{2}(\Delta t)" text="N _ 2 * Delta * t" xml:id="S4.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+              <XMDual>
+                <XMRef idref="S4.p3.m1.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S4.p3.m1.1">
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>
+distribution obtained in the conditions where heavy nuclei are
+contained only in the ZnS(Ag) layers.</p>
+    </para>
+    <para xml:id="S4.p4">
+      <p>This was exactly what happened. The distribution for <Math mode="inline" tex="\Delta t&lt;0" text="Delta * t less 0" xml:id="S4.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> became substantially more monotonic (Fig. 2). It no longer
+exhibits individual, fairly sharp maxima evident in Fig. 1. One
+sees actually one, closely filled maximum extending from -160 to
+0 <Math mode="inline" tex="{\rm\mu s}" text="mu * s" xml:id="S4.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+              <XMTok role="UNKNOWN">s</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. If the statistics were larger, there would probably
+appear traces of the old maxima. As it is, one can only maintain
+that charge exchange in the thin tin layer of the additional
+tinned sheet accompanied by a loss of (remnants of) Zn and Ag
+nuclei and a capture of <Math mode="inline" tex="\sim\!^{119}{\rm Sn}" text="absent similar-to ^ 119 Sn" xml:id="S4.p4.m3">
+          <XMath>
+            <XMApp>
+              <XMApp meaning="similar-to" role="RELOP">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="similar-to" name="sim" role="RELOP" rpadding="-1.7pt">∼</XMTok>
+                <XMTok fontsize="70%" meaning="119" role="NUMBER">119</XMTok>
+              </XMApp>
+              <XMTok meaning="absent"/>
+              <XMTok role="UNKNOWN">Sn</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> heavy nuclei
+proceeds apparently so efficiently that the upward moving daemons
+deliver without loss only remnants of these Sn nuclei to the top
+scintillator. And it is only here that these remnants are
+replaced by Ag (and Zn) nuclei to initiate the triggering
+scintillation. Recalling that the distribution for <Math mode="inline" tex="\Delta t&lt;0" text="Delta * t less 0" xml:id="S4.p4.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+<!--  %**** drob28.tex Line 550 **** -->is filled up to <Math mode="inline" tex="\Delta t\rightarrow 0" text="Delta * t rightarrow 0" xml:id="S4.p4.m5">
+          <XMath>
+            <XMApp>
+              <XMTok name="rightarrow" role="ARROW">→</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, one could conjecture
+that some (triggering) scintillations in the top ZnS(Ag) layer
+are caused by the Auger electrons escaping from the thin top tin
+layer of the sheet when a daemon captures a Sn nucleus in it. We
+may recall that electrons of energy <Math mode="inline" tex="\sim\!0.1-1" text="absent similar-to 0.1 - 1" xml:id="S4.p4.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP" rpadding="-1.7pt">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok meaning="0.1" role="NUMBER">0.1</XMTok>
+                <XMTok meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> MeV are capable
+of passing through a 2-<Math mode="inline" tex="{\rm\mu m}" text="mu * m" xml:id="S4.p4.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+              <XMTok role="UNKNOWN">m</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> layer of tin while being
+stopped by a 0.25-mm layer of iron or by 4 mm of polystyrene.</p>
+    </para>
+    <figure frefnum="Figure 2" refnum="2" xml:id="S4.F2">
+      <graphics candidates="fig2.eps" graphic="fig2.eps" options="file=fig2.eps, width=227.622047pt" xml:id="S4.F2.g1"/>
+<!--  %“vskip5cm -->      <toccaption><tag close=" ">2</tag>The same as figure 1, but the tinned-iron sheet was laid
+on the lower scintillator plate.</toccaption>
+      <caption><tag close=": ">Figure 2</tag>The same as figure 1, but the tinned-iron sheet was laid
+on the lower scintillator plate.</caption>
+    </figure>
+    <para xml:id="S4.p5">
+      <p>The part of the <Math mode="inline" tex="N_{2}(\Delta t)" text="N _ 2 * Delta * t" xml:id="S4.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+              <XMDual>
+                <XMRef idref="S4.p5.m1.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S4.p5.m1.1">
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> distribution for <Math mode="inline" tex="\Delta t&gt;0" text="Delta * t &gt; 0" xml:id="S4.p5.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>,
+which characterizes the downward daemon flux also differs from
+the corresponding distribution in Fig. 1.</p>
+    </para>
+    <para xml:id="S4.p6">
+      <p>Note the dip at <Math mode="inline" tex="0&lt;\Delta t&lt;40\,{\rm\mu s}" text="0 less Delta * t less 40 * mu * s" xml:id="S4.p6.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="40" role="NUMBER" rpadding="1.7pt">40</XMTok>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, after which a peak at
+<Math mode="inline" tex="40&lt;\Delta t&lt;60\,{\rm\mu s}" text="40 less Delta * t less 60 * mu * s" xml:id="S4.p6.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMTok meaning="40" role="NUMBER">40</XMTok>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="60" role="NUMBER" rpadding="1.7pt">60</XMTok>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> appears. This dip can be readily
+interpreted as due to screening by the tinned sheet of the bottom
+ZnS(Ag) scintillator. In passing through the sheet, the daemon
+becomes poisoned by, say, a Fe nucleus (<Math mode="inline" tex="Z_{\rm n}=26" text="Z _ n = 26" xml:id="S4.p6.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">Z</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">n</XMTok>
+              </XMApp>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>), and
+therefore does not excite the ZnS(Ag) layer. Only after the
+<!--  %**** drob28.tex Line 575 **** -->traversal of the ZnS(Ag) layer and digestion of the iron nucleus
+in <Math mode="inline" tex="\Delta t\approx 26\times 2\,{\rm\mu s}\approx 50\,{\rm\mu s}" text="Delta * t approximately-equals 26 * 2 * mu * s approximately-equals 50 * mu * s" xml:id="S4.p6.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">×</XMTok>
+                  <XMTok meaning="26" role="NUMBER">26</XMTok>
+                  <XMTok meaning="2" role="NUMBER" rpadding="1.7pt">2</XMTok>
+                </XMApp>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok role="UNKNOWN">s</XMTok>
+              </XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="50" role="NUMBER" rpadding="1.7pt">50</XMTok>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> the daemon
+captures a nucleus in the air and generates Auger electrons, that
+excite the bottom scintillator layer. Therefore even in the
+presence of fast daemons the width of the dip should not depend
+on specific features of their velocity distribution.</p>
+    </para>
+    <para xml:id="S4.p7">
+      <p>The depth of the dip at <Math mode="inline" tex="0&lt;\Delta t&lt;40\,{\rm\mu s}" text="0 less Delta * t less 40 * mu * s" xml:id="S4.p7.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="40" role="NUMBER" rpadding="1.7pt">40</XMTok>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> characterizes
+apparently the noise level in the given <Math mode="inline" tex="N_{2}(\Delta t)" text="N _ 2 * Delta * t" xml:id="S4.p7.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+              <XMDual>
+                <XMRef idref="S4.p7.m2.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S4.p7.m2.1">
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>
+distribution. But then, as follows from the <Math mode="inline" tex="N_{2}(\Delta t)" text="N _ 2 * Delta * t" xml:id="S4.p7.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+              <XMDual>
+                <XMRef idref="S4.p7.m3.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S4.p7.m3.1">
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>
+histogram in Fig. 2, the number of events initiated by daemons
+during the time of observation is 193 (taking into account
+errors, it could be reduced to <Math mode="inline" tex="\sim" text="similar-to" xml:id="S4.p7.m4">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math>one third this figure). This
+yields for the measured daemon flux <Math mode="inline" tex="f_{\oplus}\approx(0.3-1)\cdot 10^{-8}\,{\rm cm^{-2}s^{-1}}" text="f _ direct-sum approximately-equals ((0.3 - 1) cdot 10 ^ (- 8)) * cm ^ (- 2) * s ^ (- 1)" xml:id="S4.p7.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                <XMTok fontsize="70%" meaning="direct-sum" name="oplus" role="ADDOP">⊕</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok name="cdot" role="MULOP">⋅</XMTok>
+                  <XMDual>
+                    <XMRef idref="S4.p7.m5.1"/>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="false">(</XMTok>
+                      <XMApp xml:id="S4.p7.m5.1">
+                        <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                        <XMTok meaning="0.3" role="NUMBER">0.3</XMTok>
+                        <XMTok meaning="1" role="NUMBER">1</XMTok>
+                      </XMApp>
+                      <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                  <XMApp rpadding="1.7pt">
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="8" role="NUMBER">8</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                  <XMTok role="UNKNOWN">cm</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                  <XMTok role="UNKNOWN">s</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. In view of the fact
+that the level (<Math mode="inline" tex="U_{1}\ga 2.5" text="U _ 1 greater-than-or-similar-to 2.5" xml:id="S4.p7.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than-or-similar-to" name="ga" role="RELOP">≳</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+              <XMTok meaning="2.5" role="NUMBER">2.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mV) of the triggering pulses is
+three times that of the second-trace signals <Math mode="inline" tex="U_{2}\geq 0.8" text="U _ 2 &gt;= 0.8" xml:id="S4.p7.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+              <XMTok meaning="0.8" role="NUMBER">0.8</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mV we
+select, and that the frequency of the pulses is   proportional to
+the cube of their amplitude, we obtain for a probable estimate
+<Math mode="inline" tex="f_{\oplus}\sim 10^{-7}\,{\rm cm^{-2}s^{-1}}" text="f _ direct-sum similar-to 10 ^ (- 7) * cm ^ (- 2) * s ^ (- 1)" xml:id="S4.p7.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                <XMTok fontsize="70%" meaning="direct-sum" name="oplus" role="ADDOP">⊕</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp rpadding="1.7pt">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                  <XMTok role="UNKNOWN">cm</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                  <XMTok role="UNKNOWN">s</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.</p>
+    </para>
+    <para xml:id="S4.p8">
+      <p>Accumulation of larger statistics will hopefully reveal in the
+<Math mode="inline" tex="N_{2}(\Delta t)" text="N _ 2 * Delta * t" xml:id="S4.p8.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+              <XMDual>
+                <XMRef idref="S4.p8.m1.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S4.p8.m1.1">
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> dependence (for <Math mode="inline" tex="\Delta t&gt;0" text="Delta * t &gt; 0" xml:id="S4.p8.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              </XMApp>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>) maxima
+corresponding to the decay of Sn, Ag, and Zn, as well as permit
+determination of the daemon distribution in velocities from the
+<!--  %**** drob28.tex Line 600 **** --><Math mode="inline" tex="N_{2}(\Delta t)" text="N _ 2 * Delta * t" xml:id="S4.p8.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+              <XMDual>
+                <XMRef idref="S4.p8.m3.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S4.p8.m3.1">
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> plot obtained without iron shields.</p>
+    </para>
+  </section>
+  <section refnum="5" xml:id="S5">
+    <title><tag close=" ">5</tag>Some Conclusions and Prospects</title>
+    <para xml:id="S5.p1">
+      <p>We have succeeded in developing a nonstandard method of detection
+of daemons through the understanding of the fact that the
+fundamental nonrelativistic nature of these particles permits
+them to recover their catalytic properties in a relatively short
+time by shedding the captured massive nucleus in a still unknown
+manner. Using fairly simple, not to say primitive handy means, we
+revealed definite and largely expected indications of the
+existence of daemons. Their low velocity was not anticipated,
+however. It is characteristic of a population captured by the
+Earth. The flux of this population through the Earth’s surface is
+<Math mode="inline" tex="f_{\oplus}\sim 10^{-7}\,{\rm cm^{-2}s^{-1}}" text="f _ direct-sum similar-to 10 ^ (- 7) * cm ^ (- 2) * s ^ (- 1)" xml:id="S5.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                <XMTok fontsize="70%" meaning="direct-sum" name="oplus" role="ADDOP">⊕</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp rpadding="1.7pt">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                  <XMTok role="UNKNOWN">cm</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                  <XMTok role="UNKNOWN">s</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, possibly.</p>
+    </para>
+    <para xml:id="S5.p2">
+      <p>The results produced by varying the experimental conditions were
+likewise largely anticipated, which suggests that our ideas
+concerning the properties of daemons are, on the whole, correct,
+and that we correctly understand what happens when we change the
+parameters of the setup and the conditions of observations. A
+similar experiment repeated months after the preceding one
+demonstrates a good reproducibility.</p>
+    </para>
+    <para xml:id="S5.p3">
+      <p>A thorough analysis of the data obtained has permitted
+<!--  %**** drob28.tex Line 625 **** -->formulation of a number of fairly obvious postulates governing
+the behavior of daemons in matter (decay of nucleons and
+recapture of heavier nuclei, Auger electron emission etc.).</p>
+    </para>
+    <para xml:id="S5.p4">
+      <p>Besides the confirmation of the discovery of daemons itself and
+of their Earth-bound population, this work has culminated in a
+fundamental result of an actually direct measurement of the decay
+time of a daemon-containing proton. It was found to be
+<Math mode="inline" tex="\Delta\tau_{\rm ex}\approx 2\,{\rm\mu s}" text="Delta * tau _ ex approximately-equals 2 * mu * s" xml:id="S5.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">ex</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="2" role="NUMBER" rpadding="1.7pt">2</XMTok>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. This value is larger by at
+least an order of magnitude than the figure for the average time
+for the daemon to shed a heavy nucleus (<Math mode="inline" tex="\tau_{\rm ex}\sim 10^{-7}-10^{-6}" text="tau _ ex similar-to 10 ^ (- 7) - 10 ^ (- 6)" xml:id="S5.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">ex</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> s), which was obtained by us from an analysis of
+the Solar energetics (we may recall that <Math mode="inline" tex="\Delta\tau_{\rm ex}\approx\tau_{\rm ex}/Z_{\rm n}" text="Delta * tau _ ex approximately-equals tau _ ex / Z _ n" xml:id="S5.p4.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">ex</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">ex</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">Z</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">n</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>).</p>
+    </para>
+    <para xml:id="S5.p5">
+      <p>Because <Math mode="inline" tex="\Delta\tau_{\rm ex}={\rm const}" text="Delta * tau _ ex = const" xml:id="S5.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">ex</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok role="UNKNOWN">const</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> characterizes the
+decay time of one proton, we have actually discovered a
+daemon-associated method of determining <Math mode="inline" tex="Z_{\rm n}" text="Z _ n" xml:id="S5.p5.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">Z</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">n</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> of the
+substance through which it passes and whose nuclei it captures.</p>
+    </para>
+    <para xml:id="S5.p6">
+      <p>It should be admitted that because of the statistical nature of
+the results we obtain we just have to work close to the
+confidence level in order to reach as rich an understanding of
+the essence of the observed phenomena as possible in a minimum
+time. It is thus obvious that one has to accumulate as
+<!--  %**** drob28.tex Line 650 **** -->statistically reliable material as possible while simultaneously
+improving the detection system and varying its parameters. Richer
+statistics will permit refining this important parameter,
+<Math mode="inline" tex="\Delta\tau_{\rm ex}" text="Delta * tau _ ex" xml:id="S5.p6.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">ex</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, as well as revealing and making more
+reliable new features in the distribution of events happening
+between remote scintillation detectors from the corresponding
+time delays. Some of the conclusions made by us here will
+possibly have to be modified. As a result, one will be able to
+determine the daemon distributions in velocity and directions and
+their long-period variations, as well as to reveal finer
+details in the interaction of daemons with various components of
+the material and, more generally, with matter as a whole. To
+reach the latter goal, one would naturally have to use more
+sophisticated techniques of nuclear physics than those employed
+by us thus far. Obviously enough, daemons would themselves serve
+as a completely new tool to probe processes on both the
+subnuclear and cosmological scales.</p>
+    </para>
+  </section>
+  <section xml:id="Sx1">
+    <title>Acknowledgments</title>
+    <para xml:id="Sx1.p1">
+      <p>The author is greatly indebted to M.V.Beloborodyy, R.O.Kurakin,
+V.G.Latypov and K.A.Pelepelin for assistance in experiments.</p>
+    </para>
+  </section>
+  <bibliography labels="LABEL:lastpage" xml:id="bib">
+    <title>References</title>
+    <biblist>
+      <bibitem key="b1" xml:id="bib.bib1">
+        <bibtag role="refnum">1</bibtag>
+        <bibblock> Drobyshevski E.M., 1996a, On interaction of black
+<!--  %**** drob28.tex Line 675 **** -->miniholes with matter. Preprint PhTI-1663, Ioffe Phys.-Tech.
+Inst., St Petersburg
+</bibblock>
+      </bibitem>
+      <bibitem key="b2" xml:id="bib.bib2">
+        <bibtag role="refnum">2</bibtag>
+        <bibblock> Drobyshevski E.M., 1996b, MNRAS, 282, 211
+</bibblock>
+      </bibitem>
+      <bibitem key="b3" xml:id="bib.bib3">
+        <bibtag role="refnum">3</bibtag>
+        <bibblock> Drobyshevski E.M., 2000a, MNRAS, 311, L1
+</bibblock>
+      </bibitem>
+      <bibitem key="b4" xml:id="bib.bib4">
+        <bibtag role="refnum">4</bibtag>
+        <bibblock> Drobyshevski E.M., 2000b, Phys. Atomic Nuclei,
+63(6), 1037
+</bibblock>
+      </bibitem>
+      <bibitem key="b5" xml:id="bib.bib5">
+        <bibtag role="refnum">5</bibtag>
+        <bibblock> Drobyshevski E.M., 2000c, Daemon detection
+experiment, MNRAS (submitted to), astro-ph/0007370
+</bibblock>
+      </bibitem>
+      <bibitem key="b6" xml:id="bib.bib6">
+        <bibtag role="refnum">6</bibtag>
+        <bibblock> Salpeter E.E., 1970, Nat, 225, 165
+</bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+</document>

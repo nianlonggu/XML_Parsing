@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008088.1"?>
+<?latexml class="article" options="11pt,newpasp,twoside,epsf" oldstyle="true"?>
+<!--  %Some definitions I use in these instructions. --><!--  %**** shethk.tex Line 25 **** --><?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>Molecular gas and star formation in BIMA SONG bars</title>
+  <creator role="author">
+    <personname>Kartik Sheth</personname>
+  </creator>
+  <creator before="  " role="author">
+    <personname>S.N. Vogel, A.I. Harris (U. Maryland), M.W. Regan (STScI), M.D. Thornley (NRAO), T.T. Helfer, T. Wong, L. Blitz, D.C-J. Bock (U.C.-Berkeley)</personname>
+  </creator>
+  <abstract name="Abstract">
+    <p>Using a sample of 7 barred spirals from the BIMA Survey of Nearby
+Galaxies (SONG), we compare the molecular gas distribution in the bar,
+to recent massive star formation activity. In all 7 galaxies, H<Math mode="inline" tex="\alpha" text="alpha" xml:id="m1">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> is
+offset azimuthally from the CO on the downstream side. The maximum
+offset, at the bar ends, ranges from 170-570 pc, with an average of
+320<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="m2">
+        <XMath>
+          <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+        </XMath>
+      </Math>120 pc. We discuss whether the observed offsets are
+consistent with the description of gas flows in bars provided by the
+two main classes of models: n-body models and hydrodynamic models.
+This work<note mark="1" role="footnote">The entire poster at http://bima.astro.umd.edu/projects/bimasong/pubs/romeposter.ps</note> is
+supported by NSF grants AST 9981289, AST 9981308.</p>
+  </abstract>
+  <ERROR class="undefined">\affil</ERROR>
+  <para xml:id="p1">
+    <p>Department of Astronomy, U. Maryland, College Park, MD 20742-2421</p>
+  </para>
+  <para class="ltx_noindent" xml:id="p2">
+    <p><text font="bold">I. Star Formation in Bars:</text> How and why do stars form where
+<!--  %**** shethk.tex Line 50 **** -->they do ? To answer this question one may begin by studying star formation
+activity and its molecular gas environment in a variety of
+environments, such as bars, spiral arms, and rings. Then by drawing
+together physical processes and triggers that are common in these
+different regions, we may shed light on how star formation
+might occur. Here we concentrate on bars in 7 galaxies from
+the BIMA Survey of Nearby Galaxies (SONG). We compare the molecular
+gas distribution, traced by the CO (J=1-0) emission line, to the star
+formation activity traced by the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="p2.m1">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> emission line. While overlays
+of CO and H<Math mode="inline" tex="\alpha" text="alpha" xml:id="p2.m2">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> maps show qualitative agreement, we use a
+cross-correlation analysis to quantify the relationship between the
+two. <break/></p>
+  </para>
+  <para class="ltx_noindent" xml:id="p3">
+    <p><text font="bold">II. The Cross-Correlation Process:</text>
+After matching the images in resolution, we deproject them and convert
+them to polar coordinates. To cross-correlate the images, we overlay
+and shift one image against the other, at each step multiplying the
+images pixel by pixel and recording the sum. The offset lag at which
+the two images match best has the largest correlation value. The
+results of our analysis are shown in Figure 1. <break/></p>
+  </para>
+  <para class="ltx_noindent" xml:id="p4">
+    <p><text font="bold">III. Results: Interpreting in Context of Gas Flow Models:</text></p>
+    <itemize xml:id="I1">
+<!--  %**** shethk.tex Line 75 **** -->      <item xml:id="I1.i1">
+        <tag>•</tag>
+        <para xml:id="I1.i1.p1">
+          <p>In ALL 7 galaxies, H<Math mode="inline" tex="\alpha" text="alpha" xml:id="I1.i1.p1.m1">
+              <XMath>
+                <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+              </XMath>
+            </Math> is predominantly offset azimuthally
+from the CO. Moreover, the offset is always on the downstream side.</p>
+        </para>
+      </item>
+      <item xml:id="I1.i2">
+        <tag>•</tag>
+        <para xml:id="I1.i2.p1">
+          <p>Maximum offset (measured at bar ends): 170–570 pc, Mean: 320<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="I1.i2.p1.m1">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>120 pc.</p>
+        </para>
+      </item>
+    </itemize>
+  </para>
+  <figure frefnum="Figure 1" refnum="1" xml:id="S0.F1">
+    <ERROR class="undefined">\plotone</ERROR>
+    <p>shethk1.eps</p>
+    <toccaption><tag close=" ">1</tag>H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S0.F1.m1">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> -CO cross-correlation for all 7 bars. Above (Below) the
+cross-hair indicates a radial offset of H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S0.F1.m2">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> inwards (outwards) from
+the CO. Left (Right) of the cross-hair indicates an azimuthal offset
+with H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S0.F1.m3">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> upstream (or downstream) of CO.</toccaption>
+    <caption><tag close=": ">Figure 1</tag>H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S0.F1.m4">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> -CO cross-correlation for all 7 bars. Above (Below) the
+cross-hair indicates a radial offset of H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S0.F1.m5">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> inwards (outwards) from
+the CO. Left (Right) of the cross-hair indicates an azimuthal offset
+with H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S0.F1.m6">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> upstream (or downstream) of CO.</caption>
+  </figure>
+  <para class="ltx_noindent" xml:id="p5">
+    <p><text font="bold">IIIa. N-body simulations:</text> Gas clouds behave as in spiral
+arms, crowding in the dust lane, but eventually crossing it on the
+leading side (e.g., Combes &amp; Gerin 1985). These models predict
+the observed offset of CO and H<Math mode="inline" tex="\alpha" text="alpha" xml:id="p5.m1">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> but fail to reproduce
+the straight dust lanes and high shear across the dust lanes.
+So these models may not be applicable in all cases. <break/></p>
+  </para>
+  <para class="ltx_noindent" xml:id="p6">
+    <p><text font="bold">IIIb. Hydrodynamic simulations:</text> Gas undergoes a
+hydrodynamic shock at the dust lane, and flows down the dust lane,
+never crossing the dust lane. Though the dust lane is inhospitable
+for star formation (e.g., Reynaud &amp; Downes 1998), stars may form in
+dust spurs upstream of dust lane (Sheth et al. 2000). Since none
+<!--  %**** shethk.tex Line 100 **** -->of the 7 galaxies show offsets <Math mode="inline" tex="&gt;" text="&gt;" xml:id="p6.m1">
+        <XMath>
+          <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+        </XMath>
+      </Math> 500pc, star formation in these bars
+may still occur in dust spurs because the distance between the spurs
+and HII regions is consistent with typical gas speeds (50 km/s) and HII
+region lifetimes. But the offset also indicates that HII regions
+spend most of their time on the leading side of the dust lane, thus
+constraining star formation to occur very close (100-200 pc) to the
+dust lane. The dust lane may be involved, if not in triggering the
+star formation, in formation of dust spurs. <break/></p>
+  </para>
+  <para class="ltx_noindent" xml:id="p7">
+    <p><text font="bold">IV. Conclusions:</text> H<Math mode="inline" tex="\alpha" text="alpha" xml:id="p7.m1">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> emission is <text font="italic">always</text> offset
+downstream from bar dust lanes; the offset is consistent with both
+sets of gas flow models. <break/></p>
+  </para>
+  <para xml:id="p8">
+    <p><text font="bold">References</text> <break/>Combes, F., &amp; Gerin, M. 1985, <ERROR class="undefined">\aap</ERROR>, 150, 327 <break/>Reynaud, D., &amp; Downes, D. 1998, <ERROR class="undefined">\aap</ERROR>, 337, 671 <break/>Sheth, K., Regan, M.W., Vogel, S.N. &amp; Teuben, P.J. 2000, <ERROR class="undefined">\apj</ERROR>, 533, 221 <break/></p>
+  </para>
+</document>

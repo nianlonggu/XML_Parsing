@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008326.1"?>
+<?latexml class="article" options="11pt,paspconf,epsf" oldstyle="true"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>New VLBI Constraints for 0957+561 Lens Models</title>
+  <creator role="author">
+    <personname>Deborah Haarsma</personname>
+    <contact role="affiliation">Calvin College, Grand Rapids, MI 49546 (dhaarsma@calvin.edu)</contact>
+  </creator>
+  <creator before="  " role="author">
+    <personname>Joseph Lehár</personname>
+    <contact role="affiliation">Harvard-Smithsonian Center for Astrophysics, Cambridge, MA 02138</contact>
+  </creator>
+  <creator before="  " role="author">
+    <personname>Rennan Barkana</personname>
+    <contact role="affiliation">Institute for Advanced Study, Princeton, NJ 08540</contact>
+  </creator>
+  <abstract name="Abstract">
+    <p>Time-delay measurements of 0957+561 based on radio monitoring (Haarsma
+et al. 1999) now agree with optical monitoring (Oscoz et al. 1997;
+Kundic et al. 1997). Recent models (Barkana et al. 1999; Bernstein &amp;
+Fischer 1999) incorporate many recent observations, but the systematic
+uncertainties in the models still dominate the uncertainty in the
+cosmological results. VLBI observations of the
+milli-arcsec jet structure have provided the most important set of
+modeling constraints. We present new observations of this structure,
+made at 18 cm with the Very Long Baseline Array, the Very Large Array,
+<!--  %**** paper.tex Line 25 **** -->and the Green Bank 140 ft. telescope. Compared to the data set of
+Garrett et al. (1994), ours has a similar theoretical noise level
+(20<Math mode="inline" tex="\mu" text="mu" xml:id="m1">
+        <XMath>
+          <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+        </XMath>
+      </Math>Jy), but nearly twice as many baselines (66 compared to 36) and
+more uniform coverage of the UV plane. Our initial maps confirm the basic
+jet structures seen by Garrett et al., with comparable RMS noise
+(60-80<Math mode="inline" tex="\mu" text="mu" xml:id="m2">
+        <XMath>
+          <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+        </XMath>
+      </Math>Jy), and are in reasonable agreement with the jet structure
+model of Barkana et al. (1999). The maps also hint at a new compact
+component leaving the core, and a previously undetected diffuse
+component at the end of the jet. Further refinements in
+fringe-fitting, mapping, and self-calibration should yield
+significantly lower RMS noise (closer to the theoretical level). We
+will use a modified form of the CalTech VLBI Modelfit program (written
+by Barkana et al. 1999) to determine the magnification matrix between
+the images. The refined magnification matrix should provide stronger
+constraints on the lens model, and thus reduce the uncertainty
+in the cosmological results.</p>
+  </abstract>
+  <keywords>
+gravitational lensing,
+cosmology: observations,
+distance scale,
+radio continuum: galaxies,
+quasars: individual (0957+561A,B)</keywords>
+<!--  %**** paper.tex Line 50 **** 
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->  <figure frefnum="Figure 1" refnum="1" xml:id="S0.F1">
+    <ERROR class="undefined">\plotfiddle</ERROR>
+    <p>dhaarsma1.eps2in03030-110-40</p>
+    <toccaption><tag close=" ">1</tag>UV coverage (66 baselines), <Math mode="inline" tex="\lambda=18" text="lambda = 18" xml:id="S0.F1.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+            <XMTok meaning="18" role="NUMBER">18</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> cm.</toccaption>
+    <caption><tag close=": ">Figure 1</tag>UV coverage (66 baselines), <Math mode="inline" tex="\lambda=18" text="lambda = 18" xml:id="S0.F1.m2">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+            <XMTok meaning="18" role="NUMBER">18</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> cm.</caption>
+  </figure>
+  <figure frefnum="Figure 2" refnum="2" xml:id="S0.F2">
+    <ERROR class="undefined">\plottwo</ERROR>
+    <p>dhaarsma2a.epsdhaarsma2b.eps</p>
+    <toccaption><tag close=" ">2</tag>Maps of 0957+561 A and B at 18 cm. The contours are plotted
+at intervals of -0.15, 0.15, 0.3, 0.6, 1.2, 2.4, 4.8, 9.6 mJy/beam.
+The 4 mas restoring beam is shown in the lower left. </toccaption>
+    <caption><tag close=": ">Figure 2</tag>Maps of 0957+561 A and B at 18 cm. The contours are plotted
+at intervals of -0.15, 0.15, 0.3, 0.6, 1.2, 2.4, 4.8, 9.6 mJy/beam.
+The 4 mas restoring beam is shown in the lower left. </caption>
+  </figure>
+  <bibliography citestyle="numbers" xml:id="bib">
+    <title fontsize="70%">References</title>
+    <biblist/>
+    <ERROR class="undefined">\reference</ERROR>
+    <para xml:id="bib.p1">
+      <p><text fontsize="70%">Barkana, R., Lehár, J., Falco, E. E., Grogin, N. A.,
+Keeton, C. R., and Shapiro, I. I. 1999, ApJ, 520, 479
+</text><ERROR class="undefined">\reference</ERROR><text fontsize="70%">Bernstein, G. and Fischer, P. 1999, AJ, 118, 14
+</text><ERROR class="undefined">\reference</ERROR><text fontsize="70%">Haarsma, D. B., Hewitt, J. N., Lehár, J., and Burke,
+B. F. 1999, ApJ, 510, 64
+</text><ERROR class="undefined">\reference</ERROR><text fontsize="70%">Kundić, T. et al. 1997, ApJ, 482, 75
+</text><ERROR class="undefined">\reference</ERROR><text fontsize="70%">Oscoz, A., Mediavilla, E., Goicoechea, L. J., Serra-Ricart,
+M., and Buitrago, J. 1997, ApJ, 479, L89</text></p>
+    </para>
+  </bibliography>
+<!--  %**** paper.tex Line 75 **** 
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->  <pagination role="newpage"/>
+  <para xml:id="p1">
+    <p><text font="italic">This page contains additional material from the poster which did
+not fit in the published proceedings.</text></p>
+  </para>
+  <para xml:id="p2">
+    <p align="center"><text font="bold">Simulation: The Potential of Lensed Time Delays for Cosmology</text></p>
+  </para>
+  <para xml:id="p3">
+    <itemize xml:id="I1">
+      <item xml:id="I1.i1">
+        <tag>•</tag>
+        <para xml:id="I1.i1.p1">
+          <p>The fundamental cosmological result from lensed time delays
+is not <Math mode="inline" tex="H_{0}" text="H _ 0" xml:id="I1.i1.p1.m1">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                  <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>, but the angular diameter distance to the lens
+(Narayan 1991).</p>
+        </para>
+      </item>
+      <item xml:id="I1.i2">
+        <tag>•</tag>
+        <para xml:id="I1.i2.p1">
+          <p>If we could measure the angular diameter distance
+to several lenses, then we could set limits on the matter density of
+the universe <Math mode="inline" tex="\Omega_{m}" text="Omega _ m" xml:id="I1.i2.p1.m1">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
+                </XMApp>
+              </XMath>
+            </Math> and the cosmological constant
+<Math mode="inline" tex="\Omega_{\lambda}" text="Omega _ lambda" xml:id="I1.i2.p1.m2">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+                  <XMTok font="italic" fontsize="70%" name="lambda" role="UNKNOWN">λ</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>.</p>
+        </para>
+      </item>
+      <item xml:id="I1.i3">
+        <tag>•</tag>
+        <para xml:id="I1.i3.p1">
+          <p>Simulation details: Assuming <Math mode="inline" tex="\Omega_{m}=0.3" text="Omega _ m = 0.3" xml:id="I1.i3.p1.m1">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                    <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
+                  </XMApp>
+                  <XMTok meaning="0.3" role="NUMBER">0.3</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>,
+<Math mode="inline" tex="\Omega_{\lambda}=0.7" text="Omega _ lambda = 0.7" xml:id="I1.i3.p1.m2">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                    <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+                    <XMTok font="italic" fontsize="70%" name="lambda" role="UNKNOWN">λ</XMTok>
+                  </XMApp>
+                  <XMTok meaning="0.7" role="NUMBER">0.7</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>, use the redshift for each lens to calculate its
+angular diameter distance. Add 15% Gaussian errors to each lens
+<!--  %**** paper.tex Line 100 **** -->distance. Then use distances to fit for <Math mode="inline" tex="\Omega_{m}" text="Omega _ m" xml:id="I1.i3.p1.m3">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
+                </XMApp>
+              </XMath>
+            </Math> and
+<Math mode="inline" tex="\Omega_{\lambda}" text="Omega _ lambda" xml:id="I1.i3.p1.m4">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+                  <XMTok font="italic" fontsize="70%" name="lambda" role="UNKNOWN">λ</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>. The figure shows the resulting 68% confidence
+intervals.</p>
+        </para>
+      </item>
+      <item xml:id="I1.i4">
+        <tag>•</tag>
+        <para xml:id="I1.i4.p1">
+          <p>As of early July 1999, there were 15 lenses with point images
+and known lens and source redshifts. If a time delay could be
+measured for each of these, we could have comparable results to 42
+Type Ia Supernovae (Perlmutter et al. 1999).</p>
+        </para>
+      </item>
+    </itemize>
+  </para>
+  <figure xml:id="fig1">
+    <ERROR class="undefined">\plotfiddle</ERROR>
+    <p>sm.omegasurf_dol.ps3in04040-110-40
+<!--  %“plotone–sm.omegasurf˙dol.ps˝ 
+     %“caption–Simulation of constraints on $“Omega˙m$ and $“Omega˙“lambda$
+     %from lensed time delays.˝--></p>
+  </figure>
+  <bibliography citestyle="numbers" xml:id="biba">
+    <title fontsize="70%">References</title>
+    <biblist/>
+    <ERROR class="undefined">\reference</ERROR>
+    <para xml:id="biba.p1">
+      <p><text fontsize="70%">Narayan, R. 1991, ApJ, 378, L5
+</text><ERROR class="undefined">\reference</ERROR><text fontsize="70%">Perlmutter, S., et al. 1999, ApJ, 517, 565</text></p>
+    </para>
+  </bibliography>
+<!--  %**** paper.tex Line 125 **** --></document>

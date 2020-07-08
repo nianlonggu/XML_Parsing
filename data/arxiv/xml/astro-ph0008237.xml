@@ -1,0 +1,1348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008237.1"?>
+<!--  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --><!--  %% --><!--  %% umass00.tex : 15-08-00 [IRS] --><!--  %% --><!--  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --><?latexml class="ws-p8-50x6-00"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML" class="ltx_authors_1line">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>The Nature of Faint Submillimeter Galaxies</title>
+  <creator role="author">
+    <personname>Ian Smail</personname>
+    <contact role="address">Department of Physics, University of Durham, South Road,
+Durham DH1 3LE<break/>E-mail: ian.smail@durham.ac.uk</contact>
+  </creator>
+  <creator before="  " role="author">
+    <personname>Rob Ivison</personname>
+    <contact role="address">Department of Physics &amp; Astronomy, University College London,
+Gower Street, London WC1E 6BT
+E-mail: rji@star.ucl.ac.uk</contact>
+  </creator>
+  <creator before="  " role="author">
+    <personname>Andrew Blain</personname>
+    <contact role="address">Institute of Astronomy, Madingley Road, Cambridge CB3 0HA<break/>E-mail: awb@ast.cam.ac.uk</contact>
+  </creator>
+  <creator before="  " role="author">
+    <personname>Jean-Paul Kneib</personname>
+    <contact role="address">Observatoire de Toulouse, 14 avenue E. Belin,
+31400 Toulouse, France<break/>E-mail: jean-paul.kneib@ast.obs-mip.fr</contact>
+  </creator>
+<!--  %**** umass˙irs.tex Line 25 **** -->  <ERROR class="undefined">\abstracts</ERROR>
+  <para xml:id="p1">
+    <p>We summarise the main results on the faint submillimeter (submm) galaxy
+population which have come from the SCUBA Cluster Lens Survey. We
+detail our current understanding of the characteristics of these
+submm-selected galaxies across wavebands from X-rays to radio.
+After presenting the main observational properties of this population
+we conclude by discussing the nature of these distant, ultraluminous
+infrared galaxies and their relationship to other high-redshift populations.
+<!--  %**** umass˙irs.tex Line 50 **** --></p>
+  </para>
+  <section refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>Introduction</title>
+    <para xml:id="S1.p1">
+      <p>The results of the highly successful far-infrared (FIR) survey
+undertaken by <text font="italic">IRAS</text> led to a wide-spread realisation of the
+ubiquity and importance of highly-obscured star-forming and active
+galaxies in the local universe. More recent work in the FIR and submm
+wavebands has produced a similar revolution in our understanding of
+obscured galaxies in the distant universe. These observations employ
+the <text font="italic">COBE</text> and <text font="italic">ISO</text> satellites and the Sub-millimeter Common
+User Bolometer Array (SCUBA<cite class="ltx_citemacro_cite">[<bibref bibrefs="scuba" separator="," show="Refnum" yyseparator=","/>]</cite>) on the 15-m JCMT<note mark="1" role="footnote">The
+JCMT is operated by the Joint Astronomy Centre on behalf of the United
+Kingdom Particle Physics and Astronomy Research Council (PPARC), the
+Netherlands Organisation for Scientific Research, and the National
+Research Council of Canada.</note> and have shown that obscured galaxies
+contribute a substantial fraction of the total emitted radiation at
+high redshifts.</p>
+    </para>
+    <para xml:id="S1.p2">
+      <p>The rough equivalence of the energy density in the optical
+background and that detected in the FIR/submm by <text font="italic">COBE</text> suggests that, averaged over all epochs, approximately
+<!--  %**** umass˙irs.tex Line 75 **** -->half of the total radiation in the universe came from obscured sources
+(either stars or AGN). Clearly including these class of galaxies in
+models of galaxy evolution is critical to obtain a complete
+understanding of the formation and evolution of galaxies.</p>
+    </para>
+    <para xml:id="S1.p3">
+      <p>As we will show in the next section, the bulk of the emission in the
+FIR/submm comes from a relatively small population of extremely
+luminous, dusty galaxies. These galaxies lie at high redshifts, <Math mode="inline" tex="z\mathrel{\raise 1.505pt\hbox{$\scriptstyle&gt;$}\kern-6.0pt\lower 1.72pt\hbox{{$%&#10;\scriptstyle\sim$}}}1" text="z [&gt;∼] 1" xml:id="S1.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMText role="RELOP"><text yoffset="1.5pt"><Math mode="inline" tex="\scriptstyle&gt;" text="&gt;" xml:id="S1.p3.m1.m1">
+                    <XMath>
+                      <XMTok fontsize="70%" meaning="greater-than" role="RELOP">&gt;</XMTok>
+                    </XMath>
+                  </Math></text><text yoffset="-1.7pt"><Math mode="inline" tex="\scriptstyle\sim" text="similar-to" xml:id="S1.p3.m1.m2">
+                    <XMath>
+                      <XMTok fontsize="70%" meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                    </XMath>
+                  </Math></text></XMText>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>–4, are both massive and gas-rich and they may dominate the total
+star formation in the universe at these early epochs. The analogs of
+this population in the local universe are the Ultra-Luminous Infrared
+Galaxies (ULIRGs) uncovered by <text font="italic">IRAS</text>. As a benchmark for the
+following discussion we note that a ULIRG similar to Arp 220 with a
+far-infrared luminosity of <Math mode="inline" tex="L_{FIR}\sim 3\times 10^{12}L_{\odot}" text="L _ (F * I * R) similar-to 3 * 10 ^ 12 * L _ direct-product" xml:id="S1.p3.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">F</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">I</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">×</XMTok>
+                  <XMTok meaning="3" role="NUMBER">3</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMTok fontsize="70%" meaning="12" role="NUMBER">12</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                  <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and
+a star-formation rate (SFR) of <Math mode="inline" tex="\sim 300" text="absent similar-to 300" xml:id="S1.p3.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="300" role="NUMBER">300</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> M<Math mode="inline" tex="{}_{\odot}" text="_direct-product" xml:id="S1.p3.m4">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> yr<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S1.p3.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> would
+have a 850-<Math mode="inline" tex="\mu" text="mu" xml:id="S1.p3.m6">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m flux density of <Math mode="inline" tex="\mathrel{\raise 1.505pt\hbox{$\scriptstyle&gt;$}\kern-6.0pt\lower 1.72pt\hbox{{$%&#10;\scriptstyle\sim$}}}3" text="absent [&gt;∼] 3" xml:id="S1.p3.m7">
+          <XMath>
+            <XMApp>
+              <XMText role="RELOP"><text yoffset="1.5pt"><Math mode="inline" tex="\scriptstyle&gt;" text="&gt;" xml:id="S1.p3.m7.m1">
+                    <XMath>
+                      <XMTok fontsize="70%" meaning="greater-than" role="RELOP">&gt;</XMTok>
+                    </XMath>
+                  </Math></text><text yoffset="-1.7pt"><Math mode="inline" tex="\scriptstyle\sim" text="similar-to" xml:id="S1.p3.m7.m2">
+                    <XMath>
+                      <XMTok fontsize="70%" meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                    </XMath>
+                  </Math></text></XMText>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="3" role="NUMBER">3</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mJy out to <Math mode="inline" tex="z\sim 10" text="z similar-to 10" xml:id="S1.p3.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> in a
+spatially flat Universe.<note mark="2" role="footnote">We assume <Math mode="inline" tex="q_{o}=0.5" text="q _ o = 0.5" xml:id="S1.p3.m9">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok font="italic" role="UNKNOWN">q</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                </XMApp>
+                <XMTok meaning="0.5" role="NUMBER">0.5</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> and <Math mode="inline" tex="h_{\rm 100}=0.5" text="h _ 100 = 0.5" xml:id="S1.p3.m10">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok font="italic" role="UNKNOWN">h</XMTok>
+                  <XMTok fontsize="70%" meaning="100" role="NUMBER">100</XMTok>
+                </XMApp>
+                <XMTok meaning="0.5" role="NUMBER">0.5</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> unless otherwise stated.</note></p>
+    </para>
+  </section>
+  <section refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>Submm number counts and the FIR background</title>
+    <para xml:id="S2.p1">
+      <p>The advent of sensitive submm imaging with SCUBA has allowed a number
+<!--  %**** umass˙irs.tex Line 100 **** -->of groups to undertake ‘blank’-field surveys for faint submm galaxies.
+Results on the number density of sources in blank fields as a function
+of 850-<Math mode="inline" tex="\mu" text="mu" xml:id="S2.p1.m1">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m flux density have been published by three
+groups.<cite class="ltx_citemacro_cite">[<bibref bibrefs="hdf,sae99,ajb98" separator="," show="Refnum" yyseparator=","/>]</cite> Unfortunately, due to the modest
+resolution of the SCUBA maps, 15<Math mode="inline" tex="{}^{\prime\prime}" text="^prime2" xml:id="S2.p1.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" name="prime2">′′</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> FWHM, these surveys are confusion
+limited at <Math mode="inline" tex="\sim 2" text="absent similar-to 2" xml:id="S2.p1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mJy and resolve <Math mode="inline" tex="\sim 50" text="absent similar-to 50" xml:id="S2.p1.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="50" role="NUMBER">50</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>% of the <text font="italic">COBE</text> background.</p>
+    </para>
+    <para xml:id="S2.p2">
+      <p>Our collaboration has taken a complimentary approach to these ‘blank’
+field surveys by using massive gravitational cluster lenses to increase
+the sensitivity and resolution of SCUBA. This survey covers seven
+lensing clusters at <Math mode="inline" tex="z=0.19" text="z = 0.19" xml:id="S2.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="0.19" role="NUMBER">0.19</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>–0.41<cite class="ltx_citemacro_cite">[<bibref bibrefs="sib,sibk,bkis" separator="," show="Refnum" yyseparator=","/>]</cite> (new results
+from two similar lensing surveys with SCUBA were also reported at this
+meeting<cite class="ltx_citemacro_cite">[<bibref bibrefs="pvdw,dssc" separator="," show="Refnum" yyseparator=","/>]</cite>). Our analysis uses well-constrained lens
+models to correct the observed source fluxes for lens
+amplification.<cite class="ltx_citemacro_cite">[<bibref bibrefs="bkis" separator="," show="Refnum" yyseparator=","/>]</cite> For the median source amplification, <Math mode="inline" tex="\sim 2.5\times" xml:id="S2.p2.m2">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            <XMTok meaning="2.5" role="NUMBER">2.5</XMTok>
+            <XMTok meaning="times" role="MULOP">×</XMTok>
+          </XMath>
+        </Math>, this survey covers an area of the source plane equivalent
+to 15 arcmin<Math mode="inline" tex="{}^{2}" text="^2" xml:id="S2.p2.m3">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> at a <Math mode="inline" tex="3\sigma" text="3 * sigma" xml:id="S2.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok meaning="3" role="NUMBER">3</XMTok>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> flux limit of <Math mode="inline" tex="\sim 2" text="absent similar-to 2" xml:id="S2.p2.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mJy. The
+amplification also results in a factor of two finer beam size at this
+depth so that these counts have a fainter confusion limit than the
+blank field observations. The surface density of sources at the limit
+of our survey (0.5 mJy) is <Math mode="inline" tex="\sim 8" text="absent similar-to 8" xml:id="S2.p2.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="8" role="NUMBER">8</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> arcmin<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S2.p2.m7">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> (the equivalent
+density of ‘normal’ field galaxies is reached at <Math mode="inline" tex="I\sim 23.5" text="I similar-to 23.5" xml:id="S2.p2.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="23.5" role="NUMBER">23.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>) and we
+resolve <Math mode="inline" tex="\sim 100" text="absent similar-to 100" xml:id="S2.p2.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="100" role="NUMBER">100</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>% of the <text font="italic">COBE</text> background.<cite class="ltx_citemacro_cite">[<bibref bibrefs="bkis" separator="," show="Refnum" yyseparator=","/>]</cite> We
+conclude that the majority of the extragalactic submm background arises
+in a relatively sparse population of extremely luminous galaxies, <Math mode="inline" tex="L\mathrel{\raise 1.505pt\hbox{$\scriptstyle&gt;$}\kern-6.0pt\lower 1.72pt\hbox{{$%&#10;\scriptstyle\sim$}}}10^{12}L_{\odot}" text="L [&gt;∼] 10 ^ 12 * L _ direct-product" xml:id="S2.p2.m10">
+          <XMath>
+            <XMApp>
+              <XMText role="RELOP"><text yoffset="1.5pt"><Math mode="inline" tex="\scriptstyle&gt;" text="&gt;" xml:id="S2.p2.m10.m1">
+                    <XMath>
+                      <XMTok fontsize="70%" meaning="greater-than" role="RELOP">&gt;</XMTok>
+                    </XMath>
+                  </Math></text><text yoffset="-1.7pt"><Math mode="inline" tex="\scriptstyle\sim" text="similar-to" xml:id="S2.p2.m10.m2">
+                    <XMath>
+                      <XMTok fontsize="70%" meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                    </XMath>
+                  </Math></text></XMText>
+<!--  %**** umass_irs.tex Line 125 **** -->              <XMTok font="italic" role="UNKNOWN">L</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="12" role="NUMBER">12</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                  <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.</p>
+    </para>
+  </section>
+  <section refnum="3" xml:id="S3">
+    <title><tag close=" ">3</tag>Optical counterparts to submm galaxies</title>
+    <figure frefnum="Figure 1" placement="th" refnum="1" xml:id="S3.F1">
+<!--  %“centerline–“psfig–file=fig1.ps,angle=270,width=4.6in˝˝ -->      <p class="ltx_align_center"><text fontsize="298%">fig1.gif</text></p>
+      <break/>
+      <toccaption><tag close=" ">1</tag>
+<Math mode="inline" tex="15^{\prime\prime}\times 15^{\prime\prime}" text="15 ^ prime2 * 15 ^ prime2" xml:id="S3.F1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="15" role="NUMBER">15</XMTok>
+                <XMTok fontsize="70%" name="prime2">′′</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="15" role="NUMBER">15</XMTok>
+                <XMTok fontsize="70%" name="prime2">′′</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> images of the 17 sub-mm sources in our full
+sample. These are ordered from the upper-left on the basis of the
+reliability of their proposed optical counterparts – with the first
+two rows containing those sources which were probably correctly
+identified in the optical imaging.<Math mode="inline" tex="{}^{21,25}" text="^list@(21, 25)" xml:id="S3.F1.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="list"/>
+                  <XMRef idref="S3.F1.m2.1"/>
+                  <XMRef idref="S3.F1.m2.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok fontsize="70%" meaning="21" role="NUMBER" xml:id="S3.F1.m2.1">21</XMTok>
+                  <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                  <XMTok fontsize="70%" meaning="25" role="NUMBER" xml:id="S3.F1.m2.2">25</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> Possible counterparts are
+identified with ‘?’, those which are unlikely to be the correct
+counterpart are marked with an ‘X’. The bottom row shows those submm
+source where subsequent near-infrared and radio analysis has brought
+into question the identification of the proposed optical counterparts.
+</toccaption>
+      <caption><tag close=": ">Figure 1</tag>
+<Math mode="inline" tex="15^{\prime\prime}\times 15^{\prime\prime}" text="15 ^ prime2 * 15 ^ prime2" xml:id="S3.F1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="15" role="NUMBER">15</XMTok>
+                <XMTok fontsize="70%" name="prime2">′′</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="15" role="NUMBER">15</XMTok>
+                <XMTok fontsize="70%" name="prime2">′′</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> images of the 17 sub-mm sources in our full
+sample. These are ordered from the upper-left on the basis of the
+reliability of their proposed optical counterparts – with the first
+two rows containing those sources which were probably correctly
+identified in the optical imaging.<Math mode="inline" tex="{}^{21,25}" text="^list@(21, 25)" xml:id="S3.F1.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="list"/>
+                  <XMRef idref="S3.F1.m4.1"/>
+                  <XMRef idref="S3.F1.m4.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok fontsize="70%" meaning="21" role="NUMBER" xml:id="S3.F1.m4.1">21</XMTok>
+                  <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                  <XMTok fontsize="70%" meaning="25" role="NUMBER" xml:id="S3.F1.m4.2">25</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> Possible counterparts are
+identified with ‘?’, those which are unlikely to be the correct
+counterpart are marked with an ‘X’. The bottom row shows those submm
+source where subsequent near-infrared and radio analysis has brought
+into question the identification of the proposed optical counterparts.
+</caption>
+<!--  %**** umass˙irs.tex Line 150 **** -->    </figure>
+    <para xml:id="S3.p1">
+      <p>The first attempts at identifying counterparts to the submm sources in
+our survey concentrated on exploiting the high-quality, archival <text font="italic">Hubble Space Telescope</text> <text font="italic">WFPC2</text> imaging which existed for the
+majority of these fields.<cite class="ltx_citemacro_cite">[<bibref bibrefs="sibk" separator="," show="Refnum" yyseparator=","/>]</cite> These frames typically reach
+limits of <Math mode="inline" tex="I\sim 27" text="I similar-to 27" xml:id="S3.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="27" role="NUMBER">27</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> on the background source-plane and we felt
+confident of identifying a large fraction of the submm galaxies
+(reflecting the optical bias of the author). Figure 1 shows the
+identifications from Smail et al. (1998)<cite class="ltx_citemacro_cite">[<bibref bibrefs="sibk" separator="," show="Refnum" yyseparator=","/>]</cite> but ordered in
+terms of our current understanding of the reliability of the proposed
+counterparts (based on the near-infrared and radio follow-up discussed
+in the next section).</p>
+    </para>
+    <para xml:id="S3.p2">
+      <p>If we remove the two central cluster galaxies<cite class="ltx_citemacro_cite">[<bibref bibrefs="e99" separator="," show="Refnum" yyseparator=","/>]</cite> from our sample
+(SMM J21536+1741 and SMM J14010+0252) – we conclude that only
+about half of the original identifications which were proposed are
+likely to be correct. Indeed, of all the submm galaxies detected in
+all the SCUBA surveys, only three have confirmed counterparts:
+SMM J02399<Math mode="inline" tex="-" text="-" xml:id="S3.p2.m1">
+          <XMath>
+            <XMTok meaning="minus" role="ADDOP">-</XMTok>
+          </XMath>
+        </Math>0136,<cite class="ltx_citemacro_cite">[<bibref bibrefs="i98" separator="," show="Refnum" yyseparator=","/>]</cite> SMM J14011+0252<cite class="ltx_citemacro_cite">[<bibref bibrefs="i00" separator="," show="Refnum" yyseparator=","/>]</cite> and
+SMM J02399<Math mode="inline" tex="-" text="-" xml:id="S3.p2.m2">
+          <XMath>
+            <XMTok meaning="minus" role="ADDOP">-</XMTok>
+          </XMath>
+        </Math>0134 (Fig. 1), where the confirmation comes from
+identification of CO emission at the same redshift as the proposed
+counterpart.<cite class="ltx_citemacro_cite">[<bibref bibrefs="f98,f99,k01" separator="," show="Refnum" yyseparator=","/>]</cite> For a handful of other sources, their
+continuum detections with millimeter interferometers and the improved
+<!--  %**** umass˙irs.tex Line 175 **** -->astrometry which these provide, have been used to identify likely
+counterparts.<cite class="ltx_citemacro_cite">[<bibref bibrefs="g00,c00" separator="," show="Refnum" yyseparator=","/>]</cite> Equally, identifications of counterparts
+have been claimed when a galaxy with sufficiently unusual
+characteristics is found within the submm error box (e.g. an
+ERO<cite class="ltx_citemacro_cite">[<bibref bibrefs="s99" separator="," show="Refnum" yyseparator=","/>]</cite>), but so far none of these have been confirmed in CO.</p>
+    </para>
+    <para xml:id="S3.p3">
+      <p>The relatively low identification rate, even with the high-quality
+optical imaging we have available, results partly from the fact that
+source confusion with the large SCUBA beam is compounded by clustering,
+potentially leading to deviations of the order of the
+beam-size.<cite class="ltx_citemacro_cite">[<bibref bibrefs="h00" separator="," show="Refnum" yyseparator=","/>]</cite> Indeed the clearest route to identifying
+counterparts is usually to overlay the raw SCUBA map onto the optical
+image and to use the information present in the shape of the submm
+emission to search for possible merging of sources. We believe that
+source confusion may have contributed to the ambiguities in the
+identification of counterparts for SMM J21536+1742, SMM J22471<Math mode="inline" tex="-" text="-" xml:id="S3.p3.m1">
+          <XMath>
+            <XMTok meaning="minus" role="ADDOP">-</XMTok>
+          </XMath>
+        </Math>0206
+and SMM J02400<Math mode="inline" tex="-" text="-" xml:id="S3.p3.m2">
+          <XMath>
+            <XMTok meaning="minus" role="ADDOP">-</XMTok>
+          </XMath>
+        </Math>0134. However, the main difficulty with identifying
+optical counterparts arises because the majority of the submm population
+are <text font="italic">extremely</text> faint at optical wavelengths: at least half and
+perhaps upto 75% of galaxies in Fig. 1 have optically faint
+counterparts, <Math mode="inline" tex="I\gg 25" text="I &gt;&gt; 25" xml:id="S3.p3.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="much-greater-than" name="gg" role="RELOP">≫</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="25" role="NUMBER">25</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>–27 (i.e. Classes 0 and 1<cite class="ltx_citemacro_cite">[<bibref bibrefs="i01" separator="," show="Refnum" yyseparator=","/>]</cite>). Removing the
+known AGN from the sample, the proportion of starburst-powered submm
+galaxies which have optically faint counterparts rises to 90%. We now
+briefly discuss some of the observations which have led us to this
+conclusion.
+<!--  %**** umass˙irs.tex Line 200 **** --></p>
+    </para>
+  </section>
+  <section refnum="4" xml:id="S4">
+    <title><tag close=" ">4</tag>Near-infrared and radio counterparts to submm galaxies</title>
+    <para xml:id="S4.p1">
+      <p>The first indication that things might not be as clear-cut as the
+proposed optical identifications suggested came from <Math mode="inline" tex="K" text="K" xml:id="S4.p1.m1">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">K</XMTok>
+          </XMath>
+        </Math>-band imaging
+of our SCUBA fields using UKIRT<note mark="3" role="footnote">UKIRT is operated by the Joint
+Astronomy Centre on behalf of PPARC.</note> These images reach <Math mode="inline" tex="K\sim 21" text="K similar-to 21" xml:id="S4.p1.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">K</XMTok>
+              <XMTok meaning="21" role="NUMBER">21</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> in
+the source plane and uncovered new candidates (H5 and N4 in Fig. 2)
+within the submm error-boxes of two of the submm sources.<cite class="ltx_citemacro_cite">[<bibref bibrefs="s99" separator="," show="Refnum" yyseparator=","/>]</cite>
+These galaxies are undetected in very deep <text font="italic">HST</text> and Keck <Math mode="inline" tex="R" text="R" xml:id="S4.p1.m3">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMath>
+        </Math>- and
+<Math mode="inline" tex="I" text="I" xml:id="S4.p1.m4">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">I</XMTok>
+          </XMath>
+        </Math>-band imaging (<Math mode="inline" tex="I\mathrel{\raise 1.505pt\hbox{$\scriptstyle&gt;$}\kern-6.0pt\lower 1.72pt\hbox{{$%&#10;\scriptstyle\sim$}}}27" text="I [&gt;∼] 27" xml:id="S4.p1.m5">
+          <XMath>
+            <XMApp>
+              <XMText role="RELOP"><text yoffset="1.5pt"><Math mode="inline" tex="\scriptstyle&gt;" text="&gt;" xml:id="S4.p1.m5.m1">
+                    <XMath>
+                      <XMTok fontsize="70%" meaning="greater-than" role="RELOP">&gt;</XMTok>
+                    </XMath>
+                  </Math></text><text yoffset="-1.7pt"><Math mode="inline" tex="\scriptstyle\sim" text="similar-to" xml:id="S4.p1.m5.m2">
+                    <XMath>
+                      <XMTok fontsize="70%" meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                    </XMath>
+                  </Math></text></XMText>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="27" role="NUMBER">27</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> corrected for lens amplification), but are
+relatively bright in the <Math mode="inline" tex="K" text="K" xml:id="S4.p1.m6">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">K</XMTok>
+          </XMath>
+        </Math>-band. Their colours, <Math mode="inline" tex="(I-K)\mathrel{\raise 1.505pt\hbox{$\scriptstyle&gt;$}\kern-6.0pt\lower 1.72pt%&#10;\hbox{{$\scriptstyle\sim$}}}6.0" text="I - K [&gt;∼] 6.0" xml:id="S4.p1.m7">
+          <XMath>
+            <XMApp>
+              <XMText role="RELOP"><text yoffset="1.5pt"><Math mode="inline" tex="\scriptstyle&gt;" text="&gt;" xml:id="S4.p1.m7.m1">
+                    <XMath>
+                      <XMTok fontsize="70%" meaning="greater-than" role="RELOP">&gt;</XMTok>
+                    </XMath>
+                  </Math></text><text yoffset="-1.7pt"><Math mode="inline" tex="\scriptstyle\sim" text="similar-to" xml:id="S4.p1.m7.m2">
+                    <XMath>
+                      <XMTok fontsize="70%" meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                    </XMath>
+                  </Math></text></XMText>
+              <XMDual>
+                <XMRef idref="S4.p1.m7.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S4.p1.m7.1">
+                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">K</XMTok>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+              <XMTok meaning="6.0" role="NUMBER">6.0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and
+<Math mode="inline" tex="\mathrel{\raise 1.505pt\hbox{$\scriptstyle&gt;$}\kern-6.0pt\lower 1.72pt\hbox{{$%&#10;\scriptstyle\sim$}}}6.8" text="absent [&gt;∼] 6.8" xml:id="S4.p1.m8">
+          <XMath>
+            <XMApp>
+              <XMText role="RELOP"><text yoffset="1.5pt"><Math mode="inline" tex="\scriptstyle&gt;" text="&gt;" xml:id="S4.p1.m8.m1">
+                    <XMath>
+                      <XMTok fontsize="70%" meaning="greater-than" role="RELOP">&gt;</XMTok>
+                    </XMath>
+                  </Math></text><text yoffset="-1.7pt"><Math mode="inline" tex="\scriptstyle\sim" text="similar-to" xml:id="S4.p1.m8.m2">
+                    <XMath>
+                      <XMTok fontsize="70%" meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                    </XMath>
+                  </Math></text></XMText>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="6.8" role="NUMBER">6.8</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> for H5 and N4 respectively, place them firmly in the rare
+class of Extremely Red Objects (EROs).<cite class="ltx_citemacro_cite">[<bibref bibrefs="s99" separator="," show="Refnum" yyseparator=","/>]</cite> The surface density of
+ERO-submm galaxies in our survey means that they account for around
+half of all ERO’s – providing an important link between these two
+populations. Moreover, the extreme submm to optical ratios of these
+galaxies, <Math mode="inline" tex="L_{FIR}/L_{B}\mathrel{\raise 1.505pt\hbox{$\scriptstyle&gt;$}\kern-6.0pt\lower 1.%&#10;72pt\hbox{{$\scriptstyle\sim$}}}300" text="L _ (F * I * R) / L _ B [&gt;∼] 300" xml:id="S4.p1.m9">
+          <XMath>
+            <XMApp>
+              <XMText role="RELOP"><text yoffset="1.5pt"><Math mode="inline" tex="\scriptstyle&gt;" text="&gt;" xml:id="S4.p1.m9.m1">
+                    <XMath>
+                      <XMTok fontsize="70%" meaning="greater-than" role="RELOP">&gt;</XMTok>
+                    </XMath>
+                  </Math></text><text yoffset="-1.7pt"><Math mode="inline" tex="\scriptstyle\sim" text="similar-to" xml:id="S4.p1.m9.m2">
+                    <XMath>
+                      <XMTok fontsize="70%" meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                    </XMath>
+                  </Math></text></XMText>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">F</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">I</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">B</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="300" role="NUMBER">300</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> (assuming they lie at <Math mode="inline" tex="z\sim 2.5" text="z similar-to 2.5" xml:id="S4.p1.m10">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="2.5" role="NUMBER">2.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>–3,
+as suggested by fits to their SEDs), combined with their high inferred
+star formation rates underlines the difficulties faced when attempting
+to use UV-selected samples to audit star formation at <Math mode="inline" tex="z\gg 1" text="z &gt;&gt; 1" xml:id="S4.p1.m11">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="much-greater-than" name="gg" role="RELOP">≫</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>.
+<!--  %**** umass˙irs.tex Line 225 **** --></p>
+    </para>
+    <figure frefnum="Figure 2" placement="th" refnum="2" xml:id="S4.F2">
+      <p class="ltx_align_center"><ERROR class="undefined">\psfig</ERROR>file=fig2.ps,angle=270,width=4.6in</p>
+      <toccaption><tag close=" ">2</tag>
+ERO counterparts to two submm sources in our survey.<Math mode="inline" tex="{}^{18}" text="^18" xml:id="S4.F2.m1">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMTok fontsize="70%" meaning="18" role="NUMBER">18</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> The two
+panels for each source show deep <Math mode="inline" tex="I" text="I" xml:id="S4.F2.m2">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">I</XMTok>
+          </XMath>
+        </Math>- and <Math mode="inline" tex="K" text="K" xml:id="S4.F2.m3">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">K</XMTok>
+          </XMath>
+        </Math>-band images with the
+850 <Math mode="inline" tex="\mu" text="mu" xml:id="S4.F2.m4">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m and 1.4 GHz maps overlayed. The faintest sources visible
+in the <Math mode="inline" tex="I" text="I" xml:id="S4.F2.m5">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">I</XMTok>
+          </XMath>
+        </Math>-band exposure have observed magnitudes of <Math mode="inline" tex="I\sim 25.5" text="I similar-to 25.5" xml:id="S4.F2.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="25.5" role="NUMBER">25.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>–26.0
+and <Math mode="inline" tex="K\sim 20.5" text="K similar-to 20.5" xml:id="S4.F2.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">K</XMTok>
+              <XMTok meaning="20.5" role="NUMBER">20.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. The original counterparts proposed for the submm
+sources are marked on the <Math mode="inline" tex="K" text="K" xml:id="S4.F2.m8">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">K</XMTok>
+          </XMath>
+        </Math>-band images, as well as the new ERO
+candidates, H5 for SMM J09429+4658 and N4 for SMM J04433+0210. Each
+panel is 30<Math mode="inline" tex="{}^{\prime\prime}" text="^prime2" xml:id="S4.F2.m9">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMTok fontsize="70%" name="prime2">′′</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> square and is centred on the 850-<Math mode="inline" tex="\mu" text="mu" xml:id="S4.F2.m10">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m position.
+</toccaption>
+      <caption><tag close=": ">Figure 2</tag>
+ERO counterparts to two submm sources in our survey.<Math mode="inline" tex="{}^{18}" text="^18" xml:id="S4.F2.m11">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMTok fontsize="70%" meaning="18" role="NUMBER">18</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> The two
+panels for each source show deep <Math mode="inline" tex="I" text="I" xml:id="S4.F2.m12">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">I</XMTok>
+          </XMath>
+        </Math>- and <Math mode="inline" tex="K" text="K" xml:id="S4.F2.m13">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">K</XMTok>
+          </XMath>
+        </Math>-band images with the
+850 <Math mode="inline" tex="\mu" text="mu" xml:id="S4.F2.m14">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m and 1.4 GHz maps overlayed. The faintest sources visible
+in the <Math mode="inline" tex="I" text="I" xml:id="S4.F2.m15">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">I</XMTok>
+          </XMath>
+        </Math>-band exposure have observed magnitudes of <Math mode="inline" tex="I\sim 25.5" text="I similar-to 25.5" xml:id="S4.F2.m16">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="25.5" role="NUMBER">25.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>–26.0
+and <Math mode="inline" tex="K\sim 20.5" text="K similar-to 20.5" xml:id="S4.F2.m17">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">K</XMTok>
+              <XMTok meaning="20.5" role="NUMBER">20.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. The original counterparts proposed for the submm
+sources are marked on the <Math mode="inline" tex="K" text="K" xml:id="S4.F2.m18">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">K</XMTok>
+          </XMath>
+        </Math>-band images, as well as the new ERO
+candidates, H5 for SMM J09429+4658 and N4 for SMM J04433+0210. Each
+panel is 30<Math mode="inline" tex="{}^{\prime\prime}" text="^prime2" xml:id="S4.F2.m19">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMTok fontsize="70%" name="prime2">′′</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> square and is centred on the 850-<Math mode="inline" tex="\mu" text="mu" xml:id="S4.F2.m20">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m position.
+</caption>
+    </figure>
+    <para xml:id="S4.p2">
+      <p>The next phase of the identification process used <text font="italic">very</text> deep
+1.4 GHz maps of our fields from the VLA.<cite class="ltx_citemacro_cite">[<bibref bibrefs="s00" separator="," show="Refnum" yyseparator=","/>]</cite> These maps allow
+us to identify radio counterparts or place stringent limits (<Math mode="inline" tex="\mathrel{\raise 1.505pt\hbox{$\scriptstyle&lt;$}\kern-6.0pt\lower 1.72pt\hbox{{$%&#10;\scriptstyle\sim$}}}20\mu" text="absent [less∼] 20 * mu" xml:id="S4.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMText role="RELOP"><text yoffset="1.5pt"><Math mode="inline" tex="\scriptstyle&lt;" text="less" xml:id="S4.p2.m1.m1">
+                    <XMath>
+                      <XMTok fontsize="70%" meaning="less-than" role="RELOP">&lt;</XMTok>
+                    </XMath>
+                  </Math></text><text yoffset="-1.7pt"><Math mode="inline" tex="\scriptstyle\sim" text="similar-to" xml:id="S4.p2.m1.m2">
+                    <XMath>
+                      <XMTok fontsize="70%" meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                    </XMath>
+                  </Math></text></XMText>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="20" role="NUMBER">20</XMTok>
+                <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>Jy in the source plane) on the radio flux of the submm galaxies.
+Moreover, the recent work on submm-to-radio spectral indices for
+distant star forming galaxies<cite class="ltx_citemacro_cite">[<bibref bibrefs="cy99,cy00,awb" separator="," show="Refnum" yyseparator=","/>]</cite> has provided us
+with a useful tool for estimating the redshift distribution of a <text font="italic">complete</text> submm-selected sample.<cite class="ltx_citemacro_cite">[<bibref bibrefs="s00" separator="," show="Refnum" yyseparator=","/>]</cite> We can compare the redshift
+<!--  %**** umass˙irs.tex Line 250 **** -->limits derived in this manner with the spectroscopic redshifts for
+individual candidate optical counterparts<cite class="ltx_citemacro_cite">[<bibref bibrefs="b99" separator="," show="Refnum" yyseparator=","/>]</cite> and hence determine
+the reliability of these proposed counterparts as shown in Fig. 1. On
+the basis of this analysis we conclude that the submm population
+brighter than <Math mode="inline" tex="\sim 1" text="absent similar-to 1" xml:id="S4.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mJy has a median redshift of <text font="italic">at least</text>
+<Math mode="inline" tex="&lt;\!\!z\!\!&gt;\sim 2" text="expectation@(z) similar-to 2" xml:id="S4.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="expectation"/>
+                  <XMRef idref="S4.p2.m3.1"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok meaning="less-than" role="OPEN" rpadding="-3.4pt">&lt;</XMTok>
+                  <XMTok font="italic" role="UNKNOWN" rpadding="-3.4pt" xml:id="S4.p2.m3.1">z</XMTok>
+                  <XMTok meaning="greater-than" role="CLOSE">&gt;</XMTok>
+                </XMWrap>
+              </XMDual>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, and using the available spectral index models,
+probably <Math mode="inline" tex="&lt;\!\!z\!\!&gt;\sim 2.5" text="expectation@(z) similar-to 2.5" xml:id="S4.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="expectation"/>
+                  <XMRef idref="S4.p2.m4.1"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok meaning="less-than" role="OPEN" rpadding="-3.4pt">&lt;</XMTok>
+                  <XMTok font="italic" role="UNKNOWN" rpadding="-3.4pt" xml:id="S4.p2.m4.1">z</XMTok>
+                  <XMTok meaning="greater-than" role="CLOSE">&gt;</XMTok>
+                </XMWrap>
+              </XMDual>
+              <XMTok meaning="2.5" role="NUMBER">2.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>–3.<cite class="ltx_citemacro_cite">[<bibref bibrefs="s00" separator="," show="Refnum" yyseparator=","/>]</cite> The high median redshift
+means that the submm population, if predominately powered by starbursts
+(rather than AGN), contributes a substantial fraction of the total star
+formation density at high redshifts.</p>
+    </para>
+    <para xml:id="S4.p3">
+      <p>Our on-going program of observations of this sample of submm galaxies,
+using near-infrared imaging and spectroscopy and millimeter
+interferometry is reported elsewhere in this volume.<cite class="ltx_citemacro_cite">[<bibref bibrefs="dtf" separator="," show="Refnum" yyseparator=","/>]</cite></p>
+    </para>
+  </section>
+  <section refnum="5" xml:id="S5">
+    <title><tag close=" ">5</tag>The submm population at other wavelengths</title>
+    <para xml:id="S5.p1">
+      <p>To understand the role of the submm galaxies in galaxy formation and
+evolution we first have to determine the relative contributions to
+their extreme luminosities from AGN and starburst-powered emission.
+Hard X-ray observations can uncover the presence of a dominant AGN
+power source in even highly obscured sources, and hence provide a
+<!--  %**** umass˙irs.tex Line 275 **** -->simple estimate of the AGN fraction in the submm
+population.<cite class="ltx_citemacro_cite">[<bibref bibrefs="omar,kfg" separator="," show="Refnum" yyseparator=","/>]</cite> Unfortunately, even for high-redshift
+sources, <text font="italic">Chandra</text> provides relatively poor hard X-ray response,
+and hence to-date all the X-ray studies of submm
+galaxies<cite class="ltx_citemacro_cite">[<bibref bibrefs="acf,a370" separator="," show="Refnum" yyseparator=","/>]</cite> have achieved is to confirm the presence of
+modestly-obscured AGN in those galaxies in which optical spectroscopy
+had already identified AGN emission.<cite class="ltx_citemacro_cite">[<bibref bibrefs="i98,b99" separator="," show="Refnum" yyseparator=","/>]</cite> These galaxies
+account for 10–20% of the submm population, in-line with estimates
+from the models of the X-ray background.<cite class="ltx_citemacro_cite">[<bibref bibrefs="omar,kfg" separator="," show="Refnum" yyseparator=","/>]</cite> Much more
+interesting limits on the fraction of highly-obscured AGN in this
+population will come from <text font="italic">Newton</text> observations. Equally useful
+constraints on the fraction of obscured AGN and the breakdown of AGN-
+versus starburst-powered emission in individual galaxies will come from
+high-resolution, mid-infrared observations (using OSCIR or Michelle on
+Gemini) which are sensitive to emission from hot-dust and PAHs.
+However, we conclude that, on present evidence, it seems safe to assume
+that the majority of the emission from the submm population is powered
+by star formation.<cite class="ltx_citemacro_cite">[<bibref bibrefs="bsik" separator="," show="Refnum" yyseparator=","/>]</cite></p>
+    </para>
+  </section>
+  <section refnum="6" xml:id="S6">
+    <title><tag close=" ">6</tag>The relationship between FIR- and UV-selected galaxies</title>
+<!--  %**** umass˙irs.tex Line 300 **** -->    <para xml:id="S6.p1">
+      <p>Finally, we briefly discuss the relationship of submm galaxies to
+other classes of high-redshift sources. Recently it has been claimed
+that UV- and optically-selected galaxy samples at <Math mode="inline" tex="z\sim 0" text="z similar-to 0" xml:id="S6.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>–3 can
+completely account for the extragalactic background, not only in the
+optical/UV, but also in the far-infrared and submm.<cite class="ltx_citemacro_cite">[<bibref bibrefs="kacc" separator="," show="Refnum" yyseparator=","/>]</cite> This
+calculation relies upon the correction of the UV luminosities of these
+samples for the effects of dust extinction, using a correlation between
+reddening (measured through the spectral slope in the UV) and UV
+luminosity from observations of normal galaxies at low redshifts.
+Unfortunately, as was graphically illustrated at this
+conference,<cite class="ltx_citemacro_cite">[<bibref bibrefs="ds" separator="," show="Refnum" yyseparator=","/>]</cite> this correlation doesn’t hold (even locally) for
+galaxies with bolometric luminosities typical of the population we have
+found at higher redshifts which dominate the submm counts and produce
+the bulk of the <text font="italic">COBE</text> background. This clearly calls into
+question the reliability of this type of calculation.</p>
+    </para>
+    <para xml:id="S6.p2">
+      <p>The argument that UV-selected samples can provide a complete picture is
+supported using optical/UV and submm observations of an example of a
+‘representative’ submm galaxy, SMM J14011+0252 (Fig. 3).<cite class="ltx_citemacro_cite">[<bibref bibrefs="i00" separator="," show="Refnum" yyseparator=","/>]</cite> However,
+this galaxy is far from typical of the majority of the submm
+population – which would be better described using the ERO, HR 10,
+as an archetype.<cite class="ltx_citemacro_cite">[<bibref bibrefs="d99" separator="," show="Refnum" yyseparator=","/>]</cite> Moreover, even within the SMM J14011+0252
+system it appears from interferometry observations that the dominant
+bolometric component resides, not in the UV-bright companion J2, but in
+<!--  %**** umass˙irs.tex Line 325 **** -->the much redder galaxy J1. Using a UV-weighted spectral slope (which
+has a substantial contribution from J2) in an attempt to predict the
+unobscured star formation rate (which mostly occurs in J1) in this
+system seems questionable – why should the UV properties of J2 have
+any bearing on the degree of obscuration and star formation in J1?</p>
+    </para>
+    <figure frefnum="Figure 3" placement="th" refnum="3" xml:id="S6.F3">
+      <p class="ltx_align_center"><ERROR class="undefined">\psfig</ERROR>file=fig3.ps,angle=270,width=4.0in</p>
+      <toccaption><tag close=" ">3</tag>
+These panels show two of the submm galaxies detected through the
+lensing cluster A 1835.<Math mode="inline" tex="{}^{12}" text="^12" xml:id="S6.F3.m1">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMTok fontsize="70%" meaning="12" role="NUMBER">12</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> The left-hand panels illustrate the
+morphology of the two components, J1/J2, of the <Math mode="inline" tex="z=2.55" text="z = 2.55" xml:id="S6.F3.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="2.55" role="NUMBER">2.55</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> starburst
+galaxy SMM J14011+0252, from the <Math mode="inline" tex="U" text="U" xml:id="S6.F3.m3">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+          </XMath>
+        </Math>- to <Math mode="inline" tex="K" text="K" xml:id="S6.F3.m4">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">K</XMTok>
+          </XMath>
+        </Math>-bands. The central panel
+gives a zoomed view of the <text font="italic">WFPC2</text> <Math mode="inline" tex="R" text="R" xml:id="S6.F3.m5">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMath>
+        </Math>-band image of this galaxy,
+demonstrating the complex, merger-like morphology of the
+bolometrically-dominant component J1. The right-hand panels show <Math mode="inline" tex="R" text="R" xml:id="S6.F3.m6">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMath>
+        </Math>-
+and <Math mode="inline" tex="K" text="K" xml:id="S6.F3.m7">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">K</XMTok>
+          </XMath>
+        </Math>-band views of a more typical submm galaxy, SMM J14009+0252,
+for which a very faint near-infrared companion, J5, has been
+identified.<Math mode="inline" tex="{}^{12}" text="^12" xml:id="S6.F3.m8">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMTok fontsize="70%" meaning="12" role="NUMBER">12</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> This galaxy is clearly undetected in the deep <text font="italic">HST</text> <Math mode="inline" tex="R" text="R" xml:id="S6.F3.m9">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMath>
+        </Math>-band exposure. The major tickmarks are every 5<Math mode="inline" tex="{}^{\prime\prime}" text="^prime2" xml:id="S6.F3.m10">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMTok fontsize="70%" name="prime2">′′</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, except
+for the central panel were they are every 1<Math mode="inline" tex="{}^{\prime\prime}" text="^prime2" xml:id="S6.F3.m11">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMTok fontsize="70%" name="prime2">′′</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>.
+</toccaption>
+      <caption><tag close=": ">Figure 3</tag>
+These panels show two of the submm galaxies detected through the
+lensing cluster A 1835.<Math mode="inline" tex="{}^{12}" text="^12" xml:id="S6.F3.m12">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMTok fontsize="70%" meaning="12" role="NUMBER">12</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> The left-hand panels illustrate the
+morphology of the two components, J1/J2, of the <Math mode="inline" tex="z=2.55" text="z = 2.55" xml:id="S6.F3.m13">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="2.55" role="NUMBER">2.55</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> starburst
+galaxy SMM J14011+0252, from the <Math mode="inline" tex="U" text="U" xml:id="S6.F3.m14">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+          </XMath>
+        </Math>- to <Math mode="inline" tex="K" text="K" xml:id="S6.F3.m15">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">K</XMTok>
+          </XMath>
+        </Math>-bands. The central panel
+gives a zoomed view of the <text font="italic">WFPC2</text> <Math mode="inline" tex="R" text="R" xml:id="S6.F3.m16">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMath>
+        </Math>-band image of this galaxy,
+demonstrating the complex, merger-like morphology of the
+bolometrically-dominant component J1. The right-hand panels show <Math mode="inline" tex="R" text="R" xml:id="S6.F3.m17">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMath>
+        </Math>-
+and <Math mode="inline" tex="K" text="K" xml:id="S6.F3.m18">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">K</XMTok>
+          </XMath>
+        </Math>-band views of a more typical submm galaxy, SMM J14009+0252,
+for which a very faint near-infrared companion, J5, has been
+identified.<Math mode="inline" tex="{}^{12}" text="^12" xml:id="S6.F3.m19">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMTok fontsize="70%" meaning="12" role="NUMBER">12</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> This galaxy is clearly undetected in the deep <text font="italic">HST</text> <Math mode="inline" tex="R" text="R" xml:id="S6.F3.m20">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMath>
+        </Math>-band exposure. The major tickmarks are every 5<Math mode="inline" tex="{}^{\prime\prime}" text="^prime2" xml:id="S6.F3.m21">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMTok fontsize="70%" name="prime2">′′</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, except
+for the central panel were they are every 1<Math mode="inline" tex="{}^{\prime\prime}" text="^prime2" xml:id="S6.F3.m22">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMTok fontsize="70%" name="prime2">′′</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>.
+</caption>
+    </figure>
+<!--  %**** umass˙irs.tex Line 350 **** -->    <para xml:id="S6.p3">
+      <p>Instead, if we adopt HR 10 as a template for a typical submm galaxy
+then we find that: <text font="italic">as HR10 has a far higher ratio of far-IR to
+far-UV luminosity than the other galaxies considered it would not be
+included in UV-selected surveys despite its large star formation
+rate.<cite class="ltx_citemacro_cite"><text font="upright">[</text><bibref bibrefs="kacc" separator="," show="Refnum" yyseparator=","/><text font="upright">]</text></cite></text> We conclude therefore that UV light is an
+inappropriate tracer of star formation in the highly-obscured galaxies
+that contain a large fraction of the star formation in the high
+redshift universe. Further study of this remarkable population is essential
+for a complete understanding of the formation of massive galaxies.<cite class="ltx_citemacro_cite">[<bibref bibrefs="bsik,i01" separator="," show="Refnum" yyseparator=","/>]</cite></p>
+    </para>
+  </section>
+  <section xml:id="Sx1">
+    <title>Acknowledgments</title>
+    <para xml:id="Sx1.p1">
+      <p>We thank our collaborator on the <text font="italic">HST</text> lensing project, Harald
+Ebeling, for allowing us to present the <text font="italic">WFPC2</text> image of A 1835.
+IRS acknowledges travel support to attend this conference. The
+research presented here was supported by the Royal Society [IRS], PPARC
+[RJI], the Raymond and Beverly Sackler Foundations [AWB] and the CNRS
+[JPK].
+<!--  %**** umass˙irs.tex Line 375 **** --></p>
+    </para>
+  </section>
+  <bibliography xml:id="bib">
+    <title>References</title>
+    <biblist>
+      <bibitem key="scuba" xml:id="bib.bib1">
+        <bibtag role="refnum">1</bibtag>
+        <bibblock> Holland, W.S., et al., <ERROR class="undefined">\Journal</ERROR>MNRAS3036591999.
+</bibblock>
+      </bibitem>
+      <bibitem key="hdf" xml:id="bib.bib2">
+        <bibtag role="refnum">2</bibtag>
+        <bibblock> Hughes, D.H., et al., <ERROR class="undefined">\Journal</ERROR>Nature3942411998.
+</bibblock>
+      </bibitem>
+      <bibitem key="sae99" xml:id="bib.bib3">
+        <bibtag role="refnum">3</bibtag>
+        <bibblock> Eales, S., et al., <ERROR class="undefined">\Journal</ERROR>ApJ5155181999.
+</bibblock>
+      </bibitem>
+      <bibitem key="ajb98" xml:id="bib.bib4">
+        <bibtag role="refnum">4</bibtag>
+        <bibblock> Barger, A.J., et al., <ERROR class="undefined">\Journal</ERROR>Nature3942481998.
+</bibblock>
+      </bibitem>
+      <bibitem key="sib" xml:id="bib.bib5">
+        <bibtag role="refnum">5</bibtag>
+        <bibblock> Smail, I., Ivison, R.J., Blain, A.W., <ERROR class="undefined">\Journal</ERROR>ApJ490L51997.
+</bibblock>
+      </bibitem>
+      <bibitem key="sibk" xml:id="bib.bib6">
+        <bibtag role="refnum">6</bibtag>
+        <bibblock> Smail, I., Ivison, R.J., Blain, A.W., Kneib, J.-P., <ERROR class="undefined">\Journal</ERROR>ApJ507L211998.
+</bibblock>
+      </bibitem>
+      <bibitem key="bkis" xml:id="bib.bib7">
+        <bibtag role="refnum">7</bibtag>
+        <bibblock> Blain, A.W., Kneib, J.-P., Ivison, R.J., Smail, I., <ERROR class="undefined">\Journal</ERROR>ApJ512L871999.
+</bibblock>
+      </bibitem>
+      <bibitem key="pvdw" xml:id="bib.bib8">
+        <bibtag role="refnum">8</bibtag>
+        <bibblock> van der Werf, P., et al., <ERROR class="undefined">\Journal</ERROR>these proceedings<Math mode="inline" tex="\!\!" text="absent" xml:id="bib.bib8.m1">
+            <XMath>
+              <XMTok meaning="absent"/>
+            </XMath>
+          </Math>2001
+</bibblock>
+      </bibitem>
+      <bibitem key="dssc" xml:id="bib.bib9">
+        <bibtag role="refnum">9</bibtag>
+        <bibblock> Scott, D., et al., <ERROR class="undefined">\Journal</ERROR>these proceedings<Math mode="inline" tex="\!\!" text="absent" xml:id="bib.bib9.m1">
+            <XMath>
+              <XMTok meaning="absent"/>
+            </XMath>
+          </Math>2001
+</bibblock>
+      </bibitem>
+      <bibitem key="e99" xml:id="bib.bib10">
+        <bibtag role="refnum">10</bibtag>
+        <bibblock> Edge, A.C., et al., <ERROR class="undefined">\Journal</ERROR>MNRAS3065991999.
+</bibblock>
+      </bibitem>
+      <bibitem key="i98" xml:id="bib.bib11">
+        <bibtag role="refnum">11</bibtag>
+        <bibblock> Ivison, R.J., et al., <ERROR class="undefined">\Journal</ERROR>MNRAS2985831998.
+</bibblock>
+      </bibitem>
+      <bibitem key="i00" xml:id="bib.bib12">
+        <bibtag role="refnum">12</bibtag>
+        <bibblock> Ivison, R.J., et al., <ERROR class="undefined">\Journal</ERROR>MNRAS3152092000.
+</bibblock>
+      </bibitem>
+      <bibitem key="f98" xml:id="bib.bib13">
+        <bibtag role="refnum">13</bibtag>
+        <bibblock> Frayer, D.T., et al., <ERROR class="undefined">\Journal</ERROR>ApJ506L71998.
+</bibblock>
+      </bibitem>
+      <bibitem key="f99" xml:id="bib.bib14">
+        <bibtag role="refnum">14</bibtag>
+        <bibblock> Frayer, D.T., et al., <ERROR class="undefined">\Journal</ERROR>ApJ514L131999.
+</bibblock>
+      </bibitem>
+      <bibitem key="k01" xml:id="bib.bib15">
+        <bibtag role="refnum">15</bibtag>
+        <bibblock> Kneib, J.P., et al., <ERROR class="undefined">\Journal</ERROR>A&amp;A<Math mode="inline" tex="\!\!" text="absent" xml:id="bib.bib15.m1">
+            <XMath>
+              <XMTok meaning="absent"/>
+            </XMath>
+          </Math>in prep2001
+</bibblock>
+      </bibitem>
+      <bibitem key="g00" xml:id="bib.bib16">
+        <bibtag role="refnum">16</bibtag>
+        <bibblock> Gear, W.,K., et al., <ERROR class="undefined">\Journal</ERROR>MNRAS316512000
+</bibblock>
+      </bibitem>
+      <bibitem key="c00" xml:id="bib.bib17">
+        <bibtag role="refnum">17</bibtag>
+        <bibblock> Bertoldi, F., et al., <ERROR class="undefined">\Journal</ERROR>A&amp;A360922000
+</bibblock>
+      </bibitem>
+      <bibitem key="s99" xml:id="bib.bib18">
+        <bibtag role="refnum">18</bibtag>
+        <bibblock> Smail, I., et al., <ERROR class="undefined">\Journal</ERROR>MNRAS30810611999.
+</bibblock>
+      </bibitem>
+      <bibitem key="h00" xml:id="bib.bib19">
+        <bibtag role="refnum">19</bibtag>
+        <bibblock> Hogg, D.W., <ERROR class="undefined">\Journal</ERROR>AJin press2000
+</bibblock>
+      </bibitem>
+      <bibitem key="i01" xml:id="bib.bib20">
+        <bibtag role="refnum">20</bibtag>
+        <bibblock> Ivison, R.J., et al., <ERROR class="undefined">\Journal</ERROR>ApJin press2001.
+<!--  %**** umass˙irs.tex Line 400 **** --></bibblock>
+      </bibitem>
+      <bibitem key="s00" xml:id="bib.bib21">
+        <bibtag role="refnum">21</bibtag>
+        <bibblock> Smail, I., et al., <ERROR class="undefined">\Journal</ERROR>ApJ5286122000.
+</bibblock>
+      </bibitem>
+      <bibitem key="cy99" xml:id="bib.bib22">
+        <bibtag role="refnum">22</bibtag>
+        <bibblock> Carilli, C.L., Yun, M.S., <ERROR class="undefined">\Journal</ERROR>ApJ513L131999.
+</bibblock>
+      </bibitem>
+      <bibitem key="cy00" xml:id="bib.bib23">
+        <bibtag role="refnum">23</bibtag>
+        <bibblock> Carilli, C.L., Yun, M.S., <ERROR class="undefined">\Journal</ERROR>ApJ5306182000.
+</bibblock>
+      </bibitem>
+      <bibitem key="awb" xml:id="bib.bib24">
+        <bibtag role="refnum">24</bibtag>
+        <bibblock> Blain, A.W., <ERROR class="undefined">\Journal</ERROR>MNRAS3099551999.
+</bibblock>
+      </bibitem>
+      <bibitem key="b99" xml:id="bib.bib25">
+        <bibtag role="refnum">25</bibtag>
+        <bibblock> Barger, A.J., et al., <ERROR class="undefined">\Journal</ERROR>AJ11726561999.
+</bibblock>
+      </bibitem>
+      <bibitem key="dtf" xml:id="bib.bib26">
+        <bibtag role="refnum">26</bibtag>
+        <bibblock> Frayer, D.T., <ERROR class="undefined">\Journal</ERROR>these proceedings<Math mode="inline" tex="\!\!" text="absent" xml:id="bib.bib26.m1">
+            <XMath>
+              <XMTok meaning="absent"/>
+            </XMath>
+          </Math>2001.
+</bibblock>
+      </bibitem>
+      <bibitem key="omar" xml:id="bib.bib27">
+        <bibtag role="refnum">27</bibtag>
+        <bibblock> Almaini, O., Lawrence, A., Boyle, B.J., <ERROR class="undefined">\Journal</ERROR>MNRAS305591999
+</bibblock>
+      </bibitem>
+      <bibitem key="kfg" xml:id="bib.bib28">
+        <bibtag role="refnum">28</bibtag>
+        <bibblock> Gunn. K.F, Shanks, T., <ERROR class="undefined">\Journal</ERROR>MNRAS<Math mode="inline" tex="\!\!" text="absent" xml:id="bib.bib28.m1">
+            <XMath>
+              <XMTok meaning="absent"/>
+            </XMath>
+          </Math>in press2000
+</bibblock>
+      </bibitem>
+      <bibitem key="acf" xml:id="bib.bib29">
+        <bibtag role="refnum">29</bibtag>
+        <bibblock> Fabian, A.C., et al., <ERROR class="undefined">\Journal</ERROR>MNRAS31582000.
+</bibblock>
+      </bibitem>
+      <bibitem key="a370" xml:id="bib.bib30">
+        <bibtag role="refnum">30</bibtag>
+        <bibblock> Bautz, M.W., et al., <ERROR class="undefined">\Journal</ERROR>ApJ<Math mode="inline" tex="\!\!" text="absent" xml:id="bib.bib30.m1">
+            <XMath>
+              <XMTok meaning="absent"/>
+            </XMath>
+          </Math>in press2000
+</bibblock>
+      </bibitem>
+      <bibitem key="bsik" xml:id="bib.bib31">
+        <bibtag role="refnum">31</bibtag>
+        <bibblock> Blain, A.W., et al., <ERROR class="undefined">\Journal</ERROR>MNRAS3026321999.
+</bibblock>
+      </bibitem>
+      <bibitem key="kacc" xml:id="bib.bib32">
+        <bibtag role="refnum">32</bibtag>
+        <bibblock> Adelberger, K.L., Steidel, C.C., <ERROR class="undefined">\Journal</ERROR>ApJ<Math mode="inline" tex="\!\!" text="absent" xml:id="bib.bib32.m1">
+            <XMath>
+              <XMTok meaning="absent"/>
+            </XMath>
+          </Math>submitted2000.
+</bibblock>
+      </bibitem>
+      <bibitem key="ds" xml:id="bib.bib33">
+        <bibtag role="refnum">33</bibtag>
+        <bibblock> Sanders, D., <ERROR class="undefined">\Journal</ERROR>these proceedings<Math mode="inline" tex="\!\!" text="absent" xml:id="bib.bib33.m1">
+            <XMath>
+              <XMTok meaning="absent"/>
+            </XMath>
+          </Math>2001.
+</bibblock>
+      </bibitem>
+      <bibitem key="d99" xml:id="bib.bib34">
+        <bibtag role="refnum">34</bibtag>
+        <bibblock> Dey, A., et al., <ERROR class="undefined">\Journal</ERROR>ApJ5196101999
+</bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+</document>

@@ -1,0 +1,2489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008279.1"?>
+<?latexml class="aastex"?>
+<?latexml package="epsfig" options="dvips"?>
+<?latexml package="array"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title font="bold">HEXTE DETECTIONS OF HARD X–RAY TAILS IN SCO X–1</title>
+  <toctitle>Hard Tails in Sco X-1</toctitle>
+  <creator role="author">
+    <personname>Flavio D’Amico<note mark="1" role="affiliation">University of California, San Diego – UCSD <break/>9500 Gilman Drive, La Jolla, CA 92093-0424</note> <note mark="2" role="affiliation">Instituto Nacional de Pesquisas Espaciais – INPE <break/>Av. dos Astronautas 1758, 12227-010 S.J. dos Campos - SP, Brazil</note> , William A. Heindl<note mark="1" role="affiliation">University of California, San Diego – UCSD <break/>9500 Gilman Drive, La Jolla, CA 92093-0424</note> , <break/>Richard E. Rothschild<note mark="1" role="affiliation">University of California, San Diego – UCSD <break/>9500 Gilman Drive, La Jolla, CA 92093-0424</note> , and Duane E. Gruber<note mark="1" role="affiliation">University of California, San Diego – UCSD <break/>9500 Gilman Drive, La Jolla, CA 92093-0424</note> </personname>
+    <contact role="email">fdamico@ucsd.edu, wheindl@ucsd.edu, rrothschild@ucsd.edu, dgruber@ucsd.edu</contact>
+  </creator>
+  <abstract name="Abstract">
+    <p>We report the detection of a non–thermal hard X–ray component from Sco X–1 based upon
+the analysis of 20–220 keV spectra obtained with the HEXTE experiment on-board the <text font="italic">RXTE</text>
+satellite. We find that the addition of a power–law component to a thermal bremsstrahlung
+<!--  %**** scohard.tex Line 25 **** -->model is required to achieve a good fit in 5 of 16 observations analyzed. Using PCA data we were
+able to track the movement of the source along the <text font="sansserif">Z</text> diagram,
+and we found that the presence of the hard
+X–ray tail is not confined to a specific <text font="sansserif">Z</text> position.
+However, we do observe an indication that the power law index hardens
+with increasing <Math mode="inline" tex="{\dot{M}}" text="dot@(M)" xml:id="m1">
+        <XMath>
+          <XMApp>
+            <XMTok name="dot" role="OVERACCENT">˙</XMTok>
+            <XMTok font="italic" role="UNKNOWN">M</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>, as indicated from the position on the <text font="sansserif">Z</text> diagram.
+We find that the derived non–thermal luminosities are <Math mode="inline" tex="\sim" text="similar-to" xml:id="m2">
+        <XMath>
+          <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+        </XMath>
+      </Math> 10% of that derived for
+the brightest of the atoll sources.</p>
+  </abstract>
+  <keywords>binaries:general—stars:individual (Scorpius X–1)—stars:neutron—X-rays:stars</keywords>
+  <section labels="LABEL:intro" refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>Introduction</title>
+    <para xml:id="S1.p1">
+      <p>Observations of hard X–ray emission from atoll sources (e.g. Barret,
+McClintock, &amp; Grindlay 1996; Barret et al. 2000) have
+revealed the unexpected result that power law spectra extending
+above 30 keV may not be an exclusive signature of a black hole.
+<text font="italic">Rossi X–ray Timing Explorer (RXTE)</text> observations of hard X–ray emission from
+SAX J1808.4<Math mode="inline" tex="-" text="-" xml:id="S1.p1.m1">
+          <XMath>
+            <XMTok meaning="minus" role="ADDOP">-</XMTok>
+          </XMath>
+        </Math>3658 (Heindl &amp; Smith 1998) demonstrated that hard X–ray flux is also present
+in other types of low–mass X–ray binaries (LMXBs).
+These observations refined the role of hard X–ray emission in distinguishing between
+neutron star and black hole binaries.</p>
+    </para>
+<!--  %**** scohard.tex Line 50 **** -->    <para xml:id="S1.p2">
+      <p>Scorpius X–1 is a high luminosity LMXB <text font="sansserif">Z</text> source,
+where the primary is a neutron star with a low magnetic field.
+The presence of a non–thermal component in Sco X–1 has
+been suggested (e.g., Peterson &amp; Jacobson 1966; Riegler, Bolt, &amp;
+Serlemitsos 1970; Agrawal et al. 1971; Haymes et al. 1972; Duldig et al. 1983)
+and the absence of such a component has also
+been reported (e.g., Lewin, Clark, &amp; Smith 1967; Buselli et al. 1968; Jain et al. 1973;
+Johnson et al. 1980). In fact, high sensitivity searches have
+failed to detect such a component, placing strong upper limits on the non-thermal
+flux (e.g., Greenhill et al. 1979; Rothschild et al. 1980; Soong &amp; Rothschild 1983).
+More recently, however, Strickman &amp; Barret (2000)
+have reported the presence of a hard X–ray tail in Sco X–1 using <text font="italic">CGRO</text>/OSSE.</p>
+    </para>
+    <para xml:id="S1.p3">
+      <p>We used <text font="italic">RXTE</text> observations from the public
+database to search for hard X–ray tails in Sco X–1 spectra. Sco X–1 has been
+observed with <text font="italic">RXTE</text> several times, and our data sample (1997 April to 1999 July) contains
+185,672 s of Proportional Counter Array (PCA) on–source time and
+more than 100 ks of on–source live-time in the High Energy X-ray Timing
+Experiment (HEXTE). We describe data selection and analysis in
+§ <ref labelref="LABEL:data"/>, results in § <ref labelref="LABEL:results"/>, discuss the
+detection of a non-thermal component in
+§ <ref labelref="LABEL:disc"/>, and present our conclusions in § <ref labelref="LABEL:conc"/>.</p>
+    </para>
+  </section>
+  <section labels="LABEL:data" refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>Data Selection and Analysis</title>
+<!--  %**** scohard.tex Line 75 **** -->    <para xml:id="S2.p1">
+      <p>In this work we used data from HEXTE to search for hard X–ray tails in Sco X–1
+in the <Math mode="inline" tex="\sim" text="similar-to" xml:id="S2.p1.m1">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 20–220 keV interval, and data from the PCA to determine
+the <text font="sansserif">Z</text> position of Sco X–1 in the color–color diagram.
+The PCA (Jahoda et al. 1996) is a set of 5 identical Xenon proportional counters covering
+the energy range 2–60 keV with a total area of
+<Math mode="inline" tex="\sim" text="similar-to" xml:id="S2.p1.m2">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 7000 cm<Math mode="inline" tex="{}^{2}" text="^2" xml:id="S2.p1.m3">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. The HEXTE (Rothschild et al. 1998) consists of two clusters of 4
+NaI(Tl)/CsI(Na) phoswich scintillation counters totaling
+<Math mode="inline" tex="\sim" text="similar-to" xml:id="S2.p1.m4">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 1600 cm<Math mode="inline" tex="{}^{2}" text="^2" xml:id="S2.p1.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> of effective area in the 15–250 keV
+energy range . Each cluster
+rocks between source and two background fields to measure the instrumental background
+in near real time. The PCA background is estimated from particle rates and
+the known diffuse X–ray flux. The PCA and HEXTE share a common 1<Math mode="inline" tex="{}^{\circ}" text="^compose" xml:id="S2.p1.m6">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="compose" name="circ" role="MULOP">∘</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> full
+width at half maximum field of view. Pertinent to this work, the HEXTE continuum
+sensitivity at 100 keV, for <Math mode="inline" tex="\sim" text="similar-to" xml:id="S2.p1.m7">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 5 kseconds of live–time,
+is <Math mode="inline" tex="\sim" text="similar-to" xml:id="S2.p1.m8">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 13 mCrab (3<Math mode="inline" tex="\sigma" text="sigma" xml:id="S2.p1.m9">
+          <XMath>
+            <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+          </XMath>
+        </Math>, scaled to in-flight backgrounds from the
+predictions of Gruber et al. 1996).</p>
+    </para>
+    <para xml:id="S2.p2">
+      <p>We selected those observations from the <text font="italic">RXTE</text> public database (as of 2000 April)
+in which <Math mode="inline" tex="\gtrsim" text="greater-than-or-equivalent-to" xml:id="S2.p2.m1">
+          <XMath>
+            <XMTok meaning="greater-than-or-equivalent-to" name="gtrsim" role="RELOP">≳</XMTok>
+          </XMath>
+        </Math> 5000 s
+of HEXTE total on–source time is available, in order to achieve good sensitivity at
+high energies. Since some observations did not point directly at Sco X–1 (in order
+to reduce the very high counting rate), we have also discarded observations for which
+<text font="italic">RXTE</text> pointing offsets were larger than 0.01<Math mode="inline" tex="{}^{\circ}" text="^compose" xml:id="S2.p2.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="compose" name="circ" role="MULOP">∘</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. These criteria resulted in
+selection of the 16 observations displayed in Table <ref labelref="LABEL:tab1"/>.
+The resulting accumulated on–source HEXTE live–time is 104,238 s.
+<!--  %**** scohard.tex Line 100 **** --></p>
+    </para>
+    <subsection refnum="2.1" xml:id="S2.SS1">
+      <title><tag close=" ">2.1</tag>Data Analysis</title>
+      <para xml:id="S2.SS1.p1">
+        <p>We performed our analysis using HEXTE <text font="typewriter">Archive Histogram
+Mode</text> data, which are accumulated every 16 s, have spectral
+information in 64 compressed channels, and
+are present for all observations, independent of selected Science Mode.</p>
+      </para>
+      <para xml:id="S2.SS1.p2">
+        <p>The data analysis was performed using software from <text font="typewriter">FTOOLS 5.0</text>.
+For each observation, we divided the data into subsets according to
+position on the <text font="sansserif">Z</text> diagram (see below and Table <ref labelref="LABEL:tab1"/>). We then
+accumulated individual source and background count histograms for HEXTE
+clusters A and B and added them to form a single HEXTE source and
+background histogram for each subset. Response matrices for HEXTE A and B
+were generated and added (with weights of 0.57 and 0.43 respectively,
+according to their effective areas).</p>
+      </para>
+      <para xml:id="S2.SS1.p3">
+        <p>In order to be confident that any high energy excesses were real, we
+tailored our data selection to optimize background subtraction. We
+verified that any remaining systematic errors as a result of our
+procedure were small and did not affect the results. We followed the
+standard practices extensively studied for HEXTE background
+subtraction by us and other workers (Rothschild et al. 1998; MacDonald
+1999). First, we selected only data taken more than 15 minutes
+after satellite passage through the South Atlantic Anomaly (SAA).
+<!--  %**** scohard.tex Line 125 **** -->This allows any short–lived radioactive species produced in the
+detector material to decay and ensures that the systematic error of
+our linearly interpolated background estimate is
+<Math mode="inline" tex="\lesssim" text="less-than-or-similar-to" xml:id="S2.SS1.p3.m1">
+            <XMath>
+              <XMTok meaning="less-than-or-similar-to" name="lesssim" role="RELOP">≲</XMTok>
+            </XMath>
+          </Math> 0.02 % of the background. We verified this
+process by comparing – for each cluster – the spectra from the two
+separate background fields which are sampled alternately during
+observations. In each case, subtracting these spectra showed no excess
+emission, giving us confidence in the on–source background
+estimate. This also verified that there were no confusing sources in the
+background fields. We note, too, that none of the Sco X–1 spectra
+show evidence for the prominent instrumental background lines at
+<Math mode="inline" tex="\sim" text="similar-to" xml:id="S2.SS1.p3.m2">
+            <XMath>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            </XMath>
+          </Math> 30, 70, 160 and 190 keV (Rothschild et al. 1998) which
+we would expect to be apparent if there were over or under–subtracted
+backgrounds. Even though there was no obvious sign of residual
+background features, we allowed the normalization of the background
+spectra to vary in our fitting procedure. As expected, the fitted
+adjustment to the background level was always
+<Math mode="inline" tex="\lesssim" text="less-than-or-similar-to" xml:id="S2.SS1.p3.m3">
+            <XMath>
+              <XMTok meaning="less-than-or-similar-to" name="lesssim" role="RELOP">≲</XMTok>
+            </XMath>
+          </Math> 1 %. Even with this added degree of freedom, the
+significance of the detected high energy tails remained essentially
+unchanged. This also verified that live-times were
+calculated accurately, as systematic errors in the exposure would lead
+to incorrect background subtraction. Finally, at 100 keV (see
+Figure <ref labelref="LABEL:fig1"/>), the Sco X–1 hard flux is of the order of
+0.02 counts/s/keV, while the HEXTE background was typically
+0.23 counts/s/keV. Thus, our measurements are at level of
+<!--  %**** scohard.tex Line 150 **** --><Math mode="inline" tex="\sim" text="similar-to" xml:id="S2.SS1.p3.m4">
+            <XMath>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            </XMath>
+          </Math> 10 % of the background. MacDonald (1999) showed that
+our background subtraction method, even for very long integrations, is
+free of systematic errors at a level of <Math mode="inline" tex="\sim" text="similar-to" xml:id="S2.SS1.p3.m5">
+            <XMath>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            </XMath>
+          </Math> 0.05 % of
+the background. A more detailed discussion of HEXTE background
+systematics is given in Gruber et al. (1996).</p>
+      </para>
+      <para xml:id="S2.SS1.p4">
+        <p>We used the PCA data in order to constrain the position of Sco X–1 in a
+color–color diagram. High resolution (<Math mode="inline" tex="\sim" text="similar-to" xml:id="S2.SS1.p4.m1">
+            <XMath>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            </XMath>
+          </Math> 4 ms) lightcurves
+provided power spectra to characterize any quasi-periodic oscillations and/or
+continuum noise. Low resolution (16 s) lightcurves were used
+to generate color–color diagrams. We defined soft color as the ratio of
+the counts in the (5–7)/(3–5) keV energy bands and hard color as the ratio
+(7–20)/(5–7) keV. For observations 5/6, 12–15, 17/18 and 20/21
+(see Table <ref labelref="LABEL:tab1"/>) the source was moving between the Normal and Flaring
+Branches. For those 5 dual–branch observations, we divided each into Normal
+and Flaring Branch subsets. This then resulted in 21 subsets.</p>
+      </para>
+    </subsection>
+    <subsection refnum="2.2" xml:id="S2.SS2">
+      <title><tag close=" ">2.2</tag>Spectral Fitting</title>
+      <para xml:id="S2.SS2.p1">
+        <p>We used <text font="typewriter">XSPEC 11.0</text> to fit the 20–220 keV HEXTE spectra
+with a combination of a <text font="italic">thermal</text> component
+plus a <text font="italic">hard</text> component. To fit the
+thermal component we tested the following models:
+thermal Comptonization (e.g. Lamb &amp; Sanford 1979),
+blackbody, and thermal bremsstrahlung. The thermal bremsstrahlung
+<!--  %**** scohard.tex Line 175 **** -->model returned, in all of our subsets, the smallest <Math mode="inline" tex="{\chi}^{2}" text="chi ^ 2" xml:id="S2.SS2.p1.m1">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="chi" role="UNKNOWN">χ</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>,
+and it was utilized to represent the lower energy HEXTE flux.</p>
+      </para>
+      <para xml:id="S2.SS2.p2">
+        <p>In the 5 subsets in which we detected the presence of a hard X–ray tail
+(see next section), a simple power law model, as well as ones with a spectral
+break, were evaluated. We found that the simple power law model
+described the hard component well, and it was used to represent the higher energy HEXTE flux.
+In all 5 subsets with significant non–thermal flux, a high temperature thermal component
+did not provide an acceptable fit.</p>
+      </para>
+    </subsection>
+  </section>
+  <section labels="LABEL:results" refnum="3" xml:id="S3">
+    <title><tag close=" ">3</tag>Results</title>
+    <para xml:id="S3.p1">
+      <p>We developed two criteria to determine the presence of a hard X–ray tail in a
+particular spectrum: 1) a signal to noise ratio (SNR) <Math mode="inline" tex="\geq" text="&gt;=" xml:id="S3.p1.m1">
+          <XMath>
+            <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+          </XMath>
+        </Math> 5 in the
+75–220 keV energy range, and 2) an F–Test null significance for the addition
+of the hard component at a level of 10<Math mode="inline" tex="{}^{-7}" text="^- 7" xml:id="S3.p1.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> or less.
+We claim that
+we observed a hard X–ray tail <text font="bold">only</text> when both these criteria were
+fulfilled. We thus have 5 strong detections of non–thermal flux
+in Sco X–1 spectra, with the hard X–ray tail extending at least to
+220 keV. The spectral parameters derived for those subsets are shown in
+Table <ref labelref="LABEL:tab2"/>.
+Similarly we defined a strong non–detection when
+1) the SNR in the 75–220 keV is <Math mode="inline" tex="&lt;" text="less" xml:id="S3.p1.m3">
+          <XMath>
+            <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+          </XMath>
+        </Math> 1 and 2) the F–Test is at a level
+of <Math mode="inline" tex="\gtrsim" text="greater-than-or-equivalent-to" xml:id="S3.p1.m4">
+          <XMath>
+            <XMTok meaning="greater-than-or-equivalent-to" name="gtrsim" role="RELOP">≳</XMTok>
+          </XMath>
+        </Math> 10<Math mode="inline" tex="{}^{-5}" text="^- 5" xml:id="S3.p1.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. We thus have 4 strong non–detections.
+<!--  %**** scohard.tex Line 200 **** -->We note that several subsets formally have very significant F–Test values, but
+SNR values <Math mode="inline" tex="&lt;" text="less" xml:id="S3.p1.m6">
+          <XMath>
+            <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+          </XMath>
+        </Math> 5.
+These typically result from deviations in the 30–50 keV range,
+possibly due to imperfect modeling of the thermal component.
+We cannot conclude that these subsets have truly non–thermal emission,
+although this possibility is open. In Figure
+<ref labelref="LABEL:fig1"/> we show spectra both from one of our detections and one of
+our non–detections.</p>
+    </para>
+    <para xml:id="S3.p2">
+      <p>The derived photon indices (<Math mode="inline" tex="\Gamma" text="Gamma" xml:id="S3.p2.m1">
+          <XMath>
+            <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+          </XMath>
+        </Math>) for the 5 subsets where the tail was
+observed spanned a wide range: from <Math mode="inline" tex="-" text="-" xml:id="S3.p2.m2">
+          <XMath>
+            <XMTok meaning="minus" role="ADDOP">-</XMTok>
+          </XMath>
+        </Math>0.7 to 2.4, which differs from the
+OSSE results which have an average of 2.5 (Strickman &amp; Barret 2000).
+It is suggestive that the two hardest photon indices were obtained when
+the source was on the flaring branch, and the softest were on the horizontal
+branch, showing a possible correlation between the hardness of the spectrum
+and the mass accretion rate <Math mode="inline" tex="{\dot{M}}" text="dot@(M)" xml:id="S3.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok name="dot" role="OVERACCENT">˙</XMTok>
+              <XMTok font="italic" role="UNKNOWN">M</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, which increases in the sequence
+HB <Math mode="inline" tex="\rightarrow" text="rightarrow" xml:id="S3.p2.m4">
+          <XMath>
+            <XMTok name="rightarrow" role="ARROW">→</XMTok>
+          </XMath>
+        </Math> NB <Math mode="inline" tex="\rightarrow" text="rightarrow" xml:id="S3.p2.m5">
+          <XMath>
+            <XMTok name="rightarrow" role="ARROW">→</XMTok>
+          </XMath>
+        </Math> FB (e.g., van der Klis 1996).
+We also note that both times the source was on the HB a hard X–ray tail was
+detected.</p>
+    </para>
+    <para xml:id="S3.p3">
+      <p>The non–thermal 20–200 keV flux from the 5 detections varied by a factor
+of <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.p3.m1">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 2.5 from
+0.63—1.56 <Math mode="inline" tex="\times" text="*" xml:id="S3.p3.m2">
+          <XMath>
+            <XMTok meaning="times" role="MULOP">×</XMTok>
+          </XMath>
+        </Math> 10<Math mode="inline" tex="{}^{-9}" text="^- 9" xml:id="S3.p3.m3">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="9" role="NUMBER">9</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> ergs cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S3.p3.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p3.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+(see Table <ref labelref="LABEL:tab2"/>). Upper limits to the 20–200 keV flux from the 4
+strong non–detections were estimated using a photon index of 1, the mean from the
+<!--  %**** scohard.tex Line 225 **** -->5 detections. The one non–detection subset with equivalent sensitivity to the
+detection subsets has a 2<Math mode="inline" tex="\sigma" text="sigma" xml:id="S3.p3.m6">
+          <XMath>
+            <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+          </XMath>
+        </Math> upper limit to the 20–200 keV flux of
+1.0 <Math mode="inline" tex="\times" text="*" xml:id="S3.p3.m7">
+          <XMath>
+            <XMTok meaning="times" role="MULOP">×</XMTok>
+          </XMath>
+        </Math> 10<Math mode="inline" tex="{}^{-10}" text="^- 10" xml:id="S3.p3.m8">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="10" role="NUMBER">10</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> ergs cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S3.p3.m9">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p3.m10">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. This implies
+at least an order of magnitude in overall variability in the non-thermal component
+in Sco X–1.</p>
+    </para>
+    <para xml:id="S3.p4">
+      <p>In order to estimate the 2–20 keV luminosity, <Math mode="inline" tex="L^{total}_{2-20}" text="(L ^ (t * o * t * a * l)) _ (2 - 20)" xml:id="S3.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">t</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">t</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">a</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">l</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                <XMTok fontsize="70%" meaning="20" role="NUMBER">20</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>,
+we used a complex multicomponent model to heuristically fit the PCA spectra.
+We estimate the uncertainty in the derived flux due to uncertainties in the
+proper spectral shape to be <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.p4.m2">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 2 %.
+Using 2.8 kpc as the distance to Sco X–1 (Bradshaw, Fomalont, &amp; Geldzahler 1999),
+<Math mode="inline" tex="L^{total}_{2-20}" text="(L ^ (t * o * t * a * l)) _ (2 - 20)" xml:id="S3.p4.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">t</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">t</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">a</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">l</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                <XMTok fontsize="70%" meaning="20" role="NUMBER">20</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> ranges over 2.1–3.2 <Math mode="inline" tex="\times" text="*" xml:id="S3.p4.m4">
+          <XMath>
+            <XMTok meaning="times" role="MULOP">×</XMTok>
+          </XMath>
+        </Math> 10<Math mode="inline" tex="{}^{38}" text="^38" xml:id="S3.p4.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="38" role="NUMBER">38</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> ergs
+s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p4.m6">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> for the 5 detection subsets. Similarly, the range of
+the 20–200 keV luminosities
+of the non–thermal component measurements is
+<Math mode="inline" tex="L^{nt}_{20-200}" text="(L ^ (n * t)) _ (20 - 200)" xml:id="S3.p4.m7">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">t</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="20" role="NUMBER">20</XMTok>
+                <XMTok fontsize="70%" meaning="200" role="NUMBER">200</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="=" text="=" xml:id="S3.p4.m8">
+          <XMath>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+          </XMath>
+        </Math> 5.9–15.0 <Math mode="inline" tex="\times" text="*" xml:id="S3.p4.m9">
+          <XMath>
+            <XMTok meaning="times" role="MULOP">×</XMTok>
+          </XMath>
+        </Math> 10<Math mode="inline" tex="{}^{35}" text="^35" xml:id="S3.p4.m10">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="35" role="NUMBER">35</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> ergs s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p4.m11">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.
+Thus the non–thermal component represents about 1 % of the total
+flux from Sco X–1.</p>
+    </para>
+    <para xml:id="S3.p5">
+      <p>No correlation between the <text font="bold">presence</text> of the hard tail and
+the position of the source in the color–color diagram is indicated,
+i.e., we have observed the hard X–ray tail in all three branches.
+In addition the HEXTE thermal component is not correlated with the presence of the hard
+X–ray tail, i.e., the presence of the hard tail is indicated
+by neither the temperature nor flux of the HEXTE thermal component.
+<!--  %**** scohard.tex Line 250 **** --></p>
+    </para>
+  </section>
+  <section labels="LABEL:disc" refnum="4" xml:id="S4">
+    <title><tag close=" ">4</tag>Discussion</title>
+    <para xml:id="S4.p1">
+      <p>From the lack of correlation between the presence of the hard tail and
+the position of the source in the color–color diagram
+source it would appear
+that the hard X–ray tail emission region is not associated
+with that part of the accretion disk which is believed to be
+responsible for the QPO behavior (van der Klis et al. 1996).
+These results also do not support a correlation between the presence of the hard tail
+and clustering in the color–color diagram, such as mentioned by Strickman
+&amp; Barret (2000). We also note that this behavior is different from GX 17 <Math mode="inline" tex="+" text="+" xml:id="S4.p1.m1">
+          <XMath>
+            <XMTok meaning="plus" role="ADDOP">+</XMTok>
+          </XMath>
+        </Math> 2,
+in which a hard tail is correlated with the position in the <text font="sansserif">Z</text> (Di Salvo et al. 2000).
+Frontera et al. (1998) have also reported the detection of a hard tail in another <text font="sansserif">Z</text>
+source (Cyg X–2).</p>
+    </para>
+    <para xml:id="S4.p2">
+      <p>Nevertheless we must point out that the observed photon indices may be related
+to the position in the <text font="sansserif">Z</text> diagram. The hardest observed photon indices are
+in the FB and the softest ones in the HB. From this point of view the production of
+hard X–ray photons may be correlated with the accretion rate at the inner part of the disk.
+Motivated by the observation that Sco X–1 is a variable radio source
+(e.g., Fender &amp; Hendry 2000), we considered whether or not the hard X–ray emission
+could be explained in terms of synchrotron emission. While the measured photon
+indices are consistent with this idea for the HB and NB, the ones measured
+when the source was in the FB (consistent with 0) are not, since it would require
+<!--  %**** scohard.tex Line 275 **** -->an inverted distribution of relativistic electrons. Similarly, the HB and NB spectra
+could result from Comptonization, but the FB power law indices are again too hard.</p>
+    </para>
+    <para xml:id="S4.p3">
+      <p>A difference between atoll sources and Sco X–1 is also seen in the soft X-ray
+luminosity. The atoll source hard tails appear when the 2–20 keV luminosity
+is relatively low, <Math mode="inline" tex="&lt;" text="less" xml:id="S4.p3.m1">
+          <XMath>
+            <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+          </XMath>
+        </Math> 10<Math mode="inline" tex="{}^{37}" text="^37" xml:id="S4.p3.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="37" role="NUMBER">37</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> ergs s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S4.p3.m3">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>; whereas the soft
+flux in Sco X–1 is essentially at the Eddington limit
+(<Math mode="inline" tex="\sim" text="similar-to" xml:id="S4.p3.m4">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 10<Math mode="inline" tex="{}^{38}" text="^38" xml:id="S4.p3.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="38" role="NUMBER">38</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> ergs s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S4.p3.m6">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>). It is also interesting to note
+that some models used to explain the hard X–ray emission of atoll LMXBs
+(e.g. Mitsuda et al. 1989; Hanawa, 1990) are applicable in a low luminosity state
+up to <Math mode="inline" tex="\sim" text="similar-to" xml:id="S4.p3.m7">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 20 keV. This, however, is not the case of our
+observations. On the other hand, Sco X–1 may be similar to some atoll sources in
+the luminosity of the power law component. The Sco X–1 power law luminosity in
+the 20–200 keV range is comparable to the weaker atoll source hard X-ray
+luminosities reported by Barret, McClintock, &amp; Grindlay (1996).</p>
+    </para>
+    <para xml:id="S4.p4">
+      <p>Distinguishing neutron stars from black holes remains a key goal in
+high energy astrophysics. Recently it has
+been argued (Barret et al. 2000) that the luminosities in the
+1–20 keV (defined as L<Math mode="inline" tex="{}_{x}" text="_x" xml:id="S4.p4.m1">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>) and 20–200 keV (defined as L<Math mode="inline" tex="{}_{hx}" text="_h * x" xml:id="S4.p4.m2">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">h</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>)
+bands could be used to distinguish between
+black hole and low state neutron star systems displaying hard X–ray emission.
+In their argument, the critical luminosity, L<Math mode="inline" tex="{}_{crit}" text="_c * r * i * t" xml:id="S4.p4.m3">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">c</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">r</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">t</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> =
+1.5 <Math mode="inline" tex="\times" text="*" xml:id="S4.p4.m4">
+          <XMath>
+            <XMTok meaning="times" role="MULOP">×</XMTok>
+          </XMath>
+        </Math> 10<Math mode="inline" tex="{}^{37}" text="^37" xml:id="S4.p4.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="37" role="NUMBER">37</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> ergs s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S4.p4.m6">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, is the
+dividing line between neutron star and black hole binaries with
+<!--  %**** scohard.tex Line 300 **** -->the neutron star systems emitting L<Math mode="inline" tex="{}_{hx}" text="_h * x" xml:id="S4.p4.m7">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">h</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="\sim" text="similar-to" xml:id="S4.p4.m8">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> L<Math mode="inline" tex="{}_{x}" text="_x" xml:id="S4.p4.m9">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> when
+L<Math mode="inline" tex="{}_{x}" text="_x" xml:id="S4.p4.m10">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="\lesssim" text="less-than-or-similar-to" xml:id="S4.p4.m11">
+          <XMath>
+            <XMTok meaning="less-than-or-similar-to" name="lesssim" role="RELOP">≲</XMTok>
+          </XMath>
+        </Math> L<Math mode="inline" tex="{}_{crit}" text="_c * r * i * t" xml:id="S4.p4.m12">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">c</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">r</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">t</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. Since Sco X–1 is emitting Eddington–level soft fluxes,
+we cannot test that idea.
+On the other hand, our observed L<Math mode="inline" tex="{}_{hx}" text="_h * x" xml:id="S4.p4.m13">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">h</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> does not contradict the idea
+pointed out by Barret et al. (2000) that only black hole binaries can have both
+L<Math mode="inline" tex="{}_{x}" text="_x" xml:id="S4.p4.m14">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and L<Math mode="inline" tex="{}_{hx}" text="_h * x" xml:id="S4.p4.m15">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">h</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> above L<Math mode="inline" tex="{}_{crit}" text="_c * r * i * t" xml:id="S4.p4.m16">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">c</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">r</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">t</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, since our
+measured L<Math mode="inline" tex="{}_{hx}" text="_h * x" xml:id="S4.p4.m17">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">h</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> is below the L<Math mode="inline" tex="{}_{crit}" text="_c * r * i * t" xml:id="S4.p4.m18">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">c</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">r</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">t</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> value (see Table <ref labelref="LABEL:tab1"/>).</p>
+    </para>
+  </section>
+  <section labels="LABEL:conc" refnum="5" xml:id="S5">
+    <title><tag close=" ">5</tag>Conclusion</title>
+    <para xml:id="S5.p1">
+      <p>We have observed significant detections of a non–thermal
+component in Sco X–1 on 5 out of 21 occasions with HEXTE on-board <text font="italic">RXTE</text>.
+We also have found that the presence of the hard X–ray
+tail is not associated with a particular position in the color–color
+diagram, but that the photon indices, instead, may be correlated with
+the position on the <text font="sansserif">Z</text> diagram, albeit with a very limited number of examples.
+We inferred that the non–thermal power law
+flux of the source varied by over an order of magnitude
+comparing our detections with the non–detections,
+and by a factor of <Math mode="inline" tex="\sim" text="similar-to" xml:id="S5.p1.m1">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 3 in the 5 cases where the presence of the
+hard X–ray tail was strongly indicated.
+Our observed 20–200 keV luminosities are in agreement with only
+black hole binaries emitting hard X–rays with
+luminosity <Math mode="inline" tex="\gtrsim" text="greater-than-or-equivalent-to" xml:id="S5.p1.m2">
+          <XMath>
+            <XMTok meaning="greater-than-or-equivalent-to" name="gtrsim" role="RELOP">≳</XMTok>
+          </XMath>
+        </Math>1.5 <Math mode="inline" tex="\times" text="*" xml:id="S5.p1.m3">
+          <XMath>
+            <XMTok meaning="times" role="MULOP">×</XMTok>
+          </XMath>
+        </Math>10<Math mode="inline" tex="{}^{37}" text="^37" xml:id="S5.p1.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="37" role="NUMBER">37</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> ergs s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S5.p1.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.</p>
+    </para>
+<!--  %**** scohard.tex Line 325 **** -->  </section>
+  <acknowledgements>This research has made use of data obtained through the
+HEASARC, provided by the NASA/GSFC. FD gratefully acknowledges
+FAPESP/Brazil for financial support under grant 99/02352-2. FD
+acknowledges Stefan Dieters, Wayne Coburn and John Tomsick for helpful discussions.
+We also thanks an anonymous referee for suggestions.
+This research was supported by NASA contract NAS5–30720.
+</acknowledgements>
+  <bibliography citestyle="authoryear" xml:id="bib">
+    <title>References</title>
+    <biblist>
+      <bibitem xml:id="bib.bib1">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">1</bibtag>
+        <bibtag role="refnum">(1)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib2">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">2</bibtag>
+        <bibtag role="refnum">(2)</bibtag>
+        <bibblock> Agrawal, P. C. et al. 1971, Ap&amp;SS, 10, 500
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib3">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">3</bibtag>
+        <bibtag role="refnum">(3)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib4">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">4</bibtag>
+        <bibtag role="refnum">(4)</bibtag>
+        <bibblock> Barret, D., McClintock, J. E., &amp; Grindlay, J. E. 1996, ApJ, 473, 963
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib5">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">5</bibtag>
+        <bibtag role="refnum">(5)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib6">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">6</bibtag>
+        <bibtag role="refnum">(6)</bibtag>
+        <bibblock> Barret, D. et al. 2000, ApJ, 533, 329
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib7">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">7</bibtag>
+        <bibtag role="refnum">(7)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib8">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">8</bibtag>
+        <bibtag role="refnum">(8)</bibtag>
+        <bibblock> Bradshaw, C. F., Fomalont, E. B., &amp; Geldzahler, B. J. 1999,
+ApJ, 512, L11
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib9">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">9</bibtag>
+        <bibtag role="refnum">(9)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib10">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">10</bibtag>
+        <bibtag role="refnum">(10)</bibtag>
+        <bibblock> Buselli, G. et al. 1968, Nature, 219, 1124
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib11">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">11</bibtag>
+        <bibtag role="refnum">(11)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib12">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">12</bibtag>
+        <bibtag role="refnum">(12)</bibtag>
+        <bibblock> Di Salvo, T. et al. 2000, ApJL, in press
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib13">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">13</bibtag>
+        <bibtag role="refnum">(13)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib14">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">14</bibtag>
+        <bibtag role="refnum">(14)</bibtag>
+        <bibblock> Duldig, M. L. et al. 1983, Ap&amp;SS, 95, 137
+<!--  %**** scohard.tex Line 350 **** --></bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib15">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">15</bibtag>
+        <bibtag role="refnum">(15)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib16">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">16</bibtag>
+        <bibtag role="refnum">(16)</bibtag>
+        <bibblock> Fender, R. P., &amp; Hendry. M. A. 2000, MNRAS, 317, 1
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib17">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">17</bibtag>
+        <bibtag role="refnum">(17)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib18">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">18</bibtag>
+        <bibtag role="refnum">(18)</bibtag>
+        <bibblock> Frontera, F. et al. 1998, Nucl. Phys. B, 69, 286
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib19">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">19</bibtag>
+        <bibtag role="refnum">(19)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib20">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">20</bibtag>
+        <bibtag role="refnum">(20)</bibtag>
+        <bibblock> Greenhill, J. G. et al. 1979, MNRAS, 189, 563
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib21">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">21</bibtag>
+        <bibtag role="refnum">(21)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib22">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">22</bibtag>
+        <bibtag role="refnum">(22)</bibtag>
+        <bibblock> Gruber, D. E. et al. 1996, A&amp;AS, 120, 641
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib23">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">23</bibtag>
+        <bibtag role="refnum">(23)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib24">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">24</bibtag>
+        <bibtag role="refnum">(24)</bibtag>
+        <bibblock> Hanawa, T. 1990, ApJ, 355, 585
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib25">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">25</bibtag>
+        <bibtag role="refnum">(25)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib26">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">26</bibtag>
+        <bibtag role="refnum">(26)</bibtag>
+        <bibblock> Haymes, R. C. et al. 1972, ApJ, 172, L47
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib27">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">27</bibtag>
+        <bibtag role="refnum">(27)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib28">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">28</bibtag>
+        <bibtag role="refnum">(28)</bibtag>
+        <bibblock> Heindl, W., &amp; Smith, D. 1998, ApJ, 506, L35
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib29">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">29</bibtag>
+        <bibtag role="refnum">(29)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib30">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">30</bibtag>
+        <bibtag role="refnum">(30)</bibtag>
+        <bibblock> Jahoda, K. et al. 1996, Proc. SPIE, 2808, 59
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib31">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">31</bibtag>
+        <bibtag role="refnum">(31)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib32">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">32</bibtag>
+        <bibtag role="refnum">(32)</bibtag>
+        <bibblock> Jain, A. K. et al. 1973, Ap&amp;SS, 21, 107
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib33">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">33</bibtag>
+        <bibtag role="refnum">(33)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib34">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">34</bibtag>
+        <bibtag role="refnum">(34)</bibtag>
+        <bibblock> Johnson, W. N. et al. 1980, ApJ, 238, 982
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib35">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">35</bibtag>
+        <bibtag role="refnum">(35)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib36">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">36</bibtag>
+        <bibtag role="refnum">(36)</bibtag>
+        <bibblock> Lamb, P., &amp; Sanford, P. W. 1979, MNRAS, 288, 555
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib37">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">37</bibtag>
+        <bibtag role="refnum">(37)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib38">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">38</bibtag>
+        <bibtag role="refnum">(38)</bibtag>
+        <bibblock> Lewin, W. H. G., Clark, G. W., &amp; Smith, W. B. 1967, ApJ, 150, L153
+<!--  %**** scohard.tex Line 375 **** --></bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib39">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">39</bibtag>
+        <bibtag role="refnum">(39)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib40">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">40</bibtag>
+        <bibtag role="refnum">(40)</bibtag>
+        <bibblock> MacDonald, D. R. 1999, Ph.D. thesis, University of California at Riverside
+(USA)
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib41">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">41</bibtag>
+        <bibtag role="refnum">(41)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib42">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">42</bibtag>
+        <bibtag role="refnum">(42)</bibtag>
+        <bibblock> Mitsuda, K. et al. 1989, PASJ, 41, 97
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib43">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">43</bibtag>
+        <bibtag role="refnum">(43)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib44">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">44</bibtag>
+        <bibtag role="refnum">(44)</bibtag>
+        <bibblock> Peterson, L. E., &amp; Jacobson, A. S. 1966, ApJ, 145, 962
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib45">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">45</bibtag>
+        <bibtag role="refnum">(45)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib46">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">46</bibtag>
+        <bibtag role="refnum">(46)</bibtag>
+        <bibblock> Riegler, G. R., Boldt, E., &amp; Serlemitsos, P. 1970, Nature, 226, 1041
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib47">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">47</bibtag>
+        <bibtag role="refnum">(47)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib48">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">48</bibtag>
+        <bibtag role="refnum">(48)</bibtag>
+        <bibblock> Rothschild, R. E. et al. 1980, Nature, 286, 786
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib49">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">49</bibtag>
+        <bibtag role="refnum">(49)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib50">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">50</bibtag>
+        <bibtag role="refnum">(50)</bibtag>
+        <bibblock> Rothschild, R. E. et al. 1998, ApJ, 496, 538
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib51">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">51</bibtag>
+        <bibtag role="refnum">(51)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib52">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">52</bibtag>
+        <bibtag role="refnum">(52)</bibtag>
+        <bibblock> Soong, Y., &amp; Rothschild, R. E. 1983, ApJ, 274, 327
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib53">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">53</bibtag>
+        <bibtag role="refnum">(53)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib54">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">54</bibtag>
+        <bibtag role="refnum">(54)</bibtag>
+        <bibblock> Strickman, M., &amp; Barret, D. 2000, in AIP Conf. Proc. 510,
+Proceedings of the Fifth Compton Symposium, ed. M. L. McConnell, &amp;
+J. M. Ryan (New York: AIP), 222
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib55">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">55</bibtag>
+        <bibtag role="refnum">(55)</bibtag>
+        <bibblock/>
+      </bibitem>
+      <bibitem xml:id="bib.bib56">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">56</bibtag>
+        <bibtag role="refnum">(56)</bibtag>
+        <bibblock> van der Klis, M. et al. 1996, ApJ, 469, L1
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bib57">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">57</bibtag>
+        <bibtag role="refnum">(57)</bibtag>
+        <bibblock/>
+      </bibitem>
+    </biblist>
+  </bibliography>
+  <pagination role="newpage"/>
+<!--  %**** scohard.tex Line 400 **** -->  <table frefnum="Table 1" labels="LABEL:tab1" refnum="1" xml:id="S5.T1">
+    <toccaption class="ltx_centering"><tag close=" "><text fontsize="80%">1</text></tag><text fontsize="80%">Selected </text><text font="italic" fontsize="80%">RXTE</text><text fontsize="80%"> data observations of Sco X–1 </text></toccaption>
+    <caption class="ltx_centering" fontsize="80%"><tag close=": ">Table 1</tag>Selected <text font="italic">RXTE</text> data observations of Sco X–1 </caption>
+    <tabular class="ltx_centering ltx_guessed_headers" vattach="middle">
+      <thead>
+        <tr>
+          <td align="center" border="tt" thead="column"><text fontsize="80%">OBSID</text></td>
+          <td align="center" border="tt" thead="column"><text fontsize="80%">MJD</text></td>
+          <td align="center" border="tt" thead="column"><text fontsize="80%">Nu.</text></td>
+          <td align="center" border="tt" thead="column"><text fontsize="80%">Z Pos.</text></td>
+          <td align="center" border="tt" thead="column"><text fontsize="80%">Live–time</text><note mark="a" role="footnote"><text fontsize="80%">total live–time for HEXTE, in s</text></note></td>
+          <td align="center" border="tt" thead="column"><text fontsize="80%">SNR</text><note mark="b" role="footnote"><text fontsize="80%">signal to noise ratio in the 75-220 keV energy range</text></note></td>
+          <td align="center" border="tt" thead="column"><text fontsize="80%">F</text><Math mode="inline" tex="{}_{test}{\tablenotemark{c}}" text="_ t * e * s * t [probability that a better fit occurred due to a random chance]" xml:id="S5.T1.m1">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="pre12"/>
+                  <XMText><note mark="c" role="footnote"><text fontsize="80%">probability that a better fit occurred due to a random chance</text></note></XMText>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" fontsize="56%" role="UNKNOWN">t</XMTok>
+                    <XMTok font="italic" fontsize="56%" role="UNKNOWN">e</XMTok>
+                    <XMTok font="italic" fontsize="56%" role="UNKNOWN">s</XMTok>
+                    <XMTok font="italic" fontsize="56%" role="UNKNOWN">t</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="tt" thead="column"><text fontsize="80%">Flux</text><note mark="d" role="footnote"><text fontsize="80%">flux in the 75–220 keV energy range, in units of
+10</text><Math mode="inline" tex="{}^{-10}" text="^- 10" xml:id="S5.T1.m44a">
+                <XMath>
+                  <XMApp role="FLOATSUPERSCRIPT" scriptpos="7">
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="56%" meaning="10" role="NUMBER">10</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math><text fontsize="80%"> ergs cm</text><Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S5.T1.m45a">
+                <XMath>
+                  <XMApp role="FLOATSUPERSCRIPT" scriptpos="7">
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="56%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math><text fontsize="80%"> s</text><Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S5.T1.m46a">
+                <XMath>
+                  <XMApp role="FLOATSUPERSCRIPT" scriptpos="7">
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="56%" meaning="1" role="NUMBER">1</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math><text fontsize="80%">; apart from the 5 detections
+of a hard X–ray tail, the photon index used for the non–thermal component
+was our average value of 1; uncertainties are given at 90 % confidence level</text></note></td>
+          <td align="center" border="tt" thead="column"><text fontsize="80%">Hard Tail (Y/N)</text></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td align="center" border="t"><text fontsize="80%">20053-01-01-00</text></td>
+          <td align="center" border="t"><text fontsize="80%">50556</text></td>
+          <td align="center" border="t"><text fontsize="80%">1</text></td>
+          <td align="center" border="t"><text fontsize="80%">HB</text></td>
+          <td align="center" border="t"><text fontsize="80%">6341</text></td>
+          <td align="center" border="t"><text fontsize="80%">10.6</text></td>
+          <td align="center" border="t"><text fontsize="80%">4.4E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m2">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">15</text></td>
+          <td align="center" border="t"><text fontsize="80%">8.57</text><Math mode="inline" tex="{}^{+1.52}_{-1.38}" text="^ + 1.52 absent _ (- 1.38)" xml:id="S5.T1.m3">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="1.52" role="NUMBER">1.52</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="1.38" role="NUMBER">1.38</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="t"><text fontsize="80%">Y</text></td>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">20053-01-01-02</text></td>
+          <td align="center"><text fontsize="80%">50558</text></td>
+          <td align="center"><text fontsize="80%">2</text></td>
+          <td align="center"><text fontsize="80%">NB</text></td>
+          <td align="center"><text fontsize="80%">5434</text></td>
+          <td align="center"><text fontsize="80%">4.2</text></td>
+          <td align="center"><text fontsize="80%">1.7E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m4">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">7</text></td>
+          <td align="center"><text fontsize="80%">4.05</text><Math mode="inline" tex="{}^{+0.57}_{-0.87}" text="^ + 0.57 absent _ (- 0.87)" xml:id="S5.T1.m5">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="0.57" role="NUMBER">0.57</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="0.87" role="NUMBER">0.87</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td/>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">20053-01-01-03</text></td>
+          <td align="center"><text fontsize="80%">50559</text></td>
+          <td align="center"><text fontsize="80%">3</text></td>
+          <td align="center"><text fontsize="80%">NB</text></td>
+          <td align="center"><text fontsize="80%">5896</text></td>
+          <td align="center"><text fontsize="80%">4.8</text></td>
+          <td align="center"><text fontsize="80%">3.9E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m6">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">9</text></td>
+          <td align="center"><text fontsize="80%">5.20</text><Math mode="inline" tex="{}^{+0.75}_{-0.74}" text="^ + 0.75 absent _ (- 0.74)" xml:id="S5.T1.m7">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="0.75" role="NUMBER">0.75</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="0.74" role="NUMBER">0.74</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td/>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">20053-01-01-05</text></td>
+          <td align="center"><text fontsize="80%">50561</text></td>
+          <td align="center"><text fontsize="80%">4</text></td>
+          <td align="center"><text fontsize="80%">NB</text></td>
+          <td align="center"><text fontsize="80%">1908</text></td>
+          <td align="center"><text fontsize="80%">0.8</text></td>
+          <td align="center"><text fontsize="80%">6.2E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m8">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">5</text></td>
+          <td align="center"><text fontsize="80%">6.29</text><Math mode="inline" tex="{}^{+1.77}_{-1.77}" text="^ + 1.77 absent _ (- 1.77)" xml:id="S5.T1.m9">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="1.77" role="NUMBER">1.77</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="1.77" role="NUMBER">1.77</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center"><text fontsize="80%">N</text></td>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">20053-01-01-05</text></td>
+          <td align="center"><text fontsize="80%">50561</text></td>
+          <td align="center"><text fontsize="80%">5</text></td>
+          <td align="center"><text fontsize="80%">FB</text></td>
+          <td align="center"><text fontsize="80%">4593</text></td>
+          <td align="center"><text fontsize="80%">2.4</text></td>
+          <td align="center"><text fontsize="80%">7.7E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m10">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">4</text></td>
+          <td align="center"><text fontsize="80%">2.47</text><Math mode="inline" tex="{}^{+1.94}_{-1.51}" text="^ + 1.94 absent _ (- 1.51)" xml:id="S5.T1.m11">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="1.94" role="NUMBER">1.94</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="1.51" role="NUMBER">1.51</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td/>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">20053-01-01-06</text></td>
+          <td align="center"><text fontsize="80%">50562</text></td>
+          <td align="center"><text fontsize="80%">6</text></td>
+          <td align="center"><text fontsize="80%">NB</text></td>
+          <td align="center"><text fontsize="80%">8558</text></td>
+          <td align="center"><text fontsize="80%">7.3</text></td>
+          <td align="center"><text fontsize="80%">3.5E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m12">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">13</text></td>
+          <td align="center"><text fontsize="80%">8.63</text><Math mode="inline" tex="{}^{+0.91}_{-0.90}" text="^ + 0.91 absent _ (- 0.90)" xml:id="S5.T1.m13">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="0.91" role="NUMBER">0.91</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="0.90" role="NUMBER">0.90</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center"><text fontsize="80%">Y</text></td>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">10061-01-03-00</text></td>
+          <td align="center"><text fontsize="80%">50815</text></td>
+          <td align="center"><text fontsize="80%">7</text></td>
+          <td align="center"><text fontsize="80%">NB</text></td>
+          <td align="center"><text fontsize="80%">5484</text></td>
+          <td align="center"><text fontsize="80%">4.2</text></td>
+          <td align="center"><text fontsize="80%">2.7E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m14">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">9</text></td>
+          <td align="center"><text fontsize="80%">5.48</text><Math mode="inline" tex="{}^{+0.69}_{-0.74}" text="^ + 0.69 absent _ (- 0.74)" xml:id="S5.T1.m15">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="0.69" role="NUMBER">0.69</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="0.74" role="NUMBER">0.74</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td/>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">20053-01-02-00</text></td>
+          <td align="center"><text fontsize="80%">50816</text></td>
+          <td align="center"><text fontsize="80%">8</text></td>
+          <td align="center"><text fontsize="80%">FB</text></td>
+          <td align="center"><text fontsize="80%">8145</text></td>
+          <td align="center"><text fontsize="80%">18.6</text></td>
+          <td align="center"><text fontsize="80%">5.8E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m16">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">12</text></td>
+          <td align="center"><text fontsize="80%">13.6</text><Math mode="inline" tex="{}^{+2.0}_{-2.0}" text="^ + 2.0 absent _ (- 2.0)" xml:id="S5.T1.m17">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="2.0" role="NUMBER">2.0</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="2.0" role="NUMBER">2.0</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center"><text fontsize="80%">Y</text></td>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">20053-01-02-03</text></td>
+          <td align="center"><text fontsize="80%">50819</text></td>
+          <td align="center"><text fontsize="80%">9</text></td>
+          <td align="center"><text fontsize="80%">NB</text></td>
+          <td align="center"><text fontsize="80%">5686</text></td>
+          <td align="center"><text fontsize="80%">3.5</text></td>
+          <td align="center"><text fontsize="80%">2.7E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m18">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">9</text></td>
+          <td align="center"><text fontsize="80%">5.91</text><Math mode="inline" tex="{}^{+0.96}_{-0.95}" text="^ + 0.96 absent _ (- 0.95)" xml:id="S5.T1.m19">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="0.96" role="NUMBER">0.96</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="0.95" role="NUMBER">0.95</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td/>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">30036-01-01-000</text></td>
+          <td align="center"><text fontsize="80%">50820</text></td>
+          <td align="center"><text fontsize="80%">10</text></td>
+          <td align="center"><text fontsize="80%">FB</text></td>
+          <td align="center"><text fontsize="80%">6858</text></td>
+          <td align="center"><text fontsize="80%">5.8</text></td>
+          <td align="center"><text fontsize="80%">3.8E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m20">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">7</text></td>
+          <td align="center"><text fontsize="80%">7.73</text><Math mode="inline" tex="{}^{+1.62}_{-1.65}" text="^ + 1.62 absent _ (- 1.65)" xml:id="S5.T1.m21">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="1.62" role="NUMBER">1.62</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="1.65" role="NUMBER">1.65</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center"><text fontsize="80%">Y</text></td>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">20053-01-02-04</text></td>
+          <td align="center"><text fontsize="80%">50820</text></td>
+          <td align="center"><text fontsize="80%">11</text></td>
+          <td align="center"><text fontsize="80%">FB</text></td>
+          <td align="center"><text fontsize="80%">4193</text></td>
+          <td align="center"><text fontsize="80%">4.9</text></td>
+          <td align="center"><text fontsize="80%">3.3E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m22">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">4</text></td>
+          <td align="center"><text fontsize="80%">3.44</text><Math mode="inline" tex="{}^{+1.23}_{-1.00}" text="^ + 1.23 absent _ (- 1.00)" xml:id="S5.T1.m23">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="1.23" role="NUMBER">1.23</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="1.00" role="NUMBER">1.00</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td/>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">30036-01-02-000</text></td>
+          <td align="center"><text fontsize="80%">50821</text></td>
+          <td align="center"><text fontsize="80%">12</text></td>
+          <td align="center"><text fontsize="80%">NB</text></td>
+          <td align="center"><text fontsize="80%">4370</text></td>
+          <td align="center"><text fontsize="80%">2.2</text></td>
+          <td align="center"><text fontsize="80%">3.6E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m24">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">4</text></td>
+          <td align="center"><text fontsize="80%">4.50</text><Math mode="inline" tex="{}^{+0.87}_{-0.90}" text="^ + 0.87 absent _ (- 0.90)" xml:id="S5.T1.m25">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="0.87" role="NUMBER">0.87</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="0.90" role="NUMBER">0.90</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td/>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">30036-01-02-000</text></td>
+          <td align="center"><text fontsize="80%">50821</text></td>
+          <td align="center"><text fontsize="80%">13</text></td>
+          <td align="center"><text fontsize="80%">FB</text></td>
+          <td align="center"><text fontsize="80%">2527</text></td>
+          <td align="center"><text fontsize="80%">1.8</text></td>
+          <td align="center"><text fontsize="80%">3.6E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m26">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">4</text></td>
+          <td align="center"><text fontsize="80%">2.83</text><Math mode="inline" tex="{}^{+1.05}_{-1.06}" text="^ + 1.05 absent _ (- 1.06)" xml:id="S5.T1.m27">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="1.05" role="NUMBER">1.05</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="1.06" role="NUMBER">1.06</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td/>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">30406-01-02-00</text></td>
+          <td align="center"><text fontsize="80%">50872</text></td>
+          <td align="center"><text fontsize="80%">14</text></td>
+          <td align="center"><text fontsize="80%">NB</text></td>
+          <td align="center"><text fontsize="80%">2326</text></td>
+          <td align="center"><text fontsize="80%">2.5</text></td>
+          <td align="center"><text fontsize="80%">1.0E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m28">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">6</text></td>
+          <td align="center"><text fontsize="80%">4.03</text><Math mode="inline" tex="{}^{+1.07}_{-1.13}" text="^ + 1.07 absent _ (- 1.13)" xml:id="S5.T1.m29">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="1.07" role="NUMBER">1.07</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="1.13" role="NUMBER">1.13</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td/>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">30406-01-02-00</text></td>
+          <td align="center"><text fontsize="80%">50872</text></td>
+          <td align="center"><text fontsize="80%">15</text></td>
+          <td align="center"><text fontsize="80%">FB</text></td>
+          <td align="center"><text fontsize="80%">3125</text></td>
+          <td align="center"><Math mode="inline" tex="&lt;" text="less" xml:id="S5.T1.m30">
+              <XMath>
+                <XMTok fontsize="80%" meaning="less-than" role="RELOP">&lt;</XMTok>
+              </XMath>
+            </Math><text fontsize="80%"> 0</text></td>
+          <td align="center"><text fontsize="80%">0.08</text></td>
+          <td align="center"><Math mode="inline" tex="&lt;" text="less" xml:id="S5.T1.m31">
+              <XMath>
+                <XMTok fontsize="80%" meaning="less-than" role="RELOP">&lt;</XMTok>
+              </XMath>
+            </Math><text fontsize="80%"> 2.20</text></td>
+          <td align="center"><text fontsize="80%">N</text></td>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">30035-01-01-00</text></td>
+          <td align="center"><text fontsize="80%">50963</text></td>
+          <td align="center"><text fontsize="80%">16</text></td>
+          <td align="center"><text fontsize="80%">HB</text></td>
+          <td align="center"><text fontsize="80%">6253</text></td>
+          <td align="center"><text fontsize="80%">6.2</text></td>
+          <td align="center"><text fontsize="80%">1.2E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m32">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">14</text></td>
+          <td align="center"><text fontsize="80%">3.63</text><Math mode="inline" tex="{}^{+0.92}_{-0.88}" text="^ + 0.92 absent _ (- 0.88)" xml:id="S5.T1.m33">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="0.92" role="NUMBER">0.92</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="0.88" role="NUMBER">0.88</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center"><text fontsize="80%">Y</text></td>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">30035-01-03-00</text></td>
+          <td align="center"><text fontsize="80%">50965</text></td>
+          <td align="center"><text fontsize="80%">17</text></td>
+          <td align="center"><text fontsize="80%">NB</text></td>
+          <td align="center"><text fontsize="80%">3750</text></td>
+          <td align="center"><text fontsize="80%">1.3</text></td>
+          <td align="center"><text fontsize="80%">2.4E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m34">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">8</text></td>
+          <td align="center"><text fontsize="80%">3.20</text><Math mode="inline" tex="{}^{+0.86}_{-0.89}" text="^ + 0.86 absent _ (- 0.89)" xml:id="S5.T1.m35">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="0.86" role="NUMBER">0.86</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="0.89" role="NUMBER">0.89</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td/>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">30035-01-03-00</text></td>
+          <td align="center"><text fontsize="80%">50965</text></td>
+          <td align="center"><text fontsize="80%">18</text></td>
+          <td align="center"><text fontsize="80%">FB</text></td>
+          <td align="center"><text fontsize="80%">2318</text></td>
+          <td align="center"><Math mode="inline" tex="&lt;" text="less" xml:id="S5.T1.m36">
+              <XMath>
+                <XMTok fontsize="80%" meaning="less-than" role="RELOP">&lt;</XMTok>
+              </XMath>
+            </Math><text fontsize="80%"> 0</text></td>
+          <td align="center"><text fontsize="80%">0.03</text></td>
+          <td align="center"><Math mode="inline" tex="&lt;" text="less" xml:id="S5.T1.m37">
+              <XMath>
+                <XMTok fontsize="80%" meaning="less-than" role="RELOP">&lt;</XMTok>
+              </XMath>
+            </Math><text fontsize="80%"> 2.67</text></td>
+          <td align="center"><text fontsize="80%">N</text></td>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">30035-01-04-00</text></td>
+          <td align="center"><text fontsize="80%">50966</text></td>
+          <td align="center"><text fontsize="80%">19</text></td>
+          <td align="center"><text fontsize="80%">FB</text></td>
+          <td align="center"><text fontsize="80%">6230</text></td>
+          <td align="center"><Math mode="inline" tex="&lt;" text="less" xml:id="S5.T1.m38">
+              <XMath>
+                <XMTok fontsize="80%" meaning="less-than" role="RELOP">&lt;</XMTok>
+              </XMath>
+            </Math><text fontsize="80%"> 0</text></td>
+          <td align="center"><text fontsize="80%">0.38</text></td>
+          <td align="center"><Math mode="inline" tex="&lt;" text="less" xml:id="S5.T1.m39">
+              <XMath>
+                <XMTok fontsize="80%" meaning="less-than" role="RELOP">&lt;</XMTok>
+              </XMath>
+            </Math><text fontsize="80%"> 1.00</text></td>
+          <td align="center"><text fontsize="80%">N</text></td>
+        </tr>
+        <tr>
+          <td align="center"><text fontsize="80%">40706-01-01-000</text></td>
+          <td align="center"><text fontsize="80%">51433</text></td>
+          <td align="center"><text fontsize="80%">20</text></td>
+          <td align="center"><text fontsize="80%">NB</text></td>
+          <td align="center"><text fontsize="80%">8076</text></td>
+          <td align="center"><text fontsize="80%">2.8</text></td>
+          <td align="center"><text fontsize="80%">1.4E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m40">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">5</text></td>
+          <td align="center"><text fontsize="80%">2.09</text><Math mode="inline" tex="{}^{+0.55}_{-0.53}" text="^ + 0.55 absent _ (- 0.53)" xml:id="S5.T1.m41">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="0.55" role="NUMBER">0.55</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="0.53" role="NUMBER">0.53</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td/>
+        </tr>
+        <tr>
+          <td align="center" border="bb"><text fontsize="80%">40706-01-01-000</text></td>
+          <td align="center" border="bb"><text fontsize="80%">51433</text></td>
+          <td align="center" border="bb"><text fontsize="80%">21</text></td>
+          <td align="center" border="bb"><text fontsize="80%">FB</text></td>
+          <td align="center" border="bb"><text fontsize="80%">2167</text></td>
+          <td align="center" border="bb"><text fontsize="80%">2.2</text></td>
+          <td align="center" border="bb"><text fontsize="80%">1.2E</text><Math mode="inline" tex="-" text="-" xml:id="S5.T1.m42">
+              <XMath>
+                <XMTok fontsize="80%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMath>
+            </Math><text fontsize="80%">3</text></td>
+          <td align="center" border="bb"><text fontsize="80%">2.45</text><Math mode="inline" tex="{}^{+1.04}_{-1.07}" text="^ + 1.04 absent _ (- 1.07)" xml:id="S5.T1.m43">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post13"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre12"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="56%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="56%" meaning="1.04" role="NUMBER">1.04</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="56%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="56%" meaning="1.07" role="NUMBER">1.07</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td border="bb"/>
+        </tr>
+      </tbody>
+    </tabular>
+    <p align="center"><text fontsize="80%">Note. – HB=Horizontal Branch, NB=Normal Branch, FB=Flaring Branch;
+Nu.= observation number
+
+
+
+</text></p>
+  </table>
+  <pagination role="newpage"/>
+  <table frefnum="Table 2" labels="LABEL:fig1 LABEL:tab2" refnum="2" xml:id="S5.T2">
+<!--  %**** scohard.tex Line 450 **** -->    <toccaption class="ltx_centering"><tag close=" ">2</tag>Observations of hard X–ray tail detections in Sco X–1 </toccaption>
+    <caption class="ltx_centering"><tag close=": ">Table 2</tag>Observations of hard X–ray tail detections in Sco X–1 </caption>
+    <tabular class="ltx_centering ltx_guessed_headers" vattach="middle">
+      <tbody>
+        <tr>
+          <td border="tt"/>
+          <td align="center" border="tt" colspan="2" thead="column">Bremsstrahlung</td>
+          <td align="center" border="tt" colspan="2" thead="column">Power–Law</td>
+          <td border="tt"/>
+        </tr>
+        <tr>
+          <td align="center" thead="column">OBSID</td>
+          <td align="center" border="t" thead="column">kT (keV)</td>
+          <td align="center" border="t" thead="column">Flux<note mark="a" role="footnote">Flux in 20–50 keV range in units of 10<Math mode="inline" tex="{}^{-9}" text="^- 9" xml:id="S5.T2.m23a">
+                <XMath>
+                  <XMApp role="FLOATSUPERSCRIPT" scriptpos="5">
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="9" role="NUMBER">9</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math> ergs cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S5.T2.m24a">
+                <XMath>
+                  <XMApp role="FLOATSUPERSCRIPT" scriptpos="5">
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math> s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S5.T2.m25a">
+                <XMath>
+                  <XMApp role="FLOATSUPERSCRIPT" scriptpos="5">
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math></note></td>
+          <td align="center" border="t" thead="column"><Math mode="inline" tex="\Gamma" text="Gamma" xml:id="S5.T2.m1">
+              <XMath>
+                <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+              </XMath>
+            </Math></td>
+          <td align="center" border="t" thead="column">Flux<note mark="b" role="footnote">Flux in 20–200 keV interval in units of
+10<Math mode="inline" tex="{}^{-9}" text="^- 9" xml:id="S5.T2.m26a">
+                <XMath>
+                  <XMApp role="FLOATSUPERSCRIPT" scriptpos="5">
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="9" role="NUMBER">9</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math> ergs cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S5.T2.m27a">
+                <XMath>
+                  <XMApp role="FLOATSUPERSCRIPT" scriptpos="5">
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math> s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S5.T2.m28a">
+                <XMath>
+                  <XMApp role="FLOATSUPERSCRIPT" scriptpos="5">
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math></note></td>
+          <td align="center" thead="column"><Math mode="inline" tex="\chi^{2}" text="chi ^ 2" xml:id="S5.T2.m2">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                  <XMTok font="italic" name="chi" role="UNKNOWN">χ</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMath>
+            </Math> (dof)</td>
+        </tr>
+        <tr>
+          <td align="center" border="t">20053-01-01-00</td>
+          <td align="center" border="t">4.83<Math mode="inline" tex="{}^{+0.04}_{-0.05}" text="^ + 0.04 absent _ (- 0.05)" xml:id="S5.T2.m3">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.04" role="NUMBER">0.04</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.05" role="NUMBER">0.05</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="t">9.03<Math mode="inline" tex="{}^{+0.39}_{-0.36}" text="^ + 0.39 absent _ (- 0.36)" xml:id="S5.T2.m4">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.39" role="NUMBER">0.39</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.36" role="NUMBER">0.36</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="t"> 1.75<Math mode="inline" tex="{}^{+0.22}_{-0.20}" text="^ + 0.22 absent _ (- 0.20)" xml:id="S5.T2.m5">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.22" role="NUMBER">0.22</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.20" role="NUMBER">0.20</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="t">1.56<Math mode="inline" tex="{}^{+0.10}_{-0.11}" text="^ + 0.10 absent _ (- 0.11)" xml:id="S5.T2.m6">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.10" role="NUMBER">0.10</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.11" role="NUMBER">0.11</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="t">36.76 (23)</td>
+        </tr>
+        <tr>
+          <td align="center">20053-01-01-06</td>
+          <td align="center">4.50<Math mode="inline" tex="{}^{+0.05}_{-0.05}" text="^ + 0.05 absent _ (- 0.05)" xml:id="S5.T2.m7">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.05" role="NUMBER">0.05</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.05" role="NUMBER">0.05</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center">5.83<Math mode="inline" tex="{}^{+0.30}_{-0.27}" text="^ + 0.30 absent _ (- 0.27)" xml:id="S5.T2.m8">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.30" role="NUMBER">0.30</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.27" role="NUMBER">0.27</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center"> 1.64<Math mode="inline" tex="{}^{+0.29}_{-0.27}" text="^ + 0.29 absent _ (- 0.27)" xml:id="S5.T2.m9">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.29" role="NUMBER">0.29</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.27" role="NUMBER">0.27</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center">0.91<Math mode="inline" tex="{}^{+0.11}_{-0.10}" text="^ + 0.11 absent _ (- 0.10)" xml:id="S5.T2.m10">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.11" role="NUMBER">0.11</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.10" role="NUMBER">0.10</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center">24.52 (23)</td>
+        </tr>
+        <tr>
+          <td align="center">20053-01-02-00</td>
+          <td align="center">4.36<Math mode="inline" tex="{}^{+0.03}_{-0.03}" text="^ + 0.03 absent _ (- 0.03)" xml:id="S5.T2.m11">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.03" role="NUMBER">0.03</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.03" role="NUMBER">0.03</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center">7.16<Math mode="inline" tex="{}^{+0.26}_{-0.24}" text="^ + 0.26 absent _ (- 0.24)" xml:id="S5.T2.m12">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.26" role="NUMBER">0.26</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.24" role="NUMBER">0.24</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center">-0.17<Math mode="inline" tex="{}^{+0.30}_{-0.33}" text="^ + 0.30 absent _ (- 0.33)" xml:id="S5.T2.m13">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.30" role="NUMBER">0.30</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.33" role="NUMBER">0.33</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center">1.22<Math mode="inline" tex="{}^{+0.13}_{-0.14}" text="^ + 0.13 absent _ (- 0.14)" xml:id="S5.T2.m14">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.13" role="NUMBER">0.13</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.14" role="NUMBER">0.14</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center">29.15 (23)</td>
+        </tr>
+        <tr>
+          <td align="center">30036-01-01-000</td>
+          <td align="center">4.28<Math mode="inline" tex="{}^{+0.03}_{-0.04}" text="^ + 0.03 absent _ (- 0.04)" xml:id="S5.T2.m15">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.03" role="NUMBER">0.03</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.04" role="NUMBER">0.04</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center">9.63<Math mode="inline" tex="{}^{+0.42}_{-0.41}" text="^ + 0.42 absent _ (- 0.41)" xml:id="S5.T2.m16">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.42" role="NUMBER">0.42</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.41" role="NUMBER">0.41</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center">-0.71<Math mode="inline" tex="{}^{+0.63}_{-0.70}" text="^ + 0.63 absent _ (- 0.70)" xml:id="S5.T2.m17">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.63" role="NUMBER">0.63</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.70" role="NUMBER">0.70</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center">0.63<Math mode="inline" tex="{}^{+0.11}_{-0.11}" text="^ + 0.11 absent _ (- 0.11)" xml:id="S5.T2.m18">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.11" role="NUMBER">0.11</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.11" role="NUMBER">0.11</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center">28.57 (22)</td>
+        </tr>
+        <tr>
+          <td align="center" border="b">30035-01-01-00</td>
+          <td align="center" border="b">4.51<Math mode="inline" tex="{}^{+0.08}_{-0.07}" text="^ + 0.08 absent _ (- 0.07)" xml:id="S5.T2.m19">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.08" role="NUMBER">0.08</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.07" role="NUMBER">0.07</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="b">7.45<Math mode="inline" tex="{}^{+0.60}_{-0.67}" text="^ + 0.60 absent _ (- 0.67)" xml:id="S5.T2.m20">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.60" role="NUMBER">0.60</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.67" role="NUMBER">0.67</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="b"> 2.37<Math mode="inline" tex="{}^{+0.33}_{-0.28}" text="^ + 0.33 absent _ (- 0.28)" xml:id="S5.T2.m21">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.33" role="NUMBER">0.33</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.28" role="NUMBER">0.28</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="b">1.04<Math mode="inline" tex="{}^{+0.08}_{-0.08}" text="^ + 0.08 absent _ (- 0.08)" xml:id="S5.T2.m22">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="pre10"/>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                      <XMTok fontsize="70%" meaning="0.08" role="NUMBER">0.08</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.08" role="NUMBER">0.08</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="b">24.01 (22)</td>
+        </tr>
+      </tbody>
+    </tabular>
+    <p align="center">Note. – uncertainties are given at 90 % confidence level for the derived
+parameters of the model applied
+
+</p>
+  </table>
+  <pagination role="newpage"/>
+<!--  %**** scohard.tex Line 475 **** -->  <figure placement="D’Amico et al., fig1.ps" xml:id="fig1">
+    <p>Spectrum resulting from a bremsstrahlung + power law
+fit to data subset 20053-01-02-00 (a), and
+the result of a bremsstrahlung fit to subset
+30035-01-04-00 (b),
+showing the presence/absence of a hard X–ray tail in Sco X–1.
+Residuals are given in units of standard deviations (lower panels).
+In (b) the upper limits are 2<Math mode="inline" tex="\sigma" text="sigma" xml:id="m3">
+        <XMath>
+          <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+        </XMath>
+      </Math>, including the 60–80 keV
+bin which experienced a <Math mode="inline" tex="-" text="-" xml:id="m4">
+        <XMath>
+          <XMTok meaning="minus" role="ADDOP">-</XMTok>
+        </XMath>
+      </Math> 3<Math mode="inline" tex="\sigma" text="sigma" xml:id="m5">
+        <XMath>
+          <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+        </XMath>
+      </Math> residual.
+The <Math mode="inline" tex="{\chi}^{2}_{\nu}" text="(chi ^ 2) _ nu" xml:id="m6">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+              <XMTok font="italic" name="chi" role="UNKNOWN">χ</XMTok>
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+            <XMTok font="italic" fontsize="70%" name="nu" role="UNKNOWN">ν</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> are 1.27 and 1.62 respectively.</p>
+  </figure>
+</document>

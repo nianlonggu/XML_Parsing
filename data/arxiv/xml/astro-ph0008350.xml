@@ -1,0 +1,2743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008350.1"?>
+<?latexml class="article" options="12pt,aasms4" oldstyle="true"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>Intermittent behavior of cosmic mass field revealed by QSO’s
+Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="m1">
+      <XMath>
+        <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+      </XMath>
+    </Math> forests</title>
+  <creator role="author">
+    <personname>Priya Jamkhedkar<note mark="1" role="affiliation">Department of Physics, University of Arizona, Tucson,
+AZ 85721</note> </personname>
+  </creator>
+  <creator before="  " role="author">
+    <personname> Hu Zhan<note mark="2" role="affiliation">Department of Physics and Astronomy, Arizona State
+University, Tempe, AZ 85287</note> </personname>
+  </creator>
+  <creator before="  " role="author">
+    <personname>
+and Li-Zhi Fang<note mark="1" role="affiliation">Department of Physics, University of Arizona, Tucson,
+AZ 85721</note> </personname>
+  </creator>
+  <abstract name="Abstract">
+    <p>The intermittent behavior of the space-scale distribution of Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="m2">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math>
+transmitted flux of QSO HS1700+64 has been analyzed via a discrete
+wavelet transform. We found that there are strong indications of
+<!--  %**** ms.tex Line 25 **** -->intermittency on scales down to about 10 <Math mode="inline" tex="h^{-1}" text="h ^ (- 1)" xml:id="m3">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+            <XMTok font="italic" role="UNKNOWN">h</XMTok>
+            <XMApp>
+              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math> kpc. These are: 1.) the
+probability distribution function of the local fluctuations of the flux
+is significantly long-tailed on small scales, and 2.) the local power
+spectrum of the flux shows prominent spiky structures on small scales.
+Moreover, the local power spectrum averaged on regions with different sizes
+shows similar spiky structures. Therefore, the random mass density field
+traced by the Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="m4">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> forests is rougher on smaller scales, consistent
+with singular clustering.</p>
+  </abstract>
+  <keywords>cosmology: theory - large-scale structure of the universe</keywords>
+  <section refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>Introduction</title>
+    <para xml:id="S1.p1">
+      <p>The structures of the cosmic mass field on scales from sub-Mpc to kpc
+have attracted a lot of attention recently. High resolution N-body
+simulations show that the core profiles of massive halos of the cold
+dark matter (CDM) cosmogony are singular (Navarro, Frenk &amp; White
+1997, Moore et al. 2000, Jing &amp; Suto 2000), while the halo profiles
+required by the rotation curves of dwarf galaxies (Flores &amp; Primack
+1994, Burkeret 1995) are shallower than the numerical results.
+The central cusps of dark halos also disagree with soft halo
+profiles inferred from low surface brightness galaxies (de Blok &amp;
+McGaugh 1997.) The cores of galaxies and clusters are even found to be
+<!--  %**** ms.tex Line 50 **** -->consistent with the thermal equilibrium model with an “universal”
+mass density (Firmani et al. 2000.) In other words, the singular
+behavior of cosmic clustering has not been detected in the cores
+of galaxies and clusters.</p>
+    </para>
+    <para xml:id="S1.p2">
+      <p>We can now ask the question: can the singular behavior, if it exists, be
+revealed by methods other than the mass profile of galaxies and
+clusters? At the first glance, this goal seems to be not achievable,
+as singular mass density profiles can only be seen in cores of galaxies
+and clusters. However, a random mass field <Math mode="inline" tex="\rho(x)" text="rho * x" xml:id="S1.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+              <XMDual>
+                <XMRef idref="S1.p2.m1.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMTok font="italic" role="UNKNOWN" xml:id="S1.p2.m1.1">x</XMTok>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> consisting of rare
+singular structures randomly scattered in low mass density background
+typically is intermittent (Zel’dovich et al. 1990.) A basic character
+of an intermittent field is that the density <text font="italic">difference</text> between two
+neighboring positions, <Math mode="inline" tex="|\rho(x+r)-\rho(x)|" text="absolute-value@(rho * (x + r) - rho * x)" xml:id="S1.p2.m2">
+          <XMath>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="absolute-value"/>
+                <XMRef idref="S1.p2.m2.2"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                <XMApp xml:id="S1.p2.m2.2">
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                    <XMDual>
+                      <XMRef idref="S1.p2.m2.2.1"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMApp xml:id="S1.p2.m2.2.1">
+                          <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                    <XMDual>
+                      <XMRef idref="S1.p2.m2.1"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="S1.p2.m2.1">x</XMTok>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>, can be “abnormally”
+large when <Math mode="inline" tex="r" text="r" xml:id="S1.p2.m3">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">r</XMTok>
+          </XMath>
+        </Math> is very small. That is, the rare events of large density
+difference <Math mode="inline" tex="|\rho(x+r)-\rho(x)|" text="absolute-value@(rho * (x + r) - rho * x)" xml:id="S1.p2.m4">
+          <XMath>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="absolute-value"/>
+                <XMRef idref="S1.p2.m4.2"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                <XMApp xml:id="S1.p2.m4.2">
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                    <XMDual>
+                      <XMRef idref="S1.p2.m4.2.1"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMApp xml:id="S1.p2.m4.2.1">
+                          <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                    <XMDual>
+                      <XMRef idref="S1.p2.m4.1"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="S1.p2.m4.1">x</XMTok>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math> on small scales <Math mode="inline" tex="r" text="r" xml:id="S1.p2.m5">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">r</XMTok>
+          </XMath>
+        </Math> have a higher
+probability than that for a Gaussian field. Such a singular behavior of
+a random mass field means that the probability density function (PDF)
+of the density differences on small scales, <Math mode="inline" tex="r" text="r" xml:id="S1.p2.m6">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">r</XMTok>
+          </XMath>
+        </Math>, has a long tail.
+Obviously, the effects of long tailed PDF of the density difference are
+not limited to the singular mass profile. This motivated us to look for
+the PDF’s long tail and its effects by using samples other than the
+cores of galaxies and clusters.</p>
+    </para>
+    <para xml:id="S1.p3">
+      <p>The PDF’s long tail have not yet been seriously studied. The most popular
+<!--  %**** ms.tex Line 75 **** -->statistical measure of large-scale structures – the power spectrum of
+a mass field, is insensitive to the PDF’s long tail. Furthermore, The
+density difference, <Math mode="inline" tex="|\rho(x+r)-\rho(x)|" text="absolute-value@(rho * (x + r) - rho * x)" xml:id="S1.p3.m1">
+          <XMath>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="absolute-value"/>
+                <XMRef idref="S1.p3.m1.2"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                <XMApp xml:id="S1.p3.m1.2">
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                    <XMDual>
+                      <XMRef idref="S1.p3.m1.2.1"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMApp xml:id="S1.p3.m1.2.1">
+                          <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                    <XMDual>
+                      <XMRef idref="S1.p3.m1.1"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="S1.p3.m1.1">x</XMTok>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>, is a quantity localized in
+space <Math mode="inline" tex="x" text="x" xml:id="S1.p3.m2">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">x</XMTok>
+          </XMath>
+        </Math> and on scale <Math mode="inline" tex="r" text="r" xml:id="S1.p3.m3">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">r</XMTok>
+          </XMath>
+        </Math>, and so a space-scale decomposition is
+necessary. Thus using the power spectrum or any statistic that is not
+based on proper space-scale decomposition, it is not possible to identify
+the effects of long-tailed PDF of the density difference.</p>
+    </para>
+    <para xml:id="S1.p4">
+      <p>In this <text font="italic">Letter</text>, using a discrete wavelet transform (DWT), we look
+for the long tail effects from a sample of QSO’s Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.p4.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> forests. It
+is believed that the distribution of baryonic diffuse matter is almost
+point-by-point proportional to the underlying dark matter density.
+Moreover, the absorption optical depth of Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.p4.m2">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> is linearly
+dependent on the baryonic density. Therefore, the high resolution data
+of the transmitted flux of QSO’s absorption would be a good candidate to
+reveal the long-tailed PDF of cosmic mass field on small scales.</p>
+    </para>
+  </section>
+  <section refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>Method</title>
+    <para xml:id="S2.p1">
+      <p>Let us consider a 1-D random mass density field <Math mode="inline" tex="\rho(x)" text="rho * x" xml:id="S2.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+              <XMDual>
+                <XMRef idref="S2.p1.m1.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMTok font="italic" role="UNKNOWN" xml:id="S2.p1.m1.1">x</XMTok>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> in spatial
+range <Math mode="inline" tex="L" text="L" xml:id="S2.p1.m2">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">L</XMTok>
+          </XMath>
+        </Math>. With a DWT space-scale decomposition, the local density
+difference, <Math mode="inline" tex="|\rho(x+r)-\rho(x)|" text="absolute-value@(rho * (x + r) - rho * x)" xml:id="S2.p1.m3">
+          <XMath>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="absolute-value"/>
+                <XMRef idref="S2.p1.m3.2"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                <XMApp xml:id="S2.p1.m3.2">
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                    <XMDual>
+                      <XMRef idref="S2.p1.m3.2.1"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMApp xml:id="S2.p1.m3.2.1">
+                          <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                    <XMDual>
+                      <XMRef idref="S2.p1.m3.1"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="S2.p1.m3.1">x</XMTok>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>, is represented by the wavelet function
+coefficients (WFCs) as
+<!--  %eq1 --></p>
+      <equation frefnum="(1)" refnum="1" xml:id="S2.E1">
+        <Math mode="display" tex="\tilde{\epsilon}_{j,l}=\langle\psi_{j,l},\rho\rangle," text="(tilde@(epsilon)) _ (list@(j, l)) = list@(psi _ (list@(j, l)), rho)" xml:id="S2.E1.m1">
+          <XMath>
+            <XMDual>
+              <XMRef idref="S2.E1.m1.6"/>
+              <XMWrap>
+                <XMApp xml:id="S2.E1.m1.6">
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+<!--  %**** ms.tex Line 100 **** -->                    <XMApp>
+                      <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                      <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+                    </XMApp>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="list"/>
+                        <XMRef idref="S2.E1.m1.1"/>
+                        <XMRef idref="S2.E1.m1.2"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.E1.m1.1">j</XMTok>
+                        <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.E1.m1.2">l</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                  <XMDual>
+                    <XMApp>
+                      <XMTok meaning="list"/>
+                      <XMRef idref="S2.E1.m1.6.1"/>
+                      <XMRef idref="S2.E1.m1.5"/>
+                    </XMApp>
+                    <XMWrap>
+                      <XMTok name="langle" role="OPEN" stretchy="false">⟨</XMTok>
+                      <XMApp xml:id="S2.E1.m1.6.1">
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                        <XMTok font="italic" name="psi" role="UNKNOWN">ψ</XMTok>
+                        <XMDual>
+                          <XMApp>
+                            <XMTok meaning="list"/>
+                            <XMRef idref="S2.E1.m1.3"/>
+                            <XMRef idref="S2.E1.m1.4"/>
+                          </XMApp>
+                          <XMWrap>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.E1.m1.3">j</XMTok>
+                            <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.E1.m1.4">l</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                      </XMApp>
+                      <XMTok role="PUNCT">,</XMTok>
+                      <XMTok font="italic" name="rho" role="UNKNOWN" xml:id="S2.E1.m1.5">ρ</XMTok>
+                      <XMTok name="rangle" role="CLOSE" stretchy="false">⟩</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMApp>
+                <XMTok role="PUNCT">,</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>
+      </equation>
+      <p>where <Math mode="inline" tex="\psi_{j,l}(x)" text="psi _ (list@(j, l)) * x" xml:id="S2.p1.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="psi" role="UNKNOWN">ψ</XMTok>
+                <XMDual>
+                  <XMApp>
+                    <XMTok meaning="list"/>
+                    <XMRef idref="S2.p1.m4.1"/>
+                    <XMRef idref="S2.p1.m4.2"/>
+                  </XMApp>
+                  <XMWrap>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p1.m4.1">j</XMTok>
+                    <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p1.m4.2">l</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+              <XMDual>
+                <XMRef idref="S2.p1.m4.3"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMTok font="italic" role="UNKNOWN" xml:id="S2.p1.m4.3">x</XMTok>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> is the orthonormal and complete basis of the
+discrete wavelet transform, and <Math mode="inline" tex="\langle...\rangle=\int....dx" text="formulae@(delimited-⟨⟩@(ldots) = integral@(ldots), d * x)" xml:id="S2.p1.m5">
+          <XMath>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="formulae"/>
+                <XMRef idref="S2.p1.m5.2"/>
+                <XMRef idref="S2.p1.m5.3"/>
+              </XMApp>
+              <XMWrap>
+                <XMApp xml:id="S2.p1.m5.2">
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMDual>
+                    <XMApp>
+                      <XMTok meaning="delimited-⟨⟩"/>
+                      <XMRef idref="S2.p1.m5.1"/>
+                    </XMApp>
+                    <XMWrap>
+                      <XMTok name="langle" role="OPEN" stretchy="false">⟨</XMTok>
+                      <XMTok name="ldots" role="ID" xml:id="S2.p1.m5.1">…</XMTok>
+                      <XMTok name="rangle" role="CLOSE" stretchy="false">⟩</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                  <XMApp>
+                    <XMTok mathstyle="text" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                    <XMTok name="ldots" role="ID">…</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="PERIOD">.</XMTok>
+                <XMApp xml:id="S2.p1.m5.3">
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">d</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                </XMApp>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math> is
+the inner product (Daubechies, 1992.) We use DAUB4 wavelet (Press et al.
+1993, Nielsen 1998) for our analysis through out this <text font="italic">Letter</text>. The WFC,
+<Math mode="inline" tex="\tilde{\epsilon}_{j,l}" text="(tilde@(epsilon)) _ (list@(j, l))" xml:id="S2.p1.m6">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMApp>
+                <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+              </XMApp>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="list"/>
+                  <XMRef idref="S2.p1.m6.1"/>
+                  <XMRef idref="S2.p1.m6.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p1.m6.1">j</XMTok>
+                  <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p1.m6.2">l</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>, is the density fluctuation on the scale <Math mode="inline" tex="L/2^{j}" text="L / 2 ^ j" xml:id="S2.p1.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMTok font="italic" role="UNKNOWN">L</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+at the position <Math mode="inline" tex="l=0,...2^{j}-1" text="l = list@(0, ldots * 2 ^ j - 1)" xml:id="S2.p1.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">l</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="list"/>
+                  <XMRef idref="S2.p1.m8.1"/>
+                  <XMRef idref="S2.p1.m8.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok meaning="0" role="NUMBER" xml:id="S2.p1.m8.1">0</XMTok>
+                  <XMTok role="PUNCT">,</XMTok>
+                  <XMApp xml:id="S2.p1.m8.2">
+                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok name="ldots" role="ID">…</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                        <XMTok meaning="2" role="NUMBER">2</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok meaning="1" role="NUMBER">1</XMTok>
+                  </XMApp>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>, or the mean density difference between
+nearest neighbors ranging on scale <Math mode="inline" tex="L/2^{j}" text="L / 2 ^ j" xml:id="S2.p1.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMTok font="italic" role="UNKNOWN">L</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> at <Math mode="inline" tex="l" text="l" xml:id="S2.p1.m10">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">l</XMTok>
+          </XMath>
+        </Math>. If the “fair sample
+hypothesis” (Peebles 1980) holds, then the <Math mode="inline" tex="2^{j}" text="2 ^ j" xml:id="S2.p1.m11">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> values of
+<Math mode="inline" tex="\tilde{\epsilon}_{j,l}" text="(tilde@(epsilon)) _ (list@(j, l))" xml:id="S2.p1.m12">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMApp>
+                <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+              </XMApp>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="list"/>
+                  <XMRef idref="S2.p1.m12.1"/>
+                  <XMRef idref="S2.p1.m12.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p1.m12.1">j</XMTok>
+                  <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p1.m12.2">l</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> form an ensemble of the density differences on
+scale <Math mode="inline" tex="j" text="j" xml:id="S2.p1.m13">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">j</XMTok>
+          </XMath>
+        </Math>, and therefore,
+the distribution of <Math mode="inline" tex="\tilde{\epsilon}_{j,l}" text="(tilde@(epsilon)) _ (list@(j, l))" xml:id="S2.p1.m14">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMApp>
+                <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+              </XMApp>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="list"/>
+                  <XMRef idref="S2.p1.m14.1"/>
+                  <XMRef idref="S2.p1.m14.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p1.m14.1">j</XMTok>
+                  <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p1.m14.2">l</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> is a reasonable estimate
+of the PDF of the density differences on scale <Math mode="inline" tex="j" text="j" xml:id="S2.p1.m15">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">j</XMTok>
+          </XMath>
+        </Math> (Fang &amp; Thews 1998.)</p>
+    </para>
+    <para xml:id="S2.p2">
+      <p>The second order statistics <Math mode="inline" tex="|\tilde{\epsilon}_{j,l}|^{2}" text="(absolute-value@((tilde@(epsilon)) _ (list@(j, l)))) ^ 2" xml:id="S2.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="absolute-value"/>
+                  <XMRef idref="S2.p2.m1.3"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                  <XMApp xml:id="S2.p2.m1.3">
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMApp>
+                      <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                      <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+                    </XMApp>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="list"/>
+                        <XMRef idref="S2.p2.m1.1"/>
+                        <XMRef idref="S2.p2.m1.2"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p2.m1.1">j</XMTok>
+                        <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p2.m1.2">l</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                  <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                </XMWrap>
+              </XMDual>
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> describes
+the power of the perturbations of the mode <Math mode="inline" tex="(j,l)" text="open-interval@(j, l)" xml:id="S2.p2.m2">
+          <XMath>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="open-interval"/>
+                <XMRef idref="S2.p2.m2.1"/>
+                <XMRef idref="S2.p2.m2.2"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok role="OPEN" stretchy="false">(</XMTok>
+                <XMTok font="italic" role="UNKNOWN" xml:id="S2.p2.m2.1">j</XMTok>
+                <XMTok role="PUNCT">,</XMTok>
+                <XMTok font="italic" role="UNKNOWN" xml:id="S2.p2.m2.2">l</XMTok>
+                <XMTok role="CLOSE" stretchy="false">)</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>. In other words,
+at a given position <Math mode="inline" tex="l" text="l" xml:id="S2.p2.m3">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">l</XMTok>
+          </XMath>
+        </Math>, the local power spectrum is given by
+<!--  %eq2 --></p>
+      <equation frefnum="(2)" refnum="2" xml:id="S2.E2">
+        <Math mode="display" tex="P_{j,l}=\tilde{\epsilon}_{j,l}^{2}." text="P _ (list@(j, l)) = ((tilde@(epsilon)) _ (list@(j, l))) ^ 2" xml:id="S2.E2.m1">
+          <XMath>
+            <XMDual>
+              <XMRef idref="S2.E2.m1.5"/>
+              <XMWrap>
+                <XMApp xml:id="S2.E2.m1.5">
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="list"/>
+                        <XMRef idref="S2.E2.m1.1"/>
+                        <XMRef idref="S2.E2.m1.2"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.E2.m1.1">j</XMTok>
+                        <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.E2.m1.2">l</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                      <XMApp>
+                        <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                        <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+                      </XMApp>
+                      <XMDual>
+                        <XMApp>
+                          <XMTok meaning="list"/>
+                          <XMRef idref="S2.E2.m1.3"/>
+                          <XMRef idref="S2.E2.m1.4"/>
+                        </XMApp>
+                        <XMWrap>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.E2.m1.3">j</XMTok>
+                          <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.E2.m1.4">l</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMApp>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="PERIOD">.</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>
+      </equation>
+      <p>By averaging <Math mode="inline" tex="P_{j,l}" text="P _ (list@(j, l))" xml:id="S2.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="list"/>
+                  <XMRef idref="S2.p2.m4.1"/>
+                  <XMRef idref="S2.p2.m4.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p2.m4.1">j</XMTok>
+                  <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p2.m4.2">l</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> over all positions <Math mode="inline" tex="l" text="l" xml:id="S2.p2.m5">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">l</XMTok>
+          </XMath>
+        </Math>, we have
+<!--  %eq3 --></p>
+      <equation frefnum="(3)" refnum="3" xml:id="S2.E3">
+        <Math mode="display" tex="P_{j}=\frac{1}{2^{j}}\sum_{l=0}^{2^{j}-1}|\tilde{\epsilon}_{j,l}|^{2}=\frac{1}%&#10;{2^{j}}\sum_{l=0}^{2^{j}-1}P_{j,l}." text="P _ j = (1 / 2 ^ j) * ((sum _ (l = 0)) ^ (2 ^ j - 1))@((absolute-value@((tilde@(epsilon)) _ (list@(j, l)))) ^ 2) = (1 / 2 ^ j) * ((sum _ (l = 0)) ^ (2 ^ j - 1))@(P _ (list@(j, l)))" xml:id="S2.E3.m1">
+          <XMath>
+            <XMDual>
+              <XMRef idref="S2.E3.m1.5"/>
+              <XMWrap>
+                <XMApp xml:id="S2.E3.m1.5">
+                  <XMTok meaning="multirelation"/>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+<!--  %**** ms.tex Line 125 **** -->                    <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                  </XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp>
+                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                      <XMTok meaning="1" role="NUMBER">1</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                        <XMTok meaning="2" role="NUMBER">2</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMApp>
+                      <XMApp scriptpos="mid">
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="mid2"/>
+                        <XMApp scriptpos="mid">
+                          <XMTok role="SUBSCRIPTOP" scriptpos="mid2"/>
+                          <XMTok mathstyle="display" meaning="sum" role="SUMOP" scriptpos="mid">∑</XMTok>
+                          <XMApp>
+                            <XMTok fontsize="70%" meaning="equals" role="RELOP">=</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">l</XMTok>
+                            <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                          <XMApp>
+                            <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                            <XMTok font="italic" fontsize="50%" role="UNKNOWN">j</XMTok>
+                          </XMApp>
+                          <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                        </XMApp>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                        <XMDual>
+                          <XMApp>
+                            <XMTok meaning="absolute-value"/>
+                            <XMRef idref="S2.E3.m1.5.1"/>
+                          </XMApp>
+                          <XMWrap>
+                            <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                            <XMApp xml:id="S2.E3.m1.5.1">
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                              <XMApp>
+                                <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                                <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+                              </XMApp>
+                              <XMDual>
+                                <XMApp>
+                                  <XMTok meaning="list"/>
+                                  <XMRef idref="S2.E3.m1.1"/>
+                                  <XMRef idref="S2.E3.m1.2"/>
+                                </XMApp>
+                                <XMWrap>
+                                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.E3.m1.1">j</XMTok>
+                                  <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.E3.m1.2">l</XMTok>
+                                </XMWrap>
+                              </XMDual>
+                            </XMApp>
+                            <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp>
+                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                      <XMTok meaning="1" role="NUMBER">1</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                        <XMTok meaning="2" role="NUMBER">2</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMApp>
+                      <XMApp scriptpos="mid">
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="mid2"/>
+                        <XMApp scriptpos="mid">
+                          <XMTok role="SUBSCRIPTOP" scriptpos="mid2"/>
+                          <XMTok mathstyle="display" meaning="sum" role="SUMOP" scriptpos="mid">∑</XMTok>
+                          <XMApp>
+                            <XMTok fontsize="70%" meaning="equals" role="RELOP">=</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">l</XMTok>
+                            <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                          <XMApp>
+                            <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                            <XMTok font="italic" fontsize="50%" role="UNKNOWN">j</XMTok>
+                          </XMApp>
+                          <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                        </XMApp>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                        <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                        <XMDual>
+                          <XMApp>
+                            <XMTok meaning="list"/>
+                            <XMRef idref="S2.E3.m1.3"/>
+                            <XMRef idref="S2.E3.m1.4"/>
+                          </XMApp>
+                          <XMWrap>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.E3.m1.3">j</XMTok>
+                            <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.E3.m1.4">l</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="PERIOD">.</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>
+      </equation>
+      <p>It has been shown that <Math mode="inline" tex="P_{j}" text="P _ j" xml:id="S2.p2.m6">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> actually is a band-averaged Fourier
+power spectrum (Pando &amp; Fang 1998; Fang &amp; Feng 2000.)</p>
+    </para>
+    <para xml:id="S2.p3">
+      <p>The Fourier power spectrum lacks phase information, and therefore,
+<Math mode="inline" tex="P_{j}" text="P _ j" xml:id="S2.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cannot show the phase-related features of clustering. However,
+<Math mode="inline" tex="P_{j,l}" text="P _ (list@(j, l))" xml:id="S2.p3.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="list"/>
+                  <XMRef idref="S2.p3.m2.1"/>
+                  <XMRef idref="S2.p3.m2.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p3.m2.1">j</XMTok>
+                  <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p3.m2.2">l</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> is phase-sensitive. One can search for the phase-related
+features of the mass field by <text font="italic">local</text> DWT power spectrum <Math mode="inline" tex="P_{j,l}" text="P _ (list@(j, l))" xml:id="S2.p3.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="list"/>
+                  <XMRef idref="S2.p3.m3.1"/>
+                  <XMRef idref="S2.p3.m3.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p3.m3.1">j</XMTok>
+                  <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p3.m3.2">l</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>.</p>
+    </para>
+    <para xml:id="S2.p4">
+      <p>We can generalize the definition of local DWT power spectrum, eq.(2)
+as follows. First we chop <Math mode="inline" tex="L" text="L" xml:id="S2.p4.m1">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">L</XMTok>
+          </XMath>
+        </Math> into <Math mode="inline" tex="2^{j_{s}}" text="2 ^ (j _ s)" xml:id="S2.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                <XMTok font="italic" fontsize="50%" role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> sub-interval, labeled by
+<Math mode="inline" tex="l_{s}=0,1...(2^{j_{s}}-1)" text="l _ s = list@(0, 1 * ldots * (2 ^ (j _ s) - 1))" xml:id="S2.p4.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">l</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+              </XMApp>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="list"/>
+                  <XMRef idref="S2.p4.m3.1"/>
+                  <XMRef idref="S2.p4.m3.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok meaning="0" role="NUMBER" xml:id="S2.p4.m3.1">0</XMTok>
+                  <XMTok role="PUNCT">,</XMTok>
+                  <XMApp xml:id="S2.p4.m3.2">
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="1" role="NUMBER">1</XMTok>
+                    <XMTok name="ldots" role="ID">…</XMTok>
+                    <XMDual>
+                      <XMRef idref="S2.p4.m3.2.1"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMApp xml:id="S2.p4.m3.2.1">
+                          <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                          <XMApp>
+                            <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                            <XMTok meaning="2" role="NUMBER">2</XMTok>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                              <XMTok font="italic" fontsize="50%" role="UNKNOWN">s</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok meaning="1" role="NUMBER">1</XMTok>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>. Each sub-interval has a length <Math mode="inline" tex="L/2^{j_{s}}" text="L / 2 ^ (j _ s)" xml:id="S2.p4.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMTok font="italic" role="UNKNOWN">L</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                  <XMTok font="italic" fontsize="50%" role="UNKNOWN">s</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.
+Then, the local DWT power spectrum at sub-interval <Math mode="inline" tex="l_{s}" text="l _ s" xml:id="S2.p4.m5">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">l</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> is given by
+<!--  %eq4 --></p>
+      <equation frefnum="(4)" refnum="4" xml:id="S2.E4">
+        <Math mode="display" tex="P_{j,\{j_{s},l_{s}\}}=\frac{1}{2^{j-j_{s}}}\sum_{l=l_{s}2^{j-j_{s}}}^{(l_{s}+1%&#10;)2^{j-j_{s}}-1}|\tilde{\epsilon}_{j,l}|^{2}." text="P _ (list@(j, set@(j _ s, l _ s))) = (1 / 2 ^ (j - j _ s)) * ((sum _ (l = l _ s * 2 ^ (j - j _ s))) ^ ((l _ s + 1) * 2 ^ (j - j _ s) - 1))@((absolute-value@((tilde@(epsilon)) _ (list@(j, l)))) ^ 2)" xml:id="S2.E4.m1">
+          <XMath>
+            <XMDual>
+              <XMRef idref="S2.E4.m1.6"/>
+              <XMWrap>
+                <XMApp xml:id="S2.E4.m1.6">
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="list"/>
+                        <XMRef idref="S2.E4.m1.1"/>
+                        <XMRef idref="S2.E4.m1.2"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.E4.m1.1">j</XMTok>
+                        <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                        <XMDual xml:id="S2.E4.m1.2">
+                          <XMApp>
+                            <XMTok meaning="set"/>
+                            <XMRef idref="S2.E4.m1.2.1"/>
+                            <XMRef idref="S2.E4.m1.2.2"/>
+                          </XMApp>
+                          <XMWrap>
+                            <XMTok fontsize="70%" role="OPEN" stretchy="false">{</XMTok>
+                            <XMApp xml:id="S2.E4.m1.2.1">
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                              <XMTok font="italic" fontsize="50%" role="UNKNOWN">s</XMTok>
+                            </XMApp>
+                            <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                            <XMApp xml:id="S2.E4.m1.2.2">
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">l</XMTok>
+                              <XMTok font="italic" fontsize="50%" role="UNKNOWN">s</XMTok>
+                            </XMApp>
+                            <XMTok fontsize="70%" role="CLOSE" stretchy="false">}</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp>
+                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                      <XMTok meaning="1" role="NUMBER">1</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                        <XMTok meaning="2" role="NUMBER">2</XMTok>
+                        <XMApp>
+                          <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                          <XMApp>
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                            <XMTok font="italic" fontsize="50%" role="UNKNOWN">s</XMTok>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                    <XMApp>
+                      <XMApp scriptpos="mid">
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="mid2"/>
+                        <XMApp scriptpos="mid">
+                          <XMTok role="SUBSCRIPTOP" scriptpos="mid2"/>
+                          <XMTok mathstyle="display" meaning="sum" role="SUMOP" scriptpos="mid">∑</XMTok>
+                          <XMApp>
+                            <XMTok fontsize="70%" meaning="equals" role="RELOP">=</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">l</XMTok>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                                <XMTok font="italic" fontsize="70%" role="UNKNOWN">l</XMTok>
+                                <XMTok font="italic" fontsize="50%" role="UNKNOWN">s</XMTok>
+                              </XMApp>
+                              <XMApp>
+                                <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                                <XMApp>
+                                  <XMTok fontsize="50%" meaning="minus" role="ADDOP">-</XMTok>
+                                  <XMTok font="italic" fontsize="50%" role="UNKNOWN">j</XMTok>
+                                  <XMApp>
+                                    <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                                    <XMTok font="italic" fontsize="50%" role="UNKNOWN">j</XMTok>
+                                    <XMTok font="italic" fontsize="50%" role="UNKNOWN">s</XMTok>
+                                  </XMApp>
+                                </XMApp>
+                              </XMApp>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMDual>
+                              <XMRef idref="S2.E4.m1.3"/>
+                              <XMWrap>
+                                <XMTok fontsize="70%" role="OPEN" stretchy="false">(</XMTok>
+                                <XMApp xml:id="S2.E4.m1.3">
+                                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                                  <XMApp>
+                                    <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">l</XMTok>
+                                    <XMTok font="italic" fontsize="50%" role="UNKNOWN">s</XMTok>
+                                  </XMApp>
+                                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                                </XMApp>
+                                <XMTok fontsize="70%" role="CLOSE" stretchy="false">)</XMTok>
+                              </XMWrap>
+                            </XMDual>
+                            <XMApp>
+                              <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                              <XMApp>
+                                <XMTok fontsize="50%" meaning="minus" role="ADDOP">-</XMTok>
+                                <XMTok font="italic" fontsize="50%" role="UNKNOWN">j</XMTok>
+                                <XMApp>
+                                  <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                                  <XMTok font="italic" fontsize="50%" role="UNKNOWN">j</XMTok>
+                                  <XMTok font="italic" fontsize="50%" role="UNKNOWN">s</XMTok>
+                                </XMApp>
+                              </XMApp>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                        </XMApp>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                        <XMDual>
+                          <XMApp>
+                            <XMTok meaning="absolute-value"/>
+                            <XMRef idref="S2.E4.m1.6.1"/>
+                          </XMApp>
+                          <XMWrap>
+                            <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                            <XMApp xml:id="S2.E4.m1.6.1">
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                              <XMApp>
+                                <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                                <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+                              </XMApp>
+                              <XMDual>
+                                <XMApp>
+                                  <XMTok meaning="list"/>
+                                  <XMRef idref="S2.E4.m1.4"/>
+                                  <XMRef idref="S2.E4.m1.5"/>
+                                </XMApp>
+                                <XMWrap>
+                                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.E4.m1.4">j</XMTok>
+                                  <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.E4.m1.5">l</XMTok>
+                                </XMWrap>
+                              </XMDual>
+                            </XMApp>
+                            <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="PERIOD">.</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>
+      </equation>
+      <p>It is the power on scale <Math mode="inline" tex="L/2^{j}" text="L / 2 ^ j" xml:id="S2.p4.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMTok font="italic" role="UNKNOWN">L</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> localized on <Math mode="inline" tex="l_{s}" text="l _ s" xml:id="S2.p4.m7">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">l</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> with size
+<Math mode="inline" tex="L/2^{j_{s}}" text="L / 2 ^ (j _ s)" xml:id="S2.p4.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMTok font="italic" role="UNKNOWN">L</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                  <XMTok font="italic" fontsize="50%" role="UNKNOWN">s</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.</p>
+    </para>
+    <para xml:id="S2.p5">
+      <p>For a Gaussian field, the local power spectrum <Math mode="inline" tex="P_{j,l}" text="P _ (list@(j, l))" xml:id="S2.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="list"/>
+                  <XMRef idref="S2.p5.m1.1"/>
+                  <XMRef idref="S2.p5.m1.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p5.m1.1">j</XMTok>
+                  <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S2.p5.m1.2">l</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> will not
+<!--  %**** ms.tex Line 150 **** -->show structures with respect to <Math mode="inline" tex="l" text="l" xml:id="S2.p5.m2">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">l</XMTok>
+          </XMath>
+        </Math>. On the other hand, the singular
+behavior of a random field is measured by the exponent <Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p5.m3">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math>
+defined by <Math mode="inline" tex="|\rho(x+r)-\rho(x)|\sim r^{\alpha}" text="absolute-value@(rho * (x + r) - rho * x) similar-to r ^ alpha" xml:id="S2.p5.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="absolute-value"/>
+                  <XMRef idref="S2.p5.m4.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                  <XMApp xml:id="S2.p5.m4.2">
+                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                      <XMDual>
+                        <XMRef idref="S2.p5.m4.2.1"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="false">(</XMTok>
+                          <XMApp xml:id="S2.p5.m4.2.1">
+                            <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                      <XMDual>
+                        <XMRef idref="S2.p5.m4.1"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="false">(</XMTok>
+                          <XMTok font="italic" role="UNKNOWN" xml:id="S2.p5.m4.1">x</XMTok>
+                          <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                </XMWrap>
+              </XMDual>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                <XMTok font="italic" fontsize="70%" name="alpha" role="UNKNOWN">α</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. The larger the
+<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p5.m5">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> is, the smoother the field on small scales is, and vice
+versa. If the exponent <Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p5.m6">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> is negative there are an actual
+singularity of the field. Therefore, the singular behavior can be
+revealed by the roughness of the local power spectrum on small
+scales. The WFC local power spectrum can also measure the index
+<Math mode="inline" tex="n" text="n" xml:id="S2.p5.m7">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">n</XMTok>
+          </XMath>
+        </Math> of power-law profile <Math mode="inline" tex="\rho\sim r^{-n}" text="rho similar-to r ^ (- n)" xml:id="S2.p5.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> for individual core.</p>
+    </para>
+  </section>
+  <section refnum="3" xml:id="S3">
+    <title><tag close=" ">3</tag>Sample and analysis</title>
+    <para xml:id="S3.p1">
+      <p>The sample used for the analysis is the Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.p1.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> transmitted
+flux of QSO HS1700+64. This sample has been employed to study the evolution
+of structure (Bi &amp; Davidsen 1997), the Fourier and DWT power spectra
+(Feng &amp; Fang 2000.) The recovered power spectrum has been found
+to be consistent with the CDM model on scales larger than about 0.1
+<Math mode="inline" tex="h^{-1}" text="h ^ (- 1)" xml:id="S3.p1.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">h</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> Mpc. The data ranges from 3727.012Å to 5523.554Å with a
+resolution of <Math mode="inline" tex="3" text="3" xml:id="S3.p1.m3">
+          <XMath>
+            <XMTok meaning="3" role="NUMBER">3</XMTok>
+          </XMath>
+        </Math> kms<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p1.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, for a total of 55882 pixels. In this paper,
+we use the first 25000 pixels for analysis, which correspond to <Math mode="inline" tex="z=" text="z = absent" xml:id="S3.p1.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="absent"/>
+            </XMApp>
+          </XMath>
+        </Math>
+2.07<Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.p1.m6">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 2.65, or <Math mode="inline" tex="\lambda=" text="lambda = absent" xml:id="S3.p1.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+              <XMTok meaning="absent"/>
+            </XMApp>
+          </XMath>
+        </Math> 3727.012Å <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.p1.m8">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math>  4434.266Å. On
+average, a pixel is about 0.029Å, equivalent to physical size <Math mode="inline" tex="\sim 5" text="absent similar-to 5" xml:id="S3.p1.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="5" role="NUMBER">5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+<Math mode="inline" tex="h^{-1}" text="h ^ (- 1)" xml:id="S3.p1.m10">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">h</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> kpc at <Math mode="inline" tex="z\sim 2" text="z similar-to 2" xml:id="S3.p1.m11">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> for a flat universe. We pad
+7768 null pixels at the end to utilize a fast wavelet transform algorithm,
+which requires the data size in powers of 2. It does not affect the
+<!--  %**** ms.tex Line 175 **** -->analysis,
+because the wavelet transform is localized. Moreover, we subject DWT
+directly to pixels without transforming them to physical positions.
+The relation between pixel number and physical position is not linear,
+but it does not affect structures on small scales. Thus, we ignore the
+effect of the non-linear relation in our present analysis.</p>
+    </para>
+    <para xml:id="S3.p2">
+      <p>Most lines in the Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.p2.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> transmitted flux are due to absorptions
+by gases in cool and low density regions. The pressure gradients are
+generally less than gravitational forces. That is, the gas, and hence
+the transmitted flux, should be good tracer of the dark matter.
+Nevertheless, small scale structures of the dark matter field may be
+smoothed out by the velocity dispersion of Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.p2.m2">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> forest gases.
+Therefore, to identify the clustering feature, we will statistically
+compare the real data with its phase-randomized counterpart,
+which is obtained by taking the inverse transform of the Fourier
+coefficients of the original data after randomizing their phases uniformly
+over <Math mode="inline" tex="[0,2\pi]" text="closed-interval@(0, 2 * pi)" xml:id="S3.p2.m3">
+          <XMath>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="closed-interval"/>
+                <XMRef idref="S3.p2.m3.1"/>
+                <XMRef idref="S3.p2.m3.2"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok role="OPEN" stretchy="false">[</XMTok>
+                <XMTok meaning="0" role="NUMBER" xml:id="S3.p2.m3.1">0</XMTok>
+                <XMTok role="PUNCT">,</XMTok>
+                <XMApp xml:id="S3.p2.m3.2">
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="2" role="NUMBER">2</XMTok>
+                  <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                </XMApp>
+                <XMTok role="CLOSE" stretchy="false">]</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math> without changing their amplitudes.</p>
+    </para>
+    <subsection refnum="3.1" xml:id="S3.SS1">
+      <title><tag close=" ">3.1</tag>The PDFs of WFCs</title>
+      <para xml:id="S3.SS1.p1">
+        <p>In Fig. 1, we show the PDFs of the WFCs for <Math mode="inline" tex="j=8" text="j = 8" xml:id="S3.SS1.p1.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                <XMTok meaning="8" role="NUMBER">8</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>, and 14. Each PDF is
+normalized to have unit variance. For scale <Math mode="inline" tex="j=8" text="j = 8" xml:id="S3.SS1.p1.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                <XMTok meaning="8" role="NUMBER">8</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>, the departure from
+Gaussian distribution is not so significant. Especially, no tail shows
+in the <Math mode="inline" tex="j=8" text="j = 8" xml:id="S3.SS1.p1.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                <XMTok meaning="8" role="NUMBER">8</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> PDF, i.e. no WFCs found to be
+<!--  %**** ms.tex Line 200 **** --><Math mode="inline" tex="\tilde{\epsilon}_{j,l}\geq 3\sigma" text="(tilde@(epsilon)) _ (list@(j, l)) &gt;= 3 * sigma" xml:id="S3.SS1.p1.m4">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMApp>
+                    <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                    <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+                  </XMApp>
+                  <XMDual>
+                    <XMApp>
+                      <XMTok meaning="list"/>
+                      <XMRef idref="S3.SS1.p1.m4.1"/>
+                      <XMRef idref="S3.SS1.p1.m4.2"/>
+                    </XMApp>
+                    <XMWrap>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S3.SS1.p1.m4.1">j</XMTok>
+                      <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S3.SS1.p1.m4.2">l</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="3" role="NUMBER">3</XMTok>
+                  <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>. For j = 14, the PDF of WFCs has
+<Math mode="inline" tex="2^{14}" text="2 ^ 14" xml:id="S3.SS1.p1.m5">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                <XMTok fontsize="70%" meaning="14" role="NUMBER">14</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> events. Therefore, if the PDF were Gaussian, the number of
+the events larger than 3<Math mode="inline" tex="\sigma" text="sigma" xml:id="S3.SS1.p1.m6">
+            <XMath>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+            </XMath>
+          </Math> would be about 44. However, the data
+shows 234 events beyond the 3<Math mode="inline" tex="\sigma" text="sigma" xml:id="S3.SS1.p1.m7">
+            <XMath>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+            </XMath>
+          </Math> range. Furthermore, a Gaussian PDF
+predicts that the number of the events larger than 5<Math mode="inline" tex="\sigma" text="sigma" xml:id="S3.SS1.p1.m8">
+            <XMath>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+            </XMath>
+          </Math> should be 0.01,
+while the data shows more than 100 events larger than 5<Math mode="inline" tex="\sigma" text="sigma" xml:id="S3.SS1.p1.m9">
+            <XMath>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+            </XMath>
+          </Math>. The data
+extends to beyond 15<Math mode="inline" tex="\sigma" text="sigma" xml:id="S3.SS1.p1.m10">
+            <XMath>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+            </XMath>
+          </Math> on both sides. Therefore, the PDF is
+indeed significantly long-tailed on small scales. In other words, the
+field is rougher on smaller scales. This indicates that the field may
+contain singular structures.</p>
+      </para>
+      <para xml:id="S3.SS1.p2">
+        <p>The shape of the two PDFs of <Math mode="inline" tex="j=8" text="j = 8" xml:id="S3.SS1.p2.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                <XMTok meaning="8" role="NUMBER">8</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> and 14 is very different from each other.
+That is, the two stochastic variables <Math mode="inline" tex="\tilde{\epsilon}_{j,l}" text="(tilde@(epsilon)) _ (list@(j, l))" xml:id="S3.SS1.p2.m2">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMApp>
+                  <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                  <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+                </XMApp>
+                <XMDual>
+                  <XMApp>
+                    <XMTok meaning="list"/>
+                    <XMRef idref="S3.SS1.p2.m2.1"/>
+                    <XMRef idref="S3.SS1.p2.m2.2"/>
+                  </XMApp>
+                  <XMWrap>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S3.SS1.p2.m2.1">j</XMTok>
+                    <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S3.SS1.p2.m2.2">l</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+            </XMath>
+          </Math>, <Math mode="inline" tex="j=8,\ 14" text="j = list@(8, 14)" xml:id="S3.SS1.p2.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                <XMDual>
+                  <XMApp>
+                    <XMTok meaning="list"/>
+                    <XMRef idref="S3.SS1.p2.m3.1"/>
+                    <XMRef idref="S3.SS1.p2.m3.2"/>
+                  </XMApp>
+                  <XMWrap>
+                    <XMTok meaning="8" role="NUMBER" xml:id="S3.SS1.p2.m3.1">8</XMTok>
+                    <XMTok role="PUNCT">,</XMTok>
+                    <XMTok meaning="14" role="NUMBER" xml:id="S3.SS1.p2.m3.2"> 14</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+            </XMath>
+          </Math> don’t relate to each other as
+<!--  %eq5 --></p>
+        <equation frefnum="(5)" refnum="5" xml:id="S3.E5">
+          <Math mode="display" tex="\tilde{\epsilon}_{j,l}=2^{\beta(j-j^{\prime})}\tilde{\epsilon}_{j^{\prime},l}," text="(tilde@(epsilon)) _ (list@(j, l)) = 2 ^ (beta * (j - j ^ prime)) * (tilde@(epsilon)) _ (list@(j ^ prime, l))" xml:id="S3.E5.m1">
+            <XMath>
+              <XMDual>
+                <XMRef idref="S3.E5.m1.6"/>
+                <XMWrap>
+                  <XMApp xml:id="S3.E5.m1.6">
+                    <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                      <XMApp>
+                        <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                        <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+                      </XMApp>
+                      <XMDual>
+                        <XMApp>
+                          <XMTok meaning="list"/>
+                          <XMRef idref="S3.E5.m1.1"/>
+                          <XMRef idref="S3.E5.m1.2"/>
+                        </XMApp>
+                        <XMWrap>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S3.E5.m1.1">j</XMTok>
+                          <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S3.E5.m1.2">l</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                        <XMTok meaning="2" role="NUMBER">2</XMTok>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok font="italic" fontsize="70%" name="beta" role="UNKNOWN">β</XMTok>
+                          <XMDual>
+                            <XMRef idref="S3.E5.m1.3"/>
+                            <XMWrap>
+                              <XMTok fontsize="70%" role="OPEN" stretchy="false">(</XMTok>
+                              <XMApp xml:id="S3.E5.m1.3">
+                                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                                <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                                <XMApp>
+                                  <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                                  <XMTok fontsize="50%" name="prime" role="SUPOP">′</XMTok>
+                                </XMApp>
+                              </XMApp>
+                              <XMTok fontsize="70%" role="CLOSE" stretchy="false">)</XMTok>
+                            </XMWrap>
+                          </XMDual>
+                        </XMApp>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                        <XMApp>
+                          <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                          <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+                        </XMApp>
+                        <XMDual>
+                          <XMApp>
+                            <XMTok meaning="list"/>
+                            <XMRef idref="S3.E5.m1.5"/>
+                            <XMRef idref="S3.E5.m1.4"/>
+                          </XMApp>
+                          <XMWrap>
+                            <XMApp xml:id="S3.E5.m1.5">
+                              <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                              <XMTok fontsize="50%" name="prime" role="SUPOP">′</XMTok>
+                            </XMApp>
+                            <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S3.E5.m1.4">l</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="PUNCT">,</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMath>
+          </Math>
+        </equation>
+        <p>where <Math mode="inline" tex="\beta" text="beta" xml:id="S3.SS1.p2.m4">
+            <XMath>
+              <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
+            </XMath>
+          </Math> is a constant. Therefore, the mass field traced by the
+QSO HS1700+64 is unlikely to be self-similar.</p>
+      </para>
+    </subsection>
+    <subsection refnum="3.2" xml:id="S3.SS2">
+      <title><tag close=" ">3.2</tag>Local power spectrum</title>
+<!--  %**** ms.tex Line 225 **** -->      <para xml:id="S3.SS2.p1">
+        <p>In Fig. 2 we plot the local DWT power spectra of the HS1700+64
+transmitted flux and its phase-randomized counterpart.
+We take <Math mode="inline" tex="j_{s}=7" text="j _ s = 7" xml:id="S3.SS2.p1.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+                </XMApp>
+                <XMTok meaning="7" role="NUMBER">7</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>, i.e. chopping the entire sample into 128 sub-intervals,
+and, in each sub-interval, calculating the power spectra for
+<Math mode="inline" tex="j=8" text="j = 8" xml:id="S3.SS2.p1.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                <XMTok meaning="8" role="NUMBER">8</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.SS2.p1.m3">
+            <XMath>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            </XMath>
+          </Math> 14, which correspond to physical scales
+<Math mode="inline" tex="2^{15-j}\times 5" text="2 ^ (15 - j) * 5" xml:id="S3.SS2.p1.m4">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="2" role="NUMBER">2</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="15" role="NUMBER">15</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMTok meaning="5" role="NUMBER">5</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> <Math mode="inline" tex="h^{-1}" text="h ^ (- 1)" xml:id="S3.SS2.p1.m5">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">h</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> kpc.</p>
+      </para>
+      <para xml:id="S3.SS2.p2">
+        <p>Fig. 2 shows that the <Math mode="inline" tex="j=8" text="j = 8" xml:id="S3.SS2.p2.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                <XMTok meaning="8" role="NUMBER">8</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> local power spectrum for real data is
+not very different from its phase-randomized counterpart. This is
+consistent with the <Math mode="inline" tex="j=8" text="j = 8" xml:id="S3.SS2.p2.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                <XMTok meaning="8" role="NUMBER">8</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> PDF shown in Fig.1. It is closer-to-Gaussian.
+While the <Math mode="inline" tex="j=12" text="j = 12" xml:id="S3.SS2.p2.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                <XMTok meaning="12" role="NUMBER">12</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.SS2.p2.m4">
+            <XMath>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            </XMath>
+          </Math> <Math mode="inline" tex="14" text="14" xml:id="S3.SS2.p2.m5">
+            <XMath>
+              <XMTok meaning="14" role="NUMBER">14</XMTok>
+            </XMath>
+          </Math> local spectra are very rough, showing
+remarkably spiky structures, that completely disappear in the phase
+randomized counterpart. The spiky features mean that a significant
+part of the power is concentrated in some small areas. This feature is
+a result of the long tailed PDF of the density difference, i.e., higher
+probability of “abnormal” density change. The smaller the scale, the
+more pronounced the spiky features. This, again, points to a singular
+clustering of cosmic mass field.</p>
+      </para>
+      <para xml:id="S3.SS2.p3">
+        <p>It should be emphasized that the spikes in the local power spectrum
+with high <Math mode="inline" tex="j" text="j" xml:id="S3.SS2.p3.m1">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">j</XMTok>
+            </XMath>
+          </Math> do <text font="italic">not</text> always correspond to the peaks in the density
+distribution (or the absorption lines in the optical spectrum). The WFCs
+<Math mode="inline" tex="\tilde{\epsilon}_{j,l}" text="(tilde@(epsilon)) _ (list@(j, l))" xml:id="S3.SS2.p3.m2">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMApp>
+                  <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                  <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+                </XMApp>
+                <XMDual>
+                  <XMApp>
+                    <XMTok meaning="list"/>
+                    <XMRef idref="S3.SS2.p3.m2.1"/>
+                    <XMRef idref="S3.SS2.p3.m2.2"/>
+                  </XMApp>
+                  <XMWrap>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S3.SS2.p3.m2.1">j</XMTok>
+                    <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S3.SS2.p3.m2.2">l</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+            </XMath>
+          </Math> describe the <text font="italic">difference</text> in density between
+intervals of length <Math mode="inline" tex="2^{15-j}\times 5" text="2 ^ (15 - j) * 5" xml:id="S3.SS2.p3.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="2" role="NUMBER">2</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="15" role="NUMBER">15</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMTok meaning="5" role="NUMBER">5</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> <Math mode="inline" tex="h^{-1}" text="h ^ (- 1)" xml:id="S3.SS2.p3.m4">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">h</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> Mpc. The average of
+<Math mode="inline" tex="\tilde{\epsilon}_{j,l}" text="(tilde@(epsilon)) _ (list@(j, l))" xml:id="S3.SS2.p3.m5">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMApp>
+                  <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                  <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+                </XMApp>
+                <XMDual>
+                  <XMApp>
+                    <XMTok meaning="list"/>
+                    <XMRef idref="S3.SS2.p3.m5.1"/>
+                    <XMRef idref="S3.SS2.p3.m5.2"/>
+                  </XMApp>
+                  <XMWrap>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S3.SS2.p3.m5.1">j</XMTok>
+                    <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S3.SS2.p3.m5.2">l</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+            </XMath>
+          </Math> over <Math mode="inline" tex="l" text="l" xml:id="S3.SS2.p3.m6">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">l</XMTok>
+            </XMath>
+          </Math> generally is zero. The mean power
+<!--  %**** ms.tex Line 250 **** -->(or variance) at <Math mode="inline" tex="j=14" text="j = 14" xml:id="S3.SS2.p3.m7">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                <XMTok meaning="14" role="NUMBER">14</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> is <Math mode="inline" tex="P_{14}=1.2\times 10^{-5}" text="P _ 14 = 1.2 * 10 ^ (- 5)" xml:id="S3.SS2.p3.m8">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                  <XMTok fontsize="70%" meaning="14" role="NUMBER">14</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">×</XMTok>
+                  <XMTok meaning="1.2" role="NUMBER">1.2</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>. Thus, even a single event
+<Math mode="inline" tex="&gt;10\sigma" text="absent &gt; 10 * sigma" xml:id="S3.SS2.p3.m9">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+                <XMTok meaning="absent"/>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> at <Math mode="inline" tex="j=14" text="j = 14" xml:id="S3.SS2.p3.m10">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                <XMTok meaning="14" role="NUMBER">14</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> doesn’t always refer to high density, and it can
+happen in regions other than high density cores. The spikes denote the
+positions where the density (or the absorption optical depth) undergoes
+a dramatic change, which is the key indicator of the singular behavior of
+a random field.</p>
+      </para>
+      <para xml:id="S3.SS2.p4">
+        <p>The wavelet functions <Math mode="inline" tex="\psi_{j,l}" text="psi _ (list@(j, l))" xml:id="S3.SS2.p4.m1">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="psi" role="UNKNOWN">ψ</XMTok>
+                <XMDual>
+                  <XMApp>
+                    <XMTok meaning="list"/>
+                    <XMRef idref="S3.SS2.p4.m1.1"/>
+                    <XMRef idref="S3.SS2.p4.m1.2"/>
+                  </XMApp>
+                  <XMWrap>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S3.SS2.p4.m1.1">j</XMTok>
+                    <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S3.SS2.p4.m1.2">l</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+            </XMath>
+          </Math> are orthogonal, and
+therefore, the local power spectrum on scale <Math mode="inline" tex="j" text="j" xml:id="S3.SS2.p4.m2">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">j</XMTok>
+            </XMath>
+          </Math> doesn’t contaminate
+perturbations on other scales. This is very different from
+the density distribution smoothed by a window function on scale <Math mode="inline" tex="j" text="j" xml:id="S3.SS2.p4.m3">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">j</XMTok>
+            </XMath>
+          </Math>.
+The peaks identified from the window-function smoothed density
+field contain all contributions from perturbations on scales
+<Math mode="inline" tex="j^{\prime}\leq j" text="j ^ prime less= j" xml:id="S3.SS2.p4.m4">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                  <XMTok fontsize="70%" name="prime" role="SUPOP">′</XMTok>
+                </XMApp>
+                <XMTok font="italic" role="UNKNOWN">j</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>. Therefore, the peaks in a smoothed field are
+actually given by a superposition of perturbations on large and small
+scales. They may not show singular features, because the PDFs of
+large scale (or <Math mode="inline" tex="j^{\prime}&lt;j" text="j ^ prime less j" xml:id="S3.SS2.p4.m5">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                  <XMTok fontsize="70%" name="prime" role="SUPOP">′</XMTok>
+                </XMApp>
+                <XMTok font="italic" role="UNKNOWN">j</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>) perturbations are closer to Gaussian.</p>
+      </para>
+      <para xml:id="S3.SS2.p5">
+        <p>We should estimate the possible distortion of the long tail effects
+caused by velocity dispersion of gases. We calculated
+the <Math mode="inline" tex="j=14" text="j = 14" xml:id="S3.SS2.p5.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                <XMTok meaning="14" role="NUMBER">14</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> local power spectrum with sub-interval <Math mode="inline" tex="j_{s}=14" text="j _ s = 14" xml:id="S3.SS2.p5.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+                </XMApp>
+                <XMTok meaning="14" role="NUMBER">14</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>, which is
+plotted in Fig. 3. This local power spectrum has almost the same spiky
+features identified in the <Math mode="inline" tex="j=14,\ j_{s}=7" text="formulae@(j = 14, j _ s = 7)" xml:id="S3.SS2.p5.m3">
+            <XMath>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="formulae"/>
+                  <XMRef idref="S3.SS2.p5.m3.1"/>
+                  <XMRef idref="S3.SS2.p5.m3.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMApp xml:id="S3.SS2.p5.m3.1">
+                    <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                    <XMTok meaning="14" role="NUMBER">14</XMTok>
+                  </XMApp>
+                  <XMTok role="PUNCT" rpadding="5.0pt">,</XMTok>
+                  <XMApp xml:id="S3.SS2.p5.m3.2">
+                    <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                      <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+                    </XMApp>
+                    <XMTok meaning="7" role="NUMBER">7</XMTok>
+                  </XMApp>
+                </XMWrap>
+              </XMDual>
+            </XMath>
+          </Math> spectrum (see, Fig. 2.)
+That is, most spikes shown by the power localized in sub-interval with size
+of about 600 <Math mode="inline" tex="h^{-1}" text="h ^ (- 1)" xml:id="S3.SS2.p5.m4">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">h</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> kpc actually are localized in sub-interval
+<!--  %**** ms.tex Line 275 **** -->with size only about few 10 <Math mode="inline" tex="h^{-1}" text="h ^ (- 1)" xml:id="S3.SS2.p5.m5">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">h</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> kpc. This result indicates that the
+contamination of gas velocity dispersion may not be significant,
+at least, for prominent spikes. Thus, the spiky structures should mainly
+come from the underlying mass field.</p>
+      </para>
+      <para xml:id="S3.SS2.p6">
+        <p>Intermittency can more clearly be seen in Fig. 3. The mean powers
+[eq.(3)] of the real data (left panel) and randomized counterpart (right
+panel) of the <Math mode="inline" tex="j_{s}=14" text="j _ s = 14" xml:id="S3.SS2.p6.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+                </XMApp>
+                <XMTok meaning="14" role="NUMBER">14</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> and <Math mode="inline" tex="j=14" text="j = 14" xml:id="S3.SS2.p6.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                <XMTok meaning="14" role="NUMBER">14</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> local spectrum actually are the same,
+while the spikes of the real data are higher than the mean power by a
+factor of few tens even hundreds. That is, in the real sample, most power
+of the <Math mode="inline" tex="j=14" text="j = 14" xml:id="S3.SS2.p6.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">j</XMTok>
+                <XMTok meaning="14" role="NUMBER">14</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> perturbations is concentrated in the spikes, and almost no
+power, i.e. <Math mode="inline" tex="P_{j,\{j_{s},l_{s}\}}\simeq 0" text="P _ (list@(j, set@(j _ s, l _ s))) similar-to-or-equals 0" xml:id="S3.SS2.p6.m4">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                  <XMDual>
+                    <XMApp>
+                      <XMTok meaning="list"/>
+                      <XMRef idref="S3.SS2.p6.m4.1"/>
+                      <XMRef idref="S3.SS2.p6.m4.2"/>
+                    </XMApp>
+                    <XMWrap>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S3.SS2.p6.m4.1">j</XMTok>
+                      <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                      <XMDual xml:id="S3.SS2.p6.m4.2">
+                        <XMApp>
+                          <XMTok meaning="set"/>
+                          <XMRef idref="S3.SS2.p6.m4.2.1"/>
+                          <XMRef idref="S3.SS2.p6.m4.2.2"/>
+                        </XMApp>
+                        <XMWrap>
+                          <XMTok fontsize="70%" role="OPEN" stretchy="false">{</XMTok>
+                          <XMApp xml:id="S3.SS2.p6.m4.2.1">
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                            <XMTok font="italic" fontsize="50%" role="UNKNOWN">s</XMTok>
+                          </XMApp>
+                          <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                          <XMApp xml:id="S3.SS2.p6.m4.2.2">
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">l</XMTok>
+                            <XMTok font="italic" fontsize="50%" role="UNKNOWN">s</XMTok>
+                          </XMApp>
+                          <XMTok fontsize="70%" role="CLOSE" stretchy="false">}</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMWrap>
+                  </XMDual>
+                </XMApp>
+                <XMTok meaning="0" role="NUMBER">0</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>, in places other than the spikes.
+This is a typical intermittent distribution.</p>
+      </para>
+    </subsection>
+  </section>
+  <section refnum="4" xml:id="S4">
+    <title><tag close=" ">4</tag>Conclusions</title>
+    <para xml:id="S4.p1">
+      <p>With the PDFs of <Math mode="inline" tex="\tilde{\epsilon}_{j,l}" text="(tilde@(epsilon)) _ (list@(j, l))" xml:id="S4.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMApp>
+                <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+              </XMApp>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="list"/>
+                  <XMRef idref="S4.p1.m1.1"/>
+                  <XMRef idref="S4.p1.m1.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S4.p1.m1.1">j</XMTok>
+                  <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S4.p1.m1.2">l</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> and local DWT power spectra,
+we show that the mass field traced by the QSO HS1700+64 Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S4.p1.m2">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math>
+forests is neither Gaussian, nor self-similar, but intermittent. The
+spiky features shown in the local DWT power spectrum is remarkably
+pronounced on scales down to about 10 <Math mode="inline" tex="h^{-1}" text="h ^ (- 1)" xml:id="S4.p1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">h</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> kpc. Moreover, the long
+tail and the spiky features are substantial on smaller scales. This
+indicates that the cosmic mass field is rougher on smaller scales,
+consistent with singular clustering.</p>
+    </para>
+<!--  %**** ms.tex Line 300 **** -->    <para xml:id="S4.p2">
+      <p>A big advantage of intermittency is that one can detect singular
+clustering using the statistical features of entire random density
+field, not limited to the cores of galaxies and clusters. The information
+of intermittency extracted from Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S4.p2.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> forests would be important
+to test models of cosmic clustering in terms of their singular behavior.</p>
+    </para>
+  </section>
+  <acknowledgements name="Acknowledgements">We thank Dr. D. Tytler for kindly providing the data of the Keck spectrum
+HS1700+64. PJ would also like to thank Dr. Robert Maier for his help. HZ
+thanks Dr. David Burstein for helpful discussions.
+</acknowledgements>
+  <bibliography labels="LABEL:fig1" xml:id="bib">
+    <title>References</title>
+    <biblist>
+      <bibitem key="bd" xml:id="bib.bib1">
+        <bibtag role="refnum">1</bibtag>
+        <bibblock> Bi, H.G. &amp; Davidson, A. F., 1997, <ERROR class="undefined">\apj</ERROR>, 479, 523
+</bibblock>
+      </bibitem>
+      <bibitem key="bu" xml:id="bib.bib2">
+        <bibtag role="refnum">2</bibtag>
+        <bibblock> Burkert, A., 1995, <ERROR class="undefined">\apj</ERROR>, 477, L25
+</bibblock>
+      </bibitem>
+      <bibitem key="d" xml:id="bib.bib3">
+        <bibtag role="refnum">3</bibtag>
+        <bibblock> Daubechies I. 1992, <text font="italic">Ten Lectures on Wavelets</text>,
+(Philadelphia, SIAM)
+</bibblock>
+      </bibitem>
+      <bibitem key="de" xml:id="bib.bib4">
+        <bibtag role="refnum">4</bibtag>
+        <bibblock> de Blok, W.J.G. &amp; McGaugh, S.S. 1997, <ERROR class="undefined">\mnras</ERROR>, 208, 493
+</bibblock>
+      </bibitem>
+      <bibitem key="ft" xml:id="bib.bib5">
+        <bibtag role="refnum">5</bibtag>
+        <bibblock> Fang, L.Z. &amp; Thews, R. 1998, <text font="italic">Wavelet in Physics</text>,
+(World Scientific, Singapore)
+<!--  %**** ms.tex Line 325 **** --></bibblock>
+      </bibitem>
+      <bibitem key="ff2" xml:id="bib.bib6">
+        <bibtag role="refnum">6</bibtag>
+        <bibblock> Fang, L.L. &amp; Feng, L.Z. 2000, <ERROR class="undefined">\apj</ERROR>, in press,
+astro-ph/0003259
+</bibblock>
+      </bibitem>
+      <bibitem key="ff1" xml:id="bib.bib7">
+        <bibtag role="refnum">7</bibtag>
+        <bibblock> Feng, L.L. &amp; Fang, L.Z. 2000, <ERROR class="undefined">\apj</ERROR>, 535, 519
+</bibblock>
+      </bibitem>
+      <bibitem key="fda" xml:id="bib.bib8">
+        <bibtag role="refnum">8</bibtag>
+        <bibblock> Firmani, C., D’Onghia, E., Avila-Reese, V., Chincarini, G.
+&amp; Herández, X. 2000, astro-ph/0002376
+</bibblock>
+      </bibitem>
+      <bibitem key="fp" xml:id="bib.bib9">
+        <bibtag role="refnum">9</bibtag>
+        <bibblock> Flores, R., Primack, J.R., 1994, <ERROR class="undefined">\apj</ERROR>, 427, L1
+</bibblock>
+      </bibitem>
+      <bibitem key="js" xml:id="bib.bib10">
+        <bibtag role="refnum">10</bibtag>
+        <bibblock> Jing, Y.P. &amp; Suto, Y. 2000, <ERROR class="undefined">\apj</ERROR>, 529, L69
+</bibblock>
+      </bibitem>
+      <bibitem key="moo" xml:id="bib.bib11">
+        <bibtag role="refnum">11</bibtag>
+        <bibblock> Moore, B., Gelato, S., Jenkins, A., Pearce, F.R. &amp;
+Quillis, V. 2000, astro-ph/0002308
+</bibblock>
+      </bibitem>
+      <bibitem key="nfw" xml:id="bib.bib12">
+        <bibtag role="refnum">12</bibtag>
+        <bibblock> Navarro, J.F., Frenk, C.S. &amp; White, S.D.M. 1997,
+<ERROR class="undefined">\apj</ERROR>, 490, 493
+</bibblock>
+      </bibitem>
+      <bibitem key="oln" xml:id="bib.bib13">
+        <bibtag role="refnum">13</bibtag>
+        <bibblock> Nielsen, O.M. 1998, Wavelet in Scientific Computing,
+http://www.inm.dtui.dk
+</bibblock>
+      </bibitem>
+      <bibitem key="pf" xml:id="bib.bib14">
+        <bibtag role="refnum">14</bibtag>
+        <bibblock> Pando, J. &amp; Fang, L.Z. 1998, Phys. Rev. E57, 3593.
+</bibblock>
+      </bibitem>
+      <bibitem key="pe" xml:id="bib.bib15">
+        <bibtag role="refnum">15</bibtag>
+        <bibblock> Peebles, P.J.E., 1980, <text font="italic">The Large Scale Structure of the
+<!--  %**** ms.tex Line 350 **** -->Universe</text>,(Princeton Univ. Press)
+</bibblock>
+      </bibitem>
+      <bibitem key="ptv" xml:id="bib.bib16">
+        <bibtag role="refnum">16</bibtag>
+        <bibblock> Press, W.H., Teukolsky, S.A., Vetterling, W.T., &amp; Flannery,
+B.P., 1993, <text font="italic">Numerical Recipes</text>, (2nd Ed. Cambridge)
+</bibblock>
+      </bibitem>
+      <bibitem key="z" xml:id="bib.bib17">
+        <bibtag role="refnum">17</bibtag>
+        <bibblock> Zel’dovich, Ya.B., Ruzmaikin, A.A. &amp; Sokoloff, D.D. 1990,
+<text font="italic">The Almighty Chance</text>, (World Scientific, Singapore)
+</bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+  <pagination role="newpage"/>
+  <figure labels="LABEL:fig2" xml:id="fig1">
+    <pagination role="newpage"/>
+    <ERROR class="undefined">\epsscale</ERROR>
+    <p>0.8
+<ERROR class="undefined">\plotone</ERROR>fig1.ps
+<ERROR class="undefined">\figcaption</ERROR>[fig1.ps] The PDFs of the WFCs <Math mode="inline" tex="\tilde{\epsilon}_{j,l}" text="(tilde@(epsilon)) _ (list@(j, l))" xml:id="m5">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+            <XMApp>
+              <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+              <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+            </XMApp>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="list"/>
+                <XMRef idref="m5.1"/>
+                <XMRef idref="m5.2"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="m5.1">j</XMTok>
+                <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="m5.2">l</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMApp>
+        </XMath>
+      </Math>
+for <Math mode="inline" tex="j=8" text="j = 8" xml:id="m6">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" role="UNKNOWN">j</XMTok>
+            <XMTok meaning="8" role="NUMBER">8</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> and <Math mode="inline" tex="j=14" text="j = 14" xml:id="m7">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" role="UNKNOWN">j</XMTok>
+            <XMTok meaning="14" role="NUMBER">14</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> are shown on top right corner of each panel.
+The tail is shown on the main part each panels. Horizontal axis is
+for <Math mode="inline" tex="\tilde{\epsilon}_{j,l}/\sigma" text="(tilde@(epsilon)) _ (list@(j, l)) / sigma" xml:id="m8">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="divide" role="MULOP">/</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMApp>
+                <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+              </XMApp>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="list"/>
+                  <XMRef idref="m8.1"/>
+                  <XMRef idref="m8.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="m8.1">j</XMTok>
+                  <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="m8.2">l</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+            <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>, where <Math mode="inline" tex="\sigma" text="sigma" xml:id="m9">
+        <XMath>
+          <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+        </XMath>
+      </Math> is the variance
+of the sample. Vertical axis is the probability density. The solid
+curve is the Gaussian distribution with zero mean and unit variance.
+The PDF of <Math mode="inline" tex="j=14" text="j = 14" xml:id="m10">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" role="UNKNOWN">j</XMTok>
+            <XMTok meaning="14" role="NUMBER">14</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> at zero is <Math mode="inline" tex="\sim" text="similar-to" xml:id="m11">
+        <XMath>
+          <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+        </XMath>
+      </Math>4.5, so it is not shown in the
+figures.</p>
+  </figure>
+<!--  %**** ms.tex Line 375 **** -->  <pagination role="newpage"/>
+  <figure labels="LABEL:fig3" xml:id="fig2">
+    <pagination role="newpage"/>
+    <ERROR class="undefined">\epsscale</ERROR>
+    <p>0.9
+<ERROR class="undefined">\plotone</ERROR>fig2.ps</p>
+    <ERROR class="undefined">\figcaption</ERROR>
+    <p>[fig2.ps] The vertical axis represents
+<Math mode="inline" tex="2^{j-j_{s}}P_{j,\{j_{s},l_{s}\}}" text="2 ^ (j - j _ s) * P _ (list@(j, set@(j _ s, l _ s)))" xml:id="m12">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post5"/>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                  <XMTok font="italic" fontsize="50%" role="UNKNOWN">s</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="list"/>
+                  <XMRef idref="m12.1"/>
+                  <XMRef idref="m12.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="m12.1">j</XMTok>
+                  <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                  <XMDual xml:id="m12.2">
+                    <XMApp>
+                      <XMTok meaning="set"/>
+                      <XMRef idref="m12.2.1"/>
+                      <XMRef idref="m12.2.2"/>
+                    </XMApp>
+                    <XMWrap>
+                      <XMTok fontsize="70%" role="OPEN" stretchy="false">{</XMTok>
+                      <XMApp xml:id="m12.2.1">
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post5"/>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+                        <XMTok font="italic" fontsize="50%" role="UNKNOWN">s</XMTok>
+                      </XMApp>
+                      <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                      <XMApp xml:id="m12.2.2">
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post5"/>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">l</XMTok>
+                        <XMTok font="italic" fontsize="50%" role="UNKNOWN">s</XMTok>
+                      </XMApp>
+                      <XMTok fontsize="70%" role="CLOSE" stretchy="false">}</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math> with <Math mode="inline" tex="j_{s}=7" text="j _ s = 7" xml:id="m13">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok font="italic" role="UNKNOWN">j</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+            </XMApp>
+            <XMTok meaning="7" role="NUMBER">7</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>. The left and right panels
+are for the HS1700+64 transmitted flux, and its phase-randomized
+counterpart, respectively. The horizontal axis represents the position
+<Math mode="inline" tex="l_{s}" text="l _ s" xml:id="m14">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+            <XMTok font="italic" role="UNKNOWN">l</XMTok>
+            <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> in units of <Math mode="inline" tex="2^{7}\times 10" text="2 ^ 7 * 10" xml:id="m15">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">×</XMTok>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+              <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+            </XMApp>
+            <XMTok meaning="10" role="NUMBER">10</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> <Math mode="inline" tex="h^{-1}" text="h ^ (- 1)" xml:id="m16">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok font="italic" role="UNKNOWN">h</XMTok>
+            <XMApp>
+              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math> kpc. The scales of the local
+power spectra, <Math mode="inline" tex="j=8,\ 10,\ 12,\ 14" text="j = list@(8, 10, 12, 14)" xml:id="m17">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" role="UNKNOWN">j</XMTok>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="list"/>
+                <XMRef idref="m17.1"/>
+                <XMRef idref="m17.2"/>
+                <XMRef idref="m17.3"/>
+                <XMRef idref="m17.4"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok meaning="8" role="NUMBER" xml:id="m17.1">8</XMTok>
+                <XMTok role="PUNCT">,</XMTok>
+                <XMTok meaning="10" role="NUMBER" xml:id="m17.2"> 10</XMTok>
+                <XMTok role="PUNCT">,</XMTok>
+                <XMTok meaning="12" role="NUMBER" xml:id="m17.3"> 12</XMTok>
+                <XMTok role="PUNCT">,</XMTok>
+                <XMTok meaning="14" role="NUMBER" xml:id="m17.4"> 14</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMApp>
+        </XMath>
+      </Math>, correspond to physical scales
+<Math mode="inline" tex="2^{15-j}\times 5" text="2 ^ (15 - j) * 5" xml:id="m18">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">×</XMTok>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="15" role="NUMBER">15</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">j</XMTok>
+              </XMApp>
+            </XMApp>
+            <XMTok meaning="5" role="NUMBER">5</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> <Math mode="inline" tex="h^{-1}" text="h ^ (- 1)" xml:id="m19">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok font="italic" role="UNKNOWN">h</XMTok>
+            <XMApp>
+              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math> kpc.</p>
+  </figure>
+  <pagination role="newpage"/>
+  <figure xml:id="fig3">
+    <pagination role="newpage"/>
+    <ERROR class="undefined">\epsscale</ERROR>
+    <p>0.8
+<ERROR class="undefined">\plotone</ERROR>fig3.ps
+<ERROR class="undefined">\figcaption</ERROR>[fig3.ps]The same as Fig. 2 with <Math mode="inline" tex="j=14" text="j = 14" xml:id="m20">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" role="UNKNOWN">j</XMTok>
+            <XMTok meaning="14" role="NUMBER">14</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>, but taking
+<Math mode="inline" tex="j_{s}=14" text="j _ s = 14" xml:id="m21">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok font="italic" role="UNKNOWN">j</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+            </XMApp>
+            <XMTok meaning="14" role="NUMBER">14</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>.
+<!--  %**** ms.tex Line 400 **** --></p>
+  </figure>
+</document>

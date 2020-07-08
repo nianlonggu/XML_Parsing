@@ -1,0 +1,3451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008289.1"?>
+<!--  %l-aa.dem --><!--  %L-AA vers. 3.0, LaTeX style file for Astronomy &amp; Astrophysics --><!--  %Demo file --><!--  %(c) Springer-Verlag HD --><!--  %__ --><?latexml class="aa" options="epsbox,referee" oldstyle="true"?>
+<!--  %‘Thermodynamical’ derivatives. --><?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML" class="ltx_authors_1line">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>On the degree of dust extinction in major galaxy mergers
+<!--  %**** aap1.tex Line 25 **** -->with dusty starburst</title>
+  <creator role="author">
+    <personname>K. Bekki
+
+&amp; Y. Shioya  </personname>
+    <contact role="institute">1 Division of Theoretical Astrophysics, National Astronomical Observatory, Mitaka,
+Tokyo, 181-8588, Japan <break/>email address: bekki@th.nao.ac.jp <break/>2 Astronomical Institute, Tohoku University, Sendai, 980-8578, Japan <break/>email address: shioya@astr.tohoku.ac.jp</contact>
+    <contact role="emailmark"/>
+    <contact role="institutemark"/>
+    <contact role="emailmark"/>
+  </creator>
+  <date role="creation">Received April 28, 2000; accepted August 8, 2000</date>
+  <abstract name="Abstract">
+<!--  %**** aap1.tex Line 50 **** -->    <p>We numerically investigate how fundamental properties of
+the spectral energy distribution (SED) of
+a major gas-rich galaxy merger with dusty starburst
+are determined by the initial orbital configuration of the merger.
+We found that an infrared luminous galaxy with dusty starburst
+formed by a nearly retrograde-retrograde merger
+suffers the most remarkable dust extinction of
+stellar light and consequently shows very red colours.
+<!--  %This is essentially because 
+     %in a retrograde-retrograde merger that
+     %does not produce strong and long tidal tails,
+     %a larger amount of dusty interstellar
+     %gas can be transferred to the central region
+     %to obscure more heavily the compact starburst.
+     %owing to a smaller amount of gas tidally stripped away from the merger.-->Considering that a retrograde-retrograde merger
+does not produce strong and long tidal tails,
+this result suggests that a luminous infrared
+galaxy without clear signs of interaction
+and merging shows very large internal dust extinction and redder colours.
+These numerical results furthermore
+imply that the morphology of a luminous infrared galaxy can correlate with
+the degree of internal dust extinction and thus with the shape of the SED, principally because
+the morphology of a merger also depends strongly
+on the initial orbital configuration of the merger.
+<!--  %**** aap1.tex Line 75 **** -->Based on these results, we discuss the origin
+of ultra-luminous infrared galaxies.</p>
+  </abstract>
+  <keywords>Galaxies: interactions, – Galaxies: ISM, Galaxies: kinematics and dynamics</keywords>
+  <note role="offprints">K. Bekki</note>
+<!--  %Galaxies: kinematics and dynamics, 
+     %“subtitle–A new clue to the origin of ultra-luminous infrared galaxies˝-->  <section refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>Introduction</title>
+    <para xml:id="S1.p1">
+      <p>Ultra-luminous infrared galaxies (ULIRGs), which are ongoing major mergers
+between gas-rich spirals, are generally considered to
+provide valuable clues to
+the understanding not only for the formation processes
+of elliptical galaxies and active galactic nuclei (AGN)
+but also for the nature
+of high redshift dusty starburst galaxies (Sanders et al. 1988;
+Sanders &amp; Mirabel 1996;
+<!--  %Heckman 1998; Calzetti et al. 1998; 
+     %**** aap1.tex Line 100 ****-->Meurer et al. 1999;
+Trentham et al. 1999).
+In particular, to investigate how and
+to what degree stellar light is heavily obscured by
+dust in low redshift ULIRGs may
+lead us to clarify the origin even for high redshift faint sub-millimeter
+sources recently discovered by
+the Sub-millimeter Common-User Bolometer Array
+(SCUBA) (Holland et al. 1999) on the James Clerk Maxwell Telescope
+(Smail et al. 1997;
+Hughes et al. 1998; Smail et al. 1998; Barger et al. 1999; Lilly et al. 1999).
+Recently, Trentham et al. (1999) have found that the degree of internal dust extinction
+at optical and ultraviolet wavelength in the spectral energy distribution (SED)
+of ULIRGs is very different between ULIRGs,
+though the total number of the sample ULIRGs is very small (only 3).
+They furthermore showed that the magnitude of the drop of SEDs
+from optical to ultraviolet band
+ranges from a factor of <Math mode="inline" tex="\sim" text="similar-to" xml:id="S1.p1.m1">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 3 in IRAS F22491-1808
+to a factor of <Math mode="inline" tex="\sim" text="similar-to" xml:id="S1.p1.m2">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 100 in
+VII Zw 031.
+The derived SEDs of ULIRGs from ultraviolet to near-infrared band
+not only help us to understand the physical relationship between low
+redshift ULIRGs and high redshift
+faint SCUBA sources (Trentham et al. 1999)
+but also provides valuable information on an evolutionary link
+<!--  %**** aap1.tex Line 125 **** -->between faint SCUBA sources with blue <Math mode="inline" tex="V-I" text="V - I" xml:id="S1.p1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> colour (<Math mode="inline" tex="\sim" text="similar-to" xml:id="S1.p1.m4">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 1.5 mag)
+observed by Smail et al. (1998)
+and Extremely Red Objects
+(EROs) first discovered by Elston et al. (1988).
+It is, however, not clear at all what controls the degree of internal dust extinction
+in ULIRGs.</p>
+    </para>
+    <para xml:id="S1.p2">
+      <p>The purpose of this paper is to investigate what determines the nature of SEDs
+and the degree of internal dust extinction
+in ULIRGs by performing numerical simulations that can
+follow chemodynamical and photometric evolution of major galaxy mergers with
+dusty interstellar gas in an explicitly
+self-consistent manner.
+We here consider the global dynamical evolution of galaxy mergers,
+which depends strongly on initial orbital configurations of mergers
+(i.e., whether a merger is prograde-prograde one
+or retrograde-retrograde one),
+is <Math mode="inline" tex="one" text="o * n * e" xml:id="S1.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">o</XMTok>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok font="italic" role="UNKNOWN">e</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> of primarily important factors for the SEDs of ULIRGs.
+Mihos
+&amp; Hernquist (1996) have already investigated in detail
+the <Math mode="inline" tex="gas" text="g * a * s" xml:id="S1.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">g</XMTok>
+              <XMTok font="italic" role="UNKNOWN">a</XMTok>
+              <XMTok font="italic" role="UNKNOWN">s</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="dynamical" text="d * y * n * a * m * i * c * a * l" xml:id="S1.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">d</XMTok>
+              <XMTok font="italic" role="UNKNOWN">y</XMTok>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok font="italic" role="UNKNOWN">a</XMTok>
+              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+              <XMTok font="italic" role="UNKNOWN">i</XMTok>
+              <XMTok font="italic" role="UNKNOWN">c</XMTok>
+              <XMTok font="italic" role="UNKNOWN">a</XMTok>
+              <XMTok font="italic" role="UNKNOWN">l</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="evolution" text="e * v * o * l * u * t * i * o * n" xml:id="S1.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">e</XMTok>
+              <XMTok font="italic" role="UNKNOWN">v</XMTok>
+              <XMTok font="italic" role="UNKNOWN">o</XMTok>
+              <XMTok font="italic" role="UNKNOWN">l</XMTok>
+              <XMTok font="italic" role="UNKNOWN">u</XMTok>
+              <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              <XMTok font="italic" role="UNKNOWN">i</XMTok>
+              <XMTok font="italic" role="UNKNOWN">o</XMTok>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> of major mergers and
+demonstrated that internal structure of merger progenitor disks
+(i.e., whether a disk has a strong bulge or not) rather than
+<!--  %**** aap1.tex Line 150 **** -->orbital configurations is a key factor for the merger star formation
+history. However they did not discuss the nature of SEDs of ULIRGs.
+Therefore our present results are complementary to their
+important results in the sense that we can demonstrate
+how the <Math mode="inline" tex="SEDs" text="S * E * D * s" xml:id="S1.p2.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">S</XMTok>
+              <XMTok font="italic" role="UNKNOWN">E</XMTok>
+              <XMTok font="italic" role="UNKNOWN">D</XMTok>
+              <XMTok font="italic" role="UNKNOWN">s</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> of mergers can depend on initial physical
+conditions of major mergers.
+A remarkable difference between the present study and previous ones
+that investigate SEDs of galaxies
+(e.g., Mazzei et al. 1992; Franceschini et al. 1994;
+Gordon et al. 1997; Guiderdoni et al. 1998)
+is that dynamical effects
+on stellar and gaseous distributions are included in the present study.
+We suggest that the SED of an ULIRG
+depends on the orbital configuration
+of a merger and furthermore that the SED of the ULIRG can correlate strongly
+with its morphology.
+Physical correlations between morphological properties and SEDs
+in ULIRGs have not been discussed so extensively in previous studies.
+The present numerical results thus shed new light on
+formation and evolution of ULIRGs.</p>
+    </para>
+  </section>
+  <section refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>Model</title>
+<!--  %**** aap1.tex Line 175 **** -->    <para xml:id="S2.p1">
+      <p>We here investigate both temporal evolution of galactic morphology
+and that of SED,
+based on numerical simulations that can follow
+both dynamical and chemical evolution of galaxies.
+The numerical techniques for solving galactic
+chemodynamical and photometric evolution
+and the methods for deriving SEDs in numerical
+simulations of galaxy mergers with dusty starburst
+are given in Bekki &amp; Shioya (1999) and Bekki et al. (1999),
+respectively.
+Accordingly we describe only
+briefly the present numerical model of dusty starburst galaxy mergers here.
+The physical parameters used in this paper are very similar to
+those adopted by Bekki et al. (1999) and plausible and realistic
+for gas-rich major mergers.
+<!--  %“subsection–Merger model˝ -->We construct models of galaxy mergers between gas-rich
+disk galaxies with equal mass by using Fall-Efstathiou model (1980).
+The total mass
+and the size of
+a progenitor disk are 6.0 <Math mode="inline" tex="\times" text="*" xml:id="S2.p1.m1">
+          <XMath>
+            <XMTok meaning="times" role="MULOP">×</XMTok>
+          </XMath>
+        </Math> <Math mode="inline" tex="10^{10}" text="10 ^ 10" xml:id="S2.p1.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="10" role="NUMBER">10</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="\rm M_{\odot}" text="M _ direct-product" xml:id="S2.p1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok role="UNKNOWN">M</XMTok>
+              <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+and 17.5 kpc,
+respectively.
+The collisional and dissipative nature
+of the interstellar medium
+<!--  %**** aap1.tex Line 200 **** -->with the initial gas mass fraction <Math mode="inline" tex="f_{\rm g}" text="f _ g" xml:id="S2.p1.m4">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">f</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">g</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> = 0.2
+<!--  %ranging from 0.1 to 0.5 
+     %equal to  $3.0 “times$ $10^–10˝$ $ “rm M˙–“odot˝$  is-->is modeled by the sticky particle method
+(<cite class="ltx_citemacro_cite"><bibref bibrefs="sch81" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+            <bibrefphrase>(</bibrefphrase>
+            <bibrefphrase>)</bibrefphrase>
+          </bibref></cite>).
+<!--  %Since the essential results of the present study does not depend so 
+     %strongly on the $ M˙–“rm g˝$, we describe only the results of models
+     %with $ M˙–“rm g˝=0.2$.-->Star formation
+is modeled by converting the collisional
+gas particles
+into collisionless new stellar particles according to
+the Schmidt law (Schmidt 1959)
+with the exponent of 2.0.
+As long as the exponent
+ranges from 1.5 to 2.0,
+our numerical results do not depend so strongly on the
+exponent of the Schmidt law.
+Chemical enrichment through star formation during galaxy merging
+is assumed to proceed both locally and instantaneously in the present study.
+The fraction of gas returned to interstellar medium in each stellar particle
+and the chemical yield
+are 0.3 and 0.02, respectively.
+Initial metallicity <Math mode="inline" tex="Z_{\ast}" text="Z _ ast" xml:id="S2.p1.m5">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">Z</XMTok>
+              <XMTok fontsize="70%" name="ast" role="MULOP">∗</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> for each stellar and gaseous
+particle in a given galactic radius <Math mode="inline" tex="R" text="R" xml:id="S2.p1.m6">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMath>
+        </Math> (kpc) from the center
+<!--  %**** aap1.tex Line 225 **** -->of a disk is given
+according to the observed relation <Math mode="inline" tex="Z_{\ast}=0.06\times{10}^{-0.197\times(R/3.5)}" text="Z _ ast = 0.06 * 10 ^ (- 0.197 * (R / 3.5))" xml:id="S2.p1.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">Z</XMTok>
+                <XMTok fontsize="70%" name="ast" role="MULOP">∗</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="0.06" role="NUMBER">0.06</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="times" role="MULOP">×</XMTok>
+                      <XMTok fontsize="70%" meaning="0.197" role="NUMBER">0.197</XMTok>
+                      <XMDual>
+                        <XMRef idref="S2.p1.m7.1"/>
+                        <XMWrap>
+                          <XMTok fontsize="70%" role="OPEN" stretchy="false">(</XMTok>
+                          <XMApp xml:id="S2.p1.m7.1">
+                            <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+                            <XMTok fontsize="70%" meaning="3.5" role="NUMBER">3.5</XMTok>
+                          </XMApp>
+                          <XMTok fontsize="70%" role="CLOSE" stretchy="false">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+of typical late-type disk galaxies (e.g., Zaritsky et al. 1994).
+<!--  %We do not here intend to consider that there is an initial age gradient 
+     %of a stellar disk for simplicity.
+     %Mean ages of old stellar components
+     %initially in  a merger progenitor   disk at the redshift z=0.4, 1.0, and 1.5 are
+     %assumed to be 7.14, 3.80, and 2.46 Gyr, respectively.
+     %These values are chosen such that  mean ages  of old stellar components
+     %between disks with different redshifts
+     %are exactly the same at z=0.0 in a  certain cosmological parameter.
+     %The essential ingredients of the present study do not depend so strongly
+     %on the adopted ages.
+     %Age and metallicity distribution of old stellar components, gaseous ones, and new stellar ones
+     %basically determines  the photometric evolution of a galaxy merger in the present study.--></p>
+    </para>
+    <para xml:id="S2.p2">
+      <p>In the present study,
+we consider that the most important parameter for determining morphological
+and photometric evolution of a galaxy merger
+is
+an initial orbital configuration of the merger.
+We accordingly investigate merger models with variously different
+<!--  %**** aap1.tex Line 250 **** -->orbital configurations.
+We here present the results of two models, a nearly prograde-prograde
+model (referred to as <Math mode="inline" tex="PP" text="P * P" xml:id="S2.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model for convenience),
+and a nearly retrograde-retrograde one (<Math mode="inline" tex="RR" text="R * R" xml:id="S2.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>).
+The reason for this adoption is that these models
+clearly show the most remarkable differences in the morphological and
+photometric evolution of galaxy mergers between these two.
+The results for models with variously different orbital configurations
+will be described in detail by Bekki &amp; Shioya (2000).
+The angle between intrinsic spin vector
+and orbital one in one disk for each of mergers
+is set to be 30 degrees.
+The orbital plane of a galaxy merger is assumed to be the same as <Math mode="inline" tex="x" text="x" xml:id="S2.p2.m3">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">x</XMTok>
+          </XMath>
+        </Math>-<Math mode="inline" tex="y" text="y" xml:id="S2.p2.m4">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">y</XMTok>
+          </XMath>
+        </Math> plane
+and the initial distance between the center of mass of merger progenitor
+disks is 140 kpc.
+Two disks in the merger are assumed to encounter each other parabolically
+with the pericentric distance of 17.5 kpc.
+<!--  %The intrinsic spin vector of one galaxy in a  merger  is exactly parallel with $z$ axis 
+     %whereas that of  the other  is tilted by $–30˝^–“circ˝$ from $z$ axis.
+     %The  number of particles used in a simulation
+     %is  20000 for dark halo components, 20000 for stellar ones,
+     %and 20000 for gaseous ones.
+     %All the calculations including the dissipative and dissipationless
+     %dynamics, star formation, and chemical evolution
+     %have been carried out on the GRAPE board
+     %**** aap1.tex Line 275 ****
+     %(“cite–sug90˝)
+     %at Astronomical Institute of Tohoku University.
+     %The parameter of gravitational softening is set to be fixed at 0.03
+     %5  in all the simulations.
+     %The time integration of the equation of motion
+     %is performed by using 2-order
+     %leap-flog method.--></p>
+    </para>
+    <para xml:id="S2.p3">
+      <p>Structural and kinematical properties of merger remnants,
+star formation history of mergers with prominent bulges,
+and that of dusty starburst mergers between bulgeless spirals
+have been already given in Barnes &amp; Hernquist (1992),
+Mihos &amp; Hernquist (1996), and Bekki et al. (1999), respectively.
+Thus we describe only morphological and photometric properties
+of mergers between two gas-rich bulgeless disk galaxies
+<Math mode="inline" tex="at" text="a * t" xml:id="S2.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">a</XMTok>
+              <XMTok font="italic" role="UNKNOWN">t</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="the" text="t * h * e" xml:id="S2.p3.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              <XMTok font="italic" role="UNKNOWN">h</XMTok>
+              <XMTok font="italic" role="UNKNOWN">e</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="epoch" text="e * p * o * c * h" xml:id="S2.p3.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">e</XMTok>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              <XMTok font="italic" role="UNKNOWN">o</XMTok>
+              <XMTok font="italic" role="UNKNOWN">c</XMTok>
+              <XMTok font="italic" role="UNKNOWN">h</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="of" text="o * f" xml:id="S2.p3.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">o</XMTok>
+              <XMTok font="italic" role="UNKNOWN">f</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="massive" text="m * a * s * s * i * v * e" xml:id="S2.p3.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+              <XMTok font="italic" role="UNKNOWN">a</XMTok>
+              <XMTok font="italic" role="UNKNOWN">s</XMTok>
+              <XMTok font="italic" role="UNKNOWN">s</XMTok>
+              <XMTok font="italic" role="UNKNOWN">i</XMTok>
+              <XMTok font="italic" role="UNKNOWN">v</XMTok>
+              <XMTok font="italic" role="UNKNOWN">e</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="starburst" text="s * t * a * r * b * u * r * s * t" xml:id="S2.p3.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">s</XMTok>
+              <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              <XMTok font="italic" role="UNKNOWN">a</XMTok>
+              <XMTok font="italic" role="UNKNOWN">r</XMTok>
+              <XMTok font="italic" role="UNKNOWN">b</XMTok>
+              <XMTok font="italic" role="UNKNOWN">u</XMTok>
+              <XMTok font="italic" role="UNKNOWN">r</XMTok>
+              <XMTok font="italic" role="UNKNOWN">s</XMTok>
+              <XMTok font="italic" role="UNKNOWN">t</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> in the present study.
+For calculating the SED
+of a merger,
+we use the
+spectral library GISSEL96 which is the latest version of Bruzual &amp; Charlot (1993).
+Using the derived SED,
+we also investigate how dust-enshrouded starburst galaxy mergers
+at z=0.4 and 1.0 can be seen with
+the <Math mode="inline" tex="Hubble" text="H * u * b * b * l * e" xml:id="S2.p3.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">H</XMTok>
+              <XMTok font="italic" role="UNKNOWN">u</XMTok>
+              <XMTok font="italic" role="UNKNOWN">b</XMTok>
+              <XMTok font="italic" role="UNKNOWN">b</XMTok>
+              <XMTok font="italic" role="UNKNOWN">l</XMTok>
+              <XMTok font="italic" role="UNKNOWN">e</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="Space" text="S * p * a * c * e" xml:id="S2.p3.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">S</XMTok>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              <XMTok font="italic" role="UNKNOWN">a</XMTok>
+              <XMTok font="italic" role="UNKNOWN">c</XMTok>
+              <XMTok font="italic" role="UNKNOWN">e</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="Telescope" text="T * e * l * e * s * c * o * p * e" xml:id="S2.p3.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+              <XMTok font="italic" role="UNKNOWN">e</XMTok>
+              <XMTok font="italic" role="UNKNOWN">l</XMTok>
+              <XMTok font="italic" role="UNKNOWN">e</XMTok>
+              <XMTok font="italic" role="UNKNOWN">s</XMTok>
+              <XMTok font="italic" role="UNKNOWN">c</XMTok>
+              <XMTok font="italic" role="UNKNOWN">o</XMTok>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              <XMTok font="italic" role="UNKNOWN">e</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> (<Math mode="inline" tex="HST" text="H * S * T" xml:id="S2.p3.m10">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">H</XMTok>
+              <XMTok font="italic" role="UNKNOWN">S</XMTok>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>).
+<!--  %**** aap1.tex Line 300 **** -->The method to construct the synthesized <Math mode="inline" tex="HST" text="H * S * T" xml:id="S2.p3.m11">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">H</XMTok>
+              <XMTok font="italic" role="UNKNOWN">S</XMTok>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> images of galactic morphology
+in the present study is basically the same as that described by Mihos (1995).
+For calculating the SED of a merger at z=0.4 and 1.0,
+we assume that
+mean ages of old stellar components
+initially in a merger progenitor disk at the redshift z=0.4 and 1.0 are
+7.14 and 3.80 Gyr, respectively.
+The <Math mode="inline" tex="V" text="V" xml:id="S2.p3.m12">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">V</XMTok>
+          </XMath>
+        </Math> band apparent magnitude <Math mode="inline" tex="m_{V}" text="m _ V" xml:id="S2.p3.m13">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">V</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, global colours
+(<Math mode="inline" tex="B-V" text="B - V" xml:id="S2.p3.m14">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok font="italic" role="UNKNOWN">B</XMTok>
+              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, <Math mode="inline" tex="V-R" text="V - R" xml:id="S2.p3.m15">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, <Math mode="inline" tex="V-I" text="V - I" xml:id="S2.p3.m16">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, <Math mode="inline" tex="R-K" text="R - K" xml:id="S2.p3.m17">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">K</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, and <Math mode="inline" tex="I-K" text="I - K" xml:id="S2.p3.m18">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok font="italic" role="UNKNOWN">K</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>), and <Math mode="inline" tex="S_{\rm 850\mu m}" text="S _ (850 * mu * m)" xml:id="S2.p3.m19">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">S</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok fontsize="70%" meaning="850" role="NUMBER">850</XMTok>
+                <XMTok font="italic" fontsize="70%" name="mu" role="UNKNOWN">μ</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> flux
+at each redshift (z=0.4, 1, 1.5, 2, and 3) for the two models (<Math mode="inline" tex="PP" text="P * P" xml:id="S2.p3.m20">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="RR" text="R * R" xml:id="S2.p3.m21">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>)
+are summarized in the Table 1.
+In the followings, the cosmological parameters
+<Math mode="inline" tex="\rm H_{0}" text="H _ 0" xml:id="S2.p3.m22">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok role="UNKNOWN">H</XMTok>
+              <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="\rm q_{0}" text="q _ 0" xml:id="S2.p3.m23">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok role="UNKNOWN">q</XMTok>
+              <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> are set to be 50 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S2.p3.m24">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> Mpc<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S2.p3.m25">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and 0.5
+respectively.
+<!--  %Although 
+     %the SEDs of the present  merger models with different model
+     %parameters at the epoch of maximum starburst are rather similar
+     %to the observed SEDs of typical ULIRGs (See also Bekki et al. 1999),
+     %the magnitude of infrared flux ($L˙–“rm ir˝$) in  a merger depend
+     %strongly on parameters such as $M˙–“rm d˝$,  $R˙–“rm d˝$,
+     %and  $ M˙–“rm g˝$ in such a way
+     %that a merger with larger $M˙–“rm d˝$,  $R˙–“rm d˝$,
+     %and $ M˙–“rm g˝$ shows larger $L˙–“rm ir˝$:
+     %Some models does not show $L˙–“rm ir˝$ $¿$ $10^–12˝$
+     %$“rm M˙–“odot˝$ thus is not literally defined as a ULIRG.
+     %**** aap1.tex Line 325 ****
+     %We do not intend to discuss parameter dependence of $L˙–“rm ir˝$ here,
+     %since we limit our discussions to shapes of SEDs of ULIRGs--></p>
+    </para>
+  </section>
+  <section refnum="3" xml:id="S3">
+    <title><tag close=" ">3</tag>Results</title>
+    <para xml:id="S3.p1">
+      <p>Fig.1 shows star formation history both for the <Math mode="inline" tex="PP" text="P * P" xml:id="S3.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+and <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p1.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> models. Although the strength of the maximum starburst
+is not very different between the two models, the epoch
+of the starburst is very different.
+The massive starburst is triggered
+in the first encounter for the <Math mode="inline" tex="PP" text="P * P" xml:id="S3.p1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model whereas
+the starburst occurs only in the late merger phase
+when the two cores merge to form a single (elliptical) galaxy
+for the <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p1.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model. Accordingly the separation of two galactic cores
+at the starburst epoch is very different (This is described in detail later
+in Fig.3 and Fig.4).
+The essential reason for
+this difference is that strong stellar bars, which can drive a large
+amount of interstellar gas into the central region and thus trigger
+massive starburst, can be formed in the first encounter <Math mode="inline" tex="only" text="o * n * l * y" xml:id="S3.p1.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">o</XMTok>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok font="italic" role="UNKNOWN">l</XMTok>
+              <XMTok font="italic" role="UNKNOWN">y</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> for
+the <Math mode="inline" tex="PP" text="P * P" xml:id="S3.p1.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model.
+This result that orbital configuration of major galaxy merging
+is an important determinant for merger star formation history
+is in striking contrast to the previous numerical results by Mihos
+<!--  %**** aap1.tex Line 350 **** -->&amp; Hernquist (1996).
+They demonstrated that internal structure of merger progenitor disks
+(i.e., whether a disk has a remarkable bulge or not) rather than
+orbital configurations is a key factor for the merger star formation
+history.
+The reason for this apparent difference between the present results and those
+by Mihos &amp; Hernquist (1996) is essentially that
+we do not include bulges at all in the present merger simulations.
+As pointed out by Mihos &amp; Hernquist (1996),
+irrespectively of merger orbital configurations,
+massive starburst
+occurs in the late merger phase when two cores
+merge to form an elliptical galaxy for mergers with remarkable
+bulges (with the mass ratio of bulge to disk <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.p1.m7">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 0.3:1),
+primarily because bulge can greatly suppress the formation
+of stellar bars during galaxy merging.
+Accordingly we stress that the derived clear difference in star formation
+history between the two models (i.e., the <Math mode="inline" tex="PP" text="P * P" xml:id="S3.p1.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p1.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> models)
+is true only for mergers between two disks without remarkable bulges.</p>
+    </para>
+    <para xml:id="S3.p2">
+      <p>Fig.2 describes the morphology of a merger at the epoch
+of its maximum starburst for
+the <Math mode="inline" tex="PP" text="P * P" xml:id="S3.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> models.
+<!--  %**** aap1.tex Line 375 **** -->A merger in the present model is the most heavily obscured by dust
+and shows the strongest far-infrared and sub-millimeter flux
+at this starburst epoch.
+As is shown in Fig.2,
+young stellar components formed during merging
+are more compactly distributed in a merger than
+old stellar ones
+initially located within disks
+both for the <Math mode="inline" tex="PP" text="P * P" xml:id="S3.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model and for the <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> one.
+This result indicates that
+compact young stellar components are more heavily obscured by
+dust than diffuse old ones in a gas-rich major merger.
+For the <Math mode="inline" tex="PP" text="P * P" xml:id="S3.p2.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model, the first and the strongest starburst is triggered
+at <Math mode="inline" tex="T" text="T" xml:id="S3.p2.m6">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+          </XMath>
+        </Math>=0.7 <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.p2.m7">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 0.8 Gyr,
+principally because non-axisymmetric stellar bars formed in the first
+encounter of the merger excite efficient gas transfer toward the
+nuclear region of the two disks.
+Consequently the morphology of the <Math mode="inline" tex="PP" text="P * P" xml:id="S3.p2.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> merger at <Math mode="inline" tex="T" text="T" xml:id="S3.p2.m9">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+          </XMath>
+        </Math>=0.7 Gyr shows two
+strong and long tidal arms and central bars.
+As is shown in Fig.3, dusty interstellar gas is so efficiently transferred
+to the central region of the stellar bar that the gas can
+obscure the central starburst component in this <Math mode="inline" tex="PP" text="P * P" xml:id="S3.p2.m10">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model.
+On the other hand, for the <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p2.m11">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model,
+the maximum starburst occurs when two disks
+finally merge to form an elliptical galaxy (<Math mode="inline" tex="T" text="T" xml:id="S3.p2.m12">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+          </XMath>
+        </Math>=1.6 <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.p2.m13">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 1.7 Gyr).
+<!--  %**** aap1.tex Line 400 **** -->Strong and long tidal tails are not
+developed during merging in this <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p2.m14">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model,
+accordingly the morphology at <Math mode="inline" tex="T" text="T" xml:id="S3.p2.m15">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+          </XMath>
+        </Math>=1.6 Gyr appears to show no
+clear signs of tidal interaction.
+As is shown in Fig.4, two starburst cores composed mainly of
+very young stars can be clearly seen in the central 3.5 kpc
+of the <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p2.m16">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> merger.
+The old stellar components, on the other hand,
+are more diffusely distributed and do not show
+such distinct two cores in the central region of the <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p2.m17">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> merger.
+Dusty interstellar gas is distributed such that
+it surrounds the two starburst cores.
+This mass distribution of gas and stars is similar to
+that found in Arp 220 (e.g., Norris 1985; Sakamoto et al. 1999),
+which is an ULIRG without long tidal tails
+(e.g., Sanders &amp; Mirabel 1996; Ohyama et al. 1999).
+This result for the <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p2.m18">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model accordingly suggests that
+Arp 220 is formed by a nearly retrograde-retrograde merger.
+These results for the above two models
+clearly demonstrate that the morphology of a
+merger at the epoch of its massive dusty starburst depends strongly
+on the initial orbital configuration.</p>
+    </para>
+    <para xml:id="S3.p3">
+      <p>The derived difference in global morphology between gas-rich major
+<!--  %**** aap1.tex Line 425 **** -->mergers with strong dusty starburst provides important implications
+for the nature of some ULIRGs, though the present results can be
+true for mergers without remarkable bulges.
+Recent high resolution optical/near-infrared imaging of ULIRGs
+have confirmed that morphology of ULIRGs is very diverse and furthermore
+that the separation of two galactic cores is very different ranging
+from 0 kpc (single nuclei) to about <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.p3.m1">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 10 kpc (Scoville et al.
+2000; Surace et al. 2000).
+For example, the core separation
+is estimated to be about 25 kpc
+for ULIRG IRAS01199-2307
+and just 2.5 kpc for IRAS22491-1808 (Surace et al. 2000).
+Since strong dusty starburst occurs in the first encounter
+(i.e., when the separation of two disks is an order of 10 kpc)
+for the <Math mode="inline" tex="PP" text="P * P" xml:id="S3.p3.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model without bulges, it
+is not unreasonable to say that such an ULIRG as IRAS01199-2307
+is formed by a nearly prograde-prograde merger without remarkable
+bulges.
+Furthermore, there are several ULIRGs (e.g., IRAS 10173+0828,
+VIIZw 031) that do not show obvious
+evidence of current or past interactions (Sanders &amp; Mirabel 1996).
+Our results suggests that such ULIRGs are formed by mergers
+that do not produce strong and long tidal tails: ULIRGs
+without obvious tidal features are formed by nearly retrograde-retrograde
+mergers. We here do not reject the idea that such ULIRGs are formed
+<!--  %**** aap1.tex Line 450 **** -->by an alternative mechanism (i.e., those other than major merging).
+The present numerical results imply
+that the origin of the observed morphological diversity
+of ULIRGs is due partly to the difference in orbital configurations
+of major mergers.</p>
+    </para>
+    <para xml:id="S3.p4">
+      <p>Fig.5 and Fig.6 show the SED at the epoch
+of maximum starburst for
+the two models (<Math mode="inline" tex="PP" text="P * P" xml:id="S3.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>) with and without dust extinction.
+<!--  %The SEDs of these two  merger models are rather similar 
+     %to the observed SEDs of typical ULIRGs (See also Bekki et al. 1999),
+     %which implies that the present dusty starburst models
+     %can be observed as ULIRGs at the epoch of the maximum starburst.-->By comparing the <Math mode="inline" tex="UV" text="U * V" xml:id="S3.p4.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">U</XMTok>
+              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> flux with <Math mode="inline" tex="\lambda&lt;3000" text="lambda less 3000" xml:id="S3.p4.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+              <XMTok meaning="3000" role="NUMBER">3000</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="\rm\AA" text="Å" xml:id="S3.p4.m5">
+          <XMath>
+            <XMTok role="UNKNOWN">Å</XMTok>
+          </XMath>
+        </Math>
+for the model without dust extinction and that for the model with
+dust extinction, we can clearly determine to what degree
+the <Math mode="inline" tex="UV" text="U * V" xml:id="S3.p4.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">U</XMTok>
+              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> light from secondary starburst is absorbed by
+dust.
+Clearly,
+internal dust extinction
+of the <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p4.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> merger is appreciably larger than that of
+<!--  %**** aap1.tex Line 475 **** -->the <Math mode="inline" tex="PP" text="P * P" xml:id="S3.p4.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> one.
+The mean value of <Math mode="inline" tex="A_{\rm V}" text="A _ V" xml:id="S3.p4.m9">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">A</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">V</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> for all stellar components
+is 1.35 for the <Math mode="inline" tex="PP" text="P * P" xml:id="S3.p4.m10">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model and 1.50 for the <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p4.m11">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> one.
+Furthermore,
+if we estimate
+the mean value of <Math mode="inline" tex="A_{\rm V}" text="A _ V" xml:id="S3.p4.m12">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">A</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">V</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> in the central
+0.5 kpc of a merger at the epoch of maximum starburst,
+it is 8.06 mag for
+the upper galaxy and 6.27 mag for the lower one in the <Math mode="inline" tex="PP" text="P * P" xml:id="S3.p4.m13">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model
+and 8.42 mag in the <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p4.m14">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> one.
+There are two main reasons
+for this dependence.
+The first reason is that owing to
+a smaller amount of dusty interstellar gas tidally
+stripped away from the merger,
+a larger amount of interstellar gas can be transferred
+to the surroundings of the central compact starburst
+and thereby obscure the starburst more heavily in the <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p4.m15">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model.
+The second reason is that in the <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p4.m16">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model, the massive starburst
+occurs <Math mode="inline" tex="only" text="o * n * l * y" xml:id="S3.p4.m17">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">o</XMTok>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok font="italic" role="UNKNOWN">l</XMTok>
+              <XMTok font="italic" role="UNKNOWN">y</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> one-time and
+<Math mode="inline" tex="only" text="o * n * l * y" xml:id="S3.p4.m18">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">o</XMTok>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok font="italic" role="UNKNOWN">l</XMTok>
+              <XMTok font="italic" role="UNKNOWN">y</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> in the late merger phase when
+the dusty interstellar
+gas is the most efficiently transferred
+to the central region of the merger,
+and consequently a larger amount of higher density gas
+<!--  %**** aap1.tex Line 500 **** -->can obscure the central starburst.
+Fig.2 <Math mode="inline" tex="-" text="-" xml:id="S3.p4.m19">
+          <XMath>
+            <XMTok meaning="minus" role="ADDOP">-</XMTok>
+          </XMath>
+        </Math> Fig.6 therefore imply that both morphology and SED
+in a dusty starburst merger
+at the epoch of maximum starburst
+can be controlled by an
+initial orbital configuration of the merger and
+thus that the morphology of the merger can
+correlate with the SED.
+To be more specific, a dusty starburst merger
+without strong and long tidal tails (or with no
+clear signs of tidal interaction)
+can show very strong internal dust extinction.</p>
+    </para>
+    <para xml:id="S3.p5">
+      <p>Fig.7 and Fig.8 describe how the
+<Math mode="inline" tex="PP" text="P * P" xml:id="S3.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p5.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> merger models
+can be observed by the <Math mode="inline" tex="HST" text="H * S * T" xml:id="S3.p5.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">H</XMTok>
+              <XMTok font="italic" role="UNKNOWN">S</XMTok>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> if they are located
+at intermediate and high redshifts (<Math mode="inline" tex="0.4\leq z\leq 1" text="0.4 less= z less= 1" xml:id="S3.p5.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMTok meaning="0.4" role="NUMBER">0.4</XMTok>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMTok meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>).
+Table 1 furthermore summarizes the apparent <Math mode="inline" tex="V" text="V" xml:id="S3.p5.m5">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">V</XMTok>
+          </XMath>
+        </Math> band magnitude,
+colours, and sub-millimeter flux at 850 <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p5.m6">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m at each redshift for the two
+models.
+Most of the observed ULIRGs are located
+at low redshift (Sanders &amp; Mirabel 1996),
+<!--  %**** aap1.tex Line 525 **** -->these figures are accordingly helpful for deducing morphological
+properties of intermediate and high redshift ULIRGs.
+Fig.7 suggests that
+the evidence for major merging becomes less clear
+in optical band at
+intermediate redshifts for both the <Math mode="inline" tex="PP" text="P * P" xml:id="S3.p5.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model and the <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p5.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> one.
+This is essentially because
+the outer
+low surface brightness tidal feature
+in a merger is hardly detectable in the present optics of the <Math mode="inline" tex="HST" text="H * S * T" xml:id="S3.p5.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">H</XMTok>
+              <XMTok font="italic" role="UNKNOWN">S</XMTok>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>.
+Compared with the <Math mode="inline" tex="PP" text="P * P" xml:id="S3.p5.m10">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model with blue compact morphology (<Math mode="inline" tex="V-I" text="V - I" xml:id="S3.p5.m11">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> = 2.12
+and <Math mode="inline" tex="m_{\rm I}" text="m _ I" xml:id="S3.p5.m12">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">I</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> = 20.48 mag),
+the <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p5.m13">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model shows optically faint and
+very diffuse morphology (<Math mode="inline" tex="V-I" text="V - I" xml:id="S3.p5.m14">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> = 2.28 and <Math mode="inline" tex="m_{\rm I}" text="m _ I" xml:id="S3.p5.m15">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">I</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> = 20.70 mag)
+owing to the larger
+dust extinction.
+We here suggest that some dusty starburst
+radio sources
+with optically faint morphology
+recently discovered by Richards et al. (1999) in deep
+VLA (Very Large Array) surveys
+are likely to be these <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p5.m16">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mergers with the larger dust extinction.
+As is shown in Fig.8,
+near-infrared NIC2 image of the <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p5.m17">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> merger at <Math mode="inline" tex="z" text="z" xml:id="S3.p5.m18">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">z</XMTok>
+          </XMath>
+        </Math> = 0.4
+shows more clearly the sign
+<!--  %**** aap1.tex Line 550 **** -->of tidal interaction than WFPC2.
+However, the <Math mode="inline" tex="RR" text="R * R" xml:id="S3.p5.m19">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model with larger extinction shows very
+faint and diffuse morphology even in the NIC2
+at <Math mode="inline" tex="z" text="z" xml:id="S3.p5.m20">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">z</XMTok>
+          </XMath>
+        </Math> = 1 and also has redder colours (<Math mode="inline" tex="R-K" text="R - K" xml:id="S3.p5.m21">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">K</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.p5.m22">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 5.8 mag and <Math mode="inline" tex="I-K" text="I - K" xml:id="S3.p5.m23">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok font="italic" role="UNKNOWN">K</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+<Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.p5.m24">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 4.6 mag).
+This result implies that <Math mode="inline" tex="some" text="s * o * m * e" xml:id="S3.p5.m25">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">s</XMTok>
+              <XMTok font="italic" role="UNKNOWN">o</XMTok>
+              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+              <XMTok font="italic" role="UNKNOWN">e</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> of the observed high-redshift
+EROs with very faint morphology (e.g., EROs observed by Smail et al. 1999)
+are formed by major mergers with the larger dust extinction.
+A growing number of observational results on morphology
+and spectrophotometric properties of intermediate and high redshift
+ULIRGs are now being accumulated (e.g. Tran et al. 1999).
+We accordingly suggest that it is very worthy to
+observationally confirm whether an intermediate and high
+redshift ULIRG with no clear signs of tidal interaction
+preferentially shows the higher degree of internal dust extinction
+and redder colours
+and is thus a host galaxy for a faint radio source in VLA
+surveys and an ERO with optically faint
+and very diffuse morphology.</p>
+    </para>
+  </section>
+  <section refnum="4" xml:id="S4">
+    <title><tag close=" ">4</tag>Discussion</title>
+    <para xml:id="S4.p1">
+      <p>There are several observational results which
+imply a physical relationship between morphology
+<!--  %**** aap1.tex Line 575 **** -->and photometric properties in ULIRGs.
+Aurière et al. (1996) found that ULIRGs
+with no apparent signs of interaction
+preferentially show the larger ratio
+of infrared flux to <Math mode="inline" tex="R" text="R" xml:id="S4.p1.m1">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMath>
+        </Math>-band one among ULIRGs with
+different morphologies and thus suggested that these
+ULIRGs are
+highly obscured by internal dust.
+Arp 220, which is an ongoing merger without strong
+and long tidal tails and an ULIRGs at z<Math mode="inline" tex="\sim" text="similar-to" xml:id="S4.p1.m2">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math>0.018 (See Fig.1
+in Ohyama et al. 1999 for the clear morphology of Arp 220),
+is observed to show very large internal dust extinction with
+<Math mode="inline" tex="A_{\rm V}" text="A _ V" xml:id="S4.p1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">A</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">V</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="\sim" text="similar-to" xml:id="S4.p1.m4">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 10 estimated from optical
+and near-infrared colours (Scoville et al. 1998) and
+<Math mode="inline" tex="A_{\rm V}" text="A _ V" xml:id="S4.p1.m5">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">A</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">V</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> = 45
+from near infrared and mid-infrared emission lines (Genzel et al. 1998).
+The VII Zw031 (IRAS F05081+7936),
+which also appears to have no strong tidal tails in its R-band image,
+is found to suffer very strong UV light extinction
+with the magnitude about 30 times larger than that of other two
+ULIRGs with clear signs of tidal interaction
+(Trentham et al. 1999).
+Two possible interpretations for these ULIRGs with
+the larger <Math mode="inline" tex="A_{\rm V}" text="A _ V" xml:id="S4.p1.m6">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">A</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">V</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> are described as follows.
+One
+<!--  %**** aap1.tex Line 600 **** -->is that these ULIRGs are just in the late merger phase
+when outer tidal tails become very diffuse and thus less remarkable
+owing to the dynamical relaxation during merging: Irrespectively of
+merger orbital configurations, mergers can become ULIRGs with very
+large <Math mode="inline" tex="A_{\rm V}" text="A _ V" xml:id="S4.p1.m7">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">A</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">V</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> just in the late merger phase.
+The other is that
+the above ULIRGs with very
+large internal dust extinction can be formed by major mergers
+that do not produce any strong tidal tails:
+The above ULIRGs are more likely to be formed by nearly
+retrograde-retrograde mergers.
+Considering that <Math mode="inline" tex="outer" text="o * u * t * e * r" xml:id="S4.p1.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">o</XMTok>
+              <XMTok font="italic" role="UNKNOWN">u</XMTok>
+              <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              <XMTok font="italic" role="UNKNOWN">e</XMTok>
+              <XMTok font="italic" role="UNKNOWN">r</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> tidal tail(s) or features
+can be appreciably seen
+even in the late phase of galaxy merging
+(e.g., NGC3921 in Schweizer 1996),
+the latter interpretation seems to be more plausible.
+However, since the outer low surface brightness tidal features
+are hard to be detected especially for distant mergers and ULIRGs
+(Mihos 1995; Bekki et al. 1999),
+finer and deeper image data on morphology of ULIRGs
+are indispensable for determining which interpretation is more
+plausible for the origin of ULIRGs with very large <Math mode="inline" tex="A_{V}" text="A _ V" xml:id="S4.p1.m9">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">A</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">V</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>.</p>
+    </para>
+<!--  %**** aap1.tex Line 625 **** -->    <para xml:id="S4.p2">
+      <p>The present results furthermore provide an important clue to the
+physical origin for the observed colour differences
+between high redshift (z <Math mode="inline" tex="\geq 1.0" text="absent &gt;= 1.0" xml:id="S4.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="1.0" role="NUMBER">1.0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>) faint
+SCUBA sources.
+Smail et al. (1998, 1999) revealed
+that <Math mode="inline" tex="V-I" text="V - I" xml:id="S4.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> colour is very different between faint SCUBA sources
+and discovered two EROs
+with <Math mode="inline" tex="I-K\geq 6.0" text="I - K &gt;= 6.0" xml:id="S4.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                <XMTok font="italic" role="UNKNOWN">K</XMTok>
+              </XMApp>
+              <XMTok meaning="6.0" role="NUMBER">6.0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and 6.8 among SCUBA sources.
+The origin
+for this observed colour differences, which can result from
+several factors such as differences
+in internal dust extinction, redshifts, and the energy
+flux ratio of thermal starburst activity to non-thermal AGN
+between SCUBA sources,
+has not been clarified at all.
+As is described in the Table 1,
+our dusty starburst models with 850<Math mode="inline" tex="\rm\mu m" text="mu * m" xml:id="S4.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+              <XMTok role="UNKNOWN">m</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> flux ranging from
+1.4 to 2.2 mJy
+for 1 <Math mode="inline" tex="\leq" text="less=" xml:id="S4.p2.m5">
+          <XMath>
+            <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+          </XMath>
+        </Math> <Math mode="inline" tex="z" text="z" xml:id="S4.p2.m6">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">z</XMTok>
+          </XMath>
+        </Math> <Math mode="inline" tex="\leq" text="less=" xml:id="S4.p2.m7">
+          <XMath>
+            <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+          </XMath>
+        </Math> 2
+predict that the <Math mode="inline" tex="R-K" text="R - K" xml:id="S4.p2.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">K</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> (<Math mode="inline" tex="I-K" text="I - K" xml:id="S4.p2.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok font="italic" role="UNKNOWN">K</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>) colours at <Math mode="inline" tex="z" text="z" xml:id="S4.p2.m10">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">z</XMTok>
+          </XMath>
+        </Math>=1, 1.5, and 2 are
+5.38 (4.29), 5.96 (4.99), and 6.07 (5.43),
+respectively, for the <Math mode="inline" tex="PP" text="P * P" xml:id="S4.p2.m11">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+              <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> model and
+5.78 (4.57), 6.74 (5.41), and 7.26 (6.19), respectively, for the <Math mode="inline" tex="RR" text="R * R" xml:id="S4.p2.m12">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> one.
+These results therefore imply that
+<Math mode="inline" tex="one" text="o * n * e" xml:id="S4.p2.m13">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">o</XMTok>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok font="italic" role="UNKNOWN">e</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> of important factors for the observed colour differences between
+<!--  %**** aap1.tex Line 650 **** -->faint SCUBA
+sources is the difference in orbital configurations between
+higher redshift major galaxy mergers with dusty starburst.
+One of observational tests which can assess the validity
+of this interpretation is to reveal the physical relationship
+between the detailed morphology of SCUBA sources
+and their colours (or SEDs).
+It is, however, considerably difficult even for the present optics
+of the <Math mode="inline" tex="HST" text="H * S * T" xml:id="S4.p2.m14">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">H</XMTok>
+              <XMTok font="italic" role="UNKNOWN">S</XMTok>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> to reveal the detailed morphology of high redshift mergers
+(Mihos 1995; Bekki et al. 1999).
+Thus future large space
+and ground-based telescopes will discover
+the fine structure of high redshift SCUBA sources and EROs and
+thereby clarify the relative importance of merger orbital configurations
+in determining the SEDs and colours in high-redshift dusty starburst galaxies.</p>
+    </para>
+  </section>
+  <acknowledgements name="Acknowledgements">
+Y.S. thanks to the Japan Society for Promotion of Science (JSPS)
+Research Fellowships for Young Scientist.
+</acknowledgements>
+  <bibliography xml:id="bib">
+    <title>References</title>
+    <biblist>
+<!--  %**** aap1.tex Line 675 **** 
+     %“bibitem[Arimoto et al. 1992]–ayt92˝
+     %Arimoto, N., Yoshii, Y.,  Takahara, F. 1992, A“&amp;A, 253, 21-->      <bibitem key="au96" xml:id="bib.bib1">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Aurière et al. 1996</bibtag>
+        <bibtag role="refnum">(Aurière et al. 1996)</bibtag>
+        <bibblock>
+Aurière, M., Hecquet, J., Coupinot, G., Arthaud, R., Mirabel, I. F.
+1996, A&amp;A, 312 387
+</bibblock>
+      </bibitem>
+      <bibitem key="ba98" xml:id="bib.bib2">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Barger et al. 1998</bibtag>
+        <bibtag role="refnum">(Barger et al. 1998)</bibtag>
+        <bibblock>
+Barger A. J., Cowie, L. L., Sanders, D. B.,
+et al.
+1998, Nat 394, 248
+<!--  %“bibitem[Barger et al.  1999]–ba99˝ 
+     %Barger A. J., Cowie, L. L., Smail, I., Ivison, R. J., Blain, A. W., Kneib, J-P.
+     %1999, astro-ph/9903142--></bibblock>
+      </bibitem>
+      <bibitem key="bh92" xml:id="bib.bib3">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Barnes &amp; Hernquist 1992</bibtag>
+        <bibtag role="refnum">(Barnes &amp; Hernquist 1992)</bibtag>
+        <bibblock>
+Barnes, J., Hernquist, L. 1992, ARA&amp;A 30, 705
+<!--  %“bibitem[Barnes “&amp; Hernquist 1996]–bh96˝ 
+     %Barnes, J.,  Hernquist, L. 1996, ApJ 471, 115
+     %“bibitem[Beckwith et al. 1998]–bec98˝
+     %Beckwith, S. V. W., Thompson, D., Manucci, F.,  Djorgovski, S. G.
+     %1998, ApJ,  504 107
+     %**** aap1.tex Line 700 ****
+     %“bibitem[Bekki “&amp; Shioya 1998]–bs98˝
+     %Bekki, K.,  Shioya, Y. 1998, ApJ 497, 108--></bibblock>
+      </bibitem>
+      <bibitem key="bs99" xml:id="bib.bib4">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Bekki &amp; Shioya 1999</bibtag>
+        <bibtag role="refnum">(Bekki &amp; Shioya 1999)</bibtag>
+        <bibblock>
+Bekki, K., Shioya, Y. 1999, ApJ 513, 108
+</bibblock>
+      </bibitem>
+      <bibitem key="bs00" xml:id="bib.bib5">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Bekki &amp; Shioya 2000</bibtag>
+        <bibtag role="refnum">(Bekki &amp; Shioya 2000)</bibtag>
+        <bibblock>
+Bekki, K., Shioya, Y. 2000, ApJ in press
+</bibblock>
+      </bibitem>
+      <bibitem key="bst99" xml:id="bib.bib6">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Bekki et al. 1999</bibtag>
+        <bibtag role="refnum">(Bekki et al. 1999)</bibtag>
+        <bibblock>
+Bekki, K., Shioya, Y., Tanaka, I. 1999, ApJ 520, L99
+<!--  %“bibitem[Ben“’“i tez et al. 1998]–bes98˝ 
+     %Ben“’“i tez, N., Broadhurst, T., Bouwens, R., Silk, J.,
+     %“&amp; Rosati, P. 1998, astro-ph/9812205
+     %“bibitem[Bender 1996]–ben96˝
+     %Bender, R. 1996, in New light on galaxy evolution, ed.  R. Bender,
+     %R. Davies, IAU symp. 171, p181
+     %“bibitem[Biretta  1996]–bi96˝
+     %Biretta, J, 1996, in the HST WFPC2 Instrumental handbook Version 4.0
+     %**** aap1.tex Line 725 ****
+     %“bibitem[Binney “&amp; Tremaine 1987]–bt87˝
+     %Binney, J.,  Tremaine, S. 1987 in Galactic Dynamics, Princeton; Princeton
+     %Univ. Press.
+     %“bibitem[Black 1987]–bl87˝
+     %Black, J. H. 1987, in Spectroscopy of Astrophysical Plasmas, eds. A. Dalgarno “&amp; D. Layzer,
+     %Cambridge Univ. Press, Cambridge.--></bibblock>
+      </bibitem>
+      <bibitem key="br93" xml:id="bib.bib7">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Bruzual &amp; Charlot 1993</bibtag>
+        <bibtag role="refnum">(Bruzual &amp; Charlot 1993)</bibtag>
+        <bibblock>
+Bruzual, A. G., Charlot, S. ApJ 405, 538
+<!--  %“bibitem[Cardelli  1989]–ca89˝ 
+     %Cardelli, J. A., Clayton, G. C., “&amp; Mathis, J. S. 1989, ApJ  345, 245
+     %“bibitem[Cimatti et al.  1998]–ci98˝
+     %Cimatti, A., Andreani, P., Rottgering, H., “&amp; Tilanus, R. 1998, Nat 392, 895
+     %“bibitem[Dey et al. 1999]–de99˝
+     %Dey, A., Graham, J. R., Ivison, R. J., Smail, I., Wright, G. S.,
+     %“&amp; Liu, M. C. 1999, astro-ph/9902044
+     %“bibitem[Doyon et al. 1994]–do94˝
+     %Doyon, R., Wells, M., Wright, G. S., Joseph, R. D.,
+     %**** aap1.tex Line 750 ****
+     %Nadeau, D., “&amp; James, P. A. 1994, ApJ 437, L23
+     %“bibitem[Driver  et al. 1998]–dr98˝
+     %Driver, S. P., Fernandez-Soto, A., Couch, W. J.,
+     %Odewahn, S. C., Windhorst, R. A., Phillips, S.,
+     %Lanzetta, K., “&amp; Yahil, A. 1998, ApJ, 496, L93--></bibblock>
+      </bibitem>
+      <bibitem key="el88" xml:id="bib.bib8">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Elston et al. 1988</bibtag>
+        <bibtag role="refnum">(Elston et al. 1988)</bibtag>
+        <bibblock>
+Elston, R., Rieke, G. H., Rieke, M. J. 1988 ApJ, 331, L77
+</bibblock>
+      </bibitem>
+      <bibitem key="fe80" xml:id="bib.bib9">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Fall &amp; Efstathiou 1980</bibtag>
+        <bibtag role="refnum">(Fall &amp; Efstathiou 1980)</bibtag>
+        <bibblock>
+Fall, S. M., Efstathiou, G. 1980, MNRAS 193, 189
+</bibblock>
+      </bibitem>
+      <bibitem key="fr94" xml:id="bib.bib10">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Franceschini et al. 1994</bibtag>
+        <bibtag role="refnum">(Franceschini et al. 1994)</bibtag>
+        <bibblock>
+Franceschini, A., Mazzei, P., De Zotti, G., Danese, L. 1994, ApJ 427, 140
+</bibblock>
+      </bibitem>
+      <bibitem key="ge98" xml:id="bib.bib11">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Genzel st al. 1998</bibtag>
+        <bibtag role="refnum">(Genzel st al. 1998)</bibtag>
+        <bibblock>
+Genzel, R. et al. 1998, ApJ 498, 579
+</bibblock>
+      </bibitem>
+      <bibitem key="go97" xml:id="bib.bib12">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Gordon st al. 1997</bibtag>
+        <bibtag role="refnum">(Gordon st al. 1997)</bibtag>
+        <bibblock>
+Gordon, K., Calzetti, D., Witt, A. N. 1997, ApJ 487, 625
+<!--  %“bibitem[Frayer et al. 1998]–fr98˝ 
+     %Frayer, D. T., Ivison, R. J., Scoville, N. Z., Yun, M., Evans, A. S.,
+     %Smail, I., Blain, A. W., “&amp; Kneib, J.-P. 1998, ApJ 506, L7
+     %**** aap1.tex Line 775 ****
+     %“bibitem[Frayer et al. 1999]–fr99˝
+     %Frayer, D. T., Ivison, R. J., Scoville, N. Z., Yun, M., Evans, A. S.,
+     %Smail, I., Barger, A. W., Blain, A. W., “&amp; Kneib, J.-P. 1999, ApJ 514, L7
+     %“bibitem[Graham “&amp; Dey 1996]–gr96˝
+     %Graham, J. R., “&amp; Dey, A. 1996, ApJ 471, 720--></bibblock>
+      </bibitem>
+      <bibitem key="gu98" xml:id="bib.bib13">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Guiderdoni et al. 1998</bibtag>
+        <bibtag role="refnum">(Guiderdoni et al. 1998)</bibtag>
+        <bibblock>
+Guiderdoni, B., Hivon, E., Bouchet, F. R., Maffei, B.
+1998, MNRAS 295, 877
+<!--  %“bibitem[Hildebrand 1983]–hi83˝ 
+     %Hildebrand, R. H. H. 1983, QJRAS 24, 267--></bibblock>
+      </bibitem>
+      <bibitem key="ho99" xml:id="bib.bib14">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Holland et al. 1999</bibtag>
+        <bibtag role="refnum">(Holland et al. 1999)</bibtag>
+        <bibblock>
+Holland, W. S., Robson, E. I., Gear, W. K., Cunningham, C. R.,
+Lightfoot, J. F., Jenness, T., Ivison, R. J., Stevens, J. A.,
+Ade, P. A. R., Griffin, M. J., Duncan, W. D., Murphy, J. A.,
+Naylor, D. A. 1999, MNRAS 303, 659
+<!--  %“bibitem[Holtzman et al. 1995]–hol95˝ 
+     %Holtzman, J., Burrows, C., Casertano, S., Hester, J. J.,
+     %Trauger, J., Watson, A., “&amp; Worthey, G. 1995, “pasp 107, 1065
+     %**** aap1.tex Line 800 ****--></bibblock>
+      </bibitem>
+      <bibitem key="hug98" xml:id="bib.bib15">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Hughes et al. 1998</bibtag>
+        <bibtag role="refnum">(Hughes et al. 1998)</bibtag>
+        <bibblock>
+Hughes, D. Serjeant, S., Dunlop, J., Rowan-Robinson,
+M., Blain, A., Mann, R. G., Ivison, R., Peacock, J.,
+Efstathiou, A., Gear, W., Oliver, S., Lawrence, A., Longair,
+M., Goldschmidt, P., Jenness, T. 1998, Nat 394, 241
+<!--  %“bibitem[Krist “&amp; Hook 1997]–kr94˝ 
+     %Krist, J., “&amp; Hook, R.  1997, Tiny Tim Users Manual Version 4.4 (Baltimore: STScI)
+     %“bibitem[Kennicutt 1989]–ken89˝
+     %Kennicutt, R. C. 1989, ApJ 344, 685
+     %“bibitem[Kormendy “&amp; Sanders 1992]–ks92˝
+     %Kormendy, J., “&amp; Sanders, D. B. 1992, ApJ 390, L53--></bibblock>
+      </bibitem>
+      <bibitem key="li99" xml:id="bib.bib16">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Lilly et al. 1999</bibtag>
+        <bibtag role="refnum">(Lilly et al. 1999)</bibtag>
+        <bibblock>
+Lilly, S. J., Eales, S. A., Gear, W.K.P.,
+et al.
+1999, ApJ 641, 518
+<!--  %“bibitem[MacKenty et al.  1997]–ma97˝ 
+     %MacKenty, J. W. et al. 1997, in  the HST NICMOS Instrumental Handbook version 2.0 (Baltimore, STScI)
+     %**** aap1.tex Line 825 ****
+     %“bibitem[Marleau “&amp; Simard 1998]–ms98˝
+     %Marleau, F. R., “&amp; Simard, L. 1998, ApJ, 507, 585--></bibblock>
+      </bibitem>
+      <bibitem key="ma92" xml:id="bib.bib17">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Mazzei et al. 1992</bibtag>
+        <bibtag role="refnum">(Mazzei et al. 1992)</bibtag>
+        <bibblock>
+Mazzei, P., Xu, C., De Zotti, G. 1992, A&amp;A 256, 45
+</bibblock>
+      </bibitem>
+      <bibitem key="me99" xml:id="bib.bib18">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">18</bibtag>
+        <bibtag role="year">Heckman</bibtag>
+        <bibtag role="authors">Meurer</bibtag>
+        <bibtag role="refnum">Meurer (Heckman)</bibtag>
+        <bibblock>
+Meurer, G. R., Heckman, T. M., Calzetti, D. 1999, ApJ 521, 64
+<!--  %“bibitem[Mihos “&amp; Hernquist 1994]–mh94˝ 
+     %Mihos, J. C., “&amp; Hernquist, L. 1994, ApJ 427, 112--></bibblock>
+      </bibitem>
+      <bibitem key="mh95" xml:id="bib.bib19">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Mihos 1995</bibtag>
+        <bibtag role="refnum">(Mihos 1995)</bibtag>
+        <bibblock>
+Mihos, J. C. 1995, ApJ 438, L75
+</bibblock>
+      </bibitem>
+      <bibitem key="mh96" xml:id="bib.bib20">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Mihos &amp; Hernquist 1996</bibtag>
+        <bibtag role="refnum">(Mihos &amp; Hernquist 1996)</bibtag>
+        <bibblock>
+Mihos, J. C., Hernquist, L. 1996, ApJ 464, 641
+</bibblock>
+      </bibitem>
+      <bibitem key="no85" xml:id="bib.bib21">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Norris 1985</bibtag>
+        <bibtag role="refnum">(Norris 1985)</bibtag>
+        <bibblock>
+Norris, R. P. 1985, MNRAS 216, 701
+</bibblock>
+      </bibitem>
+      <bibitem key="oh99" xml:id="bib.bib22">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Ohyama et al. 1999</bibtag>
+        <bibtag role="refnum">(Ohyama et al. 1999)</bibtag>
+        <bibblock>
+Ohyama, Y., Taniguchi, Y., Hibbard, J. E., Vacca, W. D. 1999, AJ 117, 2617
+<!--  %“bibitem[Richards 1999]–ri99˝ 
+     %**** aap1.tex Line 850 ****
+     %Richards, E. A., 1999, ApJ 513, L9--></bibblock>
+      </bibitem>
+      <bibitem key="ri99" xml:id="bib.bib23">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Richards et al.1999</bibtag>
+        <bibtag role="refnum">(Richards et al.1999)</bibtag>
+        <bibblock>
+Richards, E. A., Formalont, E. B., Kellermann, K. I., et al.
+1999, ApJ 526, L73
+<!--  %“bibitem[Rigopoulou  et al. 1996]–rig96˝ 
+     %Rigopoulou, D., Lawrence, A.,  Rowan-Robinson, M. 1996,
+     %MNRAS,  278, 1049--></bibblock>
+      </bibitem>
+      <bibitem key="sa99" xml:id="bib.bib24">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Sakamoto et al. 1999</bibtag>
+        <bibtag role="refnum">(Sakamoto et al. 1999)</bibtag>
+        <bibblock>
+Sakamoto, K., Scoville, N.Z., Yun, M. S., et al.
+1999, ApJ 514, 68
+</bibblock>
+      </bibitem>
+      <bibitem key="ss88" xml:id="bib.bib25">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Sanders et al. 1988</bibtag>
+        <bibtag role="refnum">(Sanders et al. 1988)</bibtag>
+        <bibblock>
+Sanders, D. B., Soifer, B. T., Elias, J. H., et al.
+1988a, ApJ 325, 74
+<!--  %“bibitem[Sanders et al. 1988b]–ss88b˝ 
+     %Sanders, D. B., Scoville, N. Z., Sargent, A. I., “&amp; Soifer, B. T.
+     %1988b, ApJ, 324, L55--></bibblock>
+      </bibitem>
+      <bibitem key="sm96" xml:id="bib.bib26">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Sanders &amp; Mirabel 1996</bibtag>
+        <bibtag role="refnum">(Sanders &amp; Mirabel 1996)</bibtag>
+        <bibblock>
+Sanders, D. B., Mirabel, I. F. 1996, ARA&amp;A 34, 749
+<!--  %**** aap1.tex Line 875 **** --></bibblock>
+      </bibitem>
+      <bibitem key="sch" xml:id="bib.bib27">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Schmidt 1959</bibtag>
+        <bibtag role="refnum">(Schmidt 1959)</bibtag>
+        <bibblock>
+Schmidt, M. 1959, ApJ 344, 685
+</bibblock>
+      </bibitem>
+      <bibitem key="sch81" xml:id="bib.bib28">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Schwarz 1981</bibtag>
+        <bibtag role="refnum">(Schwarz 1981)</bibtag>
+        <bibblock>
+Schwarz, M. P. 1981, ApJ 247, 77
+</bibblock>
+      </bibitem>
+      <bibitem key="sch96" xml:id="bib.bib29">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Schwizer 1996</bibtag>
+        <bibtag role="refnum">(Schwizer 1996)</bibtag>
+        <bibblock>
+Schwizer, F. 1996, AJ 111, 109
+</bibblock>
+      </bibitem>
+      <bibitem key="sco98" xml:id="bib.bib30">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Scoville et al. 1998</bibtag>
+        <bibtag role="refnum">(Scoville et al. 1998)</bibtag>
+        <bibblock>
+Scoville, N. Z., Evans, A. S., Dinshaw, N., et al.
+1998, ApJ 492, L107
+</bibblock>
+      </bibitem>
+      <bibitem key="sco00" xml:id="bib.bib31">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Scoville et al. 2000</bibtag>
+        <bibtag role="refnum">(Scoville et al. 2000)</bibtag>
+        <bibblock>
+Scoville, N. Z., Evans, A. S., Thompson, R., et al.
+2000, AJ 119, 991
+</bibblock>
+      </bibitem>
+      <bibitem key="sm97" xml:id="bib.bib32">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Smail et al. 1997</bibtag>
+        <bibtag role="refnum">(Smail et al. 1997)</bibtag>
+        <bibblock>
+Smail, I., Ivison, R. J., Blain, A. W. 1997, ApJ 490, L5
+</bibblock>
+      </bibitem>
+      <bibitem key="sm98" xml:id="bib.bib33">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Smail et al. 1998</bibtag>
+        <bibtag role="refnum">(Smail et al. 1998)</bibtag>
+        <bibblock>
+Smail, I., Ivison, R. J., Blain, A. W., Kneib, J.-P. 1998, ApJ 507, L21
+</bibblock>
+      </bibitem>
+      <bibitem key="sm99" xml:id="bib.bib34">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Smail et al. 1999</bibtag>
+        <bibtag role="refnum">(Smail et al. 1999)</bibtag>
+        <bibblock>
+Smail, I., Ivison, R. J., Kneib, J.-P., et al.
+<!--  %**** aap1.tex Line 900 **** -->1999, MNRAS 308, 1061
+<!--  %“bibitem[Sugimoto et al. 1990]–sug90˝ 
+     %Sugimoto, D., Chikada, Y., Makino, J., Ito, T., Ebisuzaki, T.,
+     %Umemura, M. 1990, Nat, 345, 33--></bibblock>
+      </bibitem>
+      <bibitem key="su00" xml:id="bib.bib35">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Surace et al. 2000</bibtag>
+        <bibtag role="refnum">(Surace et al. 2000)</bibtag>
+        <bibblock>
+Surace, J. A., Sanders, Evans, A. S.
+2000, ApJ 529, 170
+<!--  %“bibitem[Toomre “&amp; Toomre 1972]–tt72˝ 
+     %Toomre, A., “&amp; Toomre, J. 1972, ApJ, 178,623
+     %“bibitem[Toomre 1977]–too77˝
+     %Toomre, A. 1977, in  The evolution of galaxies and stellar Populations
+     %ed. by B. Tinsley “&amp; R. Larson (New. Haven. CN: Yale Univ. Press), p401--></bibblock>
+      </bibitem>
+      <bibitem key="tr98" xml:id="bib.bib36">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Tran et al. 1998</bibtag>
+        <bibtag role="refnum">(Tran et al. 1998)</bibtag>
+        <bibblock>
+Tran, H. D., Brotherton M. S., Stanford S. A., van Breugel, W.
+1998, preprint (astro-ph/9811322)
+<!--  %“bibitem[Wielen 1977]–wie77˝ 
+     %Wielen, R. 1977, A“&amp;A, 60, 263
+     %**** aap1.tex Line 925 ****
+     %“bibitem[Wright et al. 1990]–wr90˝
+     %Wright, G. S., James, P. A., “&amp; Joseph, R. D., “&amp; Mclean, I. S.
+     %1990, Nat, 344, 417--></bibblock>
+      </bibitem>
+      <bibitem key="tr99" xml:id="bib.bib37">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Trentham et al. 1999</bibtag>
+        <bibtag role="refnum">(Trentham et al. 1999)</bibtag>
+        <bibblock>
+Trentham, N., Kormendy, J., Sanders, D. B. 1999, AJ 117, 2152
+</bibblock>
+      </bibitem>
+      <bibitem key="za94" xml:id="bib.bib38">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Zaritsky et al. 1994</bibtag>
+        <bibtag role="refnum">(Zaritsky et al. 1994)</bibtag>
+        <bibblock>
+Zaritsky, D., Kennicutt, R. C., Huchra, J. P. 1994, ApJ 420, 87
+<!--  %“bibitem[“protect“citename–˝]–˝ --></bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+  <pagination role="newpage"/>
+<!--  %%%%%%%%%%%%%%%%%%%%%%TABLE -->  <table frefnum="Table 1" refnum="1" xml:id="A0.T1">
+<!--  %**** aap1.tex Line 950 **** -->    <toccaption><tag close=" ">1</tag>The redshift evolution of <Math mode="inline" tex="V" text="V" xml:id="A0.T1.m1">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">V</XMTok>
+        </XMath>
+      </Math> band magnitude, colours,
+and 850 <Math mode="inline" tex="\mu" text="mu" xml:id="A0.T1.m2">
+        <XMath>
+          <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+        </XMath>
+      </Math>m flux
+for the <Math mode="inline" tex="PP" text="P * P" xml:id="A0.T1.m3">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model and the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.T1.m4">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> one. For z = 0 (actually = 0.017
+similar to the redshift of Arp 220), upper and lower values
+represent the results of the model without dust extinction and those
+of the model with dust extinction, respectively.
+For the models without dust extinction at z = 0, the absolute magnitude
+is given whereas for z <Math mode="inline" tex="\geq" text="&gt;=" xml:id="A0.T1.m5">
+        <XMath>
+          <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+        </XMath>
+      </Math> 0, the apparent one is given in each of the two
+models with dust extinction.</toccaption>
+    <caption><tag close=": ">Table 1</tag>The redshift evolution of <Math mode="inline" tex="V" text="V" xml:id="A0.T1.m6">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">V</XMTok>
+        </XMath>
+      </Math> band magnitude, colours,
+and 850 <Math mode="inline" tex="\mu" text="mu" xml:id="A0.T1.m7">
+        <XMath>
+          <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+        </XMath>
+      </Math>m flux
+for the <Math mode="inline" tex="PP" text="P * P" xml:id="A0.T1.m8">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model and the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.T1.m9">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> one. For z = 0 (actually = 0.017
+similar to the redshift of Arp 220), upper and lower values
+represent the results of the model without dust extinction and those
+of the model with dust extinction, respectively.
+For the models without dust extinction at z = 0, the absolute magnitude
+is given whereas for z <Math mode="inline" tex="\geq" text="&gt;=" xml:id="A0.T1.m10">
+        <XMath>
+          <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+        </XMath>
+      </Math> 0, the apparent one is given in each of the two
+models with dust extinction.</caption>
+    <tabular class="ltx_centering" vattach="middle">
+      <tbody>
+        <tr>
+          <td align="left" border="tt"><Math mode="inline" tex="z" text="z" xml:id="A0.T1.m11">
+              <XMath>
+                <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              </XMath>
+            </Math></td>
+          <td align="center" border="tt"><Math mode="inline" tex="m_{V}" text="m _ V" xml:id="A0.T1.m12">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                  <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">V</XMTok>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="tt"><Math mode="inline" tex="B-V" text="B - V" xml:id="A0.T1.m13">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">B</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="tt"><Math mode="inline" tex="V-R" text="V - R" xml:id="A0.T1.m14">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="tt"><Math mode="inline" tex="V-I" text="V - I" xml:id="A0.T1.m15">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="tt"><Math mode="inline" tex="R-K" text="R - K" xml:id="A0.T1.m16">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">K</XMTok>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="tt"><Math mode="inline" tex="I-K" text="I - K" xml:id="A0.T1.m17">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">K</XMTok>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="tt"><Math mode="inline" tex="S_{\rm 850\mu m}" text="S _ (850 * mu * m)" xml:id="A0.T1.m18">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                  <XMTok font="italic" role="UNKNOWN">S</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok fontsize="70%" meaning="850" role="NUMBER">850</XMTok>
+                    <XMTok font="italic" fontsize="70%" name="mu" role="UNKNOWN">μ</XMTok>
+                    <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math> (mJy)</td>
+        </tr>
+        <tr>
+          <td align="center" border="t" colspan="8">PP model</td>
+        </tr>
+        <tr>
+          <td align="left" border="t">z=0.0</td>
+          <td align="center" border="t">-22.02</td>
+          <td align="center" border="t">0.245</td>
+          <td align="center" border="t">0.297</td>
+          <td align="center" border="t">0.669</td>
+          <td align="center" border="t">2.171</td>
+          <td align="center" border="t">1.800</td>
+          <td align="center" border="t">0</td>
+        </tr>
+        <tr>
+          <td align="left" border="t">z=0.0</td>
+          <td align="center" border="t">14.37</td>
+          <td align="center" border="t">0.878</td>
+          <td align="center" border="t">0.593</td>
+          <td align="center" border="t">1.123</td>
+          <td align="center" border="t">2.526</td>
+          <td align="center" border="t">1.996</td>
+          <td align="center" border="t"><Math mode="inline" tex="5.38\times 10^{2}" text="5.38 * 10 ^ 2" xml:id="A0.T1.m19">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">×</XMTok>
+                  <XMTok meaning="5.38" role="NUMBER">5.38</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+        </tr>
+        <tr>
+          <td align="left">z=0.4</td>
+          <td align="center">22.59</td>
+          <td align="center">1.175</td>
+          <td align="center">1.321</td>
+          <td align="center">2.116</td>
+          <td align="center">3.707</td>
+          <td align="center">2.913</td>
+          <td align="center">3.07</td>
+        </tr>
+        <tr>
+          <td align="left">z=1.0</td>
+          <td align="center">25.97</td>
+          <td align="center">0.696</td>
+          <td align="center">0.927</td>
+          <td align="center">2.011</td>
+          <td align="center">5.376</td>
+          <td align="center">4.291</td>
+          <td align="center">2.15</td>
+        </tr>
+        <tr>
+          <td align="left">z=1.5</td>
+          <td align="center">27.31</td>
+          <td align="center">0.420</td>
+          <td align="center">0.637</td>
+          <td align="center">1.606</td>
+          <td align="center">5.962</td>
+          <td align="center">4.992</td>
+          <td align="center">1.83</td>
+        </tr>
+        <tr>
+          <td align="left">z=2.0</td>
+          <td align="center">28.07</td>
+          <td align="center">0.375</td>
+          <td align="center">0.464</td>
+          <td align="center">1.124</td>
+          <td align="center">6.074</td>
+          <td align="center">5.413</td>
+          <td align="center">1.58</td>
+        </tr>
+        <tr>
+          <td align="left">z=3.0</td>
+          <td align="center">29.15</td>
+          <td align="center">1.334</td>
+          <td align="center">0.488</td>
+          <td align="center">0.976</td>
+          <td align="center">5.919</td>
+          <td align="center">5.430</td>
+          <td align="center">1.25</td>
+        </tr>
+        <tr>
+          <td align="center" border="t" colspan="8">RR model</td>
+        </tr>
+        <tr>
+          <td align="left" border="t">z=0.0</td>
+          <td align="center" border="t">-21.94</td>
+          <td align="center" border="t">0.280</td>
+          <td align="center" border="t">0.320</td>
+          <td align="center" border="t">0.698</td>
+          <td align="center" border="t">2.209</td>
+          <td align="center" border="t">1.832</td>
+          <td align="center" border="t">0</td>
+        </tr>
+        <tr>
+          <td align="left" border="t">z=0.0</td>
+          <td align="center" border="t">14.61</td>
+          <td align="center" border="t">0.953</td>
+          <td align="center" border="t">0.628</td>
+          <td align="center" border="t">1.185</td>
+          <td align="center" border="t">2.674</td>
+          <td align="center" border="t">2.118</td>
+          <td align="center" border="t"><Math mode="inline" tex="4.39\times 10^{2}" text="4.39 * 10 ^ 2" xml:id="A0.T1.m20">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">×</XMTok>
+                  <XMTok meaning="4.39" role="NUMBER">4.39</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math></td>
+        </tr>
+        <tr>
+          <td align="left">z=0.4</td>
+          <td align="center">22.98</td>
+          <td align="center">1.375</td>
+          <td align="center">1.432</td>
+          <td align="center">2.283</td>
+          <td align="center">3.900</td>
+          <td align="center">3.049</td>
+          <td align="center">2.53</td>
+        </tr>
+        <tr>
+          <td align="left">z=1.0</td>
+          <td align="center">26.82</td>
+          <td align="center">1.214</td>
+          <td align="center">1.251</td>
+          <td align="center">2.469</td>
+          <td align="center">5.784</td>
+          <td align="center">4.566</td>
+          <td align="center">1.80</td>
+        </tr>
+        <tr>
+          <td align="left">z=1.5</td>
+          <td align="center">28.70</td>
+          <td align="center">0.629</td>
+          <td align="center">1.107</td>
+          <td align="center">2.433</td>
+          <td align="center">6.737</td>
+          <td align="center">5.410</td>
+          <td align="center">1.54</td>
+        </tr>
+        <tr>
+          <td align="left">z=2.0</td>
+          <td align="center">29.64</td>
+          <td align="center">0.486</td>
+          <td align="center">0.675</td>
+          <td align="center">1.747</td>
+          <td align="center">7.263</td>
+          <td align="center">6.190</td>
+          <td align="center">1.35</td>
+        </tr>
+        <tr>
+          <td align="left" border="b">z=3.0</td>
+          <td align="center" border="b">30.86</td>
+          <td align="center" border="b">1.332</td>
+          <td align="center" border="b">0.545</td>
+          <td align="center" border="b">1.139</td>
+          <td align="center" border="b">7.339</td>
+          <td align="center" border="b">6.745</td>
+          <td align="center" border="b">1.08</td>
+        </tr>
+      </tbody>
+    </tabular>
+  </table>
+<!--  %%%%%%%%%%%%%%%%%%%%%%% Figure Captions -->  <figure frefnum="Figure 1" labels="LABEL:fig-1" placement="htbp" refnum="1" xml:id="A0.F1">
+<!--  %“picplace–17cm˝ 
+     %“epsfile–file=fig1.gif.ps,height=17cm˝-->    <ERROR class="undefined">\epsfile</ERROR>
+    <p>file=afigsf.ps</p>
+    <toccaption><tag close=" ">1</tag>
+Star formation history for the <Math mode="inline" tex="PP" text="P * P" xml:id="A0.F1.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model (solid line)
+<!--  %**** aap1.tex Line 1000 **** -->and the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F1.m2">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> one (dotted one).
+Star formation is given in units of <Math mode="inline" tex="M_{\odot}" text="M _ direct-product" xml:id="A0.F1.m3">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+            <XMTok font="italic" role="UNKNOWN">M</XMTok>
+            <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> <Math mode="inline" tex="{\rm yr}^{-1}" text="yr ^ (- 1)" xml:id="A0.F1.m4">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok role="UNKNOWN">yr</XMTok>
+            <XMApp>
+              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>
+(for the model in which the disk mass and size are
+6.0 <Math mode="inline" tex="\times" text="*" xml:id="A0.F1.m5">
+        <XMath>
+          <XMTok meaning="times" role="MULOP">×</XMTok>
+        </XMath>
+      </Math> <Math mode="inline" tex="10^{10}" text="10 ^ 10" xml:id="A0.F1.m6">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok meaning="10" role="NUMBER">10</XMTok>
+            <XMTok fontsize="70%" meaning="10" role="NUMBER">10</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> <Math mode="inline" tex="\rm M_{\odot}" text="M _ direct-product" xml:id="A0.F1.m7">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+            <XMTok role="UNKNOWN">M</XMTok>
+            <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>
+and 17.5 kpc, respectively).
+</toccaption>
+    <caption><tag close=": ">Figure 1</tag>
+Star formation history for the <Math mode="inline" tex="PP" text="P * P" xml:id="A0.F1.m8">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model (solid line)
+<!--  %**** aap1.tex Line 1000 **** -->and the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F1.m9">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> one (dotted one).
+Star formation is given in units of <Math mode="inline" tex="M_{\odot}" text="M _ direct-product" xml:id="A0.F1.m10">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+            <XMTok font="italic" role="UNKNOWN">M</XMTok>
+            <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> <Math mode="inline" tex="{\rm yr}^{-1}" text="yr ^ (- 1)" xml:id="A0.F1.m11">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok role="UNKNOWN">yr</XMTok>
+            <XMApp>
+              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>
+(for the model in which the disk mass and size are
+6.0 <Math mode="inline" tex="\times" text="*" xml:id="A0.F1.m12">
+        <XMath>
+          <XMTok meaning="times" role="MULOP">×</XMTok>
+        </XMath>
+      </Math> <Math mode="inline" tex="10^{10}" text="10 ^ 10" xml:id="A0.F1.m13">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok meaning="10" role="NUMBER">10</XMTok>
+            <XMTok fontsize="70%" meaning="10" role="NUMBER">10</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> <Math mode="inline" tex="\rm M_{\odot}" text="M _ direct-product" xml:id="A0.F1.m14">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+            <XMTok role="UNKNOWN">M</XMTok>
+            <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>
+and 17.5 kpc, respectively).
+</caption>
+  </figure>
+  <figure frefnum="Figure 2" labels="LABEL:fig-2" placement="htbp" refnum="2" xml:id="A0.F2">
+<!--  %“picplace–17cm˝ 
+     %“epsfile–file=fig1.gif.ps,height=17cm˝-->    <ERROR class="undefined">\epsfile</ERROR>
+    <p>file=fig1.gif.ps,height=17cm
+
+<!--  %**** aap1.tex Line 1025 **** --></p>
+    <toccaption><tag close=" ">2</tag>
+Mass distribution of a galaxy merger projected onto <Math mode="inline" tex="x" text="x" xml:id="A0.F2.m1">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+        </XMath>
+      </Math>-<Math mode="inline" tex="y" text="y" xml:id="A0.F2.m2">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">y</XMTok>
+        </XMath>
+      </Math> plane at
+the epoch of maximum secondary starburst of the merger
+for the <Math mode="inline" tex="PP" text="P * P" xml:id="A0.F2.m3">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model (left) and the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F2.m4">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> one (right).
+Old stars initially located in two disks, young stars formed by
+secondary starburst, and gas are plotted in the top panel, the middle
+one, and the bottom one, respectively.
+Note that strong and long tidal tails can be seen only in the <Math mode="inline" tex="PP" text="P * P" xml:id="A0.F2.m5">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model.
+Note also that young stars are more compactly distributed within a merger
+than old stars. This result suggests that young stars are more heavily
+obscured by dusty gas than old stars in a gas-rich merger.
+</toccaption>
+    <caption><tag close=": ">Figure 2</tag>
+Mass distribution of a galaxy merger projected onto <Math mode="inline" tex="x" text="x" xml:id="A0.F2.m6">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+        </XMath>
+      </Math>-<Math mode="inline" tex="y" text="y" xml:id="A0.F2.m7">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">y</XMTok>
+        </XMath>
+      </Math> plane at
+the epoch of maximum secondary starburst of the merger
+for the <Math mode="inline" tex="PP" text="P * P" xml:id="A0.F2.m8">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model (left) and the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F2.m9">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> one (right).
+Old stars initially located in two disks, young stars formed by
+secondary starburst, and gas are plotted in the top panel, the middle
+one, and the bottom one, respectively.
+Note that strong and long tidal tails can be seen only in the <Math mode="inline" tex="PP" text="P * P" xml:id="A0.F2.m10">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model.
+Note also that young stars are more compactly distributed within a merger
+than old stars. This result suggests that young stars are more heavily
+obscured by dusty gas than old stars in a gas-rich merger.
+</caption>
+  </figure>
+  <figure frefnum="Figure 3" labels="LABEL:fig-3" placement="htbp" refnum="3" xml:id="A0.F3">
+<!--  %“picplace–17cm˝ 
+     %“epsfile–file=fig1.gif.ps,height=17cm˝-->    <ERROR class="undefined">\epsfile</ERROR>
+    <p>file=afigpp.ps</p>
+    <toccaption><tag close=" ">3</tag>
+Mass distribution of the <Math mode="inline" tex="PP" text="P * P" xml:id="A0.F3.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model projected
+onto <Math mode="inline" tex="x" text="x" xml:id="A0.F3.m2">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+        </XMath>
+      </Math>-<Math mode="inline" tex="y" text="y" xml:id="A0.F3.m3">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">y</XMTok>
+        </XMath>
+      </Math> plane (upper four frames) and <Math mode="inline" tex="x" text="x" xml:id="A0.F3.m4">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+        </XMath>
+      </Math>-<Math mode="inline" tex="z" text="z" xml:id="A0.F3.m5">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">z</XMTok>
+        </XMath>
+      </Math> one (lower four ones)
+at <Math mode="inline" tex="T" text="T" xml:id="A0.F3.m6">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">T</XMTok>
+        </XMath>
+      </Math> = 0.7 Gyr corresponding
+to the epoch of maximum starburst of the merger for total components
+(upper left),
+old stellar components initially located in two disks (upper right),
+gaseous ones (lower left), and new stellar ones formed
+by secondary starburst (lower right).
+Each of the eight frames measures 35 kpc (2.0 in our units)
+on a side.
+Note that the stellar bar is well developed at
+this massive starburst epoch.
+</toccaption>
+    <caption><tag close=": ">Figure 3</tag>
+Mass distribution of the <Math mode="inline" tex="PP" text="P * P" xml:id="A0.F3.m7">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model projected
+onto <Math mode="inline" tex="x" text="x" xml:id="A0.F3.m8">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+        </XMath>
+      </Math>-<Math mode="inline" tex="y" text="y" xml:id="A0.F3.m9">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">y</XMTok>
+        </XMath>
+      </Math> plane (upper four frames) and <Math mode="inline" tex="x" text="x" xml:id="A0.F3.m10">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+        </XMath>
+      </Math>-<Math mode="inline" tex="z" text="z" xml:id="A0.F3.m11">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">z</XMTok>
+        </XMath>
+      </Math> one (lower four ones)
+at <Math mode="inline" tex="T" text="T" xml:id="A0.F3.m12">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">T</XMTok>
+        </XMath>
+      </Math> = 0.7 Gyr corresponding
+to the epoch of maximum starburst of the merger for total components
+(upper left),
+old stellar components initially located in two disks (upper right),
+gaseous ones (lower left), and new stellar ones formed
+by secondary starburst (lower right).
+Each of the eight frames measures 35 kpc (2.0 in our units)
+on a side.
+Note that the stellar bar is well developed at
+this massive starburst epoch.
+</caption>
+  </figure>
+<!--  %**** aap1.tex Line 1050 **** -->  <figure frefnum="Figure 4" labels="LABEL:fig-4" placement="htbp" refnum="4" xml:id="A0.F4">
+<!--  %“picplace–17cm˝ 
+     %“epsfile–file=fig1.gif.ps,height=17cm˝-->    <ERROR class="undefined">\epsfile</ERROR>
+    <p>file=afigrr.ps</p>
+    <toccaption><tag close=" ">4</tag>
+The same as Fig.3 but for the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F4.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model
+at <Math mode="inline" tex="T" text="T" xml:id="A0.F4.m2">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">T</XMTok>
+        </XMath>
+      </Math> = 1.6 Gyr. In this figure,
+each of the eight frames measures 3.5 kpc (0.2 in our units)
+on a side in order that the central structure
+can be more clearly seen for this <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F4.m3">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model.
+Note that two distinct cores can be seen only in the new stellar
+components formed by the star formation in the merger.
+</toccaption>
+    <caption><tag close=": ">Figure 4</tag>
+The same as Fig.3 but for the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F4.m4">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model
+at <Math mode="inline" tex="T" text="T" xml:id="A0.F4.m5">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">T</XMTok>
+        </XMath>
+      </Math> = 1.6 Gyr. In this figure,
+each of the eight frames measures 3.5 kpc (0.2 in our units)
+on a side in order that the central structure
+can be more clearly seen for this <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F4.m6">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model.
+Note that two distinct cores can be seen only in the new stellar
+components formed by the star formation in the merger.
+</caption>
+  </figure>
+  <figure frefnum="Figure 5" labels="LABEL:fig-5" placement="htbp" refnum="5" xml:id="A0.F5">
+<!--  %“picplace–5cm˝ -->    <ERROR class="undefined">\epsfile</ERROR>
+    <p>file=fig5.ps</p>
+    <toccaption><tag close=" ">5</tag>
+The upper panel shows the rest-frame SED (with the wavelength
+<!--  %**** aap1.tex Line 1075 **** -->less than <Math mode="inline" tex="10^{4}" text="10 ^ 4" xml:id="A0.F5.m1">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok meaning="10" role="NUMBER">10</XMTok>
+            <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> Å)
+of a galaxy merger at the epoch of
+its maximum starburst for <Math mode="inline" tex="all" text="a * l * l" xml:id="A0.F5.m2">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">a</XMTok>
+            <XMTok font="italic" role="UNKNOWN">l</XMTok>
+            <XMTok font="italic" role="UNKNOWN">l</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> stellar components
+in the <Math mode="inline" tex="PP" text="P * P" xml:id="A0.F5.m3">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model (solid line),
+and for those in the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F5.m4">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> one (dotted).
+For comparison, the SED of a merger without dust extinction and re-emission
+is also given for each of the two models in the lower panel.
+Here we can clearly
+see the effects of dust extinction and re-emission on the SED shape
+in a merger by comparing the upper panel
+and the lower one.
+Note that the difference in <Math mode="inline" tex="UV" text="U * V" xml:id="A0.F5.m5">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+            <XMTok font="italic" role="UNKNOWN">V</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> flux (<Math mode="inline" tex="\lambda&lt;3000" text="lambda less 3000" xml:id="A0.F5.m6">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+            <XMTok meaning="3000" role="NUMBER">3000</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> <Math mode="inline" tex="\rm\AA" text="Å" xml:id="A0.F5.m7">
+        <XMath>
+          <XMTok role="UNKNOWN">Å</XMTok>
+        </XMath>
+      </Math>)
+between models with
+and without dust extinction is larger in the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F5.m8">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model.
+This indicates that internal dust extinction at the epoch
+of maximum starburst (i.e., when a merger becomes an ULIRG)
+is the strongest in the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F5.m9">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model.
+</toccaption>
+    <caption><tag close=": ">Figure 5</tag>
+The upper panel shows the rest-frame SED (with the wavelength
+<!--  %**** aap1.tex Line 1075 **** -->less than <Math mode="inline" tex="10^{4}" text="10 ^ 4" xml:id="A0.F5.m10">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok meaning="10" role="NUMBER">10</XMTok>
+            <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> Å)
+of a galaxy merger at the epoch of
+its maximum starburst for <Math mode="inline" tex="all" text="a * l * l" xml:id="A0.F5.m11">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">a</XMTok>
+            <XMTok font="italic" role="UNKNOWN">l</XMTok>
+            <XMTok font="italic" role="UNKNOWN">l</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> stellar components
+in the <Math mode="inline" tex="PP" text="P * P" xml:id="A0.F5.m12">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model (solid line),
+and for those in the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F5.m13">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> one (dotted).
+For comparison, the SED of a merger without dust extinction and re-emission
+is also given for each of the two models in the lower panel.
+Here we can clearly
+see the effects of dust extinction and re-emission on the SED shape
+in a merger by comparing the upper panel
+and the lower one.
+Note that the difference in <Math mode="inline" tex="UV" text="U * V" xml:id="A0.F5.m14">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+            <XMTok font="italic" role="UNKNOWN">V</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> flux (<Math mode="inline" tex="\lambda&lt;3000" text="lambda less 3000" xml:id="A0.F5.m15">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+            <XMTok meaning="3000" role="NUMBER">3000</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> <Math mode="inline" tex="\rm\AA" text="Å" xml:id="A0.F5.m16">
+        <XMath>
+          <XMTok role="UNKNOWN">Å</XMTok>
+        </XMath>
+      </Math>)
+between models with
+and without dust extinction is larger in the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F5.m17">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model.
+This indicates that internal dust extinction at the epoch
+of maximum starburst (i.e., when a merger becomes an ULIRG)
+is the strongest in the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F5.m18">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model.
+</caption>
+  </figure>
+  <figure frefnum="Figure 6" labels="LABEL:fig-6" placement="htbp" refnum="6" xml:id="A0.F6">
+<!--  %“picplace–5cm˝ -->    <ERROR class="undefined">\epsfile</ERROR>
+    <p>file=fig6.ps
+<!--  %**** aap1.tex Line 1100 **** --></p>
+    <toccaption><tag close=" ">6</tag>
+The same as figure 5 but for stellar components within the central
+3.5 kpc of the merger in each of the two models.
+</toccaption>
+    <caption><tag close=": ">Figure 6</tag>
+The same as figure 5 but for stellar components within the central
+3.5 kpc of the merger in each of the two models.
+</caption>
+  </figure>
+  <figure frefnum="Figure 7" labels="LABEL:fig-7" placement="htbp" refnum="7" xml:id="A0.F7">
+<!--  %“picplace–5cm˝ 
+     %“epsfile–file=fig3.ps,height=17cm˝-->    <toccaption><tag close=" ">7</tag>
+The <Math mode="inline" tex="HST" text="H * S * T" xml:id="A0.F7.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">H</XMTok>
+            <XMTok font="italic" role="UNKNOWN">S</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> synthesized image of the <Math mode="inline" tex="PP" text="P * P" xml:id="A0.F7.m2">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>
+model (upper panel)
+and that of the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F7.m3">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> one (lower one)
+at the redshift z=0.4
+projected onto the <Math mode="inline" tex="x-y" text="x - y" xml:id="A0.F7.m4">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="minus" role="ADDOP">-</XMTok>
+            <XMTok font="italic" role="UNKNOWN">x</XMTok>
+            <XMTok font="italic" role="UNKNOWN">y</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> plane
+corresponding to the orbital plane of the merger
+for the <Math mode="inline" tex="HST" text="H * S * T" xml:id="A0.F7.m5">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">H</XMTok>
+            <XMTok font="italic" role="UNKNOWN">S</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> WFPC2 (F814W).
+<!--  %Here  $PP$ and $RR$ mean a nearly prograde-prograde galaxy merger 
+     %and a nearly retrograde-retrograde galaxy one,
+     %respectively.-->In this figure,
+the morphology of the merger at the epoch of the maximum starburst
+(<Math mode="inline" tex="T=0.7" text="T = 0.7" xml:id="A0.F7.m6">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+            <XMTok meaning="0.7" role="NUMBER">0.7</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> Gyr for the <Math mode="inline" tex="PP" text="P * P" xml:id="A0.F7.m7">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model and <Math mode="inline" tex="T" text="T" xml:id="A0.F7.m8">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">T</XMTok>
+        </XMath>
+      </Math> = 1.6 Gyr for the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F7.m9">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> one)
+<!--  %**** aap1.tex Line 1125 **** -->is described.
+The method to create this synthesized image is described
+in detail by Bekki et al. (1999).
+The exposure time for each synthesized morphology
+is set to be <Math mode="inline" tex="{10}^{4}" text="10 ^ 4" xml:id="A0.F7.m10">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok meaning="10" role="NUMBER">10</XMTok>
+            <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> sec (2000sec <Math mode="inline" tex="\times 5" text="absent * 5" xml:id="A0.F7.m11">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">×</XMTok>
+            <XMTok meaning="absent"/>
+            <XMTok meaning="5" role="NUMBER">5</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>) for
+the <Math mode="inline" tex="HST" text="H * S * T" xml:id="A0.F7.m12">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">H</XMTok>
+            <XMTok font="italic" role="UNKNOWN">S</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> WFPC2.
+Each frame measures <Math mode="inline" tex="{9.}^{\prime\prime}" xml:id="A0.F7.m13">
+        <XMath>
+          <XMTok meaning="9" role="NUMBER">9</XMTok>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok role="PERIOD">.</XMTok>
+            <XMTok fontsize="70%" name="prime2">′′</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>9
+corresponding to 63.7 kpc on a side and
+one pixel size is <Math mode="inline" tex="{0.}^{\prime\prime}" xml:id="A0.F7.m14">
+        <XMath>
+          <XMTok meaning="0" role="NUMBER">0</XMTok>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok role="PERIOD">.</XMTok>
+            <XMTok fontsize="70%" name="prime2">′′</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>1 for the WFPC2.
+<!--  %and $–0.˝^–“prime“prime˝$076  for the NIC2 (F160W). 
+     %In the cosmological parameters adopted in the present study ($“rm H˙–0˝$ = 50 km $–“rm s˝^–-1˝$
+     %$–“rm Mpc˝^–-1˝$ and $“rm q˙–0˝$ = 0.5),
+     %$–0.˝^–“prime“prime˝1$ (one pixel size) is 0.64  kpc for z=0.4, 0.85 kpc for z=1.0,
+     %and 0.82 kpc for z=1.5.--></toccaption>
+    <caption><tag close=": ">Figure 7</tag>
+The <Math mode="inline" tex="HST" text="H * S * T" xml:id="A0.F7.m15">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">H</XMTok>
+            <XMTok font="italic" role="UNKNOWN">S</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> synthesized image of the <Math mode="inline" tex="PP" text="P * P" xml:id="A0.F7.m16">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>
+model (upper panel)
+and that of the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F7.m17">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> one (lower one)
+at the redshift z=0.4
+projected onto the <Math mode="inline" tex="x-y" text="x - y" xml:id="A0.F7.m18">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="minus" role="ADDOP">-</XMTok>
+            <XMTok font="italic" role="UNKNOWN">x</XMTok>
+            <XMTok font="italic" role="UNKNOWN">y</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> plane
+corresponding to the orbital plane of the merger
+for the <Math mode="inline" tex="HST" text="H * S * T" xml:id="A0.F7.m19">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">H</XMTok>
+            <XMTok font="italic" role="UNKNOWN">S</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> WFPC2 (F814W).
+<!--  %Here  $PP$ and $RR$ mean a nearly prograde-prograde galaxy merger 
+     %and a nearly retrograde-retrograde galaxy one,
+     %respectively.-->In this figure,
+the morphology of the merger at the epoch of the maximum starburst
+(<Math mode="inline" tex="T=0.7" text="T = 0.7" xml:id="A0.F7.m20">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+            <XMTok meaning="0.7" role="NUMBER">0.7</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> Gyr for the <Math mode="inline" tex="PP" text="P * P" xml:id="A0.F7.m21">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> model and <Math mode="inline" tex="T" text="T" xml:id="A0.F7.m22">
+        <XMath>
+          <XMTok font="italic" role="UNKNOWN">T</XMTok>
+        </XMath>
+      </Math> = 1.6 Gyr for the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F7.m23">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> one)
+<!--  %**** aap1.tex Line 1125 **** -->is described.
+The method to create this synthesized image is described
+in detail by Bekki et al. (1999).
+The exposure time for each synthesized morphology
+is set to be <Math mode="inline" tex="{10}^{4}" text="10 ^ 4" xml:id="A0.F7.m24">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok meaning="10" role="NUMBER">10</XMTok>
+            <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> sec (2000sec <Math mode="inline" tex="\times 5" text="absent * 5" xml:id="A0.F7.m25">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">×</XMTok>
+            <XMTok meaning="absent"/>
+            <XMTok meaning="5" role="NUMBER">5</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>) for
+the <Math mode="inline" tex="HST" text="H * S * T" xml:id="A0.F7.m26">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">H</XMTok>
+            <XMTok font="italic" role="UNKNOWN">S</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> WFPC2.
+Each frame measures <Math mode="inline" tex="{9.}^{\prime\prime}" xml:id="A0.F7.m27">
+        <XMath>
+          <XMTok meaning="9" role="NUMBER">9</XMTok>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok role="PERIOD">.</XMTok>
+            <XMTok fontsize="70%" name="prime2">′′</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>9
+corresponding to 63.7 kpc on a side and
+one pixel size is <Math mode="inline" tex="{0.}^{\prime\prime}" xml:id="A0.F7.m28">
+        <XMath>
+          <XMTok meaning="0" role="NUMBER">0</XMTok>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok role="PERIOD">.</XMTok>
+            <XMTok fontsize="70%" name="prime2">′′</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>1 for the WFPC2.
+<!--  %and $–0.˝^–“prime“prime˝$076  for the NIC2 (F160W). 
+     %In the cosmological parameters adopted in the present study ($“rm H˙–0˝$ = 50 km $–“rm s˝^–-1˝$
+     %$–“rm Mpc˝^–-1˝$ and $“rm q˙–0˝$ = 0.5),
+     %$–0.˝^–“prime“prime˝1$ (one pixel size) is 0.64  kpc for z=0.4, 0.85 kpc for z=1.0,
+     %and 0.82 kpc for z=1.5.--></caption>
+  </figure>
+  <figure frefnum="Figure 8" labels="LABEL:fig-8" placement="htbp" refnum="8" xml:id="A0.F8">
+<!--  %“picplace–5cm˝ 
+     %“epsfile–file=fig4.ps,height=17cm˝-->    <toccaption><tag close=" ">8</tag>
+The <Math mode="inline" tex="HST" text="H * S * T" xml:id="A0.F8.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">H</XMTok>
+            <XMTok font="italic" role="UNKNOWN">S</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> synthesized image of the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F8.m2">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>
+model at the redshift z=0.4 (upper)
+and 1.0 (lower) for the <Math mode="inline" tex="HST" text="H * S * T" xml:id="A0.F8.m3">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">H</XMTok>
+            <XMTok font="italic" role="UNKNOWN">S</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> NIC2 (F160W).
+<!--  %**** aap1.tex Line 1150 **** -->In this figure,
+the morphology of the merger at the epoch of the maximum starburst
+(<Math mode="inline" tex="T=1.6" text="T = 1.6" xml:id="A0.F8.m4">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+            <XMTok meaning="1.6" role="NUMBER">1.6</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> Gyr) is described.
+The exposure time for each synthesized morphology
+is the same as that of the WFPC2 (<Math mode="inline" tex="{10}^{4}" text="10 ^ 4" xml:id="A0.F8.m5">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok meaning="10" role="NUMBER">10</XMTok>
+            <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> sec) in Fig.3.
+Each frame measures <Math mode="inline" tex="{9.}^{\prime\prime}" xml:id="A0.F8.m6">
+        <XMath>
+          <XMTok meaning="9" role="NUMBER">9</XMTok>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok role="PERIOD">.</XMTok>
+            <XMTok fontsize="70%" name="prime2">′′</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>9
+(corresponding to 63.7 kpc) on a side and
+one pixel size is
+<Math mode="inline" tex="{0.}^{\prime\prime}" xml:id="A0.F8.m7">
+        <XMath>
+          <XMTok meaning="0" role="NUMBER">0</XMTok>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok role="PERIOD">.</XMTok>
+            <XMTok fontsize="70%" name="prime2">′′</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>076 for the NIC2.
+<!--  %In the cosmological parameters adopted in the present study ($“rm H˙–0˝$ = 50 km $–“rm s˝^–-1˝$ 
+     %$–“rm Mpc˝^–-1˝$ and $“rm q˙–0˝$ = 0.5),
+     %$–0.˝^–“prime“prime˝1$ (one pixel size) is 0.64  kpc for z=0.4, 0.85 kpc for z=1.0,
+     %and 0.82 kpc for z=1.5.--></toccaption>
+    <caption><tag close=": ">Figure 8</tag>
+The <Math mode="inline" tex="HST" text="H * S * T" xml:id="A0.F8.m8">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">H</XMTok>
+            <XMTok font="italic" role="UNKNOWN">S</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> synthesized image of the <Math mode="inline" tex="RR" text="R * R" xml:id="A0.F8.m9">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>
+model at the redshift z=0.4 (upper)
+and 1.0 (lower) for the <Math mode="inline" tex="HST" text="H * S * T" xml:id="A0.F8.m10">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">H</XMTok>
+            <XMTok font="italic" role="UNKNOWN">S</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> NIC2 (F160W).
+<!--  %**** aap1.tex Line 1150 **** -->In this figure,
+the morphology of the merger at the epoch of the maximum starburst
+(<Math mode="inline" tex="T=1.6" text="T = 1.6" xml:id="A0.F8.m11">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+            <XMTok meaning="1.6" role="NUMBER">1.6</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> Gyr) is described.
+The exposure time for each synthesized morphology
+is the same as that of the WFPC2 (<Math mode="inline" tex="{10}^{4}" text="10 ^ 4" xml:id="A0.F8.m12">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok meaning="10" role="NUMBER">10</XMTok>
+            <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> sec) in Fig.3.
+Each frame measures <Math mode="inline" tex="{9.}^{\prime\prime}" xml:id="A0.F8.m13">
+        <XMath>
+          <XMTok meaning="9" role="NUMBER">9</XMTok>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok role="PERIOD">.</XMTok>
+            <XMTok fontsize="70%" name="prime2">′′</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>9
+(corresponding to 63.7 kpc) on a side and
+one pixel size is
+<Math mode="inline" tex="{0.}^{\prime\prime}" xml:id="A0.F8.m14">
+        <XMath>
+          <XMTok meaning="0" role="NUMBER">0</XMTok>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok role="PERIOD">.</XMTok>
+            <XMTok fontsize="70%" name="prime2">′′</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>076 for the NIC2.
+<!--  %In the cosmological parameters adopted in the present study ($“rm H˙–0˝$ = 50 km $–“rm s˝^–-1˝$ 
+     %$–“rm Mpc˝^–-1˝$ and $“rm q˙–0˝$ = 0.5),
+     %$–0.˝^–“prime“prime˝1$ (one pixel size) is 0.64  kpc for z=0.4, 0.85 kpc for z=1.0,
+     %and 0.82 kpc for z=1.5.--></caption>
+  </figure>
+</document>

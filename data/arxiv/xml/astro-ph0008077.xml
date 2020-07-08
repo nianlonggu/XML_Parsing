@@ -1,0 +1,2217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008077.1"?>
+<!--  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --><!--  %% --><!--  %% ws-p10x7.tex : 07-12-98 ver. 1.0. --><!--  %% This Latex2e file rewritten by R. Sankaran from various sources for use --><!--  %% in the preparation of the two-column proceedings volume, for trim --><!--  %% size [10x7] to be published by World Scientific by with acknowledgements --><!--  %% to Susan Hezlet and Lukas Nellen. --><!--  %% --><!--  %% Please forward modifications required and comments to:rsanka@wspc.com.sg --><!--  %% --><!--  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --><!--  %% --><?latexml class="ws-p10x7mio"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>Study of Hadronic Decays of the Z Boson at LEP</title>
+  <creator role="author">
+    <personname>Alessandro de Angelis</personname>
+    <contact role="address">
+Dipartimento di Fisica dell’Università di Udine and INFN Trieste, Via delle Scienze 208, I-33100 Udine, Italy – E-mail: deangelis@ud.infn.it</contact>
+  </creator>
+<!--  %**** zmio.tex Line 25 **** -->  <section refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>Introduction</title>
+<!--  %1 -->    <para xml:id="S1.p1">
+      <p>Each of the four LEP experiments has recorded around 4 million hadronic Z
+decays, mostly in the period between 1990 and 1995. The analysis
+of the main physics topics on this subject has been essentially completed,
+but a few specific points are still under investigation, especially in the QCD sector.</p>
+    </para>
+    <para xml:id="S1.p2">
+      <p>This report summarizes four recent papers
+on the characteristics of the hadronic decays of the Z,
+submitted to this conference
+by the LEP collaborations
+OPAL<cite class="ltx_citemacro_cite">[<bibref bibrefs="opal" separator="," show="Refnum" yyseparator=","/>]</cite>,
+ALEPH<cite class="ltx_citemacro_cite">[<bibref bibrefs="alepho,alepha" separator="," show="Refnum" yyseparator=","/>]</cite>
+and DELPHI<cite class="ltx_citemacro_cite">[<bibref bibrefs="delphi" separator="," show="Refnum" yyseparator=","/>]</cite>.</p>
+    </para>
+  </section>
+  <section refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>Charged multiplicities in Z decays
+into u, d, and s quarks</title>
+<!--  %**** zmio.tex Line 50 **** -->    <para xml:id="S2.p1">
+      <p>Flavour independence is a fundamental property of
+QCD: a breaking of the flavour symmetry should only occur due to
+(calculable) mass effects.
+An observable for testing flavour independence is the multiplicity of charged
+hadrons in jets originating from quarks of a specific flavour.
+For the light (<Math mode="inline" tex="u" text="u" xml:id="S2.p1.m1">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">u</XMTok>
+          </XMath>
+        </Math>, <Math mode="inline" tex="d" text="d" xml:id="S2.p1.m2">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">d</XMTok>
+          </XMath>
+        </Math>, and
+<Math mode="inline" tex="s" text="s" xml:id="S2.p1.m3">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">s</XMTok>
+          </XMath>
+        </Math>) quarks the mass effects are expected to be
+negligible at LEP energies<cite class="ltx_citemacro_cite">[<bibref bibrefs="ale" separator="," show="Refnum" yyseparator=","/>]</cite>.</p>
+    </para>
+    <para xml:id="S2.p2">
+      <p>OPAL<cite class="ltx_citemacro_cite">[<bibref bibrefs="opal" separator="," show="Refnum" yyseparator=","/>]</cite> presents a new, high statistics investigation of the
+flavour dependence
+of the strong interaction based on the mean charged multiplicity determined separately
+for events of primary <Math mode="inline" tex="u" text="u" xml:id="S2.p2.m1">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">u</XMTok>
+          </XMath>
+        </Math>, <Math mode="inline" tex="d" text="d" xml:id="S2.p2.m2">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">d</XMTok>
+          </XMath>
+        </Math>, <Math mode="inline" tex="s" text="s" xml:id="S2.p2.m3">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">s</XMTok>
+          </XMath>
+        </Math> quarks in hadronic Z decays.</p>
+    </para>
+    <para xml:id="S2.p3">
+      <p>In order to identify the flavour of the primary quark,
+the leading particle
+effect is exploited. This effect is based on the correlation between the flavour of the primary
+quark and the type of the hadron carrying the largest momentum.
+Three different selections are based on K<Math mode="inline" tex="{}^{0}_{S}" text="^ 0 absent _ S" xml:id="S2.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="pre2"/>
+                <XMTok meaning="absent"/>
+                <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+              </XMApp>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">S</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, K<Math mode="inline" tex="{}^{\pm}" text="^plus-or-minus" xml:id="S2.p3.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+and
+highly energetic charged particles. Leading K<Math mode="inline" tex="{}^{0}_{S}" text="^ 0 absent _ S" xml:id="S2.p3.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="pre2"/>
+                <XMTok meaning="absent"/>
+                <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+              </XMApp>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">S</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and
+K<Math mode="inline" tex="{}^{\pm}" text="^plus-or-minus" xml:id="S2.p3.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> are likely to contain
+a primary <Math mode="inline" tex="s" text="s" xml:id="S2.p3.m5">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">s</XMTok>
+          </XMath>
+        </Math> quark from the Z decay.
+To a lesser extent, due to the requirement
+of <Math mode="inline" tex="s\bar{s}" text="s * bar@(s)" xml:id="S2.p3.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">s</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok font="italic" role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> quark pair creation during hadronization, leading K<Math mode="inline" tex="{}^{0}_{S}" text="^ 0 absent _ S" xml:id="S2.p3.m7">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="pre2"/>
+                <XMTok meaning="absent"/>
+                <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+              </XMApp>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">S</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and
+<!--  %**** zmio.tex Line 75 **** -->K<Math mode="inline" tex="{}^{\pm}" text="^plus-or-minus" xml:id="S2.p3.m8">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+should also emerge
+from primary <Math mode="inline" tex="d" text="d" xml:id="S2.p3.m9">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">d</XMTok>
+          </XMath>
+        </Math> and <Math mode="inline" tex="u" text="u" xml:id="S2.p3.m10">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">u</XMTok>
+          </XMath>
+        </Math> quarks, respectively.
+In a sample with large momentum (non identified) charged particles,
+events of primary <Math mode="inline" tex="u" text="u" xml:id="S2.p3.m11">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">u</XMTok>
+          </XMath>
+        </Math>, <Math mode="inline" tex="d" text="d" xml:id="S2.p3.m12">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">d</XMTok>
+          </XMath>
+        </Math> and <Math mode="inline" tex="s" text="s" xml:id="S2.p3.m13">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">s</XMTok>
+          </XMath>
+        </Math> quarks are expected to
+be found in approximately equal proportions.</p>
+    </para>
+    <para xml:id="S2.p4">
+      <p>By requiring a K<Math mode="inline" tex="{}^{0}_{S}" text="^ 0 absent _ S" xml:id="S2.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="pre2"/>
+                <XMTok meaning="absent"/>
+                <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+              </XMApp>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">S</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> with momentum fraction
+<Math mode="inline" tex="x_{p}=p/p_{beam}" text="x _ p = p / p _ (b * e * a * m)" xml:id="S2.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">a</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> larger than 0.4, 19,359 events are
+selected with 58% Z<Math mode="inline" tex="\rightarrow s\bar{s}" text="absent rightarrow s * bar@(s)" xml:id="S2.p4.m3">
+          <XMath>
+            <XMApp>
+              <XMTok name="rightarrow" role="ARROW">→</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                <XMApp>
+                  <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and 16% Z<Math mode="inline" tex="\rightarrow d\bar{d}" text="absent rightarrow d * bar@(d)" xml:id="S2.p4.m4">
+          <XMath>
+            <XMApp>
+              <XMTok name="rightarrow" role="ARROW">→</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">d</XMTok>
+                <XMApp>
+                  <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">d</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.
+By requiring a K<Math mode="inline" tex="{}^{\pm}" text="^plus-or-minus" xml:id="S2.p4.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> with <Math mode="inline" tex="x_{p}&gt;0.5" text="x _ p &gt; 0.5" xml:id="S2.p4.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+              </XMApp>
+              <XMTok meaning="0.5" role="NUMBER">0.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, 18,979 events are
+selected with 54% Z<Math mode="inline" tex="\rightarrow s\bar{s}" text="absent rightarrow s * bar@(s)" xml:id="S2.p4.m7">
+          <XMath>
+            <XMApp>
+              <XMTok name="rightarrow" role="ARROW">→</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                <XMApp>
+                  <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and 22% Z<Math mode="inline" tex="\rightarrow u\bar{u}" text="absent rightarrow u * bar@(u)" xml:id="S2.p4.m8">
+          <XMath>
+            <XMApp>
+              <XMTok name="rightarrow" role="ARROW">→</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                <XMApp>
+                  <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.
+By requiring a charged particle with <Math mode="inline" tex="x_{p}&gt;0.7" text="x _ p &gt; 0.7" xml:id="S2.p4.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+              </XMApp>
+              <XMTok meaning="0.7" role="NUMBER">0.7</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, 27,909 events are
+selected almost equally populated in
+<Math mode="inline" tex="u\bar{u}" text="u * bar@(u)" xml:id="S2.p4.m10">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">u</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok font="italic" role="UNKNOWN">u</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, <Math mode="inline" tex="d\bar{d}" text="d * bar@(d)" xml:id="S2.p4.m11">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">d</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok font="italic" role="UNKNOWN">d</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="s\bar{s}" text="s * bar@(s)" xml:id="S2.p4.m12">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">s</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok font="italic" role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, but with only 4% heavy quarks.
+<!--  %Such compositions are computed from Monte Carlo, 
+     %but cross checked by exploiting the double tag between the hemispheres with
+     %respect to the thrust axis.--></p>
+    </para>
+    <para xml:id="S2.p5">
+      <p>The presence of a large momentum particle biases the multiplicity. To reduce this bias,
+the multiplicity measurement was performed in the hemisphere opposite to
+the one containing the particle used for the
+tagging.
+The final
+corrected multiplicities are
+<!--  %**** zmio.tex Line 100 **** --></p>
+      <equationgroup class="ltx_eqn_eqnarray" xml:id="A0.EGx1">
+        <equation xml:id="S2.Ex1">
+          <MathFork>
+            <Math tex="\displaystyle&lt;n&gt;_{u\bar{u}}=17.77\pm 0.52(stat)^{+0.86}_{-1.20}(sys)" text="(expectation@(n)) _ (u * bar@(u)) = 17.77 plus-or-minus 0.52 * ((s * t * a * t) ^ (+ 0.86)) _ (- 1.20) * s * y * s" xml:id="S2.Ex1.m4">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="expectation"/>
+                        <XMRef idref="S2.Ex1.m4.1"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok meaning="less-than" role="OPEN">&lt;</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="S2.Ex1.m4.1">n</XMTok>
+                        <XMTok meaning="greater-than" role="CLOSE">&gt;</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">u</XMTok>
+                      <XMApp>
+                        <XMTok fontsize="70%" name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">u</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                    <XMTok meaning="17.77" role="NUMBER">17.77</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok meaning="0.52" role="NUMBER">0.52</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post8"/>
+                          <XMDual>
+                            <XMRef idref="S2.Ex1.m4.2"/>
+                            <XMWrap>
+                              <XMTok role="OPEN" stretchy="false">(</XMTok>
+                              <XMApp xml:id="S2.Ex1.m4.2">
+                                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">a</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                              </XMApp>
+                              <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                            </XMWrap>
+                          </XMDual>
+                          <XMApp>
+                            <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                            <XMTok fontsize="70%" meaning="0.86" role="NUMBER">0.86</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                          <XMTok fontsize="70%" meaning="1.20" role="NUMBER">1.20</XMTok>
+                        </XMApp>
+                      </XMApp>
+                      <XMDual>
+                        <XMRef idref="S2.Ex1.m4.3"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="false">(</XMTok>
+                          <XMApp xml:id="S2.Ex1.m4.3">
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>
+            <MathBranch>
+              <tr>
+                <td align="right"><Math mode="inline" tex="\displaystyle&lt;n&gt;_{u\bar{u}}" text="(expectation@(n)) _ (u * bar@(u))" xml:id="S2.Ex1.m1">
+                    <XMath>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                        <XMDual>
+                          <XMApp>
+                            <XMTok meaning="expectation"/>
+                            <XMRef idref="S2.Ex1.m1.1"/>
+                          </XMApp>
+                          <XMWrap>
+                            <XMTok meaning="less-than" role="OPEN">&lt;</XMTok>
+                            <XMTok font="italic" role="UNKNOWN" xml:id="S2.Ex1.m1.1">n</XMTok>
+                            <XMTok meaning="greater-than" role="CLOSE">&gt;</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">u</XMTok>
+                          <XMApp>
+                            <XMTok fontsize="70%" name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">u</XMTok>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                    </XMath>
+                  </Math></td>
+                <td align="center"><Math mode="inline" tex="\displaystyle=" text="=" xml:id="S2.Ex1.m2">
+                    <XMath>
+                      <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    </XMath>
+                  </Math></td>
+                <td align="left"><Math mode="inline" tex="\displaystyle 17.77\pm 0.52(stat)^{+0.86}_{-1.20}(sys)" text="17.77 plus-or-minus 0.52 * ((s * t * a * t) ^ (+ 0.86)) _ (- 1.20) * s * y * s" xml:id="S2.Ex1.m3">
+                    <XMath>
+                      <XMApp>
+                        <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                        <XMTok meaning="17.77" role="NUMBER">17.77</XMTok>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok meaning="0.52" role="NUMBER">0.52</XMTok>
+                          <XMApp>
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                            <XMApp>
+                              <XMTok role="SUPERSCRIPTOP" scriptpos="post8"/>
+                              <XMDual>
+                                <XMRef idref="S2.Ex1.m3.1"/>
+                                <XMWrap>
+                                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                  <XMApp xml:id="S2.Ex1.m3.1">
+                                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">a</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                                  </XMApp>
+                                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                                </XMWrap>
+                              </XMDual>
+                              <XMApp>
+                                <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                                <XMTok fontsize="70%" meaning="0.86" role="NUMBER">0.86</XMTok>
+                              </XMApp>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                              <XMTok fontsize="70%" meaning="1.20" role="NUMBER">1.20</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMDual>
+                            <XMRef idref="S2.Ex1.m3.2"/>
+                            <XMWrap>
+                              <XMTok role="OPEN" stretchy="false">(</XMTok>
+                              <XMApp xml:id="S2.Ex1.m3.2">
+                                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                              </XMApp>
+                              <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                            </XMWrap>
+                          </XMDual>
+                        </XMApp>
+                      </XMApp>
+                    </XMath>
+                  </Math></td>
+              </tr>
+            </MathBranch>
+          </MathFork>
+        </equation>
+        <equation xml:id="S2.Ex2">
+          <MathFork>
+            <Math tex="\displaystyle&lt;n&gt;_{d\bar{d}}=21.44\pm 0.69(stat)^{+1.46}_{-1.17}(sys)" text="(expectation@(n)) _ (d * bar@(d)) = 21.44 plus-or-minus 0.69 * ((s * t * a * t) ^ (+ 1.46)) _ (- 1.17) * s * y * s" xml:id="S2.Ex2.m4">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="expectation"/>
+                        <XMRef idref="S2.Ex2.m4.1"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok meaning="less-than" role="OPEN">&lt;</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="S2.Ex2.m4.1">n</XMTok>
+                        <XMTok meaning="greater-than" role="CLOSE">&gt;</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">d</XMTok>
+                      <XMApp>
+                        <XMTok fontsize="70%" name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">d</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                    <XMTok meaning="21.44" role="NUMBER">21.44</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok meaning="0.69" role="NUMBER">0.69</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post8"/>
+                          <XMDual>
+                            <XMRef idref="S2.Ex2.m4.2"/>
+                            <XMWrap>
+                              <XMTok role="OPEN" stretchy="false">(</XMTok>
+                              <XMApp xml:id="S2.Ex2.m4.2">
+                                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">a</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                              </XMApp>
+                              <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                            </XMWrap>
+                          </XMDual>
+                          <XMApp>
+                            <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                            <XMTok fontsize="70%" meaning="1.46" role="NUMBER">1.46</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                          <XMTok fontsize="70%" meaning="1.17" role="NUMBER">1.17</XMTok>
+                        </XMApp>
+                      </XMApp>
+                      <XMDual>
+                        <XMRef idref="S2.Ex2.m4.3"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="false">(</XMTok>
+                          <XMApp xml:id="S2.Ex2.m4.3">
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>
+            <MathBranch>
+              <tr>
+                <td align="right"><Math mode="inline" tex="\displaystyle&lt;n&gt;_{d\bar{d}}" text="(expectation@(n)) _ (d * bar@(d))" xml:id="S2.Ex2.m1">
+                    <XMath>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                        <XMDual>
+                          <XMApp>
+                            <XMTok meaning="expectation"/>
+                            <XMRef idref="S2.Ex2.m1.1"/>
+                          </XMApp>
+                          <XMWrap>
+                            <XMTok meaning="less-than" role="OPEN">&lt;</XMTok>
+                            <XMTok font="italic" role="UNKNOWN" xml:id="S2.Ex2.m1.1">n</XMTok>
+                            <XMTok meaning="greater-than" role="CLOSE">&gt;</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">d</XMTok>
+                          <XMApp>
+                            <XMTok fontsize="70%" name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">d</XMTok>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                    </XMath>
+                  </Math></td>
+                <td align="center"><Math mode="inline" tex="\displaystyle=" text="=" xml:id="S2.Ex2.m2">
+                    <XMath>
+                      <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    </XMath>
+                  </Math></td>
+                <td align="left"><Math mode="inline" tex="\displaystyle 21.44\pm 0.69(stat)^{+1.46}_{-1.17}(sys)" text="21.44 plus-or-minus 0.69 * ((s * t * a * t) ^ (+ 1.46)) _ (- 1.17) * s * y * s" xml:id="S2.Ex2.m3">
+                    <XMath>
+                      <XMApp>
+                        <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                        <XMTok meaning="21.44" role="NUMBER">21.44</XMTok>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok meaning="0.69" role="NUMBER">0.69</XMTok>
+                          <XMApp>
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                            <XMApp>
+                              <XMTok role="SUPERSCRIPTOP" scriptpos="post8"/>
+                              <XMDual>
+                                <XMRef idref="S2.Ex2.m3.1"/>
+                                <XMWrap>
+                                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                  <XMApp xml:id="S2.Ex2.m3.1">
+                                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">a</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                                  </XMApp>
+                                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                                </XMWrap>
+                              </XMDual>
+                              <XMApp>
+                                <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                                <XMTok fontsize="70%" meaning="1.46" role="NUMBER">1.46</XMTok>
+                              </XMApp>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                              <XMTok fontsize="70%" meaning="1.17" role="NUMBER">1.17</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMDual>
+                            <XMRef idref="S2.Ex2.m3.2"/>
+                            <XMWrap>
+                              <XMTok role="OPEN" stretchy="false">(</XMTok>
+                              <XMApp xml:id="S2.Ex2.m3.2">
+                                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                              </XMApp>
+                              <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                            </XMWrap>
+                          </XMDual>
+                        </XMApp>
+                      </XMApp>
+                    </XMath>
+                  </Math></td>
+              </tr>
+            </MathBranch>
+          </MathFork>
+        </equation>
+        <equation xml:id="S2.Ex3">
+          <MathFork>
+            <Math tex="\displaystyle&lt;n&gt;_{d\bar{s}}=20.02\pm 0.14(stat)^{+0.39}_{-0.37}(sys)\,," text="(expectation@(n)) _ (d * bar@(s)) = 20.02 plus-or-minus 0.14 * ((s * t * a * t) ^ (+ 0.39)) _ (- 0.37) * s * y * s" xml:id="S2.Ex3.m4">
+              <XMath>
+                <XMDual>
+                  <XMRef idref="S2.Ex3.m4.2"/>
+                  <XMWrap>
+                    <XMApp xml:id="S2.Ex3.m4.2">
+                      <XMTok meaning="equals" role="RELOP">=</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                        <XMDual>
+                          <XMApp>
+                            <XMTok meaning="expectation"/>
+                            <XMRef idref="S2.Ex3.m4.1"/>
+                          </XMApp>
+                          <XMWrap>
+                            <XMTok meaning="less-than" role="OPEN">&lt;</XMTok>
+                            <XMTok font="italic" role="UNKNOWN" xml:id="S2.Ex3.m4.1">n</XMTok>
+                            <XMTok meaning="greater-than" role="CLOSE">&gt;</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">d</XMTok>
+                          <XMApp>
+                            <XMTok fontsize="70%" name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                        <XMTok meaning="20.02" role="NUMBER">20.02</XMTok>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok meaning="0.14" role="NUMBER">0.14</XMTok>
+                          <XMApp>
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                            <XMApp>
+                              <XMTok role="SUPERSCRIPTOP" scriptpos="post8"/>
+                              <XMDual>
+                                <XMRef idref="S2.Ex3.m4.2.1"/>
+                                <XMWrap>
+                                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                  <XMApp xml:id="S2.Ex3.m4.2.1">
+                                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">a</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                                  </XMApp>
+                                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                                </XMWrap>
+                              </XMDual>
+                              <XMApp>
+                                <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                                <XMTok fontsize="70%" meaning="0.39" role="NUMBER">0.39</XMTok>
+                              </XMApp>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                              <XMTok fontsize="70%" meaning="0.37" role="NUMBER">0.37</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMDual>
+                            <XMRef idref="S2.Ex3.m4.2.2"/>
+                            <XMWrap>
+                              <XMTok role="OPEN" stretchy="false">(</XMTok>
+                              <XMApp xml:id="S2.Ex3.m4.2.2">
+                                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                              </XMApp>
+                              <XMTok role="CLOSE" rpadding="1.7pt" stretchy="false">)</XMTok>
+                            </XMWrap>
+                          </XMDual>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok role="PUNCT">,</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMath>
+            </Math>
+            <MathBranch>
+              <tr>
+                <td align="right"><Math mode="inline" tex="\displaystyle&lt;n&gt;_{d\bar{s}}" text="(expectation@(n)) _ (d * bar@(s))" xml:id="S2.Ex3.m1">
+                    <XMath>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                        <XMDual>
+                          <XMApp>
+                            <XMTok meaning="expectation"/>
+                            <XMRef idref="S2.Ex3.m1.1"/>
+                          </XMApp>
+                          <XMWrap>
+                            <XMTok meaning="less-than" role="OPEN">&lt;</XMTok>
+                            <XMTok font="italic" role="UNKNOWN" xml:id="S2.Ex3.m1.1">n</XMTok>
+                            <XMTok meaning="greater-than" role="CLOSE">&gt;</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">d</XMTok>
+                          <XMApp>
+                            <XMTok fontsize="70%" name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                    </XMath>
+                  </Math></td>
+                <td align="center"><Math mode="inline" tex="\displaystyle=" text="=" xml:id="S2.Ex3.m2">
+                    <XMath>
+                      <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    </XMath>
+                  </Math></td>
+                <td align="left"><Math mode="inline" tex="\displaystyle 20.02\pm 0.14(stat)^{+0.39}_{-0.37}(sys)\,," text="20.02 plus-or-minus 0.14 * ((s * t * a * t) ^ (+ 0.39)) _ (- 0.37) * s * y * s" xml:id="S2.Ex3.m3">
+                    <XMath>
+                      <XMDual>
+                        <XMRef idref="S2.Ex3.m3.1"/>
+                        <XMWrap>
+                          <XMApp xml:id="S2.Ex3.m3.1">
+                            <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                            <XMTok meaning="20.02" role="NUMBER">20.02</XMTok>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok meaning="0.14" role="NUMBER">0.14</XMTok>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                                <XMApp>
+                                  <XMTok role="SUPERSCRIPTOP" scriptpos="post8"/>
+                                  <XMDual>
+                                    <XMRef idref="S2.Ex3.m3.1.1"/>
+                                    <XMWrap>
+                                      <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                      <XMApp xml:id="S2.Ex3.m3.1.1">
+                                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                        <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                                        <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                                        <XMTok font="italic" role="UNKNOWN">a</XMTok>
+                                        <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                                      </XMApp>
+                                      <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                                    </XMWrap>
+                                  </XMDual>
+                                  <XMApp>
+                                    <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                                    <XMTok fontsize="70%" meaning="0.39" role="NUMBER">0.39</XMTok>
+                                  </XMApp>
+                                </XMApp>
+                                <XMApp>
+                                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                                  <XMTok fontsize="70%" meaning="0.37" role="NUMBER">0.37</XMTok>
+                                </XMApp>
+                              </XMApp>
+                              <XMDual>
+                                <XMRef idref="S2.Ex3.m3.1.2"/>
+                                <XMWrap>
+                                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                  <XMApp xml:id="S2.Ex3.m3.1.2">
+                                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                                  </XMApp>
+                                  <XMTok role="CLOSE" rpadding="1.7pt" stretchy="false">)</XMTok>
+                                </XMWrap>
+                              </XMDual>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok role="PUNCT">,</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMath>
+                  </Math></td>
+              </tr>
+            </MathBranch>
+          </MathFork>
+        </equation>
+      </equationgroup>
+      <p>where the <Math mode="inline" tex="u\bar{u}" text="u * bar@(u)" xml:id="S2.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">u</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok font="italic" role="UNKNOWN">u</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="d\bar{d}" text="d * bar@(d)" xml:id="S2.p5.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">d</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok font="italic" role="UNKNOWN">d</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> multiplicities are
+statistically anti­correlated (about -89%). The systematic error is dominated by uncertainties
+on the fragmentation.
+The multiplicities are consistent
+in <Math mode="inline" tex="1.8\sigma" text="1.8 * sigma" xml:id="S2.p5.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok meaning="1.8" role="NUMBER">1.8</XMTok>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> for the <Math mode="inline" tex="ud" text="u * d" xml:id="S2.p5.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">u</XMTok>
+              <XMTok font="italic" role="UNKNOWN">d</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> case,
+in <Math mode="inline" tex="1.5\sigma" text="1.5 * sigma" xml:id="S2.p5.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok meaning="1.5" role="NUMBER">1.5</XMTok>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> for <Math mode="inline" tex="us" text="u * s" xml:id="S2.p5.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">u</XMTok>
+              <XMTok font="italic" role="UNKNOWN">s</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, and in <Math mode="inline" tex="0.9\sigma" text="0.9 * sigma" xml:id="S2.p5.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok meaning="0.9" role="NUMBER">0.9</XMTok>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> for <Math mode="inline" tex="ds" text="d * s" xml:id="S2.p5.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">d</XMTok>
+              <XMTok font="italic" role="UNKNOWN">s</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>.
+The world average of the charge multiplicity<cite class="ltx_citemacro_cite">[<bibref bibrefs="pdg" separator="," show="Refnum" yyseparator=","/>]</cite> (for all flavours)
+is <Math mode="inline" tex="21.07\pm 0.11" text="21.07 plus-or-minus 0.11" xml:id="S2.p5.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              <XMTok meaning="21.07" role="NUMBER">21.07</XMTok>
+              <XMTok meaning="0.11" role="NUMBER">0.11</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>.</p>
+    </para>
+    <para xml:id="S2.p6">
+      <p>The multiplicities were transformed into <Math mode="inline" tex="\alpha_{S}" text="alpha _ S" xml:id="S2.p6.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">S</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> ratios using a
+NLLA calculation<cite class="ltx_citemacro_cite">[<bibref bibrefs="webber" separator="," show="Refnum" yyseparator=","/>]</cite>.
+Ratios of <Math mode="inline" tex="\alpha_{S}" text="alpha _ S" xml:id="S2.p6.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">S</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+for the light quark flavours
+were found consistent with 1
+at a precision of 5 to 9%, superior to earlier
+investigations.</p>
+    </para>
+  </section>
+  <section refnum="3" xml:id="S3">
+    <title><tag close=" ">3</tag>Results on identified hadrons</title>
+<!--  %**** zmio.tex Line 125 **** -->    <para xml:id="S3.p1">
+      <p>The description of the hadronization process in QCD
+is connected with
+confinement and requires nonperturbative
+methods which are not available.
+Measurements of identified hadron spectra in
+<Math mode="inline" tex="e^{+}e^{-}" text="e ^ + * e ^ -" xml:id="S3.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+improve the understanding of hadronization, and
+allow tuning the free parameters in the
+QCD inspired Monte Carlo models.
+Being closer to the main event,
+vectors and higher order resonances are of particular interest.</p>
+    </para>
+    <para xml:id="S3.p2">
+      <p>More insights into the hadronization process may be obtained from the analysis
+of quark and gluon jets separately.</p>
+    </para>
+    <subsection refnum="3.1" xml:id="S3.SS1">
+      <title><tag close=" ">3.1</tag>Production of <Math mode="inline" tex="\omega(782)" text="omega * 782" xml:id="S3.SS1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" name="omega" role="UNKNOWN">ω</XMTok>
+              <XMDual>
+                <XMRef idref="S3.SS1.m1.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMTok meaning="782" role="NUMBER" xml:id="S3.SS1.m1.1">782</XMTok>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math></title>
+      <para xml:id="S3.SS1.p1">
+        <p>ALEPH<cite class="ltx_citemacro_cite">[<bibref bibrefs="alepho" separator="," show="Refnum" yyseparator=","/>]</cite> presents
+a measurement of the inclusive momentum distributions
+of the <Math mode="inline" tex="\omega(782)" text="omega * 782" xml:id="S3.SS1.p1.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" name="omega" role="UNKNOWN">ω</XMTok>
+                <XMDual>
+                  <XMRef idref="S3.SS1.p1.m1.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMTok meaning="782" role="NUMBER" xml:id="S3.SS1.p1.m1.1">782</XMTok>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+            </XMath>
+          </Math> meson.
+The <Math mode="inline" tex="\omega" text="omega" xml:id="S3.SS1.p1.m2">
+            <XMath>
+              <XMTok font="italic" name="omega" role="UNKNOWN">ω</XMTok>
+            </XMath>
+          </Math> cross section is extracted using the invariant mass
+distribution of <Math mode="inline" tex="\pi^{+}\pi^{-}\pi^{0}" text="pi ^ + * pi ^ - * pi ^ 0" xml:id="S3.SS1.p1.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                  <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> triplets.
+<!--  %Figure “ref–aleph1˝ shows the differential momentum spectrum 
+     %measured for the
+     %**** zmio.tex Line 150 ****
+     %$“omega$, compared to the predictions from JETSET“cite–lund˝ and
+     %HERWIG“cite–herwig˝.
+     %“begin–figure˝%1
+     %“epsfxsize120pt
+     %“figurebox–120pt˝–160pt˝–˝
+     %“caption–Differential $“omega$ rate.˝
+     %“label–aleph1˝
+     %“end–figure˝--></p>
+      </para>
+      <para xml:id="S3.SS1.p2">
+        <p>The average <Math mode="inline" tex="\omega" text="omega" xml:id="S3.SS1.p2.m1">
+            <XMath>
+              <XMTok font="italic" name="omega" role="UNKNOWN">ω</XMTok>
+            </XMath>
+          </Math> rate per event
+is</p>
+        <equation xml:id="S3.Ex4">
+          <Math mode="display" tex="&lt;\omega&gt;=0.996\pm 0.032(stat)\pm 0.056(sys)\,," text="absent less omega &gt;= 0.996 plus-or-minus 0.032 * s * t * a * t plus-or-minus 0.056 * s * y * s" xml:id="S3.Ex4.m1">
+            <XMath>
+              <XMDual>
+                <XMRef idref="S3.Ex4.m1.1"/>
+                <XMWrap>
+                  <XMApp xml:id="S3.Ex4.m1.1">
+                    <XMTok meaning="multirelation"/>
+                    <XMTok meaning="absent"/>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMTok font="italic" name="omega" role="UNKNOWN">ω</XMTok>
+                    <XMTok meaning="greater-than-or-equals" role="RELOP">≥</XMTok>
+                    <XMApp>
+                      <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                      <XMTok meaning="0.996" role="NUMBER">0.996</XMTok>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMTok meaning="0.032" role="NUMBER">0.032</XMTok>
+                        <XMDual>
+                          <XMRef idref="S3.Ex4.m1.1.1"/>
+                          <XMWrap>
+                            <XMTok role="OPEN" stretchy="false">(</XMTok>
+                            <XMApp xml:id="S3.Ex4.m1.1.1">
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">a</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                            </XMApp>
+                            <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMTok meaning="0.056" role="NUMBER">0.056</XMTok>
+                        <XMDual>
+                          <XMRef idref="S3.Ex4.m1.1.2"/>
+                          <XMWrap>
+                            <XMTok role="OPEN" stretchy="false">(</XMTok>
+                            <XMApp xml:id="S3.Ex4.m1.1.2">
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                            </XMApp>
+                            <XMTok role="CLOSE" rpadding="1.7pt" stretchy="false">)</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="PUNCT">,</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMath>
+          </Math>
+        </equation>
+        <p>below
+the predictions of JETSET<cite class="ltx_citemacro_cite">[<bibref bibrefs="lund" separator="," show="Refnum" yyseparator=","/>]</cite> 7.4 (1.31) and HERWIG<cite class="ltx_citemacro_cite">[<bibref bibrefs="herwig" separator="," show="Refnum" yyseparator=","/>]</cite> 6.1
+(1.17) over the full momentum spectrum. This
+measurement improves
+substantially the world average<cite class="ltx_citemacro_cite">[<bibref bibrefs="pdg" separator="," show="Refnum" yyseparator=","/>]</cite> of <Math mode="inline" tex="1.08\pm 0.09" text="1.08 plus-or-minus 0.09" xml:id="S3.SS1.p2.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                <XMTok meaning="1.08" role="NUMBER">1.08</XMTok>
+                <XMTok meaning="0.09" role="NUMBER">0.09</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>.</p>
+      </para>
+      <para xml:id="S3.SS1.p3">
+        <p>The muonic branching fraction of the <Math mode="inline" tex="\omega(782)" text="omega * 782" xml:id="S3.SS1.p3.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" name="omega" role="UNKNOWN">ω</XMTok>
+                <XMDual>
+                  <XMRef idref="S3.SS1.p3.m1.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMTok meaning="782" role="NUMBER" xml:id="S3.SS1.p3.m1.1">782</XMTok>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+            </XMath>
+          </Math> is measured for the first time: <Math mode="inline" tex="BR(\omega\rightarrow\mu^{+}\mu^{-})=(9.8\pm 2.9\pm 1.1)\times 10^{-5}" xml:id="S3.SS1.p3.m2">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">B</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMWrap>
+                <XMTok role="OPEN" stretchy="false">(</XMTok>
+                <XMTok font="italic" name="omega" role="UNKNOWN">ω</XMTok>
+                <XMTok name="rightarrow" role="ARROW">→</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                </XMApp>
+                <XMTok role="CLOSE" stretchy="false">)</XMTok>
+              </XMWrap>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMWrap>
+                <XMTok role="OPEN" stretchy="false">(</XMTok>
+                <XMTok meaning="9.8" role="NUMBER">9.8</XMTok>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                <XMTok meaning="2.9" role="NUMBER">2.9</XMTok>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                <XMTok meaning="1.1" role="NUMBER">1.1</XMTok>
+                <XMTok role="CLOSE" stretchy="false">)</XMTok>
+              </XMWrap>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>.</p>
+      </para>
+<!--  %**** zmio.tex Line 175 **** -->    </subsection>
+    <subsection refnum="3.2" xml:id="S3.SS2">
+      <title><tag close=" ">3.2</tag>Production of <Math mode="inline" tex="\pi^{0}" text="pi ^ 0" xml:id="S3.SS2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+              <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+              <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, <Math mode="inline" tex="\eta" text="eta" xml:id="S3.SS2.m2">
+          <XMath>
+            <XMTok font="italic" name="eta" role="UNKNOWN">η</XMTok>
+          </XMath>
+        </Math>, <Math mode="inline" tex="\eta^{\prime}(958)" text="eta ^ prime * 958" xml:id="S3.SS2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" name="eta" role="UNKNOWN">η</XMTok>
+                <XMTok fontsize="70%" name="prime" role="SUPOP">′</XMTok>
+              </XMApp>
+              <XMDual>
+                <XMRef idref="S3.SS2.m3.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMTok meaning="958" role="NUMBER" xml:id="S3.SS2.m3.1">958</XMTok>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>, K<Math mode="inline" tex="{}^{0}_{S}" text="^ 0 absent _ S" xml:id="S3.SS2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post5"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="pre4"/>
+                <XMTok meaning="absent"/>
+                <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+              </XMApp>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">S</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="\Lambda" text="Lambda" xml:id="S3.SS2.m5">
+          <XMath>
+            <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+          </XMath>
+        </Math>
+in 2-­ and 3-­jet events</title>
+      <para xml:id="S3.SS2.p1">
+        <p>For isoscalar mesons (<Math mode="inline" tex="\eta" text="eta" xml:id="S3.SS2.p1.m1">
+            <XMath>
+              <XMTok font="italic" name="eta" role="UNKNOWN">η</XMTok>
+            </XMath>
+          </Math>, <Math mode="inline" tex="\eta^{\prime}(958)" text="eta ^ prime * 958" xml:id="S3.SS2.p1.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="eta" role="UNKNOWN">η</XMTok>
+                  <XMTok fontsize="70%" name="prime" role="SUPOP">′</XMTok>
+                </XMApp>
+                <XMDual>
+                  <XMRef idref="S3.SS2.p1.m2.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMTok meaning="958" role="NUMBER" xml:id="S3.SS2.p1.m2.1">958</XMTok>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+            </XMath>
+          </Math>, <Math mode="inline" tex="\omega(782)" text="omega * 782" xml:id="S3.SS2.p1.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" name="omega" role="UNKNOWN">ω</XMTok>
+                <XMDual>
+                  <XMRef idref="S3.SS2.p1.m3.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMTok meaning="782" role="NUMBER" xml:id="S3.SS2.p1.m3.1">782</XMTok>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+            </XMath>
+          </Math>, <Math mode="inline" tex="\phi(1020" xml:id="S3.SS2.p1.m4">
+            <XMath>
+              <XMTok font="italic" name="phi" role="UNKNOWN">ϕ</XMTok>
+              <XMWrap>
+                <XMTok role="OPEN" stretchy="false">(</XMTok>
+                <XMTok meaning="1020" role="NUMBER">1020</XMTok>
+              </XMWrap>
+            </XMath>
+          </Math>)),
+some theoretical models
+predict a special enhancement in gluon jets compared to quark jets.
+L3<cite class="ltx_citemacro_cite">[<bibref bibrefs="lepo" separator="," show="Refnum" yyseparator=","/>]</cite> found that the measured momentum spectrum in
+gluon jets is harder than in
+HERWIG and JETSET.</p>
+      </para>
+      <para xml:id="S3.SS2.p2">
+        <p>In a new analysis, ALEPH<cite class="ltx_citemacro_cite">[<bibref bibrefs="alepha" separator="," show="Refnum" yyseparator=","/>]</cite>
+measures the production rates of
+<Math mode="inline" tex="\pi^{0}" text="pi ^ 0" xml:id="S3.SS2.p2.m1">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>, <Math mode="inline" tex="\eta" text="eta" xml:id="S3.SS2.p2.m2">
+            <XMath>
+              <XMTok font="italic" name="eta" role="UNKNOWN">η</XMTok>
+            </XMath>
+          </Math>, <Math mode="inline" tex="\eta^{\prime}(958)" text="eta ^ prime * 958" xml:id="S3.SS2.p2.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="eta" role="UNKNOWN">η</XMTok>
+                  <XMTok fontsize="70%" name="prime" role="SUPOP">′</XMTok>
+                </XMApp>
+                <XMDual>
+                  <XMRef idref="S3.SS2.p2.m3.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMTok meaning="958" role="NUMBER" xml:id="S3.SS2.p2.m3.1">958</XMTok>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+            </XMath>
+          </Math>, K<Math mode="inline" tex="{}^{0}_{S}" text="^ 0 absent _ S" xml:id="S3.SS2.p2.m4">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="pre2"/>
+                  <XMTok meaning="absent"/>
+                  <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                </XMApp>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">S</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> and <Math mode="inline" tex="\Lambda" text="Lambda" xml:id="S3.SS2.p2.m5">
+            <XMath>
+              <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+            </XMath>
+          </Math>
+in hadronic events, two-­jet events and each jet of three-­jet events.</p>
+      </para>
+      <para xml:id="S3.SS2.p3">
+        <p>Jets are clustered using
+Durham<cite class="ltx_citemacro_cite">[<bibref bibrefs="durham" separator="," show="Refnum" yyseparator=","/>]</cite>
+with <Math mode="inline" tex="y_{cut}" text="y _ (c * u * t)" xml:id="S3.SS2.p3.m1">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">c</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">u</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">t</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> = 0.01; this classifies 31% of the events as 3­-jet.
+The lowest energy jet originates from a gluon with 71% probability.</p>
+      </para>
+      <para xml:id="S3.SS2.p4">
+        <p>The <Math mode="inline" tex="\pi^{0}" text="pi ^ 0" xml:id="S3.SS2.p4.m1">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> and <Math mode="inline" tex="\eta" text="eta" xml:id="S3.SS2.p4.m2">
+            <XMath>
+              <XMTok font="italic" name="eta" role="UNKNOWN">η</XMTok>
+            </XMath>
+          </Math> mesons are analyzed using the <Math mode="inline" tex="\gamma\gamma" text="gamma * gamma" xml:id="S3.SS2.p4.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" name="gamma" role="UNKNOWN">γ</XMTok>
+                <XMTok font="italic" name="gamma" role="UNKNOWN">γ</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>
+decay channel, and
+the <Math mode="inline" tex="\eta^{\prime}" text="eta ^ prime" xml:id="S3.SS2.p4.m4">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="eta" role="UNKNOWN">η</XMTok>
+                <XMTok fontsize="70%" name="prime" role="SUPOP">′</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> using
+<!--  %**** zmio.tex Line 200 **** --><Math mode="inline" tex="\eta^{\prime}\rightarrow\eta\pi^{+}\pi^{-}" text="eta ^ prime rightarrow eta * pi ^ + * pi ^ -" xml:id="S3.SS2.p4.m5">
+            <XMath>
+              <XMApp>
+                <XMTok name="rightarrow" role="ARROW">→</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="eta" role="UNKNOWN">η</XMTok>
+                  <XMTok fontsize="70%" name="prime" role="SUPOP">′</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" name="eta" role="UNKNOWN">η</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                    <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>.
+K<Math mode="inline" tex="{}^{0}_{S}" text="^ 0 absent _ S" xml:id="S3.SS2.p4.m6">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="pre2"/>
+                  <XMTok meaning="absent"/>
+                  <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                </XMApp>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">S</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>
+are reconstructed from their decay into <Math mode="inline" tex="\pi^{+}\pi^{-}" text="pi ^ + * pi ^ -" xml:id="S3.SS2.p4.m7">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>,
+and <Math mode="inline" tex="\Lambda" text="Lambda" xml:id="S3.SS2.p4.m8">
+            <XMath>
+              <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+            </XMath>
+          </Math>s into <Math mode="inline" tex="p\pi^{-}" text="p * pi ^ -" xml:id="S3.SS2.p4.m9">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>.</p>
+      </para>
+      <para xml:id="S3.SS2.p5">
+        <p>The spectra for <Math mode="inline" tex="\pi^{0}" text="pi ^ 0" xml:id="S3.SS2.p5.m1">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> are reasonably reproduced by JETSET
+and HERWIG. <Math mode="inline" tex="\eta" text="eta" xml:id="S3.SS2.p5.m2">
+            <XMath>
+              <XMTok font="italic" name="eta" role="UNKNOWN">η</XMTok>
+            </XMath>
+          </Math> and <Math mode="inline" tex="\eta^{\prime}(958)" text="eta ^ prime * 958" xml:id="S3.SS2.p5.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="eta" role="UNKNOWN">η</XMTok>
+                  <XMTok fontsize="70%" name="prime" role="SUPOP">′</XMTok>
+                </XMApp>
+                <XMDual>
+                  <XMRef idref="S3.SS2.p5.m3.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMTok meaning="958" role="NUMBER" xml:id="S3.SS2.p5.m3.1">958</XMTok>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+            </XMath>
+          </Math> are well
+reproduced by JETSET for quark jets and gluon jets. Therefore, the
+JETSET description of gluon fragmentation into
+isoscalar mesons is in agreement with
+the experiment. HERWIG shows a too steep
+dependence on <Math mode="inline" tex="x_{p}" text="x _ p" xml:id="S3.SS2.p5.m4">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> for <Math mode="inline" tex="\eta" text="eta" xml:id="S3.SS2.p5.m5">
+            <XMath>
+              <XMTok font="italic" name="eta" role="UNKNOWN">η</XMTok>
+            </XMath>
+          </Math> spectra in two-­jet events and each jet of
+three-­jet events.</p>
+      </para>
+      <para xml:id="S3.SS2.p6">
+        <p>The spectra for K<Math mode="inline" tex="{}^{0}_{S}" text="^ 0 absent _ S" xml:id="S3.SS2.p6.m1">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="pre2"/>
+                  <XMTok meaning="absent"/>
+                  <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                </XMApp>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">S</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> and
+<Math mode="inline" tex="\Lambda" text="Lambda" xml:id="S3.SS2.p6.m2">
+            <XMath>
+              <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+            </XMath>
+          </Math> are well reproduced by
+JETSET and ARIADNE<cite class="ltx_citemacro_cite">[<bibref bibrefs="ariadne" separator="," show="Refnum" yyseparator=","/>]</cite>, while HERWIG fails.</p>
+      </para>
+    </subsection>
+  </section>
+  <section refnum="4" xml:id="S4">
+    <title><tag close=" ">4</tag>Rapidity­-rank structure of <Math mode="inline" tex="p\bar{p}" text="p * bar@(p)" xml:id="S4.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok font="italic" role="UNKNOWN">p</XMTok>
+            <XMApp>
+              <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math></title>
+    <para xml:id="S4.p1">
+      <p>The baryon sector is not well modeled by current QCD–inspired Monte Carlos;
+only the string fragmentation model
+<!--  %**** zmio.tex Line 225 **** -->JETSET can reproduce the octet and decuplet rates.</p>
+    </para>
+    <para xml:id="S4.p2">
+      <p>In JETSET
+hadrons results from breaks in the string
+stretched
+between the primary quarks.
+Baryons are formed when
+diquark­-antidiquark pairs are created,
+and couple to an adjacent
+(anti)quark.
+A mechanism to attenuate the strict rapidity ordering coming from
+this mechanism is the so-called <text font="italic">popcorn</text>: a meson “pops up”
+inside a diquark–antidiquark pair<cite class="ltx_citemacro_cite">[<bibref bibrefs="lund" separator="," show="Refnum" yyseparator=","/>]</cite>.</p>
+    </para>
+    <para xml:id="S4.p3">
+      <p>To study the relative occurrence of popcorn, DELPHI<cite class="ltx_citemacro_cite">[<bibref bibrefs="delphi" separator="," show="Refnum" yyseparator=","/>]</cite> proposes a novel method based on the rapidity–rank structure of <Math mode="inline" tex="p\bar{p}" text="p * bar@(p)" xml:id="S4.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> pairs, where
+rapidity is defined with respect to the thrust axis.</p>
+    </para>
+    <para xml:id="S4.p4">
+      <p>Proton identification is provided by
+Cherenkov angle measurement from the RICH and ionization energy loss
+in the TPC.
+The number of events with one <Math mode="inline" tex="p" text="p" xml:id="S4.p4.m1">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">p</XMTok>
+          </XMath>
+        </Math> and one <Math mode="inline" tex="\bar{p}" text="bar@(p)" xml:id="S4.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> in each
+hemisphere
+is 27.6 thousand.
+<!--  %**** zmio.tex Line 250 **** -->The background to this event
+sample can be determined from the number of events that have two
+<Math mode="inline" tex="p" text="p" xml:id="S4.p4.m3">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">p</XMTok>
+          </XMath>
+        </Math>’s or two <Math mode="inline" tex="\bar{p}" text="bar@(p)" xml:id="S4.p4.m4">
+          <XMath>
+            <XMApp>
+              <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>’s
+in a given
+hemisphere. These events, 10.1 thousand, result mainly from
+misidentifications, but
+also from non­correlated baryon pairs, and they are subtracted from
+the signal.</p>
+    </para>
+    <para xml:id="S4.p5">
+      <p>The charged particles in each event are ordered in rapidity.
+Two types of rapidity­-rank configurations for <Math mode="inline" tex="p\bar{p}" text="p * bar@(p)" xml:id="S4.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+pairs
+are considered: (a)
+when the <Math mode="inline" tex="p" text="p" xml:id="S4.p5.m2">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">p</XMTok>
+          </XMath>
+        </Math> and <Math mode="inline" tex="\bar{p}" text="bar@(p)" xml:id="S4.p5.m3">
+          <XMath>
+            <XMApp>
+              <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+are adjacent
+in rapidity; (b) when the <Math mode="inline" tex="p" text="p" xml:id="S4.p5.m4">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">p</XMTok>
+          </XMath>
+        </Math> and <Math mode="inline" tex="\bar{p}" text="bar@(p)" xml:id="S4.p5.m5">
+          <XMath>
+            <XMApp>
+              <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+have one or more
+mesons between them.
+The ratio
+<Math mode="inline" tex="R=N(pM\bar{p})/(N(p\bar{p})+N(pM\bar{p})" xml:id="S4.p5.m6">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" role="UNKNOWN">N</XMTok>
+            <XMWrap>
+              <XMTok role="OPEN" stretchy="false">(</XMTok>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              <XMTok font="italic" role="UNKNOWN">M</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              </XMApp>
+              <XMTok role="CLOSE" stretchy="false">)</XMTok>
+            </XMWrap>
+            <XMTok meaning="divide" role="MULOP">/</XMTok>
+            <XMWrap>
+              <XMTok role="OPEN" stretchy="false">(</XMTok>
+              <XMTok font="italic" role="UNKNOWN">N</XMTok>
+              <XMWrap>
+                <XMTok role="OPEN" stretchy="false">(</XMTok>
+                <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                <XMApp>
+                  <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                </XMApp>
+                <XMTok role="CLOSE" stretchy="false">)</XMTok>
+              </XMWrap>
+              <XMTok meaning="plus" role="ADDOP">+</XMTok>
+              <XMTok font="italic" role="UNKNOWN">N</XMTok>
+              <XMWrap>
+                <XMTok role="OPEN" stretchy="false">(</XMTok>
+                <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMApp>
+                  <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                </XMApp>
+                <XMTok role="CLOSE" stretchy="false">)</XMTok>
+              </XMWrap>
+            </XMWrap>
+          </XMath>
+        </Math> is calculated, where
+<Math mode="inline" tex="N(p\bar{p})" text="N * p * bar@(p)" xml:id="S4.p5.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">N</XMTok>
+              <XMDual>
+                <XMRef idref="S4.p5.m7.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S4.p5.m7.1">
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                    <XMApp>
+                      <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="N(pM\bar{p})" text="N * p * M * bar@(p)" xml:id="S4.p5.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">N</XMTok>
+              <XMDual>
+                <XMRef idref="S4.p5.m8.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S4.p5.m8.1">
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                    <XMApp>
+                      <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>
+represent the number of rapidity-­rank configurations of each
+type in the data sample, and are implicitly a function of
+the minimum distance <Math mode="inline" tex="\Delta y_{min}" text="Delta * y _ (m * i * n)" xml:id="S4.p5.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+<!--  %**** zmio.tex Line 275 **** -->between a baryon in the pair and a meson.
+The probability that a given rapidity configuration will represent the actual
+rank order on the string is enhanced as <Math mode="inline" tex="\Delta y_{min}" text="Delta * y _ (m * i * n)" xml:id="S4.p5.m10">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> is made larger.</p>
+    </para>
+    <para xml:id="S4.p6">
+      <p>The ratio <Math mode="inline" tex="R(\Delta y_{min})" text="R * Delta * y _ (m * i * n)" xml:id="S4.p6.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMDual>
+                <XMRef idref="S4.p6.m1.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S4.p6.m1.1">
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                      <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> for data is plotted in Figure <ref labelref="LABEL:lamsa2"/>,
+and compared to the predictions in the cases of no popcorn and 100%
+popcorn.
+<!--  %The possible effect of variations 
+     %(of order 30“%) in the fraction of protons coming from resonances
+     %(like $“Delta$s) was found to be negligible.--></p>
+    </para>
+    <figure frefnum="Figure 1" labels="LABEL:lamsa2" refnum="1" xml:id="S4.F1">
+<!--  %1 
+     %“epsfxsize120pt
+     %“figurebox–120pt˝–120pt˝–˝-->      <p><graphics candidates="jerry.eps" graphic="jerry.eps" xml:id="S4.F1.g1"/></p>
+      <toccaption><tag close=" ">1</tag>The relative amount, <Math mode="inline" tex="R(\Delta y_{min})" text="R * Delta * y _ (m * i * n)" xml:id="S4.F1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMDual>
+                <XMRef idref="S4.F1.m1.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S4.F1.m1.1">
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                      <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>, of the <Math mode="inline" tex="pM\bar{p}" text="p * M * bar@(p)" xml:id="S4.F1.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              <XMTok font="italic" role="UNKNOWN">M</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+configuration as a function of
+<Math mode="inline" tex="\Delta y_{min}" text="Delta * y _ (m * i * n)" xml:id="S4.F1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, compared to the
+JETSET predictions in case of
+no popcorn (lower line) and full popcorn
+(upper line). Due to normalization, <Math mode="inline" tex="\Delta y_{min}" text="Delta * y _ (m * i * n)" xml:id="S4.F1.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+is multiplied by 2/3 for <Math mode="inline" tex="p\bar{p}" text="p * bar@(p)" xml:id="S4.F1.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.</toccaption>
+      <caption><tag close=": ">Figure 1</tag>The relative amount, <Math mode="inline" tex="R(\Delta y_{min})" text="R * Delta * y _ (m * i * n)" xml:id="S4.F1.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMDual>
+                <XMRef idref="S4.F1.m6.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S4.F1.m6.1">
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                      <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>, of the <Math mode="inline" tex="pM\bar{p}" text="p * M * bar@(p)" xml:id="S4.F1.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              <XMTok font="italic" role="UNKNOWN">M</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+configuration as a function of
+<Math mode="inline" tex="\Delta y_{min}" text="Delta * y _ (m * i * n)" xml:id="S4.F1.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, compared to the
+JETSET predictions in case of
+no popcorn (lower line) and full popcorn
+(upper line). Due to normalization, <Math mode="inline" tex="\Delta y_{min}" text="Delta * y _ (m * i * n)" xml:id="S4.F1.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" role="UNKNOWN">y</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+is multiplied by 2/3 for <Math mode="inline" tex="p\bar{p}" text="p * bar@(p)" xml:id="S4.F1.m10">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.</caption>
+    </figure>
+    <para xml:id="S4.p7">
+      <p>The data are consistent with no contribution
+<!--  %**** zmio.tex Line 300 **** -->from <Math mode="inline" tex="pM\bar{p}" text="p * M * bar@(p)" xml:id="S4.p7.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              <XMTok font="italic" role="UNKNOWN">M</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok font="italic" role="UNKNOWN">p</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> configurations.
+An upper limit contribution of 15% is
+determined at 90% confidence level.</p>
+    </para>
+    <para xml:id="S4.p8">
+      <p>Previous studies of the <Math mode="inline" tex="\Lambda\bar{\Lambda}" text="Lambda * bar@(Lambda)" xml:id="S4.p8.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+rapidity difference have
+claimed evidence for popcorn<cite class="ltx_citemacro_cite">[<bibref bibrefs="popcorn" separator="," show="Refnum" yyseparator=","/>]</cite>.
+This might indicate the importance of dynamical effects
+not incorporated in JETSET or simply the inadequacy of the popcorn model,
+although no
+firm conclusion can be drawn yet.</p>
+    </para>
+  </section>
+  <bibliography xml:id="bib">
+    <title>References</title>
+    <biblist>
+      <bibitem key="opal" xml:id="bib.bib1">
+        <bibtag role="refnum">1</bibtag>
+        <bibblock>
+OPAL, PN396 (July 1999),
+contribution 105 to this conference.
+</bibblock>
+      </bibitem>
+      <bibitem key="alepho" xml:id="bib.bib2">
+        <bibtag role="refnum">2</bibtag>
+        <bibblock>
+ALEPH, note 2000-049 (June 2000),
+contribution 163 to this conference.
+<!--  %**** zmio.tex Line 325 **** --></bibblock>
+      </bibitem>
+      <bibitem key="alepha" xml:id="bib.bib3">
+        <bibtag role="refnum">3</bibtag>
+        <bibblock>
+ALEPH, CERN-EP/99-105 (July 1999),
+contribution 161 to this conference.
+</bibblock>
+      </bibitem>
+      <bibitem key="delphi" xml:id="bib.bib4">
+        <bibtag role="refnum">4</bibtag>
+        <bibblock>
+DELPHI, CERN-EP/00-81 (June 2000),
+contribution 641 to this conference.
+</bibblock>
+      </bibitem>
+      <bibitem key="ale" xml:id="bib.bib5">
+        <bibtag role="refnum">5</bibtag>
+        <bibblock>
+A. de Angelis, in Proc. of ICHEP 1995
+</bibblock>
+      </bibitem>
+      <bibitem key="pdg" xml:id="bib.bib6">
+        <bibtag role="refnum">6</bibtag>
+        <bibblock>
+PDG, Review of Particle Physics 2000
+</bibblock>
+      </bibitem>
+      <bibitem key="webber" xml:id="bib.bib7">
+        <bibtag role="refnum">7</bibtag>
+        <bibblock>
+B. Webber, Phys. Lett. B143 (1984) 501
+</bibblock>
+      </bibitem>
+      <bibitem key="lund" xml:id="bib.bib8">
+        <bibtag role="refnum">8</bibtag>
+        <bibblock>
+T. Sjöstrand, Comp. Phys. Comm. 82 (1994) 74
+</bibblock>
+      </bibitem>
+      <bibitem key="herwig" xml:id="bib.bib9">
+        <bibtag role="refnum">9</bibtag>
+        <bibblock>
+G. Marchesini et al., Comp. Phys. Comm. 67 (1992) 465
+</bibblock>
+      </bibitem>
+      <bibitem key="lepo" xml:id="bib.bib10">
+        <bibtag role="refnum">10</bibtag>
+        <bibblock>
+L3, Phys. Lett. B371 (1996) 126
+<!--  %**** zmio.tex Line 350 **** --></bibblock>
+      </bibitem>
+      <bibitem key="durham" xml:id="bib.bib11">
+        <bibtag role="refnum">11</bibtag>
+        <bibblock>
+S. Catani et al., Phys. Lett. B269 (1991) 432
+</bibblock>
+      </bibitem>
+      <bibitem key="ariadne" xml:id="bib.bib12">
+        <bibtag role="refnum">12</bibtag>
+        <bibblock>
+L. Lönnblad, Comp. Phys. Comm. 71 (1992) 15
+</bibblock>
+      </bibitem>
+      <bibitem key="popcorn" xml:id="bib.bib13">
+        <bibtag role="refnum">13</bibtag>
+        <bibblock>
+See the references in [4].
+</bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+</document>

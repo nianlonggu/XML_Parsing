@@ -1,0 +1,1685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008200.1"?>
+<!--  %“documentstyle[psfig]–mn˝ --><?latexml class="mn" options="referee" oldstyle="true"?>
+<!--  %“newcommand–“arcsec˝–$^–“prime“prime˝$~˝ --><!--  %“newcommand–“arcmin˝–$^–“prime˝$~˝ --><!--  %**** eridv11.tex Line 25 **** --><!--  %“newcommand–“figurefile˝–˝ --><!--  %“newcommand–“figurefile˝–./˝ --><!--  %boxed portion is the running title or author --><!--  %**** eridv11.tex Line 50 **** --><?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML" class="ltx_authors_1line">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>Deep H<Math mode="inline" tex="\alpha" text="alpha" xml:id="m1">
+      <XMath>
+        <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+      </XMath>
+    </Math> imagery of the Eridanus shells</title>
+  <toctitle>Eridanus shells</toctitle>
+  <creator role="author">
+    <personname>P. Boumis<Math mode="inline" tex="{}^{1,2,3}" text="^list@(1, 2, 3)" xml:id="m2">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="list"/>
+                <XMRef idref="m2.1"/>
+                <XMRef idref="m2.2"/>
+                <XMRef idref="m2.3"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER" xml:id="m2.1">1</XMTok>
+                <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER" xml:id="m2.2">2</XMTok>
+                <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER" xml:id="m2.3">3</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMApp>
+        </XMath>
+      </Math>, C. Dickinson<Math mode="inline" tex="{}^{1}" text="^1" xml:id="m3">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>,
+J. Meaburn<Math mode="inline" tex="{}^{1}" text="^1" xml:id="m4">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>, C.D. Goudis<Math mode="inline" tex="{}^{4}" text="^4" xml:id="m5">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>, P.E. Christopoulou<Math mode="inline" tex="{}^{4}" text="^4" xml:id="m6">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>, 
+J.A. López<Math mode="inline" tex="{}^{5}" text="^5" xml:id="m7">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>, M. Bryce<Math mode="inline" tex="{}^{1}" text="^1" xml:id="m8">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> &amp; M. P. Redman<Math mode="inline" tex="{}^{1}" text="^1" xml:id="m9">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> .<break/><Math mode="inline" tex="{}^{1}" text="^1" xml:id="m10">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>Jodrell Bank Observatory, Dept of Physics &amp; Astronomy,
+University of Manchester, Macclesfield, Cheshire SK11 9DL UK.<break/><Math mode="inline" tex="{}^{2}" text="^2" xml:id="m11">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>Department of Physics, University of Crete, P.O. Box 2208,
+GR-710 03 Heraklion, Crete, Greece.<break/><Math mode="inline" tex="{}^{3}" text="^3" xml:id="m12">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>Foundation for Research and
+Technology-Hellas, P.O. Box 1527, GR-711 10 Heraklion, Crete,
+Greece.<break/><Math mode="inline" tex="{}^{4}" text="^4" xml:id="m13">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>Astronomical Laboratory, Department of Physics,
+University of Patras, 26500 Rio-Patras, Greece.<break/><Math mode="inline" tex="{}^{5}" text="^5" xml:id="m14">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> Instituto de
+Astronomía, UNAM, Apdo. Postal 877, Ensenada, B.C. 22800,
+México.<break/></personname>
+  </creator>
+  <date role="creation">Received
+**insert**; Accepted **insert**</date>
+  <abstract name="Abstract">
+    <p>A deep H<Math mode="inline" tex="\alpha" text="alpha" xml:id="m15">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> image of interlocking filamentary arcs of
+nebulosity has been obtained with a wide-field (<Math mode="inline" tex="\approx" text="approximately-equals" xml:id="m16">
+        <XMath>
+          <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+        </XMath>
+      </Math> 30<Math mode="inline" tex="{}^{o}" text="^o" xml:id="m17">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> diameter) narrow-band filter camera combined with a CCD as a detector.
+The resultant mosaic of images, extending to a galactic latitude of
+65<Math mode="inline" tex="{}^{o}" text="^o" xml:id="m18">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>, has been corrected for field distortions and had galactic
+coordinates superimposed on it to permit accurate correlations with
+the most recent H<text font="smallcaps">i</text> (21 cm), X-ray (0.75 kev) and FIR (IRAS 100 <Math mode="inline" tex="\mu" text="mu" xml:id="m19">
+        <XMath>
+          <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+        </XMath>
+      </Math>m)
+maps.</p>
+    <p>Furthermore, an upper limit of 0.13 arcsec/yr to the expansion proper
+motion of the primary 25<Math mode="inline" tex="{}^{o}" text="^o" xml:id="m20">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>  long nebulous arc has been obtained
+by comparing a recent H<Math mode="inline" tex="\alpha" text="alpha" xml:id="m21">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> image obtained with the San Pedro Martir
+telescope of its filamentary edge with that on a POSS E plate obtained
+in 1951.</p>
+<!--  %**** eridv11.tex Line 75 **** -->    <p>It is concluded that these filamentary arcs are the superimposed
+images of separate shells (driven by supernova explosions and/or
+stellar winds) rather than the edges of a single ‘superbubble’
+stretching from Barnard’s Arc (and the Orion Nebula) to these high
+galactic latitudes. The proper motion measurement argues against the
+primary H<Math mode="inline" tex="\alpha" text="alpha" xml:id="m22">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> emitting arc being associated with the giant radio loop
+(Loop 2) except in extraordinary circumstances.</p>
+  </abstract>
+  <classification scheme="keywords">
+interstellar medium; Eridanus shells
+</classification>
+  <note role="pagerange"><ref labelref="LABEL:firstpage"/>–<ref labelref="LABEL:lastpage"/></note>
+  <section refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>Introduction</title>
+    <para xml:id="S1.p1">
+      <p>A 25<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S1.p1.m1">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> diameter area of interlocking arcs of H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.p1.m2">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> emitting
+filamentary nebulosity was discovered (Meaburn 1965, 1967) projecting
+from the galactic plane to high galactic latitudes (<Math mode="inline" tex="b=-50^{o}" text="b = - 50 ^ o" xml:id="S1.p1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">b</XMTok>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="50" role="NUMBER">50</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>). The
+primary nebulous arc (hereafter called Arc A) is traced from <Math mode="inline" tex="(l,b)=(180^{o},-30^{o})" text="open-interval@(l, b) = open-interval@(180 ^ o, - 30 ^ o)" xml:id="S1.p1.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="open-interval"/>
+                  <XMRef idref="S1.p1.m4.1"/>
+                  <XMRef idref="S1.p1.m4.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMTok font="italic" role="UNKNOWN" xml:id="S1.p1.m4.1">l</XMTok>
+                  <XMTok role="PUNCT">,</XMTok>
+                  <XMTok font="italic" role="UNKNOWN" xml:id="S1.p1.m4.2">b</XMTok>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="open-interval"/>
+                  <XMRef idref="S1.p1.m4.3"/>
+                  <XMRef idref="S1.p1.m4.4"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S1.p1.m4.3">
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="180" role="NUMBER">180</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                  </XMApp>
+                  <XMTok role="PUNCT">,</XMTok>
+                  <XMApp xml:id="S1.p1.m4.4">
+                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                      <XMTok meaning="30" role="NUMBER">30</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> to <Math mode="inline" tex="(l,b)=(200^{o},-50^{o})" text="open-interval@(l, b) = open-interval@(200 ^ o, - 50 ^ o)" xml:id="S1.p1.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="open-interval"/>
+                  <XMRef idref="S1.p1.m5.1"/>
+                  <XMRef idref="S1.p1.m5.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMTok font="italic" role="UNKNOWN" xml:id="S1.p1.m5.1">l</XMTok>
+                  <XMTok role="PUNCT">,</XMTok>
+                  <XMTok font="italic" role="UNKNOWN" xml:id="S1.p1.m5.2">b</XMTok>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="open-interval"/>
+                  <XMRef idref="S1.p1.m5.3"/>
+                  <XMRef idref="S1.p1.m5.4"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S1.p1.m5.3">
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="200" role="NUMBER">200</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                  </XMApp>
+                  <XMTok role="PUNCT">,</XMTok>
+                  <XMApp xml:id="S1.p1.m5.4">
+                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                      <XMTok meaning="50" role="NUMBER">50</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> (in the Eridanus
+constellation) and has a similar morphology to the emission regions
+associated with old supernova remnants (Meaburn 1967). For this reason
+an association of Arc A with one of the giant radio loops (the
+90<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S1.p1.m6">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> diameter Loop 2, Large et al. 1962, Haslam et al. 1971) was
+<!--  %**** eridv11.tex Line 100 **** -->suggested, in which case, Arc A could have been within 30 pc of the
+Sun. Reynolds &amp; Ogden (1979), henceforth RO, though suggested that
+the arcs were edges of a single elongated cavity expanding at
+<Math mode="inline" tex="\approx" text="approximately-equals" xml:id="S1.p1.m7">
+          <XMath>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+          </XMath>
+        </Math> 15  km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S1.p1.m8">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and extending from the I-Ori OB-association and
+therefore at the greater distance of <Math mode="inline" tex="\approx" text="approximately-equals" xml:id="S1.p1.m9">
+          <XMath>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+          </XMath>
+        </Math> 450 pc. They cite the
+proximity of the well-known ‘Barnard’s Arc’ (see Sivan 1974) in
+support of this contention. Since this early work the Eridanus
+nebulosity has continued to receive considerable attention in many
+other wavelength domains largely because an uncluttered view of the
+closest galactic interstellar shells is permitted at such high
+galactic latitudes.</p>
+    </para>
+    <para xml:id="S1.p2">
+      <p>More recently, data from the Leiden/Dwingeloo H<text font="smallcaps">i</text> survey (Hartmann &amp;
+Burton 1997, Burton &amp; Hartmann 1994), the IRAS Sky Survey Atlas ISSA
+(Wheelcock et al. 1994) and ROSAT X-ray survey (Burrows &amp; Guo 1996,
+Snowden et al. 1995) have provided a more detailed picture of the
+region. Comprehensive comparisons between the data sets have been made
+by Burrows et al (1993), Brown et al (1995), Heiles et al (1998) and
+Heiles et al (1999). They suggest a similar unifying picture of the
+region similar to that given by RO - a large superbubble (SB) filled
+with hot X-ray emitting (<Math mode="inline" tex="T\approx 1\times 10^{6}K" text="T approximately-equals 1 * 10 ^ 6 * K" xml:id="S1.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">×</XMTok>
+                  <XMTok meaning="1" role="NUMBER">1</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMTok font="italic" role="UNKNOWN">K</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) gas extending
+from the Ori OB1 association at a distance of <Math mode="inline" tex="\approx 450" text="absent approximately-equals 450" xml:id="S1.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="450" role="NUMBER">450</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>pc, with
+the nearest edge at <Math mode="inline" tex="\approx 150" text="absent approximately-equals 150" xml:id="S1.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="150" role="NUMBER">150</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>pc. Burrows &amp; Guo (1996) estimated a
+distance of <Math mode="inline" tex="159\pm 16" text="159 plus-or-minus 16" xml:id="S1.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              <XMTok meaning="159" role="NUMBER">159</XMTok>
+              <XMTok meaning="16" role="NUMBER">16</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>pc in the direction
+<Math mode="inline" tex="(l,b)=(200^{o},-47^{o})" text="open-interval@(l, b) = open-interval@(200 ^ o, - 47 ^ o)" xml:id="S1.p2.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="open-interval"/>
+                  <XMRef idref="S1.p2.m5.1"/>
+                  <XMRef idref="S1.p2.m5.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMTok font="italic" role="UNKNOWN" xml:id="S1.p2.m5.1">l</XMTok>
+                  <XMTok role="PUNCT">,</XMTok>
+                  <XMTok font="italic" role="UNKNOWN" xml:id="S1.p2.m5.2">b</XMTok>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="open-interval"/>
+                  <XMRef idref="S1.p2.m5.3"/>
+                  <XMRef idref="S1.p2.m5.4"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S1.p2.m5.3">
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="200" role="NUMBER">200</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                  </XMApp>
+                  <XMTok role="PUNCT">,</XMTok>
+                  <XMApp xml:id="S1.p2.m5.4">
+                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                      <XMTok meaning="47" role="NUMBER">47</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>. The cavity is enclosed in an expanding
+<!--  %**** eridv11.tex Line 125 **** -->neutral shell traced between <Math mode="inline" tex="-40{~{}{\rm km\,s}^{-1}}\geq{v_{\rm lsr}}\geq+40{~{}{\rm km\,s}^{-1}}" text="- 40 * km * s ^ (- 1) &gt;= v _ lsr &gt;= + 40 * km * s ^ (- 1)" xml:id="S1.p2.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="40" role="NUMBER" rpadding="3.3pt">40</XMTok>
+                  <XMTok role="UNKNOWN" rpadding="1.7pt">km</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                    <XMTok role="UNKNOWN">s</XMTok>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">lsr</XMTok>
+              </XMApp>
+              <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+              <XMApp>
+                <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="40" role="NUMBER" rpadding="3.3pt">40</XMTok>
+                  <XMTok role="UNKNOWN" rpadding="1.7pt">km</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                    <XMTok role="UNKNOWN">s</XMTok>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> which
+is seen preferentially edge-on. However, the structure of the
+‘Eridanus-Bubble’ and its formation are still under scrutiny. Heiles
+et al (1999) has pointed out that it is clear that there are some
+dependencies on other nearby shells including the local
+‘superbubble’ (SB), in which the Sun is immersed. However, the
+filamentary Arc A does not fit clearly into this simple SB
+picture. For one thing, its curvature is in the opposite sense to that
+predicted by the SB model.</p>
+    </para>
+    <para xml:id="S1.p3">
+      <p>Deep, narrow-band, H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.p3.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> images have been obtained with a wide-field
+CCD camera of the Eridanus nebulosity to permit a more detailed, and
+astrometrically accurate, comparison with features at other
+wavelengths. Furthermore, a new upper limit to the proper motion (pm)
+of the sharp filamentary edge of Arc A has been obtained in an attempt
+to constrain the lower limit to its distance. The previous
+measurement (Jones &amp; Meaburn 1985) used material over a shorter
+baseline and with a lower signal-to-noise ratio.</p>
+    </para>
+  </section>
+  <section refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>Observations and Results</title>
+    <subsection refnum="2.1" xml:id="S2.SS1">
+      <title><tag close=" ">2.1</tag>Wide field imagery</title>
+      <para xml:id="S2.SS1.p1">
+        <p>The layout of the Manchester Wide Field camera (MWFC) is shown in
+Fig. 1. A 21<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S2.SS1.p1.m1">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> <Math mode="inline" tex="\times" text="*" xml:id="S2.SS1.p1.m2">
+            <XMath>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+            </XMath>
+          </Math> 30<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S2.SS1.p1.m3">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> field-of-view is converted to
+<!--  %**** eridv11.tex Line 150 **** -->5.5<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S2.SS1.p1.m4">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> <Math mode="inline" tex="\times" text="*" xml:id="S2.SS1.p1.m5">
+            <XMath>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+            </XMath>
+          </Math> 7.8<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S2.SS1.p1.m6">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> for acceptance in the parallel beam by
+a three-period (square profile) interference filter, of 16Å bandwidth centred on H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.SS1.p1.m7">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math>. The field is finally imaged on to a Wright
+Instrument, nitrogen cooled, CCD with 385 <Math mode="inline" tex="\times" text="*" xml:id="S2.SS1.p1.m8">
+            <XMath>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+            </XMath>
+          </Math> 578 pixels giving a
+scale of <Math mode="inline" tex="\sim" text="similar-to" xml:id="S2.SS1.p1.m9">
+            <XMath>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            </XMath>
+          </Math> 3.29′ pixel<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S2.SS1.p1.m10">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>. The observations reported
+here were made at Kryonerion Observatory in Greece, between 12–16 of
+December 1996.</p>
+      </para>
+      <para xml:id="S2.SS1.p2">
+        <p>The eight fields covered and the integration times used are listed in
+Table 1. The negative grey-scale representations of the final mosaic
+is shown in Fig. 2. The galactic coordinates are accurate to a few arcmins
+for the images were processed (Boumis 1997) using the Starlink <text font="smallcaps">kappa</text>
+packages <text font="smallcaps">centroid</text> and <text font="smallcaps">setsky</text>, the <text font="smallcaps">iras90</text> packages
+<text font="smallcaps">skyalign</text> and <text font="smallcaps">skygrid</text>
+and the mosaicing <text font="smallcaps">ccdpack</text> package <text font="smallcaps">makemos</text>. All the astrometry
+information can then be displayed in the final image using <text font="smallcaps">skygrid</text>. In
+particular, optical field distortions were corrected in this process.</p>
+      </para>
+      <table frefnum="Table 1" labels="LABEL:table1" refnum="1" xml:id="S2.T1">
+        <tabular class="ltx_centering" vattach="middle">
+          <tbody>
+            <tr>
+              <td align="center" border="ll r t">Position</td>
+              <td align="center" border="r t">Date</td>
+              <td align="center" border="r t">Exposure Time</td>
+              <td align="center" border="r t">R.A.</td>
+              <td align="center" border="rr t">Dec.</td>
+            </tr>
+            <tr>
+              <td align="center" border="ll r">N<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S2.T1.m1">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="9">
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td border="r"/>
+              <td align="center" border="r">(min)</td>
+              <td align="center" border="r">(h m)</td>
+              <td align="center" border="rr">(<Math mode="inline" tex="{}^{\circ}" text="^compose" xml:id="S2.T1.m2">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="9">
+                      <XMTok fontsize="70%" meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math>)</td>
+            </tr>
+            <tr>
+              <td align="center" border="ll r t">1</td>
+              <td align="center" border="r t">13 December 1996</td>
+              <td align="center" border="r t">20, 30</td>
+              <td align="center" border="r t">3 00</td>
+              <td align="center" border="rr t">0</td>
+            </tr>
+            <tr>
+              <td align="center" border="ll r t">2</td>
+              <td align="center" border="r t">12 December 1996</td>
+              <td align="center" border="r t">20, 30</td>
+              <td align="center" border="r t">3 30</td>
+              <td align="center" border="rr t">0</td>
+            </tr>
+            <tr>
+              <td align="center" border="ll r t">3</td>
+              <td align="center" border="r t">16 December 1996</td>
+              <td align="center" border="r t">30</td>
+              <td align="center" border="r t">3 40</td>
+              <td align="center" border="rr t">-5</td>
+            </tr>
+            <tr>
+              <td align="center" border="ll r t">4</td>
+              <td align="center" border="r t">13 December 1996</td>
+              <td align="center" border="r t">30, 30, 30</td>
+              <td align="center" border="r t">3 40</td>
+              <td align="center" border="rr t">0</td>
+            </tr>
+            <tr>
+              <td align="center" border="ll r t">5</td>
+              <td align="center" border="r t">12 December 1996</td>
+              <td align="center" border="r t">20, 20</td>
+              <td align="center" border="r t">4 00</td>
+              <td align="center" border="rr t">-5</td>
+            </tr>
+            <tr>
+              <td align="center" border="ll r t">6</td>
+              <td align="center" border="r t">12 December 1996</td>
+              <td align="center" border="r t">20, 20</td>
+              <td align="center" border="r t">4 00</td>
+              <td align="center" border="rr t">+5</td>
+            </tr>
+            <tr>
+              <td align="center" border="ll r t">7</td>
+              <td align="center" border="r t">16 December 1996</td>
+              <td align="center" border="r t">30</td>
+              <td align="center" border="r t">4 20</td>
+              <td align="center" border="rr t">-5</td>
+            </tr>
+            <tr>
+              <td align="center" border="b ll r t">8</td>
+              <td align="center" border="b r t">12 December 1996</td>
+              <td align="center" border="b r t">20</td>
+              <td align="center" border="b r t">4 30</td>
+              <td align="center" border="b rr t">+15</td>
+            </tr>
+          </tbody>
+        </tabular>
+        <toccaption class="ltx_centering"><tag close=" ">1</tag>Observational details for the eight separate fields
+the Eridanus nebulosity.</toccaption>
+        <caption class="ltx_centering"><tag close=": ">Table 1</tag>Observational details for the eight separate fields
+the Eridanus nebulosity.</caption>
+<!--  %**** eridv11.tex Line 200 **** -->      </table>
+      <para xml:id="S2.SS1.p3">
+        <p>The H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.SS1.p3.m1">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> emitting regions in Fig. 2 are compared with the 100 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.SS1.p3.m2">
+            <XMath>
+              <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+            </XMath>
+          </Math>m
+IRAS emission in Fig. 3(a) and with both the ROSAT X-ray (kev band)
+emission and the H<text font="smallcaps">i</text> 21 cm ring (Brown et al. 1995) in Fig. 3(b). The
+principal H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.SS1.p3.m3">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> arcs are called Arcs A &amp; B in Fig. 3(a).</p>
+      </para>
+    </subsection>
+    <subsection refnum="2.2" xml:id="S2.SS2">
+      <title><tag close=" ">2.2</tag>Proper motions</title>
+      <para xml:id="S2.SS2.p1">
+        <p>The brightest part of the filamentary Arc A has a sharp edge in the
+light of H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.SS2.p1.m1">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math>. This appears somewhat faintly on the Palomar Observatory
+Sky Survey (POSS) Schmidt plate E232, taken on the 3rd of January
+1951. Nonetheless the area containing Arc A was digitized with the
+PDS scanning microdensitometer at the Royal Greenwich Observatory
+(RGO). The resulting image measured 250 <Math mode="inline" tex="\times" text="*" xml:id="S2.SS2.p1.m2">
+            <XMath>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+            </XMath>
+          </Math> 250 pixels with a
+resolution of 20 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.SS2.p1.m3">
+            <XMath>
+              <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+            </XMath>
+          </Math>m (<Math mode="inline" tex="\equiv" text="equivalent-to" xml:id="S2.SS2.p1.m4">
+            <XMath>
+              <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
+            </XMath>
+          </Math> 1.34″).</p>
+      </para>
+      <para xml:id="S2.SS2.p2">
+        <p>In an attempt to measure any proper motion of Arc A this same
+filamentary edge was imaged (see Fig. 4) on the 8th of November 1996
+with the 2.1m San Pedro Martir (SPM) telescope in Mexico. The
+integration time was 1800s through an interference filter centred H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.SS2.p2.m1">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> and with an 11Å bandwidth with the Tek CCD, (1024 <Math mode="inline" tex="\times" text="*" xml:id="S2.SS2.p2.m2">
+            <XMath>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+            </XMath>
+          </Math> 1024, 24
+<!--  %**** eridv11.tex Line 225 **** --><Math mode="inline" tex="\times" text="*" xml:id="S2.SS2.p2.m3">
+            <XMath>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+            </XMath>
+          </Math> 24 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.SS2.p2.m4">
+            <XMath>
+              <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+            </XMath>
+          </Math>m<Math mode="inline" tex="{}^{2}" text="^2" xml:id="S2.SS2.p2.m5">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> pixels to give a scale of
+0.3″ pixel<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S2.SS2.p2.m6">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> at the f/8 focus) as the detector. The
+resultant ‘seeing’ disk was 1.8″ diameter nearly matching the
+POSS resolution.</p>
+      </para>
+      <para xml:id="S2.SS2.p3">
+        <p>The Starlink <text font="smallcaps">ccdpacl</text> package <text font="smallcaps">ccdalign</text> was used to align the two data
+arrays and the <text font="smallcaps">gaia</text> package <text font="smallcaps">patch</text> to then remove the star images. Both
+arrays were finally rotated by the same amount until the filamentary
+edge was vertical in both. Brightness profiles were compared for a
+cut, 2.15′ long and marked in Fig. 4, perpendicular to the most
+defined part of the filamentary edge of the nebulous Arc A. These are
+shown in inserts in Fig. 4. A conservative upper limit to the proper
+motion, perpendicularly to the filamentary edge, of <Math mode="inline" tex="\pm 0.13" text="plus-or-minus 0.13" xml:id="S2.SS2.p3.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                <XMTok meaning="0.13" role="NUMBER">0.13</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>″ yr<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S2.SS2.p3.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> was given with the detection limit governed by the lower
+signal-to-noise ratio in the POSS data.</p>
+      </para>
+    </subsection>
+  </section>
+  <section refnum="3" xml:id="S3">
+    <title><tag close=" ">3</tag>Discussion</title>
+    <para xml:id="S3.p1">
+      <p>There is an immediate implication of the expansion pm upper limit for
+Arc A in Sect. 2.2. Consider a pm of <Math mode="inline" tex="\delta\theta" text="delta * theta" xml:id="S3.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" name="delta" role="UNKNOWN">δ</XMTok>
+              <XMTok font="italic" name="theta" role="UNKNOWN">θ</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> arcsec yr<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p1.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+for a filament with a tangential velocity of V<Math mode="inline" tex="{}_{\rm t}" text="_t" xml:id="S3.p1.m3">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" role="UNKNOWN">t</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>  km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p1.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> at a
+distance D pc then D = 4.612 V<Math mode="inline" tex="{}_{\rm t}" text="_t" xml:id="S3.p1.m5">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" role="UNKNOWN">t</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="\delta\theta^{-1}" text="delta * theta ^ (- 1)" xml:id="S3.p1.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" name="delta" role="UNKNOWN">δ</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="theta" role="UNKNOWN">θ</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. If Arc A is
+the edge of a shell expanding slowly at 15  km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p1.m7">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> then for an expansion
+<!--  %**** eridv11.tex Line 250 **** -->pm of <Math mode="inline" tex="\leq" text="less=" xml:id="S3.p1.m8">
+          <XMath>
+            <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+          </XMath>
+        </Math> 0.13 arcsec yr<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p1.m9">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> its distance must be <Math mode="inline" tex="\geq" text="&gt;=" xml:id="S3.p1.m10">
+          <XMath>
+            <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+          </XMath>
+        </Math> 530 pc.
+The 25<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S3.p1.m11">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> long Arc A would have a linear extent of <Math mode="inline" tex="\geq" text="&gt;=" xml:id="S3.p1.m12">
+          <XMath>
+            <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+          </XMath>
+        </Math> 230 pc
+with this lower distance limit. Any higher expansion velocities than
+15  km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p1.m13">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> , such as those of <Math mode="inline" tex="\geq" text="&gt;=" xml:id="S3.p1.m14">
+          <XMath>
+            <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+          </XMath>
+        </Math> 50  km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p1.m15">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> typical of old supernova
+remnants (Cygnus Loop, IC443, Vela etc) and capable of causing
+collisional ionization, would then place Arc A at the improbably high
+distance of <Math mode="inline" tex="\geq" text="&gt;=" xml:id="S3.p1.m16">
+          <XMath>
+            <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+          </XMath>
+        </Math> 1.8 kpc with a corresponding increase in linear
+size.</p>
+    </para>
+    <para xml:id="S3.p2">
+      <p>The relationship of Arc B to both Barnard’s Arc and Arc A should now
+be considered. Firstly, Heiles et al (1999) show that an area of soft
+X-ray emission mapped by Snowden et al (1995) extends from Barnard’s
+Arc (15<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S3.p2.m1">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> diameter centred on <Math mode="inline" tex="(\ell,b)=(224.5^{o},-18^{o})" text="open-interval@(ell, b) = open-interval@(224.5 ^ o, - 18 ^ o)" xml:id="S3.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="open-interval"/>
+                  <XMRef idref="S3.p2.m2.1"/>
+                  <XMRef idref="S3.p2.m2.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMTok name="ell" role="UNKNOWN" xml:id="S3.p2.m2.1">ℓ</XMTok>
+                  <XMTok role="PUNCT">,</XMTok>
+                  <XMTok font="italic" role="UNKNOWN" xml:id="S3.p2.m2.2">b</XMTok>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="open-interval"/>
+                  <XMRef idref="S3.p2.m2.3"/>
+                  <XMRef idref="S3.p2.m2.4"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S3.p2.m2.3">
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="224.5" role="NUMBER">224.5</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                  </XMApp>
+                  <XMTok role="PUNCT">,</XMTok>
+                  <XMApp xml:id="S3.p2.m2.4">
+                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                      <XMTok meaning="18" role="NUMBER">18</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>
+and the Orion Nebula) to Arc B. In fact they describe this volume as
+the ‘Eridanus superbubble’ with Arc B as the supershell wall. The
+detailed correlations shown in Fig. 3(b) suggest an alternative
+interpretation. Here, Arc B appears to be one edge of a
+self–contained shell delineated by the 20<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S3.p2.m3">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> diameter ring of H<text font="smallcaps">i</text>
+21cm emission surrounding a localised enhancement of super-heated
+X-ray emitting gas. Warm dust, giving rise to the 100 <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p2.m4">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m ridge
+just outside Arc B, must be mixed with the neutral gas piled up as the
+H<text font="smallcaps">i</text> shell expanded. A separate shell is suggested which appears to be
+unrelated to Arc A and not to be part of a coherent, elongated
+‘supershell’ emanating from the Orion region. In fact this shell
+could be one of a complex of shells whose overlapping images give rise
+<!--  %**** eridv11.tex Line 275 **** -->to the more extended X-ray region.</p>
+    </para>
+    <para xml:id="S3.p3">
+      <p>The mechanism for the ionization of the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.p3.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> emitting region
+of Arc B must be considered within the model that this
+ionized shell of gas is
+on the <text font="italic">inside</text> surface of the larger 20<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S3.p3.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> diameter
+H<text font="smallcaps">i</text> shell. An expanding
+supernova remnant, with a shock driven into the surrounding interstellar
+medium would have exactly the reverse of this configuration
+if its expansion velocity was great enough to generate a radiative
+shock ie H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.p3.m3">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> emitting filaments would be expected
+on its outside surface.
+Furthermore, leakage Lyman photons from the Orion nebula are shielded
+from this inside surface by the outer H<text font="smallcaps">i</text> shell.
+It can be seen in Fig. 3(b) that an arc of X-ray
+emitting, super-heated, gas
+is immediately adjacent to Arc B. This hot gas is most likely
+the slowly cooling remnant of the shocked blast wave
+that originally pressured the expansion of the shell
+in its early, energy conserving, phase (assuming a supernova origin)
+and is still present in the shell’s present momentum conserving phase.</p>
+    </para>
+    <para xml:id="S3.p4">
+      <p>The X-ray emitting gas is most strongly located towards higher
+galactic latitudes within the H<text font="smallcaps">i</text> shell. In general, the random
+<!--  %**** eridv11.tex Line 300 **** -->motions of H<text font="smallcaps">i</text> clouds do not allow them to rise to much more than
+<Math mode="inline" tex="100~{}{\rm pc}" text="100 * pc" xml:id="S3.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok meaning="100" role="NUMBER" rpadding="3.3pt">100</XMTok>
+              <XMTok role="UNKNOWN">pc</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> or so from the galactic plane. Hot (<Math mode="inline" tex="\sim 10^{6}~{}{\rm K}" text="absent similar-to 10 ^ 6 * K" xml:id="S3.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp rpadding="3.3pt">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
+                </XMApp>
+                <XMTok role="UNKNOWN">K</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) X-ray emitting gas will have a much larger scale height above the
+galactic plane due to the high sound speed in gas of this temperature.
+The scale height is about (Kahn 1998) <Math mode="inline" tex="{c_{\rm H}^{2}}/g_{\rm z}" text="(c _ H) ^ 2 / g _ z" xml:id="S3.p4.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok font="italic" role="UNKNOWN">c</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">H</XMTok>
+                </XMApp>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">g</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">z</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, where
+<Math mode="inline" tex="c_{\rm H}\simeq 100~{}{\rm km~{}s^{-1}}" text="c _ H similar-to-or-equals 100 * km * s ^ (- 1)" xml:id="S3.p4.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">c</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="100" role="NUMBER" rpadding="3.3pt">100</XMTok>
+                <XMTok role="UNKNOWN" rpadding="3.3pt">km</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                  <XMTok role="UNKNOWN">s</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> is the sound speed in the hot
+gas and <Math mode="inline" tex="g_{\rm z}\sim 10^{-8}~{}{\rm cm~{}s^{-1}}" text="g _ z similar-to 10 ^ (- 8) * cm * s ^ (- 1)" xml:id="S3.p4.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">g</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">z</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp rpadding="3.3pt">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="8" role="NUMBER">8</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="UNKNOWN" rpadding="3.3pt">cm</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                  <XMTok role="UNKNOWN">s</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> is the gravitational
+field directed down towards the disk. This buoyancy of the hot gas
+within the H<text font="smallcaps">i</text> shell may then have resulted in the hot gas gathering
+at the top (with respect to the galactic plane) of the shell. If the
+hot gas has enough pressure to eventually be able to break through the
+H<text font="smallcaps">i</text> shell that is constraining it then it will be able to rise into the
+galactic halo, forming part of the galactic fountain and leaving a
+chimney structure behind (see e.g. Norman &amp; Ikeuchi 1989).
+Photoionization
+by the Lyman photons in the long wavelength wing of the <Math mode="inline" tex="10^{7}" text="10 ^ 7" xml:id="S3.p4.m6">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> K
+Black Body emission from the super-heated gas is a possible
+ionizing mechanism.
+More likely the optical emission seen at the interface between the hot and cold
+gas arises as a result of mixing between the two
+media. This can occur via thermal conduction (see e.g. Borkowski,
+Balbus &amp; Fristrom 1990, and references therein) as hot electrons heat
+and ionize the inner edge of the H<text font="smallcaps">i</text> shell giving rise to a warm
+layer of <Math mode="inline" tex="\sim 10^{5}~{}{\rm K}" text="absent similar-to 10 ^ 5 * K" xml:id="S3.p4.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp rpadding="3.3pt">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+                </XMApp>
+                <XMTok role="UNKNOWN">K</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. This is a thermally unstable temperature
+and the gas will rapidly cool to <Math mode="inline" tex="10^{4}~{}{\rm K}" text="10 ^ 4 * K" xml:id="S3.p4.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp rpadding="3.3pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+              </XMApp>
+              <XMTok role="UNKNOWN">K</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> resulting in the
+<!--  %**** eridv11.tex Line 325 **** -->emission of H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.p4.m9">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math>. Thermal conduction
+may be inefficient if significant magnetic fields are present that can
+hinder the transport of hot electrons to the cold gas or if there is
+significant relative motion between the two media (Hartquist &amp;
+Dyson 1993). If this is the case, then mixing can take place via
+localised boundary layers and shocks (Dyson et al 1993,
+Redman et al 1999). An observational test that these effects are still
+taking place would be the detection of O <text font="smallcaps">vi</text> absorption lines
+since this ion indicates temperatures of <Math mode="inline" tex="3-5\times 10^{5}~{}{\rm K}" text="3 - 5 * 10 ^ 5 * K" xml:id="S3.p4.m10">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok meaning="3" role="NUMBER">3</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">×</XMTok>
+                  <XMTok meaning="5" role="NUMBER">5</XMTok>
+                  <XMApp rpadding="3.3pt">
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="UNKNOWN">K</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+which, as mentioned above, is a temperature from which material can
+rapidly cool.</p>
+    </para>
+    <para xml:id="S3.p5">
+      <p>Incidentally, the best guide to understanding these structures extending from
+Barnard’s Arc to Arcs A and B in Fig. 2 and the extended X-ray emitting
+gas must be the giant shells of the Large and Small Magellanic Clouds
+and six interlocking shells between 68-308 pc diameter in the Local
+Group galaxy IC 1613 (Meaburn et al. 1988). For one thing their
+dimensions correspond to those of Arcs A and B for distances <Math mode="inline" tex="\geq" text="&gt;=" xml:id="S3.p5.m1">
+          <XMath>
+            <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+          </XMath>
+        </Math>
+530 pc. The image of such a group of separate shells, viewed from the
+edge of the group, but within the plane of a galaxy, would appear as
+overlapping H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.p5.m2">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> emitting filaments along any sight-line or in X-rays,
+by superimposed emission from separate volumes of super-heated gas.</p>
+    </para>
+    <para xml:id="S3.p6">
+      <p>Arc A in Fig. 3(a &amp; b) could then be unrelated to Arc B and similarly
+<!--  %**** eridv11.tex Line 350 **** -->not part of an elongated ‘superbubble’ projecting from Barnard’s Arc:
+it could simply be the manifestation of a further shell whose image is
+superimposed on Arc B. The original correlation of Arc A with the
+giant (90<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S3.p6.m1">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> diameter) non-thermal radio loop (Loop 2 - Meaburn
+1965 and 1967) now seems unlikely in view of the present upper limit
+to its expansion proper motion. Only if Loop 2 were a truly
+fossilised, nearby, supernova remnant with an expansion velocity of
+<Math mode="inline" tex="\leq" text="less=" xml:id="S3.p6.m2">
+          <XMath>
+            <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+          </XMath>
+        </Math> 10  km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p6.m3">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> could Arc A exist within the requisite 30 pc of the
+Sun.
+In this case ionization of the outer edge of a
+compressed H<text font="smallcaps">i</text>, 90<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S3.p6.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> diameter, swept–up
+shell by leakage Lyman photons from the 450 pc distant Orion region
+would also have to be invoked to produce the observed H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.p6.m5">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> emission.
+The sense of the curvature of Arc A is one feature in favour of this
+interpretation. A relationship of Arc A with the nearby, separate H<text font="smallcaps">i</text>
+shell found by Lindblad et al (1973) cannot be ruled out.</p>
+    </para>
+  </section>
+  <section refnum="4" xml:id="S4">
+    <title><tag close=" ">4</tag>Conclusions</title>
+    <para xml:id="S4.p1">
+      <p>We calculate a lower limit of 530pc to the distance of Arc A by
+assuming an expansion velocity of <Math mode="inline" tex="\approx 15" text="absent approximately-equals 15" xml:id="S4.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="15" role="NUMBER">15</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S4.p1.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> (RO, 1979). This
+corresponds to a linear size of <Math mode="inline" tex="\geq 230" text="absent &gt;= 230" xml:id="S4.p1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="230" role="NUMBER">230</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>pc.
+Arc B could be at a much
+lower distance of <Math mode="inline" tex="\approx 150" text="absent approximately-equals 150" xml:id="S4.p1.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="150" role="NUMBER">150</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>pc and seems to be self-contained in a
+<!--  %**** eridv11.tex Line 375 **** -->20<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S4.p1.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> diameter H<text font="smallcaps">i</text> ring. Therefore we have evidence for Arc A and
+Arc B to be part of a complex of individual shells viewed along the
+same sight-line, and therefore not just the edge of a single Eridanus
+superbubble. Further fainter arcs and loops can also be seen in the
+deep H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S4.p1.m6">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> mosaic image at a lower level, supporting this
+hypothesis. Furthermore, a complex of interlocking shells of this size
+and morphology, is consistent with similar structures seen in the LMC
+and SMC.</p>
+    </para>
+    <para xml:id="S4.p2">
+      <p>The mixing of extended soft X-ray emission with the H<text font="smallcaps">i</text> shell
+wall (adjacent to Arc B) is argued to be the
+most likely ionising mechanism for Arc B.</p>
+    </para>
+    <para xml:id="S4.p3">
+      <p>Arc A on the
+other-hand, could still be related to giant radio Loop 2, but
+only for expansion velocities <Math mode="inline" tex="\leq 10" text="absent less= 10" xml:id="S4.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S4.p3.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.</p>
+    </para>
+  </section>
+  <section xml:id="Sx1">
+    <title>Acknowledgements</title>
+    <para xml:id="Sx1.p1">
+      <p>We wish to thank the staffs at the Kryonerion and
+San Pedro Martir observatories for their
+excellent assistance during these observations and Dr. Bob Argyle of
+RGO for assistance with the PDS microdensitometer. The work in Greece
+was sponsored by the British Council (Athens) in a collaboration
+<!--  %**** eridv11.tex Line 400 **** -->between Patras and Manchester Universities.
+JAL acknowledges support from
+DGAPA-UNAM and CONACY(Mexico) through projects IN114199 and 32214-E
+respectively. CD acknowledges a PPARC research grant. MPR acknowledges a PPARC Research Associateship.</p>
+    </para>
+  </section>
+  <section refnum="5" xml:id="S5">
+    <title><tag close=" ">5</tag>Figure legends</title>
+    <para class="ltx_noindent" xml:id="S5.p1">
+      <p><text font="bold">Figure 1. </text></p>
+    </para>
+    <para class="ltx_noindent" xml:id="S5.p2">
+      <p>The optical layout of the Manchester wide field camera
+(MWFC). The interference filter is in the exit pupil.</p>
+    </para>
+    <para class="ltx_noindent" xml:id="S5.p3">
+      <p><text font="bold">Figure 2.</text></p>
+    </para>
+    <para class="ltx_noindent" xml:id="S5.p4">
+      <p>A negative grey-scale representation of the mosaic of H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S5.p4.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> images
+taken of the Eridanus nebulosity.</p>
+    </para>
+    <para class="ltx_noindent" xml:id="S5.p5">
+      <p><text font="bold">Figure 3(a).</text>
+A comparison of the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S5.p5.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> contours (linear intervals)
+from the image in Fig. 2 with a negative grey-scale representation
+of the IRAS 100 <Math mode="inline" tex="\mu" text="mu" xml:id="S5.p5.m2">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m image of the field. Arcs A &amp; B are indicated.</p>
+    </para>
+    <para class="ltx_noindent" xml:id="S5.p6">
+      <p><text font="bold">Figure 3(b).</text>
+A lighter grey-scale representation of the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S5.p6.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> image in
+Fig. 2 is compared with the ROSAT X-ray (0.75 kev) contours. The
+<!--  %**** eridv11.tex Line 425 **** -->H<text font="smallcaps">i</text> ring is indicated by a dashed line from Brown et al (1995).</p>
+    </para>
+    <para class="ltx_noindent" xml:id="S5.p7">
+      <p><text font="bold">Figure 4.</text></p>
+    </para>
+    <para class="ltx_noindent" xml:id="S5.p8">
+      <p>A negative H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S5.p8.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> image of the sharp edge of Arc B taken with
+the San Pedro 2.1m telescope is shown. This has been rotated to bring
+the sharp edge of Arc A nearly vertical in the data array. The
+field centre is RA = 04h 01m 21.47s DEC = +01<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S5.p8.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> 32′20.5″(J2000) (<Math mode="inline" tex="\ell,b" text="list@(ell, b)" xml:id="S5.p8.m3">
+          <XMath>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="list"/>
+                <XMRef idref="S5.p8.m3.1"/>
+                <XMRef idref="S5.p8.m3.2"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok name="ell" role="UNKNOWN" xml:id="S5.p8.m3.1">ℓ</XMTok>
+                <XMTok role="PUNCT">,</XMTok>
+                <XMTok font="italic" role="UNKNOWN" xml:id="S5.p8.m3.2">b</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>) = (188.7<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S5.p8.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> , –36.1<Math mode="inline" tex="{}^{o}" text="^o" xml:id="S5.p8.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> ). Note that north
+is to the top of the tilted left-hand edge of the image. Cuts taken
+across the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S5.p8.m6">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> filament from (a) the SPM telescope and (b) the POSS
+data arrays are shown as inserts. These were co-additions from the respective
+images for the length marked against the image of the filamentary
+edge.</p>
+    </para>
+  </section>
+  <bibliography xml:id="bib">
+    <title>References</title>
+    <biblist>
+      <bibitem xml:id="bib.bibx1">
+        <bibtag role="refnum"/>
+        <bibblock>
+Borkowski K. J., Balbus S. A., Fristrom C. A., 1990, ApJ, 355, 501
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx2">
+        <bibtag role="refnum"/>
+        <bibblock>
+Boumis P., 1997, PhD thesis, The University of Manchester
+<!--  %**** eridv11.tex Line 450 **** --></bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx3">
+        <bibtag role="refnum"/>
+        <bibblock>
+Brown A.G.A., Hartmann D. &amp; Burton W.B., 1995, A&amp;A, 300, 903
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx4">
+        <bibtag role="refnum"/>
+        <bibblock>
+Burrows D.N., Singh K.P., Nousek J.A., Garmire G.P &amp; Good J., 1993, ApJ, 406,
+97
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx5">
+        <bibtag role="refnum"/>
+        <bibblock>
+Burrows D.N. &amp; Guo Z., 1996, MPE report, 263, 221
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx6">
+        <bibtag role="refnum"/>
+        <bibblock>
+Burton W.B. &amp; Hartmann D., 1994, Ap&amp;SS, 217, 189
+</bibblock>
+      </bibitem>
+      <bibitem key="dyson.et.al93" xml:id="bib.bibx7">
+        <bibtag role="refnum">Dyson, Hartquist &amp; Biro¡1993¿</bibtag>
+        <bibblock>
+Dyson J. E., Hartquist T. W., Biro S., 1993, MNRAS, 261, 430
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx8">
+        <bibtag role="refnum"/>
+        <bibblock>
+Hartmann D. &amp; Burton W.B., 1997, Atlas of Galactic Neutral Hydrogen,
+Cambridge University Press.
+</bibblock>
+      </bibitem>
+      <bibitem key="hartquist&amp;dyson93" xml:id="bib.bibx9">
+        <bibtag role="refnum">Hartquist &amp; Dyson¡1993¿</bibtag>
+        <bibblock>
+Hartquist T. W., Dyson J. E., 1993, QJRAS, 34, 57
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx10">
+        <bibtag role="refnum"/>
+        <bibblock>
+<!--  %**** eridv11.tex Line 475 **** -->Haslam C.G.T., Kahn F.D. &amp; Meaburn J., 1971, A&amp;A, 12, 388
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx11">
+        <bibtag role="refnum"/>
+        <bibblock>
+Heiles C., 1998, in Proc. of IAU Colloqium, no. 166, “The Local
+Bubble and Beyond”, eds. D. Breitschweidt, M.J.Freyberg and J. Trümper
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx12">
+        <bibtag role="refnum"/>
+        <bibblock>
+Heiles C., Haffner L.M., Reynolds R.J., 1999, ASP Conference Series,
+vol. 168, p. 211
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx13">
+        <bibtag role="refnum"/>
+        <bibblock>
+Jones A.W. &amp; Meaburn J., 1985, MNRAS, 213, 711
+</bibblock>
+      </bibitem>
+      <bibitem key="kahn98" xml:id="bib.bibx14">
+        <bibtag role="refnum">Kahn¡1998¿</bibtag>
+        <bibblock>
+Kahn F. D., 1998, in Breitschwerdt D., Freyberg M. J., Trümper J., eds,
+The Local Bubble and Beyond - Lyman Spitzer Colloquium: Proc. IAU Col. 166.
+</bibblock>
+        <bibblock>Springer, p. 483 (Lecture notes in Physics, Vol. 506)
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx15">
+        <bibtag role="refnum"/>
+        <bibblock>
+Large M.I., Quigley M.J.S. &amp; Haslam C.G.T., 1962, MNRAS, 124, 405
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx16">
+        <bibtag role="refnum"/>
+        <bibblock>
+Lindblad P. O., Grape K., Sandqvist Aa. &amp; Schober J., 1973,
+A&amp;A, 24, 309.
+<!--  %**** eridv11.tex Line 500 **** --></bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx17">
+        <bibtag role="refnum"/>
+        <bibblock>
+Meaburn J., 1965, Nature, 208, 575
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx18">
+        <bibtag role="refnum"/>
+        <bibblock>
+Meaburn J., 1967, Zeits. Astrophysik., 65, 93
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx19">
+        <bibtag role="refnum"/>
+        <bibblock>
+Meaburn J., Clayton C.A. &amp; Whitehead M.J., 1988, MNRAS, 235, 479
+</bibblock>
+      </bibitem>
+      <bibitem key="norman&amp;ikeuchi89" xml:id="bib.bibx20">
+        <bibtag role="refnum">Norman &amp; Ikeuchi¡1989¿</bibtag>
+        <bibblock>
+Norman C. A., Ikeuchi S., 1989, ApJ, 345, 372
+</bibblock>
+      </bibitem>
+      <bibitem key="redman.et.al99b" xml:id="bib.bibx21">
+        <bibtag role="refnum">Redman et al.¡1999¿</bibtag>
+        <bibblock>
+Redman M. P., Al-Mostafa Z. A. A., Meaburn J., Bryce M., Dyson J. E., 1999,
+A&amp;A, 345, 943
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx22">
+        <bibtag role="refnum"/>
+        <bibblock>
+Reynolds R.J. &amp; Ogden P.M., (RO), 1979, ApJ, 229, 942
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx23">
+        <bibtag role="refnum"/>
+        <bibblock>
+Sivan J.P., 1974, A&amp;AS, 16, 163
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx24">
+        <bibtag role="refnum"/>
+        <bibblock>
+Snowden S.L., Burrows D.N., Sanders W.T., Aschenbach B. &amp; Pfeffermann E.,
+1995, ApJ, 439, 399
+<!--  %**** eridv11.tex Line 525 **** --></bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx25">
+        <bibtag role="refnum"/>
+        <bibblock>
+Wheelcock S.L., Gautier T.N., Chillemi J., et al., 1994, IRAS Sky
+Survey Atlas Explanatory Supplement, Jet Propulsion Laboratory, Pasadena
+</bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+</document>

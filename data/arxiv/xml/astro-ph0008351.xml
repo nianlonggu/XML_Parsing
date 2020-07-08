@@ -1,0 +1,1534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008351.1"?>
+<?latexml class="article" options="11pt,newpasp,twoside,epsf" oldstyle="true"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title> EUV/X-ray Emission and the Thermal and Ionization Structure of B Star
+Winds</title>
+  <creator role="author">
+    <personname>David H. Cohen</personname>
+  </creator>
+  <creator before="  " role="author">
+    <personname>Joseph P. Cassinelli</personname>
+  </creator>
+  <creator before="  " role="author">
+    <personname>Joseph J. MacFarlane</personname>
+  </creator>
+  <creator before="  " role="author">
+    <personname>Stanley P. Owocki</personname>
+  </creator>
+  <abstract name="Abstract">
+    <p>We discuss the EUV and X-ray properties of B stars, focusing on <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="m1">
+        <XMath>
+          <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+        </XMath>
+      </Math> CMa (B2 II) which is the <text font="italic">only</text> star with both emission lines and a photospheric continuum detected with <text font="italic">EUVE</text>. We explore the modest effects of the photospheric EUV continua on the wind, as well as the much stronger effects of the short-wavelength EUV and soft X-ray emission lines. Attenuation of the EUV and soft X-ray emission by the wind plays an important role, and leads to the reprocessing of X-rays via He<Math mode="inline" tex="{}^{+}" text="^+" xml:id="m2">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> ionization and the Bowen mechanism in the wind. Finally, we explore some of the new diagnostics that will shortly become available with the next generation of high spectral resolution X-ray telescopes. All of this analysis is presented in the context of a two component stellar wind–a dense component (clumps) that contains most of the mass but fills a negligible fraction of the volume, and a rarefied component that fills most of the volume but accounts for only a small fraction of the mass.</p>
+  </abstract>
+<!--  %**** tartu.tex Line 25 **** 
+     %“def“plotone#1–“centering “leavevmode “epsfxsize=“columnwidth “epsfbox–#1˝˝
+     %“def“plottwo#1#2–“centering “leavevmode “epsfxsize=.45“columnwidth “epsfbox–#1˝ %“hfil“epsfxsize=.45“columnwidth “epsfbox–#2˝˝
+     %“def“plotfiddle#1#2#3#4#5#6#7–“centering “leavevmode
+     %“vbox to#2–“rule–0pt˝–#2˝˝
+     %“special–psfile=#1 voffset=#7 hoffset=#6 vscale=#5 hscale=#4 angle=#3˝˝
+     %“let“jnl@style=“rm
+     %“pagestyle–empty˝
+     %**** tartu.tex Line 50 ****-->  <ERROR class="undefined">\affil</ERROR>
+  <para xml:id="p1">
+    <p>Bartol Research Institute, University of Delaware, Newark, DE 19716;
+Prism Computational Sciences, 16 N. Carroll St., Ste. 950, Madison, WI 53703</p>
+  </para>
+  <ERROR class="undefined">\affil</ERROR>
+  <para xml:id="p2">
+    <p>Department of Astronomy, University of Wisconsin, Madison, 475 N. Charter St., Madison, WI
+53706</p>
+  </para>
+  <ERROR class="undefined">\affil</ERROR>
+  <para xml:id="p3">
+    <p>Prism Computational Sciences, 16 N. Carroll St., Ste. 950, Madison, WI
+53703</p>
+  </para>
+  <ERROR class="undefined">\affil</ERROR>
+  <para xml:id="p4">
+    <p>Bartol Research Institute, University of Delaware, Newark, DE 19716</p>
+  </para>
+<!--  %**** tartu.tex Line 75 **** -->  <ERROR class="undefined">\keywords</ERROR>
+  <para xml:id="p5">
+    <p>B stars, EUV, ionization, shock waves, stellar winds, X-rays</p>
+  </para>
+  <section refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>Introduction</title>
+    <para xml:id="S1.p1">
+      <p>The primary differences between the winds of B stars and those of O stars are the much lower densities of B star winds and the relative importance of
+EUV/X-ray emission in B stars. In this paper we will examine the ionization and temperature structure of B star winds, with a focus on the EUV and X-ray emission properties of these objects. We will see how the differences in the wind and EUV/X-ray properties cause strong departures from the thermal and ionization conditions found in the more well-studied and
+well-understood O stars. The ionization balance in B star winds is both more complex, and harder to determine, both theoretically and observationally, than in O star winds. In fact, because of the more uncertain ionization corrections to the UV mass-loss rates the actual mass-loss rates of B stars are not well known.</p>
+    </para>
+    <para xml:id="S1.p2">
+      <p>In addition to this crucial difference between the high wind densities of O stars and the low wind densities of B stars, the relative proximity of the nearest B stars provides us with some important information that does not exist for O stars. Due to the very low column densities toward <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S1.p2.m1">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa and <Math mode="inline" tex="\beta" text="beta" xml:id="S1.p2.m2">
+          <XMath>
+            <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
+          </XMath>
+        </Math> CMa, we have information about the extreme ultraviolet (EUV) emission properties–both of the photosphere and of the wind–of these two objects, while we have no comparable information about O stars. As we shall see, this EUV emission plays an important role in the setting the ionization conditions (and possibly the thermal conditions) in the low-density B star winds.</p>
+    </para>
+<!--  %In the remainder of this section, we outline what is known about B star winds, %and describe $“epsilon$ CMa, which is the focus of much of the remainder of the %paper.  In “S2 we detail what is known about the photospheric EUV properties of %B stars and explore their effect on the wind structure.  In “S3 we discuss the %short-wavelength EUV and soft X-ray properties of B stars and explore their %effects on the wind ionization and thermal conditions.  In “S4 we examine the %importance of the Bowen fluorescence mechanism on the ionization/excitation %kinematics in B star winds and in reprocessing X-ray photons.  Finally, in “S5 %we look toward the future, detailing some X-ray diagnostics which will be %available with the new generation of X-ray telescopes, and use a recently %published –“it ASCA˝ spectrum of the X-ray binary Vela X-1 to demonstrate how %some of these diagnostics are already being used to set limits on the clumping %structure in B star winds. 
+     %“vspace–0.25in˝
+     %The dense winds of O stars can be observed via H$“alpha$ emission, which forms %near the wind base, as well as via radio free-free emission which forms far out %in the flow.  Ultraviolet resonance absorption lines are also used to determine %mass-loss rates, although for accurate determinations, they must be %unsaturated, and an ionization correction must be applied to the observed %column densities.  This ionization correction procedure, while prone to errors, %is tractable for O stars.  However, as we discuss further in later sections, %for B stars the ionization corrections are much less certain.  This is %unfortunate, because the other two mass-loss rate diagnostics are not effective %in B stars.-->    <para xml:id="S1.p3">
+      <p>The dense winds of O stars give rise to ultraviolet absorption lines that show both P Cygni emission peaks and broad absorption troughs. However, in B stars the winds are not strong enough to generate emission components, and the observed blue-shifted absorption components are seen to be quite weak in the few ions that are observable in the spacecraft ultraviolet.
+<!--  %“begin–figure˝ 
+     %“plotfiddle–civ˙profiles.eps˝–3.0in˝–0˝–50˝–45˝–-160˝–10˝
+     %“caption–A series of “ion–C˝–IV˝ 1548, 1551 “AA“/ lines for stars from early O %to B1.  The line goes from strong emission plus saturated absorption to almost %non-existent in this span.˝
+     %“label–Fig:civ˙profiles˝
+     %“end–figure˝
+     %This figure demonstrates how this line__which is often the most prominent wind %feature in O stars__almost disappears by spectral subtype B1.-->Grigsby &amp; Morrison (1995) have shown that UV wind features (at least in those ions accessible to IUE) do not exist beyond about B2.</p>
+    </para>
+<!--  %**** tartu.tex Line 100 **** 
+     %X-rays beyond B1-B2 may be the only observational tracers of radiation-driven %winds. . .-->    <para xml:id="S1.p4">
+      <p>In principle, radiation-driven winds can exist if there is at least one optically thick line in the wind. Gayley (1995) has developed a new formalism for describing the radiation force in standard line-driven winds (Castor, Abbott, &amp; Klein 1975; hereafter CAK). He has shown that the line opacity in a stellar wind has the remarkably simple character that its opacity is <Math mode="inline" tex="{\bar{Q}}\approx 2000" text="bar@(Q) approximately-equals 2000" xml:id="S1.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok font="italic" role="UNKNOWN">Q</XMTok>
+              </XMApp>
+              <XMTok meaning="2000" role="NUMBER">2000</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> times stronger than free electron scattering. This includes the effects of elemental abundances and assumes a matching between the wavelengths at which the line opacity exists and those at which the photospheric spectrum is strongest. Therefore, stars with Eddington factors <Math mode="inline" tex="\Gamma&gt;10^{-3}" text="Gamma &gt; 10 ^ (- 3)" xml:id="S1.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> have the potential for line-driven winds. However, Puls (2000) has recently shown that for B stars, the opacity and photospheric flux may not be well matched, making it harder for B stars to drive a strong outflow. In any case, this <Math mode="inline" tex="\Gamma&gt;10^{-3}" text="Gamma &gt; 10 ^ (- 3)" xml:id="S1.p4.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> limit corresponds to stars that have somewhat later spectral types than the B2 limit seen in the UV wind lines. The disappearance of these spectral wind features may, however, be due to ionization effects, rather than the disappearance of winds altogether. As we have already pointed out, determining the mass-loss rates of B stars is very difficult because the ionization corrections to UV absorption line observations is so uncertain, and no other reliable mass-loss diagnostics exist for most of these stars.</p>
+    </para>
+    <para xml:id="S1.p5">
+      <p>Despite the findings of Grigsby and Morrison (1995), there is, in fact, some evidence for winds in mid- to late-B, and even early-A, stars. Much of the evidence is indirect and centers on the X-ray emission (which we will discuss in §3), but one intriguing piece of more direct evidence involves the detection of a blue-shifted absorption component in the
+Lyman-<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.p5.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> line of the A0 V star Sirius (Bertin et al. 1995). This feature is consistent with a wind having a terminal velocity of <Math mode="inline" tex="{v}_{\infty}\approx 100" text="v _ infinity approximately-equals 100" xml:id="S1.p5.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                <XMTok fontsize="70%" meaning="infinity" name="infty" role="ID">∞</XMTok>
+              </XMApp>
+              <XMTok meaning="100" role="NUMBER">100</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S1.p5.m3">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and a mass-loss rate of <Math mode="inline" tex="\mbox{$\stackrel{.}{\textstyle M}$}\approx 10^{-12}" xml:id="S1.p5.m4">
+          <XMath>
+            <XMApp role="RELOP" xml:id="S1.p5.m4.1">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid4"/>
+              <XMTok font="italic" role="UNKNOWN">M</XMTok>
+              <XMTok role="PERIOD">.</XMTok>
+            </XMApp>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP" xml:id="S1.p5.m4.2">≈</XMTok>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="12" role="NUMBER">12</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="{\rm M}_{\odot}\," text="M _ direct-product" xml:id="S1.p5.m5">
+          <XMath>
+            <XMApp rpadding="1.7pt">
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok role="UNKNOWN">M</XMTok>
+              <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> yr <Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S1.p5.m6">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. So, it seems that at least some stars with <Math mode="inline" tex="\Gamma&lt;10^{-3}" text="Gamma less 10 ^ (- 3)" xml:id="S1.p5.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> have winds, although they may <text font="italic">not</text> be driven (primarily) by radiation pressure acting on lines.</p>
+    </para>
+    <para xml:id="S1.p6">
+      <p>In the remainder of this paper we discuss some results from large surveys but concentrate on detailed observations of the B2 II MK standard <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S1.p6.m1">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa. With a wind-broadened (<Math mode="inline" tex="v_{\rm edge}\approx 800" text="v _ edge approximately-equals 800" xml:id="S1.p6.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">edge</XMTok>
+              </XMApp>
+              <XMTok meaning="800" role="NUMBER">800</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S1.p6.m3">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>), but weak, C<Math mode="inline" tex="\;" text="absent" xml:id="S1.p6.m4">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">IV</text> 1548, 1551 Å profile and a mass-loss rate of <Math mode="inline" tex="\mbox{$\stackrel{.}{\textstyle M}$}\approx 1" xml:id="S1.p6.m5">
+          <XMath>
+            <XMApp role="RELOP" xml:id="S1.p6.m5.1">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid4"/>
+              <XMTok font="italic" role="UNKNOWN">M</XMTok>
+              <XMTok role="PERIOD">.</XMTok>
+            </XMApp>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP" xml:id="S1.p6.m5.2">≈</XMTok>
+            <XMTok meaning="1" role="NUMBER">1</XMTok>
+          </XMath>
+        </Math> to <Math mode="inline" tex="2\times 10^{-8}" text="2 * 10 ^ (- 8)" xml:id="S1.p6.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="8" role="NUMBER">8</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="{\rm M}_{\odot}\," text="M _ direct-product" xml:id="S1.p6.m7">
+          <XMath>
+            <XMApp rpadding="1.7pt">
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok role="UNKNOWN">M</XMTok>
+              <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> yr <Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S1.p6.m8">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> (Cassinelli et al. 1995; Cohen et al. 1999) this star has a much lower density wind than O stars, but, unlike some later B stars, the existence of its wind is not in doubt. We note that with <Math mode="inline" tex="\Gamma\approx 0.01" text="Gamma approximately-equals 0.01" xml:id="S1.p6.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+              <XMTok meaning="0.01" role="NUMBER">0.01</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> the multiplier factor of <Math mode="inline" tex="{\bar{Q}}\approx 2000" text="bar@(Q) approximately-equals 2000" xml:id="S1.p6.m10">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok font="italic" role="UNKNOWN">Q</XMTok>
+              </XMApp>
+              <XMTok meaning="2000" role="NUMBER">2000</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> implies that the force from spectral lines exceeds gravity at the star’s surface. This star has <Math mode="inline" tex="{T_{\rm eff}}=21000" text="T _ eff = 21000" xml:id="S1.p6.m11">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">eff</XMTok>
+              </XMApp>
+              <XMTok meaning="21000" role="NUMBER">21000</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> K and <Math mode="inline" tex="{L_{\rm X}/L_{\rm Bol}}=10^{-7}" text="L _ X / L _ Bol = 10 ^ (- 7)" xml:id="S1.p6.m12">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">Bol</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. It
+is very well studied and, most importantly, is the only hot star observable with all three of the Extreme Ultraviolet Explorer (<text font="italic">EUVE</text>) spectrometers. This unique data set alone argues for concentrating on <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S1.p6.m13">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa when trying to understand
+radiation-driven winds in B stars.</p>
+    </para>
+<!--  %“begin–table˝ 
+     %“begin–center˝
+     %“caption–The properties of “ecma.˝
+     %“label–Tab:ecma˝
+     %%“scriptsize
+     %“begin–tabular˝–cc˝
+     %%“tableline
+     %%“tableline
+     %%Mission &amp; Launch &amp; Spectral Range &amp; Resolution &amp; Effective Area ““
+     %% &amp; &amp; (keV) &amp; ($“lambda / “Delta“lambda$) &amp; (cm$^2$) ““
+     %“tableline
+     %$m˙V$ &amp; 1.5 ““
+     %**** tartu.tex Line 125 ****
+     %“teff  &amp; 21,000 K ““
+     %$d$  &amp; 132 pc ““
+     %$“theta˙D$  &amp; $0.80 “pm 0.05$ mas ““
+     %“mdot  &amp; $1 “times 10^–-8˝$ “msunyr ““
+     %“vinf  &amp;  1000 km s$^–-1˝$ ““
+     %“lxlb &amp; $10^–-7˝$  ““
+     %“tableline
+     %“end–tabular˝
+     %“end–center˝
+     %“end–table˝-->  </section>
+  <section refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>Photospheric EUV Emission from B Stars and its Effect on the Wind</title>
+    <para xml:id="S2.p1">
+      <p>Direct measurements of stellar photospheric continua below the Lyman edge at 912 Å were impossible until the early 1990s when the <text font="italic">EUVE</text> satellite was launched. Even with this instrument, only a small number of stars could be observed, due to a combination of low intrinsic fluxes and high interstellar opacity. Of these stars (aside from white dwarfs), all of the observations are of coronal emission lines from late-type stars, except for two stars: <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S2.p1.m1">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa and <Math mode="inline" tex="\beta" text="beta" xml:id="S2.p1.m2">
+          <XMath>
+            <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
+          </XMath>
+        </Math> CMa. These are the only two stars for which there are direct measurements of the photospheric flux below the Lyman edge. This is due primarily to their fortuitous position in a tunnel of very low interstellar column density.</p>
+    </para>
+    <para xml:id="S2.p2">
+      <p>In general, any study that has required the photospheric EUV fluxes of hot stars–including studies of the warm ionized component of the interstellar medium as well as studies of stellar wind conditions–has relied on model atmospheres. There are also a very small number of <text font="italic">indirect</text> observations of EUV fluxes of B stars. One of these involves Fabry-Perot spectroscopy of H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p2.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> fluxes of small H<Math mode="inline" tex="\;" text="absent" xml:id="S2.p2.m2">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">II</text> regions around B stars. Assuming that all stellar Lyman continuum radiation is reprocessed into H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p2.m3">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> in these H<Math mode="inline" tex="\;" text="absent" xml:id="S2.p2.m4">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">II</text> regions, Kutyrev, Reynolds, &amp; Tufte (1993) and Reynolds (1995) placed lower limits to the stellar Lyman continuum fluxes that in some cases exceed the predictions of model atmospheres.</p>
+    </para>
+    <para xml:id="S2.p3">
+      <p>The direct measurements of the Lyman continuum fluxes of <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S2.p3.m1">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa and <Math mode="inline" tex="\beta" text="beta" xml:id="S2.p3.m2">
+          <XMath>
+            <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
+          </XMath>
+        </Math> CMa (B1 III) with <text font="italic">EUVE</text> revealed fluxes that are 10 to 100 times higher than the predictions of model atmospheres (Vallerga, Vedder, &amp; Welsh 1993; Cassinelli et al. 1995; Cassinelli et al. 1996). The discrepancy seems to be even higher in the He<Math mode="inline" tex="\;" text="absent" xml:id="S2.p3.m3">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">I</text> continuum (<Math mode="inline" tex="\lambda&lt;504" text="lambda less 504" xml:id="S2.p3.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+              <XMTok meaning="504" role="NUMBER">504</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> Å), which is observed in <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S2.p3.m5">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa but not <Math mode="inline" tex="\beta" text="beta" xml:id="S2.p3.m6">
+          <XMath>
+            <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
+          </XMath>
+        </Math> CMa, although the correction for interstellar attenuation is more uncertain at these wavelengths. Non-LTE, line-blanketed TLUSTY models (Hubeny &amp; Lanz 1995) actually provide worse fits to the data, as the additional physical effects tend to both cool the outer wind, and lead to an overpopulation of the ground state with respect to LTE. Both these effects lower the Lyman continuum flux.</p>
+    </para>
+<!--  %“begin–figure˝ 
+     %“plotfiddle–atmosphere.eps˝–2.5in˝–0˝–100˝–100˝–-120˝–5˝
+     %“caption–Data from the EUV through the mid-IR of “ecma, along with the best-fit %Kurucz model atmosphere (from Cassinelli, et al. 1995, Used with permission).˝
+     %**** tartu.tex Line 150 ****
+     %“label–Fig:atmosphere˝
+     %“end–figure˝-->    <para xml:id="S2.p4">
+      <p>Cassinelli et al. (1995; 1996) suggest that whatever the physical mechanism, the EUV excesses and the observed IR excesses can both be accounted for by a modest increase in the temperature with respect to models in the extreme outer layers of the atmosphere (<Math mode="inline" tex="\tau_{\rm Ross}\approx 0.01" text="tau _ Ross approximately-equals 0.01" xml:id="S2.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">Ross</XMTok>
+              </XMApp>
+              <XMTok meaning="0.01" role="NUMBER">0.01</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>), perhaps of 1000 to 2000 K. The IR continuum is dominated by free-free opacity, and as such, is in LTE. Furthermore, the IR continuum near 15 <Math mode="inline" tex="\mu{\rm m}" text="mu * m" xml:id="S2.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+              <XMTok role="UNKNOWN">m</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>  is formed in the <text font="italic">same physical layers</text> as the EUV continuum near 600 Å. The 1000 K to 2000 K temperature increase that can explain the observed Lyman continuum excess in <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S2.p4.m3">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa and <Math mode="inline" tex="\beta" text="beta" xml:id="S2.p4.m4">
+          <XMath>
+            <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
+          </XMath>
+        </Math> CMa can also explain the roughly 10% IR excess observed with <text font="italic">IRAS</text>. Although non-LTE effects could in principle explain the observed EUV excess, only the existence of a temperature above the predictions of models high in the atmosphere can <text font="italic">simultaneously</text> explain the EUV and IR excesses.</p>
+    </para>
+    <para xml:id="S2.p5">
+      <p>It is not clear how representative these two stars are, or how large the region of the HR diagram is for which B star EUV fluxes have been underestimated. However, the indirect evidence of H<Math mode="inline" tex="\;" text="absent" xml:id="S2.p5.m1">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">II</text> region with high H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p5.m2">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> fluxes indicates that these stars are not unique. To investigate the influence of the photospheric EUV flux levels of B stars on the wind ionization, we have calculated non-LTE ionization equilibrium models for the wind of <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S2.p5.m3">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa using both the observed spectral energy distribution, with its high EUV flux, and a spectrum consistent with non-LTE models, with its much lower EUV flux. These calculations are identical to the ones described in MacFarlane, Cohen, &amp; Wang (1994), where the authors used a version of the NLTERT code (MacFarlane 1997) that accounts for spherical expansion. In this code, rate equations for multi-level atoms are solved self-consistently with the radiation field. We show a comparison in Figure <ref labelref="LABEL:Fig:photospheric_ionization"/> of the helium and carbon ionization balance as a function of radius for the two different cases. The effect of the factor of 100 higher EUV flux is not major, but is nonetheless significant. In both cases, He<Math mode="inline" tex="{}^{+}" text="^+" xml:id="S2.p5.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and C<Math mode="inline" tex="{}^{+2}" text="^+ 2" xml:id="S2.p5.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> dominate, but the higher photospheric flux changes the second most abundant ionization state to the one <text font="italic">above</text> the dominant stage from the one <text font="italic">below</text> it. This does not change the bulk properties of the wind, but it can have a strong impact on the strengths of the observed UV resonance lines. Specifically, note that the mass-loss rate determined from the C<Math mode="inline" tex="\;" text="absent" xml:id="S2.p5.m6">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">IV</text> 1548, 1551 Å doublet will be roughly a factor of 20 higher if the ionization correction fails to account for X-ray photoionization.</p>
+    </para>
+    <figure frefnum="Figure 1" labels="LABEL:Fig:photospheric_ionization" refnum="1" xml:id="S2.F1">
+      <ERROR class="undefined">\plotfiddle</ERROR>
+      <p>He-low.eps2.5in03023-17059
+<ERROR class="undefined">\plotfiddle</ERROR>He-high.eps0in03023-170-68
+<ERROR class="undefined">\plotfiddle</ERROR>C-low.eps0in030230107
+<ERROR class="undefined">\plotfiddle</ERROR>C-high.eps0in030230-20
+<!--  %“vspace–5in˝ --></p>
+      <toccaption><tag close=" ">1</tag>Ionization balance for helium (left) and carbon (right) with two different photospheric flux levels: the observed high levels (bottom) and the predicted lower levels (top).</toccaption>
+      <caption><tag close=": ">Figure 1</tag>Ionization balance for helium (left) and carbon (right) with two different photospheric flux levels: the observed high levels (bottom) and the predicted lower levels (top).</caption>
+    </figure>
+<!--  %Word about influence, but uncertainty about, the l¡504 flux? -->    <para xml:id="S2.p6">
+      <p>The effect of the higher EUV fluxes in B stars on the wind temperature has yet to be explored. However, it is clear that the hydrogen ionization rate will be strongly increased by the higher fluxes, and photoionization is the primary heating mechanism in OB star winds (see Drew 1989).</p>
+    </para>
+<!--  %**** tartu.tex Line 175 **** -->  </section>
+  <section refnum="3" xml:id="S3">
+    <title><tag close=" ">3</tag>X-ray and Short-Wavelength Emission from B Stars and its Effect on the Wind</title>
+    <para xml:id="S3.p1">
+      <p>The short-wavelength EUV (<Math mode="inline" tex="40" text="40" xml:id="S3.p1.m1">
+          <XMath>
+            <XMTok meaning="40" role="NUMBER">40</XMTok>
+          </XMath>
+        </Math> eV <Math mode="inline" tex="\mathrel{\hbox{\hbox to 0.0pt{\hbox{\lower 4.0pt\hbox{$\sim$}}}\hbox{$&lt;$}}}h{%&#10;\nu}&lt;100" text="absent [∼less] h * nu less 100" xml:id="S3.p1.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMTok meaning="absent"/>
+              <XMText role="RELOP"><text width="0.0pt" yoffset="-4.0pt"><Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.p1.m2.m1">
+                    <XMath>
+                      <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                    </XMath>
+                  </Math></text><Math mode="inline" tex="&lt;" text="less" xml:id="S3.p1.m2.m2">
+                  <XMath>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                  </XMath>
+                </Math></XMText>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">h</XMTok>
+                <XMTok font="italic" name="nu" role="UNKNOWN">ν</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok meaning="100" role="NUMBER">100</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> eV) and soft X-ray line emission from early-B stars is usually understood in the context of the wind-shock emission that is assumed to operate in O stars. The X-ray emission from mid- and late-B stars is harder to understand in terms of the standard picture of wind shocks, however. Much of the information we have about the X-ray properties of B stars comes from large low-resolution surveys with <text font="italic">ROSAT</text> and <text font="italic">Einstein</text>, but a significant amount of complementary information has been obtained from higher resolution observations of a small number of B stars, including <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S3.p1.m3">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa.</p>
+    </para>
+    <para xml:id="S3.p2">
+      <p>The surveys have indicated that the <Math mode="inline" tex="{L_{\rm X}/L_{\rm Bol}}\approx 10^{-7}" text="L _ X / L _ Bol approximately-equals 10 ^ (- 7)" xml:id="S3.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">Bol</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> relation that holds for O stars extends to about B1 but then breaks down, with <Math mode="inline" tex="L_{\rm X}" text="L _ X" xml:id="S3.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">L</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> decreasing faster than <Math mode="inline" tex="L_{\rm Bol}" text="L _ Bol" xml:id="S3.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">L</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">Bol</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> beyond this spectral subtype (Cohen, Cassinelli, &amp; MacFarlane 1997). The breakdown in the <Math mode="inline" tex="L_{\rm X}/L_{\rm Bol}" text="L _ X / L _ Bol" xml:id="S3.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">Bol</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+ law occurs just at the point where hot star winds are becoming optically thin to X-rays, as discussed by Owocki &amp; Cohen (1999), who show that the X-ray luminosity is expected to scale as <Math mode="inline" tex="L_{\rm X}\sim\mbox{$\stackrel{.}{\textstyle M}$}^{2}\sim L_{\rm Bol}^{3.4}" xml:id="S3.p2.m5">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">L</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+            </XMApp>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMApp role="RELOP">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="mid4"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok role="PERIOD">.</XMTok>
+              </XMApp>
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">Bol</XMTok>
+              </XMApp>
+              <XMTok fontsize="70%" meaning="3.4" role="NUMBER">3.4</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. However, the slope in the <Math mode="inline" tex="L_{\rm X}/L_{\rm Bol}" text="L _ X / L _ Bol" xml:id="S3.p2.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">Bol</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+ relationship is not observed to be this steep, implying that the X-ray filling factors in mid-B stars approach, and in some cases exceed, unity (Cohen et al. 1997).
+<!--  %, as can be seen in Figure “ref–Fig:lxlbff˝, where we show both the “lxlb“ and %the filling factor trends versus spectral subtype. -->There are several possible implications to these surprising data: (1) the X-ray emitting gas is clumped to enhance the emission measure for a given total mass; (2) the mass-loss rates of these B stars are actually higher than Abbott’s (1982) CAK parameters imply; or (3) the X-rays do not arise (entirely) in the wind. Note that this filling-factor problem is not as significant an issue for very early B stars and early-B stars lying above the main sequence, like <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S3.p2.m7">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa, which exhibits an emission measure filling factor of roughly 0.1 (Cohen et al. 1996).
+<!--  %“begin–figure˝ 
+     %“plotfiddle–lxlb.eps˝–1.5in˝–0˝–30˝–40˝–-190˝–-60˝
+     %“plotfiddle–ff.eps˝–0.in˝–0˝–30˝–40˝–-5˝–-40˝
+     %“caption–The observed trend of “lxlb“/ with spectral subtype for 27 B stars %observed with “rosat“/ is shown on the left.  The open triangles are $3 “sigma$ %upper limits, whereas the circles with lines are Be stars.  The 3 pairs of %symbols connected by vertical lines show the corrections for wind attenuation %for these early-B stars with relatively dense (and somewhat optically thick) %winds. On the right are the X-ray filling factors for the same 27 B star %“rosat“/ sample. These filling factors are the ratio of the observed X-ray %emission measure to the theoretical ‘‘whole wind’’ emission measures derived %from integrating $n^2$ (cm$^–-6˝$) from $r = 1.5 “rstar$ to infinity in a %smooth, spherically symmetric wind with CAK parameters taken from Abbott %(1982).˝
+     %“label–Fig:lxlbff˝
+     %“end–figure˝--></p>
+    </para>
+<!--  %B stars, like O stars, show very little time-variability in their X-rays.  This %is usually interpreted as evidence for numerous individual regions of X-ray %emitting plasma, which are not separately in steady-state, but rather have a %relatively time-constant aggregate emission level when averaged over the entire %wind. -->    <para xml:id="S3.p3">
+      <p>The <text font="italic">EUVE</text> spectrometers have access not only to photospheric radiation in the so-called “long-wavelength” spectrometer (<Math mode="inline" tex="300" text="300" xml:id="S3.p3.m1">
+          <XMath>
+            <XMTok meaning="300" role="NUMBER">300</XMTok>
+          </XMath>
+        </Math> Å<Math mode="inline" tex="\mathrel{\hbox{\hbox to 0.0pt{\hbox{\lower 4.0pt\hbox{$\sim$}}}\hbox{$&lt;$}}}%&#10;\lambda\mathrel{\hbox{\hbox to 0.0pt{\hbox{\lower 4.0pt\hbox{$\sim$}}}\hbox{$&lt;%&#10;$}}}760" text="absent [∼less] lambda [∼less] 760" xml:id="S3.p3.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMTok meaning="absent"/>
+              <XMText role="RELOP"><text width="0.0pt" yoffset="-4.0pt"><Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.p3.m2.m1">
+                    <XMath>
+                      <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                    </XMath>
+                  </Math></text><Math mode="inline" tex="&lt;" text="less" xml:id="S3.p3.m2.m2">
+                  <XMath>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                  </XMath>
+                </Math></XMText>
+              <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+              <XMText role="RELOP"><text width="0.0pt" yoffset="-4.0pt"><Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.p3.m2.m3">
+                    <XMath>
+                      <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                    </XMath>
+                  </Math></text><Math mode="inline" tex="&lt;" text="less" xml:id="S3.p3.m2.m4">
+                  <XMath>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                  </XMath>
+                </Math></XMText>
+              <XMTok meaning="760" role="NUMBER">760</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> Å), but also to line emission in the short- and medium-wavelength spectrometers (<Math mode="inline" tex="70" text="70" xml:id="S3.p3.m3">
+          <XMath>
+            <XMTok meaning="70" role="NUMBER">70</XMTok>
+          </XMath>
+        </Math> Å <Math mode="inline" tex="&lt;\lambda&lt;370" text="absent less lambda less 370" xml:id="S3.p3.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok meaning="370" role="NUMBER">370</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> Å). For <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S3.p3.m5">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa, five highly ionized iron lines are detected in the <text font="italic">EUVE</text> data with greater than <Math mode="inline" tex="4\sigma" text="4 * sigma" xml:id="S3.p3.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok meaning="4" role="NUMBER">4</XMTok>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> significance. These lines, along with emission lines formed in the photoionized cool component of the stellar wind and the He<Math mode="inline" tex="\;" text="absent" xml:id="S3.p3.m7">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">I</text> photospheric continuum, are shown in Figure <ref labelref="LABEL:Fig:euve_data"/>.</p>
+    </para>
+    <figure frefnum="Figure 2" labels="LABEL:Fig:euve_data" refnum="2" xml:id="S3.F2">
+      <ERROR class="undefined">\plotfiddle</ERROR>
+      <p>euve_data.eps2.8in05538-175-72</p>
+      <toccaption><tag close=" ">2</tag>The <text font="italic">EUVE</text> spectrum of <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S3.F2.m1">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa. Note the photospheric continuum at the longer wavelengths, as well as low ionization emission lines (He<Math mode="inline" tex="\;" text="absent" xml:id="S3.F2.m2">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">II</text> and O<Math mode="inline" tex="\;" text="absent" xml:id="S3.F2.m3">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">III</text>) and high ionization lines of various stages of iron.</toccaption>
+      <caption><tag close=": ">Figure 2</tag>The <text font="italic">EUVE</text> spectrum of <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S3.F2.m4">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa. Note the photospheric continuum at the longer wavelengths, as well as low ionization emission lines (He<Math mode="inline" tex="\;" text="absent" xml:id="S3.F2.m5">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">II</text> and O<Math mode="inline" tex="\;" text="absent" xml:id="S3.F2.m6">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">III</text>) and high ionization lines of various stages of iron.</caption>
+    </figure>
+<!--  %**** tartu.tex Line 200 **** -->    <para xml:id="S3.p4">
+      <p>These iron lines have a combined <text font="italic">emergent</text> luminosity on par with the total X-ray luminosity observed with <text font="italic">ROSAT</text>, and significantly more <text font="italic">intrinsic</text> luminosity (the difference being the result of continuum opacity in the wind). They can be fit simultaneously with the <text font="italic">ROSAT</text> data to derive a temperature distribution of the hot plasma on <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S3.p4.m1">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa. The results of this modeling indicate that there is significantly more plasma with temperatures at or below <Math mode="inline" tex="10^{6}" text="10 ^ 6" xml:id="S3.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> K than plasma with temperatures near <Math mode="inline" tex="5\times 10^{6}" text="5 * 10 ^ 6" xml:id="S3.p4.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+              <XMTok meaning="5" role="NUMBER">5</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> K (Cohen et al. 1996). This result is consistent with the <text font="italic">ROSAT</text> data for other B stars (Cohen et al. 1997). The analysis of the combined <text font="italic">EUVE</text> and <text font="italic">ROSAT</text> data also indicates that the wind is somewhat optically thick at very soft X-ray energies, and quite optically thick at EUV energies. The amount of attenuation derived from these data indicates that the hot plasma on <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S3.p4.m4">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa is spatially distributed throughout the wind (Cohen et al. 1996).</p>
+    </para>
+<!--  %NOTE: it would be nice to show the EUVE line flux table and/or the sketch of %the intrinsic vs. emitted spectrum. -->    <para xml:id="S3.p5">
+      <p>The information about the temperature distribution of the X-ray emitting plasma on <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S3.p5.m1">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa, as well as the wind absorption, allow us to generate and constrain models of the wind ionization state of the bulk, unshocked wind.
+In much the same way we compared ionization state models for different values of the photospheric EUV flux, let us now examine the effect of X-rays on the wind ionization. Using an input photospheric spectrum for which we have adjusted the EUV continuum flux to match the <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S3.p5.m2">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa data, we calculated a model with an X-ray source distributed throughout the wind and compared it to the model with no X-rays. In Figure <ref labelref="LABEL:Fig:xrays_ionization"/> we show the results of this comparison for helium and carbon.</p>
+    </para>
+    <figure frefnum="Figure 3" labels="LABEL:Fig:xrays_ionization" refnum="3" xml:id="S3.F3">
+      <ERROR class="undefined">\plotfiddle</ERROR>
+      <p>He-high.eps2.55in03023-17054
+<ERROR class="undefined">\plotfiddle</ERROR>He-x.eps0in03023-170-68
+<ERROR class="undefined">\plotfiddle</ERROR>C-high.eps0in030230102
+<ERROR class="undefined">\plotfiddle</ERROR>C-x.eps0in030230-20
+<!--  %“vspace–5in˝ --></p>
+      <toccaption><tag close=" ">3</tag>Ionization balance for helium (left) and carbon (right) with X-rays (bottom) and without X-rays (top).
+<!--  %Note that the onset of high ionization in radius traces the assumed lower %radius of the X-ray emitting region. --></toccaption>
+      <caption><tag close=": ">Figure 3</tag>Ionization balance for helium (left) and carbon (right) with X-rays (bottom) and without X-rays (top).
+<!--  %Note that the onset of high ionization in radius traces the assumed lower %radius of the X-ray emitting region. --></caption>
+    </figure>
+    <para xml:id="S3.p6">
+      <p>It can immediately be seen that the X-rays’ influence is much greater than the photospheric EUV radiation’s. With the X-ray photoionization in the calculation, the primary ionization state changes from He<Math mode="inline" tex="{}^{+}" text="^+" xml:id="S3.p6.m1">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> to He<Math mode="inline" tex="{}^{+2}" text="^+ 2" xml:id="S3.p6.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and from C<Math mode="inline" tex="{}^{+2}" text="^+ 2" xml:id="S3.p6.m3">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> to C<Math mode="inline" tex="{}^{+4}" text="^+ 4" xml:id="S3.p6.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. There is also a general spreading-out of the ionization stages, with three different stages of carbon each accounting for at least 10% of the total.</p>
+    </para>
+    <para xml:id="S3.p7">
+      <p>An explanation for the strong effect of X-rays in determining the ionization states of B star winds (as opposed to O stars winds in which the photosphere sets the ionization rate, and the X-rays cause only a perturbation) has been offered by MacFarlane et al. (1994). In the hotter O stars, the photospheric radiation field is strong above the He<Math mode="inline" tex="\;" text="absent" xml:id="S3.p7.m1">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">II</text> edge at 228 Å (54.4 eV) and the X-ray field dominates the photosphere only above about 100 eV. By contrast, for the cooler B stars, the X-ray field dominates the much weaker He<Math mode="inline" tex="\;" text="absent" xml:id="S3.p7.m2">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">II</text> continuum and even some of the He<Math mode="inline" tex="\;" text="absent" xml:id="S3.p7.m3">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">I</text> continuum, starting at about 40 eV. This causes the X-rays to have a stronger effect on the wind ionization in B stars. In fact, the X-rays boost the mean ionization state about one full stage on average for B stars.
+<!--  %“begin–figure˝ 
+     %“plotfiddle–MCW1.eps˝–3in˝–0˝–60˝–60˝–-150˝–-20˝
+     %“plotfiddle–MCW2.eps˝–0in˝–0˝–60˝–50˝–40˝–0˝
+     %“caption–(a) Derived X-ray spectra (thick jagged line) and photospheric spectra %from model atmospheres for three representative stars.  Note that in the B star %the X-rays dominate the radiation field at all energies above 40 eV, whereas in %the O star, the X-rays do not exceed the photospheric flux levels until about %100 eV.  Note that some important ionization energies are indicated at the top %of this plot.  (b) Mean ionization state of several ions as a function of %stellar temperature.  The solid symbols are for models –“it with˝ X-rays, and %the open symbols are for models without X-rays.  The influence of X-rays on the %cooler winds of B stars can be seen in this figure.˝
+     %**** tartu.tex Line 225 ****
+     %“label–Fig:MCW˝
+     %“end–figure˝--></p>
+    </para>
+    <para xml:id="S3.p8">
+      <p>Indeed, in <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S3.p8.m1">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa surprisingly high levels of wind ionization are seen in oxygen. Both <text font="italic">EUVE</text> and <text font="italic">ORFEUS</text> detected wind broadening in the O<Math mode="inline" tex="\;" text="absent" xml:id="S3.p8.m2">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">V</text> 630 Å line. See Figure <ref labelref="LABEL:Fig:orfeus"/> for the higher-resolution <text font="italic">ORFEUS</text> spectral measurements. <text font="italic">Both</text> X-rays and a high photospheric EUV flux are necessary to produce significant amounts of O<Math mode="inline" tex="{}^{+4}" text="^+ 4" xml:id="S3.p8.m3">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> in the wind of this star.</p>
+    </para>
+    <figure frefnum="Figure 4" labels="LABEL:Fig:orfeus" refnum="4" xml:id="S3.F4">
+      <ERROR class="undefined">\plotfiddle</ERROR>
+      <p>orfeus.eps2.in06060-182-270</p>
+      <toccaption><tag close=" ">4</tag>Wind-broadened EUV features seen in the <text font="italic">ORFEUS-SPAS</text> spectrum of <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S3.F4.m1">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa.</toccaption>
+      <caption><tag close=": ">Figure 4</tag>Wind-broadened EUV features seen in the <text font="italic">ORFEUS-SPAS</text> spectrum of <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S3.F4.m2">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa.</caption>
+    </figure>
+  </section>
+  <section refnum="4" xml:id="S4">
+    <title><tag close=" ">4</tag>The Bowen Mechanism in the Wind of <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S4.m1">
+        <XMath>
+          <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+        </XMath>
+      </Math> CMa</title>
+    <para xml:id="S4.p1">
+      <p>It should be noted that the attenuation of X-rays in the bulk stellar wind involves primarily very soft X-rays and short-wavelength EUV emission, and that the majority of photoionization involves helium (from singly to fully ionized). The ionization of helium by the X-rays leads to recombination radiation, primarily in the He<Math mode="inline" tex="\;" text="absent" xml:id="S4.p1.m1">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">II</text> Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S4.p1.m2">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> line at 304 Å. This line is coincident with an O<Math mode="inline" tex="\;" text="absent" xml:id="S4.p1.m3">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">III</text> line, which is pumped, leading to a radiative cascade that (usually) culminates in the emission of a photon at 374 Å. Until it was seen in <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S4.p1.m4">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa, this line had never been detected in an astrophysical object outside the solar system, although the near-UV lines emitted by transitions among the high-lying levels involved in the Bowen mechanism are often seen in nebulae. In Figure <ref labelref="LABEL:Fig:grotrian"/> we show an energy level diagram for the Bowen mechanism in <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S4.p1.m5">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa.</p>
+    </para>
+    <figure frefnum="Figure 5" labels="LABEL:Fig:grotrian" refnum="5" xml:id="S4.F5">
+      <ERROR class="undefined">\plotfiddle</ERROR>
+      <p>grotrian.eps2.1in05050-145-125</p>
+      <toccaption><tag close=" ">5</tag>Schematic energy-level diagram of the Bowen fluorescence mechanism. In <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S4.F5.m1">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa, and likely in other hot stars, the X-rays that arise in the wind ionized helium, which upon recombination populates the He<Math mode="inline" tex="{}^{+}" text="^+" xml:id="S4.F5.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="n=2" text="n = 2" xml:id="S4.F5.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> state, which leads to Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S4.F5.m4">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> emission at 304 Å. This excites an O<Math mode="inline" tex="\;" text="absent" xml:id="S4.F5.m5">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">III</text> transition out of the ground state. The subsequent cascade produces 374 Å, 394 Å, or 435 Å emission, with a branching ratio that is temperature sensitive.</toccaption>
+      <caption><tag close=": ">Figure 5</tag>Schematic energy-level diagram of the Bowen fluorescence mechanism. In <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S4.F5.m6">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa, and likely in other hot stars, the X-rays that arise in the wind ionized helium, which upon recombination populates the He<Math mode="inline" tex="{}^{+}" text="^+" xml:id="S4.F5.m7">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="n=2" text="n = 2" xml:id="S4.F5.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> state, which leads to Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S4.F5.m9">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> emission at 304 Å. This excites an O<Math mode="inline" tex="\;" text="absent" xml:id="S4.F5.m10">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">III</text> transition out of the ground state. The subsequent cascade produces 374 Å, 394 Å, or 435 Å emission, with a branching ratio that is temperature sensitive.</caption>
+    </figure>
+    <para xml:id="S4.p2">
+      <p>Cohen et al. (1999) have shown that the 304 Å and 374 Å fluxes
+are quite sensitive to the mass-loss rate. They find a value of <Math mode="inline" tex="\mbox{$\stackrel{.}{\textstyle M}$}\approx 1" xml:id="S4.p2.m1">
+          <XMath>
+            <XMApp role="RELOP" xml:id="S4.p2.m1.1">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid4"/>
+              <XMTok font="italic" role="UNKNOWN">M</XMTok>
+              <XMTok role="PERIOD">.</XMTok>
+            </XMApp>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP" xml:id="S4.p2.m1.2">≈</XMTok>
+            <XMTok meaning="1" role="NUMBER">1</XMTok>
+          </XMath>
+        </Math> to <Math mode="inline" tex="2\times 10^{-8}" text="2 * 10 ^ (- 8)" xml:id="S4.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="8" role="NUMBER">8</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="{\rm M}_{\odot}\," text="M _ direct-product" xml:id="S4.p2.m3">
+          <XMath>
+            <XMApp rpadding="1.7pt">
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok role="UNKNOWN">M</XMTok>
+              <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> yr <Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S4.p2.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, which is about a factor of three less than the prediction from the CAK parameters compiled by Abbott (1982). The 304 Å line is wind broadened in the <text font="italic">EUVE</text> spectrum of <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="S4.p2.m5">
+          <XMath>
+            <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+          </XMath>
+        </Math> CMa. The broadening is consistent with a line that is optically thick out to velocities of <Math mode="inline" tex="v=750\pm 150" text="v = 750 plus-or-minus 150" xml:id="S4.p2.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">v</XMTok>
+              <XMApp>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                <XMTok meaning="750" role="NUMBER">750</XMTok>
+                <XMTok meaning="150" role="NUMBER">150</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S4.p2.m7">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. This is further indication that the X-ray emission is distributed throughout the wind, and furthermore, that it interacts with the bulk wind and causes ionization throughout the wind.</p>
+    </para>
+    <para xml:id="S4.p3">
+      <p>Finally, it has recently been realized that the Bowen fluorescence can resolve via one of two transitions on the singlet side of O<Math mode="inline" tex="\;" text="absent" xml:id="S4.p3.m1">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math><text fontsize="90%">III</text> at 394 Å and 435 Å, in addition to the 374 Å triplet (Cohen et al. 1999). The relative strength of the singlet and triplet lines is sensitive ultimately to the wind temperature, and so these lines may prove to be the most quantitative and direct temperature diagnostic of any hot star wind.</p>
+    </para>
+<!--  %**** tartu.tex Line 250 **** 
+     %should we include the flow-chart, either itself, or at the very least, the %concepts in words?-->  </section>
+  <section refnum="5" xml:id="S5">
+    <title><tag close=" ">5</tag>Upcoming X-ray Spectroscopy Missions</title>
+    <para xml:id="S5.p1">
+      <p>An entirely new era of astrophysical X-ray spectroscopy is imminent with the recent launches of <text font="italic">Chandra</text> and <text font="italic">XMM</text>. The spectral diagnostics that will soon become available will allow for the determination of the density, velocity, and temperature of the hot regions in the winds of B stars, and other hot stars. We will be able to answer questions such as: Are the shocked regions denser than the ambient wind? And what is the ionization distribution in the denser structures in B star winds?</p>
+    </para>
+    <para xml:id="S5.p2">
+      <p>In order to demonstrate the types of analysis that will be possible with these new data–and also to explore directly the clumping properties of B star
+winds–we briefly discuss some new interpretations of recent
+medium-resolution <text font="italic">ASCA</text> spectra of the X-ray binary, Vela X-1, which contains a B0.5 I star as the mass-losing companion. The accretion of the B star’s wind onto the compact companion produces hard X-rays, which are reprocessed in the wind. When viewed during eclipse, virtually all of the radiation is coming from the B star’s wind, primarily via recombination in the highly (photo-)ionized portion of the wind and via X-ray fluorescence in the less ionized, denser portion of the wind.</p>
+    </para>
+    <para xml:id="S5.p3">
+      <p>Recently, Sako et al. (1999) have identified these two different spectral components in the <text font="italic">ASCA</text> data (see Figure <ref labelref="LABEL:Fig:velax1"/>). Much more quantitative analysis will be possible with the higher resolution spectra that become available over the next few years. However, Sako et al. (1999) extract a significant amount of information from this marginal spectrum. They fit a mass-loss rate and velocity <Math mode="inline" tex="\beta" text="beta" xml:id="S5.p3.m1">
+          <XMath>
+            <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
+          </XMath>
+        </Math> parameter for the B star’s wind, based on observations of the highly ionized recombination lines which are formed in the hot, low density component. They also derive the overall mass in the cool dense component and put some constraints on its density from the observations of the X-ray fluorescence lines. The results of the analysis show the highly ionized low density component accounts for less than 10% of the mass, but occupies 95% of the volume. Conversely, the cold, dense clumps occupy less than 5% of the volume but represent about 90% of the mass of the wind.</p>
+    </para>
+    <figure frefnum="Figure 6" labels="LABEL:Fig:velax1" refnum="6" xml:id="S5.F6">
+      <ERROR class="undefined">\plotfiddle</ERROR>
+      <p>velax1-spec.eps2.2in06045-152-12
+<!--  %“plotfiddle–velax1-dem.eps˝–0in˝–0˝–35˝–50˝–-20˝–-20˝ --></p>
+      <toccaption><tag close=" ">6</tag>The <text font="italic">ASCA</text> spectrum of Vela X-1 shows emission lines that arise from recombination in the low-density component of the wind dominate the spectrum. However, several features from the cold, dense wind component are seen. These are the radiative recombination continua (RRC) and several fluorescent lines that are blended with emission features from highly ionized states of the same elements.</toccaption>
+      <caption><tag close=": ">Figure 6</tag>The <text font="italic">ASCA</text> spectrum of Vela X-1 shows emission lines that arise from recombination in the low-density component of the wind dominate the spectrum. However, several features from the cold, dense wind component are seen. These are the radiative recombination continua (RRC) and several fluorescent lines that are blended with emission features from highly ionized states of the same elements.</caption>
+    </figure>
+    <para xml:id="S5.p4">
+      <p>It is notable that this type of wind structure is similar to that seen in numerical simulations of the line-force instability (Owocki, Castor, &amp; Rybicki 1988; Feldmeier 1995; Feldmeier, Puls, &amp; Pauldrach 1997; Owocki, Runacres, &amp; Cohen, these proc.). Furthermore, to maintain clumping structure far out in the wind flow, over-dense and under-dense regions must be close to pressure equilibrium. The “ambient” wind (the mass-weighted mean wind, which is dominated by the dense clumps) has a temperature somewhat below the stellar effective temperature (<Math mode="inline" tex="T\sim 10^{4}" text="T similar-to 10 ^ 4" xml:id="S5.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> K) and the X-ray emitting component has a typical temperature of <Math mode="inline" tex="T\sim 10^{6}" text="T similar-to 10 ^ 6" xml:id="S5.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> K. Pressure equilibrium therefore requires the hot component to be of order 100 times less dense than the cool component. Using the numbers from the <text font="italic">ASCA</text> observations of Vela X-1, the clumps are 20 times denser than the mean wind<note mark="1" role="footnote">In the two component picture, this “mean wind” exists only in a statistical sense.</note>, while the hot, low-density component is 10 times less dense. So the density contrast between the two components is 200.</p>
+    </para>
+    <para xml:id="S5.p5">
+      <p>Owocki &amp; Cohen (1999) have introduced a simple empirical model for X-ray transfer through a two-component wind in an effort to explain the <Math mode="inline" tex="{L_{\rm X}/L_{\rm Bol}}\sim 10^{-7}" text="L _ X / L _ Bol similar-to 10 ^ (- 7)" xml:id="S5.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">Bol</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> law. The total X-ray flux generated scales as the observed emission measure,</p>
+    </para>
+    <para class="ltx_noindent" xml:id="S5.p6">
+      <equation frefnum="(1)" refnum="1" xml:id="S5.E1">
+        <Math mode="display" tex="L_{X}\sim(E.M.)\Lambda" xml:id="S5.E1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">L</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">X</XMTok>
+            </XMApp>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            <XMWrap>
+              <XMTok role="OPEN" stretchy="false">(</XMTok>
+              <XMTok font="italic" role="UNKNOWN">E</XMTok>
+              <XMTok role="PERIOD">.</XMTok>
+              <XMTok font="italic" role="UNKNOWN">M</XMTok>
+              <XMTok role="PERIOD">.</XMTok>
+              <XMTok role="CLOSE" stretchy="false">)</XMTok>
+            </XMWrap>
+            <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+<!--  %**** tartu.tex Line 275 **** 
+ %**** tartu.tex Line 275 **** -->          </XMath>
+        </Math>
+      </equation>
+      <p>where <Math mode="inline" tex="\Lambda" text="Lambda" xml:id="S5.p6.m1">
+          <XMath>
+            <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+          </XMath>
+        </Math> is a function of atomic parameters and of the ionization distribution in the emitting plasma, and the emission measure is given by</p>
+    </para>
+    <para class="ltx_noindent" xml:id="S5.p7">
+      <equation frefnum="(2)" refnum="2" xml:id="S5.E2">
+        <Math mode="display" tex="E.M.=\int n_{\rm e}n_{\rm i}dV." xml:id="S5.E2.m1">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN" xml:id="S5.E2.m1.1">E</XMTok>
+            <XMTok role="PERIOD">.</XMTok>
+            <XMTok font="italic" role="UNKNOWN" xml:id="S5.E2.m1.2">M</XMTok>
+            <XMTok role="PERIOD">.</XMTok>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">e</XMTok>
+            </XMApp>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">i</XMTok>
+            </XMApp>
+            <XMTok font="italic" role="UNKNOWN">d</XMTok>
+            <XMTok font="italic" role="UNKNOWN">V</XMTok>
+            <XMTok role="PERIOD">.</XMTok>
+          </XMath>
+        </Math>
+      </equation>
+      <p>Here the volume integral is over regions with plasma at X-ray emitting temperatures (<Math mode="inline" tex="T\mathrel{\hbox{\hbox to 0.0pt{\hbox{\lower 4.0pt\hbox{$\sim$}}}\hbox{$&gt;$}}}5%&#10;\times 10^{5}" text="T [∼&gt;] 5 * 10 ^ 5" xml:id="S5.p7.m1">
+          <XMath>
+            <XMApp>
+              <XMText role="RELOP"><text width="0.0pt" yoffset="-4.0pt"><Math mode="inline" tex="\sim" text="similar-to" xml:id="S5.p7.m1.m1">
+                    <XMath>
+                      <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                    </XMath>
+                  </Math></text><Math mode="inline" tex="&gt;" text="&gt;" xml:id="S5.p7.m1.m2">
+                  <XMath>
+                    <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+                  </XMath>
+                </Math></XMText>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="5" role="NUMBER">5</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>). Owocki &amp; Cohen (1999) scale this to the “whole wind” emission measure, as</p>
+      <equation frefnum="(3)" refnum="3" xml:id="S5.E3">
+        <Math mode="display" tex="E.M.=C_{\rm s}f_{\rm m}(E.M._{\rm wind})=C_{\rm s}f_{\rm m}\int^{\infty}_{R_{%&#10;\rm min}}n_{\rm e}n_{\rm i}4{\pi}r^{2}dr" xml:id="S5.E3.m1">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN" xml:id="S5.E3.m1.1">E</XMTok>
+            <XMTok role="PERIOD">.</XMTok>
+            <XMTok font="italic" role="UNKNOWN" xml:id="S5.E3.m1.2">M</XMTok>
+            <XMTok role="PERIOD">.</XMTok>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">C</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">s</XMTok>
+            </XMApp>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">f</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+            </XMApp>
+            <XMWrap>
+              <XMTok role="OPEN" stretchy="false">(</XMTok>
+              <XMTok font="italic" role="UNKNOWN">E</XMTok>
+              <XMTok role="PERIOD">.</XMTok>
+              <XMTok font="italic" role="UNKNOWN">M</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok role="PERIOD">.</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">wind</XMTok>
+              </XMApp>
+              <XMTok role="CLOSE" stretchy="false">)</XMTok>
+            </XMWrap>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">C</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">s</XMTok>
+            </XMApp>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">f</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+            </XMApp>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                <XMTok fontsize="70%" meaning="infinity" name="infty" role="ID">∞</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+                <XMTok fontsize="50%" role="UNKNOWN">min</XMTok>
+              </XMApp>
+            </XMApp>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">e</XMTok>
+            </XMApp>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">i</XMTok>
+            </XMApp>
+            <XMTok meaning="4" role="NUMBER">4</XMTok>
+            <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">r</XMTok>
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+            <XMTok font="italic" role="UNKNOWN">d</XMTok>
+            <XMTok font="italic" role="UNKNOWN">r</XMTok>
+          </XMath>
+        </Math>
+      </equation>
+      <p>where the mass filling factor, <Math mode="inline" tex="f_{\rm m}" text="f _ m" xml:id="S5.p7.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">f</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, is the fraction of the mass of the wind (above some appropriate minimum radius) that is heated to X-ray emitting temperatures, and <Math mode="inline" tex="C_{\rm s}=\rho_{\rm s}/{\bar{\rho}}" text="C _ s = rho _ s / bar@(rho)" xml:id="S5.p7.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">C</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">s</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">s</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                  <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> is the typical density in the post-shock region compared to the local value of the density in the idealized smooth, mean wind. Note that each of these factors can be thought of as scaling one of the density terms inside the volume integral.</p>
+    </para>
+    <para xml:id="S5.p8">
+      <p>The product <Math mode="inline" tex="C_{\rm s}f_{\rm m}" text="C _ s * f _ m" xml:id="S5.p8.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">C</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">s</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> is the normalization factor–essentially the emission measure filling factor–and the terms cannot be separated using
+low-resolution data; but using spectroscopic techniques, enough information can be determined about both components of the wind to separate them. For the B star in Vela X-1, <Math mode="inline" tex="f_{\rm m}\approx 0.1" text="f _ m approximately-equals 0.1" xml:id="S5.p8.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+              </XMApp>
+              <XMTok meaning="0.1" role="NUMBER">0.1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, and <Math mode="inline" tex="C_{\rm s}\approx 0.1" text="C _ s approximately-equals 0.1" xml:id="S5.p8.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">C</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">s</XMTok>
+              </XMApp>
+              <XMTok meaning="0.1" role="NUMBER">0.1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. This normalization factor <Math mode="inline" tex="C_{\rm s}f_{\rm m}\approx 0.01" text="C _ s * f _ m approximately-equals 0.01" xml:id="S5.p8.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">C</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">s</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="0.01" role="NUMBER">0.01</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> is consistent with the <text font="italic">ROSAT</text> observations of O stars, and the B0.5 I component of Vela X-1 is a supergiant and so has a denser wind that is more like an O star’s.</p>
+    </para>
+    <para xml:id="S5.p9">
+      <p>Thus, a consistent picture emerges of hot star winds, in which a pervasive hot, low-density component is in approximate pressure equilibrium with a cold, denser component presumably consisting of numerous small clumps. The numbers are roughly consistent with numerical simulations of the line-force instability, perhaps having stochastic perturbations at the base (Feldmeier et al. 1997) for O and early-B stars. They are also consistent with the overall levels of X-ray flux seen in O and early-B stars, as well as with the detailed X-ray reprocessing spectrum of Vela X-1, as observed with <text font="italic">ASCA</text> (Sako et al. 1999).</p>
+    </para>
+    <para xml:id="S5.p10">
+      <p>For the mid- and late-B stars, however, recall that much higher filling factors (<Math mode="inline" tex="C_{\rm s}f_{\rm m}" text="C _ s * f _ m" xml:id="S5.p10.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">C</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">s</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) are required to match the observations. In these objects, the hot X-ray emitting gas must also be dense (<text font="italic">i.e.</text> <Math mode="inline" tex="C_{\rm s}&gt;1" text="C _ s &gt; 1" xml:id="S5.p10.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">C</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">s</XMTok>
+              </XMApp>
+              <XMTok meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>) to prevent <Math mode="inline" tex="f_{\rm m}&gt;1" text="f _ m &gt; 1" xml:id="S5.p10.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+              </XMApp>
+              <XMTok meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. It is possible, for example, that magnetic loops confine a radiation-driven wind in some of these stars, forcing different flows to collide at high velocities, and containing the resulting hot gas, which preserves its relatively high density (Babel &amp; Montmerle 1997). High-resolution X-ray spectroscopy will be able to provide density and temperature diagnostics of the emitting plasma in these stars, which will reveal whether the hot material in these winds exists in the dense phase.</p>
+    </para>
+  </section>
+  <section refnum="6" xml:id="S6">
+    <title><tag close=" ">6</tag>Summary</title>
+<!--  %**** tartu.tex Line 300 **** -->    <para xml:id="S6.p1">
+      <p>The X-ray and EUV properties of B stars are significant, and have a controlling effect on the ionization conditions in the wind. With the improved understanding of these properties and their effects, additional modeling of the temperature structure in OB star winds is warranted. The stronger than expected photospheric EUV continua provide a small but important increase to the overall ionization conditions in the winds of B stars, but the X-ray and especially the short-wavelength EUV emission lines play the dominant role. The ionization balance is changed completely by X-ray photoionization. Furthermore, the X-rays (<Math mode="inline" tex="h\nu&gt;100" text="h * nu &gt; 100" xml:id="S6.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">h</XMTok>
+                <XMTok font="italic" name="nu" role="UNKNOWN">ν</XMTok>
+              </XMApp>
+              <XMTok meaning="100" role="NUMBER">100</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> eV) that are seen by instruments like <text font="italic">ROSAT</text> represent just a small fraction of the photons emitted by the hot plasma in the winds of B stars, which are predominantly EUV photons.</p>
+    </para>
+    <para xml:id="S6.p2">
+      <p>Finally, the interaction of this EUV/X-ray emission with the cooler, denser wind component involves a complex reprocessing of the absorbed X-ray photons into UV and EUV emission lines via the Bowen fluorescence mechanism. More and more, the detailed spectral information that is becoming available will drive our understanding of the structure of hot star winds, including those of B stars. The picture that has started to emerge is one of a clumped, two-component medium, in which most of the bulk properties of the wind are defined by the dense clumps–in a sense, these clumps <text font="italic">are</text> the wind–but most of the volume is filled by a much lower density component.</p>
+    </para>
+    <para xml:id="S6.p3">
+      <p>The information we have covered leads us to identify the following questions which still need to be addressed: What role does clumping play in B star winds, and how do clumps originate and evolve? How does X-ray induced ionization feed back into the line force, wind dynamics, and mass-loss rate? How are thermal conditions affected by the high photospheric EUV fluxes? And what is the nature of winds for stars later than about B2?</p>
+    </para>
+    <ERROR class="undefined">\acknowledgments</ERROR>
+    <para xml:id="S6.p4">
+      <p>We thank Mark Runacres for his careful reading of the manuscript. This work
+was partially supported by NASA grant NAG 5-3530 to the Bartol Research
+Institute at the University of Delaware.</p>
+    </para>
+    <ERROR class="undefined">{references}</ERROR>
+    <ERROR class="undefined">\reference</ERROR>
+    <para xml:id="S6.p5">
+      <p>Abbott, D. C. 1982, <ERROR class="undefined">\apj</ERROR>, 259, 282
+<ERROR class="undefined">\reference</ERROR>Babel, J., &amp; Montmerle, T. 1997, <ERROR class="undefined">\aap</ERROR>, 323, 121
+<ERROR class="undefined">\reference</ERROR>Bertin, P., Lamers, H. J. G. L. M., Vidal-Madjar, A., Ferlet, R., &amp; Lallement, R. 1995, <ERROR class="undefined">\aap</ERROR>, 302, 899
+<ERROR class="undefined">\reference</ERROR>Cassinelli, J. P., et al. 1995, <ERROR class="undefined">\apj</ERROR>, 438, 932
+<ERROR class="undefined">\reference</ERROR>Cassinelli, J. P., et al. 1996, <ERROR class="undefined">\apj</ERROR>, 460, 949
+<ERROR class="undefined">\reference</ERROR>Castor, J. I., Abbott, D. C., &amp; Klein, R. I. 1975, <ERROR class="undefined">\apj</ERROR>, 195, 157
+<ERROR class="undefined">\reference</ERROR>Cohen, D. H., Cassinelli, J. P., &amp; MacFarlane, J. J. 1997, <ERROR class="undefined">\apj</ERROR>,
+487, 867
+<ERROR class="undefined">\reference</ERROR>Cohen, D. H., Cooper, R. G., MacFarlane, J. J., Owocki, S. P.,
+<!--  %**** tartu.tex Line 325 **** -->Cassinelli, J. P., &amp; Wang, P. 1996, <ERROR class="undefined">\apj</ERROR>, 460, 506
+<ERROR class="undefined">\reference</ERROR>Cohen, D. H., MacFarlane, J. J., Cassinelli, J. P., &amp; Owocki, S. P. 1999, presented at the <text font="italic">A.P.S. Division of Plasma Physics meeting</text>
+<ERROR class="undefined">\reference</ERROR>Drew, J. E. 1989, <ERROR class="undefined">\apjs</ERROR>, 71, 267
+<ERROR class="undefined">\reference</ERROR>Feldmeier, A. 1995, <ERROR class="undefined">\aap</ERROR>, 299, 523
+<ERROR class="undefined">\reference</ERROR>Feldmeier, A., Puls, J., &amp; Pauldrach, A. W. A. 1997, <ERROR class="undefined">\apj</ERROR>, 322, 878
+<ERROR class="undefined">\reference</ERROR>Gayley, K. G. 1995, <ERROR class="undefined">\apj</ERROR>, 455, 410
+<ERROR class="undefined">\reference</ERROR>Grigsby, J. A., &amp; Morrison, N. D. 1995, <ERROR class="undefined">\apj</ERROR>, 442, 794
+<ERROR class="undefined">\reference</ERROR>Hubeny, I. &amp; Lanz, T., 1995, <ERROR class="undefined">\apj</ERROR>, 439, 875
+<ERROR class="undefined">\reference</ERROR>Kutyrev, A. S., Reynolds, R. J., &amp; Tufte, S. L. 1993, <ERROR class="undefined">\baas</ERROR>, 182, 6003
+<ERROR class="undefined">\reference</ERROR>MacFarlane, J. J., Cohen, D. H. &amp; Wang, P. 1994, <ERROR class="undefined">\apj</ERROR>, 437, 351
+<ERROR class="undefined">\reference</ERROR>MacFarlane, J. J. 1997, <text font="italic">University of Wisconsin Fusion Design Memo</text>, 1050
+<ERROR class="undefined">\reference</ERROR>Owocki, S. P., Castor, J. I., &amp; Rybicki, G. B. 1988, <ERROR class="undefined">\apj</ERROR>, 335, 914
+<ERROR class="undefined">\reference</ERROR>Owocki, S. P., &amp; Cohen, D. H. 1999, <ERROR class="undefined">\apj</ERROR>, 520, 833
+<ERROR class="undefined">\reference</ERROR>Owocki, S. P., Runacres, M., &amp; Cohen, D. H. 2000, in “Thermal and Ionization Aspects of Flows from Hot Stars: Observations and Theory”, ASP Conf. Ser. 204, eds. H. J. G. L. M. Lamers
+&amp; A. Sapar, 183
+<ERROR class="undefined">\reference</ERROR>Puls, J. 2000, <ERROR class="undefined">\aap</ERROR>, in press
+<ERROR class="undefined">\reference</ERROR>Reynolds, R. J. 1995, private communication
+<ERROR class="undefined">\reference</ERROR>Sako, M., Leidahl, D. A., Kahn, S. M., &amp; Paerels, F. 1999, <ERROR class="undefined">\apj</ERROR>, 525, 921
+<!--  %“reference Walborn, N. R., “&amp; Panek, R. J. 1984, “apj, 286, 718 --><ERROR class="undefined">\reference</ERROR>Vallerga, J. V., Vedder, P. W., &amp; Welsh, B. Y. 1993, <ERROR class="undefined">\apj</ERROR>, 414, L65</p>
+    </para>
+<!--  %**** tartu.tex Line 350 **** -->  </section>
+</document>

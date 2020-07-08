@@ -1,0 +1,1937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008058.1"?>
+<!--  %T. Tsuji: --><!--  %WATER IN EMISSION IN THE ISO SPECTRUM OF THE EARLY M SUPERGIANT STAR mu CEPHEI --><!--  %rev. ver. July, 17, 2000 --><!--  %SAMPLE2.TEX __ AASTeX macro package tutorial paper. --><?latexml class="article" options="12pt,aasms4" oldstyle="true"?>
+<!--  %“documentstyle[11pt,eqsecnum,aaspp4]–article˝ --><!--  %“documentstyle[12pt,amssym,aasms4]–article˝ --><!--  %“received–˝ --><!--  %“accepted–˝ --><?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>
+WATER IN EMISSION IN THE ISO SPECTRUM OF THE EARLY M SUPERGIANT
+STAR <Math mode="inline" tex="\mu" text="mu" xml:id="m1">
+      <XMath>
+        <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+      </XMath>
+    </Math> CEPHEI<note mark="1" role="footnote">Based on the Data Archives of ISO, an ESA
+project with instruments funded by ESA Member States (especially the PI
+countries: France, Germany, the Netherlands and the United Kingdom) and
+with the participation of ISAS and NASA.</note>
+</title>
+  <creator role="author">
+    <personname>Takashi Tsuji</personname>
+    <contact role="affiliation">Institute of Astronomy, The University of Tokyo,
+Mitaka, Tokyo, 181-0015 Japan</contact>
+  </creator>
+  <abstract name="Abstract">
+    <p>We report a detection of water in emission in the spectrum of the
+M2 supergiant star <Math mode="inline" tex="\mu" text="mu" xml:id="m2">
+        <XMath>
+          <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+        </XMath>
+      </Math> Cep (M2Ia) observed by the
+Short Wavelength Spectrometer (SWS) aboard Infrared Space Observatory
+(ISO) and now released as the ISO Archives. The emission first
+appears in the 6 <Math mode="inline" tex="\mu" text="mu" xml:id="m3">
+        <XMath>
+          <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+        </XMath>
+      </Math>m region (<Math mode="inline" tex="\nu_{2}" text="nu _ 2" xml:id="m4">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+            <XMTok font="italic" name="nu" role="UNKNOWN">ν</XMTok>
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> fundamental bands), and
+then in the 40 <Math mode="inline" tex="\mu" text="mu" xml:id="m5">
+        <XMath>
+          <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+        </XMath>
+      </Math>m region (pure rotation lines) despite
+the rather strong dust emission. The
+intensity ratios of the emission features are far from those of
+the optically thin gaseous emission. Instead, we could reproduce the major
+observed emission features by an optically thick water sphere of the
+inner radius about two stellar radii (<Math mode="inline" tex="2R_{*}\approx 1300R_{\odot}" text="2 * R _ * approximately-equals 1300 * R _ direct-product" xml:id="m6">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+<!--  %**** text.tex Line 50 **** -->            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+              </XMApp>
+            </XMApp>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok meaning="1300" role="NUMBER">1300</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>), <Math mode="inline" tex="T_{\rm ex}=1500" text="T _ ex = 1500" xml:id="m7">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">ex</XMTok>
+            </XMApp>
+            <XMTok meaning="1500" role="NUMBER">1500</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>K, and <Math mode="inline" tex="N_{\rm col}" text="N _ col" xml:id="m8">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+            <XMTok font="italic" role="UNKNOWN">N</XMTok>
+            <XMTok fontsize="70%" role="UNKNOWN">col</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>(H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="m9">
+        <XMath>
+          <XMApp role="FLOATSUBSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>O)<Math mode="inline" tex="=3\times 10^{20}" text="absent = 3 * 10 ^ 20" xml:id="m10">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok meaning="absent"/>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+              <XMTok meaning="3" role="NUMBER">3</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="20" role="NUMBER">20</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="m11">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMApp>
+              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>. This model also accounts for the H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="m12">
+        <XMath>
+          <XMApp role="FLOATSUBSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>O
+absorption bands in the near infrared (1.4, 1.9, and 2.7<Math mode="inline" tex="\mu" text="mu" xml:id="m13">
+        <XMath>
+          <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+        </XMath>
+      </Math>m)
+as well. The detection of water in emission provides strong constraints
+on the nature of water in the early M supergiant star,
+and especially its origin in the outer atmosphere is confirmed
+against other models such as the large convective cell model.
+We finally confirm that the early M supergiant star
+is surrounded by a huge optically thick sphere of the warm water vapor,
+which may be referred to as MOLsphere for simplicity.
+Thus, the outer atmosphere of M supergiant stars should have
+a complicated hierarchical and/or hybrid structure
+with at least three major constituents including the warm MOLsphere
+(<Math mode="inline" tex="T\approx 10^{3}" text="T approximately-equals 10 ^ 3" xml:id="m14">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>K) together with the previously known
+hot chromosphere (<Math mode="inline" tex="T\approx 10^{4}" text="T approximately-equals 10 ^ 4" xml:id="m15">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>K) and cool expanding gas-dust
+envelope (<Math mode="inline" tex="T\approx 10^{2}" text="T approximately-equals 10 ^ 2" xml:id="m16">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>K).</p>
+  </abstract>
+  <keywords>infrared: stars – molecular processes – stars: individual
+(<Math mode="inline" tex="\mu" text="mu" xml:id="m17">
+      <XMath>
+        <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+      </XMath>
+    </Math> Cep, <Math mode="inline" tex="\alpha" text="alpha" xml:id="m18">
+      <XMath>
+        <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+      </XMath>
+    </Math> Ori) – stars: late-type – stars: supergiants </keywords>
+  <ERROR class="undefined">\lefthead</ERROR>
+  <para xml:id="p1">
+    <p>Tsuji<ERROR class="undefined">\righthead</ERROR>WaterinemissionintheearlyMsupergiantstarsmuCephei</p>
+  </para>
+<!--  %**** text.tex Line 25 **** -->  <section refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>INTRODUCTION</title>
+<!--  %**** text.tex Line 75 **** -->    <para xml:id="S1.p1">
+      <p>Presence of water in the stellar environment has been known since 1960’s,
+especially by the pioneering space observations with the balloon-borne
+telescope Stratoscope II (Woolf, Schwarzschild, &amp; Rose 1964).
+However, it is the recent ISO mission (Kessler et al. 1996) that
+the infrared spectra unobscured by Earth’s atmosphere have finally been
+explored in full details. One of the important results of the highly
+successful ISO mission is that water exists everywhere in the universe
+and that the star is not an exception. In fact, water has been detected
+not only by absorption but also by emission in cool luminous variables
+such as W Hya (Barlow et al. 1996; Neuffeld et al. 1996), NML Cyg
+(Justtanont et al. 1996), S Per (Tsuji et al. 1998), SW Vir (Tsuji, Aoki,
+&amp; Ohnaka 1999), R Cas (Truong-Bach et al. 1999), <Math mode="inline" tex="o" text="o" xml:id="S1.p1.m1">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">o</XMTok>
+          </XMath>
+        </Math> Cet (Yamamura,
+de Jong, &amp; Cami 1999), VY CMa (Neuffeld et al. 1999) etc. The exact nature
+of these emission features, however, is by no means clear yet.</p>
+    </para>
+    <para xml:id="S1.p2">
+      <p>On the other hand, water in the early M (super)giant stars has been paid
+little attention until recently, since water has not been detected in these
+objects nor expected to be abundant in their atmospheres. Nevertheless,
+water in absorption has finally been detected by ISO in the early M
+(super)giants (Tsuji et al. 1997, 1998) as well as by the ground based
+mid-infrared observation in the early M supergiant stars (Jennings &amp; Sada
+1998). More correctly, however, water in the early M supergiants had in fact
+been discovered in the spectra taken by Stratoscope II (Woolf et al. 1964;
+Danielson, Woolf, &amp; Gaustad 1965) more than 30 years before the ISO mission,
+although this discovery has been overlooked until recently in favor of the
+<!--  %**** text.tex Line 100 **** -->opposing interpretation. We have shown that the Stratoscope observers had
+correctly identified water in the early M supergiant stars but that the
+water detected by them is not originating in the photosphere (Tsuji 2000).</p>
+    </para>
+    <para xml:id="S1.p3">
+      <p>To clarify the nature of water found in the early M supergiant stars,
+ISO should provide the best possibility. In fact, thanks to the recently
+released ISO Archives, we found water in emission in <Math mode="inline" tex="\mu" text="mu" xml:id="S1.p3.m1">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep for the
+first time in such an early M supergiant star. This detection is somewhat
+unexpected, but this provides not only the definitive evidence for the
+presence of water in the outer atmosphere of the early M supergiant stars
+but also a new clue to understanding the nature of water
+in the stellar environment.</p>
+    </para>
+  </section>
+  <section refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>OBSERVED EMISSION LINES OF WATER</title>
+    <para xml:id="S2.p1">
+      <p>We retrieved the spectra of <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p1.m1">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep (M2Ia: observed on 1996 Dec.18 UT)
+and <Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p1.m2">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> Ori (M2Iab: observed on 1997 Oct.08 UT) from the ISO Archives.
+These spectra were observed with the SWS (de Graauw et al. 1996) by its
+highest resolution grating mode (resolution <Math mode="inline" tex="R\approx 1600" text="R approximately-equals 1600" xml:id="S2.p1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok meaning="1600" role="NUMBER">1600</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> or about
+188 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S2.p1.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) in the region between 2.4 and 45 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p1.m5">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m.
+The region of the H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p1.m6">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O <Math mode="inline" tex="\nu_{1}" text="nu _ 1" xml:id="S2.p1.m7">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="nu" role="UNKNOWN">ν</XMTok>
+              <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="\nu_{3}" text="nu _ 3" xml:id="S2.p1.m8">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="nu" role="UNKNOWN">ν</XMTok>
+              <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+fundamentals around 2.7 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p1.m9">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m is somewhat complicated due to
+the photospheric CO and OH bands, but the ISO data of both
+<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p1.m10">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> Ori and <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p1.m11">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep show additional absorption features not
+predicted by the photospheric models. At least, part of these
+<!--  %**** text.tex Line 125 **** -->features should be the same origin as the 1.4 and 1.9 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p1.m12">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m absorption
+bands, namely H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p1.m13">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O of the non-photospheric origin (Tsuji 2000).</p>
+    </para>
+    <ERROR class="undefined">\placefigure</ERROR>
+    <para xml:id="S2.p2">
+      <p>fig1</p>
+    </para>
+    <para xml:id="S2.p3">
+      <p>The region of the H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p3.m1">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O <Math mode="inline" tex="\nu_{2}" text="nu _ 2" xml:id="S2.p3.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="nu" role="UNKNOWN">ν</XMTok>
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> fundamentals (the band origin at
+6.3 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p3.m3">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m) is shown in Fig. 1. First, the spectrum of <Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p3.m4">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> Ori
+shows only weak absorption features due to H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p3.m5">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O (indicated by the
+dotted lines in Fig.1a), as can be confirmed by the comparison with
+the H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p3.m6">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O data based on HITEMP (Rothman 1997) shown in Fig.1c, but
+this detection is the best evidence for water in <Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p3.m7">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> Ori at present.
+The spectrum of <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p3.m8">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep shown in Fig.1b is quite different
+with complicated spectral features which show upturn at about 6.4 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p3.m9">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m
+in contrast to a smooth decline typical of the Rayleigh-Jeans spectrum as
+in <Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p3.m10">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> Ori. This upturn is explained by the onset of emission due
+to the <Math mode="inline" tex="P" text="P" xml:id="S2.p3.m11">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMath>
+        </Math> branch of the H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p3.m12">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O <Math mode="inline" tex="\nu_{2}" text="nu _ 2" xml:id="S2.p3.m13">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="nu" role="UNKNOWN">ν</XMTok>
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> fundamentals.
+Thus, the H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p3.m14">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O bands in absorption at 1.4, 1.9 and 2.7 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p3.m15">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m turn
+to emission at 6 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p3.m16">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m, and this can be regarded as definite evidence
+for the presence of water in the extended outer atmosphere of <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p3.m17">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep.
+Also, some emission features of the observed spectrum are well identified
+with the fine structures of H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p3.m18">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O bands by the comparison with the
+H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p3.m19">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O data (Fig.1c). The intensity ratios of the emission features
+do not agree with those of the optically thin emission represented by the
+absorption cross-section of H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p3.m20">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O at <Math mode="inline" tex="T=1500" text="T = 1500" xml:id="S2.p3.m21">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+              <XMTok meaning="1500" role="NUMBER">1500</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>K in Fig.1c,
+and the situation cannot be improved by changing the temperature.
+<!--  %**** text.tex Line 150 **** --></p>
+    </para>
+    <para xml:id="S2.p4">
+      <p>The spectrum of <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p4.m1">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep
+has once been observed by the NASA Airborne Infrared Observatory
+(Russell, Soifer, &amp; Forrest 1975), and non-grey behavior from
+5 to 8 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p4.m2">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m has been noted. The observers preferred to assume
+excess absorption in the 4-5 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p4.m3">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m rather than excess flux in
+the 5-8 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p4.m4">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m. Another interpretation was to attribute the observed
+5-8 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p4.m5">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m feature as due to emission of H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p4.m6">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O <Math mode="inline" tex="\nu_{2}" text="nu _ 2" xml:id="S2.p4.m7">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="nu" role="UNKNOWN">ν</XMTok>
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> fundamentals,
+and this was also proposing that water, besides dust, should be an
+important constituent of the outer atmosphere of <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p4.m8">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep (Tsuji 1978).
+There has been no means by which to test such
+a proposition at that time, but this is now fully confirmed by the ISO SWS
+which clearly resolved the fine structure of the H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p4.m9">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O emission bands.</p>
+    </para>
+    <para xml:id="S2.p5">
+      <p>We already know that H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p5.m1">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O pure rotation lines were observed as
+absorption in <Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p5.m2">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> Ori by the ground-based high resolution
+spectroscopy in the 12 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p5.m3">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m region (Jennings &amp; Sada 1998).
+However, the spectral resolution of the ISO SWS is not high enough
+to detect such faint lines. In the 40 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p5.m4">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m region of <Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p5.m5">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> Ori, some
+emission-like features can be seen (Fig.2a), but they cannot be
+identified with the known sources, except for an emission
+feature at 40.5 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p5.m6">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m which roughly corresponds to H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p5.m7">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O lines
+as can be known by the comparison with the H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p5.m8">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O data (Fig.2c).
+However, it is still possible that the observed features are due to
+the mixture of absorption (including photospheric lines) and emission
+<!--  %**** text.tex Line 175 **** -->unresolved by the low resolution.</p>
+    </para>
+    <ERROR class="undefined">\placefigure</ERROR>
+    <para xml:id="S2.p6">
+      <p>fig2</p>
+    </para>
+    <para xml:id="S2.p7">
+      <p>More distinct emission features appear in <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p7.m1">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep (Fig.2b) and most of
+them can be identified with the H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p7.m2">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O pure rotation lines by the
+comparison with the H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S2.p7.m3">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O data (Fig.2c). The intensity ratios of the
+emission features again suggest that the emission should be originating
+from an optically thick source. Such emission features are relatively
+well seen in the 40 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p7.m4">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m region, but not so clear in the other
+mid-infrared region. One reason for this may be the presence of dust
+emission. To illustrate this, the entire spectrum of <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p7.m5">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep
+observed by the ISO SWS is shown in Fig.3a by the red dots. It is clear
+that dust emission dominates the region longward of 8 <Math mode="inline" tex="\mu" text="mu" xml:id="S2.p7.m6">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m.</p>
+    </para>
+    <ERROR class="undefined">\placefigure</ERROR>
+    <para xml:id="S2.p8">
+      <p>fig3</p>
+    </para>
+  </section>
+  <section refnum="3" xml:id="S3">
+    <title><tag close=" ">3</tag>ORIGIN OF THE WATER EMISSION</title>
+    <para xml:id="S3.p1">
+      <p>We showed that a hypothetical absorption slab of H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S3.p1.m1">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O with
+<Math mode="inline" tex="T_{\rm ex}=1500" text="T _ ex = 1500" xml:id="S3.p1.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">ex</XMTok>
+              </XMApp>
+              <XMTok meaning="1500" role="NUMBER">1500</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>K and <Math mode="inline" tex="N_{\rm col}=3.0\times 10^{20}" text="N _ col = 3.0 * 10 ^ 20" xml:id="S3.p1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">col</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="3.0" role="NUMBER">3.0</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="20" role="NUMBER">20</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S3.p1.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+above the photosphere explains the 1.4 and 1.9 <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p1.m5">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m bands observed
+in the Stratoscope spectrum of <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p1.m6">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep (Tsuji 2000). The presence of
+emission at the longer wavelength in the spectrum of <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p1.m7">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep confirms
+that such a model of the non-photospheric origin of the water spectrum
+<!--  %**** text.tex Line 200 **** -->is basically correct, but we must now introduce geometrical extension
+of the water gas to explain the formation of emission features.
+For this purpose, we replace the simple absorption slab by
+a spherically symmetric isothermal gaseous envelope of water,
+whose inner and outer radii are <Math mode="inline" tex="R_{in}" text="R _ (i * n)" xml:id="S3.p1.m8">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="R_{out}" text="R _ (o * u * t)" xml:id="S3.p1.m9">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">u</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">t</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, respectively.
+The density distribution in this envelope is assumed
+to be in hydrostatic equilibrium under the gravity field of the central
+star, and hence major contribution to the spectrum comes from the
+relatively dense region near <Math mode="inline" tex="R_{in}" text="R _ (i * n)" xml:id="S3.p1.m10">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. For this reason, <Math mode="inline" tex="R_{in}" text="R _ (i * n)" xml:id="S3.p1.m11">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+is more important than <Math mode="inline" tex="R_{out}" text="R _ (o * u * t)" xml:id="S3.p1.m12">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">u</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">t</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.</p>
+    </para>
+    <para xml:id="S3.p2">
+      <p>We already suggested that the emission features may be originating
+from an optically thick source (Sect.2). In fact, the column density
+(<Math mode="inline" tex="N_{\rm col}=3.0\times 10^{20}" text="N _ col = 3.0 * 10 ^ 20" xml:id="S3.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">col</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="3.0" role="NUMBER">3.0</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="20" role="NUMBER">20</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S3.p2.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) and the absorption
+cross-section of H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S3.p2.m3">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O typically <Math mode="inline" tex="10^{-17}" text="10 ^ (- 17)" xml:id="S3.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="17" role="NUMBER">17</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{2}" text="^2" xml:id="S3.p2.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mol<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p2.m6">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> at
+<Math mode="inline" tex="T=1500" text="T = 1500" xml:id="S3.p2.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+              <XMTok meaning="1500" role="NUMBER">1500</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>K (Figs. 1c and 2c) suggest that the optical depth of the
+strong lines should be as large as <Math mode="inline" tex="10^{3}" text="10 ^ 3" xml:id="S3.p2.m8">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. Thus, the
+water envelope is optically quite thick in the lines, and the warm
+molecular envelope can be referred to as molecular sphere, or MOLsphere
+for simplicity. Then, we must solve transfer equation in this MOLsphere
+and, since we are to interpret line spectra,
+the photospheric spectrum including the full details of the absorption
+lines should exactly be considered as the boundary condition.
+For this purpose, we apply the photospheric spectrum characterized by
+<Math mode="inline" tex="M_{*}=15\,M_{\odot},R_{*}=650\,R_{\odot}" text="formulae@(M _ * = 15 * M _ direct-product, R _ * = 650 * R _ direct-product)" xml:id="S3.p2.m9">
+          <XMath>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="formulae"/>
+                <XMRef idref="S3.p2.m9.1"/>
+                <XMRef idref="S3.p2.m9.2"/>
+              </XMApp>
+              <XMWrap>
+                <XMApp xml:id="S3.p2.m9.1">
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                    <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="15" role="NUMBER" rpadding="1.7pt">15</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                      <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                      <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="PUNCT">,</XMTok>
+                <XMApp xml:id="S3.p2.m9.2">
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                    <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="650" role="NUMBER" rpadding="1.7pt">650</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                      <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                      <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>, <Math mode="inline" tex="L_{*}\approx 6\times 10^{4}\,L_{\odot}" text="L _ * approximately-equals 6 * 10 ^ 4 * L _ direct-product" xml:id="S3.p2.m10">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">×</XMTok>
+<!--  %**** text.tex Line 225 **** -->                  <XMTok meaning="6" role="NUMBER">6</XMTok>
+                  <XMApp rpadding="1.7pt">
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                  <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="T_{\rm eff}\approx 3600" text="T _ eff approximately-equals 3600" xml:id="S3.p2.m11">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">eff</XMTok>
+              </XMApp>
+              <XMTok meaning="3600" role="NUMBER">3600</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> K (Fig.1 of Tsuji 2000).
+The computation has been done with the spectral resolution of about 50000
+by the use of the H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S3.p2.m12">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O line database HITEMP (Rothman 1997).
+After a few trials, we found that <Math mode="inline" tex="R_{in}\approx 2R_{*}\approx 1300R_{\odot}" text="R _ (i * n) approximately-equals 2 * R _ * approximately-equals 1300 * R _ direct-product" xml:id="S3.p2.m13">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="1300" role="NUMBER">1300</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> results in a spectrum that agrees with the observed
+one reasonably well. We also assumed <Math mode="inline" tex="R_{out}\approx 4R_{*}" text="R _ (o * u * t) approximately-equals 4 * R _ *" xml:id="S3.p2.m14">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">u</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">t</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="4" role="NUMBER">4</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, but
+this is of minor importance by the reason outlined above. The resulting
+emergent spectrum is shown by the green line in Fig.3a.</p>
+    </para>
+    <para xml:id="S3.p3">
+      <p>In the spectral region shortward of 5 <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p3.m1">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m, the MOLsphere
+contributes only to absorption, and the upper boundary of the
+spectrum shown by the green line in Fig.3a represents the photospheric
+continuum, below which CO, OH, and SiO bands of the
+photospheric origin can be seen together with the H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S3.p3.m2">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O
+absorption produced anew in the MOLsphere (molecules other
+than H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S3.p3.m3">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O are not considered in the MOLsphere). At the shorter and
+longer wavelength sides of 6.3 <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p3.m4">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m, the <Math mode="inline" tex="R" text="R" xml:id="S3.p3.m5">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+          </XMath>
+        </Math> and <Math mode="inline" tex="P" text="P" xml:id="S3.p3.m6">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">P</XMTok>
+          </XMath>
+        </Math> branches,
+respectively, of the H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S3.p3.m7">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O <Math mode="inline" tex="\nu_{2}" text="nu _ 2" xml:id="S3.p3.m8">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="nu" role="UNKNOWN">ν</XMTok>
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> fundamentals are seen in emission
+above the photospheric continuum (which is not explicitly shown but
+can be extrapolated from the near infrared continuum). This emission
+of water due to the MOLsphere remains prominent throughout the mid
+infrared region because of the stronger H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S3.p3.m9">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O pure
+rotation lines. The MOLsphere contributes only to emission in the
+mid-infrared region and the lower boundary of the spectrum shown by the
+green line represents the photospheric continuum, below
+<!--  %**** text.tex Line 250 **** -->which OH pure rotation lines of the photospheric origin can be seen.
+But most of these OH lines are weaker or some OH lines are missing as
+compared with those in the photospheic spectrum because of the filling
+in by the overlapping H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S3.p3.m10">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O emission lines from the MOLsphere.</p>
+    </para>
+    <para xml:id="S3.p4">
+      <p>For comparing the predicted spectrum from the MOLsphere discussed above
+with observations, we convolve it with the
+slit function of SWS which is assumed to be the Gaussian of
+FWHM = 187.5 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p4.m1">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and the resulting low resolution spectrum is
+shown by the blue line in Fig.3a. The result can directly be compared with
+the observed spectrum in the region shortward of 8 <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p4.m2">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m where
+dust emission is negligible, and is shifted vertically to fit the observed
+spectrum of <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p4.m3">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep shown by the red dots. A close-up of the region
+around 6.3 <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p4.m4">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m is shown in Fig.3b, where the red dots represent the
+observed spectrum and the blue line the predicted spectrum from the
+MOLsphere, as in Fig.3a. The agreements between the observed
+and predicted spectra appear to be fine if not perfect.</p>
+    </para>
+    <para xml:id="S3.p5">
+      <p>For interpreting the spectrum lonward of 8 <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p5.m1">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m, effect of dust emission
+on our predicted spectrum should be taken into account. Since
+dust envelope of <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p5.m2">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep is optically thin (e.g. Tsuji 1978),
+we simply add the dust emission to the spectrum by the MOLsphere.
+The region near 40<Math mode="inline" tex="\mu" text="mu" xml:id="S3.p5.m3">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m is shown by an expanded scale in Fig.3c, where
+the red dots represent the observed spectrum
+and the black line the predicted spectrum which is the
+<!--  %**** text.tex Line 275 **** -->sum of the spectrum from the MOLsphere (the blue line in Fig.3a) and dust
+emission represented by the Rayleigh-Jeans spectrum normalized to 162 Jy
+at 40 <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p5.m4">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m. The agreements between the observed
+and predicted spectra appear to be reasonable.
+This result also shows that the mid-infrared flux of apparently
+dusty stars such as <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p5.m5">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep consists not only of dust emission but
+also of gaseous emission of water. The contribution of water
+to the thermal balance in the outer atmosphere as a whole is not very large
+(only 10 % or so in the case of <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p5.m6">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep), yet water may be the
+dominant coolant in the inner part of the outer atmosphere.</p>
+    </para>
+    <para xml:id="S3.p6">
+      <p>In the above analysis, we apply <Math mode="inline" tex="T_{\rm ex}" text="T _ ex" xml:id="S3.p6.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">ex</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="N_{\rm col}" text="N _ col" xml:id="S3.p6.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">N</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">col</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> for
+H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="S3.p6.m3">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>O in the MOLsphere determined by the previous analysis of
+the Stratoscope spectra (Tsuji 2000). We confirmed that these parameters
+explain the ISO spectra as well and no improvement is gained if these
+parameters are changed. Certainly, these parameters are better determined
+from absorption rather than from emission spectra.
+Also, the near infrared spectrum predicted from
+the MOLsphere agrees well with the Stratoscope spectrum, which was
+interpreted by the simpler slab model in our previous analysis.
+The new constraint imposed by the ISO spectra is essentially the
+inner radius of the MOLsphere, <Math mode="inline" tex="R_{in}" text="R _ (i * n)" xml:id="S3.p6.m4">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. In fact,
+the emission features are quite sensitive to <Math mode="inline" tex="R_{in}" text="R _ (i * n)" xml:id="S3.p6.m5">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, and
+the emission tends to be much stronger for <Math mode="inline" tex="R_{in}" text="R _ (i * n)" xml:id="S3.p6.m6">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> larger than
+<Math mode="inline" tex="R_{in}\approx 2R_{*}" text="R _ (i * n) approximately-equals 2 * R _ *" xml:id="S3.p6.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> we have adopted. Further,
+<!--  %**** text.tex Line 300 **** -->the 6 <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p6.m8">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m emission turns to absorption for the smaller values, e.g.
+<Math mode="inline" tex="R_{in}\approx 1000R_{\odot}\approx 1.5R_{*}" text="R _ (i * n) approximately-equals 1000 * R _ direct-product approximately-equals 1.5 * R _ *" xml:id="S3.p6.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="1000" role="NUMBER">1000</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="1.5" role="NUMBER">1.5</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. The weak 6 <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p6.m10">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m
+absorption seen in <Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.p6.m11">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> Ori (Fig.1a) can be explained this way.
+Also, neither emission nor absorption will appear from the MOLsphere
+for some intermediate values of <Math mode="inline" tex="R_{in}" text="R _ (i * n)" xml:id="S3.p6.m12">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and the mid-infrared region of
+<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.p6.m13">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> Ori (Fig.2a) may be such a case. Returning to <Math mode="inline" tex="\mu" text="mu" xml:id="S3.p6.m14">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep,
+the value of <Math mode="inline" tex="R_{in}\approx 2R_{*}\approx 1300R_{\odot}" text="R _ (i * n) approximately-equals 2 * R _ * approximately-equals 1300 * R _ direct-product" xml:id="S3.p6.m15">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="1300" role="NUMBER">1300</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> we have
+suggested should have important implications. Especially, this result suggests
+that water is absent in the region between <Math mode="inline" tex="r\approx R_{*}" text="r approximately-equals R _ *" xml:id="S3.p6.m16">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+              <XMTok font="italic" role="UNKNOWN">r</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="2R_{*}" text="2 * R _ *" xml:id="S3.p6.m17">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>,
+and water of the MOLsphere may be formed anew somewhere at
+about <Math mode="inline" tex="R_{*}" text="R _ *" xml:id="S3.p6.m18">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> above the photosphere rather than the region very close to
+the photosphere. This fact should be kept in mind in considering
+the origin of water in the MOLsphere.</p>
+    </para>
+  </section>
+  <section refnum="4" xml:id="S4">
+    <title><tag close=" ">4</tag>CONCLUDING REMARKS</title>
+    <para xml:id="S4.p1">
+      <p>We found distinct emission of water at 6 <Math mode="inline" tex="\mu" text="mu" xml:id="S4.p1.m1">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m and 40 <Math mode="inline" tex="\mu" text="mu" xml:id="S4.p1.m2">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m regions
+in the ISO spectrum of <Math mode="inline" tex="\mu" text="mu" xml:id="S4.p1.m3">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep in addition to the absorption bands
+at 1.4, 1.9 and 2.7 <Math mode="inline" tex="\mu" text="mu" xml:id="S4.p1.m4">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math>m in the near infrared. We showed that all
+these observed features can be explained consistently by a simple model
+of the optically thick molecular sphere with modest temperature (e.g. 1500K)
+at modest distance above the photosphere (e.g. about one stellar radius).
+What we have proposed, however, is not a model of the usual meaning but
+simply an intuitive interpretation on the observed data, since our “model”
+<!--  %**** text.tex Line 325 **** -->cannot yet be constructed based on the first principle.
+In fact, the presence of the optically thick molecular envelope,
+which we referred to as the MOLsphere for simplicity, has never been
+predicted by any theory of stellar atmospheres so far as we are aware.
+Thus, despite the simplicity of the picture we propose, the physics
+behind the apparently simple phenomenon remains obscure and
+offers a challenging problem to the theory of stellar atmospheres.</p>
+    </para>
+    <para xml:id="S4.p2">
+      <p>Recently, presence of water has been shown in several cool stars by ISO
+(Sect.1), but interpretation of the observed spectra is by no means clear.
+On the other hand, we could present a simple but consistent interpretation
+for the case of <Math mode="inline" tex="\mu" text="mu" xml:id="S4.p2.m1">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep and this may be due to fortunate situations
+as follow. <text font="italic">First</text>, <Math mode="inline" tex="\mu" text="mu" xml:id="S4.p2.m2">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep is unique in that water could be
+observed through the near- to mid-infrared (including the Stratoscope
+data) and not only in absorption but also in emission.
+<text font="italic">Second</text>, <Math mode="inline" tex="\mu" text="mu" xml:id="S4.p2.m3">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep has the MOLsphere which has just developed to
+an adequate size. For comparison, <Math mode="inline" tex="\alpha" text="alpha" xml:id="S4.p2.m4">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> Ori
+may be the case in which the MOLsphere is not yet developed enough to give
+clear observed features, or emission and absorption (including the
+photospheric contributions) may be nearly canceled. On the contrary,
+the cooler supergiants may have well developed MOLsphere, the observed
+features from which may be heavily saturated and more difficult to interpret.
+<text font="italic">Third</text>, the spectrum of <Math mode="inline" tex="\mu" text="mu" xml:id="S4.p2.m5">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep shows almost no photospheric water
+band, unlike the case of the cooler objects which show strong photospheric
+water bands difficult to discriminate from those originating in the MOLsphere.
+<!--  %**** text.tex Line 350 **** --><text font="italic">Fourth</text>, the MOLsphere of <Math mode="inline" tex="\mu" text="mu" xml:id="S4.p2.m6">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep may be relatively free from
+complexities due to the dynamical effect such as by a large amplitude
+pulsation. For all these reasons, the spectra of <Math mode="inline" tex="\mu" text="mu" xml:id="S4.p2.m7">
+          <XMath>
+            <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+          </XMath>
+        </Math> Cep could be
+interpreted relatively well and this may provide the proto-type of
+the MOLsphere, which should most probably exist in
+the outer atmosphere of cool luminous stars in general.</p>
+    </para>
+    <para xml:id="S4.p3">
+      <p>We finally confirmed that water exists not only in very cool luminous
+variables, but also in the early M supergiants and possibly in most M
+(super)giant stars. This fact implies that the presence of water is not due
+to some secondary effect such as a large amplitude pulsation but may
+be due to a more intrinsic property of cool stars. For example, the
+MOLsphere may have some connection with the chromosphere which also exists
+in the outer atmosphere of the most cool stars, but its origin is
+by no means clear yet. By the opening of the infrared
+spectral region by ISO, we have now a means by which to explore
+the new component of the outer atmosphere which is rather warm (MOLsphere),
+in addition to the hot chromosphere and the cool expanding gas-dust envelope
+known so far. The problem is how to understand these multiple components
+of different thermal and kinematical properties in a unified model, and
+we now have a possibility to arrive at a more balanced view of the stellar
+outer atmosphere by considering all its major constituents.</p>
+    </para>
+  </section>
+  <acknowledgements name="Acknowledgements"><!--  %**** text.tex Line 375 **** -->I thank W. Aoki, T. Tanabé, and I. Yamamura for their help and
+useful discussion on the ISO data. This research is supported by
+the Grant-in-Aids for Scientific Research of the Ministry of Education,
+Culture, and Science No. 11640227.
+</acknowledgements>
+  <bibliography labels="LABEL:fig1 LABEL:fig2 LABEL:fig3" xml:id="bib">
+    <title>References</title>
+    <biblist>
+      <bibitem key="bar96" xml:id="bib.bibx1">
+        <bibtag role="refnum">Barlow et al. 1996</bibtag>
+        <bibblock>
+Barlow, M. J., Nguyen-Q-Rieu, Truong-Bach et al. 1996, A&amp;A, 315, L241
+</bibblock>
+      </bibitem>
+      <bibitem key="dan65" xml:id="bib.bibx2">
+        <bibtag role="refnum">Danielson et al., 1965</bibtag>
+        <bibblock>
+Danielson, R. E., Woolf, N. J., Gaustad, J. E. 1965, ApJ, 141, 116
+</bibblock>
+      </bibitem>
+      <bibitem key="dg96" xml:id="bib.bibx3">
+        <bibtag role="refnum">de Graauw et al., 1996</bibtag>
+        <bibblock>
+de Graauw, Th., Haser, L. N., Beintema, D. A. et al. 1996, A&amp;A, 315, L49
+</bibblock>
+      </bibitem>
+      <bibitem key="js98" xml:id="bib.bibx4">
+        <bibtag role="refnum">Jennings and Sada 1998</bibtag>
+        <bibblock>
+Jennings, D. E., Sada, P. V. 1998, Science, 279, 844
+</bibblock>
+      </bibitem>
+      <bibitem key="jus96" xml:id="bib.bibx5">
+        <bibtag role="refnum">Justtanont et al. 1996</bibtag>
+        <bibblock>
+Justtanont, K., de Jong, T., Helmich, F. P. et al. 1996, A&amp;A, 315, L217
+</bibblock>
+      </bibitem>
+      <bibitem key="lee70" xml:id="bib.bibx6">
+        <bibtag role="refnum">Lee 1970</bibtag>
+        <bibblock>
+Lee, T. A. 1970, ApJ, 162, 217
+</bibblock>
+      </bibitem>
+      <bibitem key="neu96" xml:id="bib.bibx7">
+        <bibtag role="refnum">Neufeld et al. 1996</bibtag>
+        <bibblock>
+Neufeld, D. A., Chen, W., Melnick, G. J. et al. 1996, A&amp;A, 315, L237
+</bibblock>
+      </bibitem>
+      <bibitem key="neu99" xml:id="bib.bibx8">
+        <bibtag role="refnum">Neufeld et al. 1999</bibtag>
+        <bibblock>
+Neufeld, D. A., Feuchtgruber, H., Harwit, M., Melnick, G. J.  1999, ApJ,
+517, L147
+</bibblock>
+      </bibitem>
+      <bibitem key="kes96" xml:id="bib.bibx9">
+        <bibtag role="refnum">Kessler et al. 1996</bibtag>
+        <bibblock>
+<!--  %**** text.tex Line 400 **** -->Kessler, M. F., et al. 1996, A&amp;A, 315, L27
+</bibblock>
+      </bibitem>
+      <bibitem key="rot97" xml:id="bib.bibx10">
+        <bibtag role="refnum">Rothman 1997</bibtag>
+        <bibblock>
+Rothman, L. S. 1997, HITEMP CD-ROM (Andover: ONTAR Co.)
+</bibblock>
+      </bibitem>
+      <bibitem key="rus75" xml:id="bib.bibx11">
+        <bibtag role="refnum">Russell et al 1975</bibtag>
+        <bibblock> Russell, R. W., Soifer, B. T.,
+Forrest, W. J. 1975, ApJ, 198, L41
+</bibblock>
+      </bibitem>
+      <bibitem key="tb99" xml:id="bib.bibx12">
+        <bibtag role="refnum">T-Bach et al. 1999</bibtag>
+        <bibblock>
+Truong-Bach, Sylvester, R.J., Barlow, M. J., et al. 1999, A&amp;A, 345, 925
+</bibblock>
+      </bibitem>
+      <bibitem key="tsu78" xml:id="bib.bibx13">
+        <bibtag role="refnum">Tsuji 1978</bibtag>
+        <bibblock>
+Tsuji, T. 1978, A&amp;A, 68, L23
+</bibblock>
+      </bibitem>
+      <bibitem key="tsu78" xml:id="bib.bibx14">
+        <bibtag role="refnum">Tsuji 1978</bibtag>
+        <bibblock>
+Tsuji, T. 2000, ApJ, 538, 801
+</bibblock>
+      </bibitem>
+      <bibitem key="t99" xml:id="bib.bibx15">
+        <bibtag role="refnum">Tsuji et al. 1999</bibtag>
+        <bibblock>
+Tsuji, T., Aoki, W., Ohnaka, K. 1999, in The Universe as Seen by ISO,
+ed. P. Cox and M. F. Kessler (ESA SP-427: Noordwijk: ESA), 229
+</bibblock>
+      </bibitem>
+      <bibitem key="t97" xml:id="bib.bibx16">
+        <bibtag role="refnum">Tsuji et al. 1997</bibtag>
+        <bibblock>
+Tsuji, T., Ohnaka, K., Aoki, W., Yamamura, I. 1997, A&amp;A, 320, L1
+</bibblock>
+      </bibitem>
+      <bibitem key="t98" xml:id="bib.bibx17">
+        <bibtag role="refnum">Tsuji et al. 1998</bibtag>
+        <bibblock>
+Tsuji, T., Ohnaka, K., Aoki, W., Yamamura, I. 1998, Ap&amp;SS, 255, 293
+</bibblock>
+      </bibitem>
+      <bibitem key="w64" xml:id="bib.bibx18">
+        <bibtag role="refnum">Woolf et al. 1964</bibtag>
+        <bibblock>
+Woolf, N. J., Schwarzschild, M., Rose, W. K. 1964, ApJ, 140, 833
+</bibblock>
+      </bibitem>
+      <bibitem key="iy99" xml:id="bib.bibx19">
+        <bibtag role="refnum">Yamamura et al. 1999</bibtag>
+        <bibblock>
+Yamamura, I., de Jong, T., Cami, J. 1999, A&amp;A, 348, L55
+</bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+<!--  %**** text.tex Line 425 **** -->  <pagination role="newpage"/>
+  <ERROR class="undefined">\figcaption</ERROR>
+  <para xml:id="p2">
+    <p>(a) Spectrum of <Math mode="inline" tex="\alpha" text="alpha" xml:id="p2.m1">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> Ori by the ISO SWS (resolution <Math mode="inline" tex="R\approx 1600" text="R approximately-equals 1600" xml:id="p2.m2">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok meaning="1600" role="NUMBER">1600</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>)
+and corrected for the interstellar reddening with <Math mode="inline" tex="A_{v}=0.5" text="A _ v = 0.5" xml:id="p2.m3">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+              <XMTok font="italic" role="UNKNOWN">A</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">v</XMTok>
+            </XMApp>
+            <XMTok meaning="0.5" role="NUMBER">0.5</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> mag
+(Lee 1970).
+(b) The same but for <Math mode="inline" tex="\mu" text="mu" xml:id="p2.m4">
+        <XMath>
+          <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+        </XMath>
+      </Math> Cep corrected for the interstellar reddening
+with <Math mode="inline" tex="A_{v}=1.5" text="A _ v = 1.5" xml:id="p2.m5">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+              <XMTok font="italic" role="UNKNOWN">A</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">v</XMTok>
+            </XMApp>
+            <XMTok meaning="1.5" role="NUMBER">1.5</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> mag (Lee 1970).
+(c) Absorption cross-section (cm<Math mode="inline" tex="{}^{2}" text="^2" xml:id="p2.m6">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> molecule<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="p2.m7">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMApp>
+              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>) of H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="p2.m8">
+        <XMath>
+          <XMApp role="FLOATSUBSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>O at
+<Math mode="inline" tex="T=1500" text="T = 1500" xml:id="p2.m9">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+            <XMTok meaning="1500" role="NUMBER">1500</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>K based on HITEMP (Rothman 1997). The black line is by high
+resolution (<Math mode="inline" tex="R\approx 50000" text="R approximately-equals 50000" xml:id="p2.m10">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok meaning="50000" role="NUMBER">50000</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>) and the white line by
+low resolution (<Math mode="inline" tex="R\approx 1600" text="R approximately-equals 1600" xml:id="p2.m11">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok meaning="1600" role="NUMBER">1600</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>).</p>
+  </para>
+  <ERROR class="undefined">\figcaption</ERROR>
+  <para xml:id="p3">
+    <p>(a) Spectrum of <Math mode="inline" tex="\alpha" text="alpha" xml:id="p3.m1">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> Ori. (b) Spectrum of <Math mode="inline" tex="\mu" text="mu" xml:id="p3.m2">
+        <XMath>
+          <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+        </XMath>
+      </Math> Cep.
+(c) Absorption cross-section of water at <Math mode="inline" tex="T=1500" text="T = 1500" xml:id="p3.m3">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+            <XMTok meaning="1500" role="NUMBER">1500</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>K. As for details,
+see the legend to Fig.1.</p>
+  </para>
+  <ERROR class="undefined">\figcaption</ERROR>
+<!--  %**** text.tex Line 450 **** -->  <para xml:id="p4">
+    <p>(a) The full spectrum of <Math mode="inline" tex="\mu" text="mu" xml:id="p4.m1">
+        <XMath>
+          <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+        </XMath>
+      </Math> Cep by the ISO SWS (corrected for the
+interstellar reddening) is shown by the red dots.
+The gaps around 4, 7, 12, 20, 29 <Math mode="inline" tex="\mu" text="mu" xml:id="p4.m2">
+        <XMath>
+          <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+        </XMath>
+      </Math>m are instrumental effect
+not yet corrected for. The predicted spectrum based on the MOLsphere
+(optically thick isothermal sphere of the water gas with <Math mode="inline" tex="T_{\rm ex}=1500" text="T _ ex = 1500" xml:id="p4.m3">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">ex</XMTok>
+            </XMApp>
+            <XMTok meaning="1500" role="NUMBER">1500</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>K, <Math mode="inline" tex="N_{\rm col}=3.0\times 10^{20}" text="N _ col = 3.0 * 10 ^ 20" xml:id="p4.m4">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+              <XMTok font="italic" role="UNKNOWN">N</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">col</XMTok>
+            </XMApp>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+              <XMTok meaning="3.0" role="NUMBER">3.0</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="20" role="NUMBER">20</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="p4.m5">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMApp>
+              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>, and located
+at <Math mode="inline" tex="R_{*}=650R_{\odot}" text="R _ * = 650 * R _ direct-product" xml:id="p4.m6">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+            </XMApp>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok meaning="650" role="NUMBER">650</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math> above the photosphere) computed with the
+photospheric spectrum as the boundary condition is shown
+by the green line (resolution <Math mode="inline" tex="R\approx 50000" text="R approximately-equals 50000" xml:id="p4.m7">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok meaning="50000" role="NUMBER">50000</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>) and by the blue line
+(<Math mode="inline" tex="R\approx 1600" text="R approximately-equals 1600" xml:id="p4.m8">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+            <XMTok font="italic" role="UNKNOWN">R</XMTok>
+            <XMTok meaning="1600" role="NUMBER">1600</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>), after being shifted vertically to fit
+the observed spectrum. For comparison with observation, the effect of
+dust emission should be added for <Math mode="inline" tex="\lambda&gt;8\mu" text="lambda &gt; 8 * mu" xml:id="p4.m9">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok meaning="8" role="NUMBER">8</XMTok>
+              <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>m.
+The molecular bands indicated are originating in the photosphere
+except for H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="p4.m10">
+        <XMath>
+          <XMApp role="FLOATSUBSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>O formed anew in the MOLsphere.
+(b) A close-up of Fig.3a around H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="p4.m11">
+        <XMath>
+          <XMApp role="FLOATSUBSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>O <Math mode="inline" tex="\nu_{2}" text="nu _ 2" xml:id="p4.m12">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+            <XMTok font="italic" name="nu" role="UNKNOWN">ν</XMTok>
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> fundamentals.
+The observed spectrum is shown by the red dots (identical with the ones
+in Fig.3a) and the predicted one based on the MOLsphere by the blue line
+(identical with the one in Fig.3a).
+(c) The region of the H<Math mode="inline" tex="{}_{2}" text="_2" xml:id="p4.m13">
+        <XMath>
+          <XMApp role="FLOATSUBSCRIPT" scriptpos="3">
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>O pure rotation lines in an expanded scale.
+Now the dust emission is added to the predicted spectrum from the
+MOLsphere (the blue line in Fig.3a), and the resulting spectrum is shown
+by the black line for comparison with the observed one (the red dots).</p>
+  </para>
+<!--  %**** text.tex Line 475 **** --></document>

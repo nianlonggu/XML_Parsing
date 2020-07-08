@@ -1,0 +1,3012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008257.1"?>
+<?latexml class="mn" options="psfig" oldstyle="true"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML" class="ltx_authors_1line">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>H <text font="smallcaps">i</text> line measurements of pulsars towards the Galactic Centre
+and the electron density in the inner Galaxy</title>
+  <toctitle>H <text font="smallcaps">i</text> line measurements of pulsars</toctitle>
+  <creator role="author">
+    <personname>Simon Johnston<Math mode="inline" tex="{}^{1}" text="^1" xml:id="m1">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+            <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>, Bärbel Koribalski<Math mode="inline" tex="{}^{2}" text="^2" xml:id="m2">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>, Joel M. Weisberg<Math mode="inline" tex="{}^{3}" text="^3" xml:id="m3">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+            <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> &amp;
+Warwick Wilson<Math mode="inline" tex="{}^{2}" text="^2" xml:id="m4">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math><break/><Math mode="inline" tex="{}^{1}" text="^1" xml:id="m5">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+            <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>QEII Fellow, School of Physics, University of Sydney,
+NSW 2006, Australia<break/><Math mode="inline" tex="{}^{2}" text="^2" xml:id="m6">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>Australia Telescope National Facility, CSIRO, Epping, NSW 2121,
+Australia<break/><Math mode="inline" tex="{}^{3}" text="^3" xml:id="m7">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+            <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>Carleton College, Dept. of Physics and Astronomy, Northfield, MN 55057, USA</personname>
+  </creator>
+  <abstract name="Abstract">
+    <p>We have measured 21-cm absorption and emission spectra in the direction of
+<!--  %**** h1abs˙3.tex Line 25 **** -->a further 7 southern pulsars with the Parkes telescope to derive
+their kinematic distances and to study the interstellar medium.
+For the first time we have successfully obtained H <text font="smallcaps">i</text> absorption measurements
+for PSRs J1602–5100, J1740–3015 and J1745–3040. We have also
+significantly improved the sensitivity and resolution on PSRs J1600–5044,
+J1752–2806, and J1825–0935, whose spectra have previously been measured,
+and have corrected an error in the published distance to PSR J1824–1945.</p>
+    <p>Since the Frail &amp; Weisberg summary of pulsar distances in 1990, a
+further 23 pulsars now have measured H <text font="smallcaps">i</text> distances, mainly through the efforts
+of the current group. We discuss the Taylor &amp; Cordes electron density
+model in light of these new measurements and find that, although
+the model towards the Galactic Centre appears good, the line of
+sight through the Carina spiral arm is poorly fit by the model.</p>
+  </abstract>
+  <classification scheme="keywords">
+pulsars: general — radio lines: ISM — stars: distances
+</classification>
+  <section refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>Introduction</title>
+    <para xml:id="S1.p1">
+      <p>We obtained neutral hydrogen (H <text font="smallcaps">i</text>) emission and absorption spectra in the
+direction of 7 southern pulsars to determine their
+kinematic distances. This paper is the third in a series
+on H <text font="smallcaps">i</text> observations of pulsars at the Parkes radio telescope.
+<!--  %**** h1abs˙3.tex Line 50 **** -->We refer the reader to the earlier papers by
+Koribalski et al. (1995; hereafter Paper I)
+and Johnston et al. (1996; hereafter Paper II) <cite><bibref bibrefs="kjww95,jkww96" show="nothing"/></cite>
+for a comprehensive introduction as well as a full description
+of the observations and data analysis.</p>
+    </para>
+    <para xml:id="S1.p2">
+      <p>The observations of H <text font="smallcaps">i</text> emission and absorption towards pulsars together with
+a rotation curve or velocity field for the Galaxy allow the derivation of lower
+and/or upper distance limits, depending on the distribution of H <text font="smallcaps">i</text> in the line
+of sight. These distance limits can be coupled with the pulsar’s
+dispersion measure to obtain limits on the electron density along
+the lines of sight. From knowledge of the electron density along many lines
+of sight, a model can be constructed to convert dispersion measure into
+distance with appropriate uncertainties.
+The current model of Taylor &amp; Cordes (1993)<cite><bibref bibrefs="tc93" show="nothing"/></cite>
+represents the synthesis of
+the observations to date and is widely accepted as the model of choice.
+However, the data poorly constrain the model towards the Galactic Centre,
+and the model has problems towards the Carina spiral arm
+as discussed in Paper II.</p>
+    </para>
+    <para xml:id="S1.p3">
+      <p>The pulsars described here include three within 3° of the Galactic Centre
+and the rest within 30° thereof. Combined with data from four
+other pulsars <cite class="ltx_citemacro_cite">[<bibref bibrefs="wsfj95" separator="," show="Refnum" yyseparator=","/>]</cite>, the current work allows a handle to
+be gained on the electron density in the inner Galaxy. As this is the
+<!--  %**** h1abs˙3.tex Line 75 **** -->last paper in the series, we also discuss the 23 new H <text font="smallcaps">i</text> absorption
+measurements since the advent of the Taylor &amp; Cordes (1993) model and
+point out areas in which the model can be improved.</p>
+    </para>
+  </section>
+  <section refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>Observations and data analysis</title>
+    <para xml:id="S2.p1">
+      <p>H <text font="smallcaps">i</text> observations towards several southern pulsars were carried out
+on 1994 October 5–10 using the 64-m Parkes radio telescope.
+The 20-cm receiver system, the correlator backend and the observing
+procedure were all described in Paper I.
+In brief, the digital correlator was configured into
+2 <Math mode="inline" tex="\times" text="*" xml:id="S2.p1.m1">
+          <XMath>
+            <XMTok meaning="times" role="MULOP">×</XMTok>
+          </XMath>
+        </Math> 512 channels (each with a bandwidth of 4 MHz) giving a velocity
+resolution of 7.8 kHz or 1.74 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S2.p1.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> per channel. The data were reduced
+off-line using standard procedures involving subtracting the ‘on-pulse’
+spectra from the ‘off-pulse’ spectra with suitable normalisation
+(as detailed in Paper I).</p>
+    </para>
+    <para xml:id="S2.p2">
+      <p>Table 1 lists the pulsar parameters and details of the observing.
+Columns 1 and 9 list the pulsar J2000 and B1950 names.
+Columns 2 and 3 give the Galactic coordinates, columns 4 to 6 the pulsar
+period, dispersion measure and flux density, respectively. Columns 7 and
+8 give the integration time in minutes and the number of time
+bins for each pulsar. In all cases the pulse occupied only 1 of these
+phase bins (which was used to form the on-pulse spectrum) and the
+remaining were used for the formation of the off-pulse spectrum.</p>
+    </para>
+<!--  %**** h1abs˙3.tex Line 100 **** -->    <para xml:id="S2.p3">
+      <p>To calibrate the brightness temperature of the emission spectra
+we used the Kerr et al. (1986)<cite><bibref bibrefs="kbjk86" show="nothing"/></cite> emission survey
+for PSRs J1600–5044 and J1602–5100, the Burton &amp; Liszt (1983)<cite><bibref bibrefs="bl83" show="nothing"/></cite>
+survey for PSRs J1740–3015, J1745–3040 and J1752–2806
+and the Weaver &amp; Williams (1974a, 1974b)<cite><bibref bibrefs="ww74a,ww74b" show="nothing"/></cite> survey for
+PSRs J1824–1945 and J1825–0935. To convert from the antenna temperatures
+quoted in those papers to true brightness temperatures we used a
+correction factor of 1.025 for Kerr et al.,
+1.52 for Burton &amp; Liszt and 1.14 for Weaver &amp; Williams.
+Subject to the caveats contained in those
+papers, we estimate the uncertainty in our brightness temperatures
+to be of the order of 5%.</p>
+    </para>
+  </section>
+  <section refnum="3" xml:id="S3">
+    <title><tag close=" ">3</tag>Results on individual sources</title>
+    <para xml:id="S3.p1">
+      <p>Figure 1 shows the emission and absorption spectra for each of the 7 pulsars.
+Below the spectra we show the rotation curve appropriate
+for the longitude and latitude of the pulsar.
+In this paper we use an analytic expression given
+by the best fit model of the Galactic rotation curve from Fich, Blitz,
+&amp; Stark (1989)<cite><bibref bibrefs="fbs89" show="nothing"/></cite>.
+We adopt the standard IAU parameters <cite class="ltx_citemacro_cite">[<bibref bibrefs="klb86" separator="," show="Refnum" yyseparator=","/>]</cite> for the distance
+to the Galactic centre (<Math mode="inline" tex="R_{0}" text="R _ 0" xml:id="S3.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> = 8.5 kpc) and the solar orbital velocity
+(<Math mode="inline" tex="V_{0}" text="V _ 0" xml:id="S3.p1.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+              <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> = 220 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p1.m3">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>). The rotation
+curve of the Galaxy is the azimuthally smoothed average of its velocity field
+and thus implicitly assumes circular orbits around the Galactic centre.
+<!--  %**** h1abs˙3.tex Line 125 **** --></p>
+    </para>
+    <para xml:id="S3.p2">
+      <p>The lower and upper distance limits of pulsars can be inferred from their
+absorption and emission spectra, respectively. Following Frail &amp; Weisberg
+(1990; Section V.a)<cite><bibref bibrefs="fw90" show="nothing"/></cite>
+we set the lower distance limit, <Math mode="inline" tex="D_{\rm L}" text="D _ L" xml:id="S3.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">D</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">L</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, from
+the centre of the farthest absorption feature in the spectrum and the upper
+distance limit, <Math mode="inline" tex="D_{\rm U}" text="D _ U" xml:id="S3.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">D</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">U</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, by the first emission peak above <Math mode="inline" tex="T_{\rm B}" text="T _ B" xml:id="S3.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">B</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> =
+35 K and beyond the most distant absorption feature.
+The lower limit of 35 K on the brightness temperature is a conservative
+approach if one wishes to be certain of detecting absorption
+<cite class="ltx_citemacro_cite">[<bibref bibrefs="rgmb72,wbr79" separator="," show="Refnum" yyseparator=","/>]</cite>.
+The simple Galactic rotation model cannot take
+into account the presence of random or streaming motions in the H <text font="smallcaps">i</text> gas which
+causes departures from purely circular rotation. One must allow for errors of
+the order 7 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p2.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> when converting the observed velocities into distances (see,
+e.g., Weisberg et al. 1979; Shaver et al. 1982; Clifton et al. 1988).
+<cite><bibref bibrefs="wbr79,sra+82,cfkw88" show="nothing"/></cite></p>
+    </para>
+    <para xml:id="S3.p3">
+      <p>For pulsars near the Galactic Centre, velocity crowding means that no
+useful distances can be obtained directly from the Doppler shift of the
+H <text font="smallcaps">i</text> line. However, comparison with other objects with known distance
+and velocity can provide useful constraints as can the ‘peculiar’
+velocity of the expanding 3 kpc arm. For all the objects discussed below
+we use as much information from the literature
+as possible when computing distance limits.
+<!--  %**** h1abs˙3.tex Line 150 **** --></p>
+    </para>
+    <para xml:id="S3.p4">
+      <p>Table 2 shows the measured lower and upper velocity limits for each pulsar
+with the corresponding distance limits, where the distance errors are
+computed assuming random motions of the H <text font="smallcaps">i</text> gas contribute
+7 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p4.m1">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> as described above. The electron density limits are then given
+by the dispersion measure (Table 1) divided by the distance limits.
+A discussion of the results for each pulsar is given below.</p>
+    </para>
+    <subsection refnum="3.1" xml:id="S3.SS1">
+      <title><tag close=" ">3.1</tag>PSR J1600–5044 (B1557–50); l,b=330<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS1.m1">
+          <XMath>
+            <XMApp role="POSTFIX">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+              <XMTok font="italic">.</XMTok>
+              <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>7,1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS1.m2">
+          <XMath>
+            <XMApp role="POSTFIX">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+              <XMTok font="italic">.</XMTok>
+              <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>6</title>
+      <para xml:id="S3.SS1.p1">
+        <p>Low-resolution H <text font="smallcaps">i</text> absorption spectra have been obtained by Ables &amp;
+Manchester (1976) and Manchester et al. (1981), but differ substantially.
+The differences in optical depth near –40 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS1.p1.m1">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> in the two
+spectra are discussed in Deshpande et al. (1992) who claim this as evidence
+for small-scale ISM structure. <cite><bibref bibrefs="am76,mwm81,dmra92" show="nothing"/></cite>
+The pulsar is close on the sky to PSR J1602–5100 discussed below.</p>
+      </para>
+      <para xml:id="S3.SS1.p2">
+        <p>Our measurements show, with much improved spectral resolution,
+strong (<Math mode="inline" tex="&gt;35" text="absent &gt; 35" xml:id="S3.SS1.p2.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+                <XMTok meaning="absent"/>
+                <XMTok meaning="35" role="NUMBER">35</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> K) H <text font="smallcaps">i</text> emission between –91 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS1.p2.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> and +30 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS1.p2.m3">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>.
+Several narrow absorption features are visible throughout this range
+in addition to an astonishing absorption feature at –105 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS1.p2.m4">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>.
+It has an optical depth of 0.94 against an emission feature which
+has a temperature of only 10 K!
+It is unusual to see such deep absorption in a relatively weak emission
+feature at this longitude although similar absorption is sometimes
+seen against the 3-kpc arm in the inner Galaxy.
+<!--  %**** h1abs˙3.tex Line 175 **** -->The data yield a spin temperature of about 20 K, indicating that
+the absorption cloud is unusually cold.
+The H <text font="smallcaps">i</text> emission survey of Kerr et al. (1986) reveals nothing unusual in the
+vicinity. The brightness temperature of the emission rises steeply towards
+the Galactic Plane at this velocity, peaking near 100 K.
+One possiblity is that the absorption could be associated with the
+small, cold, high density clouds which were recently detected in large
+numbers in an infra-red galactic plane survey <cite class="ltx_citemacro_cite">[<bibref bibrefs="espc+98" separator="," show="Refnum" yyseparator=","/>]</cite>.
+However, these clouds are predominantly molecular <cite class="ltx_citemacro_cite">[<bibref bibrefs="ccep+98" separator="," show="Refnum" yyseparator=","/>]</cite> and it
+is unclear how much neutral atomic hydrogen would exist there.</p>
+      </para>
+      <para xml:id="S3.SS1.p3">
+        <p>The distance corresponding to this
+feature is at 6.4<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="S3.SS1.p3.m1">
+            <XMath>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+            </XMath>
+          </Math>0.5 kpc which we assign as our lower distance
+limit. This is somewhat more conservative than
+Frail &amp; Weisberg (1990) <cite><bibref bibrefs="fw90" show="nothing"/></cite> who assign the tangent
+point distance of 7.4<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="S3.SS1.p3.m2">
+            <XMath>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+            </XMath>
+          </Math>1.1 kpc as the lower distance limit based
+on critical analyses of the spectra of Ables &amp; Manchester (1976) and
+Manchester et al. (1981).
+At positive velocities, we might expect to see some absorption towards
+the emission peak at +29.7 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS1.p3.m3">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, though its brightness is only 33 K.
+From the lack of any significant absorption here we infer an
+upper distance limit of 18.2<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="S3.SS1.p3.m4">
+            <XMath>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+            </XMath>
+          </Math>1.2 kpc. Although the
+emission temperature does not (quite) reach our 35 K cutoff
+criterion, the relatively small noise in the absorption spectrum
+strengthens our argument that the lack of observed absorption
+<!--  %**** h1abs˙3.tex Line 200 **** -->supports the quoted upper limit.</p>
+      </para>
+      <para xml:id="S3.SS1.p4">
+        <p>Caswell et al. (1975)<cite><bibref bibrefs="cmr+75" show="nothing"/></cite> observed H <text font="smallcaps">i</text> towards a
+number of (Galactic) sources between longitudes
+328° and 332°. All these are closer
+to the Galactic plane than PSR J1600–5044 and in all cases emission
+temperatures of <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.SS1.p4.m1">
+            <XMath>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            </XMath>
+          </Math>100 K are seen at –105 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS1.p4.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>.
+The closest supernova remnant to the pulsar is SNR 330.2+1.0 <cite class="ltx_citemacro_cite">[<bibref bibrefs="chmw83" separator="," show="Refnum" yyseparator=","/>]</cite>
+but unfortunately it has not been observed in H <text font="smallcaps">i</text> nor has there been
+any detection of maser lines associated with it <cite class="ltx_citemacro_cite">[<bibref bibrefs="gfgo97" separator="," show="Refnum" yyseparator=","/>]</cite>.</p>
+      </para>
+    </subsection>
+    <subsection refnum="3.2" xml:id="S3.SS2">
+      <title><tag close=" ">3.2</tag>PSR J1602–5100 (B1558–50); l,b=330<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS2.m1">
+          <XMath>
+            <XMApp role="POSTFIX">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+              <XMTok font="italic">.</XMTok>
+              <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>7,1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS2.m2">
+          <XMath>
+            <XMApp role="POSTFIX">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+              <XMTok font="italic">.</XMTok>
+              <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>3</title>
+      <para xml:id="S3.SS2.p1">
+        <p>Frail &amp; Weisberg (1990) discuss an unpublished low-resolution spectrum
+for this pulsar by Manchester. They note the apparent absorption seen
+near the tangent point velocity of –110 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS2.p1.m1">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>. At this velocity the emission
+temperature is only 12 K. However, assuming the absorption is real they
+assign the tangent point distance of 7.4<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="S3.SS2.p1.m2">
+            <XMath>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+            </XMath>
+          </Math>1.1 kpc as a <text font="italic">lower</text> limit.</p>
+      </para>
+      <para xml:id="S3.SS2.p2">
+        <p>The emission spectrum is very similar to that of PSR J1600–5044 (described
+above) with strong H <text font="smallcaps">i</text> emission between –90 and +30 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS2.p2.m1">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>.
+Our spectrum shows absorption at least up to –72 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS2.p2.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> corresponding
+to a distance of 4.5<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="S3.SS2.p2.m3">
+            <XMath>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+            </XMath>
+          </Math>0.4 kpc.
+There is no absorption seen against the reasonably
+bright feature at –90 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS2.p2.m4">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>. Gas at this velocity can either be on the
+near or far side of the tangent point, hence we set the upper limit to
+<!--  %**** h1abs˙3.tex Line 225 **** -->be beyond the tangent point at a distance of 9.4<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="S3.SS2.p2.m5">
+            <XMath>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+            </XMath>
+          </Math>0.4 kpc.
+However, we also have a hint of absorption near –110 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS2.p2.m6">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> as in the
+Manchester spectrum. This feature has an optical depth of 0.36 (4.6-<Math mode="inline" tex="\sigma" text="sigma" xml:id="S3.SS2.p2.m7">
+            <XMath>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+            </XMath>
+          </Math>).
+Given that we see strong absorption at –105 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS2.p2.m8">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> in PSR J1600-5044
+(only 20 arcmin distant) against a similarly low temperature cloud we
+assign a lower distance limit at the tangent point (7.4<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="S3.SS2.p2.m9">
+            <XMath>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+            </XMath>
+          </Math>0.5 kpc).</p>
+      </para>
+      <para xml:id="S3.SS2.p3">
+        <p>There are 2 known H <text font="smallcaps">ii</text> regions located near the pulsar and significantly
+off the Galactic plane. G331.354+1.072 has a recombination line
+velocity of –79 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS2.p3.m1">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> and G331.360+0.507 has a velocity
+of –46 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS2.p3.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> in both recombination lines and H<Math mode="inline" tex="{}_{\rm 2}" text="_2" xml:id="S3.SS2.p3.m3">
+            <XMath>
+              <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>CO <cite class="ltx_citemacro_cite">[<bibref bibrefs="ch87b" separator="," show="Refnum" yyseparator=","/>]</cite>,
+but no independent distances are known.</p>
+      </para>
+    </subsection>
+    <subsection refnum="3.3" xml:id="S3.SS3">
+      <title><tag close=" ">3.3</tag>PSR J1740–3015 (B1737–30); l,b=358<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS3.m1">
+          <XMath>
+            <XMApp role="POSTFIX">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+              <XMTok font="italic">.</XMTok>
+              <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>3,0<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS3.m2">
+          <XMath>
+            <XMApp role="POSTFIX">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+              <XMTok font="italic">.</XMTok>
+              <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>2 <break/>      PSR J1745–3040 (B1742–30); l,b=358<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS3.m3">
+          <XMath>
+            <XMApp role="POSTFIX">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+              <XMTok font="italic">.</XMTok>
+              <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>6,–1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS3.m4">
+          <XMath>
+            <XMApp role="POSTFIX">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+              <XMTok font="italic">.</XMTok>
+              <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>0</title>
+      <para xml:id="S3.SS3.p1">
+        <p>These pulsars are only 1° apart on the sky and lie within 2° of the Galactic centre. Along this line of sight,
+velocity crowding is too severe to convert velocity to distance.
+However, the presence of the 3 kpc arm at a velocity of <Math mode="inline" tex="-60" text="- 60" xml:id="S3.SS3.p1.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok meaning="60" role="NUMBER">60</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS3.p1.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> (see Burton &amp; Liszt 1983<cite><bibref bibrefs="bl83" show="nothing"/></cite>) helps to constrain the distance.</p>
+      </para>
+      <para xml:id="S3.SS3.p2">
+        <p>Both pulsars show similar emission profiles. Strong H <text font="smallcaps">i</text> emission
+extends from –20 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS3.p2.m1">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> to +20 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS3.p2.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>and there is a dip in the
+brightness temperature due to self-absorption from a local cloud
+<cite class="ltx_citemacro_cite">[<bibref bibrefs="cl84" separator="," show="Refnum" yyseparator=","/>]</cite> at a velocity of +8 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS3.p2.m3">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>.
+<!--  %**** h1abs˙3.tex Line 250 **** -->Towards both pulsars, emission is seen from the 3 kpc arm at –60 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS3.p2.m4">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> although the brightness temperature is significantly less than 30 K in
+the case of PSR J1745–3040 and only <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.SS3.p2.m5">
+            <XMath>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            </XMath>
+          </Math>30 K for PSR J1740–3015.</p>
+      </para>
+      <para xml:id="S3.SS3.p3">
+        <p>The absorption profiles of the pulsars differ in that absorption with
+an optical depth of <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.SS3.p3.m1">
+            <XMath>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            </XMath>
+          </Math>0.5 is seen at –15 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS3.p3.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> towards
+PSR J1740–3015 but not towards PSR J1745–3040.
+No absorption is seen against the 3 kpc arm in either pulsar.
+Dickey et al. (1983)<cite><bibref bibrefs="dkgh83" show="nothing"/></cite> and Garwood &amp; Dickey (1989)<cite><bibref bibrefs="gd89" show="nothing"/></cite>
+show H <text font="smallcaps">i</text> spectra towards 3 background sources (1739-298, 1741-312
+and 356.905+0.082) all less than 2° from the pulsars.
+Absorption at –15 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS3.p3.m3">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> and against the 3 kpc arm is clearly seen.
+SNR G357.7–0.1 (MSH 17–39; the Tornado) shows similar absorption
+characteristics - deep absorption features from +20 to –15 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS3.p3.m4">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> and
+absorption at the location of the 3 kpc arm at –60 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS3.p3.m5">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> <cite class="ltx_citemacro_cite">[<bibref bibrefs="rgmb72" separator="," show="Refnum" yyseparator=","/>]</cite>.
+This remnant is located beyond the 3 kpc arm, and possibly beyond
+the Galactic Centre <cite class="ltx_citemacro_cite">[<bibref bibrefs="fgrg+96" separator="," show="Refnum" yyseparator=","/>]</cite>. The other complex of interest in
+this region of sky contains the SNR G359.1–0.5, the ‘Mouse’ (G359.2–0.8)
+and the ‘Snake’ (G359.1–0.2). H <text font="smallcaps">i</text> observations of this whole area
+by Uchida et al. (1992)<cite><bibref bibrefs="umy92" show="nothing"/></cite>, show that the Snake and the SNR
+lie beyond the 3 kpc arm but the Mouse shows no absorption against
+the gas in the arm and is presumed to be a foreground object.</p>
+      </para>
+      <para xml:id="S3.SS3.p4">
+        <p>Given the evidence above, we should certainly see absorption against
+PSR J1740–3015 if it were located behind the 3 kpc arm, and we do not.
+<!--  %**** h1abs˙3.tex Line 275 **** -->Following Weisberg et al. (1995)<cite><bibref bibrefs="wsfj95" show="nothing"/></cite>,
+therefore, we assign the 3 kpc arm at 5.5<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="S3.SS3.p4.m1">
+            <XMath>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+            </XMath>
+          </Math>0.6 kpc
+as the upper distance limit. Given that absorption is seen against
+the emission at –15 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS3.p4.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> we conclude that this feature lies in front
+of the 3 kpc arm but at an unknown distance.
+As PSR J1745–3040 does not show absorption
+at –15 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS3.p4.m3">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> in spite of a high emission temperature we conclude
+that it must be in front of the arm, in front of PSR J1740–3015 and
+also in front of the –15 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS3.p4.m4">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> feature. Unfortunately, the lack
+of any further kinematic information in this region forces us to assign
+an upper distance limit of 5.5<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="S3.SS3.p4.m5">
+            <XMath>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+            </XMath>
+          </Math>0.6 kpc for this pulsar also.</p>
+      </para>
+      <para xml:id="S3.SS3.p5">
+        <p>The upper limits derived are consistent with the dispersion measure
+distances to the pulsars and we note also that PSR J1745–3040
+has a lower dispersion measure than PSR J1740–3015 as expected
+if it is closer.</p>
+      </para>
+      <para xml:id="S3.SS3.p6">
+        <p>Saravanan et al. (1996) also observed both of these pulsars. Their absorption
+spectrum on PSR J1740–3015 is similar to ours, although ours has less noise
+in spite of a slightly shorter integration time. We also do not see
+any absorption against the weak emission feature at –180 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS3.p6.m1">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> that
+is visible in their figure nor would any absorption be expected
+at this velocity given that the pulsar is closer than the 3-kpc arm.
+(Saravanan et al. do not set any distance limits on the basis of
+this feature.)
+<!--  %**** h1abs˙3.tex Line 300 **** -->For PSR J1745–3040, our integration time was longer than theirs and
+our spectrum less noisy. Although the absorption spectra appear different,
+given the relatively high noise levels in the spectra they appear
+to be consistent at the 3-<Math mode="inline" tex="\sigma" text="sigma" xml:id="S3.SS3.p6.m2">
+            <XMath>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+            </XMath>
+          </Math> level.</p>
+      </para>
+    </subsection>
+    <subsection refnum="3.4" xml:id="S3.SS4">
+      <title><tag close=" ">3.4</tag>PSR J1752–2806 (B1749–28); l,b=1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS4.m1">
+          <XMath>
+            <XMApp role="POSTFIX">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+              <XMTok font="italic">.</XMTok>
+              <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>5,–1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS4.m2">
+          <XMath>
+            <XMApp role="POSTFIX">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+              <XMTok font="italic">.</XMTok>
+              <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>0</title>
+      <para xml:id="S3.SS4.p1">
+        <p>This pulsar was one of the first discovered <cite class="ltx_citemacro_cite">[<bibref bibrefs="tv68" separator="," show="Refnum" yyseparator=","/>]</cite>.
+A low resolution H <text font="smallcaps">i</text> absorption spectrum by
+Guelin et al. (1969)<cite><bibref bibrefs="gghw69" show="nothing"/></cite> did not clearly show absorption,
+but a Gordon et al. (1969)<cite><bibref bibrefs="ggs69" show="nothing"/></cite> spectrum with a resolution
+of 3.8 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS4.p1.m1">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> shows a single absorption feature at +9 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS4.p1.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>,
+coincident with the self-absorption feature in the emission spectrum.</p>
+      </para>
+      <para xml:id="S3.SS4.p2">
+        <p>This pulsar scintillates rather strongly through the 4 MHz band
+and, in contrast to the other pulsars in this sample, we fitted
+the absorption profile baseline (excluding the channels of interest)
+with a 7th order polynomial to remove the effects of the scintillation.
+Our data show three clear absorption features at velocities of
++4.9, +8.2 and +14.8 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS4.p2.m1">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>. The feature at +8.2 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS4.p2.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> is exactly coincident
+with the self-absorption feature in the emission profile and is the
+same as that seen by Gordon et al. (1969). We note that if our spectrum
+is smoothed to the same velocity resolution as that of Gordon et al.,
+the three lines blend together into a single feature.
+The features at both +5 and +9 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS4.p2.m3">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> are due to a cold cloud at a
+distance of 125 pc <cite class="ltx_citemacro_cite">[<bibref bibrefs="cl84" separator="," show="Refnum" yyseparator=","/>]</cite> and Frail &amp; Weisberg (1990)
+<!--  %**** h1abs˙3.tex Line 325 **** -->adopted this as the lower limit to the pulsar’s distance.</p>
+      </para>
+      <para xml:id="S3.SS4.p3">
+        <p>We note, however, several other objects in this region with similar
+velocities. The H <text font="smallcaps">ii</text> region RCW 142 (G0.55–0.85) has a recombination line
+velocity of +13.3 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS4.p3.m1">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, an OH maser at +16.8 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS4.p3.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> and H<Math mode="inline" tex="{}_{\rm 2}" text="_2" xml:id="S3.SS4.p3.m3">
+            <XMath>
+              <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>CO velocities
+of +15.6 and +20.8 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS4.p3.m4">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> <cite class="ltx_citemacro_cite">[<bibref bibrefs="gw75" separator="," show="Refnum" yyseparator=","/>]</cite>. Two nearby reflection nebulae
+(RCW 137 and 141) have H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS4.p3.m5">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> velocities of +12.2 and +9.6 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS4.p3.m6">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>,
+respectively <cite class="ltx_citemacro_cite">[<bibref bibrefs="gg70b" separator="," show="Refnum" yyseparator=","/>]</cite>. Finally, the OH/IR star IRAS 17482–2824
+(Galactic coordinates 1.0, –0.83) has a maser velocity of +10 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS4.p3.m7">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> and
+a photometrically derived distance of 1.2 kpc <cite class="ltx_citemacro_cite">[<bibref bibrefs="loe95" separator="," show="Refnum" yyseparator=","/>]</cite>.
+It is appealing to claim that because we see absorption beyond +10 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS4.p3.m8">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> in our spectrum we could raise the lower distance limit to the
+pulsar to 1.2 kpc. However, the peculiar motion of the OH/IR star is
+uncertain and the large spread in velocities of the features in RCW 142
+forces us to adopt a cautious approach and hence we leave the lower
+distance limit as 0.125 kpc. If distances were measured to any of the
+RCW regions listed above the distance limit could be significantly improved.</p>
+      </para>
+    </subsection>
+    <subsection refnum="3.5" xml:id="S3.SS5">
+      <title><tag close=" ">3.5</tag>PSR J1824–1945 (B1821–19); l,b=12<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS5.m1">
+          <XMath>
+            <XMApp role="POSTFIX">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+              <XMTok font="italic">.</XMTok>
+              <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>3,–3<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS5.m2">
+          <XMath>
+            <XMApp role="POSTFIX">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+              <XMTok font="italic">.</XMTok>
+              <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>1</title>
+      <para xml:id="S3.SS5.p1">
+        <p>Saravanan et al. (1996)<cite><bibref bibrefs="sdw+96" show="nothing"/></cite> observed this pulsar in H <text font="smallcaps">i</text> and derived
+a lower distance limit of 2 kpc. In our spectrum
+H <text font="smallcaps">i</text> in emission extends from +5 to +35 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS5.p1.m1">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>.
+H <text font="smallcaps">i</text> absorption is seen over the same velocity range
+and the last absorption peak at +26.4 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS5.p1.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> defines the
+lower distance limit with 3.2<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="S3.SS5.p1.m3">
+            <XMath>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+            </XMath>
+          </Math>0.5 kpc. The lack of H <text font="smallcaps">i</text> above
+<!--  %**** h1abs˙3.tex Line 350 **** -->30 K beyond this point implies no upper distance limit can be set.
+We note that the 4-<Math mode="inline" tex="\sigma" text="sigma" xml:id="S3.SS5.p1.m4">
+            <XMath>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+            </XMath>
+          </Math> absorption against the emission feature
+at <Math mode="inline" tex="+35" text="+ 35" xml:id="S3.SS5.p1.m5">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                <XMTok meaning="35" role="NUMBER">35</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS5.p1.m6">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> is marginally significant. However, the low brightness
+temperature of this feature (25 K) and the lack of absorption at this
+velocity in the Saravanan et al. (1996) spectrum makes it unlikely
+that the absorption is real.
+The conversion from velocity to distance is significantly in error in
+Saravanan et al. (1996) and our result defines the new distance limit.</p>
+      </para>
+      <para xml:id="S3.SS5.p2">
+        <p>An OH/IR star IRAS 18176–1848 lies about 1° away from the pulsar,
+has a maser velocity of 13 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS5.p2.m1">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> and a photometrically derived
+distance of 2.6 kpc <cite class="ltx_citemacro_cite">[<bibref bibrefs="loe95" separator="," show="Refnum" yyseparator=","/>]</cite> consistent with the above result,
+if we also allow for a 7 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS5.p2.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> component of random velocity in the maser.
+Gathier et al. (1986)<cite><bibref bibrefs="gpg86" show="nothing"/></cite> display 21–cm absorption profiles of
+the planetary nebula NGC 6578 at galactic coordinates 10<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS5.p2.m3">
+            <XMath>
+              <XMApp role="POSTFIX">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="mid3"/>
+                <XMTok font="italic">.</XMTok>
+                <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>8,–1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS5.p2.m4">
+            <XMath>
+              <XMApp role="POSTFIX">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="mid3"/>
+                <XMTok font="italic">.</XMTok>
+                <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>8 and
+another source at 11<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS5.p2.m5">
+            <XMath>
+              <XMApp role="POSTFIX">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="mid3"/>
+                <XMTok font="italic">.</XMTok>
+                <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>3,–1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS5.p2.m6">
+            <XMath>
+              <XMApp role="POSTFIX">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="mid3"/>
+                <XMTok font="italic">.</XMTok>
+                <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>6. However, since their absorption
+cuts off at lower velocities than does the pulsar’s,
+they provide no additional useful kinematic information.</p>
+      </para>
+    </subsection>
+    <subsection refnum="3.6" xml:id="S3.SS6">
+      <title><tag close=" ">3.6</tag>PSR J1825–0935 (B1822–09); l,b=21<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS6.m1">
+          <XMath>
+            <XMApp role="POSTFIX">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+              <XMTok font="italic">.</XMTok>
+              <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>5,1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="S3.SS6.m2">
+          <XMath>
+            <XMApp role="POSTFIX">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+              <XMTok font="italic">.</XMTok>
+              <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>3</title>
+      <para xml:id="S3.SS6.p1">
+        <p>Gómez-Gonzàles &amp; Guélin (1974)<cite><bibref bibrefs="gg74" show="nothing"/></cite> obtained a
+low-resolution (<Math mode="inline" tex="\Delta v\sim 13" text="Delta * v similar-to 13" xml:id="S3.SS6.p1.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                </XMApp>
+                <XMTok meaning="13" role="NUMBER">13</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS6.p1.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>) H <text font="smallcaps">i</text> spectrum towards this pulsar, from which they derive only an upper distance
+limit of 1.5 kpc. In our high resolution spectrum we see
+strong H <text font="smallcaps">i</text> emission between zero and +38 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS6.p1.m3">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>. The absorption is
+<!--  %**** h1abs˙3.tex Line 375 **** -->seen only against the gas at zero velocity and hence no lower
+velocity limit can be set. There is no significant absorption
+against either the feature at +20 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS6.p1.m4">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> or +35 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS6.p1.m5">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>.
+Dickey et al. (1983)<cite><bibref bibrefs="dkgh83" show="nothing"/></cite> observed two nearby (extragalactic) sources
+within <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.SS6.p1.m6">
+            <XMath>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            </XMath>
+          </Math>1° of the pulsar but at slightly higher
+galactic latitudes. Both 1817–098 (G20.7+2.3) and 1819–096 (G21.0+2.0)
+show deep absorption (<Math mode="inline" tex="\tau&gt;1" text="tau &gt; 1" xml:id="S3.SS6.p1.m7">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+                <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                <XMTok meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>) out to +35 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS6.p1.m8">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>.</p>
+      </para>
+      <para xml:id="S3.SS6.p2">
+        <p>Garwood &amp; Dickey (1989)<cite><bibref bibrefs="gd89" show="nothing"/></cite>,
+Radhakrishnan et al. (1972)<cite><bibref bibrefs="rgmb72" show="nothing"/></cite> and
+Caswell et al. (1975)<cite><bibref bibrefs="cmr+75" show="nothing"/></cite> show H <text font="smallcaps">i</text> observations to 4 other sources
+(G19.6–0.2, G21.5–0.9, G24.0+0.2 and G24.8+0.1)
+within <Math mode="inline" tex="\sim" text="similar-to" xml:id="S3.SS6.p2.m1">
+            <XMath>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            </XMath>
+          </Math>2° of the pulsar.
+Again, deep absorption is seen out to at least +60 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS6.p2.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> in all the sources,
+although their lower galactic latitude indicates that they are not
+the ideal comparison sources that the first two are.</p>
+      </para>
+      <para xml:id="S3.SS6.p3">
+        <p>We thus assign
+an upper distance limit of 1.9<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="S3.SS6.p3.m1">
+            <XMath>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+            </XMath>
+          </Math>0.4 kpc based on the lack of
+absorption against the emission feature at +20 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS6.p3.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>.</p>
+      </para>
+    </subsection>
+  </section>
+  <section refnum="4" xml:id="S4">
+    <title><tag close=" ">4</tag>Discussion</title>
+    <para xml:id="S4.p1">
+      <p>The review of Frail &amp; Weisberg (1990)<cite><bibref bibrefs="fw90" show="nothing"/></cite>
+contained 50 pulsars for which H <text font="smallcaps">i</text> lower and/or
+upper distance limits had been measured. Shortly thereafter,
+<!--  %**** h1abs˙3.tex Line 400 **** -->Taylor &amp; Cordes (1993)<cite><bibref bibrefs="tc93" show="nothing"/></cite>
+developed a model of the electron density distribution in the Galaxy
+to allow for the conversion from a pulsar’s dispersion measure to its
+distance. Since then, 28 pulsars have been observed in H <text font="smallcaps">i</text> of which
+18 were observed for the first time and 5 had significantly different
+H <text font="smallcaps">i</text> kinematic distances to those derived in older literature
+(Frail et al. 1993<cite><bibref bibrefs="fkv93" show="nothing"/></cite>, Paper I,
+Weisberg et al. 1995, Paper II, Saravanan et al. 1996, this work).
+The pulsars mainly lie in the 4th quadrant of the Galaxy. The
+tangent points of three major spiral arms lie in this quadrant
+(in order of increasing distance from the Sun and decreasing distance from
+the Galactic Centre; the Carina, Crux, and Norma arms), but
+previous H <text font="smallcaps">i</text> observations of pulsars were few and far between.
+The most recent discussion and summary of new results can be found in
+Weisberg (1996).<cite><bibref bibrefs="wei96" show="nothing"/></cite></p>
+    </para>
+    <para xml:id="S4.p2">
+      <p>We can extend the work of Weisberg et al. (1995) in order to see
+how the Taylor &amp; Cordes (1993)<cite><bibref bibrefs="tc93" show="nothing"/></cite> model matches up to the
+new results. Somewhat surprisingly, the distance derived by the model
+to 11 of the 24 pulsars lie outside the measured H <text font="smallcaps">i</text> distances, 7
+on the low side and 4 on the high side.
+Figure 2 displays this in graphical form. In the Figure,
+the pulsars are projected onto an X-Y plane with the Galactic Centre at 0,0
+and the Sun at 0,8.5. The location of the spiral arms included by
+Taylor &amp; Cordes in their model are shown on the plot as is their
+<!--  %**** h1abs˙3.tex Line 425 **** -->inner annulus of enhanced electron density.
+Solid diamonds represent the Taylor &amp; Cordes (1993) dispersion
+measure derived positions. The solid lines indicate the range of H <text font="smallcaps">i</text> measured
+kinematic positions; those with an arrow have no upper distance limit.
+The two pathological cases with very large DM-derived distances compared
+to the H <text font="smallcaps">i</text> distance, PSRs J1056–6258 and J1801–2305,
+are almost certainly located behind H <text font="smallcaps">ii</text> regions which contribute
+substantially to the dispersion measure
+(Paper II; Frail et al. 1993).</p>
+    </para>
+    <para xml:id="S4.p3">
+      <p>It is interesting to note that for most of the Galactic Centre pulsars,
+the model does a reasonable job. However, very few pulsars lie beyond
+the expanding arm in this direction and even fewer lie on the
+far side of the Galactic Centre. Taylor &amp; Cordes (1993) have made the
+point that this does not allow them to distinguish whether the
+electron density reaches a peak in an annulus at some radius from
+the Galactic Centre or continues increasing until the Centre.</p>
+    </para>
+    <para xml:id="S4.p4">
+      <p>Of the 8 pulsars between longitudes 300° and
+342° (along the tangents to the Sagittarius-Carina and Scutum-Crux arms),
+no fewer than 6 are not well fitted by the Taylor &amp;
+Cordes model and all 6 have H <text font="smallcaps">i</text> distances <text font="italic">larger</text>
+than those calculated from the model.
+It is evident from the figure that the Taylor &amp; Cordes model tends
+to assign pulsars to spiral arms because of the large electron density
+<!--  %**** h1abs˙3.tex Line 450 **** -->excess in those regions in the model,
+so that a relatively large range of dispersion measure corresponds
+to a small change in distance. In particular the model seems to overestimate
+the electron density in the Sagittarius-Carina arm.</p>
+    </para>
+    <para xml:id="S4.p5">
+      <p>A further aid to determining distances to pulsars located behind spiral
+arms is to compare their scintillation speeds with their
+proper motions <cite class="ltx_citemacro_cite">[<bibref bibrefs="gup95" separator="," show="Refnum" yyseparator=","/>]</cite>. The scintillation speed has a different
+distance dependence to the proper motion velocity and also depends
+on the location of the scattering screen (in this case presumably the spiral
+arm). Unfortunately not many pulsars have both scintillation and proper
+motion measurements. One example is PSR J1453–6413. Its dispersion
+measure distance of 1.8 kpc is at odds with the H <text font="smallcaps">i</text> lower limit of
+2.5 kpc. If we assume the spiral arm is 1.5 kpc from Earth in this
+direction, then to match the scintillation speed <cite class="ltx_citemacro_cite">[<bibref bibrefs="jnk98" separator="," show="Refnum" yyseparator=","/>]</cite> with
+the proper motion <cite class="ltx_citemacro_cite">[<bibref bibrefs="bmk+90b" separator="," show="Refnum" yyseparator=","/>]</cite> requires a pulsar distance of 3.3 kpc,
+consistent with the H <text font="smallcaps">i</text> lower limit. Although this is just one example
+(but see also McClure-Griffiths et al. 1995<cite><bibref bibrefs="mjsn98" show="nothing"/></cite>),
+it may be that towards the very clumpy regions of the spiral arms
+that scintillation parameters are more appropriate than dispersion
+measure for assigning distances to those pulsars
+for which H <text font="smallcaps">i</text> absorption measurements are impractical. Ideally,
+one requires H <text font="smallcaps">i</text>, scintillation and proper motion measurements of a large
+number of pulsars in order to significantly refine
+further the electron density model of the Galaxy.
+<!--  %**** h1abs˙3.tex Line 475 **** --></p>
+    </para>
+  </section>
+  <section refnum="5" xml:id="S5">
+    <title><tag close=" ">5</tag>Conclusions</title>
+    <para xml:id="S5.p1">
+      <p>This paper completes our analysis of H <text font="smallcaps">i</text> observations towards 22
+southern hemisphere pulsars started in Papers I and II.
+The main results from these three papers are:</p>
+      <enumerate xml:id="I1">
+        <item frefnum="1." refnum="1" xml:id="I1.i1">
+          <tag>1.</tag>
+          <para xml:id="I1.i1.p1">
+            <p>The Taylor &amp; Cordes (1993) model does a good job in assigning
+distances to pulsars behind the Gum Nebula.</p>
+          </para>
+        </item>
+        <item frefnum="2." refnum="2" xml:id="I1.i2">
+          <tag>2.</tag>
+          <para xml:id="I1.i2.p1">
+            <p>As found in other studies, the H <text font="smallcaps">i</text> gas is seen at velocities
+forbidden by the standard Galactic rotation model along directions
+tangent to the Carina spiral arm.</p>
+          </para>
+        </item>
+        <item frefnum="3." refnum="3" xml:id="I1.i3">
+          <tag>3.</tag>
+          <para xml:id="I1.i3.p1">
+            <p>PSR J1709–4429, one of the few pulsars observable at TeV energies,
+has a well-defined H <text font="smallcaps">i</text> distance which appears
+to rule out the association with a nearby supernova remnant.</p>
+          </para>
+        </item>
+        <item frefnum="4." refnum="4" xml:id="I1.i4">
+          <tag>4.</tag>
+          <para xml:id="I1.i4.p1">
+            <p>At least on the near side of the expanding 3 kpc arm, the
+Taylor &amp; Cordes distance model works well towards the Galactic Centre.</p>
+          </para>
+        </item>
+        <item frefnum="5." refnum="5" xml:id="I1.i5">
+          <tag>5.</tag>
+          <para xml:id="I1.i5.p1">
+            <p>Dispersion measure is not necessarily a good indicator of distance
+when looking through the spiral arms, and modifications to the distance model
+appear to be necessary in the region <Math mode="inline" tex="300\degr&lt;l&lt;345\degr" text="300 * ° less l less 345 * °" xml:id="I1.i5.p1.m1">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="multirelation"/>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok meaning="300" role="NUMBER">300</XMTok>
+                      <XMTok role="UNKNOWN">°</XMTok>
+                    </XMApp>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">l</XMTok>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok meaning="345" role="NUMBER">345</XMTok>
+                      <XMTok role="UNKNOWN">°</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math>.</p>
+          </para>
+        </item>
+      </enumerate>
+    </para>
+  </section>
+  <section xml:id="Sx1">
+    <title>Acknowledgments</title>
+    <para xml:id="Sx1.p1">
+      <p>JMW was supported by NSF Grant AST9530710.
+The Australia Telescope is funded by the Commonwealth of Australia
+for operation as a National Facility managed by the CSIRO.
+<!--  %**** h1abs˙3.tex Line 500 **** --></p>
+    </para>
+  </section>
+  <bibliography xml:id="bib">
+    <title>References</title>
+    <biblist>
+      <bibitem key="am76" xml:id="bib.bibx1">
+        <bibtag role="refnum">Ables &amp; Manchester 1976</bibtag>
+        <bibblock>
+Ables J. G., Manchester R. N., 1976, AA, 50, 177
+</bibblock>
+      </bibitem>
+      <bibitem key="bmk+90b" xml:id="bib.bibx2">
+        <bibtag role="refnum">Bailes et al. 1990</bibtag>
+        <bibblock>
+Bailes M., Manchester R. N., Kesteven M. J., Norris R. P., Reynolds J. E.,
+1990, MNRAS, 247, 322
+</bibblock>
+      </bibitem>
+      <bibitem key="bl83" xml:id="bib.bibx3">
+        <bibtag role="refnum">Burton &amp; Liszt 1983</bibtag>
+        <bibblock>
+Burton W. B., Liszt H. S., 1983, A&amp;AS, 52, 63
+</bibblock>
+      </bibitem>
+      <bibitem key="ccep+98" xml:id="bib.bibx4">
+        <bibtag role="refnum">Carey et al. 1998</bibtag>
+        <bibblock>
+Carey S. J., Clark F. O., Egan M. P., Price S. D., Shipman R. F., Kuchar T. A.,
+1998, ApJ, 508, 721
+</bibblock>
+      </bibitem>
+      <bibitem key="ch87b" xml:id="bib.bibx5">
+        <bibtag role="refnum">Caswell &amp; Haynes 1987</bibtag>
+        <bibblock>
+Caswell J. L., Haynes R. F., 1987, AA, 171, 261
+</bibblock>
+      </bibitem>
+      <bibitem key="cmr+75" xml:id="bib.bibx6">
+        <bibtag role="refnum">Caswell et al. 1975</bibtag>
+        <bibblock>
+Caswell J. L., Murray J. D., Roger R. S., Cole D. J., Cooke D. J., 1975, AA,
+45, 239
+</bibblock>
+      </bibitem>
+      <bibitem key="chmw83" xml:id="bib.bibx7">
+        <bibtag role="refnum">Caswell et al. 1983</bibtag>
+        <bibblock>
+<!--  %**** h1abs˙3.bbl Line 25 **** -->Caswell J. L., Haynes R. F., Milne D. K., Wellington K. J., 1983, MNRAS, 204,
+915
+</bibblock>
+      </bibitem>
+      <bibitem key="cfkw88" xml:id="bib.bibx8">
+        <bibtag role="refnum">Clifton et al. 1988</bibtag>
+        <bibblock>
+Clifton T. R., Frail D. A., Kulkarni S. R., Weisberg J. M., 1988, ApJ, 333, 332
+</bibblock>
+      </bibitem>
+      <bibitem key="cl84" xml:id="bib.bibx9">
+        <bibtag role="refnum">Crutcher &amp; Lien 1984</bibtag>
+        <bibblock>
+Crutcher R. M., Lien D. J., 1984, in Kondo Y., Bruhweiler F. C., Savage B. D.,
+eds, IAU Colloquium No. 81: The local interstellar medium.
+</bibblock>
+        <bibblock>NASA CP2345, Washington, p. 117
+</bibblock>
+      </bibitem>
+      <bibitem key="dmra92" xml:id="bib.bibx10">
+        <bibtag role="refnum">Deshpande et al. 1992</bibtag>
+        <bibblock>
+Deshpande A. A., McCulloch P. M., Radhakrishnan V., Anantharamaiah K. R., 1992,
+MNRAS, 258, 19P
+</bibblock>
+      </bibitem>
+      <bibitem key="dkgh83" xml:id="bib.bibx11">
+        <bibtag role="refnum">Dickey et al. 1983</bibtag>
+        <bibblock>
+Dickey J. M., Kulkarni S. R., van Gorkom J. H., Heiles C. E., 1983, ApJS, 53,
+591
+</bibblock>
+      </bibitem>
+      <bibitem key="espc+98" xml:id="bib.bibx12">
+        <bibtag role="refnum">Egan et al. 1998</bibtag>
+        <bibblock>
+Egan M. P., Shipman R. F., Price S. D., Carey S. J., Clark F. O., Cohen M.,
+1998, ApJ, 494, L199
+</bibblock>
+      </bibitem>
+      <bibitem key="fbs89" xml:id="bib.bibx13">
+        <bibtag role="refnum">Fich, Blitz &amp; Stark 1989</bibtag>
+        <bibblock>
+Fich M., Blitz L., Stark A. A., 1989, ApJ, 342, 272
+<!--  %**** h1abs˙3.bbl Line 50 **** --></bibblock>
+      </bibitem>
+      <bibitem key="fw90" xml:id="bib.bibx14">
+        <bibtag role="refnum">Frail &amp; Weisberg 1990</bibtag>
+        <bibblock>
+Frail D. A., Weisberg J. M., 1990, AJ, 100, 743
+</bibblock>
+      </bibitem>
+      <bibitem key="fkv93" xml:id="bib.bibx15">
+        <bibtag role="refnum">Frail, Kulkarni &amp; Vasisht 1993</bibtag>
+        <bibblock>
+Frail D. A., Kulkarni S. R., Vasisht G., 1993, Nat, 365, 136
+</bibblock>
+      </bibitem>
+      <bibitem key="fgrg+96" xml:id="bib.bibx16">
+        <bibtag role="refnum">Frail et al. 1996</bibtag>
+        <bibblock>
+Frail D. A., Goss W. M., Reynoso E. M., Giacini E. B., Green A. J.,
+Otrupcek R., 1996, AJ, 111, 1651
+</bibblock>
+      </bibitem>
+      <bibitem key="gw75" xml:id="bib.bibx17">
+        <bibtag role="refnum">Gardner &amp; Whiteoak 1975</bibtag>
+        <bibblock>
+Gardner F. F., Whiteoak J. B., 1975, MNRAS, 171, 29P
+</bibblock>
+      </bibitem>
+      <bibitem key="gd89" xml:id="bib.bibx18">
+        <bibtag role="refnum">Garwood &amp; Dickey 1989</bibtag>
+        <bibblock>
+Garwood R. W., Dickey J. M., 1989, ApJ, 338, 841
+</bibblock>
+      </bibitem>
+      <bibitem key="gpg86" xml:id="bib.bibx19">
+        <bibtag role="refnum">Gathier, Pottasch &amp; Goss 1986</bibtag>
+        <bibblock>
+Gathier R., Pottasch S., Goss W., 1986, AA, 157, 191
+</bibblock>
+      </bibitem>
+      <bibitem key="gg70b" xml:id="bib.bibx20">
+        <bibtag role="refnum">Georgelin &amp; Georgelin 1970</bibtag>
+        <bibblock>
+Georgelin Y. P., Georgelin Y. M., 1970, AA, 6, 349
+</bibblock>
+      </bibitem>
+      <bibitem key="gg74" xml:id="bib.bibx21">
+        <bibtag role="refnum">Gomez-Gonzalez &amp; Guelin 1974</bibtag>
+        <bibblock>
+Gomez-Gonzalez J., Guelin M., 1974, AA, 32, 441
+<!--  %**** h1abs˙3.bbl Line 75 **** --></bibblock>
+      </bibitem>
+      <bibitem key="ggs69" xml:id="bib.bibx22">
+        <bibtag role="refnum">Gordon, Gordon &amp; Shalloway 1969</bibtag>
+        <bibblock>
+Gordon C. P., Gordon K. J., Shalloway A. M., 1969, Nat, 222, 129
+</bibblock>
+      </bibitem>
+      <bibitem key="gfgo97" xml:id="bib.bibx23">
+        <bibtag role="refnum">Green et al. 1997</bibtag>
+        <bibblock>
+Green A. J., Frail D. A., Goss W. M., Otrupcek R., 1997, AJ, 114, 2058
+</bibblock>
+      </bibitem>
+      <bibitem key="gghw69" xml:id="bib.bibx24">
+        <bibtag role="refnum">Guelin et al. 1969</bibtag>
+        <bibblock>
+Guelin M., Guibert J., Huchtmeier W., Weliachew L., 1969, Nat, 221, 249
+</bibblock>
+      </bibitem>
+      <bibitem key="gup95" xml:id="bib.bibx25">
+        <bibtag role="refnum">Gupta 1995</bibtag>
+        <bibblock>
+Gupta Y., 1995, ApJ, 451, 717
+</bibblock>
+      </bibitem>
+      <bibitem key="jnk98" xml:id="bib.bibx26">
+        <bibtag role="refnum">Johnston, Nicastro &amp; Koribalski 1998</bibtag>
+        <bibblock>
+Johnston S., Nicastro L., Koribalski B., 1998, MNRAS, 297, 108
+</bibblock>
+      </bibitem>
+      <bibitem key="jkww96" xml:id="bib.bibx27">
+        <bibtag role="refnum">Johnston et al. 1996</bibtag>
+        <bibblock>
+Johnston S., Koribalski B. S., Weisberg J. M., Wilson W., 1996, MNRAS, 279, 661 (Paper II)
+</bibblock>
+      </bibitem>
+      <bibitem key="klb86" xml:id="bib.bibx28">
+        <bibtag role="refnum">Kerr &amp; Lynden-Bell 1986</bibtag>
+        <bibblock>
+Kerr F. J., Lynden-Bell D., 1986, MNRAS, 221, 1023
+</bibblock>
+      </bibitem>
+      <bibitem key="kbjk86" xml:id="bib.bibx29">
+        <bibtag role="refnum">Kerr et al. 1986</bibtag>
+        <bibblock>
+Kerr F. J., Bowers P. F., Jackson P. D., Kerr M., 1986, A&amp;AS, 66, 373
+<!--  %**** h1abs˙3.bbl Line 100 **** --></bibblock>
+      </bibitem>
+      <bibitem key="kjww95" xml:id="bib.bibx30">
+        <bibtag role="refnum">Koribalski et al. 1995</bibtag>
+        <bibblock>
+Koribalski B. S., Johnston S., Weisberg J. M., Wilson W., 1995, ApJ, 441, 756
+(Paper I)
+</bibblock>
+      </bibitem>
+      <bibitem key="loe95" xml:id="bib.bibx31">
+        <bibtag role="refnum">Lepine, Ortiz &amp; Epchtein 1995</bibtag>
+        <bibblock>
+Lepine J. R. D., Ortiz R., Epchtein N., 1995, AA, 299, 453
+</bibblock>
+      </bibitem>
+      <bibitem key="mwm81" xml:id="bib.bibx32">
+        <bibtag role="refnum">Manchester, Wellington &amp; McCulloch 1981</bibtag>
+        <bibblock>
+Manchester R. N., Wellington K. J., McCulloch P. M., 1981, in Sieber W.,
+Wielebinski R., eds, Pulsars, IAU Symposium 95.
+</bibblock>
+        <bibblock>Reidel, Dordrecht, p. 445
+</bibblock>
+      </bibitem>
+      <bibitem key="mjsn98" xml:id="bib.bibx33">
+        <bibtag role="refnum">McClure-Griffiths et al. 1998</bibtag>
+        <bibblock>
+McClure-Griffiths N., Johnston S., Stinebring D., Nicastro L., 1998, ApJ, 492,
+L49
+</bibblock>
+      </bibitem>
+      <bibitem key="rgmb72" xml:id="bib.bibx34">
+        <bibtag role="refnum">Radhakrishnan et al. 1972</bibtag>
+        <bibblock>
+Radhakrishnan V., Goss W. M., Murray J. D., Brooks J. W., 1972, ApJS, 24, 49
+</bibblock>
+      </bibitem>
+      <bibitem key="sdw+96" xml:id="bib.bibx35">
+        <bibtag role="refnum">Saravanan et al. 1996</bibtag>
+        <bibblock>
+Saravanan T. P., Deshpande A. A., Wilson W., Davies E., McCulloch P. M.,
+McConnell D., 1996, MNRAS, 280, 1027
+</bibblock>
+      </bibitem>
+      <bibitem key="sra+82" xml:id="bib.bibx36">
+        <bibtag role="refnum">Shaver et al. 1982</bibtag>
+        <bibblock>
+Shaver P. A., Radhakrishnan V., Anantharamaiah K. R., Retallack D. S.,
+<!--  %**** h1abs˙3.bbl Line 125 **** -->Wamsteker W., Danks A. C., 1982, AA, 106, 105
+</bibblock>
+      </bibitem>
+      <bibitem key="tc93" xml:id="bib.bibx37">
+        <bibtag role="refnum">Taylor &amp; Cordes 1993</bibtag>
+        <bibblock>
+Taylor J. H., Cordes J. M., 1993, ApJ, 411, 674
+</bibblock>
+      </bibitem>
+      <bibitem key="tv68" xml:id="bib.bibx38">
+        <bibtag role="refnum">Turtle &amp; Vaughan 1968</bibtag>
+        <bibblock>
+Turtle A. J., Vaughan A. E., 1968, Nat, 219, 689
+</bibblock>
+      </bibitem>
+      <bibitem key="umy92" xml:id="bib.bibx39">
+        <bibtag role="refnum">Uchida, Morris &amp; Yusef-Zadeh 1992</bibtag>
+        <bibblock>
+Uchida K., Morris M., Yusef-Zadeh F., 1992, AJ, 104, 1533
+</bibblock>
+      </bibitem>
+      <bibitem key="ww74b" xml:id="bib.bibx40">
+        <bibtag role="refnum">Weaver &amp; Williams 1974a</bibtag>
+        <bibblock>
+Weaver H., Williams D. R. W., 1974a, A&amp;AS, 17, 1
+</bibblock>
+      </bibitem>
+      <bibitem key="ww74a" xml:id="bib.bibx41">
+        <bibtag role="refnum">Weaver &amp; Williams 1974b</bibtag>
+        <bibblock>
+Weaver H., Williams D. R. W., 1974b, A&amp;AS, 8, 1
+</bibblock>
+      </bibitem>
+      <bibitem key="wei96" xml:id="bib.bibx42">
+        <bibtag role="refnum">Weisberg 1996</bibtag>
+        <bibblock>
+Weisberg J. M., 1996, in Johnston S., Walker M. A., Bailes M., eds, Pulsars:
+Problems and Progress, IAU Colloquium 160.
+</bibblock>
+        <bibblock>Astronomical Society of the Pacific, San Francisco, p. 447
+</bibblock>
+      </bibitem>
+      <bibitem key="wbr79" xml:id="bib.bibx43">
+        <bibtag role="refnum">Weisberg, Boriakoff &amp; Rankin 1979</bibtag>
+        <bibblock>
+Weisberg J. M., Boriakoff V., Rankin J., 1979, AA, 77, 204
+<!--  %**** h1abs˙3.bbl Line 150 **** --></bibblock>
+      </bibitem>
+      <bibitem key="wsfj95" xml:id="bib.bibx44">
+        <bibtag role="refnum">Weisberg et al. 1995</bibtag>
+        <bibblock>
+Weisberg J. M., Siegel M. H., Frail D. A., Johnston S., 1995, ApJ, 447, 204
+</bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+  <pagination role="newpage"/>
+  <pagination role="newpage"/>
+  <table frefnum="Table 1" refnum="1" xml:id="A0.T1">
+<!--  %NEW TABLE 1 -->    <toccaption><tag close=" ">1</tag>Pulsar parameters and observing information</toccaption>
+    <caption><tag close=": ">Table 1</tag>Pulsar parameters and observing information</caption>
+    <tabular class="ltx_align_left ltx_guessed_headers" vattach="middle">
+      <thead>
+        <tr>
+          <td align="center" border="t" thead="column">PSR</td>
+          <td align="right" border="t" thead="column"><Math mode="inline" tex="l~{}" text="l" xml:id="A0.T1.m1">
+              <XMath>
+                <XMTok font="italic" role="UNKNOWN" rpadding="3.3pt">l</XMTok>
+              </XMath>
+            </Math></td>
+          <td align="right" border="t" thead="column"><Math mode="inline" tex="b~{}" text="b" xml:id="A0.T1.m2">
+              <XMath>
+                <XMTok font="italic" role="UNKNOWN" rpadding="3.3pt">b</XMTok>
+              </XMath>
+            </Math></td>
+          <td align="center" border="t" thead="column">DM</td>
+          <td align="center" border="t" thead="column">Period</td>
+          <td align="center" border="t" thead="column">S<Math mode="inline" tex="{}_{\rm 20}" text="_20" xml:id="A0.T1.m3">
+              <XMath>
+                <XMApp role="FLOATSUBSCRIPT" scriptpos="10">
+                  <XMTok fontsize="70%" meaning="20" role="NUMBER">20</XMTok>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="t" thead="column">T</td>
+          <td align="center" border="t" thead="column">bins</td>
+          <td align="center" border="t" thead="column">PSR</td>
+        </tr>
+        <tr>
+          <td align="center" thead="column">(J2000 )</td>
+          <td thead="column"/>
+          <td thead="column"/>
+          <td align="center" thead="column">(pc cm<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="A0.T1.m4">
+              <XMath>
+                <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>)</td>
+          <td align="center" thead="column">(ms)</td>
+          <td align="center" thead="column">(mJy)</td>
+          <td align="center" thead="column">(min)</td>
+          <td thead="column"/>
+          <td align="center" thead="column">(B1950)</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td align="center" border="t">1600–5044</td>
+          <td align="right" border="t">330<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T1.m5">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>7</td>
+          <td align="right" border="t">1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T1.m6">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>6</td>
+          <td align="center" border="t">262.8</td>
+          <td align="center" border="t">192.60</td>
+          <td align="center" border="t">15</td>
+          <td align="center" border="t">232</td>
+          <td align="center" border="t">16</td>
+          <td align="center" border="t">1557–50</td>
+        </tr>
+        <tr>
+          <td align="center">1602–5100</td>
+          <td align="right">330<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T1.m7">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>7</td>
+          <td align="right">1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T1.m8">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>3</td>
+          <td align="center">169.5</td>
+          <td align="center">864.20</td>
+          <td align="center">6</td>
+          <td align="center">398</td>
+          <td align="center">32</td>
+          <td align="center">1558–50</td>
+        </tr>
+        <tr>
+          <td align="center">1740–3015</td>
+          <td align="right">358<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T1.m9">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>3</td>
+          <td align="right">0<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T1.m10">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>2</td>
+          <td align="center">153.0</td>
+          <td align="center">606.64</td>
+          <td align="center">6</td>
+          <td align="center">175</td>
+          <td align="center">32</td>
+          <td align="center">1737–30</td>
+        </tr>
+        <tr>
+          <td align="center">1745–3040</td>
+          <td align="right">358<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T1.m11">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>6</td>
+          <td align="right">–1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T1.m12">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>0</td>
+          <td align="center">88.8</td>
+          <td align="center">367.43</td>
+          <td align="center">14</td>
+          <td align="center">224</td>
+          <td align="center">16</td>
+          <td align="center">1742–30</td>
+        </tr>
+        <tr>
+          <td align="center">1752–2806</td>
+          <td align="right">1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T1.m13">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>5</td>
+          <td align="right">–1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T1.m14">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>0</td>
+          <td align="center">50.4</td>
+          <td align="center">562.56</td>
+          <td align="center">35</td>
+          <td align="center">50</td>
+          <td align="center">32</td>
+          <td align="center">1749–28</td>
+        </tr>
+        <tr>
+          <td align="center">1824–1945</td>
+          <td align="right">12<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T1.m15">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>3</td>
+          <td align="right">–3<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T1.m16">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>1</td>
+          <td align="center">224.3</td>
+          <td align="center">189.33</td>
+          <td align="center">9</td>
+          <td align="center">324</td>
+          <td align="center">16</td>
+          <td align="center">1821–19</td>
+        </tr>
+        <tr>
+          <td align="center" border="b">1825–0935</td>
+          <td align="right" border="b">21<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T1.m17">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>5</td>
+          <td align="right" border="b">1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T1.m18">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>3</td>
+          <td align="center" border="b">19.9</td>
+          <td align="center" border="b">768.97</td>
+          <td align="center" border="b">11</td>
+          <td align="center" border="b">427</td>
+          <td align="center" border="b">16</td>
+          <td align="center" border="b">1822–09</td>
+        </tr>
+      </tbody>
+    </tabular>
+  </table>
+  <table frefnum="Table 2" refnum="2" xml:id="A0.T2">
+<!--  %Table 2 
+     %**** h1abs˙3.tex Line 525 ****-->    <toccaption><tag close=" ">2</tag>H <text font="smallcaps">i</text> kinematic distances for 7 pulsars</toccaption>
+    <caption><tag close=": ">Table 2</tag>H <text font="smallcaps">i</text> kinematic distances for 7 pulsars</caption>
+    <tabular class="ltx_align_left ltx_guessed_headers" vattach="middle">
+      <thead>
+        <tr>
+          <td align="center" border="t" thead="column">PSR</td>
+          <td align="center" border="t" thead="column"><Math mode="inline" tex="v_{\rm L}" text="v _ L" xml:id="A0.T2.m1">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">L</XMTok>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="t" thead="column"><Math mode="inline" tex="v_{\rm U}" text="v _ U" xml:id="A0.T2.m2">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">U</XMTok>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="t" thead="column"><Math mode="inline" tex="D_{\rm L}" text="D _ L" xml:id="A0.T2.m3">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                  <XMTok font="italic" role="UNKNOWN">D</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">L</XMTok>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="t" thead="column"><Math mode="inline" tex="D_{\rm U}" text="D _ U" xml:id="A0.T2.m4">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                  <XMTok font="italic" role="UNKNOWN">D</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">U</XMTok>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="t" thead="column"><Math mode="inline" tex="n_{\rm e}" text="n _ e" xml:id="A0.T2.m5">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                  <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">e</XMTok>
+                </XMApp>
+              </XMath>
+            </Math></td>
+        </tr>
+        <tr>
+          <td align="center" thead="column">(J2000)</td>
+          <td align="center" thead="column">(km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="A0.T2.m6">
+              <XMath>
+                <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>)</td>
+          <td align="center" thead="column">(km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="A0.T2.m7">
+              <XMath>
+                <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>)</td>
+          <td align="center" thead="column">(kpc)</td>
+          <td align="center" thead="column">(kpc)</td>
+          <td align="center" thead="column">(cm<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="A0.T2.m8">
+              <XMath>
+                <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>)</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td align="center" border="t">1600–5044</td>
+          <td align="center" border="t">–105</td>
+          <td align="center" border="t">+29.7</td>
+          <td align="center" border="t">6.4<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T2.m9">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.5</td>
+          <td align="center" border="t">18.2<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T2.m10">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>1.2</td>
+          <td align="center" border="t">0.014 – 0.041</td>
+        </tr>
+        <tr>
+          <td align="center">1602–5100</td>
+          <td align="center">–110</td>
+          <td align="center">–90</td>
+          <td align="center">7.4<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T2.m11">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.5</td>
+          <td align="center">9.4<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T2.m12">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.4</td>
+          <td align="center">0.018 – 0.023</td>
+        </tr>
+        <tr>
+          <td align="center">1740–3015</td>
+          <td align="center">–14.8</td>
+          <td align="center">–60</td>
+          <td align="center">—</td>
+          <td align="center">5.5<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T2.m13">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.6</td>
+          <td align="center"><Math mode="inline" tex="&gt;" text="&gt;" xml:id="A0.T2.m14">
+              <XMath>
+                <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              </XMath>
+            </Math>0.028</td>
+        </tr>
+        <tr>
+          <td align="center">1745–3040</td>
+          <td align="center">—</td>
+          <td align="center">–20</td>
+          <td align="center">—</td>
+          <td align="center">5.5<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T2.m15">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.6</td>
+          <td align="center"><Math mode="inline" tex="&gt;" text="&gt;" xml:id="A0.T2.m16">
+              <XMath>
+                <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              </XMath>
+            </Math>0.016</td>
+        </tr>
+        <tr>
+          <td align="center">1752–2806</td>
+          <td align="center">+14.8</td>
+          <td align="center">—</td>
+          <td align="center">0.125</td>
+          <td align="center">—</td>
+          <td align="center"><Math mode="inline" tex="&lt;" text="less" xml:id="A0.T2.m17">
+              <XMath>
+                <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              </XMath>
+            </Math>0.40</td>
+        </tr>
+        <tr>
+          <td align="center">1824–1945</td>
+          <td align="center">+26.4</td>
+          <td align="center">—</td>
+          <td align="center">3.2<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T2.m18">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.5</td>
+          <td align="center">—</td>
+          <td align="center"><Math mode="inline" tex="&lt;" text="less" xml:id="A0.T2.m19">
+              <XMath>
+                <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              </XMath>
+            </Math>0.070</td>
+        </tr>
+        <tr>
+          <td align="center" border="b">1825–0935</td>
+          <td align="center" border="b">—</td>
+          <td align="center" border="b">+19.8</td>
+          <td align="center" border="b">—</td>
+          <td align="center" border="b">1.9<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T2.m20">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.4</td>
+          <td align="center" border="b"><Math mode="inline" tex="&gt;" text="&gt;" xml:id="A0.T2.m21">
+              <XMath>
+                <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              </XMath>
+            </Math>0.010</td>
+        </tr>
+      </tbody>
+    </tabular>
+  </table>
+  <table frefnum="Table 3" refnum="3" xml:id="A0.T3">
+<!--  %Table 3 -->    <toccaption><tag close=" ">3</tag>New H <text font="smallcaps">i</text> distances since Frail &amp; Weisberg (1990)</toccaption>
+    <caption><tag close=": ">Table 3</tag>New H <text font="smallcaps">i</text> distances since Frail &amp; Weisberg (1990)</caption>
+    <tabular class="ltx_align_left ltx_guessed_headers" vattach="middle">
+      <thead>
+        <tr>
+          <td align="center" border="t" thead="column">PSR</td>
+          <td align="center" border="t" thead="column"><Math mode="inline" tex="l" text="l" xml:id="A0.T3.m1">
+              <XMath>
+                <XMTok font="italic" role="UNKNOWN">l</XMTok>
+              </XMath>
+            </Math></td>
+          <td align="center" border="t" thead="column"><Math mode="inline" tex="b" text="b" xml:id="A0.T3.m2">
+              <XMath>
+                <XMTok font="italic" role="UNKNOWN">b</XMTok>
+              </XMath>
+            </Math></td>
+          <td align="center" border="t" thead="column"><Math mode="inline" tex="D_{\rm L}" text="D _ L" xml:id="A0.T3.m3">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                  <XMTok font="italic" role="UNKNOWN">D</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">L</XMTok>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="t" thead="column"><Math mode="inline" tex="D_{\rm U}" text="D _ U" xml:id="A0.T3.m4">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                  <XMTok font="italic" role="UNKNOWN">D</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">U</XMTok>
+                </XMApp>
+              </XMath>
+            </Math></td>
+          <td align="center" border="t" thead="column">Ref.</td>
+          <td align="center" border="t" thead="column">PSR</td>
+        </tr>
+        <tr>
+          <td align="center" thead="column">(J2000)</td>
+          <td align="center" thead="column">(°)</td>
+          <td align="center" thead="column">(°)</td>
+          <td align="center" thead="column">(kpc)</td>
+          <td align="center" thead="column">(kpc)</td>
+          <td thead="column"/>
+          <td align="center" thead="column">(B1950)</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td align="center" border="t">0742–2822</td>
+          <td align="center" border="t">243<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m5">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>8</td>
+          <td align="center" border="t">–2<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m6">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>4</td>
+          <td align="center" border="t">2.0<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m7">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.6</td>
+          <td align="center" border="t">6.9<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m8">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.8</td>
+          <td align="center" border="t">2</td>
+          <td align="center" border="t">0740–28</td>
+        </tr>
+        <tr>
+          <td align="center">0907–5157</td>
+          <td align="center">272<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m9">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>2</td>
+          <td align="center">–3<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m10">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>0</td>
+          <td align="center">—</td>
+          <td align="center">8.0</td>
+          <td align="center">5</td>
+          <td align="center">0905–51</td>
+        </tr>
+        <tr>
+          <td align="center">0908–4913</td>
+          <td align="center">270<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m11">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>3</td>
+          <td align="center">–1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m12">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>0</td>
+          <td align="center">2.4<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m13">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>1.6</td>
+          <td align="center">6.7<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m14">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.7</td>
+          <td align="center">2</td>
+          <td align="center">0906–49</td>
+        </tr>
+        <tr>
+          <td align="center">0942–5552</td>
+          <td align="center">278<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m15">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>6</td>
+          <td align="center">–2<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m16">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>2</td>
+          <td align="center">—</td>
+          <td align="center">7.5<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m17">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.7</td>
+          <td align="center">4</td>
+          <td align="center">0940–55</td>
+        </tr>
+        <tr>
+          <td align="center">1048–5832</td>
+          <td align="center">287<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m18">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>4</td>
+          <td align="center">0<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m19">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>6</td>
+          <td align="center">2.5<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m20">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.5</td>
+          <td align="center">5.6<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m21">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.8</td>
+          <td align="center">4</td>
+          <td align="center">1046–58</td>
+        </tr>
+        <tr>
+          <td align="center">1056–6258</td>
+          <td align="center">290<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m22">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>3</td>
+          <td align="center">–3<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m23">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>0</td>
+          <td align="center">2.5<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m24">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.5</td>
+          <td align="center">2.9<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m25">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.5</td>
+          <td align="center">2</td>
+          <td align="center">1054–62</td>
+        </tr>
+        <tr>
+          <td align="center">1224–6407</td>
+          <td align="center">300<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m26">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>0</td>
+          <td align="center">–1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m27">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>4</td>
+          <td align="center">4.3<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m28">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>1.4</td>
+          <td align="center">11.4<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m29">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.7</td>
+          <td align="center">4</td>
+          <td align="center">1221–63</td>
+        </tr>
+        <tr>
+          <td align="center">1326–5859</td>
+          <td align="center">307<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m30">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>5</td>
+          <td align="center">3<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m31">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>6</td>
+          <td align="center">3.0</td>
+          <td align="center">—</td>
+          <td align="center">5</td>
+          <td align="center">1323–58</td>
+        </tr>
+        <tr>
+          <td align="center">1401–6357</td>
+          <td align="center">310<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m32">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>6</td>
+          <td align="center">–2<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m33">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>1</td>
+          <td align="center">1.6<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m34">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.5</td>
+          <td align="center">2.7<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m35">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.7</td>
+          <td align="center">4</td>
+          <td align="center">1358–63</td>
+        </tr>
+        <tr>
+          <td align="center">1453–6413</td>
+          <td align="center">315<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m36">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>7</td>
+          <td align="center">–4<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m37">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>4</td>
+          <td align="center">2.5<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m38">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.5</td>
+          <td align="center">—</td>
+          <td align="center">2</td>
+          <td align="center">1449–64</td>
+        </tr>
+        <tr>
+          <td align="center">1559–4438</td>
+          <td align="center">334<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m39">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>5</td>
+          <td align="center">6<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m40">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>4</td>
+          <td align="center">2.0<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m41">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.5</td>
+          <td align="center">—</td>
+          <td align="center">2</td>
+          <td align="center">1556–44</td>
+        </tr>
+        <tr>
+          <td align="center">1600–5044</td>
+          <td align="center">330<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m42">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>7</td>
+          <td align="center">1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m43">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>6</td>
+          <td align="center">6.4<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m44">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.5</td>
+          <td align="center">18.2<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m45">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>1.2</td>
+          <td align="center">6</td>
+          <td align="center">1557–50</td>
+        </tr>
+        <tr>
+          <td align="center">1602–5100</td>
+          <td align="center">330<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m46">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>7</td>
+          <td align="center">1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m47">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>3</td>
+          <td align="center">7.4<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m48">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.5</td>
+          <td align="center">9.4<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m49">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.4</td>
+          <td align="center">6</td>
+          <td align="center">1558–50</td>
+        </tr>
+        <tr>
+          <td align="center">1651–4246</td>
+          <td align="center">342<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m50">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>5</td>
+          <td align="center">0<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m51">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>9</td>
+          <td align="center">4.8<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m52">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.3</td>
+          <td align="center">—</td>
+          <td align="center">3</td>
+          <td align="center">1648–42</td>
+        </tr>
+        <tr>
+          <td align="center">1707–4053</td>
+          <td align="center">345<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m53">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>7</td>
+          <td align="center">–2<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m54">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>2</td>
+          <td align="center">3.8<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m55">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.5</td>
+          <td align="center">—</td>
+          <td align="center">3</td>
+          <td align="center">1703–40</td>
+        </tr>
+        <tr>
+          <td align="center">1709–4429</td>
+          <td align="center">343<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m56">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>1</td>
+          <td align="center">–2<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m57">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>7</td>
+          <td align="center">2.4<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m58">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.6</td>
+          <td align="center">3.2<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m59">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.4</td>
+          <td align="center">2</td>
+          <td align="center">1706–44</td>
+        </tr>
+        <tr>
+          <td align="center">1721–3532</td>
+          <td align="center">351<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m60">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>7</td>
+          <td align="center">0<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m61">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>7</td>
+          <td align="center">4.4<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m62">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.5</td>
+          <td align="center">5.2<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m63">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.6</td>
+          <td align="center">3</td>
+          <td align="center">1718–35</td>
+        </tr>
+        <tr>
+          <td align="center">1740–3015</td>
+          <td align="center">358<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m64">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>3</td>
+          <td align="center">0<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m65">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>2</td>
+          <td align="center">—</td>
+          <td align="center">5.5<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m66">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.6</td>
+          <td align="center">6</td>
+          <td align="center">1737–30</td>
+        </tr>
+        <tr>
+          <td align="center">1745–3040</td>
+          <td align="center">358<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m67">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>6</td>
+          <td align="center">–1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m68">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>0</td>
+          <td align="center">—</td>
+          <td align="center">5.5<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m69">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.6</td>
+          <td align="center">6</td>
+          <td align="center">1742–30</td>
+        </tr>
+        <tr>
+          <td align="center">1801–2305</td>
+          <td align="center">6<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m70">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>8</td>
+          <td align="center">–0<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m71">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>1</td>
+          <td align="center">3.5</td>
+          <td align="center">6.9</td>
+          <td align="center">1</td>
+          <td align="center">1758–23</td>
+        </tr>
+        <tr>
+          <td align="center">1824–1945</td>
+          <td align="center">12<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m72">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>3</td>
+          <td align="center">–3<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m73">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>1</td>
+          <td align="center">3.2<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m74">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.5</td>
+          <td align="center">—</td>
+          <td align="center">6</td>
+          <td align="center">1821–19</td>
+        </tr>
+        <tr>
+          <td align="center">1825–0935</td>
+          <td align="center">21<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m75">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>5</td>
+          <td align="center">1<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m76">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>3</td>
+          <td align="center">—</td>
+          <td align="center">1.9<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m77">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.4</td>
+          <td align="center">6</td>
+          <td align="center">1822–09</td>
+        </tr>
+        <tr>
+          <td align="center" border="b">1833–0827</td>
+          <td align="center" border="b">23<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m78">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>4</td>
+          <td align="center" border="b">0<Math mode="inline" tex="\aas@@fstack{\circ}" text=". ^ compose" xml:id="A0.T3.m79">
+              <XMath>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid11"/>
+                  <XMTok font="italic">.</XMTok>
+                  <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>1</td>
+          <td align="center" border="b">4.0<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m80">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.4</td>
+          <td align="center" border="b">5.3<Math mode="inline" tex="\pm" text="plus-or-minus" xml:id="A0.T3.m81">
+              <XMath>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              </XMath>
+            </Math>0.3</td>
+          <td align="center" border="b">3</td>
+          <td align="center" border="b">1830–08</td>
+        </tr>
+      </tbody>
+    </tabular>
+    <p>References: 1 - Frail et al. (1993), 2 - Paper I, 3 - Weisberg et al. (1995),
+4 - Paper II, 5 - Saravanan et al. (1996), 6 - this paper.</p>
+  </table>
+  <pagination role="newpage"/>
+  <pagination role="newpage"/>
+  <figure frefnum="Figure 1" refnum="1" xml:id="A0.F1">
+<!--  %Figure 1 -->    <toccaption class="ltx_centering"><tag close=" ">1</tag>H <text font="smallcaps">i</text> spectra in the direction of seven southern pulsars.
+The pulsar name (J2000) is given on top of each plot.
+Each panel shows the H <text font="smallcaps">i</text> emission spectrum on top,
+the weighted H <text font="smallcaps">i</text> absorption spectrum in the middle, and the
+corresponding part of the Galaxy rotation curve on the bottom.
+See the text for further description.</toccaption>
+    <caption class="ltx_centering"><tag close=": ">Figure 1</tag>H <text font="smallcaps">i</text> spectra in the direction of seven southern pulsars.
+The pulsar name (J2000) is given on top of each plot.
+Each panel shows the H <text font="smallcaps">i</text> emission spectrum on top,
+the weighted H <text font="smallcaps">i</text> absorption spectrum in the middle, and the
+corresponding part of the Galaxy rotation curve on the bottom.
+See the text for further description.</caption>
+<!--  %“end–figure*˝ 
+     %“clearpage
+     %“newpage
+     %**** h1abs˙3.tex Line 600 ****
+     %“begin–figure˝-->    <tabular class="ltx_centering" vattach="middle">
+      <tbody>
+        <tr>
+          <td align="center"><graphics candidates="1600_final.ps" graphic="1600_final.ps" options="figure=1600_final.ps, width=241.848425pt" xml:id="A0.F1.g1"/></td>
+          <td align="center"><graphics candidates="1602_final.ps" graphic="1602_final.ps" options="figure=1602_final.ps, width=241.848425pt" xml:id="A0.F1.g2"/></td>
+        </tr>
+        <tr>
+          <td align="center"><graphics candidates="1740_final.ps" graphic="1740_final.ps" options="figure=1740_final.ps, width=241.848425pt" xml:id="A0.F1.g3"/></td>
+          <td align="center"><graphics candidates="1745_final.ps" graphic="1745_final.ps" options="figure=1745_final.ps, width=241.848425pt" xml:id="A0.F1.g4"/></td>
+        </tr>
+      </tbody>
+    </tabular>
+  </figure>
+  <pagination role="newpage"/>
+  <pagination role="newpage"/>
+  <figure xml:id="fig1">
+    <tabular class="ltx_centering" vattach="middle">
+      <tbody>
+        <tr>
+          <td align="center"><graphics candidates="1752_final.ps" graphic="1752_final.ps" options="figure=1752_final.ps, width=241.848425pt" xml:id="g1"/></td>
+          <td align="center"><graphics candidates="1824_final.ps" graphic="1824_final.ps" options="figure=1824_final.ps, width=241.848425pt" xml:id="g2"/></td>
+        </tr>
+        <tr>
+          <td align="center"><graphics candidates="1825_final.ps" graphic="1825_final.ps" options="figure=1825_final.ps, width=241.848425pt" xml:id="g3"/></td>
+          <td/>
+        </tr>
+      </tbody>
+    </tabular>
+  </figure>
+  <pagination role="newpage"/>
+  <pagination role="newpage"/>
+  <figure frefnum="Figure 2" refnum="2" xml:id="A0.F2">
+<!--  %Figure 2 -->    <toccaption class="ltx_centering"><tag close=" ">2</tag>Distance limits on 24 mostly inner Galaxy pulsars measured
+since the Taylor &amp; Cordes (1993) model was created.
+The ends of each line represent the upper and lower limits along a
+particular line of sight, while the diamond shows the model-estimated distance.
+An arrowhead on the end of a bar indicates that no upper distance limit
+was determinable. The thick curves show the location of the
+<!--  %**** h1abs˙3.tex Line 625 **** -->four spiral arms as delineated by Taylor &amp; Cordes; from top to bottom
+the Perseus arm, the Sagittarius-Carina arm, the Scutum-Crux arm and the
+Norma arm. We also show the inner annulus of enhanced electron density
+derived in their model.
+See Table 3 for details on the individual pulsars plotted here.</toccaption>
+    <caption class="ltx_centering"><tag close=": ">Figure 2</tag>Distance limits on 24 mostly inner Galaxy pulsars measured
+since the Taylor &amp; Cordes (1993) model was created.
+The ends of each line represent the upper and lower limits along a
+particular line of sight, while the diamond shows the model-estimated distance.
+An arrowhead on the end of a bar indicates that no upper distance limit
+was determinable. The thick curves show the location of the
+<!--  %**** h1abs˙3.tex Line 625 **** -->four spiral arms as delineated by Taylor &amp; Cordes; from top to bottom
+the Perseus arm, the Sagittarius-Carina arm, the Scutum-Crux arm and the
+Norma arm. We also show the inner annulus of enhanced electron density
+derived in their model.
+See Table 3 for details on the individual pulsars plotted here.</caption>
+    <graphics candidates="spiral.ps" class="ltx_centering" graphic="spiral.ps" options="figure=spiral.ps, angle=-90" xml:id="A0.F2.g1"/>
+  </figure>
+</document>

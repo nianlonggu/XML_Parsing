@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008290.1"?>
+<?latexml class="article" options="11pt,newpasp,twoside,epsf" oldstyle="true"?>
+<!--  %Some definitions I use in these instructions. --><?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>The Origins of Disk Heating</title>
+  <creator role="author">
+    <personname>Michael R. Merrifield</personname>
+  </creator>
+  <creator before="  " role="author">
+    <personname>Joris Gerssen and Konrad Kuijken</personname>
+  </creator>
+  <abstract name="Abstract">
+    <p>By making spectral absorption-line observations of disk galaxies at
+intermediate inclinations, we have been able to determine the
+<!--  %**** merrifieldm.tex Line 25 **** -->amplitude of their constituent stars’ random motions in three
+dimensions. This full measure of the shape of the velocity ellipsoid
+is a useful diagnostic for determining the “heating” mechanism
+responsible for creating the random motions. The analysis implies
+that the main heating process varies with galaxy type, with minor mergers
+dominating the heating in early-type disk galaxies, and spiral density
+waves the most important mechanism in late-type systems.</p>
+  </abstract>
+  <ERROR class="undefined">\affil</ERROR>
+  <para xml:id="p1">
+    <p>School of Physics &amp; Astronomy, University of Nottingham,
+Nottingham, NG7 2RD, England
+
+<ERROR class="undefined">\affil</ERROR>Kapteyn Institute, PO Box 800, 9700 AV Groningen, The Netherlands</p>
+  </para>
+  <section refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>Introduction</title>
+    <para xml:id="S1.p1">
+      <p>Observations of edge-on galaxies reveal that they are remarkably thin
+structures, but not infinitely so. Their finite extent perpendicular
+to the disk plane can be attributed to the excursions that stars take
+in this direction due to their random motions. Stars are born in a
+very thin layer of gas in these galaxies, which, due to its
+collisional nature, has very little by way of random motions. Thus,
+stars must acquire their random velocities in later life, and several
+candidates have been suggested for the source of this “heating.”
+One way that a star can acquire such a random component is by
+scattering gravitationally from a more massive object, such as a giant
+molecular cloud. Similarly, the mass enhancements associated with
+spiral density waves can gravitationally scatter stars. Finally, the
+heating could be due to an external source, such as a small satellite
+<!--  %**** merrifieldm.tex Line 50 **** -->galaxy colliding with the disk; the energy dissipated in such a
+collision would significantly heat the original stellar population.</p>
+    </para>
+    <para xml:id="S1.p2">
+      <p>How, then, does one distinguish between these possibilities? One very
+useful diagnostic is provided by the relative amplitudes of the random
+motions in different directions (Jenkins &amp; Binney 1990). Scattering
+off giant molecular clouds is a very stochastic process, so heats the
+population reasonably isotropically. Density waves, on the other
+hand, are encountered in a more predictable fashion. Since two-armed
+spirals tend to be most common, a star will receive a kick from the
+associated density wave twice per orbit. This frequency is close to
+the star’s natural oscillation frequency in the radial direction, so
+random motions in this direction will be increased rapidly by this
+near-resonant process, making the radial velocity dispersion,
+<Math mode="inline" tex="\sigma_{R}" text="sigma _ R" xml:id="S1.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, significantly greater than the velocity dispersion
+perpendicular to the plane, <Math mode="inline" tex="\sigma_{z}" text="sigma _ z" xml:id="S1.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> (Jenkins &amp; Binney 1990).
+Finally, mergers with satellites couple closely to oscillations that
+can be excited perpendicular to the disk plane, so such heating events
+would enhance <Math mode="inline" tex="\sigma_{z}" text="sigma _ z" xml:id="S1.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> relative to <Math mode="inline" tex="\sigma_{R}" text="sigma _ R" xml:id="S1.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> (Sellwood, Nelson &amp;
+Tremaine 1998). Thus, measuring the ratio of
+<Math mode="inline" tex="\sigma_{z}/\sigma_{R}" text="sigma _ z / sigma _ R" xml:id="S1.p2.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> offers a simple test for determining the cause of
+the random motions.</p>
+    </para>
+    <para xml:id="S1.p3">
+      <p>The main complication in applying this diagnostic in practice is that
+it is difficult to measure <Math mode="inline" tex="\sigma_{R}" text="sigma _ R" xml:id="S1.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="\sigma_{z}" text="sigma _ z" xml:id="S1.p3.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> simultaneously.
+<!--  %**** merrifieldm.tex Line 75 **** -->Since Doppler broadening of spectral lines only enables one to
+determine the line-of-sight velocity dispersions of external galaxies,
+<Math mode="inline" tex="\sigma_{z}" text="sigma _ z" xml:id="S1.p3.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> is usually only measured for face-on galaxies while
+<Math mode="inline" tex="\sigma_{R}" text="sigma _ R" xml:id="S1.p3.m4">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> is only observed in edge-on systems (e.g. van der Kruit &amp;
+Freeman 1986). The only exception to this problem is the Milky Way,
+where one can measure the full three-dimensional motions of nearby
+stars from their Doppler shifts and proper motions.</p>
+    </para>
+    <para xml:id="S1.p4">
+      <p>However, we have now shown that one can also determine the random
+velocities in all three dimensions for some external galaxies. If one
+picks a disk galaxy at intermediate inclination, then observations of
+the line-of-sight velocity dispersion along its minor axis are a
+combination of <Math mode="inline" tex="\sigma_{R}" text="sigma _ R" xml:id="S1.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="\sigma_{z}" text="sigma _ z" xml:id="S1.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, while measurements along its
+major axis reveal a combination of <Math mode="inline" tex="\sigma_{z}" text="sigma _ z" xml:id="S1.p4.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and the remaining
+component, <Math mode="inline" tex="\sigma_{\phi}" text="sigma _ phi" xml:id="S1.p4.m4">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              <XMTok font="italic" fontsize="70%" name="phi" role="UNKNOWN">ϕ</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, the velocity dispersion in the tangential
+direction. One then invokes the fact that these quantities are also
+related by the equations of stellar dynamics (Binney &amp; Tremaine
+1987); specifically, the asymmetric drift equation relates <Math mode="inline" tex="\sigma_{R}" text="sigma _ R" xml:id="S1.p4.m5">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+to the mean rotation speed of the stars, <Math mode="inline" tex="\overline{v}" text="overline@(v)" xml:id="S1.p4.m6">
+          <XMath>
+            <XMApp>
+              <XMTok name="overline" role="OVERACCENT">¯</XMTok>
+              <XMTok font="italic" role="UNKNOWN">v</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, and the local
+circular speed, <Math mode="inline" tex="v_{c}" text="v _ c" xml:id="S1.p4.m7">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">v</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">c</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. The former of these quantities can be obtained
+from the Doppler shift in spectral absorption lines along the major
+axis, while the latter can be obtained from the Doppler shifts in any
+emission lines, which arise from gas on circular orbits. For an
+exponential disk of scalelength <Math mode="inline" tex="h_{\rm d}" text="h _ d" xml:id="S1.p4.m8">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">h</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">d</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, the asymmetric drift
+equation can be written
+<!--  %**** merrifieldm.tex Line 100 **** --></p>
+      <equation frefnum="(1)" refnum="1" xml:id="S1.E1">
+        <Math mode="display" tex="v_{c}^{2}-\overline{v}^{2}=\sigma_{R}^{2}\left[{R\over h_{\rm d}}-R{\partial%&#10;\over\partial R}\ln(\sigma_{R}^{2})-{1\over 2}+{R\over 2v_{c}}{\partial v_{c}%&#10;\over\partial R}\right]." text="(v _ c) ^ 2 - (overline@(v)) ^ 2 = (sigma _ R) ^ 2 * delimited-[]@((R / h _ d - R * (partial-differential / partial-differential@(R)) * natural-logarithm@((sigma _ R) ^ 2) - 1 / 2) + (R / (2 * v _ c)) * (partial-differential@(v _ c) / partial-differential@(R)))" xml:id="S1.E1.m1">
+          <XMath>
+            <XMDual>
+              <XMRef idref="S1.E1.m1.2"/>
+              <XMWrap>
+                <XMApp xml:id="S1.E1.m1.2">
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                        <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">c</XMTok>
+                      </XMApp>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                      <XMApp>
+                        <XMTok name="overline" role="OVERACCENT">¯</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                      </XMApp>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                        <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+                      </XMApp>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="delimited-[]"/>
+                        <XMRef idref="S1.E1.m1.2.1"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="true">[</XMTok>
+                        <XMApp xml:id="S1.E1.m1.2.1">
+                          <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                          <XMApp>
+                            <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                            <XMApp>
+                              <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                                <XMTok font="italic" role="UNKNOWN">h</XMTok>
+                                <XMTok fontsize="70%" role="UNKNOWN">d</XMTok>
+                              </XMApp>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                              <XMApp>
+                                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                                <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                <XMApp>
+                                  <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                                </XMApp>
+                              </XMApp>
+                              <XMDual>
+                                <XMApp>
+                                  <XMRef idref="S1.E1.m1.1"/>
+                                  <XMRef idref="S1.E1.m1.2.1.1"/>
+                                </XMApp>
+                                <XMApp>
+                                  <XMTok meaning="natural-logarithm" role="OPFUNCTION" xml:id="S1.E1.m1.1">ln</XMTok>
+                                  <XMWrap>
+                                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                    <XMApp xml:id="S1.E1.m1.2.1.1">
+                                      <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                                      <XMApp>
+                                        <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                                        <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+                                      </XMApp>
+                                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                                    </XMApp>
+                                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                                  </XMWrap>
+                                </XMApp>
+                              </XMDual>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                              <XMTok meaning="1" role="NUMBER">1</XMTok>
+                              <XMTok meaning="2" role="NUMBER">2</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMApp>
+                              <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                              <XMApp>
+                                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                                <XMApp>
+                                  <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">c</XMTok>
+                                </XMApp>
+                              </XMApp>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                              <XMApp>
+                                <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                <XMApp>
+                                  <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">c</XMTok>
+                                </XMApp>
+                              </XMApp>
+                              <XMApp>
+                                <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                              </XMApp>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="true">]</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                </XMApp>
+                <XMTok role="PERIOD">.</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math>
+      </equation>
+      <p>Combining this equation with the two observable quantities (the
+line-of-sight kinematics along the major and minor axes), one can
+solve for all three components of the velocity dispersion, <Math mode="inline" tex="\sigma_{R}" text="sigma _ R" xml:id="S1.p4.m9">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>,
+<Math mode="inline" tex="\sigma_{\phi}" text="sigma _ phi" xml:id="S1.p4.m10">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              <XMTok font="italic" fontsize="70%" name="phi" role="UNKNOWN">ϕ</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, and <Math mode="inline" tex="\sigma_{z}" text="sigma _ z" xml:id="S1.p4.m11">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>.</p>
+    </para>
+    <para xml:id="S1.p5">
+      <p>Even with the best data available today, one cannot perform this
+analysis in a completely non-parametric fashion. Instead, one adopts a
+somewhat simplified model in which the ratios of the dispersions
+remain fixed. By solving for the free parameters in this model, one in
+essence obtains average values for ratios such as
+<Math mode="inline" tex="\sigma_{z}/\sigma_{R}" text="sigma _ z / sigma _ R" xml:id="S1.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, and hence a measure of what globally is the most
+important heating mechanism in the galaxy.</p>
+    </para>
+  </section>
+  <section refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>Results</title>
+    <para xml:id="S2.p1">
+      <p>As mentioned above, by looking at nearby stars, one can determine all
+<!--  %**** merrifieldm.tex Line 125 **** -->three components of the velocity dispersion of the Milky Way in the
+solar neighbourhood. This analysis reveals a ratio of
+<Math mode="inline" tex="\sigma_{z}/\sigma_{R}\sim 0.53" text="sigma _ z / sigma _ R similar-to 0.53" xml:id="S2.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="0.53" role="NUMBER">0.53</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> (Dehnen &amp; Binney 1998). Such a low
+value is consistent with what one would expect for a galaxy in which
+spiral density waves are the major heating mechanism.</p>
+    </para>
+    <figure frefnum="Figure 1" refnum="1" xml:id="S2.F1">
+      <ERROR class="undefined">\plotfiddle</ERROR>
+      <p>merrifieldm1.eps3.1in04545-135-75</p>
+      <toccaption><tag close=" ">1</tag>Plot showing the kinematic data obtained for NGC 488, and the
+resulting model fits. The panels show the line-of-sight velocity
+dispersions along the major and minor axes, and the stellar and
+gaseous rotation rates along the major axis.</toccaption>
+      <caption><tag close=": ">Figure 1</tag>Plot showing the kinematic data obtained for NGC 488, and the
+resulting model fits. The panels show the line-of-sight velocity
+dispersions along the major and minor axes, and the stellar and
+gaseous rotation rates along the major axis.</caption>
+    </figure>
+    <para xml:id="S2.p2">
+      <p>By observing kinematics along the major and minor axes of NGC 488, and
+using the technique described in the previous section, we made the
+first comparable measurement for an external galaxy (Gerssen, Kuijken
+&amp; Merrifield 1997). Fitting to these data (shown in Fig. 1) reveals
+a higher ratio of <Math mode="inline" tex="\sigma_{z}/\sigma_{R}\sim 0.7" text="sigma _ z / sigma _ R similar-to 0.7" xml:id="S2.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="0.7" role="NUMBER">0.7</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. This galaxy is of an
+earlier type than the Milky Way (Sb as opposed to Sbc), with
+correspondingly weaker spiral structure. It is also bright in CO
+emission (Young et al. 1995), implying that it is rich in molecular
+clouds. It is therefore not too surprising that the
+<!--  %**** merrifieldm.tex Line 150 **** --><Math mode="inline" tex="\sigma_{z}/\sigma_{R}" text="sigma _ z / sigma _ R" xml:id="S2.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> diagnostic favours molecular clouds over density
+waves as the source of the heating in this case.</p>
+    </para>
+    <para xml:id="S2.p3">
+      <p>More recently, we have made a similar analysis of the Sab galaxy
+NGC 2985 (Gerssen, Kuijken &amp; Merrifield 2000). The even earlier type
+of this galaxy implies that spiral density waves are unlikely to have
+a significant role to play, but the absence of strong CO emission also
+makes molecular clouds implausible sources of disk heating. It is
+therefore interesting that the analysis of this galaxy returns a ratio
+of <Math mode="inline" tex="\sigma_{z}/\sigma_{R}\sim 0.85" text="sigma _ z / sigma _ R similar-to 0.85" xml:id="S2.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="0.85" role="NUMBER">0.85</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. Such an extreme value strongly
+favours the third possibility, mergers with satellites, as the heating
+mechanism.</p>
+    </para>
+    <figure frefnum="Figure 2" refnum="2" xml:id="S2.F2">
+      <ERROR class="undefined">\plotfiddle</ERROR>
+      <p>merrifieldm2.eps2.95in04545-195-20</p>
+      <toccaption><tag close=" ">2</tag>Plot showing the velocity dispersion ratio,
+<Math mode="inline" tex="\sigma_{z}/\sigma_{R}" text="sigma _ z / sigma _ R" xml:id="S2.F2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, as a function of Hubble type for the three
+galaxies for which this quantity has now been determined. The error
+bars show the uncertainties in these two quantities, and the “postage
+stamp” images at the centres of each error bar illustrate the
+galaxies’ morphologies.</toccaption>
+      <caption><tag close=": ">Figure 2</tag>Plot showing the velocity dispersion ratio,
+<Math mode="inline" tex="\sigma_{z}/\sigma_{R}" text="sigma _ z / sigma _ R" xml:id="S2.F2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, as a function of Hubble type for the three
+galaxies for which this quantity has now been determined. The error
+bars show the uncertainties in these two quantities, and the “postage
+stamp” images at the centres of each error bar illustrate the
+galaxies’ morphologies.</caption>
+    </figure>
+    <para xml:id="S2.p4">
+      <p>With three measurements, we can start to look for any systematic
+<!--  %**** merrifieldm.tex Line 175 **** -->trends. As Fig. 2 shows, there is some evidence for such a trend: the
+earlier the Hubble type of the galaxy, the larger the value of
+<Math mode="inline" tex="\sigma_{z}/\sigma_{R}" text="sigma _ z / sigma _ R" xml:id="S2.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. Galaxy interactions provide a plausible
+explanation for this correlation: in addition to enhancing the value
+of <Math mode="inline" tex="\sigma_{z}/\sigma_{R}" text="sigma _ z / sigma _ R" xml:id="S2.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, mergers are likely to transform galaxies to
+earlier Hubble types. However, the large error bars on Fig. 2 mean
+that any such interpretation should be viewed with caution. The
+modelling process required to calculate <Math mode="inline" tex="\sigma_{z}/\sigma_{R}" text="sigma _ z / sigma _ R" xml:id="S2.p4.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> is quite
+complex and results in a rather uncertain estimate, and even the
+definition of a galaxy’s Hubble type has significant uncertainty due
+to the subjectivity of the classification. Thus, the the tight
+correlation between these quantities must be somewhat fortuitous.
+Clearly, <Math mode="inline" tex="\sigma_{z}/\sigma_{R}" text="sigma _ z / sigma _ R" xml:id="S2.p4.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> needs to be measured for a larger sample of
+galaxies before any general conclusions can be drawn, but even these
+preliminary results show the promise of this technique for uncovering
+the origins of disk heating.</p>
+    </para>
+    <ERROR class="undefined">{references}</ERROR>
+    <ERROR class="undefined">\reference</ERROR>
+    <para xml:id="S2.p5">
+      <p>Binney, J. &amp; Tremaine, S. 1987, Galactic Dynamics
+(Princeton: Princeton University Press)
+<ERROR class="undefined">\reference</ERROR>Dehnen, W. &amp; Binney, J. 1998, MNRAS, 298, 387
+<ERROR class="undefined">\reference</ERROR>van der Kruit, P.C. &amp; Freeman, K. 1986, ApJ, 303, 556
+<ERROR class="undefined">\reference</ERROR>Gerssen, J., Kuijken, K. &amp; Merrifield, M.R. 1997, MNRAS, 288, 617
+<ERROR class="undefined">\reference</ERROR>Gerssen, J., Kuijken, K. &amp; Merrifield, M.R. 2000, MNRAS,
+<!--  %**** merrifieldm.tex Line 200 **** -->in press
+<ERROR class="undefined">\reference</ERROR>Jenkins, A. &amp; Binney, J. 1990, MNRAS, 245, 305
+<ERROR class="undefined">\reference</ERROR>Sellwood, J.A., Nelson, R.W. &amp; Tremaine, S. 1998, ApJ,
+506, 590
+<ERROR class="undefined">\reference</ERROR>Young, J.S., et al. 1995, ApJS, 98. 219</p>
+    </para>
+  </section>
+</document>

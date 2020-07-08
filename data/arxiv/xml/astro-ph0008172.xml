@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008172.1"?>
+<?latexml class="kluwer"?>
+<?latexml package="graphicx"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>The Evolution and Space Density of Damped Lyman-<Math mode="inline" tex="\alpha" text="alpha" xml:id="m1">
+      <XMath>
+        <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+      </XMath>
+    </Math>
+Galaxies</title>
+  <creator role="author">
+    <personname>Céline <ERROR class="undefined">\surname</ERROR>Péroux</personname>
+    <contact role="thanks">e-mail: celine@ast.cam.ac.uk</contact>
+    <contact role="institute">Institute of Astronomy, University of Cambridge, UK</contact>
+    <contact role="institute">SIRTF Science Center, California Institute of Technology, Pasadena, USA</contact>
+  </creator>
+  <creator before="  " role="author">
+    <personname>Mike J. <ERROR class="undefined">\surname</ERROR>Irwin</personname>
+    <contact role="institute">Institute of Astronomy, University of Cambridge, UK</contact>
+    <contact role="institute">SIRTF Science Center, California Institute of Technology, Pasadena, USA</contact>
+  </creator>
+  <creator before="  " role="author">
+    <personname>Richard G. <ERROR class="undefined">\surname</ERROR>McMahon</personname>
+    <contact role="institute">Institute of Astronomy, University of Cambridge, UK</contact>
+    <contact role="institute">SIRTF Science Center, California Institute of Technology, Pasadena, USA</contact>
+  </creator>
+  <creator before="  " role="author">
+    <personname>Lisa J. <ERROR class="undefined">\surname</ERROR>Storrie-Lombardi</personname>
+    <contact role="institute">Institute of Astronomy, University of Cambridge, UK</contact>
+    <contact role="institute">SIRTF Science Center, California Institute of Technology, Pasadena, USA</contact>
+  </creator>
+  <abstract name="Abstract">
+    <p>The results of a new spectroscopic survey of 66 <Math mode="inline" tex="z\lower 2.15pt\hbox{$\;\buildrel&gt;\over{\sim}\;$}4" text="z similar-to ^ &gt; 4" xml:id="m2">
+        <XMath>
+          <XMApp>
+            <XMApp lpadding="2.8pt" role="RELOP" rpadding="2.8pt" yoffset="-2.1pt">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid6"/>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+            </XMApp>
+            <XMTok font="italic" role="UNKNOWN">z</XMTok>
+            <XMTok meaning="4" role="NUMBER">4</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> quasars for
+Damped Lyman-<Math mode="inline" tex="\alpha" text="alpha" xml:id="m3">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> absorption systems are presented. The search led
+to the discovery of 30 new DLA candidates which are analysed in order
+to compute the comoving mass density of neutral gas in a non-zero
+<Math mode="inline" tex="\Lambda" text="Lambda" xml:id="m4">
+        <XMath>
+          <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+        </XMath>
+      </Math> Universe. The possible sources of uncertainty are discussed
+and the implications of our results for the theories of galaxy
+formation and evolution are emphasized. A subsequent paper will
+present details of the calculations summarised here and a more
+extensive explanation of the consequences of our observations for the
+understanding of the nature of DLAs.</p>
+  </abstract>
+<!--  %“newcommand–“kms˝–km~s$^–-1˝$˝ 
+     %note leading thinspace
+     %**** peroux-c.tex Line 25 ****
+     %“newcommand–“sun˝–“mbox–$“twelvesy“odot$˝˝-->  <ERROR class="undefined">{article}</ERROR>
+  <ERROR class="undefined">{opening}</ERROR>
+<!--  %final version - 10/8/00 
+     %“subtitle–Metals in The Intergalactic Medium˝
+     %**** peroux-c.tex Line 50 ****
+     %“date: rather not
+     %“dedication–To Jim˝
+     %“translation–De Kluwer LaTeX stylefile; aanwijzingen voor auteurs˝
+     %“begin–ao˝
+     %Kluwer Prepress Department““
+     %P.O. Box 990““
+     %3300 AZ Dordrecht““
+     %The Netherlands
+     %“end–ao˝
+     %“begin–motto˝
+     %What can’t be done with TeX isn’t worth doing.
+     %“end–motto˝
+     %**** peroux-c.tex Line 75 ****
+     %“keywords–cosmology__galaxies: evolution__galaxies: quasars__absorption lin%es˝
+     %“abbreviations–“abbrev–KAP˝–Kluwer Academic Publishers˝;
+     %“abbrev–compuscript˝–Electronically submitted article˝˝
+     %“nomenclature–“nomen–KAP˝–Kluwer Academic Publishers˝;
+     %“nomen–compuscript˝–Electronically submitted article˝˝
+     %“classification–JEL codes˝–D24, L60, 047˝-->  <section refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>A New Survey for Damped Lyman-<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.m1">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> Galaxies</title>
+<!--  %**** peroux-c.tex Line 100 **** -->    <para xml:id="S1.p1">
+      <p>Damped Lyman-<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.p1.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> (hereafter DLA) galaxies are defined as
+absorption systems in the spectra of quasars with a hydrogen column
+density <Math mode="inline" tex="N(HI)&gt;2\times 10^{20}" text="N * H * I &gt; 2 * 10 ^ 20" xml:id="S1.p1.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMDual>
+                  <XMRef idref="S1.p1.m2.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMApp xml:id="S1.p1.m2.1">
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                    </XMApp>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="20" role="NUMBER">20</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> atoms cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S1.p1.m3">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> (<Math mode="inline" tex="\geq 10" text="absent &gt;= 10" xml:id="S1.p1.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> Å rest frame equivalent width, Wolfe et al. 1986). Their space density
+distribution, metal abundances and kinematics seem to indicate that
+they are the progenitors of present day galaxies, thus providing a
+powerful observational tool for galaxy evolution studies.
+<break/>DLAs probe the neutral gas from which stars form and thus are a direct
+means to trace galaxy formation. Quasars are extremely luminous
+objects which are observed up to <Math mode="inline" tex="z=5.8" text="z = 5.8" xml:id="S1.p1.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="5.8" role="NUMBER">5.8</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> (Fan et al. 2000), and thus
+DLAs can be probed over a large redshift range. Finally DLA galaxies
+can be detected to fainter limits than objects detected using
+traditional emission observations.
+<break/>We observed 66 <Math mode="inline" tex="z\lower 2.15pt\hbox{$\;\buildrel&gt;\over{\sim}\;$}4" text="z similar-to ^ &gt; 4" xml:id="S1.p1.m6">
+          <XMath>
+            <XMApp>
+              <XMApp lpadding="2.8pt" role="RELOP" rpadding="2.8pt" yoffset="-2.1pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+                <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              </XMApp>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="4" role="NUMBER">4</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> quasars (see Peroux et al. 2000 for details
+on the observations) from the <Math mode="inline" tex="2^{nd}" text="2 ^ (n * d)" xml:id="S1.p1.m7">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">d</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> APM colour survey
+(Storrie-Lombardi et al. 2000), the Palomar Sky Survey (Kennefick et
+al. 1995a <Math mode="inline" tex="\&amp;" text="and" xml:id="S1.p1.m8">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math> 1995b and G. Djorgovski’s web page) and the Sloan
+Digital Sky Survey (Fan et al. 1999). This resulted in 31 DLA
+candidates, 30 of which are newly discovered and many with associated
+metal lines.</p>
+    </para>
+  </section>
+  <section refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>Probing the Neutral Gas Content of the Universe</title>
+<!--  %**** peroux-c.tex Line 125 **** -->    <figure frefnum="Figure 1" refnum="1" xml:id="S2.F1">
+      <p class="ltx_align_center"><graphics candidates="peroux-c.fig1.eps" graphic="peroux-c.fig1.eps" options="height=199.169291pt, width=256.074803pt, angle=0" xml:id="S2.F1.g1"/></p>
+      <toccaption><tag close=" ">1</tag>Sensitivity functions for DLA galaxy searches. The dotted
+line is from Storrie-Lombardi et al. 1996 (<Math mode="inline" tex="\Delta(z)=239" text="Delta * z = 239" xml:id="S2.F1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMDual>
+                  <XMRef idref="S2.F1.m1.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMTok font="italic" role="UNKNOWN" xml:id="S2.F1.m1.1">z</XMTok>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+              <XMTok meaning="239" role="NUMBER">239</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>), the
+dashed line is the compilation of Storrie-Lombardi <Math mode="inline" tex="\&amp;" text="and" xml:id="S2.F1.m2">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math> Wolfe 2000
+(<Math mode="inline" tex="\Delta(z)=418" text="Delta * z = 418" xml:id="S2.F1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMDual>
+                  <XMRef idref="S2.F1.m3.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMTok font="italic" role="UNKNOWN" xml:id="S2.F1.m3.1">z</XMTok>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+              <XMTok meaning="418" role="NUMBER">418</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>), and our survey is represented by the solid line
+(<Math mode="inline" tex="\Delta(z)=493" text="Delta * z = 493" xml:id="S2.F1.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMDual>
+                  <XMRef idref="S2.F1.m4.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMTok font="italic" role="UNKNOWN" xml:id="S2.F1.m4.1">z</XMTok>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+              <XMTok meaning="493" role="NUMBER">493</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>). Our new sample more than doubles the redshift path
+surveyed above <Math mode="inline" tex="z\lower 2.15pt\hbox{$\;\buildrel&gt;\over{\sim}\;$}3.5" text="z similar-to ^ &gt; 3.5" xml:id="S2.F1.m5">
+          <XMath>
+            <XMApp>
+              <XMApp lpadding="2.8pt" role="RELOP" rpadding="2.8pt" yoffset="-2.1pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="mid7"/>
+                <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              </XMApp>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="3.5" role="NUMBER">3.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>.</toccaption>
+      <caption><tag close=": ">Figure 1</tag>Sensitivity functions for DLA galaxy searches. The dotted
+line is from Storrie-Lombardi et al. 1996 (<Math mode="inline" tex="\Delta(z)=239" text="Delta * z = 239" xml:id="S2.F1.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMDual>
+                  <XMRef idref="S2.F1.m6.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMTok font="italic" role="UNKNOWN" xml:id="S2.F1.m6.1">z</XMTok>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+              <XMTok meaning="239" role="NUMBER">239</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>), the
+dashed line is the compilation of Storrie-Lombardi <Math mode="inline" tex="\&amp;" text="and" xml:id="S2.F1.m7">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math> Wolfe 2000
+(<Math mode="inline" tex="\Delta(z)=418" text="Delta * z = 418" xml:id="S2.F1.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMDual>
+                  <XMRef idref="S2.F1.m8.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMTok font="italic" role="UNKNOWN" xml:id="S2.F1.m8.1">z</XMTok>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+              <XMTok meaning="418" role="NUMBER">418</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>), and our survey is represented by the solid line
+(<Math mode="inline" tex="\Delta(z)=493" text="Delta * z = 493" xml:id="S2.F1.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMDual>
+                  <XMRef idref="S2.F1.m9.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMTok font="italic" role="UNKNOWN" xml:id="S2.F1.m9.1">z</XMTok>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+              <XMTok meaning="493" role="NUMBER">493</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>). Our new sample more than doubles the redshift path
+surveyed above <Math mode="inline" tex="z\lower 2.15pt\hbox{$\;\buildrel&gt;\over{\sim}\;$}3.5" text="z similar-to ^ &gt; 3.5" xml:id="S2.F1.m10">
+          <XMath>
+            <XMApp>
+              <XMApp lpadding="2.8pt" role="RELOP" rpadding="2.8pt" yoffset="-2.1pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="mid7"/>
+                <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              </XMApp>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="3.5" role="NUMBER">3.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>.</caption>
+    </figure>
+    <para xml:id="S2.p1">
+      <p>For each quasar the redshift range along which a DLA could be observed
+is determined and used to deduce the survey’s sensitivity. This is
+represented by the <Math mode="inline" tex="g(z)" text="g * z" xml:id="S2.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">g</XMTok>
+              <XMDual>
+                <XMRef idref="S2.p1.m1.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMTok font="italic" role="UNKNOWN" xml:id="S2.p1.m1.1">z</XMTok>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> function shown in Fig 1. Our new data is
+analysed in conjunction with previous observations resulting in 115
+DLAs observed in 697 quasars (Rao and Turnshek 1999 data not
+included).
+<break/>The mass of neutral gas contained in DLAs is expressed as:
+<Math mode="inline" tex="\Omega_{DLA}(z)=\frac{H_{o}\mu m_{H}}{c\rho_{crit}}\int_{N_{min}}^{\infty}Nf(N%&#10;,z)dN" text="Omega _ (D * L * A) * z = ((H _ o * mu * m _ H) / (c * rho _ (c * r * i * t))) * ((integral _ N _ (m * i * n)) ^ infinity)@(N * f * open-interval@(N, z) * differential-d@(N))" xml:id="S2.p1.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">D</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">L</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">A</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMDual>
+                  <XMRef idref="S2.p1.m2.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMTok font="italic" role="UNKNOWN" xml:id="S2.p1.m2.1">z</XMTok>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok mathstyle="text" meaning="divide" role="FRACOP"/>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+                      <XMTok font="italic" fontsize="50%" role="UNKNOWN">o</XMTok>
+                    </XMApp>
+                    <XMTok font="italic" fontsize="70%" name="mu" role="UNKNOWN">μ</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
+                      <XMTok font="italic" fontsize="50%" role="UNKNOWN">H</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">c</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                      <XMTok font="italic" fontsize="70%" name="rho" role="UNKNOWN">ρ</XMTok>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMTok font="italic" fontsize="50%" role="UNKNOWN">c</XMTok>
+                        <XMTok font="italic" fontsize="50%" role="UNKNOWN">r</XMTok>
+                        <XMTok font="italic" fontsize="50%" role="UNKNOWN">i</XMTok>
+                        <XMTok font="italic" fontsize="50%" role="UNKNOWN">t</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                      <XMTok mathstyle="text" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok font="italic" fontsize="50%" role="UNKNOWN">m</XMTok>
+                          <XMTok font="italic" fontsize="50%" role="UNKNOWN">i</XMTok>
+                          <XMTok font="italic" fontsize="50%" role="UNKNOWN">n</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok fontsize="70%" meaning="infinity" name="infty" role="ID">∞</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="open-interval"/>
+                        <XMRef idref="S2.p1.m2.2"/>
+                        <XMRef idref="S2.p1.m2.3"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="S2.p1.m2.2">N</XMTok>
+                        <XMTok role="PUNCT">,</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="S2.p1.m2.3">z</XMTok>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMApp>
+                      <XMTok font="italic" meaning="differential-d" role="DIFFOP">d</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, where <Math mode="inline" tex="N" text="N" xml:id="S2.p1.m3">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">N</XMTok>
+          </XMath>
+        </Math> is the column density
+and <Math mode="inline" tex="f(N,z)" text="f * open-interval@(N, z)" xml:id="S2.p1.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">f</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="open-interval"/>
+                  <XMRef idref="S2.p1.m4.1"/>
+                  <XMRef idref="S2.p1.m4.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMTok font="italic" role="UNKNOWN" xml:id="S2.p1.m4.1">N</XMTok>
+                  <XMTok role="PUNCT">,</XMTok>
+                  <XMTok font="italic" role="UNKNOWN" xml:id="S2.p1.m4.2">z</XMTok>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math> is the distribution function. The integral is estimated
+by summing up over all the observed column densities and dividing by
+<!--  %**** peroux-c.tex Line 150 **** -->the absorption distance interval, <Math mode="inline" tex="X(z)" text="X * z" xml:id="S2.p1.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">X</XMTok>
+              <XMDual>
+                <XMRef idref="S2.p1.m5.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMTok font="italic" role="UNKNOWN" xml:id="S2.p1.m5.1">z</XMTok>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>, which corrects for comoving
+coordinates and thus depends on the geometry of the Universe. In a
+non-zero <Math mode="inline" tex="\Lambda" text="Lambda" xml:id="S2.p1.m6">
+          <XMath>
+            <XMTok name="Lambda" role="UNKNOWN">Λ</XMTok>
+          </XMath>
+        </Math> Universe: <Math mode="inline" tex="X(z)=\int_{0}^{z}(1+z)^{2}\left[(1+z)^{2}(1+z\Omega_{M})-z(2+z)\Omega_{\Lambda%&#10;}\right]^{-1/2}dz" text="X * z = ((integral _ 0) ^ z)@((1 + z) ^ 2 * (delimited-[]@((1 + z) ^ 2 * (1 + z * Omega _ M) - z * (2 + z) * Omega _ Lambda)) ^ (- 1 / 2) * differential-d@(z))" xml:id="S2.p1.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">X</XMTok>
+                <XMDual>
+                  <XMRef idref="S2.p1.m7.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMTok font="italic" role="UNKNOWN" xml:id="S2.p1.m7.1">z</XMTok>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+              <XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok mathstyle="text" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                    <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                  </XMApp>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMDual>
+                      <XMRef idref="S2.p1.m7.2"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMApp xml:id="S2.p1.m7.2">
+                          <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                          <XMTok meaning="1" role="NUMBER">1</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="delimited-[]"/>
+                        <XMRef idref="S2.p1.m7.3"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="true">[</XMTok>
+                        <XMApp xml:id="S2.p1.m7.3">
+                          <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMApp>
+                              <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                              <XMDual>
+                                <XMRef idref="S2.p1.m7.3.1"/>
+                                <XMWrap>
+                                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                  <XMApp xml:id="S2.p1.m7.3.1">
+                                    <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                                    <XMTok meaning="1" role="NUMBER">1</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                                  </XMApp>
+                                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                                </XMWrap>
+                              </XMDual>
+                              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                            </XMApp>
+                            <XMDual>
+                              <XMRef idref="S2.p1.m7.3.2"/>
+                              <XMWrap>
+                                <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                <XMApp xml:id="S2.p1.m7.3.2">
+                                  <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                                  <XMTok meaning="1" role="NUMBER">1</XMTok>
+                                  <XMApp>
+                                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                                    <XMApp>
+                                      <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                                      <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+                                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">M</XMTok>
+                                    </XMApp>
+                                  </XMApp>
+                                </XMApp>
+                                <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                              </XMWrap>
+                            </XMDual>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                            <XMDual>
+                              <XMRef idref="S2.p1.m7.3.3"/>
+                              <XMWrap>
+                                <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                <XMApp xml:id="S2.p1.m7.3.3">
+                                  <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                                  <XMTok meaning="2" role="NUMBER">2</XMTok>
+                                  <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                                </XMApp>
+                                <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                              </XMWrap>
+                            </XMDual>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                              <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+                              <XMTok fontsize="70%" name="Lambda" role="UNKNOWN">Λ</XMTok>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="true">]</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMApp>
+                        <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                        <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok font="italic" meaning="differential-d" role="DIFFOP">d</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.</p>
+    </para>
+    <figure frefnum="Figure 2" refnum="2" xml:id="S2.F2">
+      <p class="ltx_align_center"><graphics candidates="peroux-c.fig2.eps" graphic="peroux-c.fig2.eps" options="height=256.074803pt, width=327.206693pt, angle=0" xml:id="S2.F2.g1"/></p>
+      <toccaption><tag close=" ">2</tag>The circles show the neutral gas in Damped Lyman-<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.F2.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math>
+galaxies (the filled circles are our observations and the open circles
+are Rao <Math mode="inline" tex="\&amp;" text="and" xml:id="S2.F2.m2">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math> Turnshek 1999 results). Vertical bars correspond to 1
+<Math mode="inline" tex="\sigma" text="sigma" xml:id="S2.F2.m3">
+          <XMath>
+            <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+          </XMath>
+        </Math> errors and the horizontal bars indicate bin sizes. The stars
+are the total HI including a correction for the neutral gas contained
+in systems with column densities below <Math mode="inline" tex="2\times 10^{20}" text="2 * 10 ^ 20" xml:id="S2.F2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="20" role="NUMBER">20</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> atoms
+cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S2.F2.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. The triangle at <Math mode="inline" tex="z=0" text="z = 0" xml:id="S2.F2.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> is from Natarajan <Math mode="inline" tex="\&amp;" text="and" xml:id="S2.F2.m7">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math> Pettini 1997
+who used a recent galaxy luminosity function to reproduce the local HI
+mass measured by Rao <Math mode="inline" tex="\&amp;" text="and" xml:id="S2.F2.m8">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math> Turnshek 1993. The squares, <Math mode="inline" tex="\Omega_{FHP}" text="Omega _ (F * H * P)" xml:id="S2.F2.m9">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">F</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">P</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+and <Math mode="inline" tex="\Omega_{GO}" text="Omega _ (G * O)" xml:id="S2.F2.m10">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">G</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">O</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> (Fukugita, Hogan <Math mode="inline" tex="\&amp;" text="and" xml:id="S2.F2.m11">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math> Peebles 1998 and Gnedin <Math mode="inline" tex="\&amp;" text="and" xml:id="S2.F2.m12">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math>
+Ostriker 1992 respectively) are <Math mode="inline" tex="\Omega_{baryons}" text="Omega _ (b * a * r * y * o * n * s)" xml:id="S2.F2.m13">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">a</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">r</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">y</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> in local
+galaxies. The semi-analytical models from Somerville, Primack <Math mode="inline" tex="\&amp;" text="and" xml:id="S2.F2.m14">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math>
+Faber 2000 are overplotted (see text for detailed explanations of the
+models).</toccaption>
+      <caption><tag close=": ">Figure 2</tag>The circles show the neutral gas in Damped Lyman-<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.F2.m15">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math>
+galaxies (the filled circles are our observations and the open circles
+are Rao <Math mode="inline" tex="\&amp;" text="and" xml:id="S2.F2.m16">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math> Turnshek 1999 results). Vertical bars correspond to 1
+<Math mode="inline" tex="\sigma" text="sigma" xml:id="S2.F2.m17">
+          <XMath>
+            <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+          </XMath>
+        </Math> errors and the horizontal bars indicate bin sizes. The stars
+are the total HI including a correction for the neutral gas contained
+in systems with column densities below <Math mode="inline" tex="2\times 10^{20}" text="2 * 10 ^ 20" xml:id="S2.F2.m18">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="20" role="NUMBER">20</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> atoms
+cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S2.F2.m19">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. The triangle at <Math mode="inline" tex="z=0" text="z = 0" xml:id="S2.F2.m20">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> is from Natarajan <Math mode="inline" tex="\&amp;" text="and" xml:id="S2.F2.m21">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math> Pettini 1997
+who used a recent galaxy luminosity function to reproduce the local HI
+mass measured by Rao <Math mode="inline" tex="\&amp;" text="and" xml:id="S2.F2.m22">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math> Turnshek 1993. The squares, <Math mode="inline" tex="\Omega_{FHP}" text="Omega _ (F * H * P)" xml:id="S2.F2.m23">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">F</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">P</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+and <Math mode="inline" tex="\Omega_{GO}" text="Omega _ (G * O)" xml:id="S2.F2.m24">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">G</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">O</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> (Fukugita, Hogan <Math mode="inline" tex="\&amp;" text="and" xml:id="S2.F2.m25">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math> Peebles 1998 and Gnedin <Math mode="inline" tex="\&amp;" text="and" xml:id="S2.F2.m26">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math>
+Ostriker 1992 respectively) are <Math mode="inline" tex="\Omega_{baryons}" text="Omega _ (b * a * r * y * o * n * s)" xml:id="S2.F2.m27">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">a</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">r</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">y</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> in local
+galaxies. The semi-analytical models from Somerville, Primack <Math mode="inline" tex="\&amp;" text="and" xml:id="S2.F2.m28">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math>
+Faber 2000 are overplotted (see text for detailed explanations of the
+models).</caption>
+    </figure>
+<!--  %**** peroux-c.tex Line 175 **** -->    <para xml:id="S2.p2">
+      <p>Our observations are presented in Fig 2 for a currently popular
+cosmology and show the evolution of <Math mode="inline" tex="\Omega_{DLA}" text="Omega _ (D * L * A)" xml:id="S2.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">D</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">L</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">A</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> over the last 90
+<Math mode="inline" tex="\%" text="percent" xml:id="S2.p2.m2">
+          <XMath>
+            <XMTok meaning="percent" role="POSTFIX">%</XMTok>
+          </XMath>
+        </Math> of the age of the Universe thus probing the early stages of
+galaxies even before gas turns into stars.
+<break/>In order to account for the neutral gas not included in DLAs, we used
+a power law with an exponential turnover (similar to the Schechter
+function) in extrapolating from the observed column density
+distribution: <Math mode="inline" tex="f(N,z)=(f_{*}/N_{*})(N/N_{*})^{-\beta}e^{-N/N_{*}}" text="f * open-interval@(N, z) = (f _ * / N _ *) * (N / N _ *) ^ (- beta) * e ^ (- N / N _ *)" xml:id="S2.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                <XMDual>
+                  <XMApp>
+                    <XMTok meaning="open-interval"/>
+                    <XMRef idref="S2.p2.m3.1"/>
+                    <XMRef idref="S2.p2.m3.2"/>
+                  </XMApp>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMTok font="italic" role="UNKNOWN" xml:id="S2.p2.m3.1">N</XMTok>
+                    <XMTok role="PUNCT">,</XMTok>
+                    <XMTok font="italic" role="UNKNOWN" xml:id="S2.p2.m3.2">z</XMTok>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMDual>
+                  <XMRef idref="S2.p2.m3.3"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMApp xml:id="S2.p2.m3.3">
+                      <XMTok meaning="divide" role="MULOP">/</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                        <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                        <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                        <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                        <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMDual>
+                    <XMRef idref="S2.p2.m3.4"/>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="false">(</XMTok>
+                      <XMApp xml:id="S2.p2.m3.4">
+                        <XMTok meaning="divide" role="MULOP">/</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                          <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                          <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+                        </XMApp>
+                      </XMApp>
+                      <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok font="italic" fontsize="70%" name="beta" role="UNKNOWN">β</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
+                        <XMTok fontsize="50%" meaning="times" role="MULOP">*</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. Using the
+parameters determined by Storrie-Lombardi et al. 1996,
+<Math mode="inline" tex="N_{*}=21.63\pm 0.35" text="N _ * = 21.63 plus-or-minus 0.35" xml:id="S2.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" meaning="times" role="MULOP">*</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                <XMTok meaning="21.63" role="NUMBER">21.63</XMTok>
+                <XMTok meaning="0.35" role="NUMBER">0.35</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="\beta=1.48\pm 0.30" text="beta = 1.48 plus-or-minus 0.30" xml:id="S2.p2.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
+              <XMApp>
+                <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                <XMTok meaning="1.48" role="NUMBER">1.48</XMTok>
+                <XMTok meaning="0.30" role="NUMBER">0.30</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, results in a <Math mode="inline" tex="\sim 20\%" text="absent similar-to 20percent" xml:id="S2.p2.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok meaning="percent" role="POSTFIX">%</XMTok>
+                <XMTok meaning="20" role="NUMBER">20</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+increase in <Math mode="inline" tex="\Omega" text="Omega" xml:id="S2.p2.m7">
+          <XMath>
+            <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+          </XMath>
+        </Math> for <Math mode="inline" tex="z\leq 3.5" text="z less= 3.5" xml:id="S2.p2.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="3.5" role="NUMBER">3.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. For <Math mode="inline" tex="z&gt;3.5" text="z &gt; 3.5" xml:id="S2.p2.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="3.5" role="NUMBER">3.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> systems, our
+observations indicate a steepening of the low column density end of
+the DLA distribution (where much of the mass resides) in comparison
+with our previous study and leads to a factor of <Math mode="inline" tex="\sim 2" text="absent similar-to 2" xml:id="S2.p2.m10">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> correction
+(as shown by the stars in Fig 2).</p>
+    </para>
+  </section>
+  <section refnum="3" xml:id="S3">
+    <title><tag close=" ">3</tag>Discussion</title>
+    <para xml:id="S3.p1">
+      <p>Most of the uncertainties discussed here seem to indicate that
+<Math mode="inline" tex="\Omega_{DLA}" text="Omega _ (D * L * A)" xml:id="S3.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">D</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">L</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">A</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> is being underestimated. At low redshift, Rao <Math mode="inline" tex="\&amp;" text="and" xml:id="S3.p1.m2">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math>
+Turnshek 1999 used a different method (based on the observations of
+Lyman-<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.p1.m3">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> in identified Mg II systems) and HST data to derive a
+higher neutral gas content in DLAs (Fig 2). These results are
+surprisingly high and might be due to low number statistics or might
+<!--  %**** peroux-c.tex Line 200 **** -->indicate that high redshift results are underestimated. More
+uncertainties arise in the fact that dust is likely to produce
+observational biases unaccounted for here and that the exact nature of
+DLAs is unknown. In particular, they might be different types of
+object at different redshift. Finally, higher resolution data are
+necessary in order to identify multiple systems.
+<break/>Several groups (Kauffmann <Math mode="inline" tex="\&amp;" text="and" xml:id="S3.p1.m4">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math> Haehnelt 2000, Somerville, Primack <Math mode="inline" tex="\&amp;" text="and" xml:id="S3.p1.m5">
+          <XMath>
+            <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+          </XMath>
+        </Math>
+Faber 2000) have included more realistic physics in their simulations
+to construct semi-analytical models of galaxy formation which, among
+other things, predict the evolution of cold gas in the Universe. The
+models presented in Fig 2 vary in their recipe for star formation: it
+is triggered by galaxy-galaxy mergers in the collisional starburst
+model, constant with redshift in the constant efficiency model, and
+scales inversely with disc dynamical time in the accelerated
+efficiency model. Our observational results can thus be used to
+directly constrain theories of galaxy evolution.
+<break/>We would like to thank Isobel Hook for help in acquiring the data. CP
+is grateful to Max Pettini and the organisers for help with a very
+enjoyable conference.</p>
+    </para>
+  </section>
+  <bibliography xml:id="bib">
+    <title>References</title>
+    <biblist>
+      <bibitem xml:id="bib.bibx1">
+        <bibtag role="refnum"/>
+        <bibblock> Djorgovski’s www page at
+<!--  %**** peroux-c.tex Line 225 **** -->http://astro.caltech.edu/<Math mode="inline" tex="\sim" text="similar-to" xml:id="bib.bibx1.m1">
+            <XMath>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            </XMath>
+          </Math>george/z4.qsos
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx2">
+        <bibtag role="refnum"/>
+        <bibblock> Gnedin, N. <Math mode="inline" tex="\&amp;" text="and" xml:id="bib.bibx2.m1">
+            <XMath>
+              <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+            </XMath>
+          </Math> Ostriker, J., 1992, ApJ, 400, 1.
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx3">
+        <bibtag role="refnum"/>
+        <bibblock> Fan, X. et al. 2000, in press, <text font="bold">astro-ph/0005414</text>.
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx4">
+        <bibtag role="refnum"/>
+        <bibblock> Fan, X. et al. 1999 ApJ, 118, 1.
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx5">
+        <bibtag role="refnum"/>
+        <bibblock> Fukugita, M., Hogan, C. <Math mode="inline" tex="\&amp;" text="and" xml:id="bib.bibx5.m1">
+            <XMath>
+              <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+            </XMath>
+          </Math> Peebles, P. 1998, ApJ, 503,
+518.
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx6">
+        <bibtag role="refnum"/>
+        <bibblock> Kauffmann, G. &amp; Haehnelt, M. 2000, MNRAS, 311, 576.
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx7">
+        <bibtag role="refnum"/>
+        <bibblock> Kennefick, J., De Carvalho, R., Djorgovski, G., Wilber,
+M., Dickson, E., &amp; Weir, N. 1995, ApJ, 110, 78.
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx8">
+        <bibtag role="refnum"/>
+        <bibblock> Kennefick, J., Djorgovski, S. <Math mode="inline" tex="\&amp;" text="and" xml:id="bib.bibx8.m1">
+            <XMath>
+              <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+            </XMath>
+          </Math> De Carvalho, R. 1995,
+ApJ, 100, 2553.
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx9">
+        <bibtag role="refnum"/>
+        <bibblock> Natarajan, P. <Math mode="inline" tex="\&amp;" text="and" xml:id="bib.bibx9.m1">
+            <XMath>
+              <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+            </XMath>
+          </Math> Pettini, M. 1997, MNRAS, 291, L28.
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx10">
+        <bibtag role="refnum"/>
+        <bibblock> Peroux, C., Storrie-Lombardi, L., McMahon, R. <Math mode="inline" tex="\&amp;" text="and" xml:id="bib.bibx10.m1">
+            <XMath>
+              <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+            </XMath>
+          </Math> Irwin,
+M. 2000, <text font="italic">in preparation</text>.
+<!--  %“bibitem[]–˝ Petitjean, P., Webb, J., Rauch, M., Carswell, R. $“&amp;$ 
+     %Lanzetta, K. 1993, MNRAS 262, 499.--></bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx11">
+        <bibtag role="refnum"/>
+        <bibblock> Rao, S. <Math mode="inline" tex="\&amp;" text="and" xml:id="bib.bibx11.m1">
+            <XMath>
+              <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+            </XMath>
+          </Math> Briggs, F. 1993, ApJ, 419, 515.
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx12">
+        <bibtag role="refnum"/>
+        <bibblock> Rao, S. <Math mode="inline" tex="\&amp;" text="and" xml:id="bib.bibx12.m1">
+            <XMath>
+              <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+            </XMath>
+          </Math> Turnshek, D. 2000, ApJS, in press, <text font="bold">astro-ph/9909164</text>.
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx13">
+        <bibtag role="refnum"/>
+        <bibblock> Somerville, R., Primack, J. <Math mode="inline" tex="\&amp;" text="and" xml:id="bib.bibx13.m1">
+            <XMath>
+              <XMTok meaning="and" role="ADDOP">&amp;</XMTok>
+            </XMath>
+          </Math> Faber, S. 2000, MNRAS,
+in press, <text font="bold">astro-ph/0006364</text>.
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx14">
+        <bibtag role="refnum"/>
+        <bibblock> Storrie-Lombardi, L., McMahon, R., &amp; Irwin, M. 1996,
+MNRAS, 283, L79.
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx15">
+        <bibtag role="refnum"/>
+        <bibblock> Storrie-Lombardi, L., Irwin, M., McMahon, R., &amp; Hook,
+I., 2000, <text font="italic">in preparation</text>.
+<!--  %**** peroux-c.tex Line 250 **** --></bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx16">
+        <bibtag role="refnum"/>
+        <bibblock> Storrie-Lombardi, L. &amp; Wolfe, A. 2000, ApJ, in press,
+<text font="bold">astro-ph/0006044</text>.
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx17">
+        <bibtag role="refnum"/>
+        <bibblock> Wolfe, A., Turnshek, D., Smith, H.&amp; Cohen, R. 1986,
+ApJS, 61, 249.
+</bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+</document>

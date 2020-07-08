@@ -1,0 +1,3202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008019.1"?>
+<!--  %“def“approxgt–“mathrel–“hbox–“rlap–“lower .5ex “hbox –$“sim$˝˝ --><!--  %“raise .15 ex “hbox–$¿$˝˝˝˝ --><!--  %one space --><!--  %two spaces --><!--  %three --><!--  %four --><!--  %Simple units --><!--  %**** wilman.tex Line 50 **** --><!--  %Compound units --><!--  %**** wilman.tex Line 75 **** --><!--  %**** wilman.tex Line 100 **** --><!--  %“documentstyle[psfig,referee]–mn˝ --><?latexml class="mn" options="psfig" oldstyle="true"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML" class="ltx_authors_1line">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>A physical model for the hard X-ray background</title>
+  <creator role="author">
+    <personname><inline-block class="ltx_parbox" vattach="middle" width="433.6pt">
+        <p>R.J. Wilman<Math mode="inline" tex="{}^{1}" text="^1" xml:id="m1">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="5">
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>, A.C. Fabian<Math mode="inline" tex="{}^{1}" text="^1" xml:id="m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="5">
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> and P.E.J. Nulsen<Math mode="inline" tex="{}^{2}" text="^2" xml:id="m3">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="5">
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMath>
+          </Math></p>
+        <p><text fontsize="80%">1. Institute of Astronomy, Madingley Road, Cambridge CB3 0HA</text></p>
+        <p><text fontsize="80%">2. University of Wollongong, Wollongong NSW 2522, Australia</text></p>
+      </inline-block></personname>
+  </creator>
+  <abstract name="Abstract">
+<!--  %**** wilman.tex Line 125 **** -->    <p>We combine a semi-analytic galaxy formation model (Nulsen &amp; Fabian 1997) with a prescription for the obscured growth of massive black holes (Nulsen &amp; Fabian 2000; Fabian 1999), to reproduce the hard X-ray background (XRB), the local 2–10 keV AGN luminosity function and the source counts, including recent <text font="italic">Chandra</text> results. The model also complies with constraints on the AGN contribution to the far-infrared and sub-mm backgrounds.</p>
+    <p>The co-moving density of luminous AGN (<Math mode="inline" tex="L(2-10{\rm\thinspace keV})&gt;10^{44}" text="L * (2 - 10 * keV) &gt; 10 ^ 44" xml:id="m4">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">L</XMTok>
+              <XMDual>
+                <XMRef idref="m4.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="m4.1">
+                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok meaning="2" role="NUMBER">2</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok meaning="10" role="NUMBER" rpadding="1.7pt">10</XMTok>
+                      <XMTok role="UNKNOWN">keV</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="44" role="NUMBER">44</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math><Math mode="inline" tex="{\rm\thinspace erg}{\rm\thinspace s}^{-1}\," text="erg * s ^ (- 1)" xml:id="m5">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMTok lpadding="1.7pt" role="UNKNOWN" rpadding="1.7pt">erg</XMTok>
+            <XMApp rpadding="1.7pt">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post5"/>
+              <XMTok role="UNKNOWN">s</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>, in the unabsorbed rest-frame) in the model declines sharply since <Math mode="inline" tex="z=2" text="z = 2" xml:id="m6">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok font="italic" role="UNKNOWN">z</XMTok>
+            <XMTok meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>, mimicking the observed evolution of the quasar population. The abundance of lower luminosity AGN simultaneously increases, and we identify such objects with the Seyfert galaxies. These features reflect an epoch-dependent rate of Bondi accretion from the hot, cooling atmosphere: at <Math mode="inline" tex="z&lt;2.5" text="z less 2.5" xml:id="m7">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+            <XMTok font="italic" role="UNKNOWN">z</XMTok>
+            <XMTok meaning="2.5" role="NUMBER">2.5</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> most AGN are fed at much less than 10 per cent of the Eddington rate, whilst at <Math mode="inline" tex="z&gt;2.5" text="z &gt; 2.5" xml:id="m8">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+            <XMTok font="italic" role="UNKNOWN">z</XMTok>
+            <XMTok meaning="2.5" role="NUMBER">2.5</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> most accrete at 10–50 per cent Eddington. Unlike other models for quasar and galaxy formation, we do not consider major mergers between normal galaxies.</p>
+    <p>The model produces an excess soft XRB below 4 keV which can be removed by modifying the wind expulsion model of Fabian (1999) to incorporate anisotropic ejection.</p>
+  </abstract>
+  <classification scheme="keywords">
+galaxies:active – quasars:general – galaxies:Seyfert – infrared:galaxies – X-rays:general
+</classification>
+  <section refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>INTRODUCTION</title>
+    <para xml:id="S1.p1">
+      <p>Since the discovery of the cosmic X-ray background (XRB) by Giacconi et al. (1962), almost every class of astronomical X-ray source has at some stage been invoked to account for it. The present consensus is that it represents the emission from active galactic nuclei (AGN) integrated over cosmic time; in the soft 0.5–2.0 keV band, deep <text font="italic">ROSAT</text> surveys have established that the bulk of it is due to broad line AGN i.e. quasars and Seyfert 1 galaxies (Hasinger et al. 1998; Schmidt et al. 1998), but the situation in the harder 2–10 keV band is quite different. No more than 30 per cent of it was resolved by the <text font="italic">ASCA</text> and <text font="italic">BeppoSAX</text> satellites, with the optical identifications being a mixture of quasars and narrow emission-line galaxies (Boyle et al. 1998, Ueda et al. 1999 and Akiyama et al. 2000; Fiore et al. 1999). Since the realisation by Setti &amp; Woltjer (1989) that the flat spectrum of the 2–10 keV XRB implies considerable absorption in most objects, many workers have constructed AGN synthesis models to account for the remainder of the hard XRB (see e.g. Madau, Ghisellini &amp; Fabian 1994; Comastri et al. 1995; Wilman &amp; Fabian 1999). Fabian &amp; Iwasawa (1999) emphasised the importance of the XRB as a probe of the cosmological evolution of the black hole population, by demonstrating that the XRB sources plausibly account for all of the accretion power in the Universe and that most of it is intrinsically absorbed.</p>
+    </para>
+    <para xml:id="S1.p2">
+      <p>With the advent of the <text font="italic">Chandra</text> and <text font="italic">XMM</text> telescopes, the predictions of these models for the 2–10 keV source counts below fluxes of <Math mode="inline" tex="10^{-14}" text="10 ^ (- 14)" xml:id="S1.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="14" role="NUMBER">14</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="{\rm\thinspace erg}{\rm\thinspace cm}^{-2}{\rm\thinspace s}^{-1}\," text="erg * cm ^ (- 2) * s ^ (- 1)" xml:id="S1.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok lpadding="1.7pt" role="UNKNOWN" rpadding="1.7pt">erg</XMTok>
+              <XMApp rpadding="1.7pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok role="UNKNOWN">cm</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp rpadding="1.7pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok role="UNKNOWN">s</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> are now being tested. Mushotzky et al. (2000) recently reported the results of an extremely deep <text font="italic">Chandra</text> observation with which they determined the source counts down to <Math mode="inline" tex="4\times 10^{-15}" text="4 * 10 ^ (- 15)" xml:id="S1.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+              <XMTok meaning="4" role="NUMBER">4</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="15" role="NUMBER">15</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="{\rm\thinspace erg}{\rm\thinspace cm}^{-2}{\rm\thinspace s}^{-1}\," text="erg * cm ^ (- 2) * s ^ (- 1)" xml:id="S1.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok lpadding="1.7pt" role="UNKNOWN" rpadding="1.7pt">erg</XMTok>
+              <XMApp rpadding="1.7pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok role="UNKNOWN">cm</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp rpadding="1.7pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok role="UNKNOWN">s</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and thereby resolved essentially all of the XRB in this band (see also Brandt et al. 2000). But their optical follow-up campaign identified two new classes of object: (1) optically ‘faint’ objects (<Math mode="inline" tex="I\gg 23" text="I &gt;&gt; 23" xml:id="S1.p2.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="much-greater-than" name="gg" role="RELOP">≫</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="23" role="NUMBER">23</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag) which may be either the first quasars at very high redshifts or dust enshrouded AGN at redshifts <Math mode="inline" tex="z&gt;2" text="z &gt; 2" xml:id="S1.p2.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>; (2) point-like hard X-ray sources in the nuclei of apparently ‘normal’ bright galaxies showing no other signs of activity. In a related vein, Fabian et al. (2000) cross-correlated <text font="italic">Chandra</text> fields containing faint serendipitous sources with SCUBA sub-millimetre observations of the same lensing cluster fields; only one source is common to both datasets, suggesting that if the SCUBA sources do host powerful AGN, they must either contribute a small fraction of the sub-mm power, or be Compton-thick with X-ray scattering fractions of less than 1 per cent. This result was confirmed by Hornschemeier et al. (2000), who detected none of the 10 sub-mm sources in and around the Hubble Deep Field North in a 166-ks <text font="italic">Chandra</text> exposure. We stress, however, that <text font="italic">Chandra</text> has so far resolved the bulk of the XRB in the 2–7 keV band, which is mainly due to Compton-thin sources; forthcoming deep surveys with <text font="italic">XMM</text> will shed light on the more heavily obscured sources which are likely to contribute up to 15 keV, but the bulk of the energy density of the XRB at <Math mode="inline" tex="\sim 30" text="absent similar-to 30" xml:id="S1.p2.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="30" role="NUMBER">30</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> keV– which is likely to be dominated by Compton-thick sources– will not be resolved until <text font="italic">Constellation-X</text> is in flight (see e.g. Valinia et al. 1999).</p>
+    </para>
+    <para xml:id="S1.p3">
+      <p>The findings of Mushotzky et al. (2000) and Fabian et al. (2000) demonstrate that the newly-discovered XRB sources may be quite different from established classes of AGN, such as the quasars and, at low redshift, the Seyfert galaxies. Indeed, Fabian (1999) has argued that the new XRB sources represent the hitherto unobserved phase associated with the major growth of massive black holes, whereas classical (optically-selected) quasars and Seyfert galaxies represent a later, transient phase during which the black hole acquires little additional mass. In his model for the formation of galactic bulges and central black holes, young spheroidal galaxies have a significant distributed component of cold dusty clouds which leads to absorption of X-rays from the accreting black hole. The accretion is terminated by wind-driven gas expulsion when the mass of the black hole reaches a critical fraction of that in the surrounding spheroid (see also Silk &amp; Rees 1998), thereby accounting for the observed correlation between the mass of the remnant black hole and its host spheroid (Magorrian et al. 1998; Van der Marel 1999). Following expulsion, the object shines briefly as an optically-selected quasar.</p>
+    </para>
+    <para xml:id="S1.p4">
+      <p>In this paper, we incorporate Fabian’s (1999) model for the obscured growth of massive black holes into the semi-analytic model for galaxy formation and quasar fuelling developed by Nulsen &amp; Fabian (1997, 2000) (hereafter NF97 and NF00). The result is a physical model for the XRB which works forward in cosmic time from the epoch when the first massive bound objects were forming, in contrast to the aforementioned synthesis models which start with the locally observed AGN luminosity functions and extrapolate them back to earlier epochs. We assume that quasars are fuelled by Bondi accretion from the dense, hot cooling atmospheres which form around collapsing objects about the size of normal galaxies. Earlier attempts to incorporate AGN into the framework of semi-analytic models were made by Kauffmann &amp; Haehnelt (2000) and Cattaneo (2000), but they assumed that black holes are fed by cold gas during major galaxy mergers and they did not use the XRB as a constraint.</p>
+    </para>
+  </section>
+  <section refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>DESCRIPTION OF THE MODEL</title>
+    <para xml:id="S2.p1">
+      <p>We use the semi-analytic galaxy formation model and associated scheme for quasar fuelling developed by NF97 and NF00, the salient features of which we outline here.</p>
+    </para>
+    <subsection refnum="2.1" xml:id="S2.SS1">
+      <title><tag close=" ">2.1</tag>Galaxy formation</title>
+      <para xml:id="S2.SS1.p1">
+        <p>The Cole &amp; Kaiser (1988) block model is used to simulate the hierarchical growth of clustering, while the behaviour of the gas in collapsed regions is simulated using the model of Nulsen &amp; Fabian (1995). In short, the gas in the collapsed halo is split into two regions, according to the value of <Math mode="inline" tex="\tau=t_{\rm{cool}}/t_{\rm{grav}}" text="tau = t _ cool / t _ grav" xml:id="S2.SS1.p1.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                <XMApp>
+                  <XMTok meaning="divide" role="MULOP">/</XMTok>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                    <XMTok fontsize="70%" role="UNKNOWN">cool</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                    <XMTok fontsize="70%" role="UNKNOWN">grav</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, the ratio of the cooling time of the gas to its free-fall time to the centre of the halo. Within a radius <Math mode="inline" tex="R=R_{\rm{CF}}" text="R = R _ CF" xml:id="S2.SS1.p1.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">CF</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> where <Math mode="inline" tex="\tau&lt;1" text="tau less 1" xml:id="S2.SS1.p1.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                <XMTok meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>, the gas cools rapidly and forms stars. Any gas at <Math mode="inline" tex="R&gt;R_{\rm{CF}}" text="R &gt; R _ CF" xml:id="S2.SS1.p1.m4">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">CF</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> has <Math mode="inline" tex="\tau&gt;1" text="tau &gt; 1" xml:id="S2.SS1.p1.m5">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+                <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                <XMTok meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> and is assumed to participate in a cooling flow (Fabian 1994). Collapses with and without the cooling flow atmosphere are identified as normal galaxies and dwarf galaxies, respectively.
+<!--  %**** wilman.tex Line 150 **** --></p>
+      </para>
+      <para xml:id="S2.SS1.p2">
+        <p>The burst of star formation in <Math mode="inline" tex="R&lt;R_{\rm{CF}}" text="R less R _ CF" xml:id="S2.SS1.p2.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">CF</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> leads quickly to supernovae, which can expel some or all of the remaining gas from the system; some gas is always expelled from dwarf galaxies, and in normal protogalaxies hot gas which is not ejected is heated and enriched by the supernovae. A normal galaxy is a spiral galaxy if the hot gas cools completely before the present or the next hierarchical collapse, otherwise it is an elliptical galaxy. Any collapse with at most one infalling normal galaxy forms a normal galaxy, so that dwarf galaxies are assumed to be destroyed in a collapse, with their stars contributing to the spheroid of the resulting system. A system containing more than one normal galaxy is assumed to form a group or cluster, as mergers between normal galaxies are ignored. Any collapse that is followed less than one dynamical time later by further collapse is ignored.</p>
+      </para>
+      <para xml:id="S2.SS1.p3">
+        <p>We use an open CDM cosmology, with <Math mode="inline" tex="H_{\rm{0}}=50" text="H _ 0 = 50" xml:id="S2.SS1.p3.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                  <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                </XMApp>
+                <XMTok meaning="50" role="NUMBER">50</XMTok>
+              </XMApp>
+            </XMath>
+          </Math><Math mode="inline" tex="\hbox{${\rm\thinspace km}{\rm\thinspace s}^{-1}\,$}{\rm\thinspace Mpc}^{-1}" text="km * s ^ (- 1) * Mpc ^ (- 1)" xml:id="S2.SS1.p3.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok lpadding="1.7pt" role="UNKNOWN" rpadding="1.7pt">km</XMTok>
+                <XMApp rpadding="1.7pt">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post7"/>
+                  <XMTok role="UNKNOWN">s</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                  <XMTok role="UNKNOWN">Mpc</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, density parameter <Math mode="inline" tex="\Omega=0.3" text="Omega = 0.3" xml:id="S2.SS1.p3.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+                <XMTok meaning="0.3" role="NUMBER">0.3</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>, baryon density parameter <Math mode="inline" tex="\Omega_{\rm{b}}=0.075" text="Omega _ b = 0.075" xml:id="S2.SS1.p3.m4">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">b</XMTok>
+                </XMApp>
+                <XMTok meaning="0.075" role="NUMBER">0.075</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> and <Math mode="inline" tex="\sigma_{8}=1" text="sigma _ 8 = 1" xml:id="S2.SS1.p3.m5">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                  <XMTok fontsize="70%" meaning="8" role="NUMBER">8</XMTok>
+                </XMApp>
+                <XMTok meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>.</p>
+      </para>
+    </subsection>
+    <subsection refnum="2.2" xml:id="S2.SS2">
+      <title><tag close=" ">2.2</tag>Quasars: fuelling, obscuration and demise</title>
+      <para xml:id="S2.SS2.p1">
+        <p>NF00 proposed that quasars are formed and fed largely by the accretion of hot gas from the atmospheres which form around normal galaxies. They showed that if such an atmosphere forms a nearly “maximal” cooling flow, then a central black hole can accrete at close to its Eddington limit, leading to the exponential growth of a seed black hole. They also incorporated this model into the above semi-analytic galaxy formation model, which we adopt here with some modifications.</p>
+      </para>
+      <para xml:id="S2.SS2.p2">
+        <p>Each of the smallest block model units has a mass of <Math mode="inline" tex="1.5\times 10^{10}" text="1.5 * 10 ^ 10" xml:id="S2.SS2.p2.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="1.5" role="NUMBER">1.5</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="10" role="NUMBER">10</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math><Math mode="inline" tex="\rm\thinspace M_{\odot}" text="M _ direct-product" xml:id="S2.SS2.p2.m2">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok lpadding="1.7pt" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>, and contains at its centre a seed black hole of mass <Math mode="inline" tex="M_{\rm{h(seed)}}" text="M _ (h * seed)" xml:id="S2.SS2.p2.m3">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+                  <XMDual>
+                    <XMRef idref="S2.SS2.p2.m3.1"/>
+                    <XMWrap>
+                      <XMTok fontsize="70%" role="OPEN" stretchy="false">(</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN" xml:id="S2.SS2.p2.m3.1">seed</XMTok>
+                      <XMTok fontsize="70%" role="CLOSE" stretchy="false">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>. When a block collapses, the black holes associated with all merging sub-blocks are assumed to merge into a single black hole. The resulting nuclear black hole grows exponentially by Bondi accretion from the cooling flow, on the timescale given by eqn. (8) of NF00. Whilst accreting in this manner, the black hole is assumed to radiate with an accretion efficiency of 10 per cent (i.e. <Math mode="inline" tex="L_{\rm{Bol}}=0.1\dot{M_{h}}c^{2}" text="L _ Bol = 0.1 * dot@(M _ h) * c ^ 2" xml:id="S2.SS2.p2.m4">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">Bol</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="0.1" role="NUMBER">0.1</XMTok>
+                  <XMApp>
+                    <XMTok name="dot" role="OVERACCENT">˙</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                      <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">h</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">c</XMTok>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, <Math mode="inline" tex="\dot{M_{h}}" text="dot@(M _ h)" xml:id="S2.SS2.p2.m5">
+            <XMath>
+              <XMApp>
+                <XMTok name="dot" role="OVERACCENT">˙</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                  <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">h</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> being the accretion rate), with an intrinsic 2–10 keV luminosity equal to 3 per cent of the bolometric one (as deduced from the work of Elvis et al. 1994). The intrinsic spectrum is taken to be a power-law of photon index <Math mode="inline" tex="\Gamma=1.9" text="Gamma = 1.9" xml:id="S2.SS2.p2.m6">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+                <XMTok meaning="1.9" role="NUMBER">1.9</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>, with an exponential cut-off at <Math mode="inline" tex="E_{\rm{c}}=360{\rm\thinspace keV}" text="E _ c = 360 * keV" xml:id="S2.SS2.p2.m7">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">E</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">c</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="360" role="NUMBER" rpadding="1.7pt">360</XMTok>
+                  <XMTok role="UNKNOWN">keV</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>; for objects with <Math mode="inline" tex="L(2-10{\rm\thinspace keV})&lt;10^{44}" text="L * (2 - 10 * keV) less 10 ^ 44" xml:id="S2.SS2.p2.m8">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                  <XMDual>
+                    <XMRef idref="S2.SS2.p2.m8.1"/>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="false">(</XMTok>
+                      <XMApp xml:id="S2.SS2.p2.m8.1">
+                        <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                        <XMTok meaning="2" role="NUMBER">2</XMTok>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok meaning="10" role="NUMBER" rpadding="1.7pt">10</XMTok>
+                          <XMTok role="UNKNOWN">keV</XMTok>
+                        </XMApp>
+                      </XMApp>
+                      <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="44" role="NUMBER">44</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math><Math mode="inline" tex="{\rm\thinspace erg}{\rm\thinspace s}^{-1}\," text="erg * s ^ (- 1)" xml:id="S2.SS2.p2.m9">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok lpadding="1.7pt" role="UNKNOWN" rpadding="1.7pt">erg</XMTok>
+                <XMApp rpadding="1.7pt">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                  <XMTok role="UNKNOWN">s</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, we added to this a component reflected from a cold accretion disc subtending <Math mode="inline" tex="2\pi{\rm\thinspace sr}" text="2 * pi * sr" xml:id="S2.SS2.p2.m10">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                <XMTok font="italic" name="pi" role="UNKNOWN" rpadding="1.7pt">π</XMTok>
+                <XMTok role="UNKNOWN">sr</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> at the source, for a fixed inclination angle of <Math mode="inline" tex="60^{\circ}" text="60 ^ compose" xml:id="S2.SS2.p2.m11">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="60" role="NUMBER">60</XMTok>
+                <XMTok fontsize="70%" meaning="compose" name="circ" role="MULOP">∘</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>. More powerful objects (i.e. quasars, rather than Seyfert galaxies) are not observed to exhibit such reflection components, perhaps because the accretion disc is ionized (see Reeves &amp; Turner 2000 and references therein).</p>
+      </para>
+      <para xml:id="S2.SS2.p3">
+        <p>The above intrinsic spectrum is then absorbed by the cold, dusty clouds deposited by the cooling flow, as suggested by Fabian (1999). He showed that for a density distribution of cooled gas <Math mode="inline" tex="\rho\propto r^{-2}" text="rho proportional-to r ^ (- 2)" xml:id="S2.SS2.p3.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="proportional-to" name="propto" role="RELOP">∝</XMTok>
+                <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, the column density presented by such material exterior to a radius <Math mode="inline" tex="r_{\rm{in}}" text="r _ in" xml:id="S2.SS2.p3.m2">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">in</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> is given by:</p>
+        <equation frefnum="(1)" refnum="1" xml:id="S2.E1">
+          <Math mode="display" tex="N_{\rm{H}}=\frac{v^{2}f}{2\pi Gm_{\rm{p}}r_{\rm{in}}}" text="N _ H = (v ^ 2 * f) / (2 * pi * G * m _ p * r _ in)" xml:id="S2.E1.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">H</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                      <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="2" role="NUMBER">2</XMTok>
+                    <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">G</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                      <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">p</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                      <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">in</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>
+        </equation>
+        <p>where <Math mode="inline" tex="f" text="f" xml:id="S2.SS2.p3.m3">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">f</XMTok>
+            </XMath>
+          </Math> is the mass fraction in cold clouds and <Math mode="inline" tex="v" text="v" xml:id="S2.SS2.p3.m4">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">v</XMTok>
+            </XMath>
+          </Math> the line of sight velocity dispersion of the isothermal spheroid. For <Math mode="inline" tex="r_{\rm{in}}" text="r _ in" xml:id="S2.SS2.p3.m5">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">in</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> we take the radius <Math mode="inline" tex="r_{\rm{x}}" text="r _ x" xml:id="S2.SS2.p3.m6">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">x</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> at which the Bondi solution takes over from the cooling flow, given by NF00 as:</p>
+        <equation frefnum="(2)" refnum="2" xml:id="S2.E2">
+          <Math mode="display" tex="r_{\rm{x}}=\frac{GM_{\rm{h}}}{2s_{\rm{i}}^{2}{\cal M}_{\rm{i}}^{1/2}}" text="r _ x = (G * M _ h) / (2 * (s _ i) ^ 2 * (M _ i) ^ (1 / 2))" xml:id="S2.E2.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">x</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">G</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                      <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="2" role="NUMBER">2</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                        <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                        <XMTok fontsize="70%" role="UNKNOWN">i</XMTok>
+                      </XMApp>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                        <XMTok font="caligraphic" role="UNKNOWN">M</XMTok>
+                        <XMTok fontsize="70%" role="UNKNOWN">i</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                        <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>
+        </equation>
+        <p>where <Math mode="inline" tex="M_{\rm{h}}" text="M _ h" xml:id="S2.SS2.p3.m7">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> is the mass of the black hole, <Math mode="inline" tex="{\cal M}_{\rm{i}}" text="M _ i" xml:id="S2.SS2.p3.m8">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="caligraphic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">i</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> the Mach number of the cooling flow and <Math mode="inline" tex="s_{\rm{i}}" text="s _ i" xml:id="S2.SS2.p3.m9">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">i</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> the adiabatic sound speed at large <Math mode="inline" tex="r" text="r" xml:id="S2.SS2.p3.m10">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">r</XMTok>
+            </XMath>
+          </Math>. Within <Math mode="inline" tex="r_{\rm{x}}" text="r _ x" xml:id="S2.SS2.p3.m11">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">x</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> the flow comes under the influence of the black hole and the flow time (in to the black hole) becomes negligible compared with the cooling time of the gas, so there is effectively no further cooling. Using eqns. (1) and (2), <Math mode="inline" tex="s_{\rm{i}}^{2}=2\gamma v^{2}" text="(s _ i) ^ 2 = 2 * gamma * v ^ 2" xml:id="S2.SS2.p3.m12">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">s</XMTok>
+                    <XMTok fontsize="70%" role="UNKNOWN">i</XMTok>
+                  </XMApp>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="2" role="NUMBER">2</XMTok>
+                  <XMTok font="italic" name="gamma" role="UNKNOWN">γ</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> for an isothermal cooling flow (hereafter CF) (with <Math mode="inline" tex="\gamma=5/3" text="gamma = 5 / 3" xml:id="S2.SS2.p3.m13">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" name="gamma" role="UNKNOWN">γ</XMTok>
+                <XMApp>
+                  <XMTok meaning="divide" role="MULOP">/</XMTok>
+                  <XMTok meaning="5" role="NUMBER">5</XMTok>
+                  <XMTok meaning="3" role="NUMBER">3</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>), the normalization adopted by Fabian (1999) for the Faber-Jackson relation between <Math mode="inline" tex="v" text="v" xml:id="S2.SS2.p3.m14">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">v</XMTok>
+            </XMath>
+          </Math> and the mass of the host spheroid <Math mode="inline" tex="M_{\rm{sph}}" text="M _ sph" xml:id="S2.SS2.p3.m15">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">sph</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> (<Math mode="inline" tex="\propto v^{4}" text="absent proportional-to v ^ 4" xml:id="S2.SS2.p3.m16">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="proportional-to" name="propto" role="RELOP">∝</XMTok>
+                <XMTok meaning="absent"/>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                  <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>), and a hydrogen mass fraction of <Math mode="inline" tex="X=0.75" text="X = 0.75" xml:id="S2.SS2.p3.m17">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">X</XMTok>
+                <XMTok meaning="0.75" role="NUMBER">0.75</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>, we find the following expression linking the obscuring column density to the instantaneous mass of the accreting black hole, <Math mode="inline" tex="M_{\rm{h}}" text="M _ h" xml:id="S2.SS2.p3.m18">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>:</p>
+        <equation frefnum="(3)" refnum="3" xml:id="S2.E3">
+          <Math mode="display" tex="N_{\rm{H}}=0.042f{\cal M}_{\rm{i}}^{1/2}\frac{M_{\rm{sph}}}{M_{\rm{h}}}N_{\rm{%&#10;T}}" text="N _ H = 0.042 * f * (M _ i) ^ (1 / 2) * (M _ sph / M _ h) * N _ T" xml:id="S2.E3.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">H</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="0.042" role="NUMBER">0.042</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                      <XMTok font="caligraphic" role="UNKNOWN">M</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">i</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                      <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">sph</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                      <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                    <XMTok fontsize="70%" role="UNKNOWN">T</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>
+        </equation>
+        <p>where the time dependence of <Math mode="inline" tex="{\cal M}_{\rm{i}}" text="M _ i" xml:id="S2.SS2.p3.m19">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="caligraphic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">i</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> may be taken from eqn. (12) of NF00 and <Math mode="inline" tex="1/N_{\rm{T}}=8.07\times 10^{-25}" text="1 / N _ T = 8.07 * 10 ^ (- 25)" xml:id="S2.SS2.p3.m20">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok meaning="divide" role="MULOP">/</XMTok>
+                  <XMTok meaning="1" role="NUMBER">1</XMTok>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                    <XMTok fontsize="70%" role="UNKNOWN">T</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">×</XMTok>
+                  <XMTok meaning="8.07" role="NUMBER">8.07</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="25" role="NUMBER">25</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>cm<Math mode="inline" tex="{}^{2}" text="^2" xml:id="S2.SS2.p3.m21">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> is the Thomson electron scattering cross-section per hydrogen atom. The obscuration therefore diminishes as the black hole grows. We make use of the Monte Carlo simulations of Wilman &amp; Fabian (1999) to compute the X-ray spectrum transmitted through a sphere of absorbing material of thickness <Math mode="inline" tex="N_{\rm{H}}" text="N _ H" xml:id="S2.SS2.p3.m22">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>. Both photoelectric absorption from neutral material and Compton down-scattering are modelled, the latter being described by the Klein-Nishina cross-section. We use an iron abundance of 5 times the solar value, after Wilman &amp; Fabian (1999) demonstrated that this leads to better fits to the XRB spectrum and creates additional parameter space. The value of <Math mode="inline" tex="M_{\rm{sph}}" text="M _ sph" xml:id="S2.SS2.p3.m23">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">sph</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> used in eqn. (3) is fixed prior to the onset of the accretion – i.e. we neglect any contribution from baryonic dark matter deposited by the cooling flow during the accretion.</p>
+      </para>
+      <para xml:id="S2.SS2.p4">
+        <p>There are three ways in which the growth of the black hole can be arrested: (i) exhaustion of the hot gas supply; (ii) participation in a new collapse; (iii) the black hole mass could reach a critical fraction of that of the surrounding spheroid, such that the wind which it drives is able to expel the remaining gas, as proposed by Fabian (1999). He showed that for reasonable wind parameters, this can be made to happen when <Math mode="inline" tex="M_{\rm{h}}=M_{\rm{h}(crit)}=0.005M_{\rm{sph}}" text="M _ h = M _ (h * crit) = 0.005 * M _ sph" xml:id="S2.SS2.p4.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="multirelation"/>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+                </XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+                    <XMDual>
+                      <XMRef idref="S2.SS2.p4.m1.1"/>
+                      <XMWrap>
+                        <XMTok fontsize="70%" role="OPEN" stretchy="false">(</XMTok>
+                        <XMTok fontsize="70%" role="UNKNOWN" xml:id="S2.SS2.p4.m1.1">crit</XMTok>
+                        <XMTok fontsize="70%" role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                </XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="0.005" role="NUMBER">0.005</XMTok>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                    <XMTok fontsize="70%" role="UNKNOWN">sph</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, in agreement with the findings of Magorrian et al. (1998) from the demographics of remnant supermassive black holes in nearby galaxies. Moreover, the model predicts that <Math mode="inline" tex="M_{\rm{h}}\propto v^{4}" text="M _ h proportional-to v ^ 4" xml:id="S2.SS2.p4.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="proportional-to" name="propto" role="RELOP">∝</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                  <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, in accord with the recent findings of Gebhardt et al. (2000). Following this expulsion, the black hole is assumed to shine as an unobscured, optically-selected, quasar for a time <Math mode="inline" tex="\Delta t_{\rm{qso}}" text="Delta * t _ qso" xml:id="S2.SS2.p4.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">qso</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> (or until the next collapse if that happens sooner), with a constant luminosity equal to that immediately prior to expulsion. Unlike NF00, we do not assume that objects make a transition to an advection dominated (ADAF) phase when the accretion rate drops below a critical value.
+<!--  %**** wilman.tex Line 175 **** --></p>
+      </para>
+      <para xml:id="S2.SS2.p5">
+        <p>In the next section we investigate the consequences of the model for the X-ray background and the quasar population, but before doing so we point out its deficiencies. Firstly, the Cole &amp; Kaiser (1988) block has the drawback that halo masses always grow in discrete steps by factors of 2. As Somerville &amp; Kolatt (1999) mention, this is problematic for semi-analytic galaxy formation modelling where one would like to follow individual systems with higher resolution; they propose a merger tree formalism which overcomes this and other difficulties, but for simplicity we do not use it here. There are also complications in the fuelling and obscuration model, related to the effect of the cold clouds on the structure of the CF. These depend upon whether the cold clouds rapidly decouple from the flow (as assumed here and in NF00) or remain tied to it, by e.g. magnetic fields (see e.g. Nulsen 1986). In the latter case, the cold clouds increase the total gas density but it is the <text font="italic">hot phase alone</text> which provides the pressure to support the flow against gravity and maintain approximate hydrostatic equilibrium; as a result, the accretion rate can be significantly higher than that given by eqn. (A9) of NF00. Our parameterisation of the obscuration in terms of a constant <Math mode="inline" tex="f" text="f" xml:id="S2.SS2.p5.m1">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">f</XMTok>
+            </XMath>
+          </Math>, the mass fraction in cold clouds, is also quite simplistic. In practice <Math mode="inline" tex="f" text="f" xml:id="S2.SS2.p5.m2">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">f</XMTok>
+            </XMath>
+          </Math> is likely to be a function of time, with the obscuration being determined by a competition between the amount of cold material deposited by the CF and the position of the black hole accretion radius (<Math mode="inline" tex="\propto M_{\rm{h}}" text="absent proportional-to M _ h" xml:id="S2.SS2.p5.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="proportional-to" name="propto" role="RELOP">∝</XMTok>
+                <XMTok meaning="absent"/>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>; see eqn. (2)). Such non-trivial refinements to the model will be addressed in a later paper, but for now it is sufficient to note that our current treatment is likely to be accurate at the most important time, during the last black hole doubling time when the quasar is at its most powerful and the obscuration smallest (i.e. immediately prior to expulsion).</p>
+      </para>
+    </subsection>
+  </section>
+  <section refnum="3" xml:id="S3">
+    <title><tag close=" ">3</tag>RESULTS</title>
+    <para xml:id="S3.p1">
+      <p>To demonstrate that the model works satisfactorily, we present results for a run comprising 60 iterations of the block model with the following parameter values: <Math mode="inline" tex="M_{\rm{h(seed)}}=1.6\times 10^{6}" text="M _ (h * seed) = 1.6 * 10 ^ 6" xml:id="S3.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+                  <XMDual>
+                    <XMRef idref="S3.p1.m1.1"/>
+                    <XMWrap>
+                      <XMTok fontsize="70%" role="OPEN" stretchy="false">(</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN" xml:id="S3.p1.m1.1">seed</XMTok>
+                      <XMTok fontsize="70%" role="CLOSE" stretchy="false">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="1.6" role="NUMBER">1.6</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="\rm\thinspace M_{\odot}" text="M _ direct-product" xml:id="S3.p1.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok lpadding="1.7pt" role="UNKNOWN">M</XMTok>
+              <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, <Math mode="inline" tex="f=0.37" text="f = 0.37" xml:id="S3.p1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">f</XMTok>
+              <XMTok meaning="0.37" role="NUMBER">0.37</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="\Delta t_{\rm{qso}}=9\times 10^{7}" text="Delta * t _ qso = 9 * 10 ^ 7" xml:id="S3.p1.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">qso</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="9" role="NUMBER">9</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> yr. At present, we leave <Math mode="inline" tex="M_{\rm{h}(crit)}/M_{\rm{sph}}" text="M _ (h * crit) / M _ sph" xml:id="S3.p1.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="divide" role="MULOP">/</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+                  <XMDual>
+                    <XMRef idref="S3.p1.m5.1"/>
+                    <XMWrap>
+                      <XMTok fontsize="70%" role="OPEN" stretchy="false">(</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN" xml:id="S3.p1.m5.1">crit</XMTok>
+                      <XMTok fontsize="70%" role="CLOSE" stretchy="false">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">sph</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> at the Magorrian et al. (1998) value of 0.005, despite more recent work suggesting that the true figure may be closer to 0.003 (see e.g. van der Marel 1999). With the exception of <Math mode="inline" tex="\Delta t_{\rm{qso}}" text="Delta * t _ qso" xml:id="S3.p1.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">qso</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> (see discussion in section 4), the numerical values of these parameters accord well with those suggested by Fabian (1999).</p>
+    </para>
+    <para xml:id="S3.p2">
+      <p>Fig. <ref labelref="LABEL:fig:spec1"/> shows the XRB spectrum generated by this model. The soft excess below 4 keV can easily be removed by the introduction of some moderate absorption (<Math mode="inline" tex="N_{\rm{H}}\sim 10^{22-23}" text="N _ H similar-to 10 ^ (22 - 23)" xml:id="S3.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="22" role="NUMBER">22</XMTok>
+                  <XMTok fontsize="70%" meaning="23" role="NUMBER">23</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="{\rm\thinspace cm}^{-2}\," text="cm ^ (- 2)" xml:id="S3.p2.m2">
+          <XMath>
+            <XMApp rpadding="1.7pt">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+              <XMTok lpadding="1.7pt" role="UNKNOWN">cm</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) into the spectra of some of the (currently unobscured) objects: e.g. the figure demonstrates that this can be effected by obscuring 70 per cent of the unobscured sources by <Math mode="inline" tex="N_{\rm{H}}=10^{22.75}" text="N _ H = 10 ^ 22.75" xml:id="S3.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="22.75" role="NUMBER">22.75</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="{\rm\thinspace cm}^{-2}\," text="cm ^ (- 2)" xml:id="S3.p2.m4">
+          <XMath>
+            <XMApp rpadding="1.7pt">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+              <XMTok lpadding="1.7pt" role="UNKNOWN">cm</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> (for all luminosities). Wind expulsion is likely to be a gradual and/or anisotropic process, with the quasar passing through an intermediate phase between the extremes of being Compton-thick and totally unobscured, as discussed in section 4.</p>
+    </para>
+    <figure frefnum="Figure 1" labels="LABEL:fig:spec1" refnum="1" xml:id="S3.F1">
+      <graphics candidates="fig1.ps" graphic="fig1.ps" options="figure=fig1.ps, width=208.1376pt, angle=270" xml:id="S3.F1.g1"/>
+      <toccaption><tag close=" ">1</tag>The upper dashed line shows the XRB spectrum generated by the model of section 3, with the contributions of obscured and unobscured active nuclei indicated by the dot-dashed and dotted lines, respectively. The solid line is the analytical fit of Gruber (1992) to the observed XRB spectrum. The lower dashed line shows the effect of introducing <Math mode="inline" tex="N_{\rm{H}}=10^{22.75}" text="N _ H = 10 ^ 22.75" xml:id="S3.F1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="22.75" role="NUMBER">22.75</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="{\rm\thinspace cm}^{-2}\," text="cm ^ (- 2)" xml:id="S3.F1.m2">
+          <XMath>
+            <XMApp rpadding="1.7pt">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post6"/>
+              <XMTok lpadding="1.7pt" role="UNKNOWN">cm</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> of absorption into 70 per cent of the previously unobscured AGN spectra (for all luminosities).</toccaption>
+      <caption><tag close=": ">Figure 1</tag>The upper dashed line shows the XRB spectrum generated by the model of section 3, with the contributions of obscured and unobscured active nuclei indicated by the dot-dashed and dotted lines, respectively. The solid line is the analytical fit of Gruber (1992) to the observed XRB spectrum. The lower dashed line shows the effect of introducing <Math mode="inline" tex="N_{\rm{H}}=10^{22.75}" text="N _ H = 10 ^ 22.75" xml:id="S3.F1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="22.75" role="NUMBER">22.75</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="{\rm\thinspace cm}^{-2}\," text="cm ^ (- 2)" xml:id="S3.F1.m4">
+          <XMath>
+            <XMApp rpadding="1.7pt">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post6"/>
+              <XMTok lpadding="1.7pt" role="UNKNOWN">cm</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> of absorption into 70 per cent of the previously unobscured AGN spectra (for all luminosities).</caption>
+    </figure>
+    <figure frefnum="Figure 2" labels="LABEL:fig:xlf1" refnum="2" xml:id="S3.F2">
+      <graphics candidates="fig2.ps" graphic="fig2.ps" options="figure=fig2.ps, width=208.1376pt, angle=270" xml:id="S3.F2.g1"/>
+      <toccaption><tag close=" ">2</tag>2–10 keV (in the observed frame) luminosity functions generated by the model of section 3, at redshifts 0.2 (solid line), 0.5 (dashed) and 1 (dotted) in the upper panel, and at redshifts 2 (solid), 3 (dashed) and 4 (dotted) in the lower panel. The filled stars in the upper panel represent the <Math mode="inline" tex="z=0" text="z = 0" xml:id="S3.F2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> Type 1 + Type 2 AGN XLF derived by Boyle et al. (1998) using a maximum-likelihood analysis of <text font="italic">ASCA</text> and <text font="italic">HEAO-A1</text> data (but for a <Math mode="inline" tex="q_{\rm{0}}=0.5" text="q _ 0 = 0.5" xml:id="S3.F2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" role="UNKNOWN">q</XMTok>
+                <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+              </XMApp>
+              <XMTok meaning="0.5" role="NUMBER">0.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cosmology).</toccaption>
+      <caption><tag close=": ">Figure 2</tag>2–10 keV (in the observed frame) luminosity functions generated by the model of section 3, at redshifts 0.2 (solid line), 0.5 (dashed) and 1 (dotted) in the upper panel, and at redshifts 2 (solid), 3 (dashed) and 4 (dotted) in the lower panel. The filled stars in the upper panel represent the <Math mode="inline" tex="z=0" text="z = 0" xml:id="S3.F2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> Type 1 + Type 2 AGN XLF derived by Boyle et al. (1998) using a maximum-likelihood analysis of <text font="italic">ASCA</text> and <text font="italic">HEAO-A1</text> data (but for a <Math mode="inline" tex="q_{\rm{0}}=0.5" text="q _ 0 = 0.5" xml:id="S3.F2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" role="UNKNOWN">q</XMTok>
+                <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+              </XMApp>
+              <XMTok meaning="0.5" role="NUMBER">0.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cosmology).</caption>
+    </figure>
+    <para xml:id="S3.p3">
+      <p>Fig. <ref labelref="LABEL:fig:xlf1"/> shows the 2–10 keV luminosity functions (XLFs) generated by the model. Those at <Math mode="inline" tex="z\leq 1" text="z less= 1" xml:id="S3.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> are compared with the <Math mode="inline" tex="z=0" text="z = 0" xml:id="S3.p3.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> AGN XLF deduced by Boyle et al. (1998) from a combination of <text font="italic">ASCA</text> and <text font="italic">HEAO-A1</text> data (but for a <Math mode="inline" tex="q_{0}=0.5" text="q _ 0 = 0.5" xml:id="S3.p3.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">q</XMTok>
+                <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+              </XMApp>
+              <XMTok meaning="0.5" role="NUMBER">0.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cosmology). The double-peaked structure of the XLFs at <Math mode="inline" tex="z\leq 1" text="z less= 1" xml:id="S3.p3.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> (which is most pronounced at <Math mode="inline" tex="z=0.2" text="z = 0.2" xml:id="S3.p3.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="0.2" role="NUMBER">0.2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> where there are no objects at <Math mode="inline" tex="L_{\rm{X}}\sim 10^{41.5}" text="L _ X similar-to 10 ^ 41.5" xml:id="S3.p3.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="41.5" role="NUMBER">41.5</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="{\rm\thinspace erg}{\rm\thinspace s}^{-1}\," text="erg * s ^ (- 1)" xml:id="S3.p3.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok lpadding="1.7pt" role="UNKNOWN" rpadding="1.7pt">erg</XMTok>
+              <XMApp rpadding="1.7pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok role="UNKNOWN">s</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) is due to the separate contributions of the unobscured and obscured objects at high and low luminosities, respectively. As discussed in section 4, at all epochs most of the obscured objects are Compton-thick with <Math mode="inline" tex="N_{\rm{H}}\sim 3N_{\rm{T}}" text="N _ H similar-to 3 * N _ T" xml:id="S3.p3.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="3" role="NUMBER">3</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">T</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, from which there is very little transmitted flux in the <text font="italic">observed</text> 2–10 keV band for low redshift objects; at the higher redshifts in the lower panel of Fig. <ref labelref="LABEL:fig:xlf1"/>, a favourable negative K-correction applies to the <text font="italic">observed</text> 2–10 keV flux of a moderately Compton-thick source (as discussed by Wilman &amp; Fabian 1999), such that the contributions of the obscured and unobscured AGN overlap in luminosity. There is some scope for adjusting the form of the XLF at <Math mode="inline" tex="z\leq 1" text="z less= 1" xml:id="S3.p3.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> by introducing some <text font="italic">scattered</text> flux into the spectra of the obscured objects (of which there is at present none).</p>
+    </para>
+    <para xml:id="S3.p4">
+      <p>Our model fails, however, to produce enough of the high luminosity objects with <Math mode="inline" tex="L_{\rm{X}}&gt;10^{45}" text="L _ X &gt; 10 ^ 45" xml:id="S3.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="45" role="NUMBER">45</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="{\rm\thinspace erg}{\rm\thinspace s}^{-1}\," text="erg * s ^ (- 1)" xml:id="S3.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok lpadding="1.7pt" role="UNKNOWN" rpadding="1.7pt">erg</XMTok>
+              <XMApp rpadding="1.7pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok role="UNKNOWN">s</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. Such objects would not contribute significantly to the XRB, but we speculate that they could be fuelled by mergers between normal galaxies, which the model in its current form does not treat (see section 4). In addition, systems with two or more normal galaxies represent groups and clusters in which the intragroup or intracluster medium can increase the fuelling rate (especially if Compton feedback occurs; Fabian &amp; Crawford 1990). Concerning evolution, Boyle et al. (1998) parameterized it with pure luminosity evolution of the form <Math mode="inline" tex="(1+z)^{k}" text="(1 + z) ^ k" xml:id="S3.p4.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMDual>
+                <XMRef idref="S3.p4.m3.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S3.p4.m3.1">
+                    <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                    <XMTok meaning="1" role="NUMBER">1</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">k</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> for <Math mode="inline" tex="z\leq 2" text="z less= 2" xml:id="S3.p4.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, with <Math mode="inline" tex="k\simeq 2" text="k similar-to-or-equals 2" xml:id="S3.p4.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+              <XMTok font="italic" role="UNKNOWN">k</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, but our model appears to show some density evolution out to <Math mode="inline" tex="z=2" text="z = 2" xml:id="S3.p4.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. Fig. <ref labelref="LABEL:fig:evol1"/> demonstrates more readily how the population evolves, by showing the co-moving densities of the obscured and unobscured objects as functions of redshift, broken down according to the 2–10 keV luminosity in the unabsorbed rest-frame. Two features are immediately apparent: the first is that the co-moving density of luminous (<Math mode="inline" tex="L_{\rm{X}}&gt;10^{44}" text="L _ X &gt; 10 ^ 44" xml:id="S3.p4.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="44" role="NUMBER">44</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="{\rm\thinspace erg}{\rm\thinspace s}^{-1}\," text="erg * s ^ (- 1)" xml:id="S3.p4.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok lpadding="1.7pt" role="UNKNOWN" rpadding="1.7pt">erg</XMTok>
+              <XMApp rpadding="1.7pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok role="UNKNOWN">s</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) unobscured AGN (which we identify with optically-selected quasars) increases by more than two orders of magnitude between the present epoch and <Math mode="inline" tex="z=2" text="z = 2" xml:id="S3.p4.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, mirroring the observed evolution of the quasar luminosity function (its observed behaviour beyond <Math mode="inline" tex="z\simeq 3" text="z similar-to-or-equals 3" xml:id="S3.p4.m10">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="3" role="NUMBER">3</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> remains controversial: see Miyaji et al. 2000, Schmidt et al. 1995 and Shaver et al. 1999 for perspectives at X-ray, optical and radio wavelengths, respectively); secondly, we also see how low luminosity active nuclei become greatly more abundant towards the present epoch, and we tentatively identify these objects with the Seyfert galaxies.</p>
+    </para>
+<!--  %**** wilman.tex Line 200 **** -->    <figure frefnum="Figure 3" labels="LABEL:fig:evol1" refnum="3" xml:id="S3.F3">
+      <graphics candidates="fig3.ps" graphic="fig3.ps" options="figure=fig3.ps, width=208.1376pt, angle=270" xml:id="S3.F3.g1"/>
+      <toccaption><tag close=" ">3</tag>Redshift evolution of the co-moving densities of obscured and unobscured active nuclei, broken down according to the intrinsic 2–10 keV luminosity (<Math mode="inline" tex="L_{\rm{X}}" text="L _ X" xml:id="S3.F3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok font="italic" role="UNKNOWN">L</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>) (i.e. unabsorbed and in the rest-frame). The solid, dashed and dotted lines show objects with <Math mode="inline" tex="L_{\rm{X}}\leq 10^{43}" text="L _ X less= 10 ^ 43" xml:id="S3.F3.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="43" role="NUMBER">43</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, <Math mode="inline" tex="10^{43}&lt;L_{\rm{X}}\leq 10^{44}" text="10 ^ 43 less L _ X less= 10 ^ 44" xml:id="S3.F3.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="43" role="NUMBER">43</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="44" role="NUMBER">44</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="10^{44}&lt;L_{\rm{X}}\leq 10^{45}" text="10 ^ 44 less L _ X less= 10 ^ 45" xml:id="S3.F3.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="44" role="NUMBER">44</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="45" role="NUMBER">45</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="{\rm\thinspace erg}{\rm\thinspace s}^{-1}\," text="erg * s ^ (- 1)" xml:id="S3.F3.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok lpadding="1.7pt" role="UNKNOWN" rpadding="1.7pt">erg</XMTok>
+              <XMApp rpadding="1.7pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post6"/>
+                <XMTok role="UNKNOWN">s</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, respectively; in the lower panel, the spikes at <Math mode="inline" tex="z\sim 6.5" text="z similar-to 6.5" xml:id="S3.F3.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="6.5" role="NUMBER">6.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> (dashed curve) and <Math mode="inline" tex="z\sim 9" text="z similar-to 9" xml:id="S3.F3.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="9" role="NUMBER">9</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> (dotted curve) are due to numerical fluctuations.</toccaption>
+      <caption><tag close=": ">Figure 3</tag>Redshift evolution of the co-moving densities of obscured and unobscured active nuclei, broken down according to the intrinsic 2–10 keV luminosity (<Math mode="inline" tex="L_{\rm{X}}" text="L _ X" xml:id="S3.F3.m8">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok font="italic" role="UNKNOWN">L</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>) (i.e. unabsorbed and in the rest-frame). The solid, dashed and dotted lines show objects with <Math mode="inline" tex="L_{\rm{X}}\leq 10^{43}" text="L _ X less= 10 ^ 43" xml:id="S3.F3.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="43" role="NUMBER">43</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, <Math mode="inline" tex="10^{43}&lt;L_{\rm{X}}\leq 10^{44}" text="10 ^ 43 less L _ X less= 10 ^ 44" xml:id="S3.F3.m10">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="43" role="NUMBER">43</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="44" role="NUMBER">44</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="10^{44}&lt;L_{\rm{X}}\leq 10^{45}" text="10 ^ 44 less L _ X less= 10 ^ 45" xml:id="S3.F3.m11">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="44" role="NUMBER">44</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+              </XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="45" role="NUMBER">45</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="{\rm\thinspace erg}{\rm\thinspace s}^{-1}\," text="erg * s ^ (- 1)" xml:id="S3.F3.m12">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok lpadding="1.7pt" role="UNKNOWN" rpadding="1.7pt">erg</XMTok>
+              <XMApp rpadding="1.7pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post6"/>
+                <XMTok role="UNKNOWN">s</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, respectively; in the lower panel, the spikes at <Math mode="inline" tex="z\sim 6.5" text="z similar-to 6.5" xml:id="S3.F3.m13">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="6.5" role="NUMBER">6.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> (dashed curve) and <Math mode="inline" tex="z\sim 9" text="z similar-to 9" xml:id="S3.F3.m14">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="9" role="NUMBER">9</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> (dotted curve) are due to numerical fluctuations.</caption>
+    </figure>
+    <para xml:id="S3.p5">
+      <p>In Fig. <ref labelref="LABEL:fig:counts1"/> we compare the 2–10 keV source counts generated by our model with those observed. These include some <text font="italic">Chandra</text> results from Mushotzky et al. (2000), which probe down to almost <Math mode="inline" tex="10^{-15}" text="10 ^ (- 15)" xml:id="S3.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="15" role="NUMBER">15</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="{\rm\thinspace erg}{\rm\thinspace cm}^{-2}{\rm\thinspace s}^{-1}\," text="erg * cm ^ (- 2) * s ^ (- 1)" xml:id="S3.p5.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok lpadding="1.7pt" role="UNKNOWN" rpadding="1.7pt">erg</XMTok>
+              <XMApp rpadding="1.7pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok role="UNKNOWN">cm</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp rpadding="1.7pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok role="UNKNOWN">s</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and essentially resolve the background flux in this band.</p>
+    </para>
+    <figure frefnum="Figure 4" labels="LABEL:fig:counts1" refnum="4" xml:id="S3.F4">
+      <graphics candidates="fig4.ps" graphic="fig4.ps" options="figure=fig4.ps, width=208.1376pt, angle=270" xml:id="S3.F4.g1"/>
+      <toccaption><tag close=" ">4</tag>The solid line shows the source counts generated by the baseline model described in section 3, for comparison with the latest observations. The asterisk shows the result of the <text font="italic">Ginga</text> fluctuation analysis after removal of the cluster contribution (Butcher et al. 1997); the filled circles and open triangles are from the <text font="italic">ASCA</text> surveys of Ueda et al. (1999) and Boyle et al. (1998), respectively; the crosses are from the <text font="italic">Chandra</text> SSA13 field (Mushotzky et al. 2000).</toccaption>
+      <caption><tag close=": ">Figure 4</tag>The solid line shows the source counts generated by the baseline model described in section 3, for comparison with the latest observations. The asterisk shows the result of the <text font="italic">Ginga</text> fluctuation analysis after removal of the cluster contribution (Butcher et al. 1997); the filled circles and open triangles are from the <text font="italic">ASCA</text> surveys of Ueda et al. (1999) and Boyle et al. (1998), respectively; the crosses are from the <text font="italic">Chandra</text> SSA13 field (Mushotzky et al. 2000).</caption>
+    </figure>
+    <figure frefnum="Figure 5" labels="LABEL:fig:MagAGN" refnum="5" xml:id="S3.F5">
+      <graphics candidates="blank.ps" graphic="blank.ps" options="figure=blank.ps, width=208.1376pt, angle=270" xml:id="S3.F5.g1"/>
+      <toccaption><tag close=" ">5</tag>Plots of black hole mass versus host spheroid mass for all the AGN in the simulation: (a) immediately prior to the onset of the obscured accretion; (b) at the end of the obscured phase. The straight line is the locus <Math mode="inline" tex="M_{\rm{BH}}=0.005M_{\rm{spheroid}}" text="M _ BH = 0.005 * M _ spheroid" xml:id="S3.F5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">BH</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="0.005" role="NUMBER">0.005</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                  <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">spheroid</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> at which we halt the accretion if this has not already occurred by another means.</toccaption>
+      <caption><tag close=": ">Figure 5</tag>Plots of black hole mass versus host spheroid mass for all the AGN in the simulation: (a) immediately prior to the onset of the obscured accretion; (b) at the end of the obscured phase. The straight line is the locus <Math mode="inline" tex="M_{\rm{BH}}=0.005M_{\rm{spheroid}}" text="M _ BH = 0.005 * M _ spheroid" xml:id="S3.F5.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">BH</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="0.005" role="NUMBER">0.005</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                  <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">spheroid</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> at which we halt the accretion if this has not already occurred by another means.</caption>
+    </figure>
+    <para xml:id="S3.p6">
+      <p>As a further constraint, we calculate some limits on the contribution of our sources to the far-infrared and sub-millimetre backgrounds. The obscured objects alone make a (bolometric) contribution of 2.3 nW m<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S3.p6.m1">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> sr<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p6.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, a figure which rises to 3.8 nW m<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S3.p6.m3">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> sr<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.p6.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> if the unobscured quasars are also included (but the SEDs of the latter objects peak in the optical/UV, not the far-infrared). These figures compare favourably with other XRB-based estimates of the AGN contribution to the far-infrared and sub-millimetre backgrounds made by Almaini et al. (1999) and Fabian &amp; Iwasawa (1999), and with the empirical constraints of McMahon et al. (1999).</p>
+    </para>
+  </section>
+  <section refnum="4" xml:id="S4">
+    <title><tag close=" ">4</tag>DISCUSSION</title>
+    <para xml:id="S4.p1">
+      <p>Having demonstrated that the model agrees satisfactorily with the observational data, we look more closely at its internal workings. A feature which distinguishes it from other semi-analytic models is that mergers between normal galaxies are not considered. To gauge how serious an omission this is, we list in Table 1 the fraction of haloes collapsing at different epochs which contain more than one normal galaxy and in which our model permits no further black hole growth. In computing these averages, note that we exclude systems from which supernovae have expelled the remaining gas (i.e. mainly dwarf galaxies where the black hole masses are just a few times the seed mass). Whilst the fraction of haloes with multiple normal galaxies is relatively small, the table also shows that such haloes contain, on average, significantly more massive black holes than isolated systems. This is because the black holes in the former haloes have in general already undergone one accretion episode taking them close to the Magorrian threshold (where <Math mode="inline" tex="M_{\rm{BH}}=0.005M_{\rm{sph}}" text="M _ BH = 0.005 * M _ sph" xml:id="S4.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">BH</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="0.005" role="NUMBER">0.005</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">sph</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>), whilst most of the black holes in isolated systems are in newly-formed normal galaxies with black hole masses up to a factor of 5 below the Magorrian threshold (as discussed later in this section and illustrated in Fig. <ref labelref="LABEL:fig:MagAGN"/>). If considered, merger-driven accretion power – in which hot gas fuelling is supplemented by tidally-driven flows of cold gas towards the galactic nuclei – would thus become increasingly significant towards the present epoch. As the most massive black holes get incorporated into groups/clusters, mergers could potentially supply the highest luminosity systems (<Math mode="inline" tex="L_{\rm{X}}\geq 10^{45}" text="L _ X &gt;= 10 ^ 45" xml:id="S4.p1.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="45" role="NUMBER">45</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="{\rm\thinspace erg}{\rm\thinspace s}^{-1}\," text="erg * s ^ (- 1)" xml:id="S4.p1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok lpadding="1.7pt" role="UNKNOWN" rpadding="1.7pt">erg</XMTok>
+              <XMApp rpadding="1.7pt">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+                <XMTok role="UNKNOWN">s</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>), of which there is a deficit when compared with observations (see Fig. <ref labelref="LABEL:fig:xlf1"/>).</p>
+    </para>
+<!--  %**** wilman.tex Line 225 **** -->    <para xml:id="S4.p2">
+      <p>In order to understand the different evolutionary behaviour of the high and low luminosity systems in Fig. <ref labelref="LABEL:fig:evol1"/>, Table 2 provides some statistics on the black hole masses and accretion rates (in Eddington units) at various epochs, and on the relative importance of the different termination mechanisms for the obscured growth phase. It can be seen that, at all epochs, most black holes have masses close to <Math mode="inline" tex="10^{8}" text="10 ^ 8" xml:id="S4.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="8" role="NUMBER">8</XMTok>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="\rm\thinspace M_{\odot}" text="M _ direct-product" xml:id="S4.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok lpadding="1.7pt" role="UNKNOWN">M</XMTok>
+              <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> when the obscured Bondi accretion begins. Note that there is no accretion on to holes with <Math mode="inline" tex="M_{\rm{h}}&lt;2.6\times 10^{7}" text="M _ h less 2.6 * 10 ^ 7" xml:id="S4.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="2.6" role="NUMBER">2.6</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="\rm\thinspace M_{\odot}" text="M _ direct-product" xml:id="S4.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok lpadding="1.7pt" role="UNKNOWN">M</XMTok>
+              <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>– at least 16 seed holes (or, equivalently, 16 of the smallest mass haloes) must merge before any accretion can begin. At earlier times black holes are mainly in low mass dwarf galaxies, which by definition lack a cooling flow atmosphere and from which supernovae have often expelled the remaining gas. An epoch-dependent black hole mass therefore does not account for the evolution in Fig. <ref labelref="LABEL:fig:evol1"/>.</p>
+    </para>
+    <para xml:id="S4.p3">
+      <p>Fig. <ref labelref="LABEL:fig:MagAGN"/> shows Magorrian diagrams – plots of black hole versus spheroid mass – for the AGN in the simulation, at the beginning and the end of the obscured phase, demonstrating that black holes grow in mass by up to a factor of 5 during this phase. With reference to eqn. (3) for <Math mode="inline" tex="N_{\rm{H}}" text="N _ H" xml:id="S4.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">N</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">H</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, we see that <Math mode="inline" tex="N_{\rm{H}}\sim 3-15N_{\rm{T}}" text="N _ H similar-to 3 - 15 * N _ T" xml:id="S4.p3.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok meaning="3" role="NUMBER">3</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="15" role="NUMBER">15</XMTok>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                    <XMTok fontsize="70%" role="UNKNOWN">T</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> at the start of the obscured phase, diminishing to <Math mode="inline" tex="N_{\rm{H}}\sim 3N_{\rm{T}}" text="N _ H similar-to 3 * N _ T" xml:id="S4.p3.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="3" role="NUMBER">3</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">T</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> by its end. At every epoch, the majority of the obscured objects have <Math mode="inline" tex="N_{\rm{H}}\sim 3N_{\rm{T}}" text="N _ H similar-to 3 * N _ T" xml:id="S4.p3.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="3" role="NUMBER">3</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">T</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. The vertical banding of Fig. <ref labelref="LABEL:fig:MagAGN"/>(a) reflects the discrete nature of the block model and could be mitigated by using seed black holes with a range of mass (e.g. drawn from a gaussian distribution). Decreasing (increasing) the seed hole mass results in the accreting hole reaching the expulsion threshold, <Math mode="inline" tex="M_{\rm{BH}}=0.005M_{\rm{spheroid}}" text="M _ BH = 0.005 * M _ spheroid" xml:id="S4.p3.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">BH</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="0.005" role="NUMBER">0.005</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">spheroid</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, at a later (earlier) epoch, leading to a higher (lower) XRB. If the seed mass is made too large, all holes are above the expulsion threshold <text font="italic">at formation</text> and there is no accretion.</p>
+    </para>
+    <para xml:id="S4.p4">
+      <p>In contrast, the accretion rate is strongly epoch-dependent: at <Math mode="inline" tex="z&lt;2.5" text="z less 2.5" xml:id="S4.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="2.5" role="NUMBER">2.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> most black holes are fed at less than 10 per cent of the Eddington rate, and at <Math mode="inline" tex="z\leq 0.5" text="z less= 0.5" xml:id="S4.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="0.5" role="NUMBER">0.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> a significant proportion is fed at less than 1 per cent of the Eddington rate; at <Math mode="inline" tex="z\geq 2.5" text="z &gt;= 2.5" xml:id="S4.p4.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="2.5" role="NUMBER">2.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, however, most holes accrete at between 10 and 50 per cent of the Eddington rate. As pointed out by NF00, the physical mechanism for this evolution is apparent from equation (8) of NF00 for the black hole growth rate; the latter is in general maximised for the hottest collapses, and since the virial temperature of a halo of mass <Math mode="inline" tex="M" text="M" xml:id="S4.p4.m4">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">M</XMTok>
+          </XMath>
+        </Math> collapsing at time <Math mode="inline" tex="t_{\rm{coll}}" text="t _ coll" xml:id="S4.p4.m5">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">t</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">coll</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> scales as <Math mode="inline" tex="(M/t_{\rm{coll}})^{2/3}" text="(M / t _ coll) ^ (2 / 3)" xml:id="S4.p4.m6">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMDual>
+                <XMRef idref="S4.p4.m6.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S4.p4.m6.1">
+                    <XMTok meaning="divide" role="MULOP">/</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                      <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">coll</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, it follows that, for a given mass, the earliest collapses give the most growth. We conclude that the luminosity-dependent evolution of Fig. <ref labelref="LABEL:fig:evol1"/> is chiefly a reflection of an accretion rate which decreases strongly towards the present epoch, whilst the mass distribution of the accreting black holes depends far less strongly on redshift.</p>
+    </para>
+    <table frefnum="Table 1" refnum="1" xml:id="S4.T1">
+      <toccaption class="ltx_centering"><tag close=" ">1</tag>The importance of normal galaxy mergers</toccaption>
+      <caption class="ltx_centering"><tag close=": ">Table 1</tag>The importance of normal galaxy mergers</caption>
+      <tabular class="ltx_centering ltx_guessed_headers" vattach="middle">
+        <tbody>
+          <tr>
+            <td/>
+            <td align="left" thead="column"><Math mode="inline" tex="z&lt;0.5" text="z less 0.5" xml:id="S4.T1.m1">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                    <XMTok meaning="0.5" role="NUMBER">0.5</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left" thead="column"><Math mode="inline" tex="0.5\leq z&lt;1.5" text="0.5 less= z less 1.5" xml:id="S4.T1.m2">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="multirelation"/>
+                    <XMTok meaning="0.5" role="NUMBER">0.5</XMTok>
+                    <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMTok meaning="1.5" role="NUMBER">1.5</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left" thead="column"><Math mode="inline" tex="1.5\leq z&lt;2.5" text="1.5 less= z less 2.5" xml:id="S4.T1.m3">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="multirelation"/>
+                    <XMTok meaning="1.5" role="NUMBER">1.5</XMTok>
+                    <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMTok meaning="2.5" role="NUMBER">2.5</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left" thead="column"><Math mode="inline" tex="2.5\leq z&lt;4" text="2.5 less= z less 4" xml:id="S4.T1.m4">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="multirelation"/>
+                    <XMTok meaning="2.5" role="NUMBER">2.5</XMTok>
+                    <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMTok meaning="4" role="NUMBER">4</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left" thead="column"><Math mode="inline" tex="z\geq 4" text="z &gt;= 4" xml:id="S4.T1.m5">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                    <XMTok meaning="4" role="NUMBER">4</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+          </tr>
+          <tr>
+            <td align="left" thead="row"><Math mode="inline" tex="F(NG&gt;1)^{\star}" xml:id="S4.T1.m6">
+                <XMath>
+                  <XMTok font="italic" role="UNKNOWN">F</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="false">(</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">G</XMTok>
+                      <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+                      <XMTok meaning="1" role="NUMBER">1</XMTok>
+                      <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                    </XMWrap>
+                    <XMTok fontsize="70%" name="star" role="MULOP">⋆</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left">0.11</td>
+            <td align="left">0.15</td>
+            <td align="left">0.14</td>
+            <td align="left">0.09</td>
+            <td align="left">0.05</td>
+          </tr>
+          <tr>
+            <td align="left" thead="row"><Math mode="inline" tex="{\overline{M}_{h(group)}^{\dagger}}" text="((overline@(M)) _ (h * g * r * o * u * p)) ^ dagger" xml:id="S4.T1.m7">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post11"/>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                      <XMApp>
+                        <XMTok name="overline" role="OVERACCENT">¯</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">h</XMTok>
+                        <XMDual>
+                          <XMRef idref="S4.T1.m7.1"/>
+                          <XMWrap>
+                            <XMTok fontsize="70%" role="OPEN" stretchy="false">(</XMTok>
+                            <XMApp xml:id="S4.T1.m7.1">
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">g</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">r</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">u</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+                            </XMApp>
+                            <XMTok fontsize="70%" role="CLOSE" stretchy="false">)</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok fontsize="70%" name="dagger" role="MULOP">†</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math> (<Math mode="inline" tex="10^{8}" text="10 ^ 8" xml:id="S4.T1.m8">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMTok fontsize="70%" meaning="8" role="NUMBER">8</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math> <Math mode="inline" tex="\rm\thinspace M_{\odot}" text="M _ direct-product" xml:id="S4.T1.m9">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post12"/>
+                    <XMTok lpadding="1.7pt" role="UNKNOWN">M</XMTok>
+                    <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math>)</td>
+            <td align="left">5.2</td>
+            <td align="left">5.5</td>
+            <td align="left">5.3</td>
+            <td align="left">4.8</td>
+            <td align="left">3.7</td>
+          </tr>
+          <tr>
+            <td align="left" thead="row"><Math mode="inline" tex="{\overline{M}_{h(isol)}^{\ddagger}}" text="((overline@(M)) _ (h * i * s * o * l)) ^ ddagger" xml:id="S4.T1.m10">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post11"/>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post11"/>
+                      <XMApp>
+                        <XMTok name="overline" role="OVERACCENT">¯</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">h</XMTok>
+                        <XMDual>
+                          <XMRef idref="S4.T1.m10.1"/>
+                          <XMWrap>
+                            <XMTok fontsize="70%" role="OPEN" stretchy="false">(</XMTok>
+                            <XMApp xml:id="S4.T1.m10.1">
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">l</XMTok>
+                            </XMApp>
+                            <XMTok fontsize="70%" role="CLOSE" stretchy="false">)</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok fontsize="70%" name="ddagger" role="MULOP">‡</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math> (<Math mode="inline" tex="10^{8}" text="10 ^ 8" xml:id="S4.T1.m11">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMTok fontsize="70%" meaning="8" role="NUMBER">8</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math> <Math mode="inline" tex="\rm\thinspace M_{\odot}" text="M _ direct-product" xml:id="S4.T1.m12">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post12"/>
+                    <XMTok lpadding="1.7pt" role="UNKNOWN">M</XMTok>
+                    <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math>)</td>
+            <td align="left">1.3</td>
+            <td align="left">2.3</td>
+            <td align="left">2.3</td>
+            <td align="left">2.1</td>
+            <td align="left">1.6</td>
+          </tr>
+        </tbody>
+      </tabular>
+      <p><Math mode="inline" tex="\star" text="star" xml:id="S4.T1.m13">
+          <XMath>
+            <XMTok name="star" role="MULOP">⋆</XMTok>
+          </XMath>
+        </Math> Fraction of collapsing haloes containing <Math mode="inline" tex="&gt;1" text="absent &gt; 1" xml:id="S4.T1.m14">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> normal galaxy. <break/><Math mode="inline" tex="\dagger" text="dagger" xml:id="S4.T1.m15">
+          <XMath>
+            <XMTok name="dagger" role="MULOP">†</XMTok>
+          </XMath>
+        </Math> Mean black hole mass per normal galaxy in haloes collapsing with <Math mode="inline" tex="&gt;1" text="absent &gt; 1" xml:id="S4.T1.m16">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> normal galaxy. <break/><Math mode="inline" tex="\ddagger" text="ddagger" xml:id="S4.T1.m17">
+          <XMath>
+            <XMTok name="ddagger" role="MULOP">‡</XMTok>
+          </XMath>
+        </Math> Mean black hole mass in collapsing haloes with <Math mode="inline" tex="\leq 1" text="absent less= 1" xml:id="S4.T1.m18">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> normal galaxy, prior to any accretion. <break/></p>
+    </table>
+    <table frefnum="Table 2" refnum="2" xml:id="S4.T2">
+      <toccaption class="ltx_centering"><tag close=" ">2</tag>Statistics for accreting black holes</toccaption>
+      <caption class="ltx_centering"><tag close=": ">Table 2</tag>Statistics for accreting black holes</caption>
+<!--  %**** wilman.tex Line 250 **** -->      <tabular class="ltx_centering ltx_guessed_headers" vattach="middle">
+        <tbody>
+          <tr>
+            <td border="ll"/>
+            <td align="left"><Math mode="inline" tex="z&lt;0.5" text="z less 0.5" xml:id="S4.T2.m1">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                    <XMTok meaning="0.5" role="NUMBER">0.5</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left"><Math mode="inline" tex="0.5\leq z&lt;1.5" text="0.5 less= z less 1.5" xml:id="S4.T2.m2">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="multirelation"/>
+                    <XMTok meaning="0.5" role="NUMBER">0.5</XMTok>
+                    <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMTok meaning="1.5" role="NUMBER">1.5</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left"><Math mode="inline" tex="1.5\leq z&lt;2.5" text="1.5 less= z less 2.5" xml:id="S4.T2.m3">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="multirelation"/>
+                    <XMTok meaning="1.5" role="NUMBER">1.5</XMTok>
+                    <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMTok meaning="2.5" role="NUMBER">2.5</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left"><Math mode="inline" tex="2.5\leq z&lt;4" text="2.5 less= z less 4" xml:id="S4.T2.m4">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="multirelation"/>
+                    <XMTok meaning="2.5" role="NUMBER">2.5</XMTok>
+                    <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMTok meaning="4" role="NUMBER">4</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left" border="rr"><Math mode="inline" tex="z\geq 4" text="z &gt;= 4" xml:id="S4.T2.m5">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                    <XMTok meaning="4" role="NUMBER">4</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+          </tr>
+          <tr>
+            <td align="center" colspan="6" thead="row">Fraction of obscured accretion phases ending by each means</td>
+          </tr>
+          <tr>
+            <td align="left" border="ll" thead="row">Wind expulsion</td>
+            <td align="left">0.88</td>
+            <td align="left">0.96</td>
+            <td align="left">0.98</td>
+            <td align="left">0.98</td>
+            <td align="left" border="rr">0.93</td>
+          </tr>
+          <tr>
+            <td align="left" border="ll" thead="row">Hot gas exhaustion</td>
+            <td align="left">0.02</td>
+            <td align="left">0.03</td>
+            <td align="left">0.003</td>
+            <td align="left">0.0001</td>
+            <td align="left" border="rr">0.04</td>
+          </tr>
+          <tr>
+            <td align="left" border="ll" thead="row">New collapse</td>
+            <td align="left">0.10</td>
+            <td align="left">0.01</td>
+            <td align="left">0.02</td>
+            <td align="left">0.02</td>
+            <td align="left" border="rr">0.03</td>
+          </tr>
+          <tr>
+            <td align="center" colspan="6" thead="row">Mean black hole mass at start of the obscured growth phase (<Math mode="inline" tex="10^{8}" text="10 ^ 8" xml:id="S4.T2.m6">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMTok fontsize="70%" meaning="8" role="NUMBER">8</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math><Math mode="inline" tex="\rm\thinspace M_{\odot}" text="M _ direct-product" xml:id="S4.T2.m7">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post12"/>
+                    <XMTok lpadding="1.7pt" role="UNKNOWN">M</XMTok>
+                    <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math>)</td>
+          </tr>
+          <tr>
+            <td border="ll" thead="row"/>
+            <td align="left">1.09</td>
+            <td align="left">1.23</td>
+            <td align="left">1.23</td>
+            <td align="left">1.22</td>
+            <td align="left" border="rr">0.93</td>
+          </tr>
+          <tr>
+            <td align="center" colspan="6" thead="row">Distributions of black hole mass and accretion rate at start (end) of obscured growth phase<Math mode="inline" tex="{}^{\dagger}" text="^dagger" xml:id="S4.T2.m8">
+                <XMath>
+                  <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                    <XMTok fontsize="70%" name="dagger" role="MULOP">†</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+          </tr>
+          <tr>
+            <td align="left" border="ll" thead="row"><Math mode="inline" tex="M_{\rm{h}}&lt;10^{7}" text="M _ h less 10 ^ 7" xml:id="S4.T2.m9">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                      <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                      <XMTok meaning="10" role="NUMBER">10</XMTok>
+                      <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math><Math mode="inline" tex="\rm\thinspace M_{\odot}" text="M _ direct-product" xml:id="S4.T2.m10">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post12"/>
+                    <XMTok lpadding="1.7pt" role="UNKNOWN">M</XMTok>
+                    <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left">0 (0)</td>
+            <td align="left">0 (0)</td>
+            <td align="left">0 (0)</td>
+            <td align="left">0 (0)</td>
+            <td align="left" border="rr">0 (0)</td>
+          </tr>
+          <tr>
+            <td align="left" border="ll" thead="row"><Math mode="inline" tex="10^{7}\leq M_{\rm{h}}&lt;10^{8}" text="10 ^ 7 less= M _ h less 10 ^ 8" xml:id="S4.T2.m11">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="multirelation"/>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                      <XMTok meaning="10" role="NUMBER">10</XMTok>
+                      <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                    </XMApp>
+                    <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                      <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+                    </XMApp>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                      <XMTok meaning="10" role="NUMBER">10</XMTok>
+                      <XMTok fontsize="70%" meaning="8" role="NUMBER">8</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math><Math mode="inline" tex="\rm\thinspace M_{\odot}" text="M _ direct-product" xml:id="S4.T2.m12">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post12"/>
+                    <XMTok lpadding="1.7pt" role="UNKNOWN">M</XMTok>
+                    <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left">0.35 (0.35)</td>
+            <td align="left">0.11 (0.11)</td>
+            <td align="left">0 (0)</td>
+            <td align="left">0.001 (0)</td>
+            <td align="left" border="rr">0.29 (0)</td>
+          </tr>
+          <tr>
+            <td align="left" border="ll" thead="row"><Math mode="inline" tex="10^{8}\leq M_{\rm{h}}&lt;10^{9}" text="10 ^ 8 less= M _ h less 10 ^ 9" xml:id="S4.T2.m13">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="multirelation"/>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                      <XMTok meaning="10" role="NUMBER">10</XMTok>
+                      <XMTok fontsize="70%" meaning="8" role="NUMBER">8</XMTok>
+                    </XMApp>
+                    <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                      <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+                    </XMApp>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                      <XMTok meaning="10" role="NUMBER">10</XMTok>
+                      <XMTok fontsize="70%" meaning="9" role="NUMBER">9</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math><Math mode="inline" tex="\rm\thinspace M_{\odot}" text="M _ direct-product" xml:id="S4.T2.m14">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post12"/>
+                    <XMTok lpadding="1.7pt" role="UNKNOWN">M</XMTok>
+                    <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left">0.65 (0.65)</td>
+            <td align="left">0.89 (0.89)</td>
+            <td align="left">0.997 (0.997)</td>
+            <td align="left">0.995 (0.996)</td>
+            <td align="left" border="rr">0.71 (0.998)</td>
+          </tr>
+          <tr>
+            <td align="left" border="ll" thead="row"><Math mode="inline" tex="M_{\rm{h}}&gt;10^{9}" text="M _ h &gt; 10 ^ 9" xml:id="S4.T2.m15">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                      <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                      <XMTok meaning="10" role="NUMBER">10</XMTok>
+                      <XMTok fontsize="70%" meaning="9" role="NUMBER">9</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math><Math mode="inline" tex="\rm\thinspace M_{\odot}" text="M _ direct-product" xml:id="S4.T2.m16">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post12"/>
+                    <XMTok lpadding="1.7pt" role="UNKNOWN">M</XMTok>
+                    <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left">0 (0)</td>
+            <td align="left">0.001 (0.001)</td>
+            <td align="left">0.003 (0.003)</td>
+            <td align="left">0.004 (0.004)</td>
+            <td align="left" border="rr">0.002 (0.002)</td>
+          </tr>
+          <tr>
+            <td align="left" border="ll" thead="row"><Math mode="inline" tex="f_{\rm{Edd}}&lt;0.01" text="f _ Edd less 0.01" xml:id="S4.T2.m17">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                      <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">Edd</XMTok>
+                    </XMApp>
+                    <XMTok meaning="0.01" role="NUMBER">0.01</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left">0.22 (0.42)</td>
+            <td align="left">0.0007 (0.055)</td>
+            <td align="left">0 (0.0002)</td>
+            <td align="left">0 (0)</td>
+            <td align="left" border="rr">0 (0)</td>
+          </tr>
+          <tr>
+            <td align="left" border="ll" thead="row"><Math mode="inline" tex="0.01\leq f_{\rm{Edd}}&lt;0.1" text="0.01 less= f _ Edd less 0.1" xml:id="S4.T2.m18">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="multirelation"/>
+                    <XMTok meaning="0.01" role="NUMBER">0.01</XMTok>
+                    <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                      <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">Edd</XMTok>
+                    </XMApp>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMTok meaning="0.1" role="NUMBER">0.1</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left">0.78 (0.58)</td>
+            <td align="left">0.97 (0.92)</td>
+            <td align="left">0.62 (0.80)</td>
+            <td align="left">0.065 (0.59)</td>
+            <td align="left" border="rr">0 (0.22)</td>
+          </tr>
+          <tr>
+            <td align="left" border="ll" thead="row"><Math mode="inline" tex="0.1\leq f_{\rm{Edd}}&lt;0.5" text="0.1 less= f _ Edd less 0.5" xml:id="S4.T2.m19">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="multirelation"/>
+                    <XMTok meaning="0.1" role="NUMBER">0.1</XMTok>
+                    <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                      <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">Edd</XMTok>
+                    </XMApp>
+                    <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                    <XMTok meaning="0.5" role="NUMBER">0.5</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left">0.0002 (0.0002)</td>
+            <td align="left">0.03 (0.024)</td>
+            <td align="left">0.38 (0.195)</td>
+            <td align="left">0.932 (0.41)</td>
+            <td align="left" border="rr">0.982 (0.77)</td>
+          </tr>
+          <tr>
+            <td align="left" border="ll" thead="row"><Math mode="inline" tex="f_{\rm{Edd}}&gt;0.5" text="f _ Edd &gt; 0.5" xml:id="S4.T2.m20">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                      <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">Edd</XMTok>
+                    </XMApp>
+                    <XMTok meaning="0.5" role="NUMBER">0.5</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math></td>
+            <td align="left">0 (0)</td>
+            <td align="left">0 (0)</td>
+            <td align="left">0.0002 (0.0002)</td>
+            <td align="left">0.003 (0.003)</td>
+            <td align="left" border="rr">0.018 (0.01)</td>
+          </tr>
+        </tbody>
+      </tabular>
+      <p><Math mode="inline" tex="\dagger" text="dagger" xml:id="S4.T2.m21">
+          <XMath>
+            <XMTok name="dagger" role="MULOP">†</XMTok>
+          </XMath>
+        </Math> Each column shows the fraction of black holes in various intervals of mass and accretion rate (as a fraction <Math mode="inline" tex="f_{\em{Edd}}" text="f _ (E * d * d)" xml:id="S4.T2.m22">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+              <XMTok font="italic" role="UNKNOWN">f</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="normal" fontsize="70%" role="UNKNOWN">E</XMTok>
+                <XMTok font="normal" fontsize="70%" role="UNKNOWN">d</XMTok>
+                <XMTok font="normal" fontsize="70%" role="UNKNOWN">d</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> of the Eddington accretion rate, <Math mode="inline" tex="\dot{M}_{\rm{Edd}}=4\pi Gm_{p}M_{\rm{h}}/c\epsilon\sigma_{\rm{T}}" text="(dot@(M)) _ Edd = ((4 * pi * G * m _ p * M _ h) / c) * epsilon * sigma _ T" xml:id="S4.T2.m23">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                <XMApp>
+                  <XMTok name="dot" role="OVERACCENT">˙</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                </XMApp>
+                <XMTok fontsize="70%" role="UNKNOWN">Edd</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok meaning="divide" role="MULOP">/</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="4" role="NUMBER">4</XMTok>
+                    <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">G</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                      <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                      <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">h</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok font="italic" role="UNKNOWN">c</XMTok>
+                </XMApp>
+                <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">T</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>), at the start of the obscured accretion phase and (in parentheses) at its end.</p>
+    </table>
+    <para xml:id="S4.p5">
+      <p>Although Table 2 shows that wind expulsion is the primary mechanism for terminating the obscured growth of the black holes, the scheme may require some modification from the simple form envisaged by Fabian (1999). He assumed that gas is ejected in a spherically symmetric manner, completely shutting off the black hole’s fuel supply and enabling it to shine as an optically-selected quasar for no more than <Math mode="inline" tex="\sim 10^{6}" text="absent similar-to 10 ^ 6" xml:id="S4.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> years while the accretion disk empties. The lifetime of the unobscured quasar in our model is, however, <Math mode="inline" tex="\Delta t_{\rm{qso}}=9\times 10^{7}" text="Delta * t _ qso = 9 * 10 ^ 7" xml:id="S4.p5.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">t</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">qso</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="9" role="NUMBER">9</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> yr, and comparable to the length of the optically bright quasar phase required by other modellers (e.g. Kauffmann &amp; Haehnelt 2000, Cattaneo 2000, Granato et al. 1999). If all the gas had been ejected, such a long accretion phase would be difficult to sustain unless the ejection were somehow anisotropic: ejection might for example occur along the hole’s rotation axis, leaving a torus of centrifugally-supported, accretable material in the plane of the accretion disk. Such a scenario may simultaneously address the problem of the excess soft XRB produced by the model, as alluded to in section 3. This torus will plausibly lead to moderate absorption in lines of sight passing through it, as in orientation-based AGN unification schemes (see Antonucci 1993 for a review). The number of sources with absorbed X-ray spectra and narrow optical emission lines, compared to those appearing as classical quasars will thus depend upon the solid angle subtended by the outflow (or, equivalently, on the ratio of the times spent in the ejection phase and quasar phase proper, in those cases where the gas expulsion is isotropic and ultimately complete). Note that even anisotropic ejection is likely to clear the spheroid of all hydrostatically-supported gas, leaving only that which is centrifugally supported. This means that the overall picture in which ejection ultimately terminates both black hole and spheroid growth is retained.</p>
+    </para>
+    <para xml:id="S4.p6">
+      <p>We can also compute the mechanical energy deposited by the AGN winds in the surrounding gas during the obscured growth phase. Averaging over all objects in the simulation and taking a wind power of the form <Math mode="inline" tex="L_{\rm{W}}=aL_{\rm{Edd}}" text="L _ W = a * L _ Edd" xml:id="S4.p6.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">W</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">a</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">Edd</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> (where <Math mode="inline" tex="a" text="a" xml:id="S4.p6.m2">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">a</XMTok>
+          </XMath>
+        </Math> is constant), we find that the winds deposit a mean specific energy of <Math mode="inline" tex="1.4\times 10^{51}a" text="1.4 * 10 ^ 51 * a" xml:id="S4.p6.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="1.4" role="NUMBER">1.4</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="51" role="NUMBER">51</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok font="italic" role="UNKNOWN">a</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>  erg<Math mode="inline" tex="\rm\thinspace M_{\odot}" text="M _ direct-product" xml:id="S4.p6.m4">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok lpadding="1.7pt" role="UNKNOWN">M</XMTok>
+              <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S4.p6.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> into the surrounding gas of <text font="italic">their own</text> haloes (assuming that all the wind power is absorbed). If instead the energy is distributed evenly among all the baryons in the Universe, the specific energy input is slightly lower at <Math mode="inline" tex="2.3\times 10^{50}a" text="2.3 * 10 ^ 50 * a" xml:id="S4.p6.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="2.3" role="NUMBER">2.3</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="50" role="NUMBER">50</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok font="italic" role="UNKNOWN">a</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> erg<Math mode="inline" tex="\rm\thinspace M_{\odot}" text="M _ direct-product" xml:id="S4.p6.m7">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok lpadding="1.7pt" role="UNKNOWN">M</XMTok>
+              <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+            </XMApp>
+          </XMath>
+        </Math><Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S4.p6.m8">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. For <Math mode="inline" tex="a\sim 0.1" text="a similar-to 0.1" xml:id="S4.p6.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">a</XMTok>
+              <XMTok meaning="0.1" role="NUMBER">0.1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> (as suggested by Fabian 1999) these values are equivalent to <Math mode="inline" tex="\sim 40" text="absent similar-to 40" xml:id="S4.p6.m10">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="40" role="NUMBER">40</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and <Math mode="inline" tex="\sim 7" text="absent similar-to 7" xml:id="S4.p6.m11">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="7" role="NUMBER">7</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> keV per particle (for fully ionized gas with cosmic abundances), respectively, and are thus more than capable of providing the excess specific energy of 1.8–3.0 keV per particle which Wu, Fabian &amp; Nulsen (2000) find is required to break the self similarity of X-ray cluster properties and match the observed <Math mode="inline" tex="L_{\rm{X}}-T" text="L _ X - T" xml:id="S4.p6.m12">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">X</XMTok>
+              </XMApp>
+              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> relation. That AGN winds may be important in this regard has been recognised by Ensslin et al. (1998), Wu et al. (2000) and Bower et al. (2000). A discussion of the impact of this energy release on the general (i.e. non-cluster) intergalactic medium is deferred to a later paper.
+<!--  %**** wilman.tex Line 275 **** --></p>
+    </para>
+  </section>
+  <section refnum="5" xml:id="S5">
+    <title><tag close=" ">5</tag>CONCLUSIONS</title>
+    <para xml:id="S5.p1">
+      <p>We have developed a physical model for the hard XRB which works <text font="italic">forward</text> in cosmic time from the epoch when the first massive bound objects were forming, by bringing together a semi-analytic galaxy formation model and prescriptions for the fuelling and obscuration of massive black holes. Quasars are assumed to be fuelled by hot gas from the cooling flow atmospheres which form around collapsing objects about the size of normal galaxies, and accretion is terminated by wind-driven gas expulsion when the mass of a black hole reaches 0.005 times that of its host spheroid (thereby forcing agreement with the findings of Magorrian et al. 1998). The model accounts quantitatively for the spectrum of the XRB and the source counts in the 2–10 keV band, and is compliant with current constraints on the AGN contribution to the far-IR and sub-mm backgrounds. Qualitatively at least, it also reproduces the dramatic decline in the co-moving density of luminous quasars since <Math mode="inline" tex="z=2" text="z = 2" xml:id="S5.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. Our aim was merely to demonstrate that, with simple assumptions and reasonable values for the free parameters, many observations can be satisfactorily reproduced. A number of deficiencies in the model remain, such as our use of the relatively crude block model for hierarchical structure formation, and in the astrophysical details of the fuelling and obscuration via the cooling flow and its cold clouds (as mentioned in the final paragraph of section 2.2).</p>
+    </para>
+    <para xml:id="S5.p2">
+      <p>With its emphasis on <text font="italic">hot gas</text> fuelling and neglect of mergers between normal galaxies, our formalism may be considered orthogonal to that adopted by Cattaneo (2000) and Kauffmann &amp; Haehnelt (2000), where quasars are fuelled by cold gas in major mergers with the host spheroid being formed in the process. It would clearly be of interest to construct a model which utilises elements from both approaches.</p>
+    </para>
+  </section>
+  <section xml:id="Sx1">
+    <title>ACKNOWLEDGMENTS</title>
+    <para xml:id="Sx1.p1">
+      <p>RJW acknowledges a PPARC Studentship and thanks Kelvin Wu for assistance during the early stages of this project. ACF thanks the Royal Society for support. We thank the referee, Gianni Zamorani, for a careful reading of the manuscript and constructive comments.</p>
+    </para>
+  </section>
+  <bibliography xml:id="bib">
+    <title>References</title>
+    <biblist>
+      <bibitem xml:id="bib.bibx1">
+        <bibtag role="refnum"/>
+        <bibblock> Akiyama M., et al., 2000, ApJ, 532, 700
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx2">
+        <bibtag role="refnum"/>
+        <bibblock> Almaini O., Lawrence A., Boyle B.J., 1999, MNRAS, 305, L59
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx3">
+        <bibtag role="refnum"/>
+        <bibblock> Antonucci R., 1993, ARA&amp;A, 31, 473
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx4">
+        <bibtag role="refnum"/>
+        <bibblock> Boyle B.J., Georgantopoulos I., Blair A.J., Stewart G.C., Griffiths R.E., Shanks T., Gunn K.F., Almaini O., 1998, MNRAS, 296, 1
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx5">
+        <bibtag role="refnum"/>
+        <bibblock> Bower R.G., Benson A.J., Baugh C.M., Cole S., Frenk C.S., Lacey C.G., 2000, submitted to MNRAS (astro-ph/0006109)
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx6">
+        <bibtag role="refnum"/>
+        <bibblock> Brandt W.N. et al., 2000, AJ, 119, 2349
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx7">
+        <bibtag role="refnum"/>
+        <bibblock> Cattaneo A., 2000, submitted to MNRAS (astro-ph/9907335)
+<!--  %**** wilman.tex Line 300 **** --></bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx8">
+        <bibtag role="refnum"/>
+        <bibblock> Cole S., Kaiser N., 1988, MNRAS, 233, 637
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx9">
+        <bibtag role="refnum"/>
+        <bibblock> Comastri A., Setti G., Zamorani G., Hasinger G., 1995, A&amp;A, 296, 1
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx10">
+        <bibtag role="refnum"/>
+        <bibblock> Elvis M., et al., 1994, ApJS, 95, 1
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx11">
+        <bibtag role="refnum"/>
+        <bibblock> Ensslin T.A., Wang Y., Nath B.B., Biermann P.L., 1998, A&amp;A, 333, L47
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx12">
+        <bibtag role="refnum"/>
+        <bibblock> Fabian A.C., 1994, ARA&amp;A, 32, 227
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx13">
+        <bibtag role="refnum"/>
+        <bibblock> Fabian A.C., Crawford C.S., 1990, MNRAS, 247, 439
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx14">
+        <bibtag role="refnum"/>
+        <bibblock> Fabian A.C., Iwasawa K., 1999, MNRAS, 303, L34
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx15">
+        <bibtag role="refnum"/>
+        <bibblock> Fabian A.C., 1999, MNRAS, 308, L39
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx16">
+        <bibtag role="refnum"/>
+        <bibblock> Fabian A.C., et al., 2000, 315, L8
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx17">
+        <bibtag role="refnum"/>
+        <bibblock> Fiore F., La Franca F., Giommi P., Elvis M., Matt G., Comastri A., Molendi S., Gioia I., 1999, MNRAS, 306, L55
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx18">
+        <bibtag role="refnum"/>
+        <bibblock> Gebhardt K., et al., 2000, to appear in ApJ Letters (astro-ph/0006289)
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx19">
+        <bibtag role="refnum"/>
+        <bibblock> Giacconi R., Gursky H., Paolini F., Rossi B., 1962, Phys. Rev. Lett., 9, 439
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx20">
+        <bibtag role="refnum"/>
+        <bibblock> Granato G.L., Silva M., Monaco P., Panuzzo P., De Zotti G., Danese L., 1999, submitted to MNRAS (astro-ph/9911304)
+<!--  %**** wilman.tex Line 325 **** --></bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx21">
+        <bibtag role="refnum"/>
+        <bibblock> Gruber D.E., 1992, in Barcons X., Fabian A.C., eds, Proc. of The X-ray Background, Cambridge Univ. Press, Cambridge, p.44
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx22">
+        <bibtag role="refnum"/>
+        <bibblock> Hasinger G., Burg R., Giacconi R., Schmidt M., Trümper J., Zamorani G., 1998, A&amp;A, 329, 482
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx23">
+        <bibtag role="refnum"/>
+        <bibblock> Hornschemeier A.E., et al., 2000, submitted to ApJ, (astro-ph/0004260)
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx24">
+        <bibtag role="refnum"/>
+        <bibblock> Kauffmann G., Haehnelt M., 2000, MNRAS, 311, 576
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx25">
+        <bibtag role="refnum"/>
+        <bibblock> Madau P., Ghisellini G., Fabian A.C., 1994, MNRAS, 270, L17
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx26">
+        <bibtag role="refnum"/>
+        <bibblock> Magorrian J., et al., 1998, AJ, 115, 2285
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx27">
+        <bibtag role="refnum"/>
+        <bibblock> McMahon R.G., Priddey R.S., Omont A., Snellen I., Withington S., 1999, MNRAS, 309, L1
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx28">
+        <bibtag role="refnum"/>
+        <bibblock> Miyaji T., Hasinger G., Schmidt M., 2000, A&amp;A, 353, 25
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx29">
+        <bibtag role="refnum"/>
+        <bibblock> Mushotzky R.F., Cowie L.L., Barger A.J., Arnaud K.A., 2000, Nature, 404, 459
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx30">
+        <bibtag role="refnum"/>
+        <bibblock> Nulsen P.E.J., 1986, MNRAS, 221, 377
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx31">
+        <bibtag role="refnum"/>
+        <bibblock> Nulsen P.E.J., Fabian A.C., 1995, MNRAS, 274, 1093
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx32">
+        <bibtag role="refnum"/>
+        <bibblock> Nulsen P.E.J., Fabian A.C., 1997, MNRAS, 291, 425 (NF97)
+<!--  %**** wilman.tex Line 350 **** --></bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx33">
+        <bibtag role="refnum"/>
+        <bibblock> Nulsen P.E.J., Fabian A.C., 2000, MNRAS, 311, 346 (NF00)
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx34">
+        <bibtag role="refnum"/>
+        <bibblock> Reeves J.N., Turner M.J.L., 2000, MNRAS, 316, 234
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx35">
+        <bibtag role="refnum"/>
+        <bibblock> Schmidt M., Schneider D.P., Gunn J.E., 1995, AJ, 110, 68
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx36">
+        <bibtag role="refnum"/>
+        <bibblock> Schmidt M., et al., 1998, A&amp;A, 329, 495
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx37">
+        <bibtag role="refnum"/>
+        <bibblock> Setti G., Woltjer L., 1989, A&amp;A, 224, L21
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx38">
+        <bibtag role="refnum"/>
+        <bibblock> Shaver P.A., Hook I.M., Jackson C.A., Wall J.V., Kellermann K.I., 1999, in Highly Redshifted Radio Lines, eds. Carilli C., et al. (PASP, San Franciso), 163
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx39">
+        <bibtag role="refnum"/>
+        <bibblock> Silk J., Rees M.J., 1998, A&amp;A, 331, L1
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx40">
+        <bibtag role="refnum"/>
+        <bibblock> Somerville R.S., Kolatt T.S., 1999, MNRAS, 305, 1
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx41">
+        <bibtag role="refnum"/>
+        <bibblock> Ueda Y., et al., 1999, ApJ, 518, 656
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx42">
+        <bibtag role="refnum"/>
+        <bibblock> Van der Marel R.P., 1999, AJ, 117, 744
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx43">
+        <bibtag role="refnum"/>
+        <bibblock> Valinia A., White N.E., Tananbaum H., Constellation-X Team, 1999, American Astronomical Society, HEAD meeting, 31, 1719
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx44">
+        <bibtag role="refnum"/>
+        <bibblock> Wilman R.J., Fabian A.C., 1999, MNRAS, 309, 862
+</bibblock>
+      </bibitem>
+      <bibitem xml:id="bib.bibx45">
+        <bibtag role="refnum"/>
+        <bibblock> Wu K.K.S., Fabian A.C., Nulsen P.E.J., 2000, MNRAS in press (astro-ph/99907112)
+<!--  %**** wilman.tex Line 375 **** --></bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+</document>

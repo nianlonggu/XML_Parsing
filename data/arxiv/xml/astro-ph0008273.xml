@@ -1,0 +1,2597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008273.1"?>
+<?latexml class="aastex" options="preprint"?>
+<?latexml package="emulateapj5"?>
+<?latexml package="natbib"?>
+<!--  %**** 4579.tex Line 25 **** --><?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>The Broad-Line and Narrow-Line Regions of the LINER NGC
+4579<note mark="1" role="footnote">Based on observations with the NASA/ESA <emph>Hubble
+Space Telescope</emph> obtained at STScI, which is operated by AURA, Inc.,
+under NASA contract NAS5-26555.</note></title>
+  <toctitle>BLR AND NLR OF NGC 4579</toctitle>
+  <creator role="author">
+    <personname>Aaron J. Barth<note mark="2" role="affiliation">Harvard-Smithsonian Center for Astrophysics, 60 Garden Street,
+Cambridge, MA 02138.</note> , Luis C. Ho<note mark="3" role="affiliation">The Observatories of the Carnegie Institution of Washington,
+813 Santa Barbara Street, Pasadena, CA 91101.</note> ,
+Alexei V. Filippenko<note mark="4" role="affiliation">Department of Astronomy, University of California,
+Berkeley, CA 94720-3411.</note> , Hans-Walter Rix<note mark="5" role="affiliation">Max-Planck-Institut für Astronomie, Königstuhl 17,
+Heidelberg D-69117, Germany.</note> , <break/>and Wallace L. W. Sargent<note mark="6" role="affiliation">Palomar Observatory, Caltech 105-24, Pasadena, CA 91125.</note> </personname>
+  </creator>
+  <abstract name="Abstract">
+    <p>We report the discovery of an extremely broad H<Math mode="inline" tex="\alpha" text="alpha" xml:id="m1">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> emission line in
+the LINER nucleus of NGC 4579. From ground-based observations, the
+galaxy was previously known to contain a Type 1 nucleus with a broad
+H<Math mode="inline" tex="\alpha" text="alpha" xml:id="m2">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> line of FWHM <Math mode="inline" tex="\approx 2300" text="absent approximately-equals 2300" xml:id="m3">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+            <XMTok meaning="absent"/>
+            <XMTok meaning="2300" role="NUMBER">2300</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="m4">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMApp>
+              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math> and FWZI <Math mode="inline" tex="\approx 5000" text="absent approximately-equals 5000" xml:id="m5">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+            <XMTok meaning="absent"/>
+            <XMTok meaning="5000" role="NUMBER">5000</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="m6">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMApp>
+              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>.
+New spectra obtained with the <emph>Hubble Space Telescope</emph> (<emph>HST</emph>) and
+a 0<Math mode="inline" tex="\farcs" text="arcsecond" xml:id="m7">
+        <XMath>
+          <XMDual role="ID">
+            <XMTok meaning="arcsecond" name="farcs" role="ID"/>
+            <XMApp role="POSTFIX">
+              <XMTok role="SUPERSCRIPTOP" scriptpos="mid4"/>
+              <XMTok>.</XMTok>
+              <XMWrap>
+                <XMTok name="prime" role="SUPOP">′</XMTok>
+                <XMTok name="prime" role="SUPOP">′</XMTok>
+              </XMWrap>
+            </XMApp>
+          </XMDual>
+        </XMath>
+      </Math>2-wide slit reveal an H<Math mode="inline" tex="\alpha" text="alpha" xml:id="m8">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> component with a FWZI of <Math mode="inline" tex="\sim 18,\!000" text="absent similar-to list@(18, 000)" xml:id="m9">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            <XMTok meaning="absent"/>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="list"/>
+                <XMRef idref="m9.1"/>
+                <XMRef idref="m9.2"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok meaning="18" role="NUMBER" xml:id="m9.1">18</XMTok>
+                <XMTok role="PUNCT" rpadding="-1.7pt">,</XMTok>
+                <XMTok meaning="000" role="NUMBER" xml:id="m9.2">000</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMApp>
+        </XMath>
+      </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="m10">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMApp>
+              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>. The line is not obviously double-peaked, but it does
+possess “shoulders” on the red and blue sides which resemble the
+H<Math mode="inline" tex="\alpha" text="alpha" xml:id="m11">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> profiles of double-peaked emitters such as NGC 4203 and NGC
+4450. This similarity suggests that the very broad H<Math mode="inline" tex="\alpha" text="alpha" xml:id="m12">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> profile in
+NGC 4579 may represent emission from an accretion disk. Three such
+objects have been found recently in two <emph>HST</emph> programs which have
+targeted a total of 30 galaxies, demonstrating that double-peaked or
+extremely broad-line emission in LINERs must be much more common than
+would be inferred from ground-based surveys. The ratio of the narrow
+<!--  %**** 4579.tex Line 75 **** -->[S ii] <Math mode="inline" tex="\lambda" text="lambda" xml:id="m13">
+        <XMath>
+          <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+        </XMath>
+      </Math><Math mode="inline" tex="\lambda" text="lambda" xml:id="m14">
+        <XMath>
+          <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+        </XMath>
+      </Math>6716, 6731 lines shows a pronounced gradient
+indicating a steep rise in density toward the nucleus. The direct
+detection of a density gradient within the inner arcsecond of the
+narrow-line region confirms expectations from previous observations of
+linewidth-critical density correlations in several LINERs.</p>
+  </abstract>
+  <keywords>galaxies: active — galaxies: individual (NGC 4579) —
+galaxies: nuclei — galaxies: Seyfert</keywords>
+  <note role="slugcomment">To appear in The Astrophysical Journal</note>
+<!--  %**** 4579.tex Line 50 **** -->  <section refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>Introduction</title>
+    <para xml:id="S1.p1">
+      <p>In the twenty years since LINERs were first identified as a major
+component of the extragalactic population <cite class="ltx_citemacro_citep">(<bibref bibrefs="h80" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite>, most research
+on these objects has been directed toward resolving the question of
+whether they represent a type of accretion-powered active galactic
+nucleus (AGN), or whether they are instead powered by purely stellar
+phenomena. The LINER class may be heterogeneous, but it is now very
+clear that at least some LINERs must be genuine AGNs <cite class="ltx_citemacro_citep">(for a
+review, see <bibref bibrefs="ho99a" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite>. An exciting recent development has been the
+detection of very broad, double-peaked H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.p1.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> emission lines in a
+handful of nearby LINERs <cite class="ltx_citemacro_citep">(<bibref bibrefs="sbw93,bow96,shi00,ho00" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite>, a
+phenomenon which is most readily interpreted in terms of emission from
+<!--  %**** 4579.tex Line 100 **** -->a relativistic accretion disk.</p>
+    </para>
+    <para xml:id="S1.p2">
+      <p>NGC 4579 is a Virgo cluster Sb-type spiral with a redshift of <Math mode="inline" tex="cz=1520" text="c * z = 1520" xml:id="S1.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">c</XMTok>
+                <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              </XMApp>
+              <XMTok meaning="1520" role="NUMBER">1520</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S1.p2.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and a distance of 21 Mpc according to recent Tully-Fisher
+measurements <cite class="ltx_citemacro_citep">(<bibref bibrefs="gav99" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite>. It has long been known to host a LINER
+nucleus with broad wings on the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.p2.m3">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> emission-line profile
+<cite class="ltx_citemacro_citep">(<bibref bibrefs="sta82,kee83,fs85" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite>. Using a ground-based spectrum obtained at
+the Palomar 5-m telescope, <cite class="ltx_citemacro_citet"><bibref bibrefs="hfs97b" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+            <bibrefphrase>(</bibrefphrase>
+            <bibrefphrase>)</bibrefphrase>
+          </bibref></cite> found that the broad
+component of H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.p2.m4">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> has a full-width at half maximum (FWHM) of <Math mode="inline" tex="2300" text="2300" xml:id="S1.p2.m5">
+          <XMath>
+            <XMTok meaning="2300" role="NUMBER">2300</XMTok>
+          </XMath>
+        </Math>
+km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S1.p2.m6">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. <emph>Hubble Space Telescope</emph> (<emph>HST</emph>) Faint Object Spectrograph
+data have revealed substantially broader permitted lines in the
+ultraviolet (UV): for example, C iv <Math mode="inline" tex="\lambda" text="lambda" xml:id="S1.p2.m7">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>1549 has FWHM
+<Math mode="inline" tex="=6600" text="absent = 6600" xml:id="S1.p2.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="6600" role="NUMBER">6600</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S1.p2.m9">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and full-width at zero intensity (FWZI) of
+<Math mode="inline" tex="13,\!000" text="list@(13, 000)" xml:id="S1.p2.m10">
+          <XMath>
+            <XMDual>
+              <XMApp>
+                <XMTok meaning="list"/>
+                <XMRef idref="S1.p2.m10.1"/>
+                <XMRef idref="S1.p2.m10.2"/>
+              </XMApp>
+              <XMWrap>
+                <XMTok meaning="13" role="NUMBER" xml:id="S1.p2.m10.1">13</XMTok>
+                <XMTok role="PUNCT" rpadding="-1.7pt">,</XMTok>
+                <XMTok meaning="000" role="NUMBER" xml:id="S1.p2.m10.2">000</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S1.p2.m11">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> <cite class="ltx_citemacro_citep">(<bibref bibrefs="bar96" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite>. In this paper, we describe an <emph>HST</emph> optical spectrum of the NGC 4579 nucleus, which provides new insights
+into the properties of this low-luminosity AGN. Our analysis of the
+rather complex emission-line kinematics will be presented elsewhere.</p>
+    </para>
+  </section>
+  <section refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>Observations</title>
+    <para xml:id="S2.p1">
+      <p>We observed NGC 4579 with the Space Telescope Imaging Spectrograph
+(STIS) on 1999 April 21 UT as part of a program to study the
+emission-line kinematics of a sample of six nearby AGNs. The galaxy
+was observed at five parallel positions with the STIS 0<Math mode="inline" tex="\farcs" text="arcsecond" xml:id="S2.p1.m1">
+          <XMath>
+            <XMDual role="ID">
+              <XMTok meaning="arcsecond" name="farcs" role="ID"/>
+              <XMApp role="POSTFIX">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="mid3"/>
+                <XMTok>.</XMTok>
+                <XMWrap>
+                  <XMTok name="prime" role="SUPOP">′</XMTok>
+                  <XMTok name="prime" role="SUPOP">′</XMTok>
+                </XMWrap>
+              </XMApp>
+            </XMDual>
+          </XMath>
+        </Math>2-wide
+slit, with a gap of 0<Math mode="inline" tex="\farcs" text="arcsecond" xml:id="S2.p1.m2">
+          <XMath>
+            <XMDual role="ID">
+              <XMTok meaning="arcsecond" name="farcs" role="ID"/>
+              <XMApp role="POSTFIX">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="mid3"/>
+                <XMTok>.</XMTok>
+                <XMWrap>
+                  <XMTok name="prime" role="SUPOP">′</XMTok>
+                  <XMTok name="prime" role="SUPOP">′</XMTok>
+                </XMWrap>
+              </XMApp>
+            </XMDual>
+          </XMath>
+        </Math>05 between adjacent slit positions. Six
+<!--  %**** 4579.tex Line 125 **** -->spacecraft orbits were divided roughly equally among the five slit
+positions, and the exposure time for the central slit position was
+2700 s. The telescope was oriented with the STIS slit at a position
+angle of 95<Math mode="inline" tex="\fdg" text="degree" xml:id="S2.p1.m3">
+          <XMath>
+            <XMDual role="ID">
+              <XMTok meaning="degree" name="fdg" role="ID"/>
+              <XMApp role="POSTFIX">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="mid3"/>
+                <XMTok>.</XMTok>
+                <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+              </XMApp>
+            </XMDual>
+          </XMath>
+        </Math>3.</p>
+    </para>
+    <para xml:id="S2.p2">
+      <p>The observations were obtained with the G750M grating and a tilt
+setting of 6300–6860 Å, giving coverage of [O i]
+<Math mode="inline" tex="\lambda" text="lambda" xml:id="S2.p2.m1">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math><Math mode="inline" tex="\lambda" text="lambda" xml:id="S2.p2.m2">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>6300, 6363, the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p2.m3">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math>+[N ii] emission blend, and the [S ii]
+<Math mode="inline" tex="\lambda" text="lambda" xml:id="S2.p2.m4">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math><Math mode="inline" tex="\lambda" text="lambda" xml:id="S2.p2.m5">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>6716, 6731 doublet. For this setting, the point-source
+spectral resolution is <Math mode="inline" tex="\sim 0.9" text="absent similar-to 0.9" xml:id="S2.p2.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="0.9" role="NUMBER">0.9</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> Å. The CCD was read out in
+unbinned mode, for a pixel scale of 0.554 Å along the dispersion
+direction and 0<Math mode="inline" tex="\farcs" text="arcsecond" xml:id="S2.p2.m7">
+          <XMath>
+            <XMDual role="ID">
+              <XMTok meaning="arcsecond" name="farcs" role="ID"/>
+              <XMApp role="POSTFIX">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="mid3"/>
+                <XMTok>.</XMTok>
+                <XMWrap>
+                  <XMTok name="prime" role="SUPOP">′</XMTok>
+                  <XMTok name="prime" role="SUPOP">′</XMTok>
+                </XMWrap>
+              </XMApp>
+            </XMDual>
+          </XMath>
+        </Math>0507 along the spatial axis. Three separate
+exposures were combined with rejection of cosmic-ray hits. The data
+were calibrated by the standard pipeline at STScI. To remove
+remaining hot pixels, we performed one additional step of cleaning the
+data using a filtering algorithm which replaced deviant pixels with a
+local median value. The cleaned images were then geometrically
+rectified using the STIS calibration software.</p>
+    </para>
+  </section>
+  <section refnum="3" xml:id="S3">
+    <title><tag close=" ">3</tag>Broad H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.m1">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> Emission</title>
+    <subsection refnum="3.1" xml:id="S3.SS1">
+      <title><tag close=" ">3.1</tag>Observed Properties</title>
+      <para xml:id="S3.SS1.p1">
+        <p>Figure <ref labelref="LABEL:fig1"/> shows the <emph>HST</emph> spectrum of the NGC 4579 nucleus.
+The extraction is centered on the nucleus and is a sum of four CCD
+<!--  %**** 4579.tex Line 150 **** -->rows (0<Math mode="inline" tex="\farcs" text="arcsecond" xml:id="S3.SS1.p1.m1">
+            <XMath>
+              <XMDual role="ID">
+                <XMTok meaning="arcsecond" name="farcs" role="ID"/>
+                <XMApp role="POSTFIX">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="mid3"/>
+                  <XMTok>.</XMTok>
+                  <XMWrap>
+                    <XMTok name="prime" role="SUPOP">′</XMTok>
+                    <XMTok name="prime" role="SUPOP">′</XMTok>
+                  </XMWrap>
+                </XMApp>
+              </XMDual>
+            </XMath>
+          </Math>2 total) in the 2-dimensional spectrum. The background
+level (including starlight from the galaxy bulge) is negligible in
+comparison with the nuclear brightness, and no background subtraction
+has been applied. In addition to the usual narrow-line features
+expected in a LINER spectrum, there is a surprisingly broad and
+asymmetric component to the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS1.p1.m2">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> emission. On the blue side, the
+profile has a “shoulder” at 6520 Å, just blueward of the base of
+the [N ii] <Math mode="inline" tex="\lambda" text="lambda" xml:id="S3.SS1.p1.m3">
+            <XMath>
+              <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+            </XMath>
+          </Math>6548 line. The red side of the profile does not
+exhibit such well-defined features, although there is a shallow
+shoulder on the profile at <Math mode="inline" tex="\sim 6670" text="absent similar-to 6670" xml:id="S3.SS1.p1.m4">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                <XMTok meaning="absent"/>
+                <XMTok meaning="6670" role="NUMBER">6670</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> Å. These shoulders are real
+features and not merely artifacts of the data reduction or geometric
+rectification, as they also appear in spectral extractions of the raw
+data, even for large extraction widths. The blue edge of the line
+appears to be at <Math mode="inline" tex="\sim 6420" text="absent similar-to 6420" xml:id="S3.SS1.p1.m5">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                <XMTok meaning="absent"/>
+                <XMTok meaning="6420" role="NUMBER">6420</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> Å rest wavelength, while its red tail
+extends to the end of the spectrum at 6820 Å, giving FWZI <Math mode="inline" tex="\approx 18,\!000" text="absent approximately-equals list@(18, 000)" xml:id="S3.SS1.p1.m6">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+                <XMTok meaning="absent"/>
+                <XMDual>
+                  <XMApp>
+                    <XMTok meaning="list"/>
+                    <XMRef idref="S3.SS1.p1.m6.1"/>
+                    <XMRef idref="S3.SS1.p1.m6.2"/>
+                  </XMApp>
+                  <XMWrap>
+                    <XMTok meaning="18" role="NUMBER" xml:id="S3.SS1.p1.m6.1">18</XMTok>
+                    <XMTok role="PUNCT" rpadding="-1.7pt">,</XMTok>
+                    <XMTok meaning="000" role="NUMBER" xml:id="S3.SS1.p1.m6.2">000</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+            </XMath>
+          </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS1.p1.m7">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>. For comparison, Figure <ref labelref="LABEL:fig1"/> also displays the
+ground-based spectrum from Ho, Filippenko, &amp; Sargent (1997a), which
+was obtained at the Palomar 5-m telescope on 1984 February 12 UT.</p>
+      </para>
+      <para xml:id="S3.SS1.p2">
+        <p>We performed profile fits to remove the narrow-line contributions of
+H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS1.p2.m1">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math>, [N ii], and [S ii]. To fit the narrow lines, we
+first fit a spline to the approximate shape of the very broad H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS1.p2.m2">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> emission profile, and subtracted this component from the spectrum,
+leaving only the narrow lines and a possible contribution from a
+“normal” broad H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS1.p2.m3">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> component. The [S ii] doublet was fitted
+<!--  %**** 4579.tex Line 175 **** -->with a pair of Gaussians. For the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS1.p2.m4">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math>+[N ii] blend, we used a four-Gaussian
+fit representing narrow and broad H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS1.p2.m5">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> and the two [N ii]
+lines, which were constrained to have the same velocity width and a
+height ratio of 3:1. The narrow H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS1.p2.m6">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math>, [N ii], and [S ii]
+lines have FWHM = 520–570 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS1.p2.m7">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, while the normal broad component of
+H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS1.p2.m8">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> has FWHM = 2100 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS1.p2.m9">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, very similar to the value of 2300 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS1.p2.m10">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> found by <cite class="ltx_citemacro_citet"><bibref bibrefs="hfs97a" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+              <bibrefphrase>(</bibrefphrase>
+              <bibrefphrase>)</bibrefphrase>
+            </bibref></cite>.</p>
+      </para>
+      <para xml:id="S3.SS1.p3">
+        <p>After subtracting the fitted components, the remaining very broad
+component of H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS1.p3.m1">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> has <Math mode="inline" tex="f=1.1\times 10^{-13}" text="f = 1.1 * 10 ^ (- 13)" xml:id="S3.SS1.p3.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">×</XMTok>
+                  <XMTok meaning="1.1" role="NUMBER">1.1</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="13" role="NUMBER">13</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> erg cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S3.SS1.p3.m3">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS1.p3.m4">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>,
+corresponding to a luminosity of <Math mode="inline" tex="5.8\times 10^{39}" text="5.8 * 10 ^ 39" xml:id="S3.SS1.p3.m5">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="5.8" role="NUMBER">5.8</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="39" role="NUMBER">39</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> erg s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS1.p3.m6">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> for a
+distance of 21 Mpc. Since there have been no previous optical <emph>HST</emph> spectra of the NGC 4579 nucleus, it is not possible to determine
+whether this component has always been present or whether it is a
+transient feature. The amplitude of the broad feature is sufficiently
+low that it could be present but undetected in the Palomar spectrum.
+In general, it is extremely difficult to detect such broad,
+low-amplitude features in ground-based spectra, because of the
+overwhelming contamination by starlight from the bulge of the host
+galaxy. To make matters worse, elliptical galaxies and spiral bulges
+generally display a broad continuum hump in the region 6400-6700 Å <cite class="ltx_citemacro_citep">(e.g., <bibref bibrefs="fs85" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite>. The starlight subtraction method employed by
+<cite class="ltx_citemacro_citet"><bibref bibrefs="hfs97a" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+              <bibrefphrase>(</bibrefphrase>
+              <bibrefphrase>)</bibrefphrase>
+            </bibref></cite> was designed to yield zero continuum flux in the
+subtracted spectrum, and this procedure could have removed a faint,
+very broad H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS1.p3.m7">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> feature by oversubtracting the stellar continuum
+<!--  %**** 4579.tex Line 200 **** -->template.</p>
+      </para>
+      <para xml:id="S3.SS1.p4">
+        <p>No other broad optical lines have been detected in NGC 4579, but the
+<emph>HST</emph> UV spectrum (taken in 1994 December) clearly demonstrates that
+other permitted lines are very broad as well. The UV spectrum has low
+signal-to-noise ratio (S/N) in the grating setting that covers Ly <Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS1.p4.m1">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> and C iv, but emission from background starlight in this
+wavelength range is negligible. As shown in Figure <ref labelref="LABEL:fig2"/>, the
+Ly <Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS1.p4.m2">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> and C iv profiles have blue wings which extend to
+<Math mode="inline" tex="\sim 6000" text="absent similar-to 6000" xml:id="S3.SS1.p4.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                <XMTok meaning="absent"/>
+                <XMTok meaning="6000" role="NUMBER">6000</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS1.p4.m4">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> from the systemic velocity, comparable to the maximum
+extent of the blue wing of H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS1.p4.m5">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math>. The red wing of H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS1.p4.m6">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> extends to
+velocities roughly 4000 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS1.p4.m7">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> greater than the red wing of C iv.
+It is difficult to discern the maximum extent of the red wing of Ly <Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS1.p4.m8">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> due to the low S/N and a possible contribution from N v
+<Math mode="inline" tex="\lambda" text="lambda" xml:id="S3.SS1.p4.m9">
+            <XMath>
+              <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+            </XMath>
+          </Math>1240, but Ly <Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS1.p4.m10">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> emission is seen out to perhaps <Math mode="inline" tex="9000" text="9000" xml:id="S3.SS1.p4.m11">
+            <XMath>
+              <XMTok meaning="9000" role="NUMBER">9000</XMTok>
+            </XMath>
+          </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS1.p4.m12">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> from the systemic velocity.</p>
+      </para>
+    </subsection>
+    <subsection refnum="3.2" xml:id="S3.SS2">
+      <title><tag close=" ">3.2</tag>Relationship to the Central Engine</title>
+      <para xml:id="S3.SS2.p1">
+        <p>Double-peaked broad H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS2.p1.m1">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> emission lines have previously been detected
+in six LINERs as well as in several radio galaxies and radio-loud
+quasars; see <cite class="ltx_citemacro_citet"><bibref bibrefs="eh94" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+              <bibrefphrase>(</bibrefphrase>
+              <bibrefphrase>)</bibrefphrase>
+            </bibref></cite>, <cite class="ltx_citemacro_citet"><bibref bibrefs="fil96" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+              <bibrefphrase>(</bibrefphrase>
+              <bibrefphrase>)</bibrefphrase>
+            </bibref></cite>, and <cite class="ltx_citemacro_citet"><bibref bibrefs="ho00" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+              <bibrefphrase>(</bibrefphrase>
+              <bibrefphrase>)</bibrefphrase>
+            </bibref></cite> for reviews
+of their properties. Models of emission from rotating, Keplerian
+accretion disks provide the best explanation for the origin of the
+<!--  %**** 4579.tex Line 225 **** -->double-peaked H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS2.p1.m2">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> lines in these objects <cite class="ltx_citemacro_citep">(e.g., <bibref bibrefs="hf88,chf89,hal96,sb97" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite>. The width of the broad-line profile in NGC 4579
+is comparable to the linewidths in these double-peaked emitters, which
+have typical FWZI <Math mode="inline" tex="\approx 15,\!000-20,\!000" text="absent approximately-equals list@(15, 000 - 20, 000)" xml:id="S3.SS2.p1.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+                <XMTok meaning="absent"/>
+                <XMDual>
+                  <XMApp>
+                    <XMTok meaning="list"/>
+                    <XMRef idref="S3.SS2.p1.m3.1"/>
+                    <XMRef idref="S3.SS2.p1.m3.3"/>
+                    <XMRef idref="S3.SS2.p1.m3.2"/>
+                  </XMApp>
+                  <XMWrap>
+                    <XMTok meaning="15" role="NUMBER" xml:id="S3.SS2.p1.m3.1">15</XMTok>
+                    <XMTok role="PUNCT" rpadding="-1.7pt">,</XMTok>
+                    <XMApp xml:id="S3.SS2.p1.m3.3">
+                      <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok meaning="000" role="NUMBER">000</XMTok>
+                      <XMTok meaning="20" role="NUMBER">20</XMTok>
+                    </XMApp>
+                    <XMTok role="PUNCT" rpadding="-1.7pt">,</XMTok>
+                    <XMTok meaning="000" role="NUMBER" xml:id="S3.SS2.p1.m3.2">000</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+            </XMath>
+          </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS2.p1.m4">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>. While the NGC
+4579 H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS2.p1.m5">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> profile is not clearly double-peaked, the shoulders at
+<Math mode="inline" tex="-2500" text="- 2500" xml:id="S3.SS2.p1.m6">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok meaning="2500" role="NUMBER">2500</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> and 5000 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS2.p1.m7">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> are very similar to the features detected in
+NGC 4203 <cite class="ltx_citemacro_citep">(<bibref bibrefs="shi00" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite> and NGC 4450 <cite class="ltx_citemacro_citep">(<bibref bibrefs="ho00" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite>. The overall
+similarities in the line profiles suggest a common origin for the
+broad-line emission in these three galaxies. Their profile shoulders
+are much less pronounced than the broad humps in “classic”
+double-peaked emitters such as Arp 102b <cite class="ltx_citemacro_citep">(e.g., <bibref bibrefs="hf88" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite>, but
+<cite class="ltx_citemacro_citet"><bibref bibrefs="ho00" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+              <bibrefphrase>(</bibrefphrase>
+              <bibrefphrase>)</bibrefphrase>
+            </bibref></cite> have shown that a relativistic accretion disk model can
+fit the double-peaked profile in NGC 4450.</p>
+      </para>
+      <para xml:id="S3.SS2.p2">
+        <p>Assuming that the very broad emission from NGC 4579 originates in an
+accretion disk, the inner radius of the line-emitting portion of the
+disk can be estimated from the maximum velocity extent of the line.
+For a disk inclination of 45°, the projected velocity of the red
+wing of H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS2.p2.m1">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> (<Math mode="inline" tex="12,\!000" text="list@(12, 000)" xml:id="S3.SS2.p2.m2">
+            <XMath>
+              <XMDual>
+                <XMApp>
+                  <XMTok meaning="list"/>
+                  <XMRef idref="S3.SS2.p2.m2.1"/>
+                  <XMRef idref="S3.SS2.p2.m2.2"/>
+                </XMApp>
+                <XMWrap>
+                  <XMTok meaning="12" role="NUMBER" xml:id="S3.SS2.p2.m2.1">12</XMTok>
+                  <XMTok role="PUNCT" rpadding="-1.7pt">,</XMTok>
+                  <XMTok meaning="000" role="NUMBER" xml:id="S3.SS2.p2.m2.2">000</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMath>
+          </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS2.p2.m3">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>) corresponds to a radius of 160
+Schwarzschild radii (<Math mode="inline" tex="R_{\mathrm{s}}" text="R _ s" xml:id="S3.SS2.p2.m4">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>). The very broad line does not uniquely
+imply the presence of an accretion disk, however. Since the line does
+not possess a disklike, strongly double-peaked profile, other models
+may be able to explain the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS2.p2.m5">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> profile. Spherical broad-line region
+(BLR) models incorporating radial outflows can produce line profiles
+with horns and shoulders as well as very broad wings <cite class="ltx_citemacro_citep">(<bibref bibrefs="rpb90" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite>,
+<!--  %**** 4579.tex Line 250 **** -->qualitatively resembling the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS2.p2.m6">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> profile in NGC 4579. In addition,
+the broad-line profiles produced by the outflow models possess an
+intermediate-width core similar in appearance to the “normal”
+broad-line component observed in NGC 4579. If the accretion disk
+model does apply to NGC 4579, then the intermediate-width component of
+H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS2.p2.m7">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> most likely originates in the “normal” BLR of NGC 4579 rather
+than in the accretion disk, as the disk alone will produce a
+double-horned rather than centrally peaked profile
+<cite class="ltx_citemacro_citep">(e.g., <bibref bibrefs="erac95" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite>. Linewidths of <Math mode="inline" tex="\sim 2000" text="absent similar-to 2000" xml:id="S3.SS2.p2.m8">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                <XMTok meaning="absent"/>
+                <XMTok meaning="2000" role="NUMBER">2000</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS2.p2.m9">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> are typical
+for the broad H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS2.p2.m10">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> components seen in ground-based spectra of LINERs
+<cite class="ltx_citemacro_citep">(<bibref bibrefs="hfs97b" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite>.</p>
+      </para>
+      <para xml:id="S3.SS2.p3">
+        <p>Alternatively, models based on binary black holes <cite class="ltx_citemacro_citep">(<bibref bibrefs="gas83" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite> can
+also produce very broad, asymmetric emission-line profiles. Such
+models have been ruled out, at least for a few well-studied objects,
+because the velocities of the broad wings do not exhibit the pattern
+of long-term variability that would be expected from orbital motion of
+a close pair of black holes <cite class="ltx_citemacro_citep">(<bibref bibrefs="erac97" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite>.</p>
+      </para>
+      <para xml:id="S3.SS2.p4">
+        <p>NGC 4579 shares other properties in common with the double-peaked
+emitters, most notably the overall shape of its spectral energy
+distribution (SED). In particular, NGC 4579 lacks a “big blue bump”
+component, and its radio-to-optical flux ratio qualifies it as
+radio-loud although its radio luminosity on an absolute scale is small
+<cite class="ltx_citemacro_citep">(<bibref bibrefs="ho99b" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite>. Advection-dominated accretion flows
+<!--  %**** 4579.tex Line 275 **** --><cite class="ltx_citemacro_citep">(ADAFs; <bibref bibrefs="ny94" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite> have been proposed as an explanation for these
+properties, and <cite class="ltx_citemacro_citet"><bibref bibrefs="qua99" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+              <bibrefphrase>(</bibrefphrase>
+              <bibrefphrase>)</bibrefphrase>
+            </bibref></cite> have shown that the SED of NGC 4579 can
+be explained by emission from a thin accretion disk with a transition
+at <Math mode="inline" tex="\sim 100R_{\mathrm{s}}" text="absent similar-to 100 * R _ s" xml:id="S3.SS2.p4.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                <XMTok meaning="absent"/>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="100" role="NUMBER">100</XMTok>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                    <XMTok fontsize="70%" role="UNKNOWN">s</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> to an ADAF for the innermost accretion flow. By
+truncating the thin-disk portion of the accretion flow and removing
+the innermost, hottest portion of the thin disk, the models are able
+to produce an SED without a big blue bump. Interior to the truncation
+radius, the disk is presumed to evaporate into an ADAF, and this
+portion of the accretion flow generates the X-ray emission. The broad
+H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.SS2.p4.m2">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> linewidth is consistent with this scenario, as it requires the
+truncation radius of the thin disk to be at <Math mode="inline" tex="r\lesssim 160" text="r less-than-or-similar-to 160" xml:id="S3.SS2.p4.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="less-than-or-similar-to" name="lesssim" role="RELOP">≲</XMTok>
+                <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                <XMTok meaning="160" role="NUMBER">160</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> <Math mode="inline" tex="R_{\mathrm{s}}" text="R _ s" xml:id="S3.SS2.p4.m4">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">s</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>.</p>
+      </para>
+      <para xml:id="S3.SS2.p5">
+        <p>However, the value of <Math mode="inline" tex="M_{\mathrm{BH}}" text="M _ BH" xml:id="S3.SS2.p5.m1">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">BH</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> used by <cite class="ltx_citemacro_citet"><bibref bibrefs="qua99" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+              <bibrefphrase>(</bibrefphrase>
+              <bibrefphrase>)</bibrefphrase>
+            </bibref></cite> in modeling the SED
+of NGC 4579 is probably too low by an order of magnitude. The
+black-hole mass can be estimated using the recently discovered
+correlation between <Math mode="inline" tex="M_{\mathrm{BH}}" text="M _ BH" xml:id="S3.SS2.p5.m2">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">BH</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> and bulge velocity dispersion <cite class="ltx_citemacro_citep">(<bibref bibrefs="fm00,geb00" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite>. Central velocity dispersion measurements for NGC 4579 range
+from 130 to 187 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S3.SS2.p5.m3">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> <cite class="ltx_citemacro_citep">(<bibref bibrefs="wmt85,gdp96,pal97,hs98" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite>. Applying the
+<cite class="ltx_citemacro_citet"><bibref bibrefs="geb00" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+              <bibrefphrase>(</bibrefphrase>
+              <bibrefphrase>)</bibrefphrase>
+            </bibref></cite> and <cite class="ltx_citemacro_citet"><bibref bibrefs="fm00" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+              <bibrefphrase>(</bibrefphrase>
+              <bibrefphrase>)</bibrefphrase>
+            </bibref></cite> relations, the predicted black-hole
+mass is in the range <Math mode="inline" tex="(1.8-9.3)\times 10^{7}" text="(1.8 - 9.3) * 10 ^ 7" xml:id="S3.SS2.p5.m4">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMDual>
+                  <XMRef idref="S3.SS2.p5.m4.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMApp xml:id="S3.SS2.p5.m4.1">
+                      <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok meaning="1.8" role="NUMBER">1.8</XMTok>
+                      <XMTok meaning="9.3" role="NUMBER">9.3</XMTok>
+                    </XMApp>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> <Math mode="inline" tex="M_{\odot}" text="M _ direct-product" xml:id="S3.SS2.p5.m5">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>.<note mark="1" role="footnote">In applying
+the <cite class="ltx_citemacro_citet"><bibref bibrefs="geb00" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+                <bibrefphrase>(</bibrefphrase>
+                <bibrefphrase>)</bibrefphrase>
+              </bibref></cite> relation, we neglect the small (<Math mode="inline" tex="\lesssim 10\%" text="absent less-than-or-similar-to 10percent" xml:id="S3.SS2.p5.m6">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="less-than-or-similar-to" name="lesssim" role="RELOP">≲</XMTok>
+                  <XMTok meaning="absent"/>
+                  <XMApp>
+                    <XMTok meaning="percent" role="POSTFIX">%</XMTok>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>)
+difference between the central velocity dispersion and the
+luminosity-weighted velocity dispersion within the effective radius,
+as spatially resolved measurements of <Math mode="inline" tex="\sigma" text="sigma" xml:id="S3.SS2.p5.m7">
+              <XMath>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              </XMath>
+            </Math> are not available.</note>
+The smaller value of <Math mode="inline" tex="4\times 10^{6}" text="4 * 10 ^ 6" xml:id="S3.SS2.p5.m8">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="4" role="NUMBER">4</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> <Math mode="inline" tex="M_{\odot}" text="M _ direct-product" xml:id="S3.SS2.p5.m9">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> used by <cite class="ltx_citemacro_citet"><bibref bibrefs="qua99" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+              <bibrefphrase>(</bibrefphrase>
+              <bibrefphrase>)</bibrefphrase>
+            </bibref></cite> was a
+<!--  %**** 4579.tex Line 300 **** -->crude estimate based on the UV broad-line widths and ionization
+parameter <cite class="ltx_citemacro_citep">(<bibref bibrefs="bar96" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite>, and the <Math mode="inline" tex="M_{\mathrm{BH}}-\sigma" text="M _ BH - sigma" xml:id="S3.SS2.p5.m10">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">BH</XMTok>
+                </XMApp>
+                <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> correlations probably
+predict the central mass more accurately. With this larger central
+mass, the model predictions for the SED are altered, and it may be
+possible to fit the UV/optical portion of the SED with a thin disk
+extending all the way in to <Math mode="inline" tex="r_{\mathrm{in}}=3R_{\mathrm{s}}" text="r _ in = 3 * R _ s" xml:id="S3.SS2.p5.m11">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">in</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok meaning="3" role="NUMBER">3</XMTok>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                    <XMTok fontsize="70%" role="UNKNOWN">s</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, as described by
+<cite class="ltx_citemacro_citet"><bibref bibrefs="qua99" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+              <bibrefphrase>(</bibrefphrase>
+              <bibrefphrase>)</bibrefphrase>
+            </bibref></cite> for the case of M81. It remains to be seen whether
+models of a truncated thin disk surrounding an ADAF can be constructed
+to simultaneously fit the UV/optical continuum and the X-ray
+luminosity of NGC 4579, for a central mass of <Math mode="inline" tex="M_{\mathrm{BH}}\approx 5\times 10^{7}" text="M _ BH approximately-equals 5 * 10 ^ 7" xml:id="S3.SS2.p5.m12">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">BH</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">×</XMTok>
+                  <XMTok meaning="5" role="NUMBER">5</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> <Math mode="inline" tex="M_{\odot}" text="M _ direct-product" xml:id="S3.SS2.p5.m13">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">M</XMTok>
+                <XMTok fontsize="70%" meaning="direct-product" name="odot" role="MULOP">⊙</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>.</p>
+      </para>
+      <para xml:id="S3.SS2.p6">
+        <p>Other evidence for an accretion disk in NGC 4579 is ambiguous. Iron
+K-line emission observed in <emph>ASCA</emph> spectra <cite class="ltx_citemacro_citep">(<bibref bibrefs="ter98,ter00" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite>
+may originate from the inner accretion disk. However, the line does
+not clearly show a disk-like, relativistically broadened profile like
+those seen in some Seyfert 1 nuclei <cite class="ltx_citemacro_citep">(e.g., <bibref bibrefs="tan95,nan99" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+              <bibrefphrase>, </bibrefphrase>
+            </bibref>)</cite>,
+which would be expected if the disk extended all the way in to the
+black hole. Future X-ray observations with greater sensitivity and
+higher spectral resolution can better constrain the nature of the
+inner accretion flow and the possible presence of an ADAF.</p>
+      </para>
+    </subsection>
+  </section>
+  <section refnum="4" xml:id="S4">
+    <title><tag close=" ">4</tag>Narrow-line Properties</title>
+<!--  %**** 4579.tex Line 325 **** -->    <para xml:id="S4.p1">
+      <p>Shock heating was the first mechanism proposed for the excitation of
+LINER narrow-line regions (NLRs), largely because observations of the
+[O iii] <Math mode="inline" tex="\lambda" text="lambda" xml:id="S4.p1.m1">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math><Math mode="inline" tex="\lambda" text="lambda" xml:id="S4.p1.m2">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>4959, 5007 and <Math mode="inline" tex="\lambda" text="lambda" xml:id="S4.p1.m3">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>4363 lines seemed to indicate
+electron temperatures higher than would be expected for photoionized
+gas <cite class="ltx_citemacro_citep">(e.g., <bibref bibrefs="ko76,fos78" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite>. Subsequent studies demonstrated
+that the observed [O iii] line ratios could be reproduced by
+photoionization models provided that a high-density component (<Math mode="inline" tex="n_{e}\gtrsim 10^{5.5}" text="n _ e greater-than-or-equivalent-to 10 ^ 5.5" xml:id="S4.p1.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than-or-equivalent-to" name="gtrsim" role="RELOP">≳</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="5.5" role="NUMBER">5.5</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="S4.p1.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) is present in the NLR to boost emission in
+the [O iii] <Math mode="inline" tex="\lambda" text="lambda" xml:id="S4.p1.m6">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>4363 line <cite class="ltx_citemacro_citep">(<bibref bibrefs="fh84" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite>. Correlations between
+narrow-line width and critical density for collisional deexcitation
+(<Math mode="inline" tex="n_{\mathrm{crit}}" text="n _ crit" xml:id="S4.p1.m7">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">crit</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>), found in several LINERs, support this hypothesis by
+demonstrating the probable presence of radial density gradients in the
+NLR <cite class="ltx_citemacro_citep">(<bibref bibrefs="fh84,fil85,fs88" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite>. Due to the difficulty of obtaining
+spectra with subarcsecond spatial resolution, however, there has been
+little <emph>direct</emph> evidence (in the form of spatially resolved
+density measurements) for density stratification in LINERs. The STIS
+observations present an opportunity to revisit this issue, using the
+ratio of the [S ii] <Math mode="inline" tex="\lambda" text="lambda" xml:id="S4.p1.m8">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math><Math mode="inline" tex="\lambda" text="lambda" xml:id="S4.p1.m9">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>6716, 6731 lines as a density
+diagnostic.</p>
+    </para>
+    <para xml:id="S4.p2">
+      <p>Since the S/N of the observations is not sufficient for fitting the
+[S ii] lines on a row-by-row basis, we performed multi-row
+extractions at several locations along the slit, for all five slit
+positions. When possible, we extracted regions corresponding to a
+well-defined cloud or clump. For each extraction region, we
+<!--  %**** 4579.tex Line 350 **** -->subtracted the local background level and fitted the [S ii]
+doublet using a pair of Gaussians. The two components were assumed to
+have the same velocity width, except at the nucleus where the higher
+S/N permitted a fit with fewer constraints. The line ratios were then
+converted to an electron density at each position using the STSDAS
+task TEMDEN, for an assumed temperature of <Math mode="inline" tex="T_{e}=10^{4}" text="T _ e = 10 ^ 4" xml:id="S4.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> K. The
+[O i] <Math mode="inline" tex="\lambda" text="lambda" xml:id="S4.p2.m2">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>6300 line intensity was also measured by fitting a
+single Gaussian. Due to the large difference between the critical
+densities of the [S ii] (<Math mode="inline" tex="n_{\mathrm{crit}}=1.6\times 10^{3}" text="n _ crit = 1.6 * 10 ^ 3" xml:id="S4.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">crit</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="1.6" role="NUMBER">1.6</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and
+<Math mode="inline" tex="1.5\times 10^{4}" text="1.5 * 10 ^ 4" xml:id="S4.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+              <XMTok meaning="1.5" role="NUMBER">1.5</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="S4.p2.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) and [O i] (<Math mode="inline" tex="n_{\mathrm{crit}}=1.6\times 10^{6}" text="n _ crit = 1.6 * 10 ^ 6" xml:id="S4.p2.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">crit</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="1.6" role="NUMBER">1.6</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+cm<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="S4.p2.m7">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) transitions, the intensity ratio of
+[O i]/[S ii] is sensitive to the nebular density as well.</p>
+    </para>
+    <para xml:id="S4.p3">
+      <p>The results of these measurements are shown in Figure <ref labelref="LABEL:fig3"/>. The
+electron density measured from the [S ii] lines rises from
+<Math mode="inline" tex="\lesssim 200" text="absent less-than-or-similar-to 200" xml:id="S4.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than-or-similar-to" name="lesssim" role="RELOP">≲</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="200" role="NUMBER">200</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="S4.p3.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> in the outer parts of the NLR (<Math mode="inline" tex="r\gtrsim 100" text="r greater-than-or-equivalent-to 100" xml:id="S4.p3.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than-or-equivalent-to" name="gtrsim" role="RELOP">≳</XMTok>
+              <XMTok font="italic" role="UNKNOWN">r</XMTok>
+              <XMTok meaning="100" role="NUMBER">100</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+pc) to <Math mode="inline" tex="2630\pm 70" text="2630 plus-or-minus 70" xml:id="S4.p3.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              <XMTok meaning="2630" role="NUMBER">2630</XMTok>
+              <XMTok meaning="70" role="NUMBER">70</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="S4.p3.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> at the nucleus. Overall, the trend of
+increasing <Math mode="inline" tex="n_{e}" text="n _ e" xml:id="S4.p3.m6">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> toward the nucleus directly supports the picture of a
+radially stratified density in the NLR. Although the [S ii]
+line ratio cannot probe densities greater than <Math mode="inline" tex="\sim 10^{4}" text="absent similar-to 10 ^ 4" xml:id="S4.p3.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="S4.p3.m8">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>,
+the intensity and width of [O i] at the nucleus implies still
+greater densities in the inner NLR. The [O i]/[S ii]
+ratio exhibits a sharp “spike” at the nucleus. Also, in the
+extraction centered on the nucleus, [O i] <Math mode="inline" tex="\lambda" text="lambda" xml:id="S4.p3.m9">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>6300 (FWHM = 930
+km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S4.p3.m10">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) is nearly twice as broad as the [S ii] lines (FWHM = 500
+<!--  %**** 4579.tex Line 375 **** -->and 570 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S4.p3.m11">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> for <Math mode="inline" tex="\lambda" text="lambda" xml:id="S4.p3.m12">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>6716 and <Math mode="inline" tex="\lambda" text="lambda" xml:id="S4.p3.m13">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>6731, respectively), indicating
+that the linewidth-<Math mode="inline" tex="n_{\mathrm{crit}}" text="n _ crit" xml:id="S4.p3.m14">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">crit</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> relation continues to hold at the smallest
+radii resolvable by <emph>HST</emph>. The difference between the widths of the
+two [S ii] lines in the nuclear extraction <cite class="ltx_citemacro_citep">(an effect first
+seen in M81; <bibref bibrefs="fs88" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite> also demonstrates the presence of a
+linewidth-<Math mode="inline" tex="n_{\mathrm{crit}}" text="n _ crit" xml:id="S4.p3.m15">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">crit</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> correlation within the inner <Math mode="inline" tex="r=2" text="r = 2" xml:id="S4.p3.m16">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">r</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> pc.</p>
+    </para>
+    <para xml:id="S4.p4">
+      <p>A simple model for the density structure can be constructed under the
+assumption that the ionization parameter <Math mode="inline" tex="U" text="U" xml:id="S4.p4.m1">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+          </XMath>
+        </Math> (defined as the ratio of
+ionizing photon density to electron density at the illuminated face of
+a cloud) is roughly independent of radius <cite class="ltx_citemacro_citep">(<bibref bibrefs="fh84" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite>. Then, <Math mode="inline" tex="n_{e}\propto r^{-2}" text="n _ e proportional-to r ^ (- 2)" xml:id="S4.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="proportional-to" name="propto" role="RELOP">∝</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. The assumption of constant <Math mode="inline" tex="U" text="U" xml:id="S4.p4.m3">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+          </XMath>
+        </Math> is certainly an
+oversimplification, as the UV spectrum of NGC 4579 demonstrates that
+the NLR contains clouds with a range of values of <Math mode="inline" tex="U" text="U" xml:id="S4.p4.m4">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+          </XMath>
+        </Math> and <Math mode="inline" tex="n_{e}" text="n _ e" xml:id="S4.p4.m5">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+<cite class="ltx_citemacro_citep">(<bibref bibrefs="bar96" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite>, and the observed values of <Math mode="inline" tex="n_{e}" text="n _ e" xml:id="S4.p4.m6">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> show considerable
+scatter. However, the model curve shown in Figure <ref labelref="LABEL:fig3"/>
+demonstrates that an <Math mode="inline" tex="r^{-2}" text="r ^ (- 2)" xml:id="S4.p4.m7">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">r</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> density law approximates the general
+trend of density as a function of radius. The [S ii] density in
+the nuclear extraction falls well below the <Math mode="inline" tex="r^{-2}" text="r ^ (- 2)" xml:id="S4.p4.m8">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">r</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> model prediction,
+but as noted already, the [S ii] ratio at the nucleus most
+likely underestimates the central density.</p>
+    </para>
+    <para xml:id="S4.p5">
+      <p>To confirm that the [O i]/[S ii] ratio is indeed
+indicative of higher densities at the nucleus, we calculated a grid of
+photoionization models using Cloudy <cite class="ltx_citemacro_citep">(<bibref bibrefs="fer98" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite> for a single,
+<!--  %**** 4579.tex Line 400 **** -->plane-parallel slab of solar-metallicity gas. Conditions were assumed
+to be typical of LINERs and of NGC 4579 in particular: an ionization
+parameter of <Math mode="inline" tex="U=10^{-3}-10^{-3.5}" text="U = 10 ^ (- 3) - 10 ^ (- 3.5)" xml:id="S4.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">U</XMTok>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="3.5" role="NUMBER">3.5</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and an ionizing continuum slope
+of <Math mode="inline" tex="\alpha_{\mathrm{ox}}=0.9" text="alpha _ ox = 0.9" xml:id="S4.p5.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">ox</XMTok>
+              </XMApp>
+              <XMTok meaning="0.9" role="NUMBER">0.9</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <cite class="ltx_citemacro_citep">(<bibref bibrefs="bar96" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite>. We find that
+[O i]/[S ii] <Math mode="inline" tex="\geq 1" text="absent &gt;= 1" xml:id="S4.p5.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than-or-equals" name="geq" role="RELOP">≥</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> is only achieved at densities <Math mode="inline" tex="n_{e}\gtrsim 2\times 10^{4}" text="n _ e greater-than-or-equivalent-to 2 * 10 ^ 4" xml:id="S4.p5.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than-or-equivalent-to" name="gtrsim" role="RELOP">≳</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">×</XMTok>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="S4.p5.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> for dust-free gas, or at <Math mode="inline" tex="n_{e}\gtrsim 10^{5}" text="n _ e greater-than-or-equivalent-to 10 ^ 5" xml:id="S4.p5.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than-or-equivalent-to" name="gtrsim" role="RELOP">≳</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="S4.p5.m7">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> when gas-phase depletion and dust grains with a
+Galactic dust-to-gas mass ratio are included in the calculations.
+Thus, the observed [O i]/[S ii] intensity ratio of
+<Math mode="inline" tex="1.01\pm 0.05" text="1.01 plus-or-minus 0.05" xml:id="S4.p5.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              <XMTok meaning="1.01" role="NUMBER">1.01</XMTok>
+              <XMTok meaning="0.05" role="NUMBER">0.05</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> at the nucleus indicates that <Math mode="inline" tex="n_{e}" text="n _ e" xml:id="S4.p5.m9">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> continues to rise
+well above <Math mode="inline" tex="10^{4}" text="10 ^ 4" xml:id="S4.p5.m10">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="S4.p5.m11">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> within the unresolved, inner portion of
+the NLR, and the inferred density increases further for the
+high-velocity material which contributes to the wings of the
+[O i] profile.</p>
+    </para>
+  </section>
+  <section refnum="5" xml:id="S5">
+    <title><tag close=" ">5</tag>Conclusions</title>
+    <para xml:id="S5.p1">
+      <p>STIS observations have recently revealed very broad double-peaked or
+double-shouldered broad H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S5.p1.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> profiles in three LINERs: NGC 4203
+<cite class="ltx_citemacro_citep">(<bibref bibrefs="shi00" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite> and NGC 4450 <cite class="ltx_citemacro_citep">(<bibref bibrefs="ho00" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite> from <emph>HST</emph> program GO-7361
+(which observed a total of 24 targets), and NGC 4579 from program
+GO-7403 (with 6 targets observed). In contrast, no double-peaked
+emitters were found during the course of the <cite class="ltx_citemacro_citet"><bibref bibrefs="hfs97a" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+            <bibrefphrase>(</bibrefphrase>
+            <bibrefphrase>)</bibrefphrase>
+          </bibref></cite> Palomar
+Observatory survey, which observed 486 nearby galaxies. Ground-based
+spectroscopy is apparently a very inefficient way to detect such
+<!--  %**** 4579.tex Line 425 **** -->features, except in much more luminous AGNs such as Arp 102B
+<cite class="ltx_citemacro_citep">(<bibref bibrefs="ssk83" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite> and Pictor A <cite class="ltx_citemacro_citep">(<bibref bibrefs="he94" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+            <bibrefphrase>, </bibrefphrase>
+          </bibref>)</cite>. Among nearby (<Math mode="inline" tex="D\lesssim 20" text="D less-than-or-similar-to 20" xml:id="S5.p1.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than-or-similar-to" name="lesssim" role="RELOP">≲</XMTok>
+              <XMTok font="italic" role="UNKNOWN">D</XMTok>
+              <XMTok meaning="20" role="NUMBER">20</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+Mpc), low-luminosity (<Math mode="inline" tex="L_{bol}\lesssim 10^{43}" text="L _ (b * o * l) less-than-or-similar-to 10 ^ 43" xml:id="S5.p1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than-or-similar-to" name="lesssim" role="RELOP">≲</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">l</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="43" role="NUMBER">43</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> erg s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S5.p1.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) AGNs, NGC
+1097 is the only example of a double-peaked emitter discovered from
+the ground (Storchi-Bergmann et al.1993). It is difficult to
+determine meaningful statistics on the incidence of broad
+double-peaked emission in the LINER population, but an <emph>HST</emph> spectroscopic survey of a larger sample of galaxies would provide
+useful constraints.</p>
+    </para>
+    <para xml:id="S5.p2">
+      <p>From the width of the very broad H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S5.p2.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> line in NGC 4579, we infer an
+inner radius of <Math mode="inline" tex="\sim 160" text="absent similar-to 160" xml:id="S5.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="160" role="NUMBER">160</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="R_{\mathrm{s}}" text="R _ s" xml:id="S5.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">s</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> for the line-emitting portion of the
+accretion disk. Alternatively, BLR models based on radial outflow
+rather than emission from a rotating disk may also be able to explain
+the observed H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S5.p2.m4">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> profile. Periodic <emph>HST</emph> monitoring of this galaxy
+(and other LINERs having double-peaked emission) would be valuable, as
+line-profile variability can provide tests of the accretion-disk and
+outflow models.</p>
+    </para>
+    <para xml:id="S5.p3">
+      <p>Finally, the direct detection of a radial density gradient within the
+inner NLR of NGC 4579 provides support for the interpretation of
+LINERs as photoionized AGNs.</p>
+    </para>
+  </section>
+  <acknowledgements><!--  %**** 4579.tex Line 450 **** -->Support for this work was provided through grant GO-7403 from STScI,
+which is operated by AURA, Inc., under NASA contract NAS 5-26555.
+NASA grant NAG 3-3556 is also acknowledged. Research by A.J.B. is
+supported by a postdoctoral fellowship from the Harvard-Smithsonian
+Center for Astrophysics. We thank Gary Ferland for making Cloudy
+available to the community. An anonymous referee provided insightful
+comments on the manuscript, and we also thank Eliot Quataert for
+helpful discussions on accretion disk models.
+</acknowledgements>
+  <bibliography xml:id="bib">
+    <title>References</title>
+    <biblist>
+      <bibitem key="bar96" xml:id="bib.bib1">
+        <bibtag role="number">1</bibtag>
+        <bibtag role="year">1996</bibtag>
+        <bibtag role="authors">Barth et al.</bibtag>
+        <bibtag role="refnum">Barth et al. (1996)</bibtag>
+        <bibblock> Barth, A. J., Reichert, G. A.,
+Filippenko, A. V., Ho, L. C., Shields, J. C., Mushotzky, R. F., &amp;
+Puchnarewicz, E. M. 1996, AJ, 112, 1829
+</bibblock>
+      </bibitem>
+      <bibitem key="bow96" xml:id="bib.bib2">
+        <bibtag role="number">2</bibtag>
+        <bibtag role="year">1996</bibtag>
+        <bibtag role="authors">Bower et al.</bibtag>
+        <bibtag role="refnum">Bower et al. (1996)</bibtag>
+        <bibblock> Bower, G. A., Wilson, A. S.,
+Heckman, T. M., &amp; Richstone, D. O. 1996, AJ, 111, 1901
+</bibblock>
+      </bibitem>
+      <bibitem key="chf89" xml:id="bib.bib3">
+        <bibtag role="number">3</bibtag>
+        <bibtag role="year">1989</bibtag>
+        <bibtag role="authors">Chen, Halpern, &amp; Filippenko</bibtag>
+        <bibtag role="refnum">Chen, Halpern, &amp; Filippenko (1989)</bibtag>
+        <bibblock> Chen, K., Halpern,
+J. P, &amp; Filippenko, A. V. 1989, ApJ, 339, 742
+</bibblock>
+      </bibitem>
+      <bibitem key="eh94" xml:id="bib.bib4">
+        <bibtag role="number">4</bibtag>
+        <bibtag role="year">1994</bibtag>
+        <bibtag role="authors">Eracleous &amp; Halpern</bibtag>
+        <bibtag role="refnum">Eracleous &amp; Halpern (1994)</bibtag>
+        <bibblock> Eracleous, M., &amp; Halpern,
+J. P. 1994, ApJS, 90, 1
+<!--  %**** 4579.tex Line 475 **** --></bibblock>
+      </bibitem>
+      <bibitem key="erac97" xml:id="bib.bib5">
+        <bibtag role="number">5</bibtag>
+        <bibtag role="year">1997</bibtag>
+        <bibtag role="authors">Eracleous et al.</bibtag>
+        <bibtag role="refnum">Eracleous et al. (1997)</bibtag>
+        <bibblock> Eracleous, M., Halpern,
+J. P,. Gilbert, A. M., Newman, J. A., &amp; Filippenko, A. V. 1997,
+ApJ, 490, 216
+</bibblock>
+      </bibitem>
+      <bibitem key="erac95" xml:id="bib.bib6">
+        <bibtag role="number">6</bibtag>
+        <bibtag role="year">1995</bibtag>
+        <bibtag role="authors">Eracleous et al.</bibtag>
+        <bibtag role="refnum">Eracleous et al. (1995)</bibtag>
+        <bibblock> Eracleous, M., Livio, M.,
+Halpern, J. P., &amp; Storchi-Bergmann, T. 1995, ApJ, 438, 610
+</bibblock>
+      </bibitem>
+      <bibitem key="fer98" xml:id="bib.bib7">
+        <bibtag role="number">7</bibtag>
+        <bibtag role="year">1998</bibtag>
+        <bibtag role="authors">Ferland et al.</bibtag>
+        <bibtag role="refnum">Ferland et al. (1998)</bibtag>
+        <bibblock> Ferland, G. J., Korista, K. T.,
+Verner, D. A., Ferguson, J. W., Kingdon, J. B., &amp; Verner, E. M.
+1998, PASP, 110, 761
+</bibblock>
+      </bibitem>
+      <bibitem key="fm00" xml:id="bib.bib8">
+        <bibtag role="number">8</bibtag>
+        <bibtag role="year">2000</bibtag>
+        <bibtag role="authors">Ferrarese &amp; Merritt</bibtag>
+        <bibtag role="refnum">Ferrarese &amp; Merritt (2000)</bibtag>
+        <bibblock> Ferrarese, L., &amp; Merritt,
+D. 2000, ApJ, 539, L9
+</bibblock>
+      </bibitem>
+      <bibitem key="fil85" xml:id="bib.bib9">
+        <bibtag role="number">9</bibtag>
+        <bibtag role="year">1985</bibtag>
+        <bibtag role="authors">Filippenko</bibtag>
+        <bibtag role="refnum">Filippenko (1985)</bibtag>
+        <bibblock> Filippenko, A. V. 1985, ApJ, 289,
+475
+</bibblock>
+      </bibitem>
+      <bibitem key="fil96" xml:id="bib.bib10">
+        <bibtag role="number">10</bibtag>
+        <bibtag role="year">1996</bibtag>
+        <bibtag role="authors">Filippenko</bibtag>
+        <bibtag role="refnum">Filippenko (1996)</bibtag>
+        <bibblock> Filippenko, A. V. 1996, in The
+Physics of LINERs in View of Recent Observations, ed. M. Eracleous,
+A. Koratkar, C. Leitherer, &amp; L. Ho (San Francisco: ASP), 17
+</bibblock>
+      </bibitem>
+      <bibitem key="fh84" xml:id="bib.bib11">
+        <bibtag role="number">11</bibtag>
+        <bibtag role="year">1984</bibtag>
+        <bibtag role="authors">Filippenko &amp; Halpern</bibtag>
+        <bibtag role="refnum">Filippenko &amp; Halpern (1984)</bibtag>
+        <bibblock> Filippenko, A. V., &amp;
+Halpern, J. P. 1984, ApJ, 285, 458
+<!--  %**** 4579.tex Line 500 **** --></bibblock>
+      </bibitem>
+      <bibitem key="fs85" xml:id="bib.bib12">
+        <bibtag role="number">12</bibtag>
+        <bibtag role="year">1985</bibtag>
+        <bibtag role="authors">Filippenko &amp; Sargent</bibtag>
+        <bibtag role="refnum">Filippenko &amp; Sargent (1985)</bibtag>
+        <bibblock> Filippenko, A. V., &amp;
+Sargent, W. L. W. 1985, ApJS, 57, 503
+</bibblock>
+      </bibitem>
+      <bibitem key="fs88" xml:id="bib.bib13">
+        <bibtag role="number">13</bibtag>
+        <bibtag role="year">1988</bibtag>
+        <bibtag role="authors">Filippenko &amp; Sargent</bibtag>
+        <bibtag role="refnum">Filippenko &amp; Sargent (1988)</bibtag>
+        <bibblock> Filippenko, A. V., &amp;
+Sargent, W. L. W. 1988, ApJ, 324, 134
+</bibblock>
+      </bibitem>
+      <bibitem key="fos78" xml:id="bib.bib14">
+        <bibtag role="number">14</bibtag>
+        <bibtag role="year">1978</bibtag>
+        <bibtag role="authors">Fosbury et al.</bibtag>
+        <bibtag role="refnum">Fosbury et al. (1978)</bibtag>
+        <bibblock> Fosbury, R. A. E., Mebold, U.,
+Goss, W. M., &amp; Dopita, M. A. 1978, MNRAS, 183, 549
+</bibblock>
+      </bibitem>
+      <bibitem key="gas83" xml:id="bib.bib15">
+        <bibtag role="number">15</bibtag>
+        <bibtag role="year">1983</bibtag>
+        <bibtag role="authors">Gaskell</bibtag>
+        <bibtag role="refnum">Gaskell (1983)</bibtag>
+        <bibblock> Gaskell, C. M. 1983, in Quasars and
+Gravitational Lenses; Proceedings of the Twenty-Fourth Liège
+International Astrophysical Colloquium (Cointe-Ougree: Univ. Liège),
+473
+</bibblock>
+      </bibitem>
+      <bibitem key="gav99" xml:id="bib.bib16">
+        <bibtag role="number">16</bibtag>
+        <bibtag role="year">1999</bibtag>
+        <bibtag role="authors">Gavazzi et al.</bibtag>
+        <bibtag role="refnum">Gavazzi et al. (1999)</bibtag>
+        <bibblock> Gavazzi, G., Boselli, A.,
+Scodeggio, M., Pierini, D., &amp; Belsole, B. 1999, MNRAS, 304, 595
+</bibblock>
+      </bibitem>
+      <bibitem key="geb00" xml:id="bib.bib17">
+        <bibtag role="number">17</bibtag>
+        <bibtag role="year">2000</bibtag>
+        <bibtag role="authors">Gebhardt et al.</bibtag>
+        <bibtag role="refnum">Gebhardt et al. (2000)</bibtag>
+        <bibblock> Gebhardt, K., et al.2000, ApJ,
+539, L13
+</bibblock>
+      </bibitem>
+      <bibitem key="gdp96" xml:id="bib.bib18">
+        <bibtag role="number">18</bibtag>
+        <bibtag role="year">1996</bibtag>
+        <bibtag role="authors">González-Delgado &amp; Pérez</bibtag>
+        <bibtag role="refnum">González-Delgado &amp; Pérez (1996)</bibtag>
+        <bibblock>
+González-Delgado, R. M., &amp; Pérez, E. 1996, MNRAS, 281, 1105
+</bibblock>
+      </bibitem>
+      <bibitem key="he94" xml:id="bib.bib19">
+        <bibtag role="number">19</bibtag>
+        <bibtag role="year">1994</bibtag>
+        <bibtag role="authors">Halpern &amp; Eracleous</bibtag>
+        <bibtag role="refnum">Halpern &amp; Eracleous (1994)</bibtag>
+        <bibblock> Halpern, J. P., &amp;
+Eracleous, M. 1994, ApJ, 433, L17
+<!--  %**** 4579.tex Line 525 **** --></bibblock>
+      </bibitem>
+      <bibitem key="hal96" xml:id="bib.bib20">
+        <bibtag role="number">20</bibtag>
+        <bibtag role="year">1996</bibtag>
+        <bibtag role="authors">Halpern et al.</bibtag>
+        <bibtag role="refnum">Halpern et al. (1996)</bibtag>
+        <bibblock> Halpern, J. P., Eracleous, M.,
+Filippenko, A. V., &amp; Chen, K. 1996, ApJ, 485, 570
+</bibblock>
+      </bibitem>
+      <bibitem key="hf88" xml:id="bib.bib21">
+        <bibtag role="number">21</bibtag>
+        <bibtag role="year">1988</bibtag>
+        <bibtag role="authors">Halpern &amp; Filippenko</bibtag>
+        <bibtag role="refnum">Halpern &amp; Filippenko (1988)</bibtag>
+        <bibblock> Halpern, J. P., &amp;
+Filippenko, A. V. 1988, Nature, 331, 46
+</bibblock>
+      </bibitem>
+      <bibitem key="h80" xml:id="bib.bib22">
+        <bibtag role="number">22</bibtag>
+        <bibtag role="year">1980</bibtag>
+        <bibtag role="authors">Heckman</bibtag>
+        <bibtag role="refnum">Heckman (1980)</bibtag>
+        <bibblock> Heckman, T. M. 1980, A&amp;A, 87, 152
+</bibblock>
+      </bibitem>
+      <bibitem key="hs98" xml:id="bib.bib23">
+        <bibtag role="number">23</bibtag>
+        <bibtag role="year">1998</bibtag>
+        <bibtag role="authors">Héraudeau &amp; Simien</bibtag>
+        <bibtag role="refnum">Héraudeau &amp; Simien (1998)</bibtag>
+        <bibblock> Héraudeau, Ph., &amp;
+Simien, F. 1998, A&amp;AS, 133, 317
+</bibblock>
+      </bibitem>
+      <bibitem key="ho99a" xml:id="bib.bib24">
+        <bibtag role="number">24</bibtag>
+        <bibtag role="year">1999a</bibtag>
+        <bibtag role="authors">Ho</bibtag>
+        <bibtag role="refnum">Ho (1999a)</bibtag>
+        <bibblock> Ho, L. C. 1999a, in The AGN/Normal Galaxy
+Connection, ed. H. R. Schmitt, A. L. Kinney, &amp; L. C. Ho (Oxford:
+Pergamon), 813
+</bibblock>
+      </bibitem>
+      <bibitem key="ho99b" xml:id="bib.bib25">
+        <bibtag role="number">25</bibtag>
+        <bibtag role="year">1999b</bibtag>
+        <bibtag role="authors">Ho</bibtag>
+        <bibtag role="refnum">Ho (1999b)</bibtag>
+        <bibblock> Ho, L. C. 1999b, ApJ, 516, 672
+</bibblock>
+      </bibitem>
+      <bibitem key="hfs97a" xml:id="bib.bib26">
+        <bibtag role="number">26</bibtag>
+        <bibtag role="year">1997a</bibtag>
+        <bibtag role="authors">Ho et al.</bibtag>
+        <bibtag role="refnum">Ho et al. (1997a)</bibtag>
+        <bibblock> Ho, L. C., Filippenko, A. V., &amp;
+Sargent, W. L. W. 1997a, ApJS, 112, 315
+</bibblock>
+      </bibitem>
+      <bibitem key="hfs97b" xml:id="bib.bib27">
+        <bibtag role="number">27</bibtag>
+        <bibtag role="year">1997b</bibtag>
+        <bibtag role="authors">Ho et al.</bibtag>
+        <bibtag role="refnum">Ho et al. (1997b)</bibtag>
+        <bibblock> Ho, L. C., Filippenko, A. V.,
+Sargent, W. L. W., &amp; Peng, C. Y. 1997b, ApJS, 112, 391
+</bibblock>
+      </bibitem>
+      <bibitem key="ho00" xml:id="bib.bib28">
+        <bibtag role="number">28</bibtag>
+        <bibtag role="year">2000</bibtag>
+        <bibtag role="authors">Ho et al.</bibtag>
+        <bibtag role="refnum">Ho et al. (2000)</bibtag>
+        <bibblock> Ho, L. C., Rudnick, G., Rix, H.-W.,
+<!--  %**** 4579.tex Line 550 **** -->Shields, J. C., McIntosh, D. H., Filippenko, A. V., Sargent, W. L. W.,
+&amp; Eracleous, M. 2000, ApJ, in press.
+</bibblock>
+      </bibitem>
+      <bibitem key="kee83" xml:id="bib.bib29">
+        <bibtag role="number">29</bibtag>
+        <bibtag role="year">1983</bibtag>
+        <bibtag role="authors">Keel</bibtag>
+        <bibtag role="refnum">Keel (1983)</bibtag>
+        <bibblock> Keel, W. C. 1983, ApJ, 269, 466
+</bibblock>
+      </bibitem>
+      <bibitem key="ko76" xml:id="bib.bib30">
+        <bibtag role="number">30</bibtag>
+        <bibtag role="year">1976</bibtag>
+        <bibtag role="authors">Koski &amp; Osterbrock</bibtag>
+        <bibtag role="refnum">Koski &amp; Osterbrock (1976)</bibtag>
+        <bibblock> Koski, A. T., &amp; Osterbrock,
+D. E. 1976, ApJ, 203, L49
+</bibblock>
+      </bibitem>
+      <bibitem key="nan99" xml:id="bib.bib31">
+        <bibtag role="number">31</bibtag>
+        <bibtag role="year">1999</bibtag>
+        <bibtag role="authors">Nandra et al.</bibtag>
+        <bibtag role="refnum">Nandra et al. (1999)</bibtag>
+        <bibblock> Nandra, K., George, I. M.,
+Mushotzky, R. F., Turner, T. J., &amp; Yaqoob, T. 1999, ApJ, 523, L17
+</bibblock>
+      </bibitem>
+      <bibitem key="ny94" xml:id="bib.bib32">
+        <bibtag role="number">32</bibtag>
+        <bibtag role="year">1994</bibtag>
+        <bibtag role="authors">Narayan &amp; Yi</bibtag>
+        <bibtag role="refnum">Narayan &amp; Yi (1994)</bibtag>
+        <bibblock> Narayan, R., &amp; Yi, I. 1994, ApJ,
+428, L13
+</bibblock>
+      </bibitem>
+      <bibitem key="pal97" xml:id="bib.bib33">
+        <bibtag role="number">33</bibtag>
+        <bibtag role="year">1997</bibtag>
+        <bibtag role="authors">Palacios et al.</bibtag>
+        <bibtag role="refnum">Palacios et al. (1997)</bibtag>
+        <bibblock> Palacios, J.,
+García-Vargas, M. L., Díaz, A., Terlevich, R., &amp; Terlevich,
+E. 1997, A&amp;A, 323, 749
+</bibblock>
+      </bibitem>
+      <bibitem key="qua99" xml:id="bib.bib34">
+        <bibtag role="number">34</bibtag>
+        <bibtag role="year">1999</bibtag>
+        <bibtag role="authors">Quataert et al.</bibtag>
+        <bibtag role="refnum">Quataert et al. (1999)</bibtag>
+        <bibblock> Quataert, E., Di Matteo, T.,
+Narayan, R., &amp; Ho, L. C. 1999, ApJ, 525, L89
+</bibblock>
+      </bibitem>
+      <bibitem key="rpb90" xml:id="bib.bib35">
+        <bibtag role="number">35</bibtag>
+        <bibtag role="year">1990</bibtag>
+        <bibtag role="authors">Robinson, Pérez, &amp; Binette</bibtag>
+        <bibtag role="refnum">Robinson, Pérez, &amp; Binette (1990)</bibtag>
+        <bibblock> Robinson, A.,
+Pérez, E., &amp; Binette, L. 1990, MNRAS, 246, 349
+</bibblock>
+      </bibitem>
+      <bibitem key="shi00" xml:id="bib.bib36">
+        <bibtag role="number">36</bibtag>
+        <bibtag role="year">2000</bibtag>
+        <bibtag role="authors">Shields et al.</bibtag>
+        <bibtag role="refnum">Shields et al. (2000)</bibtag>
+        <bibblock> Shields, J. C., Rix, H.-W.,
+<!--  %**** 4579.tex Line 575 **** -->McIntosh, D. H., Ho, L. C., Rudnick, G., Filippenko, A. V., Sargent,
+W. L. W., &amp; Sarzi, M. 2000, ApJ, 534, L27
+</bibblock>
+      </bibitem>
+      <bibitem key="sta82" xml:id="bib.bib37">
+        <bibtag role="number">37</bibtag>
+        <bibtag role="year">1982</bibtag>
+        <bibtag role="authors">Stauffer</bibtag>
+        <bibtag role="refnum">Stauffer (1982)</bibtag>
+        <bibblock> Stauffer, J. R. 1982, ApJ, 262, 66
+</bibblock>
+      </bibitem>
+      <bibitem key="ssk83" xml:id="bib.bib38">
+        <bibtag role="number">38</bibtag>
+        <bibtag role="year">1983</bibtag>
+        <bibtag role="authors">Stauffer, Schild, &amp; Keel</bibtag>
+        <bibtag role="refnum">Stauffer, Schild, &amp; Keel (1983)</bibtag>
+        <bibblock> Stauffer, J., Schild,
+R., &amp; Keel, W. 1983, ApJ, 270, 465
+</bibblock>
+      </bibitem>
+      <bibitem key="sbw93" xml:id="bib.bib39">
+        <bibtag role="number">39</bibtag>
+        <bibtag role="year">1993</bibtag>
+        <bibtag role="authors">Storchi-Bergmann, Baldwin, &amp; Wilson</bibtag>
+        <bibtag role="refnum">Storchi-Bergmann, Baldwin, &amp; Wilson (1993)</bibtag>
+        <bibblock>
+Storchi-Bergmann, T., Baldwin, J. A., &amp; Wilson, A. S. 1993, ApJ,
+410, L11
+</bibblock>
+      </bibitem>
+      <bibitem key="sb97" xml:id="bib.bib40">
+        <bibtag role="number">40</bibtag>
+        <bibtag role="year">1997</bibtag>
+        <bibtag role="authors">Storchi-Bergmann et al.</bibtag>
+        <bibtag role="refnum">Storchi-Bergmann et al. (1997)</bibtag>
+        <bibblock> Storchi-Bergmann, T.,
+Eracleous, M., Ruiz, M. T., Livio, M., Wilson, A. S., &amp; Filippenko,
+A. V. 1997, ApJ, 489, 87
+</bibblock>
+      </bibitem>
+      <bibitem key="tan95" xml:id="bib.bib41">
+        <bibtag role="number">41</bibtag>
+        <bibtag role="year">1995</bibtag>
+        <bibtag role="authors">Tanaka et al.</bibtag>
+        <bibtag role="refnum">Tanaka et al. (1995)</bibtag>
+        <bibblock> Tanaka, Y., et al.1995, Nature, 375, 659
+</bibblock>
+      </bibitem>
+      <bibitem key="ter98" xml:id="bib.bib42">
+        <bibtag role="number">42</bibtag>
+        <bibtag role="year">1998</bibtag>
+        <bibtag role="authors">Terashima et al.</bibtag>
+        <bibtag role="refnum">Terashima et al. (1998)</bibtag>
+        <bibblock> Terashima, Y., Kuneida, H.,
+Misaki, K., Mushotzky, R. F., Ptak, A. F., &amp; Reichert, G. A. 1998,
+ApJ, 503, 212
+</bibblock>
+      </bibitem>
+      <bibitem key="ter00" xml:id="bib.bib43">
+        <bibtag role="number">43</bibtag>
+        <bibtag role="year">2000</bibtag>
+        <bibtag role="authors">Terashima et al.</bibtag>
+        <bibtag role="refnum">Terashima et al. (2000)</bibtag>
+        <bibblock> Terashima, Y., Ho, L. C., Ptak,
+A. F., Yaqoob, T., Kuneida, H., Misaki, H., &amp; Serlemitsos, P. J.
+2000, ApJ, 535, L79
+<!--  %**** 4579.tex Line 600 **** --></bibblock>
+      </bibitem>
+      <bibitem key="wmt85" xml:id="bib.bib44">
+        <bibtag role="number">44</bibtag>
+        <bibtag role="year">1985</bibtag>
+        <bibtag role="authors">Whitmore, McElroy, &amp; Tonry</bibtag>
+        <bibtag role="refnum">Whitmore, McElroy, &amp; Tonry (1985)</bibtag>
+        <bibblock> Whitmore, B. C.,
+McElroy, D. B., &amp; Tonry, J. L. 1985, ApJS, 59, 1
+</bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+  <figure frefnum="Figure 1" labels="LABEL:fig1" refnum="1" xml:id="A0.F1">
+    <graphics candidates="fig1.ps" graphic="fig1.ps" options="width=433.62pt" xml:id="A0.F1.g1"/>
+    <toccaption><tag close=" ">1</tag>Spectra of the nucleus of NGC 4579. (<emph>a</emph>) STIS G750M
+spectrum through a <Math mode="inline" tex="0\farcs 2\times 0\farcs 2" text="0 * arcsecond * 2 * 0 * arcsecond * 2" xml:id="A0.F1.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="0" role="NUMBER">0</XMTok>
+                <XMDual role="ID">
+                  <XMTok meaning="arcsecond" name="farcs" role="ID"/>
+                  <XMApp role="POSTFIX">
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+                    <XMTok>.</XMTok>
+                    <XMWrap>
+                      <XMTok name="prime" role="SUPOP">′</XMTok>
+                      <XMTok name="prime" role="SUPOP">′</XMTok>
+                    </XMWrap>
+                  </XMApp>
+                </XMDual>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+            <XMDual role="ID">
+              <XMTok meaning="arcsecond" name="farcs" role="ID"/>
+              <XMApp role="POSTFIX">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+                <XMTok>.</XMTok>
+                <XMWrap>
+                  <XMTok name="prime" role="SUPOP">′</XMTok>
+                  <XMTok name="prime" role="SUPOP">′</XMTok>
+                </XMWrap>
+              </XMApp>
+            </XMDual>
+            <XMTok meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> aperture. The Gaussian
+fits to the narrow lines and the “normal” broad H<Math mode="inline" tex="\alpha" text="alpha" xml:id="A0.F1.m2">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> component are
+shown. (<emph>b</emph>) The H<Math mode="inline" tex="\alpha" text="alpha" xml:id="A0.F1.m3">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> profile after subtraction of the Gaussian
+narrow and broad components. (<emph>c</emph>) Ground-based spectra from
+<cite class="ltx_citemacro_citet"><bibref bibrefs="hfs97a" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>, before and after starlight subtraction.
+</toccaption>
+    <caption><tag close=": ">Figure 1</tag>Spectra of the nucleus of NGC 4579. (<emph>a</emph>) STIS G750M
+spectrum through a <Math mode="inline" tex="0\farcs 2\times 0\farcs 2" text="0 * arcsecond * 2 * 0 * arcsecond * 2" xml:id="A0.F1.m4">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="0" role="NUMBER">0</XMTok>
+                <XMDual role="ID">
+                  <XMTok meaning="arcsecond" name="farcs" role="ID"/>
+                  <XMApp role="POSTFIX">
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+                    <XMTok>.</XMTok>
+                    <XMWrap>
+                      <XMTok name="prime" role="SUPOP">′</XMTok>
+                      <XMTok name="prime" role="SUPOP">′</XMTok>
+                    </XMWrap>
+                  </XMApp>
+                </XMDual>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+            </XMApp>
+            <XMDual role="ID">
+              <XMTok meaning="arcsecond" name="farcs" role="ID"/>
+              <XMApp role="POSTFIX">
+                <XMTok role="SUPERSCRIPTOP" scriptpos="mid5"/>
+                <XMTok>.</XMTok>
+                <XMWrap>
+                  <XMTok name="prime" role="SUPOP">′</XMTok>
+                  <XMTok name="prime" role="SUPOP">′</XMTok>
+                </XMWrap>
+              </XMApp>
+            </XMDual>
+            <XMTok meaning="2" role="NUMBER">2</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> aperture. The Gaussian
+fits to the narrow lines and the “normal” broad H<Math mode="inline" tex="\alpha" text="alpha" xml:id="A0.F1.m5">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> component are
+shown. (<emph>b</emph>) The H<Math mode="inline" tex="\alpha" text="alpha" xml:id="A0.F1.m6">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> profile after subtraction of the Gaussian
+narrow and broad components. (<emph>c</emph>) Ground-based spectra from
+<cite class="ltx_citemacro_citet"><bibref bibrefs="hfs97a" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+          <bibrefphrase>(</bibrefphrase>
+          <bibrefphrase>)</bibrefphrase>
+        </bibref></cite>, before and after starlight subtraction.
+</caption>
+  </figure>
+  <figure frefnum="Figure 2" labels="LABEL:fig2" refnum="2" xml:id="A0.F2">
+    <graphics candidates="fig2.ps" graphic="fig2.ps" options="width=433.62pt" xml:id="A0.F2.g1"/>
+    <toccaption><tag close=" ">2</tag>Comparison of the broad-line profiles of H<Math mode="inline" tex="\alpha" text="alpha" xml:id="A0.F2.m1">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math>, C IV <Math mode="inline" tex="\lambda" text="lambda" xml:id="A0.F2.m2">
+        <XMath>
+          <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+        </XMath>
+      </Math>1549,
+and Ly <Math mode="inline" tex="\alpha" text="alpha" xml:id="A0.F2.m3">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math>. The blue side of the Ly <Math mode="inline" tex="\alpha" text="alpha" xml:id="A0.F2.m4">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> profile is affected by Galactic
+absorption, and a spike of geocoronal emission has been removed from
+the spectrum. The narrow components of Ly <Math mode="inline" tex="\alpha" text="alpha" xml:id="A0.F2.m5">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> and C IV have not been
+removed.
+</toccaption>
+    <caption><tag close=": ">Figure 2</tag>Comparison of the broad-line profiles of H<Math mode="inline" tex="\alpha" text="alpha" xml:id="A0.F2.m6">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math>, C IV <Math mode="inline" tex="\lambda" text="lambda" xml:id="A0.F2.m7">
+        <XMath>
+          <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+        </XMath>
+      </Math>1549,
+and Ly <Math mode="inline" tex="\alpha" text="alpha" xml:id="A0.F2.m8">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math>. The blue side of the Ly <Math mode="inline" tex="\alpha" text="alpha" xml:id="A0.F2.m9">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> profile is affected by Galactic
+absorption, and a spike of geocoronal emission has been removed from
+the spectrum. The narrow components of Ly <Math mode="inline" tex="\alpha" text="alpha" xml:id="A0.F2.m10">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> and C IV have not been
+removed.
+</caption>
+<!--  %**** 4579.tex Line 625 **** -->  </figure>
+  <figure frefnum="Figure 3" labels="LABEL:fig3" refnum="3" xml:id="A0.F3">
+    <graphics candidates="fig3.ps" graphic="fig3.ps" options="width=433.62pt" xml:id="A0.F3.g1"/>
+    <toccaption><tag close=" ">3</tag>Density diagnostics in the NLR of NGC 4579. (<emph>a</emph>)
+Electron density, determined from the [S II] line ratio, as a function
+of position along the slit. The solid curve represents the model <Math mode="inline" tex="n_{e}\propto r^{-2}" text="n _ e proportional-to r ^ (- 2)" xml:id="A0.F3.m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="proportional-to" name="propto" role="RELOP">∝</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
+            </XMApp>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+              <XMTok font="italic" role="UNKNOWN">r</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>. (<emph>b</emph>) Intensity ratio of [O I] <Math mode="inline" tex="\lambda" text="lambda" xml:id="A0.F3.m2">
+        <XMath>
+          <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+        </XMath>
+      </Math>6300 to [S
+II] <Math mode="inline" tex="\lambda" text="lambda" xml:id="A0.F3.m3">
+        <XMath>
+          <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+        </XMath>
+      </Math><Math mode="inline" tex="\lambda" text="lambda" xml:id="A0.F3.m4">
+        <XMath>
+          <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+        </XMath>
+      </Math>6716, 6731. In both panels, the horizontal error bars
+represent the extraction width used for the emission-line measurement.
+Vertical error bars represent the uncertainties in the measured
+emission-line intensities. At the assumed distance of 21 Mpc,
+1″ corresponds to 101 pc.
+</toccaption>
+    <caption><tag close=": ">Figure 3</tag>Density diagnostics in the NLR of NGC 4579. (<emph>a</emph>)
+Electron density, determined from the [S II] line ratio, as a function
+of position along the slit. The solid curve represents the model <Math mode="inline" tex="n_{e}\propto r^{-2}" text="n _ e proportional-to r ^ (- 2)" xml:id="A0.F3.m5">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="proportional-to" name="propto" role="RELOP">∝</XMTok>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
+            </XMApp>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+              <XMTok font="italic" role="UNKNOWN">r</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>. (<emph>b</emph>) Intensity ratio of [O I] <Math mode="inline" tex="\lambda" text="lambda" xml:id="A0.F3.m6">
+        <XMath>
+          <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+        </XMath>
+      </Math>6300 to [S
+II] <Math mode="inline" tex="\lambda" text="lambda" xml:id="A0.F3.m7">
+        <XMath>
+          <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+        </XMath>
+      </Math><Math mode="inline" tex="\lambda" text="lambda" xml:id="A0.F3.m8">
+        <XMath>
+          <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+        </XMath>
+      </Math>6716, 6731. In both panels, the horizontal error bars
+represent the extraction width used for the emission-line measurement.
+Vertical error bars represent the uncertainties in the measured
+emission-line intensities. At the assumed distance of 21 Mpc,
+1″ corresponds to 101 pc.
+</caption>
+  </figure>
+</document>

@@ -1,0 +1,3336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008291.1"?>
+<!--  %“documentstyle[11pt, aasms4]–article˝ --><!--  %“documentstyle[aaspp4]–article˝ --><?latexml class="article" options="emulateapj" oldstyle="true"?>
+<!--  %**** ms.tex Line 25 **** --><?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>THE X-RAY ABSORBER IN BROAD ABSORPTION LINE QUASARS</title>
+  <creator role="author">
+    <personname>T. G. WANG,<note mark="1" role="affiliation">Center for Astrophysics, University of Science and Technology
+of China, Anhui, 230026, CHINA (email:twang@ustc.edu.cn)</note> , W. BRINKMANN,<note mark="2" role="affiliation">Max-Planck-Institut für extraterrestrische Physik,
+Giessenbachstrasse,D-85740 Garching, FRG</note> 
+W. YUAN,<note mark="3" role="affiliation">Space Astrophysics Group, National Space Development Agency of
+Japan (NASDA), Tsukuba Space Center, Sengen-2-1-1, Tsukuba, Ibaraki 305 JAPAN
+</note> , J.X. WANG,<note mark="1" role="affiliation">Center for Astrophysics, University of Science and Technology
+of China, Anhui, 230026, CHINA (email:twang@ustc.edu.cn)</note>  Y.Y.
+ZHOU<note mark="1" role="affiliation">Center for Astrophysics, University of Science and Technology
+of China, Anhui, 230026, CHINA (email:twang@ustc.edu.cn)</note> </personname>
+    <contact role="email">twang@ustc.edu.cn</contact>
+  </creator>
+  <abstract name="Abstract">
+    <p>Recent observations of Broad Absorption Line (BAL) quasars demonstrated
+<!--  %**** ms.tex Line 50 **** -->that the
+soft X-ray emission of these objects is extremely weak
+and convincing evidence for very strong absorption by a high column
+density (<Math mode="inline" tex="\sim 10^{23.5}" text="absent similar-to 10 ^ 23.5" xml:id="m1">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+            <XMTok meaning="absent"/>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="23.5" role="NUMBER">23.5</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="m2">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMApp>
+              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>) was obtained for PG
+1411+442, even though it is one of the few BAL QSOs strongly detected in soft
+X-rays. This paper examines the ionization status and geometry of the
+X-ray absorber by combining the properties of the UV lines with the X-ray
+continuum absorption. We show that the gas has to have large
+column densities in ions of major UV absorption lines, such as CIV, NV, OVI
+and Ne VIII, in order to have sufficient opacity around 0.2 to 0.35 keV.
+The UV absorption lines have to be saturated if the X-ray absorber
+intersects the line of sight to the UV continuum emission region.
+A uniformly covering UV and X-ray absorption model can be constructed for PG
+1411+442 but in some other soft X-ray detected BAL QSOs, such as PG
+1001+054, the observed line optical depth is much lower than expected from
+the X-ray absorbing material. We propose a scheme in which a substantial
+fraction of the line of sight to the continuum source may be covered by either
+an optically thick flow or clouds in a narrow velocity range, but in which the
+total covering factor of either the whole flow or all clouds is close to unity.</p>
+    <p>The absorber can contribute significantly to the extremely highly ionized
+emission lines, such as O VI 1032/1037Å  and Ne VIII 770/780Å  if it
+covers a substantial fraction of solid angle and if the density is higher than
+<Math mode="inline" tex="10^{8}" text="10 ^ 8" xml:id="m3">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+            <XMTok meaning="10" role="NUMBER">10</XMTok>
+            <XMTok fontsize="70%" meaning="8" role="NUMBER">8</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> cm<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="m4">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMApp>
+              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>. However, it has very little impact on the medium and
+low ionization UV lines such as NV, CIV.
+<!--  %**** ms.tex Line 75 **** -->The profiles of NeVIII and OVI lines may be indicators for the
+kinematics of the X-ray absorber in QSOs. The observed Ne VIII line profiles
+in QSOs suggests that the velocity of the gas projected
+onto our line of sight is similar to that seen in the outflows
+of the UV BALs.</p>
+  </abstract>
+<!--  %“received–˝ 
+     %“accepted–˝
+     %“lefthead–BAL˙tinggui/neu˝
+     %“righthead–˝-->  <section refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>Introduction</title>
+    <para xml:id="S1.p1">
+      <p>Broad Absorption Lines (BALs) are prominent features in the UV spectra of
+<Math mode="inline" tex="\sim" text="similar-to" xml:id="S1.p1.m1">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 10-15% of optically selected quasars. The lines are formed in ionized
+winds in which the speeds can range from near zero to more than 30,000
+km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S1.p1.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. The absorption features most commonly observed are Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.p1.m3">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math>
+<Math mode="inline" tex="\lambda" text="lambda" xml:id="S1.p1.m4">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math> 1216, CIV <Math mode="inline" tex="\lambda" text="lambda" xml:id="S1.p1.m5">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>1549, SiIV <Math mode="inline" tex="\lambda" text="lambda" xml:id="S1.p1.m6">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>1397, and NV
+<Math mode="inline" tex="\lambda" text="lambda" xml:id="S1.p1.m7">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>1240. Low ionization broad absorption lines (LoBALs), such as
+MgII <Math mode="inline" tex="\lambda" text="lambda" xml:id="S1.p1.m8">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>2798 and Al III <Math mode="inline" tex="\lambda" text="lambda" xml:id="S1.p1.m9">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>1857 are detected in about 15% of
+the objects. For two BAL QSOs, higher ionization lines, up through Ne VIII <Math mode="inline" tex="\lambda" text="lambda" xml:id="S1.p1.m10">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>774,
+Mg X <Math mode="inline" tex="\lambda" text="lambda" xml:id="S1.p1.m11">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>615, Si XII <Math mode="inline" tex="\lambda" text="lambda" xml:id="S1.p1.m12">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>499, are reported from UV
+observations with HST and HUT (Korista &amp; Arav 1997, Telfer et al. 1998).
+Since most BAL QSOs are only observed by ground based optical telescopes which
+can not access the spectral range of these very high ionization lines, the
+true incidence of the very high ionization BALs is not known.</p>
+    </para>
+    <para xml:id="S1.p2">
+      <p>The observed frequency of BALQSOs among all quasars, combined with the assertion
+<!--  %**** ms.tex Line 100 **** -->that the absorbing material covers <Math mode="inline" tex="\leq" text="less=" xml:id="S1.p2.m1">
+          <XMath>
+            <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+          </XMath>
+        </Math> 0.2 of the solid angle,
+leads to the conclusion that
+every QSO has outflows which intercept only a fraction of the solid angle of the
+central object (e.g., Hamann, Korista &amp; Morris 1993). This picture is supported by the similarity of UV continuum and
+emission line properties of BAL and non-BAL QSOs (Weymann et al., 1991). The BAL region covers,
+at least partially, the broad emission line region since the NV
+absorption trough is usually deeper than the local continuum. The large
+momentum of radiation absorbed by resonance transitions is probably
+responsible
+for the acceleration of the gas. The signature of a kick-off effect at
+velocities of about 6000 km s<Math mode="inline" tex="{}^{-1}" text="^- 1" xml:id="S1.p2.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> further supports this picture (Arav, Li &amp;
+Begelman 1994).</p>
+    </para>
+    <para xml:id="S1.p3">
+      <p>Establishing the physical properties of the flow is a fundamental issue in
+BAL studies. Earlier work was solely based on a few prominent UV
+absorption lines, usually CIV, Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.p3.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math>, NV, SiIV, and, for LoBAL, MgII and
+AlIII, with the assumption that the absorbing material fully covers the
+emission region and is not seriously saturated. These studies suggested an
+over-abundance of metals; C and N are, relative to H, enhanced by a
+factor 3-5 and an even larger abundance for Si was deduced.
+More recently, based on the detection
+of P V absorption lines, Haman (1998) argued
+for a large column density instead of extremely high phosphorus abundance.
+From the UV spectra taken by the Hubble Space Telescope of high or moderate
+redshift BAL QSOs, the line profiles of many more lines, including
+<!--  %**** ms.tex Line 125 **** -->lines from different ionization stages of the same element, were measured
+for several objects. These observations indicate that either the
+absorbing material only covers partially the line of sight to the continuum or
+the scattered light fills in the absorption trough (e.g., Arav et al. 1999). The fact that the
+spectro-polarimetry
+of BAL usually shows higher polarization in the BAL trough than for the
+continuum and emission line region also favors the latter interpretation (e.g.,
+Schmidt &amp; Hines 1999, and references therein).</p>
+    </para>
+    <para xml:id="S1.p4">
+      <p>X-ray spectra, even at their currently relatively low resolution, have the
+advantage that photo-electric X-ray absorption
+does not have saturation problems and that it can be used to measure the total
+absorption column density. As a result, the light from the
+scattering medium or the leakage of a partially covered absorber is
+distinguishable from the transmitted light, thus allowing measurement of the
+effective covering factor of the absorber.</p>
+    </para>
+    <para xml:id="S1.p5">
+      <p>BAL QSOs had not been targets for a systematic study in the X-ray
+band until their extra-ordinary properties in the soft X-ray band were
+discovered by ROSAT (Green et al. 1995, Green &amp; Mathur 1996), and they remain a rare class with extremely
+weak X-ray emission. In the soft X-ray band, there are only
+four reported cases of
+detections (PG 1411+442, PG 1001+054, PG 2112+059, SBS 1542+541
+(Brinkmann et al. 1999, Brandt et al. 1999, Telfer et al.
+1998) showing apparent broad
+<!--  %**** ms.tex Line 150 **** -->band optical-to-X-ray spectral indices <Math mode="inline" tex="1.85\leq\alpha_{ox}\leq 2.25" text="1.85 less= alpha _ (o * x) less= 2.25" xml:id="S1.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMTok meaning="1.85" role="NUMBER">1.85</XMTok>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+              <XMTok meaning="2.25" role="NUMBER">2.25</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, while only upper limits are available for the other objects. ROSAT
+observations of the LoBAL QSO PG 1700+518 yield an even higher upper limit
+of <Math mode="inline" tex="\alpha_{ox}&gt;2.3" text="alpha _ (o * x) &gt; 2.3" xml:id="S1.p5.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="2.3" role="NUMBER">2.3</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> (Wang et al. 1996), and the current X-ray
+observations are not sensitive enough to establish how high these values
+really are.
+However, we noticed that a ROSAT detection is more likely
+for weak BAL objects. Two ROSAT detections, Mrk 231 and
+IRAS 07598+6508 (marginal), are probably associated with the
+circumnuclear starburst instead of nuclear activity (Turner 1999).
+The weak X-ray emission was interpreted to be due to strong absorption, instead
+of an intrinsically X-ray weakness of the sources.
+This required a column densities of <Math mode="inline" tex="10^{23-24}" text="10 ^ (23 - 24)" xml:id="S1.p5.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="23" role="NUMBER">23</XMTok>
+                <XMTok fontsize="70%" meaning="24" role="NUMBER">24</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S1.p5.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> (Brinkmann et al. 1999, Wang et al. 1999, Gallagher et al. 1999).</p>
+    </para>
+    <para xml:id="S1.p6">
+      <p>Therefore, a critical question arises whether the UV and X-ray
+absorber is the same material. What is the geometry of this
+absorber? What is the ionization status? In this
+paper, we try to address these questions by examining the ionization status of
+the X-ray absorber in the BAL.</p>
+    </para>
+  </section>
+  <section refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>Ionizing Continuum</title>
+    <para xml:id="S2.p1">
+      <p>The shape of the ionizing continuum is crucial for the determination of the
+<!--  %**** ms.tex Line 175 **** -->ionization structure of the photo-ionized gas. For non-BAL QSOs,
+an average spectrum is derived by combining the soft X-ray spectrum at the
+low redshift end and the HST far-UV spectrum at high redshifts (Laor et al.
+1997, Zheng et al. 1998).
+However, we cannot construct a mean ionizing continuum for BAL QSOs in
+this way as soft X-ray emission has not been detected from most BAL QSOs.
+In addition, it
+is believed that the few detections do not show the intrinsic
+spectrum but only the
+scattered/leaked component of the primary emission. The only reported
+detection of the primary X-ray component is PG 1411+442 in the medium
+energy X-ray band by ASCA.</p>
+    </para>
+    <para xml:id="S2.p2">
+      <p>The simultaneous analysis of the ROSAT and ASCA data of PG 1411+442 was
+presented by Brinkmann et al. (1999); a more extended treatment combining
+the UV data from HST and the X-ray data from ROSAT and ASCA can be
+found in Wang et al. (1999). They found a primary X-ray component absorbed
+by <Math mode="inline" tex="2.5\times 10^{23}" text="2.5 * 10 ^ 23" xml:id="S2.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+              <XMTok meaning="2.5" role="NUMBER">2.5</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="23" role="NUMBER">23</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S2.p2.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and scattered flux at about 3-5 per
+cent of the intrinsic emission.
+It is worthywhile to point out that although they
+assumed the photon index of high energy component (<Math mode="inline" tex="\Gamma_{high}" text="Gamma _ (h * i * g * h)" xml:id="S2.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">h</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">g</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">h</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) to be 2.0
+because it (<Math mode="inline" tex="2.2_{-0.7}^{+0.8}" text="(2.2 _ (- 0.7)) ^ (+ 0.8)" xml:id="S2.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="2.2" role="NUMBER">2.2</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="0.7" role="NUMBER">0.7</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                <XMTok fontsize="70%" meaning="0.8" role="NUMBER">0.8</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> for 2.7 <Math mode="inline" tex="\sigma" text="sigma" xml:id="S2.p2.m5">
+          <XMath>
+            <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+          </XMath>
+        </Math> error bar) was not well constrained by
+the fit, the absorption is well constrained to be larger than
+1.5 <Math mode="inline" tex="10^{23}" text="10 ^ 23" xml:id="S2.p2.m6">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="23" role="NUMBER">23</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S2.p2.m7">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> (at 90% confidence level) even when the
+<Math mode="inline" tex="\Gamma_{high}" text="Gamma _ (h * i * g * h)" xml:id="S2.p2.m8">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">h</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">g</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">h</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> is left as a free parameter.
+<!--  %**** ms.tex Line 200 **** --></p>
+    </para>
+    <para xml:id="S2.p3">
+      <p>Figure 1 shows the Spectral Energy Distribution (SED) of PG 1411+442 from
+the optical to the X-ray band. The infrared to optical data have been taken
+from Neugebauer et al. (1987). The UV spectrum from IUE between 2000-3000Å is
+extracted from the IUE final archive and corrected for the Galactic reddening
+E(B-V)=0.03 (N<Math mode="inline" tex="{}_{H}^{G}" text="_ H absent ^ G" xml:id="S2.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="pre2"/>
+                <XMTok meaning="absent"/>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">G</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>=1.4  <Math mode="inline" tex="10^{20}" text="10 ^ 20" xml:id="S2.p3.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="20" role="NUMBER">20</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S2.p3.m3">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>). Reddening corrected HST
+spectra were taken from Wang et al. (1999). In the X-ray band, the observed
+ROSAT and ASCA spectra are shown (model A of Wang et al. 1999).
+A composite radio-quiet QSO spectrum from the optical to the X-ray band
+obtained by combining
+the results from Zheng et al. (1998) and Laor et al. (1997) is plotted
+for comparison. The absorption corrected infrared to X-ray spectrum of
+PG 1411+442 is clearly similar to that of average radio-quiet quasars. For the
+above broken power-law model with absorption as a free parameter, the intrinsic
+1350Åto 1 keV spectral index is 1.55<Math mode="inline" tex="{}_{-0.33}^{+0.20}" text="_ - 0.33 absent ^ (+ 0.20)" xml:id="S2.p3.m4">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="pre2"/>
+                <XMTok meaning="absent"/>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="0.33" role="NUMBER">0.33</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                <XMTok fontsize="70%" meaning="0.20" role="NUMBER">0.20</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> (only taking into
+account the X-ray flux uncertainty).</p>
+    </para>
+    <para xml:id="S2.p4">
+      <p>Figure 1 also shows the SED of two other BAL QSOs, PG 1001+054 and PG 2112+059,
+detected by ROSAT. The ROSAT spectra were fitted with an
+absorbed power law. Absorption (<Math mode="inline" tex="N_{H}=2.8_{-2.4}^{+6.3}~{}10^{20}" text="N _ H = (2.8 _ (- 2.4)) ^ (+ 6.3) * 10 ^ 20" xml:id="S2.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp rpadding="3.3pt">
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="2.8" role="NUMBER">2.8</XMTok>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="2.4" role="NUMBER">2.4</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                    <XMTok fontsize="70%" meaning="6.3" role="NUMBER">6.3</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="20" role="NUMBER">20</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> <Math mode="inline" tex="cm^{-2}" text="c * m ^ (- 2)" xml:id="S2.p4.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">c</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>)
+in excess of the Galactic one is not needed for PG 1001+054;
+therefore, the column density is fixed at the Galactic value (<Math mode="inline" tex="1.9~{}10^{20}" text="1.9 * 10 ^ 20" xml:id="S2.p4.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok meaning="1.9" role="NUMBER" rpadding="3.3pt">1.9</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="20" role="NUMBER">20</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+<Math mode="inline" tex="cm^{-2}" text="c * m ^ (- 2)" xml:id="S2.p4.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">c</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>), and the fit yields a photon index <Math mode="inline" tex="\Gamma=3.5_{-0.4}^{+0.6}" text="Gamma = (3.5 _ (- 0.4)) ^ (+ 0.6)" xml:id="S2.p4.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="3.5" role="NUMBER">3.5</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="0.4" role="NUMBER">0.4</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                  <XMTok fontsize="70%" meaning="0.6" role="NUMBER">0.6</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.
+However, the
+X-ray flux at 1 keV is lower by a factor of 50 compared to the mean
+<!--  %**** ms.tex Line 225 **** -->radio-quiet QSOs. This is unlikely to be intrinsic since the HeII
+<Math mode="inline" tex="\lambda" text="lambda" xml:id="S2.p4.m6">
+          <XMath>
+            <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+          </XMath>
+        </Math>1640 is fairly strong in the HST spectrum (Fig. 2) of PG 1001+442
+with an equivalent width larger than that in the composite HST QSO spectrum
+( Zheng et al. 1998),
+implying that the ionizing continuum seen by the BLR should be hard
+(Korista, Ferland &amp; Baldwin 1997). The strength of CIV line, found to
+correlate
+with ionizing continuum spectral index (e.g., Wang et al. 1998), also
+indicates hard continuum spectrum.
+In fact, the apparent broad band spectra of PG 1001+059 and
+PG 1411+442 from the infrared to soft X-rays are similar. Therefore, we
+believe that the ROSAT spectrum is also the scattered component, as in PG
+1411+442, and that the fraction of scattering is even lower in this object.
+The interpretation of scattering is consistent with the fact that the
+ROSAT spectral index of PG 1001+054 fits well to the FWHM of H<Math mode="inline" tex="\beta" text="beta" xml:id="S2.p4.m7">
+          <XMath>
+            <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
+          </XMath>
+        </Math> versus
+spectral index correlation (see Wang, Brinkmann, &amp; Bergeron 1996,
+Laor et al. 1997).</p>
+    </para>
+    <para xml:id="S2.p5">
+      <p>The situation for PG 2112+043 is slightly more complicated. Large absorption is
+certainly present. By fixing the photon index to the average value of 2.7 of
+the radio-quiet PG quasars a power law fit with free absorption yields an
+optical to X-ray
+spectral index 2.0<Math mode="inline" tex="\pm 0.2" text="plus-or-minus 0.2" xml:id="S2.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+              <XMTok meaning="0.2" role="NUMBER">0.2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and an absorption column density
+<Math mode="inline" tex="N_{H}" text="N _ H" xml:id="S2.p5.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">N</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>=7<Math mode="inline" tex="{}_{-4}^{+8}" text="_ - 4 absent ^ (+ 8)" xml:id="S2.p5.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="pre2"/>
+                <XMTok meaning="absent"/>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                <XMTok fontsize="70%" meaning="8" role="NUMBER">8</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> 10<Math mode="inline" tex="{}^{21}" text="^21" xml:id="S2.p5.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="21" role="NUMBER">21</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S2.p5.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, where errors are given at 90% confidence
+levels for one parameter. Clearly, the absorption corrected flux is still
+<!--  %**** ms.tex Line 250 **** -->lower by a factor of about 5-10 with respect to that of average QSOs (see also
+Figure 1). It is, however,
+not clear whether the ROSAT spectrum represents the transmitted
+continuum or a combination of scattered plus transmitted component.
+Complicated absorption models such as a partially covered high column plus
+a uniformly covering low column absorber can reproduce the feature as well.</p>
+    </para>
+    <para xml:id="S2.p6">
+      <p>In summary, so far it appears that the observed broad SEDs of BAL QSOs are
+consistent with the intrinsic SED of typical non-BAL QSOs modified by absorption
+in the soft X-ray band. For this reason, we will use the average quasar
+spectral energy distribution in our calculations.
+However, there is no guarantee that it represents the
+typical SED of BAL QSOs, since the ROSAT detected BAL QSOs only account for a
+small fraction of all BAL QSOs and there are some indications that they are
+special; for example, the strength of the
+CIV BAL in these objects is lower than the average value for BAL QSOs
+(Weymann et al. 1991).</p>
+    </para>
+  </section>
+  <section refnum="3" xml:id="S3">
+    <title><tag close=" ">3</tag>Physical Parameters: General Considerations</title>
+    <para xml:id="S3.p1">
+      <p>In this section, we summarize the ranges of the physical parameters,
+obtained either
+directly or estimated from observations.
+<!--  %These parameters are needed for the photo-ionization modeling. -->For the estimates derived from the UV spectrum, we assume that the X-ray
+<!--  %**** ms.tex Line 275 **** -->absorber fully covers the UV continuum source.</p>
+    </para>
+    <para xml:id="S3.p2">
+      <p><text font="italic">Column density</text>: The column density for PG 1411+442 has been
+determined to be <Math mode="inline" tex="N_{H}=2.5~{}10^{23}" text="N _ H = 2.5 * 10 ^ 23" xml:id="S3.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="2.5" role="NUMBER" rpadding="3.3pt">2.5</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="23" role="NUMBER">23</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S3.p2.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.
+Although the column densities for other BAL QSOs have not directly
+been measured, they are likely similar or even larger.
+The fact that the X-ray emission from BAL QSOs is very weak, even in
+the ASCA band, constrains the column densities
+to be higher than a few times <Math mode="inline" tex="10^{23}" text="10 ^ 23" xml:id="S3.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="23" role="NUMBER">23</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S3.p2.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+in most bright BAL QSOs if their intrinsic X-ray emission is
+comparable to that of the
+other radio-quiet QSOs (Brinkmann et al. 1999, Gallagher et al. 1999).
+Thus, a typical column density of <Math mode="inline" tex="10^{23.5}" text="10 ^ 23.5" xml:id="S3.p2.m5">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="23.5" role="NUMBER">23.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S3.p2.m6">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> seems
+to be a quite conservative estimate.</p>
+    </para>
+    <para xml:id="S3.p3">
+      <p><text font="italic">Density</text>: The density of the absorbing gas is virtually unknown.
+However, for a photo-ionized gas the ionization structure is not
+sensitive to the density.
+The lack of broad [OIII] emission in QSOs suggests that the typical density
+of an UV absorber is higher than <Math mode="inline" tex="10^{8}" text="10 ^ 8" xml:id="S3.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="8" role="NUMBER">8</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="S3.p3.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. This conclusion,
+however, is somewhat ionization-dependent. If the BAL region is highly
+stratified and Oxygen is ionized beyond [OIII] as our calculations
+for X-ray absorber show (see sect. 4.1),
+then there are no constraints for a lower limit to the gas density
+<!--  %**** ms.tex Line 300 **** -->in the highly ionized zone. Earlier reports of a possible detection
+of absorption lines from excited ions OV* and CIII*
+(Pettini &amp; Boksenberg 1986, Korista et al. 1992) require
+an even higher density (<Math mode="inline" tex="n_{e}\simeq 10^{11}" text="n _ e similar-to-or-equals 10 ^ 11" xml:id="S3.p3.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="11" role="NUMBER">11</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="S3.p3.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>).
+These results were questioned by later high S/N
+observation (Arav et al. 1999). A rather large range of densities might
+co-exist in the BAL region and Arav et al. proposed dense flow tubes
+embedded in a low density global flow to explain the ionization dependent
+covering factor.</p>
+    </para>
+    <para xml:id="S3.p4">
+      <p><text font="italic">Metal abundances:</text> BAL quasars are claimed to have
+remarkably high abundances of heavy
+elements relative to the solar values. C, Si, N, P, and Fe are over-abundant
+by 1-2 orders of magnitude. The abundances were derived from the optical BAL
+depths together with photoionization models assuming ionization equilibrium.
+The enhancement of metal elements can be reduced, but not eliminated, by using
+complicated shapes for the ionizing continuum. The qualitative results
+will not be altered by considering saturation of the absorption lines
+since troughs in CIV and NV are much deeper than in Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.p4.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math>.
+The calculations presented below, however, are
+based on cosmic abundances, since little is known about the abundances
+of the X-ray absorber, which might be different from that of the UV absorbing gas.
+Since the X-ray opacity is mainly determined by heavy elements, the
+column density mentioned above actually measures that of the heavy elements;
+therefore, the results are correct as far as the metals
+<!--  %**** ms.tex Line 325 **** -->are concerned. The hydrogen column density is roughly inversely proportional
+to the measured metal abundance.
+The reason is that for lower abundances thicker material is needed to
+produce the same X-ray absorption, and the X-ray column density is the
+equivalent hydrogen density with solar metal abundances.</p>
+    </para>
+    <para xml:id="S3.p5">
+      <p><text font="italic">Ionization parameter</text>: An upper limit on the ionization parameter
+for the X-ray absorber can be obtained
+by requiring that the material is not too highly ionized to be
+transparent for the low energy soft X-rays. Brinkmann et al. (1999)
+showed that a uniformly covering warm absorption model does not fit the
+ROSAT+ASCA spectra of PG 1411+442, and they argued for a partially covering
+absorption model or for an absorption plus scattering model. However, both
+Brinkmann et al. and Wang et al. simply used a neutral absorber. We
+show below that combining the ROSAT and ASCA spectrum can put a tight
+upper limit on the ionization parameter of the absorber.</p>
+    </para>
+    <para xml:id="S3.p6">
+      <p>Allowing the
+absorbing medium to be partially ionized, we use the ionized absorption
+model <text font="italic">absori</text> in XSPEC to replace <text font="italic">wabs</text> for the model of an
+absorbed, broken power law plus a scattering component by electrons (see Wang
+et al. 1999 for details).
+The break energy has been fixed at 1.0 keV and the
+photon index of the hard X-rays at <Math mode="inline" tex="\Gamma" text="Gamma" xml:id="S3.p6.m1">
+          <XMath>
+            <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+          </XMath>
+        </Math>=2.0.
+The ionizing continuum is assumed to be
+<!--  %**** ms.tex Line 350 **** -->a power law with a photon index 2.5 from the UV to hard X-rays.
+This simplified continuum is not an exact representation
+for the ionizing continuum but it produces
+similar results as Netzer’s more complicated model for PG 1126-041
+(H. Netzer, private communication).
+We use an X-ray ionization parameter
+U<Math mode="inline" tex="{}_{x}" text="_x" xml:id="S3.p6.m2">
+          <XMath>
+            <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, which is defined as the dimensionless
+ratio of photon density above 0.1 keV and
+the particle density (Netzer 1996), instead of <Math mode="inline" tex="\xi=L/(nr^{2})" text="xi = L / (n * r ^ 2)" xml:id="S3.p6.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" name="xi" role="UNKNOWN">ξ</XMTok>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                <XMDual>
+                  <XMRef idref="S3.p6.m3.1"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMApp xml:id="S3.p6.m3.1">
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                        <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, since
+it is much less dependent on the detailed UV to X-ray spectral
+slope. Figure 3 shows 68%, 90% and 99% contours for the ionization
+parameter versus the column density for the absorbing material. The upper
+limit on <Math mode="inline" tex="U_{x}" text="U _ x" xml:id="S3.p6.m4">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+              <XMTok font="italic" role="UNKNOWN">U</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> is mainly constrained by the photon flux at
+energies lower than 0.4 keV, and depends only weakly on the column density.
+At <Math mode="inline" tex="N_{H}=2~{}10^{23}" text="N _ H = 2 * 10 ^ 23" xml:id="S3.p6.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="2" role="NUMBER" rpadding="3.3pt">2</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="23" role="NUMBER">23</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S3.p6.m6">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, one obtains <Math mode="inline" tex="U_{x}&lt;0.11" text="U _ x less 0.11" xml:id="S3.p6.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+              </XMApp>
+              <XMTok meaning="0.11" role="NUMBER">0.11</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> (at 90% confidence
+level, see Fig. 3).
+For the SED of average radio-quiet quasars, linearly extrapolated from the UV
+to X-ray energies, the
+hydrogen ionization parameter is <Math mode="inline" tex="U_{H}=35~{}U_{x}" text="U _ H = 35 * U _ x" xml:id="S3.p6.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok meaning="35" role="NUMBER" rpadding="3.3pt">35</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.</p>
+    </para>
+    <para xml:id="S3.p7">
+      <p>If we assume that the intrinsic X-ray spectrum of PG 1001+054 is similar to an
+average radio-quiet QSO, the unabsorbed X-ray flux will be by a factor 30
+greater. We fitted the ROSAT spectrum with a two component model, in which a
+primary power law
+continuum, 30 times larger than the observed one, is completely covered by an
+<!--  %**** ms.tex Line 375 **** -->ionized absorber and an electron-scattered continuum component which is only
+absorbed by the Galactic absorption, similar to the model for PG 1411+442.
+Taking typical column density (<Math mode="inline" tex="N_{H}=10^{23.5}" text="N _ H = 10 ^ 23.5" xml:id="S3.p7.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="23.5" role="NUMBER">23.5</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S3.p7.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) for the ionizing
+material, an upper limit (at 90% confidence level) of
+<Math mode="inline" tex="U_{x}&lt;0.2" text="U _ x less 0.2" xml:id="S3.p7.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+              </XMApp>
+              <XMTok meaning="0.2" role="NUMBER">0.2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> can be estimated. The exact value is dependent on the assumed
+column density as well as assumption of the intrinsic continuum.</p>
+    </para>
+<!--  %but we notice that in all fits the transmitted flux 
+     %at energies as low as 0.2 keV  is negligible compared to the
+     %intrinsic flux.-->    <para xml:id="S3.p8">
+      <p>A lower limit on the ionization parameter can be obtained by considering the
+absorption by hydrogen. In the HII zone, the fraction of neutral hydrogen is
+approximately <Math mode="inline" tex="n(H^{0})/n(H^{+})\simeq 10^{-5.3}/U_{H}" text="((n * H ^ 0) / n) * H ^ + similar-to-or-equals 10 ^ (- 5.3) / U _ H" xml:id="S3.p8.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok meaning="divide" role="MULOP">/</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                    <XMDual>
+                      <XMRef idref="S3.p8.m1.1"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMApp xml:id="S3.p8.m1.1">
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                          <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                          <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                  <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                </XMApp>
+                <XMDual>
+                  <XMRef idref="S3.p8.m1.2"/>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMApp xml:id="S3.p8.m1.2">
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                      <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                      <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                    </XMApp>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok fontsize="70%" meaning="5.3" role="NUMBER">5.3</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> for a gas photo-ionized
+by a typical AGN continuum (Netzer et al. 1990). The ratio would be lower
+than that given above when the ionization parameter is high, so that
+collisional ionization becomes
+significant. Since the Lyman break is not severe for most HI BAL QSOs
+(Korista et al. 1992, Arav et al. 1999)
+this puts an upper limit on the total column density of
+neutral hydrogen on the line of sight to the UV continuum emission region
+to be less than <Math mode="inline" tex="10^{17.3}" text="10 ^ 17.3" xml:id="S3.p8.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="17.3" role="NUMBER">17.3</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S3.p8.m3">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> (<Math mode="inline" tex="\tau_{912}\simeq 1" text="tau _ 912 similar-to-or-equals 1" xml:id="S3.p8.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                <XMTok fontsize="70%" meaning="912" role="NUMBER">912</XMTok>
+              </XMApp>
+              <XMTok meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>).
+For typical column densities this implies a lower limit of <Math mode="inline" tex="U_{H}=5" text="U _ H = 5" xml:id="S3.p8.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMTok meaning="5" role="NUMBER">5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+if the X-ray absorber fully covers the UV continuum emission region.
+A tighter constraint on the neutral hydrogen column density can be derived by
+<!--  %**** ms.tex Line 400 **** -->using the Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S3.p8.m6">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> line absorption but required a knowledge of the
+distribution of HI column density in velocity space.</p>
+    </para>
+  </section>
+  <section refnum="4" xml:id="S4">
+    <title><tag close=" ">4</tag>Predicted Absorption and Emission Lines</title>
+    <subsection refnum="4.1" xml:id="S4.SS1">
+      <title><tag close=" ">4.1</tag>Absorption Lines</title>
+      <para xml:id="S4.SS1.p1">
+        <p>In order to qualitatively estimate the ionization status of the heavy
+elements, we first consider the source of opacity in the 0.2 to 0.4 keV
+soft X-ray band. For a weakly ionized gas helium is a major contributor
+to the opacity.
+However, if the hydrogen Lyman break is not
+severe, helium atoms will produce negligible absorption in 0.2-0.4 keV
+band. The fraction of He<Math mode="inline" tex="{}^{+}" text="^+" xml:id="S4.SS1.p1.m1">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> can be roughly estimated
+from <Math mode="inline" tex="He^{++}/He^{+}\simeq 10^{3.2}U_{H}" text="((H * e ^ (absent + +)) / H) * e ^ + similar-to-or-equals 10 ^ 3.2 * U _ H" xml:id="S4.SS1.p1.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMApp>
+                    <XMTok meaning="divide" role="MULOP">/</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                        <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                        <XMApp>
+                          <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                          <XMTok meaning="absent"/>
+                          <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                    <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMTok fontsize="70%" meaning="3.2" role="NUMBER">3.2</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> for the typical ionizing AGN continuum (Netzer et al.
+1990). This gives
+<Math mode="inline" tex="H^{0}/He^{+}\simeq 0.1" text="(H ^ 0 / H) * e ^ + similar-to-or-equals 0.1" xml:id="S4.SS1.p1.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMApp>
+                    <XMTok meaning="divide" role="MULOP">/</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                      <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                      <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                    </XMApp>
+                    <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                    <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMTok meaning="0.1" role="NUMBER">0.1</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> for gas dominated by <Math mode="inline" tex="He^{++}" text="H * e ^ (absent + +)" xml:id="S4.SS1.p1.m4">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                    <XMTok meaning="absent"/>
+                    <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>. Since
+the photo-electric absorption cross section decreases with photon energy
+as <Math mode="inline" tex="E^{-3}" text="E ^ (- 3)" xml:id="S4.SS1.p1.m5">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">E</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, in order to produce an optical depth of order <Math mode="inline" tex="\tau=1" text="tau = 1" xml:id="S4.SS1.p1.m6">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                <XMTok meaning="1" role="NUMBER">1</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> at 0.2 keV,
+an optical depth <Math mode="inline" tex="\tau(54eV)\simeq 51" text="tau * 54 * e * V similar-to-or-equals 51" xml:id="S4.SS1.p1.m7">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" name="tau" role="UNKNOWN">τ</XMTok>
+                  <XMDual>
+                    <XMRef idref="S4.SS1.p1.m7.1"/>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="false">(</XMTok>
+                      <XMApp xml:id="S4.SS1.p1.m7.1">
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMTok meaning="54" role="NUMBER">54</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                      </XMApp>
+                      <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMApp>
+                <XMTok meaning="51" role="NUMBER">51</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> is required!
+This implies an optical depth at the
+Lyman limit of the order of 9. Therefore it appears unlikely that helium
+contributes significantly to the opacity at 0.2 keV without producing
+a serious Lyman break.
+<!--  %**** ms.tex Line 425 **** -->Thus the 0.2 to 0.4 keV opacity must be produced by heavy elements.</p>
+      </para>
+      <para xml:id="S4.SS1.p2">
+        <p>Figure 3 shows the ionization potentials (IPs) of the valence electrons
+for the ions of the four most abundant elements C, O, N, and Ne.
+The IPs for the
+first K-shell electrons are 392, 552, 739 and 1196 eV for C, N, O and
+Ne, respectively. From this plot, it is clear that, in order to have a
+significant opacity below 0.35 keV, a substantial fraction of the elements
+O and Ne must keep at least one L-shell electron, i.e., they are not
+ionized beyond
+O<Math mode="inline" tex="{}^{5+}" text="^limit-from@(5, +)" xml:id="S4.SS1.p2.m1">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok meaning="limit-from"/>
+                  <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> and Ne<Math mode="inline" tex="{}^{7+}" text="^limit-from@(7, +)" xml:id="S4.SS1.p2.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok meaning="limit-from"/>
+                  <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>. Note that O<Math mode="inline" tex="{}^{5+}" text="^limit-from@(5, +)" xml:id="S4.SS1.p2.m3">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok meaning="limit-from"/>
+                  <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> and Ne<Math mode="inline" tex="{}^{+7}" text="^+ 7" xml:id="S4.SS1.p2.m4">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                  <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> are also ions
+which produce major resonant UV absorption lines. The fact that resonant
+line absorption has a much larger cross
+section than photo-electric absorption (by a factor of order 10<Math mode="inline" tex="{}^{4}" text="^4" xml:id="S4.SS1.p2.m5">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>)
+suggests that the optical depth of the line absorption is much larger than
+the absorption edge in the soft X-ray band if OVI and NeVIII are
+responsible for the X-ray absorption.
+The large absorption in the soft
+X-rays at energies as low as 0.3 keV requires that OVI and NeVIII absorption
+lines in the X-ray absorbing gas must be optically very thick. This
+general result is not strongly dependent on the specific SED or on the relative
+metal abundances of O and Ne. A detailed ionization calculation
+(see below) shows that
+in photo-ionization equilibrium a substantial fraction of CIV and NV
+should also exist in this case.
+<!--  %**** ms.tex Line 450 **** --></p>
+      </para>
+      <para xml:id="S4.SS1.p3">
+        <p>For the calculations a
+plane-parallel geometry is adopted and the ionizing continuum for
+average radio-quiet quasars illuminates one side.
+A typical column density of <Math mode="inline" tex="10^{23.5}" text="10 ^ 23.5" xml:id="S4.SS1.p3.m1">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="23.5" role="NUMBER">23.5</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S4.SS1.p3.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> is assumed.
+The ionization equilibrium is determined by using the
+photoionization code CLOUDY 94.01 (Ferland 1999). Figure 4 shows the
+ionization structure of the
+elements carbon, nitrogen, oxygen and neon for an ionization parameters U<Math mode="inline" tex="{}_{H}" text="_H" xml:id="S4.SS1.p3.m3">
+            <XMath>
+              <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>=10.
+In this plot, C<Math mode="inline" tex="{}^{3+}" text="^limit-from@(3, +)" xml:id="S4.SS1.p3.m4">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok meaning="limit-from"/>
+                  <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, N<Math mode="inline" tex="{}^{+4}" text="^+ 4" xml:id="S4.SS1.p3.m5">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                  <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, O<Math mode="inline" tex="{}^{+5}" text="^+ 5" xml:id="S4.SS1.p3.m6">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                  <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, Ne<Math mode="inline" tex="{}^{+6}" text="^+ 6" xml:id="S4.SS1.p3.m7">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                  <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, and Ne<Math mode="inline" tex="{}^{+7}" text="^+ 7" xml:id="S4.SS1.p3.m8">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                  <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>
+coexist over a very large region. The opacity at energies between 0.1keV and
+0.35 keV are mainly due to the ions O<Math mode="inline" tex="{}^{+5}" text="^+ 5" xml:id="S4.SS1.p3.m9">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                  <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, Ne<Math mode="inline" tex="{}^{+7}" text="^+ 7" xml:id="S4.SS1.p3.m10">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                  <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> and Ne<Math mode="inline" tex="{}^{+6}" text="^+ 6" xml:id="S4.SS1.p3.m11">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                  <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>.</p>
+      </para>
+      <para xml:id="S4.SS1.p4">
+        <p>The transmitted continua are plotted in Fig. 5 for U<Math mode="inline" tex="{}_{H}" text="_H" xml:id="S4.SS1.p4.m1">
+            <XMath>
+              <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> = 8,10, and 16.
+A substantial Lyman edge is seen only in the first case,
+but a substantial HeII edge at
+54.4 eV is present in all cases. This is because in a gas ionized by a
+typical AGN-continuum, <Math mode="inline" tex="He^{++}/He^{+}\simeq 10^{3.2}U_{H}" text="((H * e ^ (absent + +)) / H) * e ^ + similar-to-or-equals 10 ^ 3.2 * U _ H" xml:id="S4.SS1.p4.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMApp>
+                    <XMTok meaning="divide" role="MULOP">/</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                        <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                        <XMApp>
+                          <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                          <XMTok meaning="absent"/>
+                          <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                    <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMTok fontsize="70%" meaning="3.2" role="NUMBER">3.2</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>. This means that
+the column density of <Math mode="inline" tex="He^{+}" text="H * e ^ +" xml:id="S4.SS1.p4.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> is larger than that of H<Math mode="inline" tex="{}^{0}" text="^0" xml:id="S4.SS1.p4.m4">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> by a factor of
+nearly 10 in a fully
+ionized gas. It can be seen that only when U<Math mode="inline" tex="{}_{H}\leq" xml:id="S4.SS1.p4.m5">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="pre2"/>
+                <XMTok meaning="less-than-or-equals" name="leq" role="RELOP">≤</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>10
+for the given column density, a large fraction of the soft X-rays between
+0.2-0.3 keV can be absorbed. This corresponds to <Math mode="inline" tex="U_{X}\simeq 0.29" text="U _ X similar-to-or-equals 0.29" xml:id="S4.SS1.p4.m6">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">X</XMTok>
+                </XMApp>
+                <XMTok meaning="0.29" role="NUMBER">0.29</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>,
+which is roughly consistent with that derived from the X-ray spectral fits
+for PG 1411+442. The soft X-ray opacity between 0.1 to 0.3 keV is mainly
+<!--  %**** ms.tex Line 475 **** -->caused by OVI, NeVII, and NeVIII ions, whose abundances are very sensitive
+to U<Math mode="inline" tex="{}_{H}" text="_H" xml:id="S4.SS1.p4.m7">
+            <XMath>
+              <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>, as can be seen in the figure.</p>
+      </para>
+      <para xml:id="S4.SS1.p5">
+        <p>Table 1 shows the predicted column densities for U<Math mode="inline" tex="{}_{H}" text="_H" xml:id="S4.SS1.p5.m1">
+            <XMath>
+              <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> = 10 and U<Math mode="inline" tex="{}_{H}" text="_H" xml:id="S4.SS1.p5.m2">
+            <XMath>
+              <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> = 8. As one can
+see from the table, the absorber can certainly predict a large column density
+in ions producing the major UV absorption lines within the allowed range of
+ionization parameters.
+At U<Math mode="inline" tex="{}_{H}" text="_H" xml:id="S4.SS1.p5.m3">
+            <XMath>
+              <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>=10, the model predicts CIV and NV column densities close to the total
+column densities estimated from strong BALs, and an OVI column density much
+larger than previously estimated based on the UV absorption line. An even
+larger column density is produced for NeVIII lines. Further, the column density
+of neutral hydrogen is an order of magnitude higher than required by Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S4.SS1.p5.m4">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math>
+absorption.
+Since the column densities of these ions of CIV, NV, OVI and NeVII increase
+rapidly with decreasing ionization parameters and U<Math mode="inline" tex="{}_{H}" text="_H" xml:id="S4.SS1.p5.m5">
+            <XMath>
+              <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> = 10 is an upper limit
+imposed by requiring strong absorption in the 0.2-0.35 keV band, the above column
+densities represent only lower limits.</p>
+      </para>
+      <para xml:id="S4.SS1.p6">
+        <p>Since both, Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S4.SS1.p6.m1">
+            <XMath>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMath>
+          </Math> absorption and the Lyman edge, are sensitive to
+the exact value of the ionization parameter and the metal abundances, the
+lower limit for the ionization parameter can be dramatically relaxed
+for much higher metal abundances or a very
+steep ionizing continuum. Since the fraction of neutral
+hydrogen is only proportional to <Math mode="inline" tex="U_{H}^{-1}" text="(U _ H) ^ (- 1)" xml:id="S4.SS1.p6.m2">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, the reduction of the fraction of
+hydrogen by an order of magnitude, while keeping the X-ray opacity constant
+<!--  %**** ms.tex Line 500 **** -->would require the ratio <Math mode="inline" tex="U_{H}" text="U _ H" xml:id="S4.SS1.p6.m3">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> to <Math mode="inline" tex="U_{x}" text="U _ x" xml:id="S4.SS1.p6.m4">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> to be ten times larger, implying
+a very steep UV to X-ray spectrum <Math mode="inline" tex="\alpha_{uvx}\simeq 2.3" text="alpha _ (u * v * x) similar-to-or-equals 2.3" xml:id="S4.SS1.p6.m5">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">u</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">v</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMTok meaning="2.3" role="NUMBER">2.3</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>. This
+seems very unlikely in view of the results of 1411+442, where 1350Å  to  1
+keV spectral index <Math mode="inline" tex="\alpha_{uvx}=1.55_{-0.33}^{+0.20}" text="alpha _ (u * v * x) = (1.55 _ (- 0.33)) ^ (+ 0.20)" xml:id="S4.SS1.p6.m6">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">u</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">v</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok meaning="1.55" role="NUMBER">1.55</XMTok>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="0.33" role="NUMBER">0.33</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                    <XMTok fontsize="70%" meaning="0.20" role="NUMBER">0.20</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> when corrected for
+the intrinsic absorption (see section 2).
+If the metal abundances are one order of magnitude higher, the hydrogen
+column can be lower by a similar factor, because the absorption in the
+X-ray band is mainly due to metal elements.</p>
+      </para>
+      <para xml:id="S4.SS1.p7">
+        <p>In order to see how the predicted column densities change with the assumed
+hydrogen column density, we calculated similar models for <Math mode="inline" tex="N_{H}=10^{22.5}" text="N _ H = 10 ^ 22.5" xml:id="S4.SS1.p7.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="22.5" role="NUMBER">22.5</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>
+and 10<Math mode="inline" tex="{}^{23}" text="^23" xml:id="S4.SS1.p7.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMTok fontsize="70%" meaning="23" role="NUMBER">23</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S4.SS1.p7.m3">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>. The density and ionizing continuum were the same as
+used in the previous calculations. In order to limit the transmitted 0.2-0.3
+keV flux to less than 30% of the primary, the ionization parameters (<Math mode="inline" tex="U_{H}" text="U _ H" xml:id="S4.SS1.p7.m4">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>)
+had to be less than 1.4 and 3.6 for <Math mode="inline" tex="N_{H}=10^{22.5}" text="N _ H = 10 ^ 22.5" xml:id="S4.SS1.p7.m5">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="22.5" role="NUMBER">22.5</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> and 10<Math mode="inline" tex="{}^{23}" text="^23" xml:id="S4.SS1.p7.m6">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMTok fontsize="70%" meaning="23" role="NUMBER">23</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S4.SS1.p7.m7">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>,
+respectively. For these <Math mode="inline" tex="U_{H}" text="U _ H" xml:id="S4.SS1.p7.m8">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>’s, the predicted column densities of
+C<Math mode="inline" tex="{}^{3+}" text="^limit-from@(3, +)" xml:id="S4.SS1.p7.m9">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok meaning="limit-from"/>
+                  <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, N<Math mode="inline" tex="{}^{4+}" text="^limit-from@(4, +)" xml:id="S4.SS1.p7.m10">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok meaning="limit-from"/>
+                  <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>,
+O<Math mode="inline" tex="{}^{5+}" text="^limit-from@(5, +)" xml:id="S4.SS1.p7.m11">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok meaning="limit-from"/>
+                  <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, Ne<Math mode="inline" tex="{}^{6+}" text="^limit-from@(6, +)" xml:id="S4.SS1.p7.m12">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok meaning="limit-from"/>
+                  <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, and Ne<Math mode="inline" tex="{}^{7+}" text="^limit-from@(7, +)" xml:id="S4.SS1.p7.m13">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok meaning="limit-from"/>
+                  <XMTok fontsize="70%" meaning="7" role="NUMBER">7</XMTok>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> are similar to those of the
+<Math mode="inline" tex="N_{H}=10^{23.5}" text="N _ H = 10 ^ 23.5" xml:id="S4.SS1.p7.m14">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="23.5" role="NUMBER">23.5</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S4.SS1.p7.m15">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> case (see
+Table 1), as expected. We did not calculate the column density for the
+<Math mode="inline" tex="N_{H}=10^{24}" text="N _ H = 10 ^ 24" xml:id="S4.SS1.p7.m16">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok meaning="10" role="NUMBER">10</XMTok>
+                  <XMTok fontsize="70%" meaning="24" role="NUMBER">24</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S4.SS1.p7.m17">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> model since the escape probability approximation used in
+Cloudy may result in an incorrect ionization structure (Dumont,
+Abrassart &amp; Collin 2000). But the argument presented at the beginning of this
+section suggests that the ion column densities should be similar.</p>
+      </para>
+<!--  %**** ms.tex Line 525 **** -->      <table frefnum="Table 1" refnum="1" xml:id="S4.T1">
+        <toccaption><tag close=" ">1</tag>Predicted column densities for different BAL ions</toccaption>
+        <caption><tag close=": ">Table 1</tag>Predicted column densities for different BAL ions</caption>
+        <tabular>
+          <thead>
+            <tr>
+              <td align="center" border="tt" thead="column">
+log <Math mode="inline" tex="N_{H}" text="N _ H" xml:id="S4.T1.m1">
+                  <XMath>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                      <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center" border="tt" colspan="2" thead="column">23.5</td>
+              <td align="center" border="tt" thead="column">23</td>
+              <td align="center" border="tt" thead="column">22.5</td>
+            </tr>
+            <tr>
+              <td align="center" thead="column">U<Math mode="inline" tex="{}_{H}" text="_H" xml:id="S4.T1.m2">
+                  <XMath>
+                    <XMApp role="FLOATSUBSCRIPT" scriptpos="10">
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center" border="t" thead="column">10</td>
+              <td align="center" border="t" thead="column">8</td>
+              <td align="center" thead="column">3.6<Math mode="inline" tex="{}^{a}" text="^a" xml:id="S4.T1.m3">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">a</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center" thead="column">1.4<Math mode="inline" tex="{}^{a}" text="^a" xml:id="S4.T1.m4">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">a</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" border="t">CIV</td>
+              <td align="left" border="t">2.4<Math mode="inline" tex="\times" text="*" xml:id="S4.T1.m5">
+                  <XMath>
+                    <XMTok meaning="times" role="MULOP">×</XMTok>
+                  </XMath>
+                </Math>10<Math mode="inline" tex="{}^{16}" text="^16" xml:id="S4.T1.m6">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                      <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center" border="t">8<Math mode="inline" tex="\times 10^{16}" text="absent * 10 ^ 16" xml:id="S4.T1.m7">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">×</XMTok>
+                      <XMTok meaning="absent"/>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                        <XMTok meaning="10" role="NUMBER">10</XMTok>
+                        <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center" border="t">3.2<Math mode="inline" tex="\times 10^{16}" text="absent * 10 ^ 16" xml:id="S4.T1.m8">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">×</XMTok>
+                      <XMTok meaning="absent"/>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                        <XMTok meaning="10" role="NUMBER">10</XMTok>
+                        <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center" border="t">2.8<Math mode="inline" tex="\times 10^{16}" text="absent * 10 ^ 16" xml:id="S4.T1.m9">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">×</XMTok>
+                      <XMTok meaning="absent"/>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                        <XMTok meaning="10" role="NUMBER">10</XMTok>
+                        <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+            </tr>
+            <tr>
+              <td align="left">NV</td>
+              <td align="left">3.4<Math mode="inline" tex="\times" text="*" xml:id="S4.T1.m10">
+                  <XMath>
+                    <XMTok meaning="times" role="MULOP">×</XMTok>
+                  </XMath>
+                </Math>10<Math mode="inline" tex="{}^{16}" text="^16" xml:id="S4.T1.m11">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                      <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center">9<Math mode="inline" tex="\times 10^{16}" text="absent * 10 ^ 16" xml:id="S4.T1.m12">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">×</XMTok>
+                      <XMTok meaning="absent"/>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                        <XMTok meaning="10" role="NUMBER">10</XMTok>
+                        <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center">4.7<Math mode="inline" tex="\times 10^{16}" text="absent * 10 ^ 16" xml:id="S4.T1.m13">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">×</XMTok>
+                      <XMTok meaning="absent"/>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                        <XMTok meaning="10" role="NUMBER">10</XMTok>
+                        <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center">4.8<Math mode="inline" tex="\times 10^{16}" text="absent * 10 ^ 16" xml:id="S4.T1.m14">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">×</XMTok>
+                      <XMTok meaning="absent"/>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                        <XMTok meaning="10" role="NUMBER">10</XMTok>
+                        <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+            </tr>
+            <tr>
+              <td align="left">OVI</td>
+              <td align="left">1.2<Math mode="inline" tex="\times" text="*" xml:id="S4.T1.m15">
+                  <XMath>
+                    <XMTok meaning="times" role="MULOP">×</XMTok>
+                  </XMath>
+                </Math>10<Math mode="inline" tex="{}^{18}" text="^18" xml:id="S4.T1.m16">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                      <XMTok fontsize="70%" meaning="18" role="NUMBER">18</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center">4<Math mode="inline" tex="\times 10^{18}" text="absent * 10 ^ 18" xml:id="S4.T1.m17">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">×</XMTok>
+                      <XMTok meaning="absent"/>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                        <XMTok meaning="10" role="NUMBER">10</XMTok>
+                        <XMTok fontsize="70%" meaning="18" role="NUMBER">18</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center">1.8<Math mode="inline" tex="\times" text="*" xml:id="S4.T1.m18">
+                  <XMath>
+                    <XMTok meaning="times" role="MULOP">×</XMTok>
+                  </XMath>
+                </Math>10<Math mode="inline" tex="{}^{18}" text="^18" xml:id="S4.T1.m19">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                      <XMTok fontsize="70%" meaning="18" role="NUMBER">18</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center">1.9<Math mode="inline" tex="\times" text="*" xml:id="S4.T1.m20">
+                  <XMath>
+                    <XMTok meaning="times" role="MULOP">×</XMTok>
+                  </XMath>
+                </Math>10<Math mode="inline" tex="{}^{18}" text="^18" xml:id="S4.T1.m21">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                      <XMTok fontsize="70%" meaning="18" role="NUMBER">18</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+            </tr>
+            <tr>
+              <td align="left">NeVII</td>
+              <td align="left">5.2<Math mode="inline" tex="\times" text="*" xml:id="S4.T1.m22">
+                  <XMath>
+                    <XMTok meaning="times" role="MULOP">×</XMTok>
+                  </XMath>
+                </Math>10<Math mode="inline" tex="{}^{17}" text="^17" xml:id="S4.T1.m23">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                      <XMTok fontsize="70%" meaning="17" role="NUMBER">17</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center">4<Math mode="inline" tex="\times 10^{18}" text="absent * 10 ^ 18" xml:id="S4.T1.m24">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">×</XMTok>
+                      <XMTok meaning="absent"/>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                        <XMTok meaning="10" role="NUMBER">10</XMTok>
+                        <XMTok fontsize="70%" meaning="18" role="NUMBER">18</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center">7.4<Math mode="inline" tex="\times" text="*" xml:id="S4.T1.m25">
+                  <XMath>
+                    <XMTok meaning="times" role="MULOP">×</XMTok>
+                  </XMath>
+                </Math>10<Math mode="inline" tex="{}^{17}" text="^17" xml:id="S4.T1.m26">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                      <XMTok fontsize="70%" meaning="17" role="NUMBER">17</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center">7.5<Math mode="inline" tex="\times" text="*" xml:id="S4.T1.m27">
+                  <XMath>
+                    <XMTok meaning="times" role="MULOP">×</XMTok>
+                  </XMath>
+                </Math>10<Math mode="inline" tex="{}^{17}" text="^17" xml:id="S4.T1.m28">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                      <XMTok fontsize="70%" meaning="17" role="NUMBER">17</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+            </tr>
+            <tr>
+              <td align="left">NeVIII</td>
+              <td align="left">3.7<Math mode="inline" tex="\times" text="*" xml:id="S4.T1.m29">
+                  <XMath>
+                    <XMTok meaning="times" role="MULOP">×</XMTok>
+                  </XMath>
+                </Math>10<Math mode="inline" tex="{}^{18}" text="^18" xml:id="S4.T1.m30">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                      <XMTok fontsize="70%" meaning="18" role="NUMBER">18</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center">6<Math mode="inline" tex="\times 10^{18}" text="absent * 10 ^ 18" xml:id="S4.T1.m31">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">×</XMTok>
+                      <XMTok meaning="absent"/>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                        <XMTok meaning="10" role="NUMBER">10</XMTok>
+                        <XMTok fontsize="70%" meaning="18" role="NUMBER">18</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center">2.3<Math mode="inline" tex="\times" text="*" xml:id="S4.T1.m32">
+                  <XMath>
+                    <XMTok meaning="times" role="MULOP">×</XMTok>
+                  </XMath>
+                </Math>10<Math mode="inline" tex="{}^{18}" text="^18" xml:id="S4.T1.m33">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                      <XMTok fontsize="70%" meaning="18" role="NUMBER">18</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center">1.4<Math mode="inline" tex="\times" text="*" xml:id="S4.T1.m34">
+                  <XMath>
+                    <XMTok meaning="times" role="MULOP">×</XMTok>
+                  </XMath>
+                </Math>10<Math mode="inline" tex="{}^{18}" text="^18" xml:id="S4.T1.m35">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                      <XMTok fontsize="70%" meaning="18" role="NUMBER">18</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+            </tr>
+            <tr>
+              <td align="left" border="b">HI</td>
+              <td align="left" border="b">3.0<Math mode="inline" tex="\times" text="*" xml:id="S4.T1.m36">
+                  <XMath>
+                    <XMTok meaning="times" role="MULOP">×</XMTok>
+                  </XMath>
+                </Math>10<Math mode="inline" tex="{}^{16}" text="^16" xml:id="S4.T1.m37">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                      <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center" border="b">4<Math mode="inline" tex="\times 10^{16}" text="absent * 10 ^ 16" xml:id="S4.T1.m38">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">×</XMTok>
+                      <XMTok meaning="absent"/>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                        <XMTok meaning="10" role="NUMBER">10</XMTok>
+                        <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center" border="b">3.4<Math mode="inline" tex="\times" text="*" xml:id="S4.T1.m39">
+                  <XMath>
+                    <XMTok meaning="times" role="MULOP">×</XMTok>
+                  </XMath>
+                </Math>10<Math mode="inline" tex="{}^{16}" text="^16" xml:id="S4.T1.m40">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                      <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+              <td align="center" border="b">4.0<Math mode="inline" tex="\times" text="*" xml:id="S4.T1.m41">
+                  <XMath>
+                    <XMTok meaning="times" role="MULOP">×</XMTok>
+                  </XMath>
+                </Math>10<Math mode="inline" tex="{}^{16}" text="^16" xml:id="S4.T1.m42">
+                  <XMath>
+                    <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                      <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math></td>
+            </tr>
+          </tbody>
+        </tabular>
+        <note mark="a" role="footnotetext">The photo-ionization parameters for a single zone
+constrainted to transmit about 30% of the intrinsic 0.2-0.3 keV soft X-ray
+flux.</note>
+      </table>
+      <para xml:id="S4.SS1.p8">
+        <p>Although our calculations are only carried out for a one-component model,
+more complicated models, such as multiple-zone models, should
+produce strong CIV, NV, OVI absorption lines as well.
+<!--  %**** ms.tex Line 550 **** -->In order to isolate the zone which
+produces the absorption lines, we considered a two-zone model. The
+X-rays at energies at <Math mode="inline" tex="&gt;" text="&gt;" xml:id="S4.SS1.p8.m1">
+            <XMath>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+            </XMath>
+          </Math>0.35 keV are absorbed by a high column, highly
+ionized absorber, in which the C, N, O atoms are ionized beyond CIV, NV,
+OVI, and at lower energies by a low column density, low ionization
+material. Since the high ionization zone contributes little to the
+X-ray absorption below 0.35 keV, the opacity below 0.35 keV has to be
+dominated by the low ionization material. The main contribution to the
+opacity between 0.2-0.4 keV is from N, O, and Ne at
+moderately high ionization parameters, and from He at low ionization
+parameters, when <Math mode="inline" tex="He^{+}" text="H * e ^ +" xml:id="S4.SS1.p8.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                  <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                  <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> is the dominating species. In the former case, an
+argument similar to the one given at the beginning of this section suggests
+large absorbing column densities in CIV, NV, OVI, NeVII and NeVIII.
+In the latter case, a large optical depth at the Lyman limit is predicted,
+and strong absorption by lines from low ionization species such
+as OIII, CIII, NIV, etc. seems inevitable.</p>
+      </para>
+    </subsection>
+    <subsection refnum="4.2" xml:id="S4.SS2">
+      <title><tag close=" ">4.2</tag>Emission Lines</title>
+      <para xml:id="S4.SS2.p1">
+        <p>Absorption lines can only trace the outflowing material along the line of sight,
+while information on the global distribution of the gas has to be deduced
+by other means. Emission lines represent one such tool.</p>
+      </para>
+      <para xml:id="S4.SS2.p2">
+        <p>From the ionization structures given by the above calculations it is clear that the
+X-ray absorbing gas cannot contribute much to the emission lines from low
+<!--  %**** ms.tex Line 575 **** -->ionization species. The line emission, unlike the ionization structure, depends
+critically on the particle density as well as on the EUV and soft X-ray
+spectral slope.
+For a density of 10<Math mode="inline" tex="{}^{9}" text="^9" xml:id="S4.SS2.p2.m1">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMTok fontsize="70%" meaning="9" role="NUMBER">9</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> cm<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="S4.SS2.p2.m2">
+            <XMath>
+              <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> and U<Math mode="inline" tex="{}_{H}" text="_H" xml:id="S4.SS2.p2.m3">
+            <XMath>
+              <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> = 10,
+the model predicts EWs of 31Å  for OVI <Math mode="inline" tex="\lambda" text="lambda" xml:id="S4.SS2.p2.m4">
+            <XMath>
+              <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+            </XMath>
+          </Math>1032Å  and 21Å 
+for the NeVIII <Math mode="inline" tex="\lambda" text="lambda" xml:id="S4.SS2.p2.m5">
+            <XMath>
+              <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+            </XMath>
+          </Math>770/780Å  emission line,
+for a covering factor of 1.0. These values are a factor of two and
+three higher than the average EWs for these lines measured by HST (Hamann et
+al. 1998). The line EWs increase to 77Å  for OVI and 39Å  for Ne VIII
+for U<Math mode="inline" tex="{}_{H}" text="_H" xml:id="S4.SS2.p2.m6">
+            <XMath>
+              <XMApp role="FLOATSUBSCRIPT" scriptpos="2">
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> = 8.
+The absorber can make a significant contribution to the emission of NeVIII
+and OVI unless it covers only a small fraction of the solid angle or the
+density of the gas is small. In fact, Hamann et al. (1998) discussed already
+the possibility of NeVIII emitting gas associated with the warm absorber in
+the X-ray band.
+Hamann et al. (1998) found that the NeVIII lines are significantly broader than
+CIV in PKS 0355-483 and PG 1522+101. From their figures, the line widths extend
+over the velocity range seen in typical BAL QSOs.</p>
+      </para>
+    </subsection>
+  </section>
+  <section refnum="5" xml:id="S5">
+    <title><tag close=" ">5</tag>COMPARISON WITH OBSERVATIONS</title>
+    <para xml:id="S5.p1">
+      <p>PG 1411+442: Since the residual fluxes in the CIV and NV absorption
+troughs are similar to the fraction of the unabsorbed X-ray flux, Wang et
+al. (1999) argued that they are severely saturated at the bottom, but the
+observed residuals are the leaked light.
+<!--  %**** ms.tex Line 600 **** -->This makes any estimate of the total column densities of
+CIV and NV very difficult and only lower limits can be derived. The
+minimum column densities required to reproduce the observed CIV and NV
+absorption features are of the order of <Math mode="inline" tex="10^{16}" text="10 ^ 16" xml:id="S5.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S5.p1.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> for C<Math mode="inline" tex="{}^{3+}" text="^limit-from@(3, +)" xml:id="S5.p1.m3">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok meaning="limit-from"/>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> and
+N<Math mode="inline" tex="{}^{4+}" text="^limit-from@(4, +)" xml:id="S5.p1.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok meaning="limit-from"/>
+                <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+                <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, and thus, are consistent with the expected lower limits to the
+column densities of these ions from the X-ray absorber estimated in section
+4.
+The SiIV absorption line appears not to be saturated in
+this object; a column density of 2 10<Math mode="inline" tex="{}^{14}" text="^14" xml:id="S5.p1.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="14" role="NUMBER">14</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S5.p1.m6">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> (EW<Math mode="inline" tex="\simeq" text="similar-to-or-equals" xml:id="S5.p1.m7">
+          <XMath>
+            <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+          </XMath>
+        </Math> 6Å) is
+derived. Substantial SiIV can be present only in the zone where the carbon
+is dominated by CIV or lower stages. The ionization parameter (<Math mode="inline" tex="U_{H}\simeq 5" text="U _ H similar-to-or-equals 5" xml:id="S5.p1.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMTok meaning="5" role="NUMBER">5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>)
+is lower than the upper limit set by the soft X-ray absorption in the
+last section in order to reproduce the SiIV absorption line for the
+column of 2 10<Math mode="inline" tex="{}^{23}" text="^23" xml:id="S5.p1.m9">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="23" role="NUMBER">23</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S5.p1.m10">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> derived from the X-ray absorption.
+This results in a higher column density (10<Math mode="inline" tex="{}^{16-17}" text="^16 - 17" xml:id="S5.p1.m11">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+                <XMTok fontsize="70%" meaning="17" role="NUMBER">17</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S5.p1.m12">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) of HI
+for cosmic abundances, and higher CIV and NV column densities.
+The box-shaped profile with substantial residual flux in the <Math mode="inline" tex="Ly\alpha" text="L * y * alpha" xml:id="S5.p1.m13">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMTok font="italic" role="UNKNOWN">L</XMTok>
+              <XMTok font="italic" role="UNKNOWN">y</XMTok>
+              <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+absorption line trough suggest that the absorption line is saturated, but
+the covering factor is smaller than 1 (<Math mode="inline" tex="\sim" text="similar-to" xml:id="S5.p1.m14">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 0.8). Thus, the
+observed HI column density can be consistent with the expectation from the
+X-ray absorber. The lower covering factor (0.8) may be due to the
+partially covering of the broad emission line region by the absorbing gas
+as part of Lyman emission line may be produced in a region more extended than
+CIV emission region. Thus, in PG 1411+442, the observed UV and X-ray data are
+consistent with a uniformly covered absorber model. Notice that the situation
+<!--  %**** ms.tex Line 625 **** -->should be similar for other BAL QSOs with saturated absorption line
+troughs.</p>
+    </para>
+    <para xml:id="S5.p2">
+      <p>PG 1001+054: If the intrinsic broad band spectrum of this object is
+similar to other radio quiet AGN, i.e., <Math mode="inline" tex="\alpha_{ox}=1.65" text="alpha _ (o * x) = 1.65" xml:id="S5.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="1.65" role="NUMBER">1.65</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, the
+detected soft X-ray component can not be the transmitted one as it is
+rather steep. Most likely, we have a similar scenario as in
+PG 1411+442. The fraction of scattering is comparable, a few percent.
+Since the residual flux in the CIV absorption line
+in this object is more than 30% of the continuum, even at the
+deepest part of the trough, the observed profile implies either that
+the optically thick absorbing material is leaky and covers
+less than 70% of the sky or that the gas is not optically thick
+to the continuum photons.
+With the latter assumption, the total column density in CIV ions
+is estimated to be <Math mode="inline" tex="\simeq" text="similar-to-or-equals" xml:id="S5.p2.m2">
+          <XMath>
+            <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+          </XMath>
+        </Math>2 <Math mode="inline" tex="10^{15}" text="10 ^ 15" xml:id="S5.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="15" role="NUMBER">15</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S5.p2.m4">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> (EW<Math mode="inline" tex="\simeq" text="similar-to-or-equals" xml:id="S5.p2.m5">
+          <XMath>
+            <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
+          </XMath>
+        </Math>13Å).
+Since the ROSAT spectrum is very steep, no leaking component is seen,
+not even in the hard band of the ROSAT PSPC, and therefore an
+absorption column
+density of at least a few times 10<Math mode="inline" tex="{}^{22}" text="^22" xml:id="S5.p2.m6">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="22" role="NUMBER">22</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S5.p2.m7">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> is required for X-ray
+absorber.
+Similarly, to keep sufficient opacity in the low energy soft X-ray band
+requires
+that a substantial fraction of O and Ne atoms must be at ionization
+stages equal to or lower than OVI and NeVIII.
+<!--  %**** ms.tex Line 650 **** -->If the continuum is not too different from the average quasar SED, the X-ray
+absorber would produce column densities of a few
+10<Math mode="inline" tex="{}^{16}" text="^16" xml:id="S5.p2.m8">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S5.p2.m9">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> for
+CIV and NV (see table 1). This number is much larger than that inferred
+from the UV
+absorption lines. The discrepancy can hardly be explained by source variability
+as one needs a factor of 10 brighter X-ray emission in order to match 30%
+residuals in the absorption line trough, considering the fact that
+statistically no BAL QSOs show strong X-ray emission. Although we cannot
+rule out that an agreement can be achieved by using a completely different
+ionizing
+continuum, that
+of Mathews &amp; Ferland (1987) with a bump in the EUV still predicts
+a column density in CIV <Math mode="inline" tex="&gt;10^{16}" text="absent &gt; 10 ^ 16" xml:id="S5.p2.m10">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S5.p2.m11">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> if the transmitted flux between
+0.2-0.3 keV is less than 30%. For a power law spectrum for the EUV
+( from 13.6 eV to 0.2 keV ) ionizing continuum, the
+spectral index <Math mode="inline" tex="\alpha" text="alpha" xml:id="S5.p2.m12">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> (<Math mode="inline" tex="f_{\nu}\propto\nu^{-\alpha}" text="f _ nu proportional-to nu ^ (- alpha)" xml:id="S5.p2.m13">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="proportional-to" name="propto" role="RELOP">∝</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                <XMTok font="italic" fontsize="70%" name="nu" role="UNKNOWN">ν</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="nu" role="UNKNOWN">ν</XMTok>
+                <XMApp>
+                  <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok font="italic" fontsize="70%" name="alpha" role="UNKNOWN">α</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>) is required to be
+larger than 2.2 in order to match the observed CIV column density. This
+seems unlikely in view of our discussion presented in section 2.</p>
+    </para>
+    <para xml:id="S5.p3">
+      <p>Therefore, we prefer a picture in which an optically thick absorber partially
+covers the UV continuum source. There are two different type pictures for
+the partial covering.
+In the first case, the X-ray absorbing material
+only partially covers the UV continuum emission region, but fully covers
+<!--  %**** ms.tex Line 675 **** -->the X-ray continuum region. This means that the UV
+emission region is significantly larger than the X-ray emission region.
+However, it requires that the absorbing material is close to the central
+source. This seems unlikely as the NV absorption line profile indicates
+that the BAL gas is located at a distance at least as large as the emission
+line region.</p>
+    </para>
+    <para xml:id="S5.p4">
+      <p>An alternative picture is that the line absorption at a given velocity is
+saturated
+but the absorbing material at the velocity only partially covers the line
+of sight to
+the continuum source, resulting in an apparently low column density in the
+absorption line.
+In order to explain the nearly complete absorption in the soft X-ray band, we
+require that the global covering factor of the absorber, via integrating the
+covering factor at different velocities, is equal or very close to unity. This
+can be realized by allowing the material at different velocities to intersect
+the line of sight to different parts of the continuum. The partial covering
+at a given velocity is either due a patchy absorber with covering factor
+of less than one or due to continuous outflow with
+cross section smaller than the continuum source.
+One consequence of this kind of model is
+that the covering factor at any specific velocity is dependent on the
+angle between the line of sight and the iso-velocity surface. In the clouds
+model, larger viewing angle produces larger covering factor since more clouds on the
+<!--  %**** ms.tex Line 700 **** -->iso-velocity surface enter the line sight to the continuum source.
+The opposite behavior is predicted for the small cross-section outflow
+model since the covering factor at a specific velocity in this case is the
+projected area of the iso-velocity surface onto the line of sight to the
+UV continuum divided by the area of the UV emission region, which decreases
+with the viewing angle. With this picture, the different covering factor
+of PG 1411+442 and PG 1001+054 might be just due to an aspect effect,
+instead of intrinsically different covering factor of this absorber.
+Future X-ray observation of the photo-electric iron
+K edges should be able to reveal such velocity dependent partially covering
+features.</p>
+    </para>
+    <para xml:id="S5.p5">
+      <p>It is worthwhile to point out that the situation for the ROSAT undetected low
+redshift bright QSOs with shallow BAL troughs is similar to that of
+PG 1001+054. However, this is hard to confirm for high redshift BAL QSOs
+because the 0.2-0.35 keV band is shifted out of the ROSAT windows. Due to strong
+Galactic absorption below 0.1 keV, future missions more sensitive at soft
+X-rays
+might also have difficulties to settle this question for the BAL QSOs beyond
+redshifts of 1.5.</p>
+    </para>
+    <para xml:id="S5.p6">
+      <p>SBS 1542+541:
+This is one of the highly ionized UV absorption line BAL QSO. The CIV and
+NV absorption lines are weak, but absorption lines from OVI or higher
+ionization stage ions are strong.
+<!--  %**** ms.tex Line 725 **** -->The optical to X-ray spectral slope was found to be
+<Math mode="inline" tex="\alpha_{ox}=1.86" text="alpha _ (o * x) = 1.86" xml:id="S5.p6.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">o</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="1.86" role="NUMBER">1.86</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> using ROSAT data (Telfer et al. 1998),
+which is significantly smaller than the value
+found for other BAL QSOs. The S/N ratio of the ROSAT data is too low to
+allow detailed spectral fits.
+Since the ionization of BAL gas is much higher than conventionally observed in
+other BAL QSOs, it is likely that the ionization parameter is also higher in
+this object, and thus, it appears
+possible that a directly transmitted continuum is detected by ROSAT.
+Given the redshift of z = 2.361 for this object, ROSAT actually measured the
+continuum in the 0.4-8.0 keV band in the rest frame of the QSO.
+The transmission of X-rays at medium energies is not very sensitive to the
+exact value of the ionization parameter and is only a function of the
+total column density,
+provided that the ionization parameter is not too high.
+Telfer et al. (1998) proposed an ionization dependent covering factor model
+to explain the strengths of UV absorption lines for cosmic abundances. The
+covering factor of low ionization ionic species such as HI is much smaller than
+those of high ionization species (up to 80%). But they did not make any
+specific statement about the global covering factor of the gas.
+This model is consistent with the ROSAT data for this source. However,
+if we want to extend this model to other BAL QSOs, such as PG 1001+043, we
+have to require that the total covering of the absorber is close to unity
+in order to explain their weakness in the ROSAT band as we proposed for
+PG 1001+054.
+<!--  %**** ms.tex Line 750 **** --></p>
+    </para>
+  </section>
+  <section refnum="6" xml:id="S6">
+    <title><tag close=" ">6</tag>Conclusion</title>
+    <para xml:id="S6.p1">
+      <p>We show that the opacity of soft X-rays at energies between 0.2-0.35 keV is
+dominated by L-shell photo-electric absorption of oxygen and neon in the
+X-ray absorber of BAL QSOs. A stringent limit on the ionization parameter
+can be set by requiring presence of sufficient column densities for the ions
+responsible for the absorption in the soft X-ray band, namely, OVI, NeVII and
+NeVIII. For typical equivalent hydrogen column density of
+<Math mode="inline" tex="10^{23.5}" text="10 ^ 23.5" xml:id="S6.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="23.5" role="NUMBER">23.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S6.p1.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, the ionization parameter is required: <Math mode="inline" tex="U_{x}&lt;(0.2-0.3)" text="U _ x less 0.2 - 0.3" xml:id="S6.p1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+              </XMApp>
+              <XMDual>
+                <XMRef idref="S6.p1.m3.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S6.p1.m3.1">
+                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok meaning="0.2" role="NUMBER">0.2</XMTok>
+                    <XMTok meaning="0.3" role="NUMBER">0.3</XMTok>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>,
+or <Math mode="inline" tex="U_{H}&lt;10" text="U _ H less 10" xml:id="S6.p1.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+              </XMApp>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> for the typical spectral energy distribution of
+radio-quiet QSOs. We find that the X-ray absorber has to have very large
+column densities in OVI, NeVII and NeVIII of the order of 10<Math mode="inline" tex="{}^{17-18}" text="^17 - 18" xml:id="S6.p1.m5">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="17" role="NUMBER">17</XMTok>
+                <XMTok fontsize="70%" meaning="18" role="NUMBER">18</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S6.p1.m6">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> in order to have sufficient opacity in the soft X-ray band. Since
+these column densities are derived from the observed optical depth in the soft
+X-ray band, they do not strongly depend on the specific ionization continuum
+and the detail metal abundance.
+For reasonable ionizing continuum, it will also produce large column densities in CIV, NV and HI
+of order a few 10<Math mode="inline" tex="{}^{16}" text="^16" xml:id="S6.p1.m7">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMTok fontsize="70%" meaning="16" role="NUMBER">16</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="S6.p1.m8">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>.</p>
+    </para>
+    <para xml:id="S6.p2">
+      <p>These results are compared with the observed X-ray and UV spectra for several
+BAL QSOs with available soft X-ray data. In PG 1411+442, a uniformly covering
+absorption model can explain the observed UV and X-ray absorption. However,
+in PG 1001+054, the UV absorption lines predicted from the X-ray absorption
+are much stronger than the observed ones, if the X-ray absorption material
+<!--  %**** ms.tex Line 775 **** -->uniformly covers the UV continuum source.
+The discrepancy can be solved by a locally partial covering model in which
+the thick flow or clouds at a specific velocity covers only a certain
+fraction of the line sight to the continuum, but the total covering factor
+of all clouds or the flow is close to 1. As
+the covering factor of the absorber at any specific projected velocity is
+strongly viewing angle dependent, this model has enough flexibility to produce
+the different BAL behaviors. This model might
+also apply to those BAL QSOs for which ROSAT yielded stringent
+upper limits on the X-ray flux but where the UV continuum is only
+partially absorbed.</p>
+    </para>
+    <para xml:id="S6.p3">
+      <p>Our work shows that, assuming the X-ray and UV absorbers being the same,
+self-consistent absorption models can be constructed to explain the X-ray and
+UV observations of the BAL QSOs treated herein; we thus suggest it as a
+promising case in BAL objects. However, future observations with a better
+sample and better quality data are need to draw firm conclusion on this,
+considering following caveats of the analysis presented in this paper:
+(1) The QSOs herein, and especially PG 1411+442, may not be representative
+of BAL QSOs. (2) the assumption that the intrinsic SEDs are like those
+observed in other non-BALQSOs used in deriving the observed CIV and OVI column
+density,</p>
+    </para>
+    <para xml:id="S6.p4">
+      <p>While the absorber can contribute significantly to the extremely highly ionized
+emission lines, such as O VI 1032/1037Å  and Ne VIII 770/780Å  if it
+<!--  %**** ms.tex Line 800 **** -->covers a substantial fraction of solid angle and if the density is higher than
+<Math mode="inline" tex="10^{8}" text="10 ^ 8" xml:id="S6.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok meaning="10" role="NUMBER">10</XMTok>
+              <XMTok fontsize="70%" meaning="8" role="NUMBER">8</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> cm<Math mode="inline" tex="{}^{-3}" text="^- 3" xml:id="S6.p4.m2">
+          <XMath>
+            <XMApp role="FLOATSUPERSCRIPT" scriptpos="2">
+              <XMApp>
+                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>, it has very little impact on the medium and
+low ionization UV lines such as NV, CIV and Ly<Math mode="inline" tex="\alpha" text="alpha" xml:id="S6.p4.m3">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math>.
+The profiles of NeVIII and OVI lines may be indicators for the
+kinematics of the X-ray absorber in QSOs. The observed Ne VIII line profiles
+in QSOs suggests that the velocity of the gas projected
+onto our line of sight is similar to that seen in the outflows
+of the UV BALs.</p>
+    </para>
+  </section>
+  <acknowledgements>We thank S. Komossa for critical reading of this manuscript and an anonymous
+referee for helpful comments.
+TW acknowledges the financial support from Chinese NSF (19925313) and from the
+Chinese Science and Technology Ministry.
+</acknowledgements>
+  <bibliography xml:id="bib">
+    <title>References</title>
+    <biblist>
+      <bibitem key="ara94" xml:id="bib.bib1">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">1</bibtag>
+        <bibtag role="year">Li &amp; Begelman 1994</bibtag>
+        <bibtag role="authors">Arav</bibtag>
+        <bibtag role="refnum">Arav (Li &amp; Begelman 1994)</bibtag>
+        <bibblock> Arav N., Li Z., &amp; Begelman M. 1994,
+ApJ, 432, 62
+</bibblock>
+      </bibitem>
+      <bibitem key="ara99" xml:id="bib.bib2">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Arav et al. 1999</bibtag>
+        <bibtag role="refnum">(Arav et al. 1999)</bibtag>
+        <bibblock> Arav N., Korista K.T., de Kool, M.,
+Junkkarinen V. T., Begelman M.C., 1999, ApJ, 516, 27
+</bibblock>
+      </bibitem>
+      <bibitem key="bra" xml:id="bib.bib3">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Brandt et al. 2000</bibtag>
+        <bibtag role="refnum">(Brandt et al. 2000)</bibtag>
+        <bibblock>Brandt W.N., Laor A., Wills B.J., 2000, ApJ,
+in press.
+</bibblock>
+      </bibitem>
+      <bibitem key="bri" xml:id="bib.bib4">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Brinkmann et al. 1999</bibtag>
+        <bibtag role="refnum">(Brinkmann et al. 1999)</bibtag>
+        <bibblock>Brinkmann W., Wang T., Matsuoka M., Yuan
+W., 1999, A&amp;A, 345, 43
+</bibblock>
+      </bibitem>
+      <bibitem key="coh95" xml:id="bib.bib5">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Cohen et al. 1995</bibtag>
+        <bibtag role="refnum">(Cohen et al. 1995)</bibtag>
+        <bibblock>Cohen,M.H., Ogle P.M., Tran H.D., Vermeulen
+<!--  %**** ms.tex Line 825 **** -->R.C., Miller J.S., Goodrich R.W., Martel A.R. 1995, ApJ, L77
+</bibblock>
+      </bibitem>
+      <bibitem key="Dum00" xml:id="bib.bib6">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">6</bibtag>
+        <bibtag role="year">Abrassart</bibtag>
+        <bibtag role="authors">Dumont</bibtag>
+        <bibtag role="refnum">Dumont (Abrassart)</bibtag>
+        <bibblock>Dumont, A., Abrassart A., Collin S., 2000, A&amp;A, in press
+(astro-ph/0003220)
+</bibblock>
+      </bibitem>
+      <bibitem key="fer99" xml:id="bib.bib7">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Ferland 1999</bibtag>
+        <bibtag role="refnum">(Ferland 1999)</bibtag>
+        <bibblock>Ferland, G.J., 1999, Hazy, a brief introduction to Cloudy 90.
+</bibblock>
+      </bibitem>
+      <bibitem key="gal99" xml:id="bib.bib8">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Gallagher et al. 1999</bibtag>
+        <bibtag role="refnum">(Gallagher et al. 1999)</bibtag>
+        <bibblock> Gallagher S.C., Brandt W.N., Sambruna
+R.M., &amp; Mathur S., 1999, ApJ, 519, 549
+</bibblock>
+      </bibitem>
+      <bibitem key="gre95" xml:id="bib.bib9">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Green et al. 1995</bibtag>
+        <bibtag role="refnum">(Green et al. 1995)</bibtag>
+        <bibblock>Green P.J., Schartel N., Anderson S.F.,
+Hewett P.C., Foltz C.B., Brinkmann W., Fink H., Truemper J. &amp; Morgon B. 1995,
+ApJ, 450, 51
+</bibblock>
+      </bibitem>
+      <bibitem key="gre96" xml:id="bib.bib10">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Green &amp; Mathur 1996</bibtag>
+        <bibtag role="refnum">(Green &amp; Mathur 1996)</bibtag>
+        <bibblock>Green P.J., &amp; Mathur S. 1996, ApJ, 450, 51
+</bibblock>
+      </bibitem>
+      <bibitem key="ham98" xml:id="bib.bib11">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Hamann 1998</bibtag>
+        <bibtag role="refnum">(Hamann 1998)</bibtag>
+        <bibblock> Hamann F. 1998, ApJ, 500, 798
+</bibblock>
+      </bibitem>
+      <bibitem key="ham93" xml:id="bib.bib12">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">12</bibtag>
+        <bibtag role="year">Korista</bibtag>
+        <bibtag role="authors">Hamann</bibtag>
+        <bibtag role="refnum">Hamann (Korista)</bibtag>
+        <bibblock>Hamann F., Korista, K.T., &amp;
+Morris, S.L. 1993, ApJ, 415, 541
+</bibblock>
+      </bibitem>
+      <bibitem key="kor97" xml:id="bib.bib13">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">13</bibtag>
+        <bibtag role="year">Ferland &amp; Baldwin 1997</bibtag>
+        <bibtag role="authors">Korista</bibtag>
+        <bibtag role="refnum">Korista (Ferland &amp; Baldwin 1997)</bibtag>
+        <bibblock>Korista K.T., Ferland G.J.,
+&amp; Baldwin J. 1997, ApJ, 487, 555
+</bibblock>
+      </bibitem>
+      <bibitem key="kor" xml:id="bib.bib14">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Korista &amp; Arav 1997</bibtag>
+        <bibtag role="refnum">(Korista &amp; Arav 1997)</bibtag>
+        <bibblock>Korista T., &amp; Arav N., 1997, in ASP. Conf.
+Ser. 128, Mass Ejection from AGN, ed. N. Arav I. Shlosman &amp; R.J. Weymann (San
+Francisco:ASP), 201
+</bibblock>
+      </bibitem>
+      <bibitem key="kor92" xml:id="bib.bib15">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Korista et al. 1992</bibtag>
+        <bibtag role="refnum">(Korista et al. 1992)</bibtag>
+        <bibblock>Korista K.T., Weymann R.J., Morris S.L.,
+et al., ApJ, 401, 529
+</bibblock>
+      </bibitem>
+      <bibitem key="lao97" xml:id="bib.bib16">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Laor et al. 1997</bibtag>
+        <bibtag role="refnum">(Laor et al. 1997)</bibtag>
+        <bibblock>Laor A., Fiore F., Elvis M., Wilkes B.J.,
+McDowell J.C., 1997, ApJ, 477, 93
+</bibblock>
+      </bibitem>
+      <bibitem key="mat87" xml:id="bib.bib17">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Mathews &amp; Ferland 1987</bibtag>
+        <bibtag role="refnum">(Mathews &amp; Ferland 1987)</bibtag>
+        <bibblock>Mathews, W.G., &amp; Ferland, G.J., 1987,
+ApJ, 323, 456
+</bibblock>
+      </bibitem>
+      <bibitem key="mat00" xml:id="bib.bib18">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">18</bibtag>
+        <bibtag role="year">2000</bibtag>
+        <bibtag role="authors">Mathur et al.</bibtag>
+        <bibtag role="refnum">Mathur et al. (2000)</bibtag>
+        <bibblock>Mathur, S., et al., 2000, ApJL,
+<!--  %**** ms.tex Line 850 **** -->submitted
+</bibblock>
+      </bibitem>
+      <bibitem key="mur" xml:id="bib.bib19">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Murray et al. 1995</bibtag>
+        <bibtag role="refnum">(Murray et al. 1995)</bibtag>
+        <bibblock> Murray N., Chiang J., Grossman S.A., &amp; Voit
+G.M., 1995, ApJ, 451, 498
+</bibblock>
+      </bibitem>
+      <bibitem key="net90" xml:id="bib.bib20">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Netzer 1990</bibtag>
+        <bibtag role="refnum">(Netzer 1990)</bibtag>
+        <bibblock>Netzer, H. 1990 in Active Galactic Nuclei, eds.
+Balndford, R.D., Netzer, H., &amp; Woltjer L., (Springer-Verlag: Berlin).
+</bibblock>
+      </bibitem>
+      <bibitem key="net96" xml:id="bib.bib21">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Netzer 1996</bibtag>
+        <bibtag role="refnum">(Netzer 1996)</bibtag>
+        <bibblock>Netzer, H. 1996, ApJ, 473, 781
+</bibblock>
+      </bibitem>
+      <bibitem key="neu87" xml:id="bib.bib22">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Neugebauer et al. 1987</bibtag>
+        <bibtag role="refnum">(Neugebauer et al. 1987)</bibtag>
+        <bibblock> Neugebauer G., Green R.F., Matthews,
+Schmidt M., Soifer B.T., Bennett J., 1987, ApJS, 63, 615
+</bibblock>
+      </bibitem>
+      <bibitem key="sch99" xml:id="bib.bib23">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Schmidt &amp; Hines 1999</bibtag>
+        <bibtag role="refnum">(Schmidt &amp; Hines 1999)</bibtag>
+        <bibblock> Schmidt G.D., Hines D., 1999, ApJ, 512,
+125
+</bibblock>
+      </bibitem>
+      <bibitem key="tel" xml:id="bib.bib24">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Telfer et al. 1998</bibtag>
+        <bibtag role="refnum">(Telfer et al. 1998)</bibtag>
+        <bibblock> Telfer R.C., Kriss A., Zheng W., Davidsen
+A.F., Green R.F., 1998, ApJ, 509, 132
+</bibblock>
+      </bibitem>
+      <bibitem key="turn99" xml:id="bib.bib25">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Turner 1999</bibtag>
+        <bibtag role="refnum">(Turner 1999)</bibtag>
+        <bibblock> Turner, T. J. 1999, ApJ, 511, 142
+</bibblock>
+      </bibitem>
+      <bibitem key="wan96" xml:id="bib.bib26">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">26</bibtag>
+        <bibtag role="year">Brinkmann &amp; Bergeron 1996</bibtag>
+        <bibtag role="authors">Wang</bibtag>
+        <bibtag role="refnum">Wang (Brinkmann &amp; Bergeron 1996)</bibtag>
+        <bibblock> Wang T., Brinkmann W., Bergeron
+J., 1996, A&amp;A, 309, 81
+</bibblock>
+      </bibitem>
+      <bibitem key="wan98" xml:id="bib.bib27">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">27</bibtag>
+        <bibtag role="year">Lu</bibtag>
+        <bibtag role="authors">Wang</bibtag>
+        <bibtag role="refnum">Wang (Lu)</bibtag>
+        <bibblock> Wang T.G., Lu Y.J., &amp; ZHou Y.Y., 1998,
+ApJ, 493, 1
+</bibblock>
+      </bibitem>
+      <bibitem key="wan99" xml:id="bib.bib28">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Wang et al. 1999</bibtag>
+        <bibtag role="refnum">(Wang et al. 1999)</bibtag>
+        <bibblock> Wang T.G., Wang J.X., Brinkmann W., &amp; Matsuoka M., 1999, ApJ, 519, L31
+</bibblock>
+      </bibitem>
+      <bibitem key="wey91" xml:id="bib.bib29">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Weymann et al. 1991</bibtag>
+        <bibtag role="refnum">(Weymann et al. 1991)</bibtag>
+        <bibblock>Weymann R.J., Morris S.L., Foltz C.B., &amp;
+Hewett P.C., 1991, ApJ, 373, 23
+</bibblock>
+      </bibitem>
+      <bibitem key="zhe98" xml:id="bib.bib30">
+<!--  %**** String Line 25 **** -->        <bibtag role="number">Zheng et al. 1998</bibtag>
+        <bibtag role="refnum">(Zheng et al. 1998)</bibtag>
+        <bibblock> Zheng W., Kriss G.A., Telfer R.C., Grimes
+J.P. &amp; Davidsen A.F., 1998, ApJ, 492, 855
+</bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+  <pagination role="newpage"/>
+<!--  %**** ms.tex Line 875 **** -->  <figure frefnum="Figure 1" labels="LABEL:fig-1" refnum="1" xml:id="A0.F1">
+    <graphics candidates="fig1.ps" graphic="fig1.ps" options="width=65.0pt, height=65.0pt" xml:id="A0.F1.g1"/>
+    <toccaption><tag close=" ">1</tag>fig1.ps</toccaption>
+    <caption><tag close=": ">Figure 1</tag>The Spectral Energy Distribution of three BAL QSOs
+detected with ROSAT. The optical and UV spectra have been corrected for
+Galactic reddening. The dashed line shows the average SED for radio-quiet
+quasars from a composite of HST and the low redshift ROSAT PG quasar
+sample (Zheng et al. 1998). Spectra have been shifted vertically arbitrarily for clarity.
+</caption>
+  </figure>
+  <figure frefnum="Figure 2" labels="LABEL:fig-2" refnum="2" xml:id="A0.F2">
+    <graphics candidates="fig2.ps" graphic="fig2.ps" options="width=45.0pt, height=45.0pt" xml:id="A0.F2.g1"/>
+    <toccaption><tag close=" ">2</tag>fig2.ps</toccaption>
+    <caption><tag close=": ">Figure 2</tag>A comparison of the UV spectrum of PG 1001+054 (solid
+line) with
+the HST composite QSO spectrum (dotted line) showing strong HeII <Math mode="inline" tex="\lambda" text="lambda" xml:id="A0.F2.m1">
+        <XMath>
+          <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+        </XMath>
+      </Math>1640 and other
+high ionization lines.
+</caption>
+  </figure>
+  <figure frefnum="Figure 3" labels="LABEL:fig-3" refnum="3" xml:id="A0.F3">
+<!--  %**** ms.tex Line 900 **** -->    <graphics candidates="fig3.ps" graphic="fig3.ps" options="width=60.0pt, height=60.0pt" xml:id="A0.F3.g1"/>
+    <toccaption><tag close=" ">3</tag>fig3.ps</toccaption>
+    <caption><tag close=": ">Figure 3</tag>The 68%, 90% and 99% confidence contours of ionization
+parameter versus column density for the absorbing material in PG 1411+442.
+</caption>
+  </figure>
+  <figure frefnum="Figure 4" labels="LABEL:fig-4" refnum="4" xml:id="A0.F4">
+    <graphics candidates="fig4.ps" graphic="fig4.ps" options="width=45.0pt, height=45.0pt" xml:id="A0.F4.g1"/>
+    <toccaption><tag close=" ">4</tag>fig4.ps</toccaption>
+    <caption><tag close=": ">Figure 4</tag>Plot of ionization potential versus ionization stage for
+valence electrons for elements C, N, O and Ne. Notice
+that the ionizing potentials for K-shell electrons are larger than 0.39 keV
+for these elements.
+</caption>
+  </figure>
+  <figure frefnum="Figure 5" labels="LABEL:fig-5" refnum="5" xml:id="A0.F5">
+    <graphics candidates="fig5.ps" graphic="fig5.ps" options="width=70.0pt, height=70.0pt" xml:id="A0.F5.g1"/>
+    <toccaption><tag close=" ">5</tag>fig5.ps</toccaption>
+    <caption><tag close=": ">Figure 5</tag>The ionization structure of the elements C, N, O, and Ne
+for an ionization parameter 10 and a column density 10<Math mode="inline" tex="{}^{23.5}" text="^23.5" xml:id="A0.F5.m1">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+            <XMTok fontsize="70%" meaning="23.5" role="NUMBER">23.5</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> cm<Math mode="inline" tex="{}^{-2}" text="^- 2" xml:id="A0.F5.m2">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="4">
+            <XMApp>
+              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>.
+The curves show the logarithm of fraction of ion species, starting with a fully
+<!--  %**** ms.tex Line 925 **** -->stripped ion on the left, with decreasing
+ionization stages toward the right.
+</caption>
+  </figure>
+  <figure frefnum="Figure 6" labels="LABEL:fig-6" refnum="6" xml:id="A0.F6">
+    <graphics candidates="fig6.ps" graphic="fig6.ps" options="width=45.0pt, height=45.0pt" xml:id="A0.F6.g1"/>
+    <toccaption><tag close=" ">6</tag>fig6.ps</toccaption>
+    <caption><tag close=": ">Figure 6</tag>The transmission rate of the ionization continuum in the
+10eV to 10 keV energy range for U<Math mode="inline" tex="{}_{H}" text="_H" xml:id="A0.F6.m1">
+        <XMath>
+          <XMApp role="FLOATSUBSCRIPT" scriptpos="4">
+            <XMTok font="italic" fontsize="70%" role="UNKNOWN">H</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> = 8, 10, and 16 corrected for
+Thomson scattering.
+</caption>
+  </figure>
+</document>

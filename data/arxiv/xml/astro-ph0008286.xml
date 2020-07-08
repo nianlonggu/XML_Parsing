@@ -1,0 +1,1017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008286.1"?>
+<!--  %sample.tex : Simple LaTeX file as a manuscript template of --><!--  %ISAS Report SP proceedings of workshop --><!--  %‘‘Mid- and Far-infrared Astronomy and Future Space Missions” , --><!--  %17-18 April 2000, at ISAS, JAPAN . --><!--  %%%%%% DO NOT CHANGE THE FOLLOWING FIVE LINES %%%%% --><?latexml class="isasrep" options="11pt,notitlepage"?>
+<?latexml package="graphicx" options="dvips"?>
+<?latexml package="caption2" options="small,hang"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML" class="ltx_authors_1line">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title> Morphological Number Counts of Galaxies <break/>in the Hubble Deep Field South</title>
+  <creator role="author">
+    <personname>
+<!--  %**** mglee˙hdf.tex Line 25 **** --><text font="smallcaps">Myung Gyoon Lee<note mark="1" role="footnote"><text font="upright">Astronomy Program, SEES, Seoul National University, KOREA
+(mglee@astrog.snu.ac.kr) </text></note></text> <Math mode="inline" tex="\;" text="absent" xml:id="m1">
+        <XMath>
+          <XMTok meaning="absent"/>
+        </XMath>
+      </Math> and <Math mode="inline" tex="\;" text="absent" xml:id="m2">
+        <XMath>
+          <XMTok meaning="absent"/>
+        </XMath>
+      </Math>
+<text font="smallcaps">Narae Hwang<note mark="1" role="footnote"><text font="upright">Astronomy Program, SEES, Seoul National University, KOREA
+(mglee@astrog.snu.ac.kr) </text></note><Math mode="inline" tex="\;" text="absent" xml:id="m3">
+          <XMath>
+            <XMTok meaning="absent"/>
+          </XMath>
+        </Math></text>
+<!--  %and 
+     %Third M. –“sc Author˝“footnotemark[2]--></personname>
+  </creator>
+  <date role="creation">(16 July 2000)</date>
+  <abstract name="Abstract">
+    <p>We present a study of photometric properties of the galaxies in the Hubble
+Deep Field South (HDFS) based on the released WFPC2 images obtained with
+the Hubble Space Telescope (HST).
+We have classified about 340 galaxies with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="m4">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+            <XMTok font="italic" role="UNKNOWN">I</XMTok>
+            <XMTok meaning="26" role="NUMBER">26</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> mag in the HDFS as well
+as about 400 galaxies in the Hubble Deep Field North (HDFN) using the
+visual classification supplemented by inspection of the surface brightness
+profiles of the galaxies.
+Galaxy population statistics and morphological number counts for the HDFS are
+found to be similar to those for the HDFN.
+We have also determined photometrically the redshifts of the
+galaxies with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="m5">
+        <XMath>
+          <XMApp>
+            <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+            <XMTok font="italic" role="UNKNOWN">I</XMTok>
+            <XMTok meaning="26" role="NUMBER">26</XMTok>
+          </XMApp>
+        </XMath>
+      </Math> mag in the HDFS and the HDFN using the empirical training set
+method.
+Redshift distribution, color–redshift relation, and magnitude–redshift for each
+type of galaxies are investigated.</p>
+  </abstract>
+<!--  %% Revised on August 22, 2000 (MGL) 
+     %%% Title of your paper %%%
+     %%% Running title of your paper %%%
+     %%% Authors %%%
+     %%% Date of Submission %%%
+     %% DO NOT CHANGE this line %%
+     %%% INPUT your affilations as the footnotes %%%
+     %% DO NOT CHANGE this line %%
+     %“footnotetext[2]–3rd Author’s address 999__9999, COUNTRY.˝
+     %% DO NOT CHANGE this line %%
+     %% DO NOT CHANGE this line %%
+     %% DO NOT CHANGE this line %%
+     %%% INPUT abstract here %%%
+     %**** mglee˙hdf.tex Line 50 ****
+     %%% Main body of the paper %%%-->  <section refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>INTRODUCTION</title>
+    <para xml:id="S1.p1">
+      <p>Hubble Deep Field Program has provided us with the deepest images presently possible
+which are very useful as windows to understand the formation and evolution of
+<!--  %**** mglee˙hdf.tex Line 75 **** -->the distant universe (Ferguson, Dickinson &amp; Williams 2000).
+Following the Hubble Deep Field North (HDFN), the Hubble
+Deep Field South was observed with WFPC2, NICMOS and STIS in October 1998
+(Williams et al. 2000). We have analyzed the WFPC2 data among them,
+and have classified bright galaxies with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S1.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag.
+Here we present a preliminary study of
+various aspects of the galaxies in the HDFS including morphology, number counts,
+redshift, and colors in comparison with the HDFN.</p>
+    </para>
+  </section>
+  <section refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>PHOTOMETRY</title>
+    <para xml:id="S2.p1">
+      <p>We have used a galaxy photometry software FOCAS (Faint Object Classification and Analysis System) (Valdes et al. 1995) to detect the objects
+and to obtain the photometry of the detected objects in the WFPC2 images.
+We have combined <Math mode="inline" tex="B" text="B" xml:id="S2.p1.m1">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">B</XMTok>
+          </XMath>
+        </Math>, <Math mode="inline" tex="V" text="V" xml:id="S2.p1.m2">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">V</XMTok>
+          </XMath>
+        </Math> and <Math mode="inline" tex="I" text="I" xml:id="S2.p1.m3">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">I</XMTok>
+          </XMath>
+        </Math> images released to the community
+to create a master image which is used for final object detection with FOCAS.
+Williams et al. (1996) also used FOCAS for the photometry of the galaxies
+in the HDFN, while Williams et al. (2000) used the Source Extractor (SExtractor)
+(Bertin &amp; Arnouts 1996) for the photometry of the galaxies
+in the HDFS. Details of the photometry are described in Hwang (2000).
+Finally, we have obtained the photometry of about 2400 objects reaching
+<Math mode="inline" tex="V\sim 30" text="V similar-to 30" xml:id="S2.p1.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+              <XMTok meaning="30" role="NUMBER">30</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag in the HDFS, and of about 2700 objects in the HDFN.
+A comparison of our photometry with the photometry given by <cite class="ltx_citemacro_cite">[<bibref bibrefs="wil00" separator="," show="Refnum" yyseparator=","/>]</cite>
+shows that they agree well in general
+and that the FOCAS magnitudes get somewhat brighter than the SExtractor magnitudes
+at the faint level (<Math mode="inline" tex="V&gt;28" text="V &gt; 28" xml:id="S2.p1.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+              <XMTok meaning="28" role="NUMBER">28</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag).
+<!--  %**** mglee˙hdf.tex Line 100 **** --></p>
+    </para>
+    <para xml:id="S2.p2">
+      <p>Fig. 1 displays an <Math mode="inline" tex="I" text="I" xml:id="S2.p2.m1">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">I</XMTok>
+          </XMath>
+        </Math> vs. <Math mode="inline" tex="(V-I)" text="V - I" xml:id="S2.p2.m2">
+          <XMath>
+            <XMDual>
+              <XMRef idref="S2.p2.m2.1"/>
+              <XMWrap>
+                <XMTok role="OPEN" stretchy="false">(</XMTok>
+                <XMApp xml:id="S2.p2.m2.1">
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                </XMApp>
+                <XMTok role="CLOSE" stretchy="false">)</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math> color-magnitude diagram of the measured objects
+in the HDFS. Several features are seen in Fig. 1:
+galaxies start to appear at <Math mode="inline" tex="I\sim 21" text="I similar-to 21" xml:id="S2.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="21" role="NUMBER">21</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag;
+most galaxies are bluer than <Math mode="inline" tex="(V-I)\sim 1.0" text="V - I similar-to 1.0" xml:id="S2.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMDual>
+                <XMRef idref="S2.p2.m4.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S2.p2.m4.1">
+                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+              <XMTok meaning="1.0" role="NUMBER">1.0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>; and
+galaxies get bluer progressively as they get fainter.
+These features are, in general, similar to those for the HDFN.</p>
+    </para>
+    <figure frefnum="Figure 1" labels="LABEL:fig1" placement="ht" refnum="1" xml:id="S2.F1">
+      <graphics candidates="fig1.eps" class="ltx_centering" graphic="fig1.eps" options="angle=0, width=227.622047pt, clip=true" xml:id="S2.F1.g1"/>
+      <toccaption class="ltx_centering"><tag close=" ">1</tag><Math mode="inline" tex="I" text="I" xml:id="S2.F1.m1">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">I</XMTok>
+          </XMath>
+        </Math> vs. <Math mode="inline" tex="(V-I)" text="V - I" xml:id="S2.F1.m2">
+          <XMath>
+            <XMDual>
+              <XMRef idref="S2.F1.m2.1"/>
+              <XMWrap>
+                <XMTok role="OPEN" stretchy="false">(</XMTok>
+                <XMApp xml:id="S2.F1.m2.1">
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                </XMApp>
+                <XMTok role="CLOSE" stretchy="false">)</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math> color-magnitude diagram of the measured objects
+in the HDFS. The dashed line at <Math mode="inline" tex="I=26" text="I = 26" xml:id="S2.F1.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag represents the magnitude limit
+for morphological classification.</toccaption>
+      <caption class="ltx_centering"><tag close=": ">Figure 1</tag><Math mode="inline" tex="I" text="I" xml:id="S2.F1.m4">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">I</XMTok>
+          </XMath>
+        </Math> vs. <Math mode="inline" tex="(V-I)" text="V - I" xml:id="S2.F1.m5">
+          <XMath>
+            <XMDual>
+              <XMRef idref="S2.F1.m5.1"/>
+              <XMWrap>
+                <XMTok role="OPEN" stretchy="false">(</XMTok>
+                <XMApp xml:id="S2.F1.m5.1">
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                </XMApp>
+                <XMTok role="CLOSE" stretchy="false">)</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math> color-magnitude diagram of the measured objects
+in the HDFS. The dashed line at <Math mode="inline" tex="I=26" text="I = 26" xml:id="S2.F1.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag represents the magnitude limit
+for morphological classification.</caption>
+    </figure>
+  </section>
+  <section refnum="3" xml:id="S3">
+    <title><tag close=" ">3</tag>MORPHOLOGICAL CLASSIFICATION AND NUMBER COUNTS</title>
+    <subsection refnum="3.1" xml:id="S3.SS1">
+      <title><tag close=" ">3.1</tag>Method</title>
+      <para xml:id="S3.SS1.p1">
+        <p>Morphological characteristics of faint galaxies provide critical information
+for understanding the evolution of galaxies. However, it is very difficult
+to classify galaxies in the HDF, and the results published so far are diverse
+<!--  %**** mglee˙hdf.tex Line 125 **** -->(see Ferguson et al. 2000).
+We have classified the bright galaxies with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S3.SS1.p1.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                <XMTok meaning="26" role="NUMBER">26</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> mag in the HDFS
+as well as in the HDFN.
+For morphological classification we have used visual classification supplemented
+with inspection of the surface brightness profiles of the objects.
+We have fit
+the surface brightness profiles of the objects
+with de Vaucouleurs law, exponential law and King models.
+Fig. 2 displays the surface brightness profiles of typical
+early-type and late-type galaxies.</p>
+      </para>
+      <figure frefnum="Figure 2" labels="LABEL:fig2" placement="ht" refnum="2" xml:id="S3.F2">
+        <graphics candidates="fig2.eps" class="ltx_centering" graphic="fig2.eps" options="angle=0, width=227.622047pt, clip=true" xml:id="S3.F2.g1"/>
+        <toccaption class="ltx_centering"><tag close=" ">2</tag>Surface brightness profiles of a sample of early-type (upper panels) and
+late-type (lower panels) galaxies.
+The dotted line and the dashed line represent fits to the data
+with the de Vaucouleurs law and exponential law, respectively.
+One pixel in radius corresponds to 0.0398 arcsec.</toccaption>
+        <caption class="ltx_centering"><tag close=": ">Figure 2</tag>Surface brightness profiles of a sample of early-type (upper panels) and
+late-type (lower panels) galaxies.
+The dotted line and the dashed line represent fits to the data
+with the de Vaucouleurs law and exponential law, respectively.
+One pixel in radius corresponds to 0.0398 arcsec.</caption>
+      </figure>
+    </subsection>
+    <subsection refnum="3.2" xml:id="S3.SS2">
+      <title><tag close=" ">3.2</tag>Results</title>
+<!--  %**** mglee˙hdf.tex Line 150 **** -->      <para xml:id="S3.SS2.p1">
+        <p>One of the well-known difficulties
+in classification of faint galaxies in the HST images
+is due to splitting of a single galaxy into several bodies or merging of a few galaxies
+into one body by the softwares used.
+No known softwares including FOCAS and SExtractor can take care
+of this problem perfectly. We have inspected each image visually to handle this
+problem. It is very time and labor-consuming, but provides reasonably reliable
+results.</p>
+      </para>
+      <para xml:id="S3.SS2.p2">
+        <p>Finally, we have classified about 340 galaxies in the HDFS and about 400 galaxies
+in the HDFN into four classes: early-type, late-type (spirals), peculiar/irregular,
+and merger. The classification schemes are basically similar to those used by
+van den Bergh et al. (1996), but we used surface photometry of galaxies as well
+for classification.
+A comparison of our results for the HDFN with those of van den Bergh et al. shows
+a good agreement between the two.</p>
+      </para>
+      <para xml:id="S3.SS2.p3">
+        <p>Fig. 3 illustrates the morphological population statistics for the classified
+objects in the HDFS in comparison with those in the HDFN.
+It is found that galaxy population statistics are similar between the HDFS and the
+HDFN: the most dominant population in the HDFS is peculiar/irregular galaxies, and
+the late type galaxies are somewhat more than the early type galaxies.
+However, the number of stars in the HDFS is about twice
+that in the HDFN, which is consistent with the result given by
+Mendez &amp; Minniti (2000). It is as expected, because the HDFS is closer to the
+<!--  %**** mglee˙hdf.tex Line 175 **** -->center of our Galaxy than the HDFN.</p>
+      </para>
+      <figure frefnum="Figure 3" labels="LABEL:fig3" placement="ht" refnum="3" xml:id="S3.F3">
+        <graphics candidates="fig3.eps" class="ltx_centering" graphic="fig3.eps" options="angle=0, width=227.622047pt, clip=true" xml:id="S3.F3.g1"/>
+        <toccaption class="ltx_centering"><tag close=" ">3</tag>Morphological population statistics of the objects with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S3.F3.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                <XMTok meaning="26" role="NUMBER">26</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> mag
+in the HDFS (black bars) and the HDFN (white bars). </toccaption>
+        <caption class="ltx_centering"><tag close=": ">Figure 3</tag>Morphological population statistics of the objects with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S3.F3.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                <XMTok meaning="26" role="NUMBER">26</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> mag
+in the HDFS (black bars) and the HDFN (white bars). </caption>
+      </figure>
+      <figure frefnum="Figure 4" labels="LABEL:fig4" placement="hb" refnum="4" xml:id="S3.F4">
+        <graphics candidates="fig4.eps" class="ltx_centering" graphic="fig4.eps" options="angle=0, width=227.622047pt, clip=true" xml:id="S3.F4.g1"/>
+        <toccaption class="ltx_centering"><tag close=" ">4</tag>Morphological number counts at <Math mode="inline" tex="I" text="I" xml:id="S3.F4.m1">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+            </XMath>
+          </Math>-band of
+the galaxies with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S3.F4.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                <XMTok meaning="26" role="NUMBER">26</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> mag in the HDFS (the filled circles)
+and the HDFN (the open circles).
+The solid line represents the mean of the HDFS and the HDFN.
+The long-dashed line, short-dashed line and dot-dashed line in the left upper
+panel represent, respectively, the late-type, early-type and peculiar/irregular galaxies.</toccaption>
+        <caption class="ltx_centering"><tag close=": ">Figure 4</tag>Morphological number counts at <Math mode="inline" tex="I" text="I" xml:id="S3.F4.m3">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+            </XMath>
+          </Math>-band of
+the galaxies with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S3.F4.m4">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                <XMTok meaning="26" role="NUMBER">26</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> mag in the HDFS (the filled circles)
+and the HDFN (the open circles).
+The solid line represents the mean of the HDFS and the HDFN.
+The long-dashed line, short-dashed line and dot-dashed line in the left upper
+panel represent, respectively, the late-type, early-type and peculiar/irregular galaxies.</caption>
+      </figure>
+      <para xml:id="S3.SS2.p4">
+        <p>We have then derived the <Math mode="inline" tex="I" text="I" xml:id="S3.SS2.p4.m1">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+            </XMath>
+          </Math>-band number counts of each type of galaxies
+<!--  %**** mglee˙hdf.tex Line 200 **** -->with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S3.SS2.p4.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+                <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                <XMTok meaning="26" role="NUMBER">26</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> mag, and they are displayed in Fig. 4.
+Fig.4 shows that the number counts for the HDFS agree in general with those for
+the HDFN, and that the number counts of the peculiar/irregular galaxies are steeper
+than those of the early-type and late-type galaxies both of which are similar
+to each other. The number of the peculiar/irregular galaxies is larger than
+those for the other types at <Math mode="inline" tex="I&gt;24.5" text="I &gt; 24.5" xml:id="S3.SS2.p4.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+                <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                <XMTok meaning="24.5" role="NUMBER">24.5</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> mag. Both of the early-types and late-types
+in the both fields show a slight dip at <Math mode="inline" tex="I\sim 23.8" text="I similar-to 23.8" xml:id="S3.SS2.p4.m4">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                <XMTok meaning="23.8" role="NUMBER">23.8</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> mag, which needs further investigation.</p>
+      </para>
+    </subsection>
+  </section>
+  <section refnum="4" xml:id="S4">
+    <title><tag close=" ">4</tag>PHOTOMETRIC REDSHIFTS</title>
+    <para xml:id="S4.p1">
+      <p>We have determined photometrically the redshifts of about 340 galaxies
+with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S4.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag in the HDFS and of about 400 galaxies in the HDFN
+using the empirical training set method described in Wang et al. (1998, 1999).
+Wang et al. presented the calibration for the empirical training set
+based on 82 galaxies with measured spectroscopic redshifts <Math mode="inline" tex="0.1&lt;z&lt;3.5" text="0.1 less z less 3.5" xml:id="S4.p1.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMTok meaning="0.1" role="NUMBER">0.1</XMTok>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok meaning="3.5" role="NUMBER">3.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+in the HDFN.
+Some galaxies detected in the master image are too faint to be detected in the
+<Math mode="inline" tex="U" text="U" xml:id="S4.p1.m3">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+          </XMath>
+        </Math> image. A value of <Math mode="inline" tex="U=30" text="U = 30" xml:id="S4.p1.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">U</XMTok>
+              <XMTok meaning="30" role="NUMBER">30</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag was assumed as an upper limit
+for such <Math mode="inline" tex="U" text="U" xml:id="S4.p1.m5">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+          </XMath>
+        </Math>-band limited galaxies
+in determining the photometric redshift so that the redshifts of these galaxies
+are more uncertain than those for the other galaxies.</p>
+    </para>
+    <para xml:id="S4.p2">
+      <p>Fig. 5 displays the redshift distribution of all the galaxies with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S4.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag
+in the HDFS in comparison with that for the HDFN, and
+Fig. 6 illustrates the redshift distribution of each type of the galaxies
+<!--  %**** mglee˙hdf.tex Line 225 **** -->with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S4.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag.
+A comparison of our results with those given for the galaxies with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S4.p2.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag
+in the HDFN given by Driver et al. (1998)
+shows a reasonably good agreement between the two.</p>
+    </para>
+    <figure frefnum="Figure 5" labels="LABEL:fig5" placement="ht" refnum="5" xml:id="S4.F5">
+      <graphics candidates="fig5.eps" class="ltx_centering" graphic="fig5.eps" options="angle=0, width=227.622047pt, clip=true" xml:id="S4.F5.g1"/>
+      <toccaption class="ltx_centering"><tag close=" ">5</tag>Photometric redshift distribution of the galaxies
+with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S4.F5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag in the HDFS (the solid line) and the HDFN (the dashed line).
+The inlaid box represents the redshift distribution of the <Math mode="inline" tex="U" text="U" xml:id="S4.F5.m2">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+          </XMath>
+        </Math>-band limited
+galaxies whose redshift estimates are more uncertain than for others. </toccaption>
+      <caption class="ltx_centering"><tag close=": ">Figure 5</tag>Photometric redshift distribution of the galaxies
+with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S4.F5.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag in the HDFS (the solid line) and the HDFN (the dashed line).
+The inlaid box represents the redshift distribution of the <Math mode="inline" tex="U" text="U" xml:id="S4.F5.m4">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+          </XMath>
+        </Math>-band limited
+galaxies whose redshift estimates are more uncertain than for others. </caption>
+    </figure>
+    <figure frefnum="Figure 6" labels="LABEL:fig6" placement="htb" refnum="6" xml:id="S4.F6">
+      <graphics candidates="fig6.eps" class="ltx_centering" graphic="fig6.eps" options="angle=0, width=398.338583pt, clip=true" xml:id="S4.F6.g1"/>
+      <toccaption class="ltx_centering"><tag close=" ">6</tag>Morphological redshift distribution of the galaxies with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S4.F6.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag
+in the HDFS (left) and the HDFN(right). The dotted lines represent the
+<Math mode="inline" tex="U" text="U" xml:id="S4.F6.m2">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+          </XMath>
+        </Math>-band limited galaxies and the numbers inside the parentheses represent
+the numbers of these galaxies.</toccaption>
+      <caption class="ltx_centering"><tag close=": ">Figure 6</tag>Morphological redshift distribution of the galaxies with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S4.F6.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag
+in the HDFS (left) and the HDFN(right). The dotted lines represent the
+<Math mode="inline" tex="U" text="U" xml:id="S4.F6.m4">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+          </XMath>
+        </Math>-band limited galaxies and the numbers inside the parentheses represent
+the numbers of these galaxies.</caption>
+<!--  %**** mglee˙hdf.tex Line 250 **** -->    </figure>
+    <para xml:id="S4.p3">
+      <p>Several distinguishable features are seen in Figs. 5 and 6:
+a) The HDFS data show three strong peaks,
+at <Math mode="inline" tex="z\sim" text="z similar-to absent" xml:id="S4.p3.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="absent"/>
+            </XMApp>
+          </XMath>
+        </Math> 0.5, 1.0, 1.9, and one weaker peak at <Math mode="inline" tex="z\sim 2.7" text="z similar-to 2.7" xml:id="S4.p3.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="2.7" role="NUMBER">2.7</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>,
+while the HDFN data show one prominent peak at <Math mode="inline" tex="z\sim 0.8" text="z similar-to 0.8" xml:id="S4.p3.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="0.8" role="NUMBER">0.8</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>,
+one weak peak at <Math mode="inline" tex="z\sim 1.8" text="z similar-to 1.8" xml:id="S4.p3.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="1.8" role="NUMBER">1.8</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, and a marginal peak at <Math mode="inline" tex="z\sim 2.7" text="z similar-to 2.7" xml:id="S4.p3.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="2.7" role="NUMBER">2.7</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>.
+The difference in the strongest peak between the HDFS and HDFN is due to
+the stronger concentration of early-type and late-type galaxies within <Math mode="inline" tex="z\sim 1.2" text="z similar-to 1.2" xml:id="S4.p3.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="1.2" role="NUMBER">1.2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>
+in the HDFN as compared to the HDFS, as shown in Fig. 6;
+b) The numbers of early-type and late-type galaxies in the HDFN decrease suddenly
+at <Math mode="inline" tex="z\sim 1.2" text="z similar-to 1.2" xml:id="S4.p3.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="1.2" role="NUMBER">1.2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> and to a less degree at <Math mode="inline" tex="z\sim 2.1" text="z similar-to 2.1" xml:id="S4.p3.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="2.1" role="NUMBER">2.1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, while those for the HDFS decrease more gradually with increasing redshift.
+This, with the point in a), indicates that
+the evolutionary history of the galaxies in the
+HDFN and the HDFS might have been different; and
+c) the merger and peculiar/irregular type galaxies show, on an average,
+larger redshifts than those of the late-type and early-type galaxies, which is seen
+more clearly in the HDFN than in the HDFS. This shows that
+mergers were more frequent before the main population of
+the late-type and early-types.</p>
+    </para>
+    <para xml:id="S4.p4">
+      <p>Fig. 7 displays morphological color–redshift diagrams of the galaxies
+<!--  %**** mglee˙hdf.tex Line 275 **** -->with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S4.p4.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag in the HDFS. The colors vary significantly with increasing redshift.
+For example, <Math mode="inline" tex="(V-I)" text="V - I" xml:id="S4.p4.m2">
+          <XMath>
+            <XMDual>
+              <XMRef idref="S4.p4.m2.1"/>
+              <XMWrap>
+                <XMTok role="OPEN" stretchy="false">(</XMTok>
+                <XMApp xml:id="S4.p4.m2.1">
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                </XMApp>
+                <XMTok role="CLOSE" stretchy="false">)</XMTok>
+              </XMWrap>
+            </XMDual>
+          </XMath>
+        </Math> colors get redder for <Math mode="inline" tex="0&lt;z&lt;1.0" text="0 less z less 1.0" xml:id="S4.p4.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMTok meaning="0" role="NUMBER">0</XMTok>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok meaning="1.0" role="NUMBER">1.0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, show a peak at <Math mode="inline" tex="z\sim 1.0" text="z similar-to 1.0" xml:id="S4.p4.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="1.0" role="NUMBER">1.0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>,
+get bluer for <Math mode="inline" tex="1.0&lt;z&lt;2" text="1.0 less z less 2" xml:id="S4.p4.m5">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMTok meaning="1.0" role="NUMBER">1.0</XMTok>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>, and get redder again for <Math mode="inline" tex="z&gt;2.5" text="z &gt; 2.5" xml:id="S4.p4.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="greater-than" role="RELOP">&gt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="2.5" role="NUMBER">2.5</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>.
+One interesting point seen in Fig. 7 is that the color range of early-type galaxies
+at <Math mode="inline" tex="z&lt;1" text="z less 1" xml:id="S4.p4.m7">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="1" role="NUMBER">1</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> in the HDFS (and the HDFN) is very large from <Math mode="inline" tex="(B-V)\sim 0.0" text="B - V similar-to 0.0" xml:id="S4.p4.m8">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMDual>
+                <XMRef idref="S4.p4.m8.1"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="S4.p4.m8.1">
+                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">B</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+              <XMTok meaning="0.0" role="NUMBER">0.0</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> to <Math mode="inline" tex="\sim 1.8" text="absent similar-to 1.8" xml:id="S4.p4.m9">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMTok meaning="1.8" role="NUMBER">1.8</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>,
+suggesting that the star formation histories in early-type galaxies have been
+very diverse.</p>
+    </para>
+    <figure frefnum="Figure 7" labels="LABEL:fig7" placement="ht" refnum="7" xml:id="S4.F7">
+      <graphics candidates="fig7.eps" class="ltx_centering" graphic="fig7.eps" options="angle=0, width=256.074803pt, clip=true" xml:id="S4.F7.g1"/>
+      <toccaption class="ltx_centering"><tag close=" ">7</tag>Morphological color–redshift diagrams of the galaxies with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S4.F7.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag
+in the
+HDFS.
+Filled symbols represent the <Math mode="inline" tex="U" text="U" xml:id="S4.F7.m2">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+          </XMath>
+        </Math>-band limited galaxies.</toccaption>
+      <caption class="ltx_centering"><tag close=": ">Figure 7</tag>Morphological color–redshift diagrams of the galaxies with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S4.F7.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag
+in the
+HDFS.
+Filled symbols represent the <Math mode="inline" tex="U" text="U" xml:id="S4.F7.m4">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+          </XMath>
+        </Math>-band limited galaxies.</caption>
+    </figure>
+    <para xml:id="S4.p5">
+      <p>Fig. 8 displays morphological magnitude–redshift diagrams of the galaxies
+with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S4.p5.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag in the HDFS. Fig. 8 shows, in general, a distance effect on the redshift, i.e.,
+the brightest galaxies get fainter with increasing redshift. However,
+there appears to be a turn-over in this trend around <Math mode="inline" tex="z\sim 3" text="z similar-to 3" xml:id="S4.p5.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="3" role="NUMBER">3</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> (even excluding
+the <Math mode="inline" tex="U" text="U" xml:id="S4.p5.m3">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+          </XMath>
+        </Math>-band limited galaxies). It will be interesting to confirm the redshifts
+of the brightest galaxies at <Math mode="inline" tex="z\sim 3" text="z similar-to 3" xml:id="S4.p5.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              <XMTok meaning="3" role="NUMBER">3</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>.
+<!--  %**** mglee˙hdf.tex Line 300 **** --></p>
+    </para>
+    <figure frefnum="Figure 8" labels="LABEL:fig8" placement="ht" refnum="8" xml:id="S4.F8">
+      <graphics candidates="fig8.eps" class="ltx_centering" graphic="fig8.eps" options="angle=0, width=256.074803pt, clip=true" xml:id="S4.F8.g1"/>
+      <toccaption class="ltx_centering"><tag close=" ">8</tag>Morphological magnitude–redshift diagrams of the galaxies with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S4.F8.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag
+in the
+HDFS.
+Filled symbols represent the <Math mode="inline" tex="U" text="U" xml:id="S4.F8.m2">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+          </XMath>
+        </Math>-band limited galaxies.
+Open symbols are the same as in Fig. 7.</toccaption>
+      <caption class="ltx_centering"><tag close=": ">Figure 8</tag>Morphological magnitude–redshift diagrams of the galaxies with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S4.F8.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag
+in the
+HDFS.
+Filled symbols represent the <Math mode="inline" tex="U" text="U" xml:id="S4.F8.m4">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">U</XMTok>
+          </XMath>
+        </Math>-band limited galaxies.
+Open symbols are the same as in Fig. 7.</caption>
+    </figure>
+  </section>
+  <section refnum="5" xml:id="S5">
+    <title><tag close=" ">5</tag>SUMMARY</title>
+    <para xml:id="S5.p1">
+      <p>We have investigated several photometric properties of the galaxies with <Math mode="inline" tex="I&lt;26" text="I less 26" xml:id="S5.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="less-than" role="RELOP">&lt;</XMTok>
+              <XMTok font="italic" role="UNKNOWN">I</XMTok>
+              <XMTok meaning="26" role="NUMBER">26</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> mag
+in the HDF in comparison with the HDFN.
+We have applied the same procedures for both the HDFS and HDFN for direct comparison,
+so that the relative differences we find between the two fields must be reliable.
+Next step will be to interpret the results by modelling
+the formation and evolution of galaxies.
+Since the invaluable data for the HDFN and HDFS were released,
+many papers have been published using these data. However,
+there are still significant differences and/or conflicts as well as
+agreements among the results (even among the data, excluding any models),
+<!--  %**** mglee˙hdf.tex Line 325 **** -->showing clearly how difficult it is to mine the truth in the field
+(see Ferguson et al. 2000 and references therein).
+This indicates that other kinds of data in addition to the HDF data are needed
+for achieving the final goal of understanding the formation and evolution
+of galaxeis. In this sense HDFS and HDFN are also very interesting targets
+for the coming infrared misssions including ASTRO-F and H2L2.</p>
+    </para>
+<!--  %“subsection–An Example of a Table˝ 
+     %This is a sample of a table. Please refer to tables like ‘as shown in
+     %Table~“ref–tab1˝, we have estimated $“pi$ and $“sqrt 2$’.
+     %Tables must be centered.
+     %“begin–table˝[htbp]
+     %“begin–center˝
+     %“caption–This is a table caption.˝
+     %“label–tab1˝
+     %“begin–tabular˝–ccc˝ “hline “hline
+     %$a˙0$ &amp; foo    &amp;  bar   ““ “hline
+     %$B$   &amp; 3.14   &amp;  1.592 ““
+     %$C$   &amp; 1.4142 &amp;  1.356 ““ “hline ““
+     %“end–tabular˝
+     %“end–center˝
+     %“end–table˝
+     %**** mglee˙hdf.tex Line 350 ****
+     %% use this if necessary (DO NOT forget ‘*’) %%-->  </section>
+  <section xml:id="Sx1">
+    <title>ACKNOWLEDGMENT</title>
+    <para xml:id="Sx1.p1">
+      <p>This research is in part supported by the BK21 program of the Korean Government.</p>
+    </para>
+<!--  %%% ΨREFERENCES (do not forget –˝) %%% -->  </section>
+  <bibliography xml:id="bib">
+    <title>References</title>
+    <biblist>
+      <bibitem key="ber96" xml:id="bib.bibx1">
+        <bibtag role="refnum">Bertin &amp; Arnouts (1996)</bibtag>
+        <bibblock>
+Bertin, E., &amp; Arnouts, S. 1996, A&amp;AS, 117, 393
+</bibblock>
+      </bibitem>
+      <bibitem key="dri98" xml:id="bib.bibx2">
+        <bibtag role="refnum">Driver et al. 1998</bibtag>
+        <bibblock>
+Driver, S. P. et a. 1998, ApJ, 496, L93
+</bibblock>
+      </bibitem>
+      <bibitem key="fer00" xml:id="bib.bibx3">
+        <bibtag role="refnum">Ferguson et al. (2000)</bibtag>
+        <bibblock>
+Ferguson, H. C., Dickinson, M., &amp; Williams, R. 2000, ARAA, in press
+</bibblock>
+      </bibitem>
+      <bibitem key="hwa00" xml:id="bib.bibx4">
+        <bibtag role="refnum">Hwang (2000)</bibtag>
+        <bibblock>
+Hwang, N. 2000, M.S. Thesis, Seoul National University, Korea
+</bibblock>
+      </bibitem>
+      <bibitem key="men00" xml:id="bib.bibx5">
+        <bibtag role="refnum">Mendez &amp; Minniti (2000)</bibtag>
+        <bibblock>
+<!--  %**** mglee˙hdf.tex Line 375 **** -->Mendez, R. A., &amp; Minniti, D. 2000, ApJ, 529, 911
+</bibblock>
+      </bibitem>
+      <bibitem key="val95" xml:id="bib.bibx6">
+        <bibtag role="refnum">Valdes et al. (1995)</bibtag>
+        <bibblock>
+Valdes, F. G. et al. 1995, PASP, 107, 1119
+</bibblock>
+      </bibitem>
+      <bibitem key="van96" xml:id="bib.bibx7">
+        <bibtag role="refnum">van den Bergh et al. (1996)</bibtag>
+        <bibblock>
+van den Bergh, S. et al. 1996, AJ, 116, 2081
+</bibblock>
+      </bibitem>
+      <bibitem key="wan98" xml:id="bib.bibx8">
+        <bibtag role="refnum">Wang et al. (1998)</bibtag>
+        <bibblock>
+Wang, Y., Bahcall, N., &amp; Turner, E. L. 1998, AJ, 116, 2081
+</bibblock>
+      </bibitem>
+      <bibitem key="wan99" xml:id="bib.bibx9">
+        <bibtag role="refnum">Wang et al. (1999)</bibtag>
+        <bibblock>
+Wang, Y., Bahcall, N., &amp; Turner, E. L. 1999, astro-ph/9906256
+</bibblock>
+      </bibitem>
+      <bibitem key="wil96" xml:id="bib.bibx10">
+        <bibtag role="refnum">Williams et al. (1996)</bibtag>
+        <bibblock>
+Williams, R., et al. 1996, AJ, 112, 1335
+</bibblock>
+      </bibitem>
+      <bibitem key="wil00" xml:id="bib.bibx11">
+        <bibtag role="refnum">Williams et al. (2000)</bibtag>
+        <bibblock>
+Williams, R., et al. 2000, in preparation
+</bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+</document>

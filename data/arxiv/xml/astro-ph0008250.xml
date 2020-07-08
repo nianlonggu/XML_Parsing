@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/home/nianlong/work/nlp/dataset/arxivaws/0008/astro-ph0008250.1"?>
+<?latexml class="article" options="11pt,newpasp,twoside,epsf" oldstyle="true"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>Comparing Ultraviolet and H<Math mode="inline" tex="\alpha" text="alpha" xml:id="m1">
+      <XMath>
+        <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+      </XMath>
+    </Math> Star Formation Rates</title>
+  <creator role="author">
+    <personname>Eric F. Bell and Robert C. Kennicutt, Jr.</personname>
+  </creator>
+  <abstract name="Abstract">
+    <p>We have used a sample of 43 star-forming galaxies imaged in the
+far-ultraviolet (FUV) by the UIT supplemented with 33 galaxies
+observed by FAUST, to explore the consistency of UV and H<Math mode="inline" tex="\alpha" text="alpha" xml:id="m2">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> derived
+star formation rates (SFRs). We find, even before correction for
+dust, that UV and H<Math mode="inline" tex="\alpha" text="alpha" xml:id="m3">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> SFRs are quantitatively
+consistent for low-luminosity galaxies, and
+that higher luminosity galaxies have H<Math mode="inline" tex="\alpha" text="alpha" xml:id="m4">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> SFRs a factor of 1.5 higher than
+their UV SFRs: this reflects the influence of dust.
+Our results are consistent with a scenario where the
+UV dust extinction is a factor of <Math mode="inline" tex="\la" text="[\la]" xml:id="m5">
+        <XMath>
+          <ERROR class="undefined">\la</ERROR>
+        </XMath>
+      </Math>2 larger than the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="m6">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math>
+dust extinction in a given galaxy, and that there is over a 4 magnitude
+<!--  %**** belle˙a.tex Line 25 **** -->range of H<Math mode="inline" tex="\alpha" text="alpha" xml:id="m7">
+        <XMath>
+          <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+        </XMath>
+      </Math> dust extinctions which correlate loosely with galaxy luminosity
+such that low luminosity galaxies tend to have lower extinctions than
+their higher luminosity counterparts.</p>
+  </abstract>
+  <ERROR class="undefined">\affil</ERROR>
+  <para xml:id="p1">
+    <p>Steward Observatory, 933 N. Cherry Ave., Tucson, AZ 85721, U.S.A.</p>
+  </para>
+  <section refnum="1" xml:id="S1">
+    <title><tag close=" ">1</tag>The Data</title>
+    <para xml:id="S1.p1">
+      <p>We have selected a sample of 43 galaxies with FUV detections or
+upper limits and H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.p1.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> luminosities from the sample of spiral galaxies
+imaged using the Ultraviolet Imaging Telescope (UIT).
+Magnitudes at an effective wavelength of 1567 Å
+were derived; from external comparisons, we estimate that our magnitudes
+are accurate to at worst 0.4 mag, and typically 0.2 mag.
+Magnitudes for a further 33 galaxies observed by FAUST (Deharveng
+et al. 1994) at 1650 Å were also included in the analysis as a check.</p>
+    </para>
+    <para xml:id="S1.p2">
+      <p>H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.p2.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> luminosities are primarily taken from the literature,
+with the addition of some unpublished CCD data taken by the
+authors. When appropriate, the total flux was corrected
+for <Math mode="inline" tex="[" text="[" xml:id="S1.p2.m2">
+          <XMath>
+            <XMTok role="OPEN" stretchy="false">[</XMTok>
+          </XMath>
+        </Math>N <text font="smallcaps">ii<Math mode="inline" tex="]" text="]" xml:id="S1.p2.m3">
+            <XMath>
+              <XMTok font="upright" role="CLOSE" stretchy="false">]</XMTok>
+            </XMath>
+          </Math></text> following Kennicutt (1983).
+To determine the importance of dust, we also examined
+far-infrared (FIR) and thermal radio continuum luminosities.
+The FUV to FIR ratio is a rough probe of dust attenuation.
+The H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.p2.m4">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> to thermal radio ratio is a direct probe
+<!--  %**** belle˙a.tex Line 50 **** -->of the attenuation of the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.p2.m5">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> light as the two radiations are produced
+by the same thermal electrons: the
+only disadvantage is that the thermal radio
+luminosity is difficult to measure accurately in most cases.</p>
+    </para>
+    <figure frefnum="Figure 1" refnum="1" xml:id="S1.F1">
+      <p><graphics candidates="belle_a1.ps" graphic="belle_a1.ps" xml:id="S1.F1.g1"/> </p>
+      <toccaption><tag close=" ">1</tag><text font="bold">a)</text> Comparison of the UV and H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.F1.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> SFRs (calibrated using
+Kennicutt 1998) for UIT (<Math mode="inline" tex="\bullet" text="bullet" xml:id="S1.F1.m2">
+          <XMath>
+            <XMTok name="bullet" role="MULOP">∙</XMTok>
+          </XMath>
+        </Math>)
+and FAUST (<Math mode="inline" tex="\circ" text="compose" xml:id="S1.F1.m3">
+          <XMath>
+            <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+          </XMath>
+        </Math>) galaxies. The solid line denotes equal SFRs,
+and the dotted line denotes the least squares fit to the data.
+<text font="bold">b)</text> H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.F1.m4">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> to UV SFR ratio with <Math mode="inline" tex="V" text="V" xml:id="S1.F1.m5">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">V</XMTok>
+          </XMath>
+        </Math> band absolute magnitude.
+Symbols as in a): the dashed line denotes the trend in H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.F1.m6">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math>
+to FUV SFR ratio expected because of metallicity effects.
+<text font="bold">c)</text> H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.F1.m7">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> attenuation determined from the radio against
+the FIR to FUV luminosity ratio. The solid line
+denotes the expected correlation
+if the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.F1.m8">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> attenuation is half of the FUV attenuation:
+the dotted lines show the correlation if
+the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.F1.m9">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> attenuation is 1/4 of (lower line) or equal to (upper
+line) the FUV attenuation. </toccaption>
+      <caption><tag close=": ">Figure 1</tag><text font="bold">a)</text> Comparison of the UV and H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.F1.m10">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> SFRs (calibrated using
+Kennicutt 1998) for UIT (<Math mode="inline" tex="\bullet" text="bullet" xml:id="S1.F1.m11">
+          <XMath>
+            <XMTok name="bullet" role="MULOP">∙</XMTok>
+          </XMath>
+        </Math>)
+and FAUST (<Math mode="inline" tex="\circ" text="compose" xml:id="S1.F1.m12">
+          <XMath>
+            <XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok>
+          </XMath>
+        </Math>) galaxies. The solid line denotes equal SFRs,
+and the dotted line denotes the least squares fit to the data.
+<text font="bold">b)</text> H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.F1.m13">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> to UV SFR ratio with <Math mode="inline" tex="V" text="V" xml:id="S1.F1.m14">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">V</XMTok>
+          </XMath>
+        </Math> band absolute magnitude.
+Symbols as in a): the dashed line denotes the trend in H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.F1.m15">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math>
+to FUV SFR ratio expected because of metallicity effects.
+<text font="bold">c)</text> H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.F1.m16">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> attenuation determined from the radio against
+the FIR to FUV luminosity ratio. The solid line
+denotes the expected correlation
+if the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.F1.m17">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> attenuation is half of the FUV attenuation:
+the dotted lines show the correlation if
+the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S1.F1.m18">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> attenuation is 1/4 of (lower line) or equal to (upper
+line) the FUV attenuation. </caption>
+    </figure>
+<!--  %“epsfysize=4.33cm“epsfbox[184 370 392 576]–fig1c.ps˝ 
+     %**** belle˙a.tex Line 75 ****-->  </section>
+  <section refnum="2" xml:id="S2">
+    <title><tag close=" ">2</tag>Results</title>
+    <para xml:id="S2.p1">
+      <p>In panels a and b of Fig. 1, we can see that the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p1.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math>
+SFRs are a factor of <Math mode="inline" tex="\sim" text="similar-to" xml:id="S2.p1.m2">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math>1.5 larger than the FUV SFRs for high luminosity
+galaxies, and comparable for lower luminosity galaxies. This
+is consistent with a scenario in which both the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p1.m3">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> and
+FUV radiation suffer attenuation (where the FUV attenuation
+is larger than the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p1.m4">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> attenuation), and that the overall
+amount of attenuation varies as a function of galaxy luminosity
+(e.g. Tully et al. 1998).</p>
+    </para>
+    <para xml:id="S2.p2">
+      <p>We explore the attenuation more directly in panel
+c, where we plot the H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p2.m1">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> attenuation determined from the
+H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p2.m2">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> to thermal radio ratio against the FIR to
+FUV luminosity ratio (a tracer of FUV attenuation, modulo
+uncertainties from older stellar population heating of the dust).
+The H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p2.m3">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> attenuations
+are clearly correlated with the FUV attenuations, indicating
+a real spread in overall spiral galaxy attenuation. Furthermore,
+the data are consistent with a H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p2.m4">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> attenuation
+<Math mode="inline" tex="\sim" text="similar-to" xml:id="S2.p2.m5">
+          <XMath>
+            <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+          </XMath>
+        </Math> 1 – 2 times lower than the FUV attenuation (simple
+models predict a factor of 4 offset: models that take into account
+the different distribution of FUV and H<Math mode="inline" tex="\alpha" text="alpha" xml:id="S2.p2.m6">
+          <XMath>
+            <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
+          </XMath>
+        </Math> emitting sources
+predict a factor of 2 offset). A more thorough discussion of these
+<!--  %**** belle˙a.tex Line 100 **** -->results is presented by Bell &amp; Kennicutt (2000).</p>
+    </para>
+    <ERROR class="undefined">\acknowledgements</ERROR>
+    <para xml:id="S2.p3">
+      <p>This work was supported by NASA LTSA grant NAG5-8426 and NSF grant
+AST-9900789.</p>
+    </para>
+    <ERROR class="undefined">{references}</ERROR>
+    <ERROR class="undefined">\reference</ERROR>
+    <para xml:id="S2.p4">
+      <p>Bell, E. F. &amp; Kennicutt, R. C., Jr. 2000, submitted to ApJ
+<ERROR class="undefined">\reference</ERROR>Deharveng, J. M., et al. 1994, A&amp;A, 289, 715
+<ERROR class="undefined">\reference</ERROR>Kennicutt, R. C., Jr. 1983, ApJ, 272, 54
+<ERROR class="undefined">\reference</ERROR>Kennicutt, R. C., Jr. 1998, ARA&amp;A, 36, 189
+<ERROR class="undefined">\reference</ERROR>Tully R. B., et al. 1998, AJ, 115, 2264</p>
+    </para>
+  </section>
+</document>
